@@ -699,7 +699,7 @@ class Trainer:
         
         lr_scheduler_kwargs = self.args.scheulder.to_dict()
         lr_scheduler_type = lr_scheduler_kwargs.pop('name')
-        lr_scheduler_kwargs.update({'num_warmup_steps':self.num_warmup_steps,'num_training_steps':self.num_training_steps})
+        # lr_scheduler_kwargs.update({'num_warmup_steps':self.num_warmup_steps,'num_training_steps':self.num_training_steps})
         if self.lr_scheduler is None:
             lr_scheduler = get_scheduler(
                 lr_scheduler_type,
