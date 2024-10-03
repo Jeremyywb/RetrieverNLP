@@ -211,7 +211,7 @@ class Trainer:
         self.data_collator = data_collator
 
         if isinstance(model_name_or_instance, str):
-            name = ModelType(model_name_or_instance)
+            name = ModelType(self.args.model.model_type)
             _cls = TYPE_TO_MODEL_CLS[name]
             self.model = _cls(self.args.model)
         else:
@@ -814,7 +814,7 @@ class Trainer:
             if key == ConfigType.SCHEDULER:
                 cls_dict[key] = self.get_scheduler_config(value)
                 continue
-            cls_key = value.pop('name')
+            cls_key = value['name']
             name = ConfigType(cls_key)
             config_class = TYPE_TO_CONFIG_CLS[name]
             cls_dict[key] = config_class.from_dict(value)

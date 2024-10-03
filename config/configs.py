@@ -272,6 +272,7 @@ class RetrieverModelConfig(BaseConfig):
     model_path          : str   = None
     temperature         : float = None
     model_name          : str   = None
+    model_type          : str   = None
     output_dir          : str   = None
     normlized           : bool  = None
     num_labels          : int   = None
