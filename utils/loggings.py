@@ -8,8 +8,7 @@ def get_logger(name: str, level: int = logging.INFO) -> logging.Logger:
 
     Args:
         name (str): Logger 的名称，通常使用 __name__。
-        level (int): 日志级别，默认为 INFO。
-
+        level (int): 日志级别，默认为 INFO。ww
     Returns:
         logging.Logger: 配置好的 logger 实例。
     """

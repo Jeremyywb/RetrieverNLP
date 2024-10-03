@@ -117,9 +117,6 @@ def load_yaml(training_config_yaml):
 
 # task == retrieval
 
-
-
-
 logger = get_logger(__name__)
 class Trainer:
     def __init__(
@@ -655,47 +652,6 @@ class Trainer:
         self.state.log_history.append(output)
         self.control = self.callback_handler.on_log(self.args, self.state, self.control, logs)
 
-
-
-
-
-# _maybe_log_save_evaluate
-        
-
-
-
-
-
-        # if train_dataset is not None:
-        #     self.train_dataset = train_dataset
-        # else:
-        #     name = DatasetType(self.args.trainset.name)
-        #     _cls = TYPE_TO_DATASET_CLS[name]
-        #     self.train_dataset = _cls(self.args.trainset)
-        
-        # if eval_dataset is not None:
-        #     self.eval_dataset = eval_dataset
-        # else:
-        #     name = DatasetType(self.args.validset.name)
-        #     _cls = TYPE_TO_DATASET_CLS[name]
-        #     self.eval_dataset = _cls(self.args.validset)
-
-        
-    # TYPE_TO_DATASET_CLS
-    # @dataclass
-    # class TrainingConfigs(BaseConfig):
-    #     train_dataloader : DataLoaderConfig = None
-    #     valid_dataloader : DataLoaderConfig = None
-    #     test_dataloader  : DataLoaderConfig = None
-    #     callbacks        : CallbackConfigs  = None
-    #     scheulder        : SchedulerConfig  = None
-    #     optim            : OptimizerConfig  = None
-        
-    # @dataclass
-    # class RetireverTrainingConfigs(TrainingConfigs):
-    #     model       : RetrieverModelConfig = None
-    #     trainer     : TrainerConfig        = None
-    #     dataset     : RetrieverDataConfig  = None
 
     def get_optimizer_and_scheduler(self):
         if self.args.trainer.num_freeze_layers is not None:
