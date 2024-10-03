@@ -229,6 +229,7 @@ class RetrieverDataConfig(BaseConfig):
     passage_instruction_for_retrieval : str = None
     query_instruction_for_retrieval   : str = None
     train_group_size : int = None
+    dataset_type     : str = None
     passage_max_len  : int = None
     query_max_len    : int = None
     json_path        : str = None
