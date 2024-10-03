@@ -145,6 +145,7 @@ class Trainer:
                 self.args = self.set_all_config( training_config_yaml_or_dict )
         else:
             self.args = args
+        print(self.args)
 
         self.accelerator = None
         self.is_deepspeed_enabled = False

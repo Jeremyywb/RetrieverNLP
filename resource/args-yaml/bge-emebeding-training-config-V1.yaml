@@ -43,6 +43,7 @@ test_dataloader:
 
 model:
   name: bge_embedding
+  model_type: bge_embedding
   load_from_pretrained_path: false
   load_from_finetuned_path: false
   inbatch_for_long_passage: 8
