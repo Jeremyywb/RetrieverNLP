@@ -699,6 +699,7 @@ class Trainer:
         
         lr_scheduler_kwargs = self.args.scheulder.to_dict()
         lr_scheduler_type = lr_scheduler_kwargs.pop('name')
+        lr_scheduler_kwargs.pop('warmup_ratio')
         # lr_scheduler_kwargs.update({'num_warmup_steps':self.num_warmup_steps,'num_training_steps':self.num_training_steps})
         if self.lr_scheduler is None:
             lr_scheduler = get_scheduler(
@@ -851,5 +852,4 @@ class Trainer:
         
         # 动态实例化该调度器的配置类
         return config_class.from_dict(scheduler_params)
-
 
