@@ -769,23 +769,23 @@ class Trainer:
         if self.eval_dataset is None:
             raise ValueError("eval_dataset is required")
         
-        if self.args.trainer.task == 'retrieval': 
-            dataloader_params = {
-                "batch_size":self.args.valid_dataloader.batch_size,
-                "shuffle":self.args.valid_dataloader.shuffle,
-                "num_workers":self.args.valid_dataloader.num_workers,
-                "pin_memory":self.args.valid_dataloader.pin_memory,
-                "drop_last":self.args.valid_dataloader.drop_last,
-            }
-        else:
-            dataloader_params = {
-                "batch_size":self.args.valid_dataloader.batch_size,
-                "shuffle":self.args.valid_dataloader.shuffle,
-                "num_workers":self.args.valid_dataloader.num_workers,
-                "pin_memory":self.args.valid_dataloader.pin_memory,
-                "drop_last":self.args.valid_dataloader.drop_last,
-                "collate_fn":self.data_collator 
-            }
+        # if self.args.trainer.task == 'retrieval': 
+        #     dataloader_params = {
+        #         "batch_size":self.args.valid_dataloader.batch_size,
+        #         "shuffle":self.args.valid_dataloader.shuffle,
+        #         "num_workers":self.args.valid_dataloader.num_workers,
+        #         "pin_memory":self.args.valid_dataloader.pin_memory,
+        #         "drop_last":self.args.valid_dataloader.drop_last,
+        #     }
+        # else:
+        dataloader_params = {
+            "batch_size":self.args.valid_dataloader.batch_size,
+            "shuffle":self.args.valid_dataloader.shuffle,
+            "num_workers":self.args.valid_dataloader.num_workers,
+            "pin_memory":self.args.valid_dataloader.pin_memory,
+            "drop_last":self.args.valid_dataloader.drop_last,
+            "collate_fn":self.data_collator 
+        }
         
         return DataLoader(self.eval_dataset,**dataloader_params)
         
