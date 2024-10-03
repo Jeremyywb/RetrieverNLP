@@ -8,7 +8,7 @@ from torch.utils.data import DataLoader
 import time
 import torch
 from torch import Tensor
-from collections import Mapping
+from collections.abc import Mapping
 
 class ExplicitEnum(str, Enum):
     """

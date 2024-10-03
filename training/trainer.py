@@ -803,12 +803,14 @@ class Trainer:
     
     def set_all_config(self, config_dicts):
         cls_dict = {}
-        trainerType = config_dicts.pop('trainerType')
+        trainerType = None
         for key in config_dicts:
             print(key)
             if key == 'name':
                 continue
             value = config_dicts[key]
+            if key == 'trainer':
+                trainerType = value.pop('trainerType')
             if key == ConfigType.SCHEDULER:
                 cls_dict[key] = self.get_scheduler_config(value)
                 continue
