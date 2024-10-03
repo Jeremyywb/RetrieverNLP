@@ -698,10 +698,11 @@ class Trainer:
             raise ValueError(f"Optimizer {optimizer_name} is not supported")
         
         lr_scheduler_kwargs = self.args.scheulder.to_dict()
+        lr_scheduler_type = lr_scheduler_kwargs.pop('name')
         lr_scheduler_kwargs.update({'num_warmup_steps':self.num_warmup_steps,'num_training_steps':self.num_training_steps})
         if self.lr_scheduler is None:
             lr_scheduler = get_scheduler(
-                self.args.lr_scheduler_type,
+                lr_scheduler_type,
                 optimizer=self.optimizer if optimizer is None else optimizer,
                 num_warmup_steps=self.num_warmup_steps,
                 num_training_steps=self.num_training_steps,
@@ -836,7 +837,7 @@ class Trainer:
              raise ValueError("Scheduler 'name' is required in scheduler_params.")
         
         # 取出 'name' 并从字典中删除
-        scheduler_name = scheduler_config_params.pop('name')
+        scheduler_name = scheduler_config_params['name']
         warmup_ratio = scheduler_config_params.pop('warmup_ratio')
         # num_warmup_steps, num_training_steps = self.get_num_warmup_steps(warmup_ratio)#update later
         base_config = {"warmup_ratio":warmup_ratio}

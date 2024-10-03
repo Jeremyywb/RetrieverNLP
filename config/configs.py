@@ -137,6 +137,7 @@ class OptimizerConfig(BaseConfig):
 @validate_fields
 @dataclass
 class SchedulerConfig(BaseConfig):
+    name: str = None
     warmup_ratio: float = None
 
 @validate_fields
