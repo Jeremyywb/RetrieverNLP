@@ -153,9 +153,9 @@ class Trainer:
             os.makedirs(self.args.model.model_path)
         if not os.path.exists(self.args.model.output_dir):
             os.makedirs(self.args.model.output_dir)
-        if self.args.callbacks.best_model_checkpoint is not None:
-            if not os.path.exists(self.args.callbacks.best_model_checkpoint):
-                os.makedirs(self.args.callbacks.best_model_checkpoint)
+        # if self.args.callbacks.best_model_checkpoint is not None:
+        #     if not os.path.exists(self.args.callbacks.best_model_checkpoint):
+        #         os.makedirs(self.args.callbacks.best_model_checkpoint)
         if self.args.trainer.num_devices >1:
             raise ValueError("num_devices > 1 is not supported yet")
         
