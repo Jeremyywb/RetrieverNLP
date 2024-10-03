@@ -814,7 +814,7 @@ class Trainer:
             if key == ConfigType.SCHEDULER:
                 cls_dict[key] = self.get_scheduler_config(value)
                 continue
-            cls_key = value['name']
+            cls_key = value.pop('name')
             name = ConfigType(cls_key)
             config_class = TYPE_TO_CONFIG_CLS[name]
             cls_dict[key] = config_class.from_dict(value)
