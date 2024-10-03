@@ -149,6 +149,8 @@ class Trainer:
 
         self.accelerator = None
         self.is_deepspeed_enabled = False
+        self.is_local_process_zero = True
+        self.is_world_process_zero = True
 
         if not os.path.exists(self.args.model.model_path):
             os.makedirs(self.args.model.model_path)
@@ -258,8 +260,8 @@ class Trainer:
         self.control = TrainerControl()
 
         self.state = TrainerState(
-            is_local_process_zero=self.state.is_local_process_zero,
-            is_world_process_zero=self.state.is_world_process_zero,
+            is_local_process_zero=self.is_local_process_zero,
+            is_world_process_zero=self.is_world_process_zero,
             stateful_callbacks=[
                 cb for cb in self.callback_handler.callbacks + [self.control] if isinstance(cb, ExportableState)
             ],
