@@ -108,10 +108,10 @@ class BgeRetrieverDataset(BaseNLPDataset):
             passages.append(pos)
 
             if len(neg_passage) < self.config.train_group_size - 1:
-                num = math.ceil((self.config.train_group_size - 1) / len(self.dataset[item]['neg']))
-                negs = random.sample(self.dataset[item]['neg'] * num, self.config.train_group_size - 1)
+                num = math.ceil((self.config.train_group_size - 1) / len(item['neg']))
+                negs = random.sample(item['neg'] * num, self.config.train_group_size - 1)
             else:
-                negs = random.sample(self.dataset[item]['neg'], self.config.train_group_size - 1)
+                negs = random.sample(item['neg'], self.config.train_group_size - 1)
             passages.extend(negs)
 
             if self.config.passage_instruction_for_retrieval is not None:
@@ -159,10 +159,10 @@ class BgeRetrieverEvalDataset(BaseNLPDataset):
             passages.append(pos)
 
             if len(neg_passage) < self.config.train_group_size - 1:
-                num = math.ceil((self.config.train_group_size - 1) / len(self.dataset[item]['neg']))
-                negs = random.sample(self.dataset[item]['neg'] * num, self.config.train_group_size - 1)
+                num = math.ceil((self.config.train_group_size - 1) / len(item['neg']))
+                negs = random.sample(item['neg'] * num, self.config.train_group_size - 1)
             else:
-                negs = random.sample(self.dataset[item]['neg'], self.config.train_group_size - 1)
+                negs = random.sample(item['neg'], self.config.train_group_size - 1)
             passages.extend(negs)
 
             if self.config.passage_instruction_for_retrieval is not None:
