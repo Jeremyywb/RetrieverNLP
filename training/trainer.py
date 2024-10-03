@@ -843,7 +843,7 @@ class Trainer:
         base_config = {"warmup_ratio":warmup_ratio}
         scheduler_params = scheduler_config_params[scheduler_name]
         scheduler_params.update(base_config)
-
+        scheduler_params['name'] = scheduler_name
         name = ScheType(scheduler_name)
         config_class = TYPE_TO_SCHEDULER_CFG_CLS[name]
         if not config_class:
