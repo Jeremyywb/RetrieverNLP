@@ -279,6 +279,7 @@ class RetrieverModelConfig(BaseConfig):
     name                : str   = None
     auto_fullfill_paths : list  = field(default_factory=lambda: ['model_path','output_dir'])
 
+
 @validate_fields
 @dataclass
 class TrainingConfigs(BaseConfig):
