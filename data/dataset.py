@@ -96,8 +96,10 @@ class BgeRetrieverDataset(BaseNLPDataset):
         """
         for item in self.data:
             query = item['query']
+            if not isinstance(query, list):
+                query = [query]
             if self.config.query_instruction_for_retrieval is not None:
-                query = [self.args.query_instruction_for_retrieval + query]
+                query = [self.args.query_instruction_for_retrieval + q for q in query]
 
             passages = []
             pos_passage = item['pos']
@@ -147,8 +149,10 @@ class BgeRetrieverEvalDataset(BaseNLPDataset):
         """
         for item in self.data:
             query = item['query']
+            if not isinstance(query, list):
+                query = [query]
             if self.config.query_instruction_for_retrieval is not None:
-                query = [self.args.query_instruction_for_retrieval + query]
+                query = [self.args.query_instruction_for_retrieval + q for q in query]
 
             passages = []
             pos_passage = item['pos']
