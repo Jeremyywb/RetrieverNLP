@@ -1,7 +1,7 @@
 import torch
 from collections import OrderedDict
 from dataclasses import dataclass,fields, is_dataclass
-from typing import Optional, Tuple, Any
+from typing import Optional, Tuple, Any, Dict, NamedTuple
 
 class ModelOutput(OrderedDict):
     """
@@ -80,3 +80,7 @@ class BgeRetrieverModelOuput(ModelOutput):
     q_reps: torch.FloatTensor = None
     p_reps: torch.FloatTensor = None
 
+class TrainOutput(NamedTuple):
+    global_step: int
+    training_loss: float
+    metrics: Dict[str, float]

@@ -1,0 +1,151 @@
+name: bge-emb-v1
+trainset:
+  name: bge_retriever_train
+  passage_instruction_for_retrieval:
+  query_instruction_for_retrieval:
+  train_group_size: 16
+  passage_max_len: 1024
+  query_max_len: 1024
+  json_path: 
+  csv_path: 
+validset:
+  name: bge_retriever_valid
+  passage_instruction_for_retrieval:
+  query_instruction_for_retrieval:
+  train_group_size: 16
+  passage_max_len: 1024
+  query_max_len: 1024
+  json_path: 
+  csv_path: 
+train_dataloader:
+  name: train_dataloader
+  batch_size: 8
+  num_workers: 4
+  pin_memory: true
+  drop_last: true
+  shuffle: true
+valid_dataloader:
+  name: valid_dataloader
+  batch_size: 8
+  num_workers: 4
+  pin_memory: true
+  drop_last: false
+  shuffle: false
+test_dataloader:
+  name: test_dataloader
+  batch_size: 8
+  num_workers: 4
+  pin_memory: true
+  drop_last: false
+  shuffle: false
+
+model:
+  name: bge_embedding
+  load_from_pretrained_path: false
+  load_from_finetuned_path: false
+  inbatch_for_long_passage: 8
+  sentence_pooling_method: cls
+  negatives_cross_device: false
+  output_hidden_states: false
+  use_inbatch_neg: false
+  model_path: resource/bge-emb-v1-pt
+  temperature: 1
+  model_name: BAAI/bge-large-en-v1.5
+  output_dir: resource/bge-emb-v1-ft
+  normlized: true
+  num_labels: 1
+
+callbacks:
+  name: callbacks
+  early_stopping_patience: 5
+  early_stopping_threshold: 0.0
+  load_best_model_at_end: true
+  metric_for_best_model: AP@25
+  logging_first_step: true
+  logging_steps: 1
+  eval_steps: 1  # 配合 gradient_accumulation_steps 使用
+  save_steps: 0.3
+  greater_is_better: true
+  logging_strategy: steps
+  eval_strategy: steps
+  save_strategy: steps
+  eval_delay: 2
+scheulder:
+  name: cosine
+  warmup_ratio: 0.2
+  linear:
+    last_epoch: -1
+  cosine:
+    num_cycles: 0.5
+    last_epoch: -1
+  cosine_with_restarts:
+    num_cycles: 1.0
+    last_epoch: -1
+  polynomial:
+    lr_end: 0.0000001
+    power: 1.
+    last_epoch: -1
+  constant:
+    last_epoch: -1
+  constant_with_warmup:
+    last_epoch: -1
+  inverse_sqrt:
+    last_epoch: -1
+  reduce_lr_on_plateau:
+    mode: min
+    factor: 0.1
+    patience: 10
+    threshold: 0.0001
+    threshold_mode: rel
+    cooldown: 0
+    min_lr: 0
+    eps: 1e-08
+  cosine_with_min_lr:
+    min_lr: 0.0000001
+    num_cycles: 0.5
+    min_lr_rate: null
+    last_epoch: -1
+
+optim:
+  name: optim
+  optimizer_name: adamw
+  learning_rate: 0.00001
+  weight_decay: 0.005
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  eps: 0.000001
+  LLDR:
+trainer:
+  trainerType: bge_retriever_trainer
+  name: trainer
+  input: resource/input/bge-data.json
+  split_train_valid_rate: 0.8
+  num_devices: 1
+  num_freeze_layers: null
+  warmup_ratio: 0.2
+  num_train_epochs: 4
+  gradient_accumulation_steps: 64 # 8*64 = 512
+  fp16: false
+  max_grad_norm: null
+  load_best_model_at_end : true
+  torch_empty_cache_steps: 2
+  evaluates:
+    evaluate_on_train: true
+    evaluate_on_valid: true
+    evaluate_on_test: false
+  include_for_metrics : start,loss,end  # add parameters between start and end
+  task: retrieval
+  eval_do_concat_batches: true
+  passages_csv_path: resource/input/passages.csv
+  backbone_with_params_only: true
+  best_model_name: bge-emb-v1-bst.pth
+
+  # name: trainer
+  # max_epochs: 10
+  # max_steps: -1
+  # num_nodes: 1
+  # num_processes_per_node: 1
+  # num_processes: 1
+  # num_threads_per_process: 1
+  # num_threads: 1
+  # num_workers: 1

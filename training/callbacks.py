@@ -372,6 +372,12 @@ class TrainerCallback:
         """
         pass
 
+    def on_pre_optimizer_step(self, args: CallbackConfigs, state: TrainerState, control: TrainerControl, **kwargs):
+        """
+        Event called before the optimizer step but after gradient clipping. Useful for monitoring gradients.
+        """
+        pass
+
     def on_predict(self, args: CallbackConfigs, state: TrainerState, control: TrainerControl, metrics, **kwargs):
         """
         Event called after a successful prediction.
@@ -490,7 +496,10 @@ class CallbackHandler(TrainerCallback):
     def on_evaluate(self, args: CallbackConfigs, state: TrainerState, control: TrainerControl, metrics):
         control.should_evaluate = False
         return self.call_event("on_evaluate", args, state, control, metrics=metrics)
-
+    
+    def on_pre_optimizer_step(self, args: CallbackConfigs, state: TrainerState, control: TrainerControl):
+        return self.call_event("on_pre_optimizer_step", args, state, control)
+    
     def on_predict(self, args: CallbackConfigs, state: TrainerState, control: TrainerControl, metrics):
         return self.call_event("on_predict", args, state, control, metrics=metrics)
 
@@ -639,17 +648,18 @@ class ProgressCallback(TrainerCallback):
             self.prediction_bar = None
 
     def on_log(self, args, state, control, logs=None, **kwargs):
-        if state.is_world_process_zero and self.training_bar is not None:
-            # make a shallow copy of logs so we can mutate the fields copied
-            # but avoid doing any value pickling.
-            shallow_logs = {}
-            for k, v in logs.items():
-                shallow_logs[k] = v
-            _ = shallow_logs.pop("total_flos", None)
-            # round numbers so that it looks better in console
-            if "epoch" in shallow_logs:
-                shallow_logs["epoch"] = round(shallow_logs["epoch"], 2)
-            self.training_bar.write(str(shallow_logs))
+        pass
+        # if state.is_world_process_zero and self.training_bar is not None:
+        #     # make a shallow copy of logs so we can mutate the fields copied
+        #     # but avoid doing any value pickling.
+        #     shallow_logs = {}
+        #     for k, v in logs.items():
+        #         shallow_logs[k] = v
+        #     _ = shallow_logs.pop("total_flos", None)
+        #     # round numbers so that it looks better in console
+        #     if "epoch" in shallow_logs:
+        #         shallow_logs["epoch"] = round(shallow_logs["epoch"], 2)
+        #     self.training_bar.write(str(shallow_logs))
 
     def on_train_end(self, args, state, control, **kwargs):
         if not state.is_epoch_progress_bar_enabled:

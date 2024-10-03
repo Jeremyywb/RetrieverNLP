@@ -11,7 +11,7 @@ from ..config.configs import RetrieverModelConfig
 
 logger = get_logger(__name__)
 
-class BiEncoderModel(nn.Module):
+class BgeBiEncoderModel(nn.Module):
     def __init__(self, modelconfig : RetrieverModelConfig ):
         super().__init__()
 
@@ -54,13 +54,16 @@ class BiEncoderModel(nn.Module):
 
         for attr in ['hidden_dropout','hidden_dropout_prob',
                     'attention_dropout','attention_probs_dropout_prob']:
-            if hasattr(self.config,'hidden_dropout_prob'):
-                 setattr(self.config,'hidden_dropout_prob',0.0)
+            if hasattr(self.config,attr):
+                 setattr(self.config,attr,0.0)
 
         self.config.save_pretrained(self.output_dir)
+        self.config.save_pretrained(self.model_path)
 
 
-        self.model = AutoModel.from_pretrained(model_name_or_path , config=self.config)
+        self.backbone = AutoModel.from_pretrained(model_name_or_path , config=self.config)
+        if not self.load_from_pretrained_path or not self.load_from_finetuned_path:
+            self.backbone.save_pretrained(self.model_path)
         
         self.cross_entropy = nn.CrossEntropyLoss(reduction='mean')
 
@@ -81,8 +84,13 @@ class BiEncoderModel(nn.Module):
             self.process_rank = dist.get_rank()
             self.world_size = dist.get_world_size()
 
+    def freeze_layers(self, num_layers):
+        for i in range(0,num_layers,1):
+            for name, param in self.backbone.encoder.layer[i].named_parameters():
+                param.requires_grad = False
+
     def gradient_checkpointing_enable(self, **kwargs):
-        self.model.gradient_checkpointing_enable(**kwargs)
+        self.backbone.gradient_checkpointing_enable(**kwargs)
 
     def sentence_embedding(self, hidden_state, mask):
         if self.sentence_pooling_method == 'mean':
@@ -95,7 +103,7 @@ class BiEncoderModel(nn.Module):
     def encode(self, features):
         if features is None:
             return None
-        psg_out = self.model(**features, return_dict=True)
+        psg_out = self.backbone(**features, return_dict=True)
         p_reps = self.sentence_embedding(psg_out.last_hidden_state, features['attention_mask'])
         if self.normlized:
             p_reps = torch.nn.functional.normalize(p_reps, dim=-1)
@@ -173,9 +181,9 @@ class BiEncoderModel(nn.Module):
         return all_tensors
 
     def save(self, output_dir: str):
-        state_dict = self.model.state_dict()
+        state_dict = self.backbone.state_dict()
         state_dict = type(state_dict)(
             {k: v.clone().cpu()
              for k,
                  v in state_dict.items()})
-        self.model.save_pretrained(output_dir, state_dict=state_dict)
+        self.backbone.save_pretrained(output_dir, state_dict=state_dict)
