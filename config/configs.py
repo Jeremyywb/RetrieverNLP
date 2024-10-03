@@ -256,7 +256,7 @@ class TrainerConfig(BaseConfig):
     input                       : str   = None
     fp16                        : bool  = None
     task                        : str   = None
-    auto_fullfill_paths         : list  = field(default_factory=lambda: ['passages_csv_path'])
+    auto_fullfill_paths         : list  = field(default_factory=lambda: ['passages_csv_path','input'])
 
 @validate_fields
 @dataclass

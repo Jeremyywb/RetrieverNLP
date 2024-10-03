@@ -60,7 +60,6 @@ class BgeBiEncoderModel(nn.Module):
         self.config.save_pretrained(self.output_dir)
         self.config.save_pretrained(self.model_path)
 
-
         self.backbone = AutoModel.from_pretrained(model_name_or_path , config=self.config)
         if not self.load_from_pretrained_path or not self.load_from_finetuned_path:
             self.backbone.save_pretrained(self.model_path)
