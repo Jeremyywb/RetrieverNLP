@@ -655,6 +655,7 @@ class Trainer:
 
 
     def get_optimizer_and_scheduler(self):
+        print(self.args.optim)
         if self.args.trainer.num_freeze_layers is not None:
             layers = list(self.model.backbone.encoder.layer[ self.args.trainer.num_freeze_layers:])
         else:
@@ -682,7 +683,7 @@ class Trainer:
                     'weight_decay':0.0
                 }
             ])
-        optimizer_name = self.args.optim.pop('optimizer_name')
+        optimizer_name = self.args.optim.optimizer_name
         optimizer_params = {
             'lr':_LR,
             'weight_decay':_WD,
