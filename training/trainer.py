@@ -63,8 +63,8 @@ is_torch_greater_or_equal_than_1_13 = parsed_torch_version_base >= version.parse
 
 TYPE_TO_DATASET_CLS = {
         DatasetType.BGERETRIEVERTRAIN:BgeRetrieverDataset,
-        DatasetType.BGERETRIEVERVALID:BgeRetrieverDataset,
-        DatasetType.BGERETRIEVERTEST:BgeRetrieverDataset,
+        DatasetType.BGERETRIEVERVALID:BgeRetrieverEvalDataset,
+        DatasetType.BGERETRIEVERTEST:BgeRetrieverEvalDataset,
 
 }
 
@@ -73,8 +73,8 @@ TYPE_TO_CONFIG_CLS = {
         ConfigType.VALIDSET:RetrieverDataConfig,
         ConfigType.TESTSET:RetrieverDataConfig,
         ConfigType.BGERETRIEVERTRAIN:RetrieverDataConfig,
-        ConfigType.BGERETRIEVERVALID:BgeRetrieverEvalDataset,
-        ConfigType.BGERETRIEVERTEST:BgeRetrieverEvalDataset,
+        ConfigType.BGERETRIEVERVALID:RetrieverDataConfig,
+        ConfigType.BGERETRIEVERTEST:RetrieverDataConfig,
         ConfigType.TRAINLOADER:DataLoaderConfig,
         ConfigType.VALIDLOADER:DataLoaderConfig,
         ConfigType.TESTLOADER:DataLoaderConfig,
