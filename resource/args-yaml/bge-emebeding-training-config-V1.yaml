@@ -1,6 +1,7 @@
 name: bge-emb-v1
 trainset:
   name: bge_retriever_train
+  dataset_type: bge_retriever_data_train
   passage_instruction_for_retrieval:
   query_instruction_for_retrieval:
   train_group_size: 16
@@ -10,6 +11,7 @@ trainset:
   csv_path: 
 validset:
   name: bge_retriever_valid
+  dataset_type: bge_retriever_data_valid
   passage_instruction_for_retrieval:
   query_instruction_for_retrieval:
   train_group_size: 16

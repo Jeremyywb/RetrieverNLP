@@ -782,7 +782,7 @@ class Trainer:
                 file.write(json.dumps(line) + '\n') # 写入文件 
 
     def get_train_dataset(self):
-        name = DatasetType(self.args.trainset.name)
+        name = DatasetType(self.args.trainset.dataset_type)
         _cls = TYPE_TO_DATASET_CLS[name]
         if self.args.trainset.json_path is not None:
             return _cls.load_from_json(self.args.trainset,self.tokenizer)
@@ -792,7 +792,7 @@ class Trainer:
             raise ValueError("No input file provided")
 
     def get_eval_dataset(self):
-        name = DatasetType(self.args.validset.name)
+        name = DatasetType(self.args.validset.dataset_type)
         _cls = TYPE_TO_DATASET_CLS[name]
         if self.args.validset.json_path is not None:
             return _cls.load_from_json(self.args.validset,self.tokenizer)

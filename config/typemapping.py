@@ -43,9 +43,9 @@ class ModelType(ExplicitEnum):
 
 
 class DatasetType(ExplicitEnum):
-    BGERETRIEVERTRAIN = 'bge_retriever_train'
-    BGERETRIEVERVALID = 'bge_retriever_valid'
-    BGERETRIEVERTEST = 'bge_retriever_test'
+    BGERETRIEVERTRAIN = 'bge_retriever_data_train'
+    BGERETRIEVERVALID = 'bge_retriever_data_valid'
+    BGERETRIEVERTEST = 'bge_retriever_data_test'
 
 
 class TrainerConfigType(ExplicitEnum):
