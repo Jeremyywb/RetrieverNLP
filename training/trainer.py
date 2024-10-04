@@ -606,8 +606,8 @@ class Trainer:
         self.best_model_previous  =  (Path(output_dir)/'best_model_checkpoint_prev').as_posix()
         
 
-        if metrics is not None and self.args.metric_for_best_model is not None:
-            metric_to_check = self.args.metric_for_best_model
+        if metrics is not None and self.args.callbacks.metric_for_best_model is not None:
+            metric_to_check = self.args.callbacks.metric_for_best_model
             if not metric_to_check.startswith("eval_"):
                 metric_to_check = f"eval_{metric_to_check}"
             try:
