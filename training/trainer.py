@@ -324,7 +324,7 @@ class Trainer:
         total_batched_samples = 0
         for epoch in range(self.args.trainer.num_train_epochs):
             steps_in_epoch = len(self.train_dataloader)
-            self.train_dataloader.set_epoch(epoch)
+            # self.train_dataloader.set_epoch(epoch)
             for step, batch in enumerate(self.train_dataloader):
                 total_batched_samples += self.args.train_dataloader.batch_size
                 
