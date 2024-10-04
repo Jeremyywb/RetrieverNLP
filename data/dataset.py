@@ -121,7 +121,11 @@ class BgeRetrieverDataset(BaseNLPDataset):
             
             query = self.prepare_tokens(self.tokenizer,  query, self.config.query_max_len )
             passages = self.prepare_tokens( self.tokenizer,   passages, self.config.passage_max_len )
-            self.samples.append({'query':query,"passages":passages})
+            self.samples.append({
+                'query':query,
+                "passages":passages,
+                "passag_id": torch.tensor([item['passag_id']], dtype = torch.long)
+                })
 
     def prepare_tokens(self, tokenizer, texts, max_len):
         inputs = tokenizer.batch_encode_plus(
