@@ -211,7 +211,7 @@ class Trainer:
             raise ValueError("data_collator is required")
         
 
-        self.data_collator = data_collator()
+        self.data_collator = data_collator(self.tokenizer)
 
         if isinstance(model_name_or_instance, str):
             name = ModelType(self.args.model.model_type)
