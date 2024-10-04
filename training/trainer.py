@@ -469,7 +469,7 @@ class Trainer:
         self.model.eval()
         passages_inputs = self.train_dataset.prepare_tokens(self.tokenizer, passages, self.args.trainset.passage_max_len)
         all_psg_preds = []
-        psg_batch_size = self.args.eval_dataloader.batch_size*2
+        psg_batch_size = self.args.valid_dataloader.batch_size*2
         for i in range(0,len(passages),psg_batch_size):
             batch = {k:v[i:i+psg_batch_size] for k,v in passages_inputs.items()}
             _max_length = batch['attention_mask'].sum(dim=1).max().item()
