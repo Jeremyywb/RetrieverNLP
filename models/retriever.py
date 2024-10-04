@@ -164,8 +164,20 @@ class BgeBiEncoderModel(nn.Module):
             p_reps=None,
         )
 
+    # def compute_loss(self, scores, target):
+    #     return self.cross_entropy(scores, target)
     def compute_loss(self, scores, target):
-        return self.cross_entropy(scores, target)
+        # scores: 形状为 (batch_size, num_docs)，其中包含每个文档的分数
+        # target: 形状为 (batch_size, 1)，为 1 表示正例，为 0 表示负例
+
+        positive_scores = scores.gather(1, target)  # 获取正例的分数
+        negative_scores = scores.masked_fill(target == 1, float('-inf'))  # 将正例分数mask掉，负例保留
+
+        # Triplet Loss
+        margin = 1.0  # 可以调整这个值
+        loss = torch.clamp(positive_scores - negative_scores + margin, min=0)
+
+        return loss.mean()
 
     def _dist_gather_tensor(self, t: Optional[torch.Tensor]):
         if t is None:
