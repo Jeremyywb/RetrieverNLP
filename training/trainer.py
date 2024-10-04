@@ -468,7 +468,7 @@ class Trainer:
     def predict_passages(self,passages):
         self.model.eval()
         passages_inputs = self.train_dataset.prepare_tokens(self.tokenizer, passages, self.args.trainset.passage_max_len)
-        passages_inputs = {k:v.to(self.args.device) for k,v in passages_inputs.items()}
+        passages_inputs = {k:v.to(self.device) for k,v in passages_inputs.items()}
         _max_length = passages_inputs['attention_mask'].sum(dim=1).max().item()
         for k,v in passages_inputs.items():
             passages_inputs[k] = v[:,:_max_length]
