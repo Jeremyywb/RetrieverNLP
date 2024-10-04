@@ -8,6 +8,8 @@ class BgeEmbedCollator(DataCollatorWithPadding):
     def __call__(self, batched_item):
         batched_collate = self.recursive_collate(batched_item)
         for key in batched_collate:
+            if not isinstance(batched_collate[key], dict):
+                continue
             if 'attention_mask' in batched_collate[key]:
                 max_length_in_batch = batched_collate[key]['attention_mask'].sum(dim=1).max().item()
                 for subkey in batched_collate[key]:
