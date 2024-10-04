@@ -276,8 +276,8 @@ class Trainer:
         self._train_batch_size = self.args.train_dataloader.batch_size
 
     def train(self):
-        self.callback_handler.on_train_begin(self.args.callbacks, self.state, self.control)
-        self.control = self.callback_handler.on_train_begin(self.args, self.state, self.control)
+        # self.callback_handler.on_train_begin(self.args.callbacks, self.state, self.control)
+        # self.control = self.callback_handler.on_train_begin(self.args, self.state, self.control)
         self.state.is_hyper_param_search = False
         self.state.train_batch_size = self.args.train_dataloader.batch_size
 
