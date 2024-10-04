@@ -468,13 +468,21 @@ class Trainer:
     def predict_passages(self,passages):
         self.model.eval()
         passages_inputs = self.train_dataset.prepare_tokens(self.tokenizer, passages, self.args.trainset.passage_max_len)
-        passages_inputs = {k:v.to(self.device) for k,v in passages_inputs.items()}
-        _max_length = passages_inputs['attention_mask'].sum(dim=1).max().item()
-        for k,v in passages_inputs.items():
-            passages_inputs[k] = v[:,:_max_length]
-        outputs = self.model.encode_passages(passages_inputs)
-        del passages_inputs
-        return outputs
+        all_psg_preds = []
+        psg_batch_size = self.args.eval_dataloader.batch_size*2
+        for i in range(0,len(passages),psg_batch_size):
+            batch = {k:v[i:i+psg_batch_size] for k,v in passages_inputs.items()}
+            _max_length = batch['attention_mask'].sum(dim=1).max().item()
+            for k,v in batch.items():
+                batch[k] = v[:,:_max_length]
+            batch = self._prepare_input(batch)
+            outputs = self.model.encode_passages(batch)
+            all_psg_preds.append(outputs.cpu())
+            del batch, outputs
+            torch.cuda.empty_cache()
+        ouptut = torch.cat(all_psg_preds,dim=0)
+        del all_psg_preds
+        return ouptut
 
 
     def evaluate_loop(self,eval_name,evaluate_dataloader,description):
