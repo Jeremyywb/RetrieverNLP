@@ -136,7 +136,7 @@ trainer:
     evaluate_on_train: false
     evaluate_on_valid: true
     evaluate_on_test: false
-  include_for_metrics : start,loss,end  # add parameters between start and end
+  include_for_metrics : start,loss,passages,end  # add parameters between start and end
   task: retrieval
   eval_do_concat_batches: true
   passages_csv_path: resource/input/passages.csv
