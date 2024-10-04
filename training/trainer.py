@@ -526,7 +526,8 @@ class Trainer:
                 all_losses.add(losses)
             if logits is not None:
                 all_preds.add(logits)
-                observed_num_samples += len(all_preds)
+                observed_batch_size = logits.shape[0]
+                observed_num_samples += observed_batch_size
             if labels is not None:
                 all_labels.add(labels)
             if inputs is not None:
