@@ -156,7 +156,7 @@ class BgeBiEncoderModel(nn.Module):
         else:
             scores = self.compute_similarity(q_reps, p_reps)
             loss = None
-        del q_reps
+        del p_reps
         return BgeRetrieverModelOuput(
             loss=loss,
             scores=scores,
