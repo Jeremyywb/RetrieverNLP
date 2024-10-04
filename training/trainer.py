@@ -412,6 +412,7 @@ class Trainer:
         loss = outputs.loss
         loss = loss / self.args.trainer.gradient_accumulation_steps
         loss.backward()
+        del inputs, outputs
         if self.args.trainer.torch_empty_cache_steps is not None:
             if (self.state.global_step+1) % self.args.trainer.torch_empty_cache_steps == 0:
                 torch.cuda.empty_cache()

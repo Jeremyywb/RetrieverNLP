@@ -131,7 +131,7 @@ trainer:
   fp16: false
   max_grad_norm: null
   load_best_model_at_end : true
-  torch_empty_cache_steps: 2
+  torch_empty_cache_steps: 1
   evaluates:
     evaluate_on_train: true
     evaluate_on_valid: true
