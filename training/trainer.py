@@ -280,6 +280,7 @@ class Trainer:
         # self.control = self.callback_handler.on_train_begin(self.args, self.state, self.control)
         self.state.is_hyper_param_search = False
         self.state.train_batch_size = self.args.train_dataloader.batch_size
+        self.state.is_epoch_progress_bar_enabled = self.args.callbacks.is_epoch_progress_bar_enabled
 
         if self.args.callbacks.logging_steps is not None:
             if self.args.callbacks.logging_steps < 1:
@@ -460,7 +461,7 @@ class Trainer:
             self.control = self.callback_handler.on_evaluate(self.args.callbacks, self.state, self.control, metrics)
         
         if self.control.should_save:
-            self._save_checkpoint()
+            self._save_checkpoint(metrics)
             self.control = self.callback_handler.on_save(self.args.callbacks, self.state, self.control)
     
     def evaluate(self,eval_name:str,evaluate_dataloader:Union[Dict[str,DataLoader],DataLoader]):

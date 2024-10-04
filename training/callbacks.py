@@ -738,6 +738,7 @@ class EarlyStoppingCallback(TrainerCallback, ExportableState):
         self.check_metric_value(args, state, control, metric_value)
         if self.early_stopping_patience_counter >= self.early_stopping_patience:
             control.should_training_stop = True
+        return control
 
     def state(self) -> dict:
         return {

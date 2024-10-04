@@ -207,22 +207,29 @@ class WarmupStableDecaySchedulerConfig(SchedulerConfig):
     num_cycles: float = 0.5
 
 
+
+
 @validate_fields
 @dataclass
 class CallbackConfigs(BaseConfig):
-    load_best_model_at_end  : bool = None
-    logging_steps : int = None
-    eval_steps : int = None
-    save_steps : int = None
-    early_stopping_patience  : int = None
-    early_stopping_threshold : float = None
-    metric_for_best_model   : str  = None
-    logging_first_step      : bool = None
-    greater_is_better       : bool = None
-    logging_strategy : str  = None
-    eval_strategy    : str  = None
-    save_strategy    : str  = None
-    eval_delay       : int  = None
+    is_epoch_progress_bar_enabled : bool = None
+    load_best_model_at_end        : bool = None
+    logging_first_step            : bool = None
+    logging_steps                 : int = None
+    eval_steps                    : int = None
+    save_steps                    : int = None
+    early_stopping_patience       : int = None
+    early_stopping_threshold      : float = None
+    metric_for_best_model         : str  = None
+    greater_is_better             : bool = None
+    logging_strategy              : str  = None
+    eval_strategy                 : str  = None
+    save_strategy                 : str  = None
+    eval_delay                    : int  = None
+
+
+
+
 
 @validate_fields
 @dataclass

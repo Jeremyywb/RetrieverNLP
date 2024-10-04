@@ -64,6 +64,7 @@ callbacks:
   early_stopping_threshold: 0.0
   load_best_model_at_end: true
   metric_for_best_model: AP@25
+  is_epoch_progress_bar_enabled: true
   logging_first_step: true
   logging_steps: 1
   eval_steps: 1  # 配合 gradient_accumulation_steps 使用
@@ -72,7 +73,7 @@ callbacks:
   logging_strategy: steps
   eval_strategy: steps
   save_strategy: steps
-  eval_delay: 2
+  eval_delay: 3
 scheulder:
   name: cosine
   warmup_ratio: 0.2
