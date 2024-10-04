@@ -128,7 +128,7 @@ trainer:
   warmup_ratio: 0.2
   num_train_epochs: 4
   gradient_accumulation_steps: 64 # 8*64 = 512
-  fp16: false
+  fp16: true
   max_grad_norm: null
   load_best_model_at_end : true
   torch_empty_cache_steps: 1
@@ -142,6 +142,7 @@ trainer:
   passages_csv_path: resource/input/passages.csv
   backbone_with_params_only: true
   best_model_name: bge-emb-v1-bst.pth
+
 
   # name: trainer
   # max_epochs: 10

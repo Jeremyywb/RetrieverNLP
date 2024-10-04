@@ -50,7 +50,7 @@ from ..config.configs import (
 
 )
 from collections.abc import Mapping
-
+from torch.cuda import amp
 from ..utils.utilities import EvalLoopContainer
 import numpy as np
 from ..data.dataset import BgeRetrieverEvalDataset
@@ -322,13 +322,15 @@ class Trainer:
         grad_norm: Optional[float] = None
         self.control = self.callback_handler.on_train_begin(self.args.callbacks, self.state, self.control)
         total_batched_samples = 0
+        if self.args.trainer.fp16:
+            scaler = amp.GradScaler(enabled=True)
         for epoch in range(self.args.trainer.num_train_epochs):
             steps_in_epoch = len(self.train_dataloader)
             # self.train_dataloader.set_epoch(epoch)
             for step, batch in enumerate(self.train_dataloader):
                 total_batched_samples += 1
                 
-                tr_loss_step = self.training_step(batch, step)
+                tr_loss_step = self.training_step(batch, scaler)
                 if tr_loss.device != tr_loss_step.device:
                     raise ValueError("tr_loss and tr_loss_step should be on the same device")
                 tr_loss += tr_loss_step
@@ -346,7 +348,12 @@ class Trainer:
                         grad_norm = torch.nn.utils.clip_grad_norm_(self.model.parameters(), self.args.trainer.max_grad_norm)
                     
                     self.control = self.callback_handler.on_pre_optimizer_step(self.args.callbacks, self.state, self.control)
-                    self.optimizer.step()
+                    if self.args.trainer.fp16:
+                        scaler.step(self.optimizer)
+                        scaler.update()
+                    else:
+                        self.optimizer.step()
+
                     self.control = self.callback_handler.on_optimizer_step(self.args.callbacks, self.state, self.control)
                     
                     self.lr_scheduler.step()
@@ -403,15 +410,23 @@ class Trainer:
                 kwargs.update({"dtype": self.accelerator.state.deepspeed_plugin.hf_ds_config.dtype()})
             return data.to(**kwargs)
 
-    def training_step(self,batch,step):
+    def training_step(self,batch,scaler):
         self.model.train()
         if self.args.trainer.task == 'retrieval':
             batch.pop('passag_id')
         inputs = self._prepare_input(batch)
-        outputs = self.model(**inputs)
-        loss = outputs.loss
+        if self.args.trainer.fp16:
+            with amp.autocast():
+                outputs = self.model(**inputs)
+                loss = outputs.loss
+        else:
+            outputs = self.model(**inputs)
+            loss = outputs.loss
         loss = loss / self.args.trainer.gradient_accumulation_steps
-        loss.backward()
+        if self.args.trainer.fp16:
+            scaler.scale(loss).backward()
+        else:
+            loss.backward()
         del inputs, outputs
         if self.args.trainer.torch_empty_cache_steps is not None:
             if (self.state.global_step+1) % self.args.trainer.torch_empty_cache_steps == 0:
@@ -477,7 +492,8 @@ class Trainer:
             for k,v in batch.items():
                 batch[k] = v[:,:_max_length]
             batch = self._prepare_input(batch)
-            outputs = self.model.encode_passages(batch)
+            with torch.no_grad():
+                outputs = self.model.encode_passages(batch)
             all_psg_preds.append(outputs.cpu())
             del batch, outputs
             torch.cuda.empty_cache()
@@ -568,7 +584,8 @@ class Trainer:
         if self.args.trainer.task == 'retrieval':
             labels = inputs.pop('passag_id')
         inputs = self._prepare_input(inputs)
-        outputs = self.model(**inputs)
+        with torch.no_grad():
+            outputs = self.model(**inputs)
         logits = outputs.q_reps
         loss = outputs.loss
         return loss, logits, labels
