@@ -133,7 +133,7 @@ trainer:
   load_best_model_at_end : true
   torch_empty_cache_steps: 1
   evaluates:
-    evaluate_on_train: true
+    evaluate_on_train: false
     evaluate_on_valid: true
     evaluate_on_test: false
   include_for_metrics : start,loss,end  # add parameters between start and end
