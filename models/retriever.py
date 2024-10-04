@@ -108,15 +108,15 @@ class BgeBiEncoderModel(nn.Module):
             p_reps = torch.nn.functional.normalize(p_reps, dim=-1)
         return p_reps.contiguous()
     
-    def encode_passages(self, passage):
+    def encode_passages(self, passages):
         # new implement
-        total_passages = passage['input_ids'].size(0)
+        total_passages = passages['input_ids'].size(0)
         if total_passages <= self.inbatch_for_long_passage:
-            return self.encode(passage)
+            return self.encode(passages)
         else:
             p_reps_list = []
             for i in range(0, total_passages, self.inbatch_for_long_passage):
-                p_rep = self.encode({key: val[i:i + self.inbatch_for_long_passage] for key, val in passage.items()})
+                p_rep = self.encode({key: val[i:i + self.inbatch_for_long_passage] for key, val in passages.items()})
                 p_reps_list.append( p_rep )
             p_reps = torch.cat( p_reps_list, axis=0 )
             del p_reps_list
@@ -127,10 +127,10 @@ class BgeBiEncoderModel(nn.Module):
             return torch.matmul(q_reps, p_reps.transpose(0, 1))
         return torch.matmul(q_reps, p_reps.transpose(-2, -1))
 
-    def forward(self, query: Dict[str, Tensor] = None, passage: Dict[str, Tensor] = None, teacher_score: Tensor = None):
+    def forward(self, query: Dict[str, Tensor] = None, passages: Dict[str, Tensor] = None, teacher_score: Tensor = None):
 
         q_reps = self.encode(query)
-        p_reps = self.encode_passages(passage)
+        p_reps = self.encode_passages(passages)
 
         if self.training:
             if self.negatives_cross_device and self.use_inbatch_neg:

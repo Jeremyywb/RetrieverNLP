@@ -326,7 +326,7 @@ class Trainer:
             steps_in_epoch = len(self.train_dataloader)
             # self.train_dataloader.set_epoch(epoch)
             for step, batch in enumerate(self.train_dataloader):
-                total_batched_samples += self.args.train_dataloader.batch_size
+                total_batched_samples += 1
                 
                 tr_loss_step = self.training_step(batch, step)
                 if tr_loss.device != tr_loss_step.device:
@@ -339,7 +339,7 @@ class Trainer:
                     steps_in_epoch<= self.accumulation_steps and (step+1) == steps_in_epoch
                 )
                 if (
-                    (self.state.global_step+1) % self.accumulation_steps == 0 or
+                    total_batched_samples % self.accumulation_steps == 0 or
                     is_last_step_and_steps_less_than_grad_acc
                 ):
                     if self.args.trainer.max_grad_norm is not None:
@@ -357,7 +357,7 @@ class Trainer:
                     self.state.epoch = epoch + (step+1) / steps_in_epoch
                     self.control = self.callback_handler.on_step_end(self.args.callbacks, self.state, self.control)
 
-                    self._maybe_log_save_evaluate(tr_loss, grad_norm, epoch, self.state, self.control)
+                    self._maybe_log_save_evaluate(tr_loss, grad_norm)
                 else:
                     self.control = self.callback_handler.on_substep_end(self.args.callbacks, self.state, self.control)
 
@@ -365,7 +365,7 @@ class Trainer:
                     break
 
             self.control = self.callback_handler.on_epoch_end(self.args.callbacks, self.state, self.control)
-            self._maybe_log_save_evaluate(tr_loss, grad_norm, epoch, self.state, self.control)
+            self._maybe_log_save_evaluate(tr_loss, grad_norm)
 
         logger.info("Training completed. do not forget to save the model")
         if self.args.trainer.load_best_model_at_end and self.state.best_model_checkpoint is not None:
@@ -395,7 +395,7 @@ class Trainer:
         elif isinstance(data, (tuple, list)):
             return type(data)(self._prepare_input(v) for v in data)
         elif isinstance(data, torch.Tensor):
-            kwargs = {"device": self.args.device}
+            kwargs = {"device": self.device}
             if self.is_deepspeed_enabled and (torch.is_floating_point(data) or torch.is_complex(data)):
                 # NLP models inputs are int/uint and those get adjusted to the right dtype of the
                 # embedding. Other models such as wav2vec2's inputs are already float and thus
@@ -441,6 +441,7 @@ class Trainer:
             # if evaluate_datasets['evaluate_on_test']:
             #     evaluate_dataloader['test'] = self.get_eval_dataloader()
             metrics = self.evaluate(eval_name='datasets',evaluate_dataloader=evaluate_dataloader)
+            self.control = self.callback_handler.on_evaluate(self.args.callbacks, self.state, self.control, metrics)
         
         if self.control.should_save:
             self._save_checkpoint()
@@ -460,7 +461,7 @@ class Trainer:
             evaluate_dataloader,
             description=f"Evaluation on {eval_name}"
         )
-        self.control = self.callback_handler.on_evaluate(self.args.callbacks, self.state, self.control, output.metrics)
+        
         self.log(output.metrics)
         return output.metrics
     
@@ -653,7 +654,7 @@ class Trainer:
 
         output = {**logs, **{"step": self.state.global_step}}
         self.state.log_history.append(output)
-        self.control = self.callback_handler.on_log(self.args, self.state, self.control, logs)
+        self.control = self.callback_handler.on_log(self.args.callbacks, self.state, self.control, logs)
 
 
     def get_optimizer_and_scheduler(self):
