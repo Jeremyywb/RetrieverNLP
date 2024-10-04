@@ -166,18 +166,42 @@ class BgeBiEncoderModel(nn.Module):
 
     # def compute_loss(self, scores, target):
     #     return self.cross_entropy(scores, target)
-    def compute_loss(self, scores, target):
-        # scores: 形状为 (batch_size, num_docs)，其中包含每个文档的分数
-        # target: 形状为 (batch_size, 1)，为 1 表示正例，为 0 表示负例
-
-        positive_scores = scores.gather(1, target)  # 获取正例的分数
-        negative_scores = scores.masked_fill(target == 1, float('-inf'))  # 将正例分数mask掉，负例保留
-
-        # Triplet Loss
-        margin = 1.0  # 可以调整这个值
-        loss = torch.clamp(positive_scores - negative_scores + margin, min=0)
-
+    def compute_loss(self,scores, target, margin=1.0):
+        """
+        计算 Pairwise Ranking Loss (Hinge Loss)
+        
+        参数:
+        scores: (batch_size, num_doc) - 每个查询的候选文档相似度分数
+        target: (batch_size, 1) - 正样本在每个查询中的索引
+        margin: float - 正样本与负样本的分数差的最小阈值
+        
+        返回:
+        loss: (batch_size,) - 每个查询的损失值
+        """
+        batch_size, num_doc = scores.shape
+        
+        # 去掉 target 的维度，变成 (batch_size,) 
+        target = target
+        
+        # 提取正样本的分数 (batch_size,)
+        positive_scores = scores.gather(1, target.unsqueeze(1)).squeeze(1)
+        
+        # 创建负样本掩码 (正样本位置为 False，负样本位置为 True)
+        negative_mask = torch.ones_like(scores, dtype=torch.bool)
+        negative_mask.scatter_(1, target.unsqueeze(1), False)
+        
+        # 提取所有负样本的分数 (batch_size, num_doc-1)
+        negative_scores = scores.masked_select(negative_mask).view(batch_size, -1)
+        
+        # 计算最大负样本分数 (hardest negative) (batch_size,)
+        hardest_negative_scores = negative_scores.max(dim=1).values
+        
+        # 计算 Hinge Loss
+        loss = F.relu(margin - (positive_scores - hardest_negative_scores))
+        
+        # 返回损失
         return loss.mean()
+
 
     def _dist_gather_tensor(self, t: Optional[torch.Tensor]):
         if t is None:

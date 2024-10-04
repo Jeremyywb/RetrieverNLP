@@ -4,7 +4,7 @@ trainset:
   dataset_type: bge_retriever_data_train
   passage_instruction_for_retrieval:
   query_instruction_for_retrieval:
-  train_group_size: 16
+  train_group_size: 32
   passage_max_len: 1024
   query_max_len: 1024
   json_path: 
@@ -14,7 +14,7 @@ validset:
   dataset_type: bge_retriever_data_valid
   passage_instruction_for_retrieval:
   query_instruction_for_retrieval:
-  train_group_size: 16
+  train_group_size: 32
   passage_max_len: 1024
   query_max_len: 1024
   json_path: 
