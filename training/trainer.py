@@ -211,11 +211,7 @@ class Trainer:
             raise ValueError("data_collator is required")
         
 
-        self.data_collator = data_collator(
-            self.tokenizer,
-            query_max_len=self.args.trainset.query_max_len,
-            passage_max_len=self.args.trainset.passage_max_len
-        )
+        self.data_collator = data_collator()
 
         if isinstance(model_name_or_instance, str):
             name = ModelType(self.args.model.model_type)
