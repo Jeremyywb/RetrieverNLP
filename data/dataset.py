@@ -101,31 +101,31 @@ class BgeRetrieverDataset(BaseNLPDataset):
             if self.config.query_instruction_for_retrieval is not None:
                 query = [self.args.query_instruction_for_retrieval + q for q in query]
 
-            passages = []
+            
             pos_passage = item['pos']
             neg_passage = item['neg']
-
             assert isinstance(pos_passage, list)
             pos = random.choice(pos_passage)
-            passages.append(pos)
 
-            if len(neg_passage) < self.config.train_group_size - 1:
-                num = math.ceil((self.config.train_group_size - 1) / len(item['neg']))
-                negs = random.sample(item['neg'] * num, self.config.train_group_size - 1)
-            else:
-                negs = random.sample(item['neg'], self.config.train_group_size - 1)
-            passages.extend(negs)
+            for i in range(0, len(neg_passage), self.config.train_group_size-1):
+                neg_group = neg_passage[i:i+self.config.train_group_size-1]
+                if len(neg_group) < self.config.train_group_size - 1:
+                    continue
+                passages = []
+                passages.append(pos)
 
-            if self.config.passage_instruction_for_retrieval is not None:
-                passages = [self.config.passage_instruction_for_retrieval+p for p in passages]
-            
-            query = self.prepare_tokens(self.tokenizer,  query, self.config.query_max_len )
-            passages = self.prepare_tokens( self.tokenizer,   passages, self.config.passage_max_len )
-            self.samples.append({
-                'query':query,
-                "passages":passages,
-                "passag_id": torch.tensor([item['passag_id']], dtype = torch.long)
-                })
+
+
+                if self.config.passage_instruction_for_retrieval is not None:
+                    passages = [self.config.passage_instruction_for_retrieval+p for p in passages]
+                
+                query = self.prepare_tokens(self.tokenizer,  query, self.config.query_max_len )
+                passages = self.prepare_tokens( self.tokenizer,   passages, self.config.passage_max_len )
+                self.samples.append({
+                    'query':query,
+                    "passages":passages,
+                    "passag_id": torch.tensor([item['passag_id']], dtype = torch.long)
+                    })
 
     def prepare_tokens(self, tokenizer, texts, max_len):
         inputs = tokenizer.batch_encode_plus(

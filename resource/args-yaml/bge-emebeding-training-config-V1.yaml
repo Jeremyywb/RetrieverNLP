@@ -4,7 +4,7 @@ trainset:
   dataset_type: bge_retriever_data_train
   passage_instruction_for_retrieval:
   query_instruction_for_retrieval:
-  train_group_size: 16
+  train_group_size: 8
   passage_max_len: 1024
   query_max_len: 1024
   json_path: 
@@ -14,7 +14,7 @@ validset:
   dataset_type: bge_retriever_data_valid
   passage_instruction_for_retrieval:
   query_instruction_for_retrieval:
-  train_group_size: 16
+  train_group_size: 8
   passage_max_len: 1024
   query_max_len: 1024
   json_path: 
@@ -68,7 +68,7 @@ callbacks:
   logging_first_step: true
   logging_steps: 1
   eval_steps: 1  # 配合 gradient_accumulation_steps 使用
-  save_steps: 0.3
+  save_steps: 1 # early stopping参考分数
   greater_is_better: true
   logging_strategy: steps
   eval_strategy: steps

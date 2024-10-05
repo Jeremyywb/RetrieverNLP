@@ -221,7 +221,7 @@ class Trainer:
             self.model = model_name_or_instance
 
         if self.args.trainer.num_freeze_layers is not None:
-            self.model.freeze_layers(self.args.model.num_freeze_layers)
+            self.model.freeze_layers(self.args.trainer.num_freeze_layers)
         self.model.to(self.device)
 
         self.train_dataloader = self.get_train_dataloader()
@@ -252,7 +252,7 @@ class Trainer:
             early_stopping_patience=self.args.callbacks.early_stopping_patience,
             early_stopping_threshold=self.args.callbacks.early_stopping_threshold
         )
-        default_callbacks = [DefaultFlowCallback,PrinterCallback, early_stopping_callback ]
+        default_callbacks = [DefaultFlowCallback,PrinterCallback,ProgressCallback, early_stopping_callback ]
         callbacks = default_callbacks if callbacks is None else default_callbacks + callbacks
         self.callback_handler = CallbackHandler(
             callbacks, self.model, self.tokenizer, self.optimizer, self.lr_scheduler
@@ -624,16 +624,18 @@ class Trainer:
                 or self.state.best_model_checkpoint is None
                 or operator(metric_value, self.state.best_metric)
             ):
+                print(f"model improved ! from {self.state.best_metric} to {metric_value} ")
                 self.state.best_metric = metric_value
 
-                if os.path.exists(self.best_model_latest):
+                if os.path.exists(self.best_model_previous):
                     shutil.rmtree(self.best_model_previous)
+                    
                 if os.path.exists(self.best_model_latest):
                     shutil.move(self.best_model_latest, self.best_model_previous)
                     os.mkdir(self.best_model_latest)
                 
                 self._save_model(self.best_model_latest)
-                self.state.best_model_checkpoint = self.best_model_latest   
+                self.state.best_model_checkpoint = self.best_model_latest  
 
     def _save_model(self,output_dir, is_stop_training=False):
         if is_stop_training:
