@@ -689,6 +689,7 @@ class Trainer:
         print(self.args.optim)
         if self.args.trainer.num_freeze_layers is not None:
             layers = list(self.model.backbone.encoder.layer[ self.args.trainer.num_freeze_layers:])
+            print(f"total layers: {len(list(self.model.backbone.encoder.layer))}, freeze layers: {self.args.trainer.num_freeze_layers}")
         else:
             layers = [self.model.backbone.embeddings] + list(self.model.backbone.encoder.layer)
         layers.reverse()

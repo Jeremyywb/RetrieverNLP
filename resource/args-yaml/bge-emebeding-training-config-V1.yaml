@@ -4,7 +4,7 @@ trainset:
   dataset_type: bge_retriever_data_train
   passage_instruction_for_retrieval:
   query_instruction_for_retrieval:
-  train_group_size: 32
+  train_group_size: 16
   passage_max_len: 1024
   query_max_len: 1024
   json_path: 
@@ -14,7 +14,7 @@ validset:
   dataset_type: bge_retriever_data_valid
   passage_instruction_for_retrieval:
   query_instruction_for_retrieval:
-  train_group_size: 32
+  train_group_size: 16
   passage_max_len: 1024
   query_max_len: 1024
   json_path: 
@@ -122,10 +122,10 @@ optim:
 trainer:
   trainerType: bge_retriever_trainer
   name: trainer
-  input: resource/input/bge-data.json
+  input: resource/input/bge-data-v0.json
   split_train_valid_rate: 0.8
   num_devices: 1
-  num_freeze_layers: null
+  num_freeze_layers: 12
   warmup_ratio: 0.2
   num_train_epochs: 4
   gradient_accumulation_steps: 64 # 8*64 = 512

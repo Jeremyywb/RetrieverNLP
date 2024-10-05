@@ -8,6 +8,7 @@ from transformers import AutoModel,AutoConfig
 from ..utils.loggings import get_logger
 from .model_output import BgeRetrieverModelOuput
 from ..config.configs import RetrieverModelConfig
+import torch.nn.functional as F
 
 logger = get_logger(__name__)
 
