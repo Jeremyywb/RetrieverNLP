@@ -312,6 +312,8 @@ class Trainer:
         self.state.num_train_epochs = self.args.trainer.num_train_epochs
         self.state.is_local_process_zero = True
         self.state.is_world_process_zero = True
+        self.state.no_prediction_bar = True
+        
         start_time = time.time()
 
         tr_loss = torch.tensor(0.0).to(self.device)
@@ -327,6 +329,7 @@ class Trainer:
             scaler = amp.GradScaler(enabled=True)
         for epoch in range(self.args.trainer.num_train_epochs):
             steps_in_epoch = len(self.train_dataloader)
+            self.control = self.callback_handler.on_epoch_begin(self.args.callbacks, self.state, self.control)
             # self.train_dataloader.set_epoch(epoch)
             for step, batch in enumerate(self.train_dataloader):
                 total_batched_samples += 1

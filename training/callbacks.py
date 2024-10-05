@@ -599,14 +599,20 @@ class ProgressCallback(TrainerCallback):
     def on_train_begin(self, args, state, control, **kwargs):
         if not state.is_epoch_progress_bar_enabled:
             if state.is_world_process_zero:
-                self.training_bar = tqdm(total=state.max_steps, dynamic_ncols=True)
-            self.current_step = 0
-
-    def on_epoch_begin(self, args, state, control, **kwargs):
-        if state.is_epoch_progress_bar_enabled:
-            if state.is_world_process_zero and has_length(self.train_dataloader):
                 self.training_bar = tqdm(
                     total= state.num_training_steps, 
+                    dynamic_ncols=True,
+                    file=sys.stdout, 
+                    colour='#0052d9',
+                    ncols=90
+                )
+            self.current_step = 0
+
+    def on_epoch_begin(self, args, state, control,train_dataloader=None,**kwargs):
+        if state.is_epoch_progress_bar_enabled:
+            if state.is_world_process_zero and has_length(train_dataloader):
+                self.training_bar = tqdm(
+                    total= len(train_dataloader), 
                     dynamic_ncols=True,
                     file=sys.stdout, 
                     colour='#0052d9',
@@ -628,6 +634,8 @@ class ProgressCallback(TrainerCallback):
             self.current_step = state.global_step
 
     def on_prediction_step(self, args, state, control, eval_dataloader=None, **kwargs):
+        if state.no_prediction_bar:
+            return
         if state.is_world_process_zero and has_length(eval_dataloader):
             if self.prediction_bar is None:
                 self.prediction_bar = tqdm(

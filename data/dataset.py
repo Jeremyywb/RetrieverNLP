@@ -113,17 +113,16 @@ class BgeRetrieverDataset(BaseNLPDataset):
                     continue
                 passages = []
                 passages.append(pos)
-
-
+                passages.extend(neg_group)
 
                 if self.config.passage_instruction_for_retrieval is not None:
                     passages = [self.config.passage_instruction_for_retrieval+p for p in passages]
                 
-                query = self.prepare_tokens(self.tokenizer,  query, self.config.query_max_len )
-                passages = self.prepare_tokens( self.tokenizer,   passages, self.config.passage_max_len )
+                _query = self.prepare_tokens(self.tokenizer,  query, self.config.query_max_len )
+                _passages = self.prepare_tokens( self.tokenizer,   passages, self.config.passage_max_len )
                 self.samples.append({
-                    'query':query,
-                    "passages":passages,
+                    'query':_query,
+                    "passages":_passages,
                     "passag_id": torch.tensor([item['passag_id']], dtype = torch.long)
                     })
 
@@ -151,6 +150,7 @@ class BgeRetrieverEvalDataset(BaseNLPDataset):
                 "passag_id": passag_id
             }
         """
+
         for item in self.data:
             query = item['query']
             if not isinstance(query, list):
@@ -176,11 +176,11 @@ class BgeRetrieverEvalDataset(BaseNLPDataset):
             if self.config.passage_instruction_for_retrieval is not None:
                 passages = [self.config.passage_instruction_for_retrieval+p for p in passages]
             
-            query = self.prepare_tokens(self.tokenizer,  query, self.config.query_max_len )
-            passages = self.prepare_tokens( self.tokenizer,   passages, self.config.passage_max_len )
+            _query = self.prepare_tokens(self.tokenizer,  query, self.config.query_max_len )
+            _passages = self.prepare_tokens( self.tokenizer,   passages, self.config.passage_max_len )
             self.samples.append({
-                'query':query,
-                "passages":passages,
+                'query':_query,
+                "passages":_passages,
                 "passag_id": torch.tensor([item['passag_id']], dtype = torch.long)}
             )
 
@@ -196,5 +196,4 @@ class BgeRetrieverEvalDataset(BaseNLPDataset):
                 )
         return {k:torch.tensor(v, dtype = torch.long) for k,v  in inputs.items()}
     
-
 
