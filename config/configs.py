@@ -236,13 +236,46 @@ class CallbackConfigs(BaseConfig):
 class RetrieverDataConfig(BaseConfig):
     passage_instruction_for_retrieval : str = None
     query_instruction_for_retrieval   : str = None
-    train_group_size : int = None
-    dataset_type     : str = None
-    passage_max_len  : int = None
-    query_max_len    : int = None
-    json_path        : str = None
-    csv_path         : str = None
+    group_size          : int = None
+    dataset_type        : str = None
+    passage_max_len     : int = None
+    query_max_len       : int = None
+    sample_start        : int = None
+    sample_end          : int = None
+    contain_inner_neg   : bool = None
+    json_path           : str = None
+    csv_path            : str = None
     auto_fullfill_paths : list  = field(default_factory=lambda: ['json_path','csv_path'])
+
+@validate_fields
+@dataclass
+class RerankerDataConfig(BaseConfig):
+    passage_instruction_for_retrieval : str = None
+    query_instruction_for_retrieval   : str = None
+    dataset_type         : str = None
+    group_size           : int = None
+    max_len              : int = None
+    sample_start         : int = None
+    sample_end           : int = None
+    contain_inner_neg    : bool = None
+    json_path            : str = None
+    csv_path             : str = None
+    auto_fullfill_paths  : list  = field(default_factory=lambda: ['json_path','csv_path'])
+
+@validate_fields
+@dataclass
+class RerankerValDataConfig(BaseConfig):
+    passage_instruction_for_retrieval : str = None
+    query_instruction_for_retrieval   : str = None
+    dataset_type        : str = None
+    group_size          : int = None
+    max_len             : int = None
+    contain_inner_neg   : bool = None
+    json_path           : str = None
+    csv_path            : str = None
+    auto_fullfill_paths : list  = field(default_factory=lambda: ['json_path','csv_path'])
+
+
 
 @validate_fields
 @dataclass
@@ -287,6 +320,19 @@ class RetrieverModelConfig(BaseConfig):
     name                : str   = None
     auto_fullfill_paths : list  = field(default_factory=lambda: ['model_path','output_dir'])
 
+@validate_fields
+@dataclass
+class RerankerModelConfig(BaseConfig):
+    load_from_pretrained_path : bool = None
+    load_from_finetuned_path : bool = None
+    model_path : str = None
+    model_name : str = None
+    output_dir : str = None
+    num_labels : int = None
+    batch_size : int = None
+    group_size : int = None
+    auto_fullfill_paths : list  = field(default_factory=lambda: ['model_path','output_dir'])
+
 
 @validate_fields
 @dataclass
@@ -307,17 +353,20 @@ class RetireverTrainingConfigs(TrainingConfigs):
     validset    : RetrieverDataConfig  = None
     testset     : RetrieverDataConfig  = None
 
-    
 
-@validate_fields
-@dataclass
-class RerankerModelConfig(BaseConfig):
-    pass
 
 @validate_fields
 @dataclass
 class RerankerDataConfig(BaseConfig):
-    pass
+    passage_instruction_for_retrieval : str = None
+    query_instruction_for_retrieval   : str = None
+    group_size : int = None
+    dataset_type     : str = None
+    passage_max_len  : int = None
+    query_max_len    : int = None
+    json_path        : str = None
+    csv_path         : str = None
+    auto_fullfill_paths : list  = field(default_factory=lambda: ['json_path','csv_path'])
 
 @validate_fields
 @dataclass

@@ -45,3 +45,19 @@ class BgeEmbedCollator(DataCollatorWithPadding):
         # 如果不是dict或者tensor，则不处理（可以根据需求自定义）
         else:
             raise ValueError("Unsupported data type encountered in the dictionary.")
+        
+
+
+def reranker_collate(features):
+    # inputs 是 list of dict
+    # 将 pos_mask 进行拼接
+    output = {}
+    output['pos_mask'] = torch.stack([feature['pos_mask'] for feature in features], dim=0)
+    output['inputs'] = {
+        k:torch.cat(sum([feature['inputs'][k] for feature in features], []), dim=0)
+          for k in features[0]['inputs'].keys()
+    }
+    _max_length = output['inputs']['attention_mask'].sum(dim=1).max().item()
+    for k in output['inputs'].keys():
+        output['inputs'][k] = output['inputs'][k][:, :_max_length]
+    return output

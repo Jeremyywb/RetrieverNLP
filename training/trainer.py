@@ -22,8 +22,9 @@ from ..training.callbacks import (
     EarlyStoppingCallback,ProgressCallback,ExportableState,CallbackHandler)
 from ..config.typemapping import ConfigType,ModelType,DatasetType,ScheType,TrainerConfigType
 from ..utils.loggings import get_logger
-from ..data.dataset import BgeRetrieverDataset
+from ..data.dataset import BgeRetrieverDataset,BgeRerankerDataset,BgeRerankerEvalDataset
 from ..models.retriever import BgeBiEncoderModel
+from ..models.reranker import BgeCrossEncoder
 from ..utils.utilities import speed_metrics
 from ..config.configs import (
         LinearSchedulerConfig
@@ -47,6 +48,7 @@ from ..config.configs import (
         ,RerankerTrainingConfigs
         ,RerankerModelConfig
         ,RerankerDataConfig
+        ,RerankerValDataConfig
 
 )
 from collections.abc import Mapping
@@ -65,6 +67,8 @@ TYPE_TO_DATASET_CLS = {
         DatasetType.BGERETRIEVERTRAIN:BgeRetrieverDataset,
         DatasetType.BGERETRIEVERVALID:BgeRetrieverEvalDataset,
         DatasetType.BGERETRIEVERTEST:BgeRetrieverEvalDataset,
+        DatasetType.RERANKERTRAIN:BgeRerankerDataset,
+        DatasetType.RERANKERVALID:BgeRerankerEvalDataset,
 
 }
 
@@ -75,10 +79,13 @@ TYPE_TO_CONFIG_CLS = {
         ConfigType.BGERETRIEVERTRAIN:RetrieverDataConfig,
         ConfigType.BGERETRIEVERVALID:RetrieverDataConfig,
         ConfigType.BGERETRIEVERTEST:RetrieverDataConfig,
+        ConfigType.RERANKERTRAIN:RerankerDataConfig,
+        ConfigType.RERANKERVALID:RerankerValDataConfig,
         ConfigType.TRAINLOADER:DataLoaderConfig,
         ConfigType.VALIDLOADER:DataLoaderConfig,
         ConfigType.TESTLOADER:DataLoaderConfig,
         ConfigType.BGEEMBEDDING:RetrieverModelConfig,
+        ConfigType.BGERERANKER:RerankerModelConfig,
         ConfigType.CALLBACKS:CallbackConfigs,
         ConfigType.SCHEDULER:None,
         ConfigType.OPTIMIZER:OptimizerConfig,
@@ -100,6 +107,7 @@ TYPE_TO_SCHEDULER_CFG_CLS = {
 }
 TYPE_TO_MODEL_CLS = {
         ModelType.BGEEMBEDDING:BgeBiEncoderModel,
+        ModelType.BGERERANKER:BgeCrossEncoder
 
 }
 
@@ -209,7 +217,6 @@ class Trainer:
             self.eval_dataset = eval_dataset
         if data_collator is None:
             raise ValueError("data_collator is required")
-        
 
         self.data_collator = data_collator(self.tokenizer)
 
@@ -313,7 +320,7 @@ class Trainer:
         self.state.is_local_process_zero = True
         self.state.is_world_process_zero = True
         self.state.no_prediction_bar = True
-        
+
         start_time = time.time()
 
         tr_loss = torch.tensor(0.0).to(self.device)
@@ -418,6 +425,7 @@ class Trainer:
         self.model.train()
         if self.args.trainer.task == 'retrieval':
             batch.pop('passag_id')
+        
         inputs = self._prepare_input(batch)
         if self.args.trainer.fp16:
             with amp.autocast():
@@ -588,10 +596,22 @@ class Trainer:
         model.eval()
         if self.args.trainer.task == 'retrieval':
             labels = inputs.pop('passag_id')
+        if self.args.trainer.task == 'reranker':
+            labels = inputs.pop('pos_mask')
         inputs = self._prepare_input(inputs)
         with torch.no_grad():
-            outputs = self.model(**inputs)
-        logits = outputs.q_reps
+            if self.args.trainer.task == 'retrieval':
+                outputs = self.model(**inputs)
+            elif self.args.trainer.task == 'reranker':
+                outputs = self.model.encode( 
+                    self.args.valid_dataloader.batch_size, 
+                    self.args.validset.group_size,
+                    inputs, labels.to(self.device) 
+                )
+        if self.args.trainer.task == 'retrieval':
+            logits = outputs.q_reps
+        else:
+            logits = outputs.logits
         loss = outputs.loss
         return loss, logits, labels
 
@@ -645,7 +665,7 @@ class Trainer:
             self.copy_contents( self.state.best_model_checkpoint, self.args.model.output_dir )
         else:
             if self.args.trainer.backbone_with_params_only:
-                self.model.backbone.save_pretrained(output_dir)
+                self.model.save(output_dir)
             else:
                 state_dict = self.model.state_dict()
                 torch.save(state_dict, os.path.join(output_dir, self.args.trainer.best_model_name))

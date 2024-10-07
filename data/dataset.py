@@ -96,20 +96,32 @@ class BgeRetrieverDataset(BaseNLPDataset):
         """
         for item in self.data:
             query = item['query']
-            if not isinstance(query, list):
-                query = [query]
+            if isinstance(query, list):
+                query = query[0]
             if self.config.query_instruction_for_retrieval is not None:
-                query = [self.args.query_instruction_for_retrieval + q for q in query]
+                query = self.config.query_instruction_for_retrieval +  query
 
-            
-            pos_passage = item['pos']
-            neg_passage = item['neg']
-            assert isinstance(pos_passage, list)
-            pos = random.choice(pos_passage)
+            docs        = item['docs']
+            pos_mask    = item['pos_mask']
+            if 1 in pos_mask:
+                pos_index = pos_mask.index(1)
+            else:
+                pos_index = None
 
-            for i in range(0, len(neg_passage), self.config.train_group_size-1):
-                neg_group = neg_passage[i:i+self.config.train_group_size-1]
-                if len(neg_group) < self.config.train_group_size - 1:
+            if pos_index is not None:
+                pos = docs.pop(pos_index)
+            else:
+                pos = item['pos'][0]
+            if self.config.contain_inner_neg:
+                inner_neg_end = item['inner_neg_end']
+            else:
+                inner_neg_end = 0
+            inner_neg = docs[:inner_neg_end]
+            docs = inner_neg + docs[self.config.sample_start+inner_neg_end:self.config.sample_end+inner_neg_end]
+
+            for i in range(0, len(docs), self.config.group_size-1):
+                neg_group = docs[i:i+self.config.group_size-1]
+                if len(neg_group) < self.config.group_size - 1:
                     continue
                 passages = []
                 passages.append(pos)
@@ -153,24 +165,37 @@ class BgeRetrieverEvalDataset(BaseNLPDataset):
 
         for item in self.data:
             query = item['query']
-            if not isinstance(query, list):
-                query = [query]
+            if isinstance(query, list):
+                query = query[0]
             if self.config.query_instruction_for_retrieval is not None:
-                query = [self.args.query_instruction_for_retrieval + q for q in query]
+                query = self.config.query_instruction_for_retrieval +  query
 
-            passages = []
-            pos_passage = item['pos']
-            neg_passage = item['neg']
-
-            assert isinstance(pos_passage, list)
-            pos = random.choice(pos_passage)
-            passages.append(pos)
-
-            if len(neg_passage) < self.config.train_group_size - 1:
-                num = math.ceil((self.config.train_group_size - 1) / len(item['neg']))
-                negs = random.sample(item['neg'] * num, self.config.train_group_size - 1)
+            docs        = item['docs']
+            pos_mask    = item['pos_mask']
+            if 1 in pos_mask:
+                pos_index = pos_mask.index(1)
             else:
-                negs = random.sample(item['neg'], self.config.train_group_size - 1)
+                pos_index = None
+
+            if pos_index is not None:
+                pos = docs.pop(pos_index)
+            else:
+                pos = item['pos'][0]
+
+            if self.config.contain_inner_neg:
+                inner_neg_end = item['inner_neg_end']
+            else:
+                inner_neg_end = 0
+            inner_neg = docs[:inner_neg_end]
+            docs = inner_neg + docs[self.config.sample_start+inner_neg_end:self.config.sample_end+inner_neg_end]
+
+            if len(docs) < self.config.group_size - 1:
+                num = math.ceil((self.config.group_size - 1) / len(item['neg']))
+                negs = random.sample(docs * num, self.config.group_size - 1)
+            else:
+                negs = random.sample(docs, self.config.group_size - 1)     
+            passages = []
+            passages.append(pos)
             passages.extend(negs)
 
             if self.config.passage_instruction_for_retrieval is not None:
@@ -196,4 +221,92 @@ class BgeRetrieverEvalDataset(BaseNLPDataset):
                 )
         return {k:torch.tensor(v, dtype = torch.long) for k,v  in inputs.items()}
     
+
+class BgeRerankerDataset(BaseNLPDataset):
+    def create_samples(self):
+        for item in self.data:
+            query = item['query']
+            if isinstance(query, list):
+                query = query[0]
+            if self.config.query_instruction_for_retrieval is not None:
+                query = self.config.query_instruction_for_retrieval +  query
+
+            docs        = item['docs']
+            pos_mask    = item['pos_mask']
+            if 1 in pos_mask:
+                pos_index = pos_mask.index(1)
+            else:
+                pos_index = None
+
+            if pos_index is not None:
+                pos = docs.pop(pos_index)
+            else:
+                pos = item['pos'][0]
+            if self.config.contain_inner_neg:
+                inner_neg_end = item['inner_neg_end']
+            else:
+                inner_neg_end = 0
+            inner_neg = docs[:inner_neg_end]
+            docs = inner_neg + docs[self.config.sample_start+inner_neg_end:self.config.sample_end+inner_neg_end]
+
+            if len(docs) < self.config.group_size - 1:
+                num = math.ceil((self.config.group_size - 1) / len(item['neg']))
+                negs = random.sample(docs * num, self.config.group_size - 1)
+            else:
+                negs = random.sample(docs, self.config.group_size - 1)          
+
+            inner_batch_data = []
+            inner_batch_data.append(self.create_one_example(query, pos))
+            for neg in negs:
+                inner_batch_data.append(self.create_one_example(query, neg))
+
+            self.samples.append({
+                "inputs":inner_batch_data
+                })
+
+
+    def create_one_example(self, qry_encoding: str, doc_encoding: str):
+        item = self.tokenizer.encode_plus(
+            qry_encoding,
+            doc_encoding,
+            truncation=True,
+            max_length=self.config.max_len,
+            return_tensors = 'pt',
+            padding='max_length',
+        )
+        return item
+
+class BgeRerankerEvalDataset(BgeRerankerDataset):
+    '''
+    input json format:
+    {   
+        "query": "query",
+        "pos": ["pos"],
+        "docs": ["doc1","doc2","doc3"..],
+        "pos_mask": [1,0,0,...]
+    }
+    '''
+    def create_samples(self):
+        for item in self.data:
+            query = item['query']
+            if isinstance(query, list):
+                query = query[0]
+            if self.config.query_instruction_for_retrieval is not None:
+                query = self.config.query_instruction_for_retrieval +  query
+            if self.config.contain_inner_neg:
+                inner_neg_end = item['inner_neg_end']
+            else:
+                inner_neg_end = 0
+
+            docs        = item['docs'][inner_neg_end:self.config.group_size+inner_neg_end]
+            pos_mask    = item['pos_mask'][inner_neg_end:self.config.group_size+inner_neg_end]
+            inner_batch_data = []
+            for neg in docs:
+                inner_batch_data.append(self.create_one_example(query, neg))
+
+            self.samples.append({
+                "inputs":inner_batch_data,
+                "pos_mask":torch.tensor( pos_mask, dtype = torch.long)
+                })
+
 

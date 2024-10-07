@@ -1,27 +1,23 @@
 name: bge-emb-v1
 trainset:
-  name: bge_retriever_train
-  dataset_type: bge_retriever_data_train
+  name: reranker_train # name of dataset_args to init class
+  dataset_type: bge_reranker_data_train # name of dataset to init class
   passage_instruction_for_retrieval:
   query_instruction_for_retrieval:
-  group_size: 8
-  passage_max_len: 64
-  query_max_len: 768
-  sample_start: 5
+  group_size: 64
+  sample_start: 3
   sample_end: 100
   contain_inner_neg: false
+  max_len: 768
   json_path: 
   csv_path: 
 validset:
-  name: bge_retriever_valid
-  dataset_type: bge_retriever_data_valid
+  name: reranker_valid
+  dataset_type: bge_reranker_data_valid
   passage_instruction_for_retrieval:
   query_instruction_for_retrieval:
-  group_size: 8
-  passage_max_len: 64
-  query_max_len: 768
-  sample_start: 5
-  sample_end: 100
+  group_size: 64
+  max_len: 1024
   contain_inner_neg: false
   json_path: 
   csv_path: 
@@ -48,24 +44,17 @@ test_dataloader:
   shuffle: false
 
 model:
-  name: bge_embedding
-  model_type: bge_embedding
+  name: bge_reranker
+  model_type: bge_reranker
   load_from_pretrained_path: false
   load_from_finetuned_path: false
-  inbatch_for_long_passage: 8
-  sentence_pooling_method: cls
-  negatives_cross_device: false
-  output_hidden_states: false
-  use_inbatch_neg: false
-  model_path: resource/bge-emb-v1-pt
-  temperature: 1
-  model_name: BAAI/bge-large-en-v1.5
-  output_dir: resource/bge-emb-v1-ft
-  normlized: false
+  model_path: resource/bge-reranker-v1-pt
+  model_name: BAAI/bge-reranker-large
+  output_dir: resource/bge-reranker-v1-ft
   num_labels: 1
   batch_size: 8
-  group_size: 8
-  
+  group_size: 64
+
 callbacks:
   name: callbacks
   early_stopping_patience: 5
@@ -82,6 +71,7 @@ callbacks:
   eval_strategy: steps
   save_strategy: steps
   eval_delay: 3
+
 scheulder:
   name: cosine
   warmup_ratio: 0.2
@@ -130,7 +120,7 @@ optim:
 trainer:
   trainerType: bge_retriever_trainer
   name: trainer
-  input: resource/input/bge-data-v3.json
+  input: resource/input/bge-rerank-data-v3.json
   split_train_valid_rate: 0.8
   num_devices: 1
   num_freeze_layers: 12
@@ -145,12 +135,12 @@ trainer:
     evaluate_on_train: false
     evaluate_on_valid: true
     evaluate_on_test: false
-  include_for_metrics : start,loss,passages,end  # add parameters between start and end
-  task: retrieval
+  include_for_metrics : start,loss,end  # add parameters between start and end
+  task: reranker
   eval_do_concat_batches: true
   passages_csv_path: resource/input/passages.csv
   backbone_with_params_only: true
-  best_model_name: bge-emb-v1-bst.pth
+  best_model_name: bge-reranker-v1-bst.pth
 
 
   # name: trainer

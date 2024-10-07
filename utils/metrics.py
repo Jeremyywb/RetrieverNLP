@@ -56,3 +56,30 @@ def compute_metrics(EvalPrediction:EvalPrediction):
 
     metrics['AP@25'] /= len(y_true)
     return metrics
+
+
+def reranker_compute_metrics(EvalPrediction):
+    metrics = {}
+    metrics['AP@25'] = 0.0
+    k = 25
+
+    logits = EvalPrediction.logits  # shape: (bs, num_docs)
+    labels = EvalPrediction.labels  # shape: (bs, num_docs)
+
+    # 计算得分的排序
+    sorted_indices = np.argsort(-logits, axis=1)[:, :k]  # 获取前 k 个文档的索引
+    labels = labels
+
+    for i in range(len(labels)):
+        # 获取当前查询对应的正样本索引
+        actual_passages = [j for j in range(labels.shape[1]) if labels[i, j]]
+
+        # 获取排序后的预测文档索引
+        predicted_passages = sorted_indices[i].tolist()
+
+        # 计算 AP@25
+        metrics['AP@25'] += apk(actual_passages, predicted_passages, k=k)
+
+    # 计算平均 AP@25
+    metrics['AP@25'] /= len(labels)
+    return metrics

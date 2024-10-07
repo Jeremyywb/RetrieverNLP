@@ -25,20 +25,26 @@ class ConfigType(ExplicitEnum):
     BGERETRIEVERTRAIN = 'bge_retriever_train'
     BGERETRIEVERVALID = 'bge_retriever_valid'
     BGERETRIEVERTEST = 'bge_retriever_test'
+    RERANKERTRAIN = 'reranker_train'
+    RERANKERVALID = 'reranker_valid'
     TRAINLOADER = 'train_dataloader'
     VALIDLOADER = 'valid_dataloader'
     TESTLOADER = 'test_dataloader'
     MODEL = 'UNKNOW'
     BGEEMBEDDING = 'bge_embedding'
+    BGERERANKER = 'bge_reranker'
     CALLBACKS = 'callbacks'
     SCHEDULER = 'scheulder'
     OPTIMIZER = 'optim'
     TRAINER = 'trainer'
 
 
+
+
 class ModelType(ExplicitEnum):
     NAME = 'ModelType'
     BGEEMBEDDING = 'bge_embedding'
+    BGERERANKER = 'bge_reranker'
 
 
 
@@ -46,6 +52,8 @@ class DatasetType(ExplicitEnum):
     BGERETRIEVERTRAIN = 'bge_retriever_data_train'
     BGERETRIEVERVALID = 'bge_retriever_data_valid'
     BGERETRIEVERTEST = 'bge_retriever_data_test'
+    RERANKERTRAIN = 'bge_reranker_data_train'
+    RERANKERVALID = 'bge_reranker_data_valid'
 
 
 class TrainerConfigType(ExplicitEnum):
