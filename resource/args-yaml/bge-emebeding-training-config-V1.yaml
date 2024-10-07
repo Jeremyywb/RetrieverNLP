@@ -4,7 +4,7 @@ trainset:
   dataset_type: bge_retriever_data_train
   passage_instruction_for_retrieval:
   query_instruction_for_retrieval:
-  group_size: 8
+  group_size: 16
   passage_max_len: 64
   query_max_len: 768
   sample_start: 5
@@ -17,7 +17,7 @@ validset:
   dataset_type: bge_retriever_data_valid
   passage_instruction_for_retrieval:
   query_instruction_for_retrieval:
-  group_size: 8
+  group_size: 16
   passage_max_len: 64
   query_max_len: 768
   sample_start: 5
@@ -63,8 +63,8 @@ model:
   output_dir: resource/bge-emb-v1-ft
   normlized: false
   num_labels: 1
-  batch_size: 8
-  group_size: 8
+  # batch_size: 8
+  # group_size: 8
   
 callbacks:
   name: callbacks
@@ -130,7 +130,7 @@ optim:
 trainer:
   trainerType: bge_retriever_trainer
   name: trainer
-  input: resource/input/bge-data-v3.json
+  input: resource/input/hard_mining_for_finetune.json
   split_train_valid_rate: 0.8
   num_devices: 1
   num_freeze_layers: 12
@@ -152,13 +152,3 @@ trainer:
   backbone_with_params_only: true
   best_model_name: bge-emb-v1-bst.pth
 
-
-  # name: trainer
-  # max_epochs: 10
-  # max_steps: -1
-  # num_nodes: 1
-  # num_processes_per_node: 1
-  # num_processes: 1
-  # num_threads_per_process: 1
-  # num_threads: 1
-  # num_workers: 1

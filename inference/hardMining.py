@@ -1,51 +1,51 @@
 
-import pandas as pd
-import numpy as np
-from transformers import AutoTokenizer, AutoModel
-import torch
-from sklearn.metrics.pairwise import cosine_similarity
-import re
-from scipy.spatial.distance import cdist
-import json
-import os
-import numpy as np
-from tqdm import tqdm
 
-# pip install faiss-gpu==1.7.2
-class CFG:
-    input_path = "/kaggle/input/eedi-mining-misconceptions-in-mathematics/"
-    train_path = f"{input_path}train.csv"
-    test_path  = f"{input_path}test.csv"
-    misc_path  = f"{input_path}misconception_mapping.csv"
-    samp_path  = f"{input_path}sample_submission.csv"
-#     max_cutoff = 50
-    max_cutoff = 100
-    is_add_inner_pos_ids = False
+
+# # pip install faiss-gpu==1.7.2
+# class CFG:
+#     input_path = "/kaggle/input/eedi-mining-misconceptions-in-mathematics/"
+#     train_path = f"{input_path}train.csv"
+#     test_path  = f"{input_path}test.csv"
+#     misc_path  = f"{input_path}misconception_mapping.csv"
+#     samp_path  = f"{input_path}sample_submission.csv"
+# #     max_cutoff = 50
+#     max_cutoff = 100
+#     is_add_inner_pos_ids = False
     
-    is_train   = False
-    if is_train:
-        embd_name  = "BAAI/bge-large-en-v1.5"#online
-        rerank_na  = 'BAAI/bge-reranker-large'#online
-#         embd_name  = "Alibaba-NLP/gte-large-en-v1.5"
+#     is_train   = False
+#     if is_train:
+#         embd_name  = "BAAI/bge-large-en-v1.5"#online
+#         rerank_na  = 'BAAI/bge-reranker-large'#online
+# #         embd_name  = "Alibaba-NLP/gte-large-en-v1.5"
 
-    else:
-        embd_name  = "/kaggle/input/bge-large-en-v1-5/bge-large-en-v1.5"#offline
-        emb_finetune = "/kaggle/input/bge-retriever-ft-v1/resource/bge-emb-v1-ft"
-        rerank_na  = "/kaggle/input/bge-reranker-large"#offline
+#     else:
+#         embd_name  = "/kaggle/input/bge-large-en-v1-5/bge-large-en-v1.5"#offline
+#         emb_finetune = "/kaggle/input/bge-retriever-ft-v1/resource/bge-emb-v1-ft"
+#         rerank_na  = "/kaggle/input/bge-reranker-large"#offline
         
         
-    #========================================
-    # set up for hard negative sample mining
-    #========================================
-    model_name_or_path = embd_name
-    output_path = '/kaggle/working/output/'
+#     #========================================
+#     # set up for hard negative sample mining
+#     #========================================
+#     model_name_or_path = embd_name
+#     output_path = '/kaggle/working/output/'
 
     
 def format_text(all_text,option_text):
     return f'''Question: {all_text}\n\n Option: {option_text}.\n\n What misconception does this option reveal?'''
 
 def prepare_for_hard_mining(cfg):
-
+    import pandas as pd
+    import numpy as np
+    from transformers import AutoTokenizer, AutoModel
+    import torch
+    from sklearn.metrics.pairwise import cosine_similarity
+    import re
+    from scipy.spatial.distance import cdist
+    import json
+    import os
+    import numpy as np
+    from tqdm import tqdm
     if not os.path.exists(cfg.output_path):
         os.mkdir( cfg.output_path )
 
@@ -137,8 +137,8 @@ def prepare_for_hard_mining(cfg):
             lambda x:x.replace("Answer","").replace("Text","")
     )
     train_long['pos_text'] = train_long['QuestionId_Answer'].map(id_to_name)
-    train_long['pos_id'  ] = train_long['QuestionId_Answer'].map(id_to_msid)
     train_long = train_long[train_long['pos_text'].isnull()==False]
+    train_long['pos_id'  ] = train_long['QuestionId_Answer'].map(id_to_msid)
     questionid_to_list_of_pos_ids = train_long.groupby('QuestionId')['pos_id'].apply(list).to_dict()
 
 
