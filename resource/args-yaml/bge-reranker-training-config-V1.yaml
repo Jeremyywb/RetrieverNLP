@@ -17,27 +17,27 @@ validset:
   passage_instruction_for_retrieval:
   query_instruction_for_retrieval:
   group_size: 64
-  max_len: 1024
+  max_len: 768
   contain_inner_neg: false
   json_path: 
   csv_path: 
 train_dataloader:
   name: train_dataloader
-  batch_size: 8
+  batch_size: 1
   num_workers: 4
   pin_memory: true
   drop_last: true
   shuffle: true
 valid_dataloader:
   name: valid_dataloader
-  batch_size: 8
+  batch_size: 1
   num_workers: 4
   pin_memory: true
   drop_last: false
   shuffle: false
 test_dataloader:
   name: test_dataloader
-  batch_size: 8
+  batch_size: 1
   num_workers: 4
   pin_memory: true
   drop_last: false
@@ -46,13 +46,13 @@ test_dataloader:
 model:
   name: bge_reranker
   model_type: bge_reranker
-  load_from_pretrained_path: false
+  load_from_pretrained_path: true
   load_from_finetuned_path: false
   model_path: resource/bge-reranker-v1-pt
   model_name: BAAI/bge-reranker-large
   output_dir: resource/bge-reranker-v1-ft
   num_labels: 1
-  batch_size: 8
+  batch_size: 1
   group_size: 64
 
 callbacks:
@@ -120,17 +120,19 @@ optim:
 trainer:
   trainerType: bge_retriever_trainer
   name: trainer
-  input: resource/input/bge-rerank-data-v3.json
+  input: resource/input/rerank_hard_minded.json
   split_train_valid_rate: 0.8
   num_devices: 1
-  num_freeze_layers: 12
+  num_freeze_layers: 18
   warmup_ratio: 0.2
   num_train_epochs: 4
-  gradient_accumulation_steps: 64 # 8*64 = 512
+  gradient_accumulation_steps: 256
+  # 8*64 = 512
   fp16: true
   max_grad_norm: null
   load_best_model_at_end : true
   torch_empty_cache_steps: 1
+  empty_cache_original_step: true
   evaluates:
     evaluate_on_train: false
     evaluate_on_valid: true

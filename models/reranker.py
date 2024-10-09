@@ -2,7 +2,7 @@ import torch
 from pathlib import Path
 import torch.distributed as dist
 from torch import nn
-from typing import Dict, Optional
+from typing import Dict, Optional,List
 from torch import Tensor
 from transformers import AutoConfig,AutoModelForSequenceClassification
 from ..utils.loggings import get_logger
@@ -22,7 +22,7 @@ class BgeCrossEncoder(nn.Module):
         # self.inbatch_for_long_passage         = modelconfig.inbatch_for_long_passage
         # self.sentence_pooling_method          = modelconfig.sentence_pooling_method
         # self.negatives_cross_device           = modelconfig.negatives_cross_device
-        self.output_hidden_states             = modelconfig.output_hidden_states
+        # self.output_hidden_states             = modelconfig.output_hidden_states
         self.model_path           = modelconfig.model_path
         # self.use_inbatch_neg      = modelconfig.use_inbatch_neg
         # self.temperature          = modelconfig.temperature
@@ -39,20 +39,19 @@ class BgeCrossEncoder(nn.Module):
         model_name_or_path = None
         if self.load_from_pretrained_path: #output_dir
              self.config = AutoConfig.from_pretrained(self.model_path ,
-                                                      output_hidden_states=self.output_hidden_states, 
                                                       num_labels = self.num_labels
                                                 )
              model_name_or_path = self.model_path
         elif self.load_from_finetuned_path:
             self.config = AutoConfig.from_pretrained( self.output_dir ,
-                            output_hidden_states    = self.output_hidden_states, 
+                            # output_hidden_states    = self.output_hidden_states, 
                             num_labels              = self.num_labels
                          )
             model_name_or_path = self.output_dir
             
         else:
             self.config = AutoConfig.from_pretrained(self.model_name ,
-                            output_hidden_states =   self.output_hidden_states, 
+                            # output_hidden_states =   self.output_hidden_states, 
                             num_labels           =   self.num_labels
                         )
             self.config.save_pretrained(self.model_path)#output_dir
@@ -68,7 +67,7 @@ class BgeCrossEncoder(nn.Module):
         self.config.save_pretrained(self.model_path)
 
         self.backbone = AutoModelForSequenceClassification.from_pretrained(model_name_or_path , config=self.config)
-        if not self.load_from_pretrained_path or not self.load_from_finetuned_path:
+        if (not self.load_from_pretrained_path ) or (not self.load_from_finetuned_path):
             self.backbone.save_pretrained(self.model_path)
         
         self.cross_entropy = nn.CrossEntropyLoss(reduction='mean')
@@ -78,8 +77,8 @@ class BgeCrossEncoder(nn.Module):
         )
 
     def freeze_layers(self, num_layers):
-        for i in range(0,num_layers,1):
-            for name, param in self.backbone.encoder.layer[i].named_parameters():
+        for i in range(num_layers):
+            for name, param in self.backbone.roberta.encoder.layer[i].named_parameters():
                 param.requires_grad = False
 
     def gradient_checkpointing_enable(self, **kwargs):
@@ -93,17 +92,51 @@ class BgeCrossEncoder(nn.Module):
         group_size:
             train: one pos and group_size-1 of neg
             valid: retrieved doc tokenized, dose not known which one is pos or even without pos
+        inputs:{
+        'input_ids':Tensor,
+        'attention_mask':Tensor
+        }
+
+        # cut to inner batch 
         '''
-        ranker_out = self.backbone(**inputs, return_dict=True)
-        scores = ranker_out.logits.view(
+        total_in_batch_size = batch_size*group_size
+        batches = [ {k:v[i:i+16]  for k,v in  inputs.items() } for i in range(0,total_in_batch_size,16)]
+        batches.reverse()
+        del inputs
+        outputs = []
+        while batches:
+            ranker_out = self.backbone(**batches.pop(), return_dict=True)
+            outputs.append(ranker_out.logits)
+            del ranker_out
+            torch.cuda.empty_cache()
+        logits = torch.cat(outputs, dim=0).view(
             batch_size,
             group_size
         )
-        loss = self.cross_entropy(scores, target_label)
-        output = SequenceClassifierOutput(loss=loss, **ranker_out)
-        output['logits'] = scores
-        return output
+        del outputs
+        torch.cuda.empty_cache()
+        loss = self.cross_entropy(logits , target_label)
 
+        # for i in range(0,total_in_batch_size,4):
+        #     ranker_out = self.backbone(**{k:v[i:i+4]  for k,v in  inputs.items() }, return_dict=True)
+        #     outputs.append(ranker_out.logits)
+        #     del ranker_out
+        #     torch.cuda.empty_cache()
+        # logits = torch.cat(outputs, dim=0).view(
+        #     batch_size,
+        #     group_size
+        # )
+        # del outputs
+        # loss = self.cross_entropy(logits , target_label)
+        return SequenceClassifierOutput(loss=loss, logits=logits)
+    
+    def concat_sequence_classifier_outputs(self, outputs: List[SequenceClassifierOutput]) -> SequenceClassifierOutput:
+        return SequenceClassifierOutput(**{
+            k: torch.cat([output[k] for output in outputs if output[k] is not None], dim=0) 
+            if isinstance(outputs[0][k], torch.Tensor) else None 
+            for k in outputs[0].keys()
+        })
+    
     def save(self, output_dir: str):
         state_dict = self.backbone.state_dict()
         state_dict = type(state_dict)(

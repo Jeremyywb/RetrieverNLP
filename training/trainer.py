@@ -143,7 +143,9 @@ class Trainer:
 
         
         #  配置初始化
+        logger.info("***** Init Trainer *****")
         self.compute_metrics = compute_metrics
+        logger.info(f"Init Trainer  : Configurations Started")
         self.preprocess_logits_for_metrics = preprocess_logits_for_metrics
         if args is None:
             if isinstance(training_config_yaml_or_dict, str):
@@ -153,6 +155,7 @@ class Trainer:
                 self.args = self.set_all_config( training_config_yaml_or_dict )
         else:
             self.args = args
+        logger.info(f"Init Trainer  : Configurations Finished")
         print(self.args)
 
         self.accelerator = None
@@ -172,6 +175,7 @@ class Trainer:
         
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+        logger.info(f"Init Trainer  : Tokenizer Started")
         if tokenizer is None:
             if self.args.model.load_from_pretrained_path:
                 self.tokenizer = AutoTokenizer.from_pretrained(self.args.model.model_path)
@@ -185,10 +189,11 @@ class Trainer:
                     raise ValueError("model_path and output_dir should be provided for saving tokenizer")
                 self.tokenizer.save_pretrained(self.args.model.output_dir)
                 self.tokenizer.save_pretrained(self.args.model.model_path)
-            
+        
         else:
             self.tokenizer = tokenizer
             print(f"tokenizer is provided by user. and not saved!!!")
+        logger.info(f"Init Trainer  : Tokenizer Finished")
 
         if self.args.trainer.input is not None:
             train_file,valid_file,file_type = self.create_train_vaild_file(self.args.trainer.input,self.args.trainer.split_train_valid_rate)
@@ -200,7 +205,8 @@ class Trainer:
                 setattr(self.args.validset,'csv_path',valid_file)
             else:
                 raise ValueError("Unsupported file type")
-            
+
+        logger.info(f"Init Trainer  : Dataset Started")
         if train_dataset is not None and self.args.trainer.input is not None:
             raise ValueError("train_dataset and input cannot be both provided")
         if eval_dataset is not None and self.args.trainer.input is not None:
@@ -215,10 +221,16 @@ class Trainer:
             self.eval_dataset = self.get_eval_dataset()
         else:
             self.eval_dataset = eval_dataset
+        
+        logger.info(f"Init Trainer  : Dataset Finished")
+
+
         if data_collator is None:
             raise ValueError("data_collator is required")
-
-        self.data_collator = data_collator(self.tokenizer)
+        if self.args.trainer.task == 'retrieval':
+            self.data_collator = data_collator(self.tokenizer)
+        else:
+            self.data_collator = data_collator
 
         if isinstance(model_name_or_instance, str):
             name = ModelType(self.args.model.model_type)
@@ -227,12 +239,16 @@ class Trainer:
         else:
             self.model = model_name_or_instance
 
+        logger.info(f"Init Trainer  : Model Freeze Started")
         if self.args.trainer.num_freeze_layers is not None:
             self.model.freeze_layers(self.args.trainer.num_freeze_layers)
+        logger.info(f"Init Trainer  : Model Freeze Finished")
         self.model.to(self.device)
 
+        logger.info(f"Init Trainer  : Dataloader Started")
         self.train_dataloader = self.get_train_dataloader()
         self.eval_dataloader = self.get_eval_dataloader()
+        logger.info(f"Init Trainer  : Dataloader Finished")
 
         # 早停若是epoch，则总step 按每个epoch的step单独计算 accumulate step 再累计
         # self.warmup_ratio = self.args.scheulder.warmup_ratio
@@ -250,11 +266,13 @@ class Trainer:
         self.num_warmup_steps = int(self.num_training_steps * self.warmup_ratio)
 
 
-
+        logger.info(f"Init Trainer  : Optimizer Started")
         self.optimizer, self.lr_scheduler = optimizers
         if self.optimizer is None:
             self.optimizer, self.lr_scheduler = self.get_optimizer_and_scheduler()
-        
+        logger.info(f"Init Trainer  : Optimizer Finished")
+
+        logger.info(f"Init Trainer  : Callbacks Started")
         early_stopping_callback = EarlyStoppingCallback(
             early_stopping_patience=self.args.callbacks.early_stopping_patience,
             early_stopping_threshold=self.args.callbacks.early_stopping_threshold
@@ -265,6 +283,7 @@ class Trainer:
             callbacks, self.model, self.tokenizer, self.optimizer, self.lr_scheduler
         )
         self.control = TrainerControl()
+        logger.info(f"Init Trainer  : Callbacks Finished")
 
         self.state = TrainerState(
             is_local_process_zero=self.is_local_process_zero,
@@ -281,6 +300,9 @@ class Trainer:
         self.control = self.callback_handler.on_init_end(self.args.callbacks, self.state, self.control)
 
         self._train_batch_size = self.args.train_dataloader.batch_size
+        logger.info(f"Init Trainer  : Trainer Finished waiting 5 seconds...")
+        time.sleep(5)
+        logger.info(f"Init Trainer  : Trainer Ended")
 
     def train(self):
         # self.callback_handler.on_train_begin(self.args.callbacks, self.state, self.control)
@@ -294,7 +316,7 @@ class Trainer:
                 self.state.logging_steps = math.ceil(self.num_training_steps * self.args.callbacks.logging_steps)
             else:
                 self.state.logging_steps = self.args.callbacks.logging_steps
-      
+
 
         if self.args.callbacks.eval_steps is not None:
             if self.args.callbacks.eval_steps < 1:
@@ -309,10 +331,11 @@ class Trainer:
                 self.state.save_steps = self.args.callbacks.save_steps
         num_examples = len(self.train_dataset)
         logger.info("***** Running training *****")
-        logger.info(f"  Num examples = {num_examples:,}")
-        logger.info(f"  Num Epochs = {self.args.trainer.num_train_epochs:,}")
+        logger.info(f"  Num examples       = {num_examples:,}")
+        logger.info(f"  Num Epochs         = {self.args.trainer.num_train_epochs:,}")
+        logger.info(f"  Train Batch Size   = {self.args.train_dataloader.batch_size:,}")
         logger.info(f"  Gradient Accumulation steps = {self.args.trainer.gradient_accumulation_steps}")
-        logger.info(f"  Total optimization steps = {self.num_training_steps:,}")
+        logger.info(f"  Total optimization steps    = {self.num_training_steps:,}")
         self.state.epoch = 0
         self.state.global_step = 0
         self.state.max_steps = self.num_training_steps
@@ -359,6 +382,8 @@ class Trainer:
                         grad_norm = torch.nn.utils.clip_grad_norm_(self.model.parameters(), self.args.trainer.max_grad_norm)
                     
                     self.control = self.callback_handler.on_pre_optimizer_step(self.args.callbacks, self.state, self.control)
+                    logger.info( " At Optimizer Stepping")
+
                     if self.args.trainer.fp16:
                         scaler.step(self.optimizer)
                         scaler.update()
@@ -431,15 +456,19 @@ class Trainer:
             with amp.autocast():
                 outputs = self.model(**inputs)
                 loss = outputs.loss
+                loss = loss / self.args.trainer.gradient_accumulation_steps
         else:
             outputs = self.model(**inputs)
             loss = outputs.loss
-        loss = loss / self.args.trainer.gradient_accumulation_steps
+            loss = loss / self.args.trainer.gradient_accumulation_steps
         if self.args.trainer.fp16:
             scaler.scale(loss).backward()
         else:
             loss.backward()
         del inputs, outputs
+        if self.args.trainer.empty_cache_original_step:
+            torch.cuda.empty_cache()
+
         if self.args.trainer.torch_empty_cache_steps is not None:
             if (self.state.global_step+1) % self.args.trainer.torch_empty_cache_steps == 0:
                 torch.cuda.empty_cache()
@@ -598,6 +627,9 @@ class Trainer:
             labels = inputs.pop('passag_id')
         if self.args.trainer.task == 'reranker':
             labels = inputs.pop('pos_mask')
+            # labels (batch_size, num_doc)-> target_for_loss (batch_size,1 ) pos index
+            target_for_loss = torch.argmax(labels, dim=1)
+            
         inputs = self._prepare_input(inputs)
         with torch.no_grad():
             if self.args.trainer.task == 'retrieval':
@@ -606,7 +638,7 @@ class Trainer:
                 outputs = self.model.encode( 
                     self.args.valid_dataloader.batch_size, 
                     self.args.validset.group_size,
-                    inputs, labels.to(self.device) 
+                    inputs['inputs'], target_for_loss.to(self.device) 
                 )
         if self.args.trainer.task == 'retrieval':
             logits = outputs.q_reps
@@ -711,13 +743,43 @@ class Trainer:
 
 
     def get_optimizer_and_scheduler(self):
-        print(self.args.optim)
-        if self.args.trainer.num_freeze_layers is not None:
-            layers = list(self.model.backbone.encoder.layer[ self.args.trainer.num_freeze_layers:])
-            print(f"total layers: {len(list(self.model.backbone.encoder.layer))}, freeze layers: {self.args.trainer.num_freeze_layers}")
+        # print(self.args.optim)
+        # if self.args.trainer.num_freeze_layers is not None:
+        #     layers = list(self.model.backbone.encoder.layer[ self.args.trainer.num_freeze_layers:])
+        #     print(f"total layers: {len(list(self.model.backbone.encoder.layer))}, freeze layers: {self.args.trainer.num_freeze_layers}")
+        # else:
+        #     layers = [self.model.backbone.embeddings] + list(self.model.backbone.encoder.layer)
+        # layers.reverse()
+
+
+            # 动态获取 encoder 和 embeddings，适配不同的模型
+        if hasattr(self.model.backbone, 'roberta'):  # 适配 XLMRobertaForSequenceClassification
+            encoder = self.model.backbone.roberta.encoder.layer
+            embeddings = self.model.backbone.roberta.embeddings
+            head = self.model.backbone.classifier  # 分类头
+        elif hasattr(self.model, 'backbone') and hasattr(self.model.backbone, 'encoder'):
+            encoder = self.model.backbone.encoder.layer
+            embeddings = self.model.backbone.embeddings
+            head = getattr(self.model.backbone, 'classifier', None)  # 检查是否有 classifier
         else:
-            layers = [self.model.backbone.embeddings] + list(self.model.backbone.encoder.layer)
+            raise ValueError("Model structure not supported. Please check your model's encoder, embedding, and head structure.")
+
+        # 判断是否有冻结层的要求
+        if self.args.trainer.num_freeze_layers is not None:
+            layers = list(encoder[self.args.trainer.num_freeze_layers:])
+            print(f"total layers: {len(list(encoder))}, freeze layers: {self.args.trainer.num_freeze_layers}")
+        else:
+            layers = [embeddings] + list(encoder)
+
+        # 如果有分类头（head），则将其加入最后一个层级
+        if head:
+            layers.append(head)
+        
+        # 倒序排列层，分层学习率
         layers.reverse()
+
+
+            
         grouped_parameters = []
         _LR = self.args.optim.learning_rate
         _WD = self.args.optim.weight_decay

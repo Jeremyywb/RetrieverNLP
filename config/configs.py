@@ -283,6 +283,7 @@ class TrainerConfig(BaseConfig):
     gradient_accumulation_steps : int   = None
     backbone_with_params_only   : bool  = None
     torch_empty_cache_steps     : int   = None
+    empty_cache_original_step   : bool  = None
     split_train_valid_rate      : float = None
     load_best_model_at_end      : bool  = None
     eval_do_concat_batches      : bool  = None
@@ -323,6 +324,7 @@ class RetrieverModelConfig(BaseConfig):
 @validate_fields
 @dataclass
 class RerankerModelConfig(BaseConfig):
+    model_type : str = None
     load_from_pretrained_path : bool = None
     load_from_finetuned_path : bool = None
     model_path : str = None
@@ -360,13 +362,16 @@ class RetireverTrainingConfigs(TrainingConfigs):
 class RerankerDataConfig(BaseConfig):
     passage_instruction_for_retrieval : str = None
     query_instruction_for_retrieval   : str = None
-    group_size : int = None
-    dataset_type     : str = None
-    passage_max_len  : int = None
-    query_max_len    : int = None
-    json_path        : str = None
-    csv_path         : str = None
+    group_size         : int = None
+    dataset_type       : str = None
+    max_len            : int = None
+    sample_start       : int = None
+    sample_end         : int = None
+    contain_inner_neg  : bool = None
+    json_path          : str = None
+    csv_path           : str = None
     auto_fullfill_paths : list  = field(default_factory=lambda: ['json_path','csv_path'])
+
 
 @validate_fields
 @dataclass

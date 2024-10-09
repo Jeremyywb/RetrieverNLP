@@ -57,14 +57,33 @@ def compute_metrics(EvalPrediction:EvalPrediction):
     metrics['AP@25'] /= len(y_true)
     return metrics
 
+def compute_metrics(EvalPrediction:EvalPrediction):
+    #Recall@k / MRR/ MAP@25
+    # 
+    metrics = {}
+    metrics['RECALL@25'] = 0.0
+    k = 64
+    q_reps = EvalPrediction.predictions # bs,dim numpy
+    p_reps = EvalPrediction.passages # bs,dim numpy
+    y_true = EvalPrediction.label_ids # bs,1
+    cosine_similarities  = cosine_similarity(q_reps,p_reps)
+    sorted_indices = np.argsort(-cosine_similarities)[:,:k]
+    for i in range(len(y_true)):
+        actual_passages = y_true[i]
+        predicted_passages = sorted_indices[i].tolist()
+        if actual_passages in predicted_passages:
+            metrics['RECALL@64'] += 1
+    metrics['RECALL@25'] /= len(y_true)
+    return metrics
+
 
 def reranker_compute_metrics(EvalPrediction):
     metrics = {}
     metrics['AP@25'] = 0.0
     k = 25
 
-    logits = EvalPrediction.logits  # shape: (bs, num_docs)
-    labels = EvalPrediction.labels  # shape: (bs, num_docs)
+    logits = EvalPrediction.predictions  # shape: (bs, num_docs)
+    labels = EvalPrediction.label_ids  # shape: (bs, num_docs)
 
     # 计算得分的排序
     sorted_indices = np.argsort(-logits, axis=1)[:, :k]  # 获取前 k 个文档的索引

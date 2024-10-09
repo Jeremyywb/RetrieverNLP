@@ -62,7 +62,7 @@ class BgeBiEncoderModel(nn.Module):
         self.config.save_pretrained(self.model_path)
 
         self.backbone = AutoModel.from_pretrained(model_name_or_path , config=self.config)
-        if not self.load_from_pretrained_path or not self.load_from_finetuned_path:
+        if (not self.load_from_pretrained_path) or (not self.load_from_finetuned_path):
             self.backbone.save_pretrained(self.model_path)
         
         self.cross_entropy = nn.CrossEntropyLoss(reduction='mean')
@@ -119,6 +119,7 @@ class BgeBiEncoderModel(nn.Module):
             for i in range(0, total_passages, self.inbatch_for_long_passage):
                 p_rep = self.encode({key: val[i:i + self.inbatch_for_long_passage] for key, val in passages.items()})
                 p_reps_list.append( p_rep )
+                del p_rep
             p_reps = torch.cat( p_reps_list, axis=0 )
             del p_reps_list
             return p_reps.contiguous()

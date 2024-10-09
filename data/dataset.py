@@ -96,10 +96,10 @@ class BgeRetrieverDataset(BaseNLPDataset):
         """
         for item in self.data:
             query = item['query']
-            if isinstance(query, list):
-                query = query[0]
+            if not isinstance(query, list):
+                query = [query]
             if self.config.query_instruction_for_retrieval is not None:
-                query = self.config.query_instruction_for_retrieval +  query
+                query = [self.config.query_instruction_for_retrieval +  q for q in query]
 
             docs        = item['docs']
             pos_mask    = item['pos_mask']
@@ -165,10 +165,10 @@ class BgeRetrieverEvalDataset(BaseNLPDataset):
 
         for item in self.data:
             query = item['query']
-            if isinstance(query, list):
-                query = query[0]
+            if not isinstance(query, list):
+                query = [query]
             if self.config.query_instruction_for_retrieval is not None:
-                query = self.config.query_instruction_for_retrieval +  query
+                query = [self.config.query_instruction_for_retrieval +  q for q in query]
 
             docs        = item['docs']
             pos_mask    = item['pos_mask']

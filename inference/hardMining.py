@@ -244,7 +244,7 @@ def prepare_for_hard_mining(cfg):
     train_sorted_indices_to_list = train_sorted_indices.tolist()
     questionid_list = train_long.QuestionId.values.tolist()
     pos_ids_list = train_long.pos_id.values.tolist()
-    with open(f"{cfg.output_path}hard_mining_for_finetune.json", "w") as f:
+    with open(f"{cfg.output_path}{cfg.output_name}.json", "w") as f:
         for i in range(len(train_sorted_indices_to_list)):
             questionid = questionid_list[i]
             pos_id = pos_ids_list[i]
@@ -253,7 +253,9 @@ def prepare_for_hard_mining(cfg):
             sorted_indices = train_sorted_indices_to_list[i]
             if len(other_neg_ids) >0 and cfg.is_add_inner_pos_ids:
                 sorted_indices = other_neg_ids + sorted_indices
-            pos_mask = [x for x in sorted_indices if x == pos_id]
+            #pos_mask  like == [0,0,0,1,0,0,0]
+            pos_mask = [0] * len(sorted_indices)
+            pos_mask[sorted_indices.index(pos_id)] = 1
             sorted_indices = sorted_indices[:cfg.max_cutoff]
             pos_mask = pos_mask[:cfg.max_cutoff]
             query = train_texts[i]

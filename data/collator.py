@@ -52,12 +52,19 @@ def reranker_collate(features):
     # inputs 是 list of dict
     # 将 pos_mask 进行拼接
     output = {}
-    output['pos_mask'] = torch.stack([feature['pos_mask'] for feature in features], dim=0)
+    if 'pos_mask' in features[0]:
+        output['pos_mask'] = torch.stack([feature['pos_mask'] for feature in features], dim=0)
+
+    inputs = sum([ feature['inputs'] for feature in features], [])
     output['inputs'] = {
-        k:torch.cat(sum([feature['inputs'][k] for feature in features], []), dim=0)
-          for k in features[0]['inputs'].keys()
+        k:torch.cat([feature[k] for feature in inputs], dim=0)
+          for k in inputs[0].keys()
     }
+    del inputs
     _max_length = output['inputs']['attention_mask'].sum(dim=1).max().item()
     for k in output['inputs'].keys():
         output['inputs'][k] = output['inputs'][k][:, :_max_length]
     return output
+
+
+
