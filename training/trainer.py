@@ -445,12 +445,13 @@ class Trainer:
                 # may need special handling to match the dtypes of the model
                 kwargs.update({"dtype": self.accelerator.state.deepspeed_plugin.hf_ds_config.dtype()})
             return data.to(**kwargs)
+    
 
     def training_step(self,batch,scaler):
         self.model.train()
         if self.args.trainer.task == 'retrieval':
             batch.pop('passag_id')
-        
+        self.batch_infos = self.__describe(batch)
         inputs = self._prepare_input(batch)
         if self.args.trainer.fp16:
             with amp.autocast():
@@ -473,6 +474,31 @@ class Trainer:
             if (self.state.global_step+1) % self.args.trainer.torch_empty_cache_steps == 0:
                 torch.cuda.empty_cache()
         return loss
+
+    def __describe(self, batch):
+        def analyze_tensor(tensor):
+            if isinstance(tensor, torch.Tensor):
+                return tensor.shape
+            elif isinstance(tensor, (list, tuple)):
+                return tuple(analyze_tensor(t) for t in tensor)
+            elif isinstance(tensor, dict):
+                return {k: analyze_tensor(v) for k, v in tensor.items()}
+            else:
+                return None
+
+        def recursive_analyze(data, prefix=''):
+            batch_info = {}
+            if isinstance(data, dict):
+                for k, v in data.items():
+                    new_prefix = f"{prefix}_{k}" if prefix else k
+                    batch_info.update(recursive_analyze(v, new_prefix))
+            else:
+                shape = analyze_tensor(data)
+                if shape is not None:
+                    batch_info[prefix] = shape
+            return batch_info
+
+        return recursive_analyze(batch)
 
     def _maybe_log_save_evaluate(self,tr_loss, grad_norm):
         if self.control.should_log and self.state.global_step > self._globalstep_last_logged:

@@ -16,19 +16,7 @@ class BgeBiEncoderModel(nn.Module):
     def __init__(self, modelconfig : RetrieverModelConfig ):
         super().__init__()
 
-        self.load_from_pretrained_path        = modelconfig.load_from_pretrained_path
-        self.load_from_finetuned_path         = modelconfig.load_from_finetuned_path
-        self.inbatch_for_long_passage         = modelconfig.inbatch_for_long_passage
-        self.sentence_pooling_method          = modelconfig.sentence_pooling_method
-        self.negatives_cross_device           = modelconfig.negatives_cross_device
-        self.output_hidden_states             = modelconfig.output_hidden_states
-        self.model_path           = modelconfig.model_path
-        self.use_inbatch_neg      = modelconfig.use_inbatch_neg
-        self.temperature          = modelconfig.temperature
-        self.model_name           = modelconfig.model_name
-        self.output_dir           = modelconfig.output_dir
-        self.normlized            = modelconfig.normlized
-        self.num_labels           = modelconfig.num_labels
+        self.set_attr(modelconfig)
 
         model_name_or_path = None
         if self.load_from_pretrained_path: #output_dir
@@ -49,7 +37,8 @@ class BgeBiEncoderModel(nn.Module):
                             output_hidden_states =   self.output_hidden_states, 
                             num_labels           =   self.num_labels
                         )
-            self.config.save_pretrained(self.model_path)#output_dir
+            if self.is_infference:
+                self.config.save_pretrained(self.model_path)#output_dir
             model_name_or_path = self.model_name
 
 
@@ -57,13 +46,14 @@ class BgeBiEncoderModel(nn.Module):
                     'attention_dropout','attention_probs_dropout_prob']:
             if hasattr(self.config,attr):
                  setattr(self.config,attr,0.0)
-
-        self.config.save_pretrained(self.output_dir)
-        self.config.save_pretrained(self.model_path)
+        if self.is_infference:
+            self.config.save_pretrained(self.output_dir)
+            self.config.save_pretrained(self.model_path)
 
         self.backbone = AutoModel.from_pretrained(model_name_or_path , config=self.config)
         if (not self.load_from_pretrained_path) or (not self.load_from_finetuned_path):
-            self.backbone.save_pretrained(self.model_path)
+            if self.is_infference:
+                self.backbone.save_pretrained(self.model_path)
         
         self.cross_entropy = nn.CrossEntropyLoss(reduction='mean')
 
@@ -83,6 +73,22 @@ class BgeBiEncoderModel(nn.Module):
             # else:
             self.process_rank = dist.get_rank()
             self.world_size = dist.get_world_size()
+
+    def set_attr(self, modelconfig):
+        self.load_from_pretrained_path        = modelconfig.load_from_pretrained_path
+        self.load_from_finetuned_path         = modelconfig.load_from_finetuned_path
+        self.inbatch_for_long_passage         = modelconfig.inbatch_for_long_passage
+        self.sentence_pooling_method          = modelconfig.sentence_pooling_method
+        self.negatives_cross_device           = modelconfig.negatives_cross_device
+        self.output_hidden_states             = modelconfig.output_hidden_states
+        self.model_path           = modelconfig.model_path
+        self.use_inbatch_neg      = modelconfig.use_inbatch_neg
+        self.temperature          = modelconfig.temperature
+        self.model_name           = modelconfig.model_name
+        self.output_dir           = modelconfig.output_dir
+        self.normlized            = modelconfig.normlized
+        self.num_labels           = modelconfig.num_labels
+        self.is_infference        = modelconfig.is_infference
 
     def freeze_layers(self, num_layers):
         for i in range(0,num_layers,1):
@@ -225,3 +231,73 @@ class BgeBiEncoderModel(nn.Module):
              for k,
                  v in state_dict.items()})
         self.backbone.save_pretrained(output_dir, state_dict=state_dict)
+
+
+
+class BgeBiEncoderInfference(BgeBiEncoderModel):
+    def __init__(self, modelconfig : RetrieverModelConfig ):
+        super().__init__()
+        self.set_attr(modelconfig)
+
+        self.load_from_pretrained_path        = modelconfig.load_from_pretrained_path
+        self.load_from_finetuned_path         = modelconfig.load_from_finetuned_path
+        self.inbatch_for_long_passage         = modelconfig.inbatch_for_long_passage
+        self.sentence_pooling_method          = modelconfig.sentence_pooling_method
+        self.negatives_cross_device           = modelconfig.negatives_cross_device
+        self.output_hidden_states             = modelconfig.output_hidden_states
+        self.model_path           = modelconfig.model_path
+        self.use_inbatch_neg      = modelconfig.use_inbatch_neg
+        self.temperature          = modelconfig.temperature
+        self.model_name           = modelconfig.model_name
+        self.output_dir           = modelconfig.output_dir
+        self.normlized            = modelconfig.normlized
+        self.num_labels           = modelconfig.num_labels
+
+        model_name_or_path = None
+        if self.load_from_pretrained_path: #output_dir
+             self.config = AutoConfig.from_pretrained(self.model_path ,
+                                                      output_hidden_states=self.output_hidden_states, 
+                                                      num_labels = self.num_labels
+                                                )
+             model_name_or_path = self.model_path
+        elif self.load_from_finetuned_path:
+            self.config = AutoConfig.from_pretrained( self.output_dir ,
+                            output_hidden_states    = self.output_hidden_states, 
+                            num_labels              = self.num_labels
+                         )
+            model_name_or_path = self.output_dir
+            
+        else:
+            self.config = AutoConfig.from_pretrained(self.model_name ,
+                            output_hidden_states =   self.output_hidden_states, 
+                            num_labels           =   self.num_labels
+                        )
+            model_name_or_path = self.model_name
+
+
+        for attr in ['hidden_dropout','hidden_dropout_prob',
+                    'attention_dropout','attention_probs_dropout_prob']:
+            if hasattr(self.config,attr):
+                 setattr(self.config,attr,0.0)
+
+
+        self.backbone = AutoModel.from_pretrained(model_name_or_path , config=self.config)
+        
+        self.cross_entropy = nn.CrossEntropyLoss(reduction='mean')
+
+        if not self.normlized:
+            self.temperature = 1.0
+            logger.info("reset temperature = 1.0 due to using inner product to compute similarity")
+
+        if self.normlized:
+            if self.temperature > 0.5:
+                raise ValueError("Temperature should be smaller than 1.0 when use cosine similarity (i.e., normlized=True). Recommend to set it 0.01-0.1")
+
+        if self.negatives_cross_device:
+            if not dist.is_initialized():
+                raise ValueError('Distributed training has not been initialized for representation all gather.')
+            #     logger.info("Run in a single GPU, set negatives_cross_device=False")
+            #     self.negatives_cross_device = False
+            # else:
+            self.process_rank = dist.get_rank()
+            self.world_size = dist.get_world_size()

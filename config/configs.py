@@ -311,6 +311,7 @@ class RetrieverModelConfig(BaseConfig):
     negatives_cross_device      : bool = None
     output_hidden_states        : bool = None
     use_inbatch_neg     : bool  = None
+    is_infference       : bool  = None
     model_path          : str   = None
     temperature         : float = None
     model_name          : str   = None

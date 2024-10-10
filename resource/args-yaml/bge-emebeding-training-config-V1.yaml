@@ -61,6 +61,7 @@ model:
   temperature: 1
   model_name: BAAI/bge-large-en-v1.5
   output_dir: resource/bge-emb-v1-ft
+  is_infference: false
   normlized: false
   num_labels: 1
   # batch_size: 8

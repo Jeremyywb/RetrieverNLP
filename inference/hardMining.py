@@ -257,7 +257,7 @@ def prepare_for_hard_mining(cfg):
             pos_mask = [0] * len(sorted_indices)
             pos_mask[sorted_indices.index(pos_id)] = 1
             sorted_indices = sorted_indices[:cfg.max_cutoff]
-            pos_mask = pos_mask[:cfg.max_cutoff]
+            pos_mask = pos_mask[:cfg.max_cutoff] #检查是不是64
             query = train_texts[i]
             sorted_indices_text = [MisconceptionName[x] for x in sorted_indices]
             data = {
@@ -269,9 +269,5 @@ def prepare_for_hard_mining(cfg):
                 'inner_neg_end': len(other_neg_ids)
             }
             f.write(json.dumps(data) + "\n")
-
-
-
-
 
 
