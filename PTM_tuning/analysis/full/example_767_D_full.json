@@ -1,0 +1,7 @@
+{
+  "query_id": "767_D",
+  "content_id": 1509,
+  "explanation": "The correct answer is false because similarity requires both equal angles and proportional sides. While all rhombuses have equal sides, their angles can differ (e.g., a rhombus with 60\u00b0 angles vs. 90\u00b0 angles), making them non-similar. \n\nThe student incorrectly identified \"All regular decagons are similar\" as false. Regular decagons have fixed angles (144\u00b0 each) and equal side lengths, so any two regular decagons differ only by scaling factors, satisfying similarity conditions. \n\nThe error stems from a failure to recognize that \"regular\" ensures both equal angles and proportional sides, which automatically guarantees similarity for polygons of the same type. This contrasts with rhombuses, where regularity (squares) is required for similarity. \n\nThe student likely conflated \"regular\" with a vague notion of \"same shape\" without connecting it to the mathematical criteria for similarity. This aligns with the primary misconception of not grasping similarity's precise definition (angle equality and side proportionality). \n\nIt differs from related misconceptions (e.g., confusing \"regular\" with \"square\") because the student correctly applied \"regular\" to decagons but failed to link regularity to similarity's requirements.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

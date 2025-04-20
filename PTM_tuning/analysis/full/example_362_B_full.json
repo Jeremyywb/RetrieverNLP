@@ -1,0 +1,7 @@
+{
+  "query_id": "362_B",
+  "content_id": 130,
+  "explanation": "The correct calculation requires rearranging \\(4x + 3y = 5\\) to slope-intercept form:  \n\\(3y = -4x + 5\\) \u2192 \\(y = -\\frac{4}{3}x + \\frac{5}{3}\\), revealing a gradient of \\(-\\frac{4}{3}\\).  \n\nThe student incorrectly identified the gradient as \\(4\\) by directly using the coefficient of \\(x\\) from the original equation \\(4x + 3y = 5\\).  \n\nThis error stems from assuming the coefficient of \\(x\\) in standard form (\\(Ax + By = C\\)) directly represents the gradient, without isolating \\(y\\). The misconception bypasses the algebraic manipulation required to convert to \\(y = mx + c\\), where the gradient \\(m\\) becomes apparent.  \n\nThis is distinct from errors like forgetting to divide by the coefficient of \\(y\\) (which would yield \\(-4x + 5\\) instead of \\(-\\frac{4}{3}x\\)) or misapplying operations during rearrangement. The student's answer matches precisely the mistaken belief that \\(A\\) in \\(Ax + By = C\\) equals the gradient, regardless of the equation's form.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

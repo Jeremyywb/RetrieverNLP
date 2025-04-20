@@ -1,0 +1,7 @@
+{
+  "query_id": "322_A",
+  "content_id": 189,
+  "explanation": "Correct calculation:  \n0.3 \u00d7 12 = (3/10) \u00d7 12 = (3\u00d712)/10 = 36/10 = 3.6  \n\nStudent's error:  \nTreated 0.3 as 3, calculated 3\u00d712=36, and retained the whole number without decimal adjustment.  \n\nThe student failed to recognize that multiplying by 0.3 (one decimal place) requires dividing the product by 10. They treated the decimal digit \"3\" as a whole number multiplier, skipping the critical step of scaling back by the decimal's fractional value (1/10).  \n\nThis matches the misconception where the decimal's positional value is ignored during multiplication, directly producing a result 10 times too large. It differs from errors involving incorrect power-of-10 adjustments (e.g., dividing by 100 instead of 10), as no adjustment was attempted at all.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

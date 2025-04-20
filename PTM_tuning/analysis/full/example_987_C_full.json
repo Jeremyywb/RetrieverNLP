@@ -1,0 +1,7 @@
+{
+  "query_id": "987_C",
+  "content_id": 1429,
+  "explanation": "Correct calculation: To maintain equivalence, multiply numerator and denominator by the same factor. Since 2\u00d73=6, then 7\u00d73=21. Result: 21.\n\nStudent's error: After observing 2\u21926 (adding 4), they likely added 4 to denominator: 7+4=11. This preserves additive difference rather than multiplicative relationship.\n\nSpecific flaw: The student assumed equivalence requires maintaining absolute difference (4) rather than proportional scaling (\u00d73). This converts the multiplicative relationship of equivalence (scale factor 3) into an additive adjustment.\n\nConnection to misconception: The error directly substitutes addition for the required multiplication operation when scaling equivalent fractions, matching the primary misconception about maintaining ratios through additive changes rather than multiplicative ones.\n\nDistinction: While \"random operations\" could involve other arithmetic, this specific error shows systematic additive application. The error pattern aligns with additive scaling, not trial-and-error guessing.\n\nFinal confirmation: The consistent +4 adjustment matches the student's answer 11, confirming they used additive reasoning where multiplicative scaling was required.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

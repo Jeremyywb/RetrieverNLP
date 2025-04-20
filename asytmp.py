@@ -1,9 +1,14 @@
 import os
 import json
 import asyncio
+import logging
 import argparse
+from dataclasses import dataclass
 from typing import List, Dict, Optional
+from datetime import datetime
 from pathlib import Path
+
+from openai import AsyncOpenAI
 from tenacity import retry, wait_exponential, stop_after_attempt, retry_if_exception_type
 from pyrate_limiter import Duration, RequestRate, Limiter
 from prometheus_client import start_http_server, Counter, Histogram
@@ -11,9 +16,8 @@ from dotenv import load_dotenv
 from tqdm import tqdm
 import pandas as pd
 import platform
-from model_clients import get_model_client
-from datamodels import AnalysisResult, MathPrompts
-from datetime import datetime
+
+
 
 # 加载环境变量
 load_dotenv()
@@ -43,87 +47,53 @@ API_CALL_COUNTER = Counter('api_calls', 'API调用统计', ['status', 'task_type
 API_RESPONSE_TIME = Histogram('response_time', '响应时间分布', ['task_type'])
 
 
+@dataclass
+class AnalysisResult:
+    query_id: str
+    content_id: str
+    explanation: str
+    timestamp: str = datetime.now().isoformat()
+    error: Optional[str] = None
+
+    def to_dict(self):
+        return {
+            **self.__dict__
+        }
+
+
+class MathPrompts:
+    SYSTEM = "You are an expert in mathematical error analysis. Your task is to analyze a student's incorrect answer to identify the specific reasoning flaw that led to their error. And remember always answer in English language."
+    
+    FULL_TEMPLATE = """ """
+
+
+    LITE_TEMPLATE = """ """
+
+# ========================= 核心处理器 =========================
+
 
 class ProgressManager:
-    def __init__(self, task_type: str):
-        self.task_type = task_type
-        self.progress_file = Config.ERROR_DIR / f"{task_type}_progress.txt"
-        self._processed = self._load_existing()
-
-    def _load_existing(self) -> set:
-        """加载进度文件并校验有效性"""
-        if not self.progress_file.exists():
-            with open(self.progress_file, 'w') as f:
-                pass
-            return set()
-            
-        processed = set()
-        with open(self.progress_file, 'r') as f:
-            for line in f:
-                parts = line.strip().split(',')
-                # 格式: query_id,status,timestamp
-                if len(parts) >=2 and parts[1] == "success":
-                    processed.add(parts[0])
-        return processed
-
-    def is_processed(self, query_id: str) -> bool:
-        return query_id in self._processed
-
-    def mark_success(self, query_id: str):
-        """标记成功记录"""
-        with open(self.progress_file, 'a') as f:
-            f.write(f"{query_id},success,{datetime.now().isoformat()}\n")
-        self._processed.add(query_id)
-
-    def mark_failed(self, query_id: str, error: str):
-        """标记失败记录"""
-        with open(self.progress_file, 'a') as f:
-            f.write(f"{query_id},failed,{datetime.now().isoformat()},{error}\n")
+    pass
 
 
 
 class BailianMathEvaluator:
-    def __init__(self, task_type: str, model_type: str = "deepseek", stream: bool = False):
+    def __init__(self, task_type: str):
         assert task_type in ["full", "lite"], "Invalid task type"
         self.task_type = task_type
-        self.stream = stream  # Store stream parameter
-
         if task_type == "full":
             self.full_df = pd.read_csv(Config.FULL_INPUT_DIR)
 
         self.full_analysis_pool = self._get_full_files() if task_type == "lite" else None
-        
-        # Use the model client factory instead of direct instantiation
-        self.model_client = get_model_client(model_type)
-        # We'll initialize it in an async context later
-        
+        self.client = AsyncOpenAI(
+            api_key=os.getenv("DASHSCOPE_API_KEY"),
+            base_url="https://dashscope.aliyuncs.com/compatible-mode/v1"
+        )
         self.rate_limiter = Limiter(RequestRate(10, Duration.MINUTE))
-        # 每分钟最多允许发送10个请求
         self.semaphore = asyncio.Semaphore(10)
-        # 限制同时进行的异步操作数量为最多10个
 
         # 初始化输出目录
         Config.init_dirs()
-
-    async def initialize(self):
-        """Initialize async resources"""
-        await self.model_client.initialize()
-
-        
-
-    def _timeout_base_on_prompt(self, prompt: str) -> int:
-        # 基于请求复杂度定义超时
-        timeouts = {
-            'simple': 45,    # 简单请求
-            'medium': 90,    # 中等复杂度
-            'complex': 180   # 复杂请求
-        }
-        complexity = 'medium'  # 默认复杂度
-        if len(prompt.split()) > 1000 :
-            complexity = 'complex'
-        elif len(prompt.split()) < 100:
-            complexity = 'simple'
-        return timeouts[complexity]
 
     def _preview_full_analysis(self, full_file) -> str:
         """预览Full任务分析结果 full_file 为文件名 不含路径"""
@@ -182,8 +152,7 @@ class BailianMathEvaluator:
             {"role": "system", "content": MathPrompts.SYSTEM},
             {"role": "user", "content": prompt}
             ]
-        time_out = self._timeout_base_on_prompt(prompt)
-        result = await self._safe_api_call(messages, time_out)
+        result = await self._safe_api_call(messages)
         return AnalysisResult(
             query_id=row['query_id'],
             content_id=row['content_id'],
@@ -191,64 +160,27 @@ class BailianMathEvaluator:
             error=result.error
         )
 
-    async def _process_lite(self, row: Dict) -> AnalysisResult:
-        """处理简化数据任务（多轮对话）"""
-        # 第一轮对话
-        import random
-        seed_analysis_file = random.choice(self.full_analysis_pool)
-        seed_analysis = self._preview_full_analysis(seed_analysis_file)
-        try_count = 0
-        while seed_analysis == "" and try_count < 3:
-            seed_analysis_file = random.choice(self.full_analysis_pool)
-            seed_analysis = self._preview_full_analysis(seed_analysis_file)
-            try_count += 1
-        if seed_analysis == "":
-            raise ValueError("Failed to get a valid seed analysis")
-        
-        query_id = seed_analysis_file.split("_")[1]
-        full_row = self.full_df[self.full_df['query_id'].map(str) == query_id].iloc[0].to_dict()
-        full_prompt = self._build_full_prompt(full_row)
 
-        messages =  [
-            {"role": "system", "content": MathPrompts.SYSTEM},
-            {"role": "user", "content": full_prompt},
-            {"role": "assistant", "content": seed_analysis}
-            ]
-        time_out = self._timeout_base_on_prompt(full_prompt)
-        time_out+= self._timeout_base_on_prompt(seed_analysis)
-        
-        prompt = self._build_lite_prompt(row)
-        time_out+= self._timeout_base_on_prompt(prompt)
-
-        messages.append({"role": "user", "content": prompt})
-        result = await self._safe_api_call(messages, time_out)
-        return AnalysisResult(
-            query_id=row['query_id'],
-            content_id=row['content_id'],
-            explanation=result.explanation,
-            error=result.error
-        )
 
     @retry(
         wait=wait_exponential(min=1, max=60),
         stop=stop_after_attempt(3),
         retry=retry_if_exception_type((OSError, TimeoutError))
     )
-    async def _safe_api_call(self, messages: str, time_out: int) -> AnalysisResult:
+    async def _safe_api_call(self, messages: str) -> AnalysisResult:
         """带重试机制的API调用"""
         async with self.semaphore:
             with self.rate_limiter.ratelimit("api_call", delay=True):
                 start_time = datetime.now()
                 try:
-                    # Use the model client instead of direct API calls
-                    response = await self.model_client.get_completion(
+                    response = await self.client.chat.completions.create(
+                        model="deepseek-r1",
                         messages=messages,
-                        stream=self.stream,  # Enable streaming
                         temperature=0.3,
-                        timeout=time_out
+                        timeout=15
                     )
-                    
-                    # Record metrics
+                    print(f"API调用成功: {response}")
+                    # 记录指标
                     api_duration = (datetime.now() - start_time).total_seconds()
                     API_RESPONSE_TIME.labels(task_type=self.task_type).observe(api_duration)
                     API_CALL_COUNTER.labels(status="success", task_type=self.task_type).inc()
@@ -301,19 +233,11 @@ class BailianMathEvaluator:
             )
 
     def _save_result(self, output_dir ,result: AnalysisResult):
-        """实时保存结果"""
-        output_path = output_dir / f"example_{result.query_id}_{self.task_type}.json"
-        with open(output_path, 'w') as f:
-            json.dump(result.to_dict(), f, indent=2)
+        pass
 
     def _save_error_result(self, result: AnalysisResult):
         """错误文件隔离存储"""
-        error_dir = Config.ERROR_DIR / self.task_type
-        error_dir.mkdir(exist_ok=True)
-        filename = f"{result.query_id}_{result.content_id}_error.json"
-        with open(error_dir / filename, 'w') as f:
-            json.dump(result.to_dict(), f)
-
+        pass
     def _build_full_prompt(self, row: Dict) -> str:
         """构建完整数据提示"""
         return MathPrompts.FULL_TEMPLATE.format(
@@ -333,12 +257,11 @@ class BailianMathEvaluator:
 
 
 
+            
+# ========================= 命令行接口 =========================
 async def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--task", choices=["full", "lite"], required=True)
-    parser.add_argument("--model", choices=["deepseek", "openai"], default="deepseek")
-    parser.add_argument("--stream", action="store_true", help="Enable streaming mode")
-
     args = parser.parse_args()
     filemap = {
         "full": Config.FULL_INPUT_DIR,
@@ -346,13 +269,12 @@ async def main():
     }
 
     try:
-        evaluator = BailianMathEvaluator(args.task, args.model, args.stream)
-        # Initialize async resources
-        await evaluator.initialize()
-        
+
+        evaluator = BailianMathEvaluator(args.task)
+
         progress = ProgressManager(args.task)
     
-        df = pd.read_csv(filemap[args.task]) 
+        df = pd.read_csv( filemap[args.task]) 
 
         rows_to_process = [row for _, row in df.iterrows() if not progress.is_processed(row['query_id'])]
         tasks = [evaluator.process_row(row, progress) for row in rows_to_process]
@@ -366,9 +288,11 @@ async def main():
         print(f"程序执行出错: {str(e)}")
 
 
-
 if __name__ == "__main__":
     if platform.system() == 'Windows':
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     # 运行主协程
     asyncio.run(main())
+
+
+

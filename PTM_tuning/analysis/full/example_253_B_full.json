@@ -1,0 +1,7 @@
+{
+  "query_id": "253_B",
+  "content_id": 1707,
+  "explanation": "Correct calculation: \\(46^\\circ + 115^\\circ + k = 180^\\circ\\)  \n\\(161^\\circ + k = 180^\\circ\\)  \n\\(k = 19^\\circ\\)\n\nStudent's likely error: \\(115^\\circ + k = 180^\\circ\\)  \n\\(k = 65^\\circ\\)\n\nThe student treated only two angles (115\u00b0 and k) as forming the straight line, ignoring the third angle (46\u00b0). This stems from incorrectly assuming that any pair of adjacent angles on a line must sum to 180\u00b0, rather than recognizing that all angles forming the straight line must collectively total 180\u00b0. \n\nThis directly aligns with the misconception that \"any adjacent angles sum to 180\u00b0,\" as the student subtracted only one adjacent angle (115\u00b0) from 180\u00b0 instead of summing all three. It differs from \"angles on a straight line add to 100\u00b0\" because the student used 180\u00b0 in their (flawed) calculation. The error is not about vertical angles or misidentifying the angle being asked.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}
