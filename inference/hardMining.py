@@ -34,7 +34,7 @@
 def format_text(all_text,option_text):
     return f'''Question: {all_text}\n\n Option: {option_text}.\n\n What misconception does this option reveal?'''
 
-def prepare_for_hard_mining(cfg):
+def prepare_for_hard_mining(cfg, config ):
     import pandas as pd
     import numpy as np
     from transformers import AutoTokenizer, AutoModel
@@ -46,9 +46,11 @@ def prepare_for_hard_mining(cfg):
     import os
     import numpy as np
     from tqdm import tqdm
+    from .retriever_pred import RetrieverInfference
     if not os.path.exists(cfg.output_path):
         os.mkdir( cfg.output_path )
 
+    RetrieverInffer = RetrieverInfference(config)
 
     train                 = pd.read_csv(cfg.train_path)
     misconception_mapping = pd.read_csv(cfg.misc_path)
@@ -188,12 +190,19 @@ def prepare_for_hard_mining(cfg):
     for mini_batch in tqdm(range(0, len(MisconceptionName[:]), per_gpu_batch_size)):
         mini_context          = MisconceptionName[mini_batch:mini_batch+ per_gpu_batch_size]
         encoded_input         = prepare_inputs(mini_context,tokenizer,device)
-        sentence_embeddings   = model(**encoded_input)[0][:, 0]
-        sentence_embeddings   = torch.nn.functional.normalize(sentence_embeddings, p=2, dim=1)
-        all_ctx_vector.append(sentence_embeddings.detach().cpu().numpy())
-        del sentence_embeddings
 
-    all_ctx_vector = np.concatenate(all_ctx_vector, axis=0)
+        sentence_embeddings = RetrieverInffer.encode_passages(encoded_input)
+        all_ctx_vector.append(sentence_embeddings.detach())
+        del sentence_embeddings,encoded_input
+        torch.cuda.empty_cache()
+
+        # sentence_embeddings   = model(**encoded_input)[0][:, 0]
+        # sentence_embeddings   = torch.nn.functional.normalize(sentence_embeddings, p=2, dim=1)
+        # all_ctx_vector.append(sentence_embeddings.detach().cpu().numpy())
+        # del sentence_embeddings
+
+    # all_ctx_vector = np.concatenate(all_ctx_vector, axis=0)
+    all_ctx_vector = torch.cat(all_ctx_vector, axis=0)
 
 
 
@@ -209,22 +218,49 @@ def prepare_for_hard_mining(cfg):
         mini_context = train_texts[mini_batch:mini_batch
                                             + per_gpu_batch_size]
         encoded_input = prepare_inputs(mini_context,tokenizer,device)
-        sentence_embeddings = model(
-            **encoded_input)[0][:, 0]
-        sentence_embeddings = torch.nn.functional.normalize(sentence_embeddings, p=2, dim=1)
-        
-        train_text_vector.append(sentence_embeddings.detach().cpu().numpy())
-        del sentence_embeddings
+        sentence_embeddings = RetrieverInffer.encode(encoded_input)
+        train_text_vector.append(sentence_embeddings.detach())
+        del sentence_embeddings,encoded_input
 
-    train_text_vector = np.concatenate(train_text_vector, axis=0)
+
+        # sentence_embeddings = model(
+        #     **encoded_input)[0][:, 0]
+        # sentence_embeddings = torch.nn.functional.normalize(sentence_embeddings, p=2, dim=1)
+        
+        # train_text_vector.append(sentence_embeddings.detach().cpu().numpy())
+        # del sentence_embeddings
+
+    # train_text_vector = np.concatenate(train_text_vector, axis=0)
+    train_text_vector = torch.cat(train_text_vector, axis=0)
     print(train_text_vector.shape)
 
     # ========================
     # Cosine similarities
     # ========================
 
-    cosine_similarities = cosine_similarity(train_text_vector, all_ctx_vector)
-    train_sorted_indices = np.argsort(-cosine_similarities, axis=1)
+    # cosine_similarities = cosine_similarity(train_text_vector, all_ctx_vector)
+    # train_sorted_indices = np.argsort(-cosine_similarities, axis=1)
+
+
+    # ========================
+    # model inner similarities
+    # ========================
+    similarity = None
+    for i in tqdm(
+            range(0,train_text_vector.shape[0], 32 ) ):
+        
+        sentence_embeddings = RetrieverInffer.compute_similarity(train_text_vector[i:i+32], all_ctx_vector )
+        if similarity is None:
+            similarity = sentence_embeddings
+        else:
+            similarity = torch.cat([similarity, sentence_embeddings],dim=0)
+        del sentence_embeddings
+        torch.cuda.empty_cache()
+
+    train_sorted_indices = np.argsort(-similarity.detach().cpu().numpy(), axis=1)
+    del similarity
+
+
 
     # ========================
     # Hard negative sample mining
@@ -244,30 +280,64 @@ def prepare_for_hard_mining(cfg):
     train_sorted_indices_to_list = train_sorted_indices.tolist()
     questionid_list = train_long.QuestionId.values.tolist()
     pos_ids_list = train_long.pos_id.values.tolist()
-    with open(f"{cfg.output_path}{cfg.output_name}.json", "w") as f:
-        for i in range(len(train_sorted_indices_to_list)):
-            questionid = questionid_list[i]
-            pos_id = pos_ids_list[i]
-            other_neg_ids = questionid_to_list_of_pos_ids[questionid]
-            other_neg_ids = [x for x in other_neg_ids if x != pos_id]
-            sorted_indices = train_sorted_indices_to_list[i]
-            if len(other_neg_ids) >0 and cfg.is_add_inner_pos_ids:
-                sorted_indices = other_neg_ids + sorted_indices
-            #pos_mask  like == [0,0,0,1,0,0,0]
-            pos_mask = [0] * len(sorted_indices)
-            pos_mask[sorted_indices.index(pos_id)] = 1
-            sorted_indices = sorted_indices[:cfg.max_cutoff]
-            pos_mask = pos_mask[:cfg.max_cutoff] #检查是不是64
-            query = train_texts[i]
-            sorted_indices_text = [MisconceptionName[x] for x in sorted_indices]
-            data = {
-                "query": query,
-                "pos": [MisconceptionName[pos_id]],
-                "docs": sorted_indices_text,
-                "pos_mask": pos_mask,
-                'passag_id': pos_id,
-                'inner_neg_end': len(other_neg_ids)
-            }
-            f.write(json.dumps(data) + "\n")
 
+
+    all_data = {}
+    for i in range(len(train_sorted_indices_to_list)):
+        questionid = questionid_list[i]
+        pos_id = pos_ids_list[i]
+        other_neg_ids = questionid_to_list_of_pos_ids[questionid]
+        other_neg_ids = [x for x in other_neg_ids if x != pos_id]
+        sorted_indices = train_sorted_indices_to_list[i]
+        if len(other_neg_ids) >0 and cfg.is_add_inner_pos_ids:
+            sorted_indices = other_neg_ids + sorted_indices
+        #pos_mask  like == [0,0,0,1,0,0,0]
+        pos_mask = [0] * len(sorted_indices)
+        pos_mask[sorted_indices.index(pos_id)] = 1
+        sorted_indices = sorted_indices[:cfg.max_cutoff]
+        pos_mask = pos_mask[:cfg.max_cutoff] #检查是不是64
+        query = train_texts[i]
+        sorted_indices_text = [MisconceptionName[x] for x in sorted_indices]
+        data = {
+            "query": query,
+            "pos": [MisconceptionName[pos_id]],
+            "docs": sorted_indices_text,
+            "pos_mask": pos_mask,
+            'passag_id': pos_id,
+            'inner_neg_end': len(other_neg_ids)
+        }
+        _hash = hash(query)
+        all_data[_hash] = data
+
+    def load_json_lines(json_file):
+        data = []
+        with open(json_file, 'r', encoding='utf-8') as f:
+            for line in f:
+                data.append(json.loads(line))
+        return data
+    train_data = load_json_lines(cfg.last_train )
+    for i in range(len(train_data)):
+        dat = train_data[i]
+        qry = dat['query']
+        _hash_docs = [ hash(d) for d in dat['docs'] ]
+        _hash = hash(qry)
+        _add  = all_data[_hash]
+        _add_pos = _add['pos'][0]
+        _add_doc = _add['docs']
+        _add_doc = [c for c in _add_doc if hash(c) != hash(_add_pos) and hash(c) not in _hash_docs]
+
+        if len(_add_doc)<len(_hash_docs) :
+            _len_save = len(_hash_docs)//2
+            _len_add  = len(_hash_docs) - _len_save
+            if _len_add<len(_add_doc):
+                dat['docs'] = dat['docs'][:_len_save] + _add_doc[:_len_add]
+                train_data[i] = dat
+        else:
+            _add['docs'] = _add_doc
+            _add['pos_mask'] = [0]*len(_add_doc)
+            train_data.append(_add)
+    
+    with open(f"{cfg.output_path}{cfg.output_train}.json", "w") as f:
+        for data in train_data:
+            f.write(json.dumps(data) + "\n")
 

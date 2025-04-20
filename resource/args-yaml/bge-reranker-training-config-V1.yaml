@@ -4,7 +4,7 @@ trainset:
   dataset_type: bge_reranker_data_train # name of dataset to init class
   passage_instruction_for_retrieval:
   query_instruction_for_retrieval:
-  group_size: 64
+  group_size: 16
   sample_start: 3
   sample_end: 100
   contain_inner_neg: false
@@ -16,7 +16,7 @@ validset:
   dataset_type: bge_reranker_data_valid
   passage_instruction_for_retrieval:
   query_instruction_for_retrieval:
-  group_size: 64
+  group_size: 32
   max_len: 768
   contain_inner_neg: false
   json_path: 
@@ -53,7 +53,7 @@ model:
   output_dir: resource/bge-reranker-v1-ft
   num_labels: 1
   batch_size: 1
-  group_size: 64
+  group_size: 16
 
 callbacks:
   name: callbacks

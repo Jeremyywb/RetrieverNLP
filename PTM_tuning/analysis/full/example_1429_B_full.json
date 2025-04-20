@@ -1,0 +1,7 @@
+{
+  "query_id": "1429_B",
+  "content_id": 1371,
+  "explanation": "The correct calculation divides \u00a330 by the total ratio parts (3+2=5), giving \u00a36 per part. Tom receives 3\u00d7\u00a36=\u00a318 and Katie 2\u00d7\u00a36=\u00a312, totalling \u00a330. \n\nThe student's answer implies (3-2)=1 part difference equals \u00a330, making Tom's share 3\u00d7\u00a330=\u00a390 and Katie's 2\u00d7\u00a330=\u00a360, with a \u00a330 difference. \n\nThe flaw arises from treating the difference between ratio quantities (3-2) as equivalent to one part value, rather than using the total sum (3+2) to determine part size. This directly misapplies the ratio's purpose to partition the total amount, instead interpreting it as describing a comparative difference. \n\nThis error matches using the ratio difference for part calculation when the total is given, distinct from misunderstanding \"difference\" as a command word or confusing unit differences with part quantities. The student substituted ratio subtraction for required addition, corrupting the foundation of proportional division.",
+  "timestamp": "2025-04-20T14:44:28.633543",
+  "error": null
+}

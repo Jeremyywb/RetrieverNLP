@@ -9,7 +9,6 @@ def load_yaml(training_config_yaml):
         config_dicts = yaml.safe_load(file)
      return config_dicts
 
-
 class RetrieverInfference:
     def __init__(self, config:Union[str, dict]) -> None:
         if isinstance(config, dict):

@@ -61,7 +61,6 @@ model:
   temperature: 1
   model_name: BAAI/bge-large-en-v1.5
   output_dir: resource/bge-emb-v1-ft
-  is_infference: false
   normlized: false
   num_labels: 1
   # batch_size: 8
@@ -72,7 +71,7 @@ callbacks:
   early_stopping_patience: 5
   early_stopping_threshold: 0.0
   load_best_model_at_end: true
-  metric_for_best_model: AP@25
+  metric_for_best_model: RECALL@25
   is_epoch_progress_bar_enabled: false
   logging_first_step: true
   logging_steps: 1
@@ -130,8 +129,9 @@ optim:
   LLDR:
 trainer:
   trainerType: bge_retriever_trainer
+  sentence_trainer_like: true
   name: trainer
-  input: resource/input/hard_mining_for_finetune.json
+  input: resource/input/rerank_hard_minded.json
   split_train_valid_rate: 0.8
   num_devices: 1
   num_freeze_layers: 12

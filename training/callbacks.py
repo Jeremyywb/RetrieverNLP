@@ -602,9 +602,10 @@ class ProgressCallback(TrainerCallback):
                 self.training_bar = tqdm(
                     total= state.num_training_steps, 
                     dynamic_ncols=True,
-                    file=sys.stdout, 
+                    file=sys.stderr, 
                     colour='#0052d9',
-                    ncols=90
+                    ncols=90,
+                     leave=True  # 保留进度条在完成后
                 )
             self.current_step = 0
 
@@ -614,9 +615,10 @@ class ProgressCallback(TrainerCallback):
                 self.training_bar = tqdm(
                     total= len(train_dataloader), 
                     dynamic_ncols=True,
-                    file=sys.stdout, 
+                    file=sys.stderr, 
                     colour='#0052d9',
-                    ncols=90
+                    ncols=90,
+                     leave=True  # 保留进度条在完成后
                 )
             self.current_step = 0
 

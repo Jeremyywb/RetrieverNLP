@@ -113,3 +113,30 @@ class SequenceClassifierOutput(ModelOutput):
     logits: torch.FloatTensor = None
     hidden_states: Optional[Tuple[torch.FloatTensor, ...]] = None
     attentions: Optional[Tuple[torch.FloatTensor, ...]] = None
+
+
+
+
+
+ConstructNames = list(train.ConstructName.values)
+ConstructNames = list(train_long.all_text.values)
+ConstructName_vector = []
+per_gpu_batch_size = 8
+
+for mini_batch in tqdm(
+        range(0, len(ConstructNames[:]), per_gpu_batch_size)):
+    mini_context = ConstructNames[mini_batch:mini_batch
+                                           + per_gpu_batch_size]
+    encoded_input = prepare_inputs(mini_context,tokenizer,device)
+#         sentence_embeddings = model(
+#             **encoded_input)[0][:, 0]
+#         sentence_embeddings = torch.nn.functional.normalize(sentence_embeddings, p=2, dim=1)
+    ### My retriver infference
+    sentence_embeddings = RetrieverInffer.encode(encoded_input)
+#         ConstructName_vector.append(sentence_embeddings.detach().cpu().numpy())
+    ConstructName_vector.append(sentence_embeddings.detach())
+    del sentence_embeddings,encoded_input
+
+#     ConstructName_vector = np.concatenate(ConstructName_vector, axis=0)
+ConstructName_vector = torch.cat(ConstructName_vector, axis=0)
+print(ConstructName_vector.shape)

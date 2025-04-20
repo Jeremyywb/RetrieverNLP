@@ -6,6 +6,7 @@ from collections import OrderedDict
 from typing import Optional
 
 
+
 def validate_fields(cls):
     original_init = cls.__init__
 
@@ -283,6 +284,7 @@ class TrainerConfig(BaseConfig):
     gradient_accumulation_steps : int   = None
     backbone_with_params_only   : bool  = None
     torch_empty_cache_steps     : int   = None
+    sentence_trainer_like       : bool  = None
     empty_cache_original_step   : bool  = None
     split_train_valid_rate      : float = None
     load_best_model_at_end      : bool  = None

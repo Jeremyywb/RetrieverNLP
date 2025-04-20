@@ -16,65 +16,61 @@ logger = get_logger(__name__)
 class BgeCrossEncoder(nn.Module):
     def __init__(self, modelconfig : RerankerModelConfig ):
         super().__init__()
-
-        self.load_from_pretrained_path        = modelconfig.load_from_pretrained_path
-        self.load_from_finetuned_path         = modelconfig.load_from_finetuned_path
-        # self.inbatch_for_long_passage         = modelconfig.inbatch_for_long_passage
-        # self.sentence_pooling_method          = modelconfig.sentence_pooling_method
-        # self.negatives_cross_device           = modelconfig.negatives_cross_device
-        # self.output_hidden_states             = modelconfig.output_hidden_states
-        self.model_path           = modelconfig.model_path
-        # self.use_inbatch_neg      = modelconfig.use_inbatch_neg
-        # self.temperature          = modelconfig.temperature
-        self.model_name           = modelconfig.model_name
-        self.output_dir           = modelconfig.output_dir
-        # self.normlized            = modelconfig.normlized
-        self.num_labels           = modelconfig.num_labels
-
-        self.batch_size = modelconfig.batch_size
-        self.group_size = modelconfig.group_size
-
-
-
+        self.set_attr(modelconfig)
         model_name_or_path = None
         if self.load_from_pretrained_path: #output_dir
-             self.config = AutoConfig.from_pretrained(self.model_path ,
-                                                      num_labels = self.num_labels
-                                                )
+             self.config = AutoConfig.from_pretrained(
+                self.model_path ,
+                num_labels = self.num_labels 
+             )
+             
              model_name_or_path = self.model_path
         elif self.load_from_finetuned_path:
-            self.config = AutoConfig.from_pretrained( self.output_dir ,
-                            # output_hidden_states    = self.output_hidden_states, 
-                            num_labels              = self.num_labels
-                         )
+            self.config = AutoConfig.from_pretrained( 
+                self.output_dir ,
+                num_labels = self.num_labels
+            )
             model_name_or_path = self.output_dir
             
         else:
-            self.config = AutoConfig.from_pretrained(self.model_name ,
-                            # output_hidden_states =   self.output_hidden_states, 
-                            num_labels           =   self.num_labels
-                        )
-            self.config.save_pretrained(self.model_path)#output_dir
+            self.config = AutoConfig.from_pretrained(
+                self.model_name ,
+                # output_hidden_states =   self.output_hidden_states, 
+                num_labels = self.num_labels
+            )
+            if not self.is_infference:
+                self.config.save_pretrained(self.model_path)#output_dir
             model_name_or_path = self.model_name
-
 
         for attr in ['hidden_dropout','hidden_dropout_prob',
                     'attention_dropout','attention_probs_dropout_prob']:
             if hasattr(self.config,attr):
                  setattr(self.config,attr,0.0)
-
-        self.config.save_pretrained(self.output_dir)
-        self.config.save_pretrained(self.model_path)
+        if not self.is_infference:
+            self.config.save_pretrained(self.output_dir)
+            self.config.save_pretrained(self.model_path)
 
         self.backbone = AutoModelForSequenceClassification.from_pretrained(model_name_or_path , config=self.config)
         if (not self.load_from_pretrained_path ) or (not self.load_from_finetuned_path):
-            self.backbone.save_pretrained(self.model_path)
+            if not self.is_infference:
+                self.backbone.save_pretrained(self.model_path)
         
         self.cross_entropy = nn.CrossEntropyLoss(reduction='mean')
         self.register_buffer(
             'target_label',
             torch.zeros(self.batch_size, dtype=torch.long)
         )
+
+    def set_attr(self, modelconfig):
+        self.load_from_pretrained_path     = modelconfig.load_from_pretrained_path
+        self.load_from_finetuned_path      = modelconfig.load_from_finetuned_path
+        self.is_infference = modelconfig.is_infference
+        self.model_path    = modelconfig.model_path
+        self.model_name    = modelconfig.model_name
+        self.output_dir    = modelconfig.output_dir
+        self.num_labels    = modelconfig.num_labels
+        self.batch_size    = modelconfig.batch_size
+        self.group_size    = modelconfig.group_size
 
     def freeze_layers(self, num_layers):
         for i in range(num_layers):
@@ -117,17 +113,6 @@ class BgeCrossEncoder(nn.Module):
         torch.cuda.empty_cache()
         loss = self.cross_entropy(logits , target_label)
 
-        # for i in range(0,total_in_batch_size,4):
-        #     ranker_out = self.backbone(**{k:v[i:i+4]  for k,v in  inputs.items() }, return_dict=True)
-        #     outputs.append(ranker_out.logits)
-        #     del ranker_out
-        #     torch.cuda.empty_cache()
-        # logits = torch.cat(outputs, dim=0).view(
-        #     batch_size,
-        #     group_size
-        # )
-        # del outputs
-        # loss = self.cross_entropy(logits , target_label)
         return SequenceClassifierOutput(loss=loss, logits=logits)
     
     def concat_sequence_classifier_outputs(self, outputs: List[SequenceClassifierOutput]) -> SequenceClassifierOutput:

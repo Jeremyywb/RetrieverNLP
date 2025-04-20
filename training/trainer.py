@@ -615,6 +615,7 @@ class Trainer:
         all_inputs = all_inputs.get_arrays()
         if psg_reps is not None:
             psg_reps = psg_reps.detach().cpu().numpy()
+            
 
         if (
             (self.compute_metrics is not None

@@ -1,7 +1,7 @@
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from ..utils.utilities import EvalPrediction
-
+import torch
 def apk(actual, predicted, k=10):
     """
     Computes the average precision at k.
@@ -57,12 +57,12 @@ def compute_metrics(EvalPrediction:EvalPrediction):
     metrics['AP@25'] /= len(y_true)
     return metrics
 
-def compute_metrics(EvalPrediction:EvalPrediction):
+def compute_metrics_recall(EvalPrediction:EvalPrediction):
     #Recall@k / MRR/ MAP@25
     # 
     metrics = {}
     metrics['RECALL@25'] = 0.0
-    k = 64
+    k = 25
     q_reps = EvalPrediction.predictions # bs,dim numpy
     p_reps = EvalPrediction.passages # bs,dim numpy
     y_true = EvalPrediction.label_ids # bs,1
@@ -72,7 +72,30 @@ def compute_metrics(EvalPrediction:EvalPrediction):
         actual_passages = y_true[i]
         predicted_passages = sorted_indices[i].tolist()
         if actual_passages in predicted_passages:
-            metrics['RECALL@64'] += 1
+            metrics['RECALL@25'] += 1
+    metrics['RECALL@25'] /= len(y_true)
+    return metrics
+
+def compute_similarity( q_reps, p_reps):
+    if len(p_reps.size()) == 2:
+        return torch.matmul(q_reps, p_reps.transpose(0, 1))
+    return torch.matmul(q_reps, p_reps.transpose(-2, -1))
+
+def compute_metric_matmul_recall(EvalPrediction:EvalPrediction ):
+    metrics = {}
+    metrics['RECALL@25'] = 0.0
+    k = 25
+    q_reps = EvalPrediction.predictions # bs,dim numpy
+    p_reps = EvalPrediction.passages # bs,dim numpy
+    y_true = EvalPrediction.label_ids # bs,1
+    matmul_similarities  = compute_similarity(torch.tensor(q_reps), torch.tensor(p_reps))
+    matmul_similarities  = matmul_similarities.detach().numpy()
+    sorted_indices = np.argsort(-matmul_similarities)[:,:k]
+    for i in range(len(y_true)):
+        actual_passages = y_true[i]
+        predicted_passages = sorted_indices[i].tolist()
+        if actual_passages in predicted_passages:
+            metrics['RECALL@25'] += 1
     metrics['RECALL@25'] /= len(y_true)
     return metrics
 
@@ -91,7 +114,12 @@ def reranker_compute_metrics(EvalPrediction):
 
     for i in range(len(labels)):
         # 获取当前查询对应的正样本索引
-        actual_passages = [j for j in range(labels.shape[1]) if labels[i, j]]
+        sorted_labels = labels[i][sorted_indices[i]]
+        if 1 not in labels[i]:
+            actual_passages = []
+        else:
+            actual_passages = np.where(sorted_labels == 1)[0].tolist()
+        # actual_passages = [j for j in range(labels.shape[1]) if labels[i, j]]
 
         # 获取排序后的预测文档索引
         predicted_passages = sorted_indices[i].tolist()
