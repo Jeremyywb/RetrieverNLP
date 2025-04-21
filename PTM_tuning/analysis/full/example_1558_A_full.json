@@ -1,0 +1,7 @@
+{
+  "query_id": "1558_A",
+  "content_id": 551,
+  "explanation": "The correct answer requires recognizing that a rhombus has four equal sides while a rectangle has four right angles with opposite sides equal. The student incorrectly concluded rectangles have four equal sides. This error stems from conflating the properties of squares (which are both rectangles and rhombuses) with general rectangles. The student applied the definition of a square (\"four equal sides and four right angles\") to rectangles, ignoring that rectangles only require right angles and opposite side equality. This directly aligns with the stated primary misconception about rectangle side properties, rather than rhombus knowledge gaps or parallelogram angle misunderstandings. The specific misapplication was extending square characteristics to all rectangles, showing a failure to distinguish between these quadrilateral classifications.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

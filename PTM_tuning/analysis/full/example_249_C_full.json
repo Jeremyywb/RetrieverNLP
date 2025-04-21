@@ -1,0 +1,7 @@
+{
+  "query_id": "249_C",
+  "content_id": 930,
+  "explanation": "Correct calculation:\nSubtracting equations eliminates x:\n(3x - 2y) - (3x + y) = 8 - 14 \u2192 -3y = -6 \u2192 y=2. This works.\n\nIncorrect assumption:\nAdding equations: (3x -2y)+(3x+y)=8+14 \u21926x - y=22. This fails to eliminate variables.\n\nFlawed reasoning:\nThe student likely thought matching coefficients (3x and 3x) automatically allow elimination through either operation. However, same-signed coefficients require subtraction for elimination (3x - 3x=0). Addition only works when coefficients have opposite signs.\n\nDistinction from related errors:\nThe error specifically involves misapplying the operation (adding instead of subtracting) when coefficients are identical, rather than confusing elimination conditions for different coefficients or sign requirements. The core mistake was treating same-coefficient equations as equally valid for both operations rather than recognizing subtraction as the only valid method here.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

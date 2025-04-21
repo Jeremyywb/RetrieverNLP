@@ -1,0 +1,7 @@
+{
+  "query_id": "1372_D",
+  "content_id": 308,
+  "explanation": "Correct calculation: \\(80\\% \\times 300 = 0.8 \\times 300 = 240\\)\n\nIncorrect calculation: The student likely computed \\(80\\% \\times 30 = 24\\), treating 300 as 30.\n\nThe flaw stems from misplacing the decimal by one digit, reducing 300 to 30 during calculation. This caused a tenfold error in the final result. The student recognized the percentage operation but altered the original value prematurely, truncating a zero from 300 before applying the 80% multiplier. This directly aligns with place-value confusion, as opposed to errors in percentage interpretation (e.g., dividing by 10 for 1% would yield 30 for 1%, making 80% = 2400). The error magnitude and final answer confirm a place-value misstep, not a misunderstanding of percentage fundamentals.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "769_B",
+  "content_id": 1050,
+  "explanation": "Correct calculation: \\( 3 \\, \\text{kg} \\times 1000 \\, \\text{g/kg} = 3000 \\, \\text{g} \\).\n\nStudent's error: \\( 3 \\, \\text{kg} \\times 10 = 30 \\, \\text{g} \\).\n\nThe student incorrectly multiplied by 10 instead of 1000, likely due to misplacing the decimal point one place instead of three. This suggests they treated the conversion as a single decimal shift (equivalent to multiplying by 10) rather than the required three shifts (multiplying by 1000). \n\nThis flaw aligns with misapplying decimal movement rules for metric conversions, not the primary misconception of using 100 g/kg (which would yield 300 g). The error is distinct from rounding or confusing multiplication/division direction, as the student performed multiplication but used an incorrect scale factor.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

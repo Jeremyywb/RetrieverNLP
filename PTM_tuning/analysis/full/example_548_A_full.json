@@ -1,0 +1,7 @@
+{
+  "query_id": "548_A",
+  "content_id": 2191,
+  "explanation": "Correct calculation: \\( \\frac{60}{2000} \\times 100 = 3\\% \\) (after unit conversion to meters).\n\nStudent's likely steps: \\( \\frac{2000}{60} \\times 100 = 333\\% \\), omitting unit conversion if they treated 2km as 2 units.\n\nThe error stems from reversing the part-whole relationship. The student used the total distance (2km/2000m) as the numerator and the part (60m) as the denominator, creating an inverted ratio. This directly corresponds to the misconception of using the total as the numerator rather than the denominator when forming proportions. \n\nThe error is distinct from unit-conversion issues (which would yield 30% if 60/2 were used) or misunderstanding percentages as fractions (which would produce 0.03 without multiplying by 100). The inverted ratio specifically demonstrates the reversal of part and whole in the calculation.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

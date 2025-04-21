@@ -1,0 +1,7 @@
+{
+  "query_id": "336_C",
+  "content_id": 1310,
+  "explanation": "The correct calculation requires multiplying the number of symbols by the key value: \\(2.75 \\times 8 = 22\\).  \nThe student's answer directly reports the number of symbols (2.75) without applying the scale.  \nThe error stems from treating the symbol count as the final quantity rather than recognizing it must be scaled by the key's defined value (8 people per symbol).  \nThis matches the primary misconception of interpreting the symbol count literally instead of using multiplicative reasoning with the key.  \nIt differs from related misconceptions about partial symbols because the student correctly interpreted 2.75 as the symbol count but failed to apply the key at all, not just for the fractional part.  \nThe absence of any multiplication step confirms the flaw was entirely about disregarding the key's scale, not miscalculating fractions or misreading the key value.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "1106_A",
+  "content_id": 1819,
+  "explanation": "The correct ratio for \\(\\sin(\\theta)\\) is \\(\\frac{\\text{Opposite}}{\\text{Hypotenuse}}\\). The student instead computed \\(\\frac{\\text{Hypotenuse}}{\\text{Opposite}}\\), which equals \\(\\csc(\\theta)\\) - not a standard trigonometric ratio listed in common answer options. \n\nThe student recognized the terms \"hypotenuse\" and \"opposite\" but inverted their positions in the ratio. This inversion directly stems from misremembering the sine ratio as hypotenuse divided by opposite rather than opposite divided by hypotenuse. \n\nThis specific error aligns with confusing the components of the sine ratio itself, not a substitution between different ratios like \\(\\sin\\) vs \\(\\tan\\) (which would involve the adjacent side). The error exclusively involves misapplication of the sine ratio's structure, distinguishing it from related misconceptions about side identification or ratio substitution.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

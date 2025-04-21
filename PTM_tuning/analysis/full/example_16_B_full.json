@@ -1,0 +1,7 @@
+{
+  "query_id": "16_B",
+  "content_id": 105,
+  "explanation": "Correct Calculation:\n1. Ratio AN:NB = 3:5 \u2192 total parts = 3 + 5 = 8\n2. Each part = 48 \u00f7 8 = 6 m\n3. AN = 3 parts \u00d7 6 = 18 m\n\nStudent's Error:\n1. Total parts correctly calculated as 8\n2. Incorrectly assigned 5 parts to AN: 5 \u00d7 (48 \u00f7 8) = 30 m\n\nReasoning Flaw:\nThe student reversed the ratio's component assignment, using NB's portion (5) instead of AN's (3) when calculating the segment length. This occurred because they treated the second term in the ratio as representing AN rather than recognizing the first term corresponds to AN. \n\nDistinction from Related Errors:\nThis isn't a part-to-whole confusion (they calculated total parts correctly) or fraction inversion (they didn't swap numerator/denominator). The error specifically stems from misaligning ratio terms with their corresponding segments.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

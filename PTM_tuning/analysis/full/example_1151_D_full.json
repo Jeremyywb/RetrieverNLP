@@ -1,0 +1,7 @@
+{
+  "query_id": "1151_D",
+  "content_id": 629,
+  "explanation": "Correct calculation:  \n\\( 1 \\, \\text{cm} = 10 \\, \\text{mm} \\).  \nIncorrect student calculation:  \n\\( 1 \\, \\text{cm} = 1000 \\, \\text{mm} \\).  \n\nThe student conflated the scaling factor for meters-to-millimeters (\u00d71000) with centimeters-to-millimeters. They likely reasoned: \"Since meters convert to millimeters by multiplying by 1000, the same applies to centimeters,\" ignoring the metric hierarchy where \"centi-\" (\u00d70.01) and \"milli-\" (\u00d70.001) differ by only one decimal place (\u00d710). This caused them to incorrectly apply three orders of magnitude instead of one.  \n\nThe error aligns with misunderstanding metric relationships, not adding an extra zero (which would produce 100, not 1000) or reversing units (10 cm per 1 mm). The direct misuse of the meter-based scaling factor distinguishes it from other listed misconceptions.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

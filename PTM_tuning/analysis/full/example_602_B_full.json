@@ -1,0 +1,7 @@
+{
+  "query_id": "602_B",
+  "content_id": 2199,
+  "explanation": "Correct calculation:  \n30 \u00f7 5 = 6 (unit amount)  \n6 \u00d7 3 = 18 (three-fifths)\n\nStudent's likely calculation:  \n30 \u00f7 3 = 10  \n10 \u00d7 5 = 50\n\nThe student reversed the fraction's numerator and denominator when applying operations. Instead of dividing by 5 (the denominator) to find the unit amount, they divided by 3 (the numerator). They then multiplied by 5 (the denominator) instead of 3. This inversion of operations stems from misapplying the fraction's components to the whole number. The error aligns with reversing the multiplication order after an initial step, distinct from errors like confusing part-whole relationships or using the total as a numerator, which would involve different operational sequences.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

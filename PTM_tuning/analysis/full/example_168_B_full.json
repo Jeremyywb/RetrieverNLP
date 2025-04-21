@@ -1,0 +1,7 @@
+{
+  "query_id": "168_B",
+  "content_id": 2192,
+  "explanation": "Correct calculation:\nTotal people = (4+2+3+1) symbols \u00d7 12 = 10\u00d712 = 120  \nMean = 120 \u00f7 4 games = 30\n\nStudent's likely calculation:  \nTotal symbols = 4+2+3+1 = 10  \nMean = 10 symbols \u00f7 4 games = 2.5 \u2192 2.5\u00d712 = 30? No. Wait, alternative path:  \nAlternatively, student may have calculated 10 symbols \u00d712 = 120 total people, then divided by 10 symbols instead of 4 games: 120 \u00f710 =12\n\nKey flaw:  \nThe student divided total people (120) by total symbols (10) instead of number of games (4). This stems from conflating the divisor as the total frequency (summed symbols) rather than the count of data points (games). \n\nDistinction:  \nThis differs from \"symbol=1\" errors (they used 12 correctly) and median confusion. The error specifically misapplies the mean formula by using summed categories (symbol count) as the denominator rather than the number of groups (games).",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

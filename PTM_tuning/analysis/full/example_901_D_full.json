@@ -1,0 +1,7 @@
+{
+  "query_id": "901_D",
+  "content_id": 2209,
+  "explanation": "The expression \\(3p + 7\\) is correctly identified as an algebraic expression. However, the question specifically asks about the descriptor for \\(p\\), which is a single symbol representing an unknown quantity (a variable). The student incorrectly labeled \\(p\\) as an \"expression,\" likely because they conflated the term for the entire mathematical phrase (\\(3p + 7\\)) with its individual component (\\(p\\)). \n\nThis error stems from misapplying the concept of an expression to a standalone variable. The misconception manifests in treating \\(p\\) as equivalent to the full expression it helps form, rather than recognizing it as a distinct variable within that expression. This differs from confusing a variable with a formula (which involves structural relationships) or misidentifying the entire question's focus (as the error specifically targets terminology application to components vs. wholes).",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

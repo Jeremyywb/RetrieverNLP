@@ -1,0 +1,7 @@
+{
+  "query_id": "348_A",
+  "content_id": 2239,
+  "explanation": "Correct calculation: A non-leap year has 365 days by definition, requiring no computation.\n\nIncorrect calculation: If a student erroneously calculates 50 weeks \u00d7 7 days/week = 350 days, this suggests they truncated 52 weeks to 50 before multiplying. \n\nSpecific flaw: The student reduced the number of weeks to 50 (discarding 2 weeks) without justification, then multiplied correctly by 7. This shows they arbitrarily rounded down the weeks value before calculation.\n\nConnection to misconception: The error stems from unwarranted rounding of 52 to 50 prior to multiplication, not from faulty arithmetic (e.g., 52\u00d77=364 would require correct multiplication). \n\nDistinction: This differs from pure arithmetic errors (e.g., miscalculating 52\u00d77) or generic guessing. The student applied systematic downward rounding during estimation, not during arithmetic execution.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

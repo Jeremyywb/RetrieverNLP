@@ -1,0 +1,7 @@
+{
+  "query_id": "1120_C",
+  "content_id": 751,
+  "explanation": "Correct calculation: \\( m \\times 2m = 2m^2 \\) and \\( m \\times (-7) = -7m \\), resulting in \\( 2m^2 - 7m \\).\n\nStudent's calculation: Treated \\( m \\times 2m \\) as \\( (1m + 2m) = 3m \\), then combined with \\( -7m \\).\n\nThe flaw occurred when multiplying coefficients: the student added \\( m \\)'s implicit coefficient (1) to 2 instead of multiplying \\( 1 \\times 2 \\). This converted the multiplication \\( m(2m) \\) into an addition \\( 1m + 2m \\), producing \\( 3m \\). The misconception of substituting addition for multiplication during distribution caused the first term's error. \n\nThis distinguishes from \"adding powers\" (no incorrect exponents used) or misreading variables as additions (second term \\( -7m \\) was calculated correctly). The error is isolated to misapplying operations between numerical coefficients.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

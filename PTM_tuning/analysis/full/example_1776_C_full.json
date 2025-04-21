@@ -1,0 +1,7 @@
+{
+  "query_id": "1776_C",
+  "content_id": 1842,
+  "explanation": "Correct Calculation:\n10 (Brother only) + 5 (Sister only) + 7 (Both) + 9 (Neither) = 31\n\nStudent's Error:\nTreated the four categories (Brother, Sister, Both, None) as individual students rather than summed counts. This led them to count 4 categories instead of 4+5+7+9.\n\nReasoning Flaw:\nThe student conflated the number of distinct categories in the Venn diagram with the total number of students. They incorrectly assumed each labeled section (Brother/Sister/Both/None) represents one student rather than numerical quantities.\n\nMisconception Link:\nThis stems from misinterpreting categorical labels as individual entries instead of grouped frequencies. The student treated the Venn diagram like a list of categories to count (4 items) rather than summing the values within each category.\n\nDistinction from Related Errors:\nUnlike adding only circle values (which would yield 22), or misapplying set totals (e.g., thinking intersection counts as a set total), this error specifically substitutes category counting for data summation.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

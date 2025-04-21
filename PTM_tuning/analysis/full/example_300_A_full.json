@@ -1,0 +1,7 @@
+{
+  "query_id": "300_A",
+  "content_id": 758,
+  "explanation": "To identify the outlier, convert all values to decimals: 0.2, 0.18, 0.45, 0.21, 0.2, 0.19. The cluster ranges from ~0.18\u20130.21, with 0.45 (9/20) being distinctly higher. The student incorrectly selected 0.2 (2/10), which is part of the cluster. \n\nThe error stems from comparing denominators directly: 2/10 has the smallest denominator (10), leading the student to falsely assume it is \"smallest\" and thus the outlier. However, 2/10 equals 0.2, which aligns with the central cluster. This reflects a focus on denominator size rather than converting to equivalent decimals to assess true magnitude.\n\nThis aligns with \"ordered fractions by comparing denominators\" rather than \"outlier is the smallest value,\" as 9/50 (0.18) is numerically smaller than 2/10 but was not chosen. The misconception specifically involves misjudging fraction size via denominators, not misunderstanding outlier proximity to the mean.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

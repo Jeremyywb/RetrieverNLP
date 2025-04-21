@@ -1,0 +1,7 @@
+{
+  "query_id": "394_A",
+  "content_id": 1984,
+  "explanation": "Correct calculation: \\(10 \\times 4 \\times 5 = 200\\ \\mathrm{cm}^3\\)\nStudent's calculation: \\(10 + 4 + 5 = 19\\ \\mathrm{cm}^3\\)\n\nThe student applied addition to all three dimensions instead of multiplication. The error stems from confusing the volume formula (which requires multiplying all dimensions) with a linear measurement. This substitution of summation for the required product directly reduced the three-dimensional calculation to a one-dimensional sum. The error is distinct from mixing area/volume (which would involve multiplying only two dimensions) or partial multiplication, as all terms were included in the incorrect operation. The presence of \\(\\mathrm{cm}^3\\) units shows recognition of volume measurement, eliminating unit-related misconceptions.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

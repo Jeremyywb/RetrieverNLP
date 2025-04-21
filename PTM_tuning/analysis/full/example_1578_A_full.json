@@ -1,0 +1,7 @@
+{
+  "query_id": "1578_A",
+  "content_id": 2157,
+  "explanation": "Correct approach for Pair 1: Subtract equations because both have +2q.  \nStudent's error: Added equations despite matching +2q terms.  \n\nIn Pair 1, the student likely saw identical +2q coefficients and assumed addition would eliminate q. However, subtraction is required when matching terms have identical coefficients and signs. Adding preserves the q terms (2q + 2q = 4q), while subtracting cancels them.  \n\nThis directly stems from misapplying elimination rules: the student treated \"same sign\" as requiring addition (incorrect) rather than subtraction (correct). The error in Pair 2 didn't occur because the student recognized subtraction cancels matching -2q terms.  \n\nThe misconception differs from related ones because the student didn't confuse sign differences (they handled Pair 2 correctly) but specifically misapplied the operation for matching signs. Other listed misconceptions involve opposite sign requirements or ambiguous choices, which don't explain this case.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

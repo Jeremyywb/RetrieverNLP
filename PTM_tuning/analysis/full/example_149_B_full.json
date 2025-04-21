@@ -1,0 +1,7 @@
+{
+  "query_id": "149_B",
+  "content_id": 2346,
+  "explanation": "Correct calculation: \nMaximum (0.331) - Minimum (0.30) = 0.331 - 0.300 = 0.031\n\nStudent's likely calculation:\n0.331  \n- 0.30  \n= 0.301 (incorrect)\n\nSpecific flaw: The student aligned digits by position without maintaining consistent decimal places. They subtracted 0.30 directly from 0.331, treating the hundredths digit (3 in 0.331) as tenths and the tenths digit (3 in 0.331) as units. This caused the 0.03 result to incorrectly shift to 0.30, then appended the thousandths 1.\n\nHow the misconception caused the error: Incorrect digit alignment during subtraction led to place-value confusion, converting 0.031 to 0.301. The error stems from misapplying subtraction rules for numbers with differing decimal lengths.\n\nDistinction: This differs from \"thinks the range is first value minus last value\" because the student likely identified the correct max/min (0.331 and 0.30) but erred in arithmetic. The miscalculation itself - not ordering or value selection - caused the error.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

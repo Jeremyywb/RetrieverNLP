@@ -1,0 +1,7 @@
+{
+  "query_id": "101_C",
+  "content_id": 658,
+  "explanation": "Correct calculation: \\( \\frac{8}{40} = 0.2 \\), then \\( 0.2 \\times 100 = 20\\% \\).\n\nStudent's likely error: Computed \\( 8 \\times 2 = 16 \\) and appended the % sign. \n\nThe student incorrectly assumed the percentage must be a direct multiple of the original number (8). They doubled 8 to get 16%, bypassing the required division step to find the proportional relationship. This shows a focus on manipulating the numerator alone rather than calculating the fraction relative to the whole (40) and scaling to 100. \n\nThis distinguishes from \"does not understand percentage is out of 100,\" as the error stems from multiplying the part rather than misunderstanding the denominator. It also differs from simply adding a % sign, since the student altered the numerical value.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

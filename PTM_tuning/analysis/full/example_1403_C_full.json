@@ -1,0 +1,7 @@
+{
+  "query_id": "1403_C",
+  "content_id": 1883,
+  "explanation": "Correct calculation: \\( \\frac{10+5}{2} \\times h = 45 \\) \u2192 \\( 7.5h = 45 \\) \u2192 \\( h = 6 \\).  \nStudent's calculation: \\( 5 \\times h = 45 \\) \u2192 \\( h = 9 \\).  \n\nThe student incorrectly applied the rectangle area formula \\( A = \\text{base} \\times h \\) using only the shorter parallel side (5 cm), omitting the average of both bases required for trapezium area. This directly substitutes one base into a simpler formula instead of using \\( \\frac{a+b}{2} \\times h \\).  \n\nThis error aligns with using a rectangle's formula rather than confusing \\( h \\) with half the sum of bases (which would produce \\( h = 7.5 \\)) or parallelogram logic (which would retain \\( \\frac{a+b}{2} \\)). The absence of averaging confirms the flaw stems from treating the trapezium as a single-base shape.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

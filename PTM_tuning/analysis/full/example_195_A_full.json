@@ -1,0 +1,7 @@
+{
+  "query_id": "195_A",
+  "content_id": 1566,
+  "explanation": "Correct calculation:\nMultiply both sides by 2: \\( t-3 = \\frac{1}{8} \\times 2 \\)\nSimplifies to: \\( t-3 = \\frac{1}{4} \\)\nAdd 3: \\( t = 3 + \\frac{1}{4} = 3\\frac{1}{4} \\)\n\nStudent's error:\nLikely multiplied numerator terms separately: \\( 2 \\times \\frac{t-3}{2} \\) became \\( 2t - 6 \\) instead of \\( t-3 \\)\nResulting in: \\( 2t - 6 = \\frac{1}{4} \\)\nSolved as: \\( 2t = 6\\frac{1}{4} \\), \\( t = 3\\frac{1}{8} \\times 2 = 6\\frac{1}{4} \\)\n\nFlawed reasoning:\nThe student distributed multiplication by 2 to both terms in the numerator rather than canceling the denominator. This treats \\( \\frac{t-3}{2} \\times 2 \\) as \\( 2t - 6 \\) instead of \\( t-3 \\).\n\nConnection to misconception:\nThis stems from mishandling fraction elimination - multiplying individual terms rather than the whole fraction. It specifically matches \"incorrectly clears fractions\" rather than other listed errors like sign mistakes or improper term movement.\n\nDistinction from related errors:\nNo evidence of adding instead of multiplying or sign errors. The error is localized to fraction-clearing mechanics, not broader equation-solving steps.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

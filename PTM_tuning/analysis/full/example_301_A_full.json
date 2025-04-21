@@ -1,0 +1,7 @@
+{
+  "query_id": "301_A",
+  "content_id": 415,
+  "explanation": "Correct calculation: \\( 360^\\circ - 310^\\circ = 50^\\circ \\).\n\nIncorrect approach: Student wrote \\( x = 310^\\circ \\), directly copying the given angle.\n\nThe student assumed the labeled angle and \\( x \\) could coexist without totaling 360\u00b0. They failed to recognize angles around a point must sum to 360\u00b0, so \\( x \\) must compensate for the remaining measure after subtracting 310\u00b0. \n\nThis aligns with not understanding the total angle requirement, not merely copying the value. The error stems from lacking the foundational concept of angle sums, not confusion with vertical angles or visual equality. Related misconceptions like \"copies given angles\" describe the action, but the root cause is missing the 360\u00b0 rule.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

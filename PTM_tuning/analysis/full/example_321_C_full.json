@@ -1,0 +1,7 @@
+{
+  "query_id": "321_C",
+  "content_id": 2143,
+  "explanation": "Correct calculation: (5p)(-3) = 5 * (-3) * p = -15p\n\nStudent's likely steps: 5p (from first bracket) and -3 (from second bracket) were combined as (5) + (-3) = 2, then appended with p to produce +2p.\n\nThe error stems from adding coefficients instead of multiplying them when handling cross-terms in bracket expansion. The student treated the operation between 5p and -3 as addition (\"5 and -3 make 2\") rather than multiplication, preserving the variable without applying exponent rules. This matches the misconception of adding terms instead of multiplying during expansion. \n\nThis differs from coefficient-ignoring errors (which would retain p without numerical calculation) and variable multiplication errors (which would produce p\u00b2). The specific substitution of addition for multiplication directly explains the +2p result.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

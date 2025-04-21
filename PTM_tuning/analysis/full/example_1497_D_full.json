@@ -1,0 +1,7 @@
+{
+  "query_id": "1497_D",
+  "content_id": 981,
+  "explanation": "The correct solution requires finding where the parabola lies on or below the x-axis (between its roots at \\(x = -2\\) and \\(x = 5\\)). This is expressed as the intersection of \\(x \\geq -2\\) and \\(x \\leq 5\\), written as \\(-2 \\leq x \\leq 5\\).\n\nThe student incorrectly combined the inequalities as a union (\\(x \\geq -2 \\cup x \\leq 5\\)), which represents all real numbers rather than the bounded interval. \n\nThe error stems from misapplying set operations: the union (either/or) was used instead of the intersection (both). The student likely recognized the roots but treated them as independent conditions to be satisfied separately, rather than simultaneously. \n\nThis directly aligns with the misconception of confusing union and intersection in inequality solutions. It differs from related errors like inequality direction confusion, as the student preserved the correct \\(\\geq\\) and \\(\\leq\\) symbols but misapplied the logical connective.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

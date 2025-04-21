@@ -1,0 +1,7 @@
+{
+  "query_id": "73_C",
+  "content_id": 1248,
+  "explanation": "Correct calculation:\nTo round 326 to the nearest 1000:\n1. Identify the thousands place (0 in 0326)\n2. Check the hundreds digit (3)\n3. Since 3 < 5, round down to 0\n\nStudent's error:\nThey likely:\n1. Incorrectly treated the hundreds digit as the rounding trigger for 1000\n2. Changed the hundreds digit to 5 (326 \u2192 500)\n3. Zeroed subsequent digits\n\nFlawed reasoning:\nThe student applied rounding rules for the nearest 100 (changing the hundreds digit) instead of recognizing that rounding to 1000 requires evaluating proximity to 0 or 1000. This demonstrates rounding at the wrong degree of accuracy - they altered the number's magnitude to a mid-point between 0-1000 rather than selecting the actual nearest thousand.\n\nDistinction from related errors:\nThis isn't about changing multiple digits arbitrarily (which would involve unrelated digit modifications) or adding 500 to 326. The error specifically stems from misapplying a lower-degree rounding method (hundreds place adjustment) to a higher-degree problem.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

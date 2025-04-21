@@ -1,0 +1,7 @@
+{
+  "query_id": "769_C",
+  "content_id": 784,
+  "explanation": "Correct calculation: \\( 3 \\, \\text{kg} \\times 1000 \\, \\text{g/kg} = 3000 \\, \\text{g} \\)\n\nIncorrect calculation: \\( 3 \\, \\text{kg} \\times 100 \\, \\text{g/kg} = 300 \\, \\text{g} \\)\n\nThe student divided the required conversion factor by 10, using 100 g/kg instead of 1000 g/kg. This caused their answer to be exactly 10 times smaller than the correct value. The error stems from misapplying place value when multiplying by powers of 10, specifically omitting one zero in the conversion factor. This matches the misconception of producing answers 10 times smaller when multiplying by 10 or its multiples. Related misconceptions like believing 1 kg = 10g (which would yield 30g) or confusing milligrams (which are 1000x smaller) don't align with the magnitude of this error. The 10x discrepancy directly reflects an incomplete understanding of scaling by 1000.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

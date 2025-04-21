@@ -1,0 +1,7 @@
+{
+  "query_id": "1565_B",
+  "content_id": 2121,
+  "explanation": "The correct calculation shows adjacent angles forming a straight line create a linear pair, summing to \\(180^\\circ\\) because a straight angle measures \\(180^\\circ\\). The student answered \\(100^\\circ\\), likely misapplying a numerical example unrelated to straight lines. \n\nThe error stems from incorrectly generalizing a specific case where two angles might sum to \\(100^\\circ\\) in a different configuration (e.g., non-linear adjacent angles in a polygon or diagram), then assuming this applies universally. This directly ties to misinterpreting the angle fact by failing to recognize the requirement that angles must be on a straight line. \n\nThe misconception differs from assuming \"any adjacent angles sum to \\(180^\\circ\\)\" because the student substituted an unrelated numerical value rather than incorrectly asserting \\(180^\\circ\\). The error specifically reflects reliance on an isolated example rather than understanding the geometric principle.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

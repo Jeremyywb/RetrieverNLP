@@ -1,0 +1,7 @@
+{
+  "query_id": "124_C",
+  "content_id": 1435,
+  "explanation": "The correct calculation is \\( (-8) - (-5) = -8 + 5 = -3 \\). \nThe student likely computed \\( 8 - 5 = 3 \\), treating both numbers as positive. \nTheir error stems from disregarding the negative sign on \\(-8\\) and interpreting \\(-(-5)\\) as subtraction of \\(5\\) instead of addition of \\(5\\). \nThis reflects a failure to recognize that the negative signs are inherent to the numbers themselves, not merely operations. \nThe misconception \"ignores the negative sign\" directly explains this error, as the student simplified the expression by removing all negatives before subtracting. \nThis differs from related misconceptions like \"the answer must be negative\" (which would still produce \\(-3\\)) or misapplying the negative to the result.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

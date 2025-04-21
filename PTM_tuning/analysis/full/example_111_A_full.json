@@ -1,0 +1,7 @@
+{
+  "query_id": "111_A",
+  "content_id": 255,
+  "explanation": "The correct answer recognizes that a regular quadrilateral must have four equal sides and four equal angles (square). The student incorrectly selected a trapezium, which typically has only one pair of parallel sides and unequal adjacent sides/angles. \n\nThe error stems from conflating \"having some equal sides/angles\" with \"all sides/angles equal.\" The student likely identified parallel sides or symmetry (common in some trapeziums) as indicators of regularity, without verifying that all four sides and angles must be equal. This directly aligns with misunderstanding the definition of a regular polygon (requiring both equilateral and equiangular properties), not merely recognizing partial symmetry or a single pair of equal sides. \n\nThis distinguishes from the related misconception about dash marks (which would involve misreading visual cues) or equating \"regular\" exclusively with squares (the student selected a non-square shape).",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

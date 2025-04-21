@@ -1,0 +1,7 @@
+{
+  "query_id": "118_A",
+  "content_id": 877,
+  "explanation": "Correct calculation: Convert height to same unit as bases. 5cm = 50mm. Area = (90+40)/2 \u00d7 50 = 65\u00d750 = 3250mm\u00b2. The star represents height in mm (50), not cm (5).\n\nStudent's error: Used 5cm directly without unit conversion. Their calculation: (90+40)/2 \u00d7 5 = 65\u00d75 = 325 (incorrect units, answer mismatch).\n\nFlaw: Treated cm height as mm without conversion. Misapplied unit consistency - dimensions must match (mm bases require mm height). This directly caused substitution of 5 instead of 50.\n\nDistinction: Not about squared unit errors (irrelevant here) or formula misunderstanding (formula structure was correct). The error specifically stems from unit mismatch, not incorrect conversion factors like 100mm/cm.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

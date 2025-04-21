@@ -1,0 +1,7 @@
+{
+  "query_id": "714_B",
+  "content_id": 1054,
+  "explanation": "Correct calculation: \\(609 - 1000 = -(1000 - 609) = -391\\)\n\nStudent's incorrect calculation: \\(1000 - 609 = 391\\) (ignoring order of operands)\n\nThe student reversed the operands to compute \\(1000 - 609\\), producing a positive result. This occurred because they treated subtraction as requiring the larger number to always come first, disregarding the original order in the problem. This directly corresponds to misapplying the concept that \"the smaller number is subtracted from the larger\" as an absolute rule, rather than maintaining the problem's given structure and applying sign rules.\n\nThis differs from believing subtraction is commutative (which would imply \\(a - b = b - a\\)) because the student didn't claim equivalence between the two expressions - they simply reordered operands while keeping the subtraction operator. The error stems specifically from prioritizing number magnitude over operational order, not from misunderstanding commutativity.\n\nThe lack of a negative sign shows the student didn't recognize that preserving the original order \\(609 - 1000\\) necessitates a negative result, but the primary flaw was their operand reversal based on number size.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

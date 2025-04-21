@@ -1,0 +1,7 @@
+{
+  "query_id": "19_B",
+  "content_id": 2147,
+  "explanation": "To combine \\( \\frac{1}{s} - \\frac{t}{3} \\), the correct process requires:\n1. Common denominator \\( 3s \\)\n2. Adjust numerators: \\( \\frac{1 \\cdot 3}{s \\cdot 3} - \\frac{t \\cdot s}{3 \\cdot s} = \\frac{3 - st}{3s} \\)\n\nThe student's answer \\( \\frac{s - 3t}{3s} \\) implies they computed:\n1. Incorrect numerators: \\( 1 \\cdot s \\) instead of \\( 1 \\cdot 3 \\), and \\( t \\cdot 3 \\) instead of \\( t \\cdot s \\)\n2. Subtracted these swapped terms: \\( s - 3t \\)\n\nThe error stems from multiplying each numerator by the other fraction's denominator rather than the same multiplier applied to their own denominator. This caused a term reversal (\\( st \\) became \\( 3t \\), \\( 3 \\) became \\( s \\)) in the numerators. The misconception specifically involves mishandling numerator scaling during denominator adjustment, distinct from errors like adding denominators or omitting numerator adjustments entirely. Related misconceptions like adding numerators/denominators or leaving numerators unchanged don't explain the swapped multipliers seen here.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

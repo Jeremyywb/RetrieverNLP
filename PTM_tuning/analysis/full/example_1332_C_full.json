@@ -1,0 +1,7 @@
+{
+  "query_id": "1332_C",
+  "content_id": 2117,
+  "explanation": "Correct calculation: The angles on a straight line sum to 180\u00b0. The diagram shows angle \\( n \\) and 48\u00b0 adjacent to each other on the line, with the 30\u00b0 angle being part of a separate configuration (e.g., a vertical angle or part of an intersecting line). Thus, \\( n + 48\u00b0 = 180\u00b0 \\) \u2192 \\( n = 132\u00b0 \\).\n\nStudent's calculation: The student treated all labeled angles as being on the same straight line, adding \\( n + 48\u00b0 + 30\u00b0 = 180\u00b0 \\), resulting in \\( n = 102\u00b0 \\).\n\nSpecific flaw: The student incorrectly assumed the 30\u00b0 angle was part of the straight-line sum. This stems from misidentifying which angles lie on the straight line. The error directly corresponds to a failure to isolate the relevant angles for the 180\u00b0 rule, as the 30\u00b0 angle is not part of the linear pair with \\( n \\) and 48\u00b0.\n\nDistinction from related errors: This is not a case of ignoring unlabeled angles or miscalculating the sum. The error specifically involves including an extraneous labeled angle in the sum, rather than misapplying the angle fact itself. The student recognized the need to sum angles but misjudged the diagram's structure.\n\nThe misconception manifests as an inability to correctly parse geometric relationships in the diagram, leading to inclusion of angles outside the linear pair.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

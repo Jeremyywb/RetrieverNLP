@@ -1,0 +1,7 @@
+{
+  "query_id": "1081_C",
+  "content_id": 1519,
+  "explanation": "The correct cost function is \\( C = 1.50 + 0.60d \\), producing a linear graph with a y-intercept at \\( (0, 1.50) \\). The student's graph assumes \\( C = 0.60d \\), starting at \\( (0, 0) \\). The error stems from treating the relationship as direct proportionality (\\( y \\propto x \\)) rather than a linear function with an intercept. This caused them to omit the fixed charge in their graph's initial value. While related misconceptions involve gradient calculations or substitution errors, the core issue here is specifically the failure to recognize that the fixed charge introduces a non-zero intercept. The student incorrectly generalized linearity to imply origin-passing proportionality, despite the explicit \u00a31.50 starting value stated in the problem.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

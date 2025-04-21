@@ -1,0 +1,7 @@
+{
+  "query_id": "846_D",
+  "content_id": 488,
+  "explanation": "Correct calculation:  \nTom: \\(20 \\times 8 - 1 \\times 8 = 160 - 8 = 152\\)  \nKatie: \\(10 \\times 8 + 9 \\times 8 = 80 + 72 = 152\\)  \n\nStudent's error:  \nThey rejected both valid applications of the distributive property, likely interpreting \\(19 \\times 8\\) as requiring direct multiplication of the original numbers.  \n\nFlawed reasoning:  \nThe student failed to recognize that splitting 19 into components (20-1 or 10+9) and distributing \\(8\\) across those terms preserves equivalence. This indicates a misunderstanding of how multiplicative operations can be restructured while maintaining equality.  \n\nConnection to misconception:  \nThe error stems from not grasping that multiplication distributes over addition/subtraction. The student treated the expressions \\(20 \\times 8 - 1 \\times 8\\) and \\(10 \\times 8 + 9 \\times 8\\) as invalid modifications rather than equivalent expansions.  \n\nDistinction:  \nThis differs from only multiplying the first term in a bracket (they rejected all terms) or doubting compensation (they rejected additive decomposition too). The core issue was failing to recognize distribution entirely.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

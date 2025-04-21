@@ -1,0 +1,7 @@
+{
+  "query_id": "196_A",
+  "content_id": 1971,
+  "explanation": "Correct calculation:\n1. Start with \\( g = 2r + 3 \\)\n2. Subtract 3: \\( g - 3 = 2r \\)\n3. Divide by 2: \\( r = \\frac{g - 3}{2} \\)\n\nStudent's error:\nThey likely performed \\( g + 3 = 2r \\) before dividing, resulting in \\( \\frac{g + 3}{2} \\).\n\nFlaw explanation:\nThe student failed to apply the inverse operation when moving the constant term. To isolate \\( 2r \\), the \"+3\" requires subtraction of 3 from both sides. Instead, they added 3 to \\( g \\), treating the term as if it retained its original sign when moved. This directly matches the misconception of not changing signs when transposing terms across the equation.\n\nDistinction from related errors:\nThis isn't a case of misapplying division/multiplication (which would affect coefficients) or general confusion about inverse operations. The error specifically stems from mishandling addition/subtraction sign changes during term relocation.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

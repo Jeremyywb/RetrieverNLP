@@ -1,0 +1,7 @@
+{
+  "query_id": "122_D",
+  "content_id": 880,
+  "explanation": "The correct approach compares spread using range (girls:20 vs boys:40), where lower range indicates more consistency. The student's answer (\"higher mean\") instead uses central tendency (girls:75 vs boys:60) to assess consistency. \n\nThe error stems from conflating measures of center (mean) with measures of spread (range). The student incorrectly assumed higher average performance implies less variability, when in reality consistency depends on spread. This directly matches the misconception where only the mean is considered for consistency evaluation. \n\nThis differs from related misconceptions about misapplying range (e.g., thinking higher range means consistency) or combining measures, as the error exclusively substitutes spread analysis with central tendency analysis. The student's entire reasoning path bypassed the required range comparison.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

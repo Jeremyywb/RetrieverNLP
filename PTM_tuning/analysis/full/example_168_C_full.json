@@ -1,0 +1,7 @@
+{
+  "query_id": "168_C",
+  "content_id": 1310,
+  "explanation": "Correct calculation:\n(4\u00d712 + 2\u00d712 + 3\u00d712 + 1\u00d712) \u00f7 4\n= (48 + 24 + 36 + 12) \u00f7 4\n= 120 \u00f7 4\n= 30\n\nStudent's calculation:\n(4 + 2 + 3 + 1) \u00f7 4\n= 10 \u00f7 4\n= 2.5\n\nThe student failed to multiply the symbols by their key value (12 people per symbol) before averaging. This demonstrates they treated the symbol counts as raw data rather than scaled representations. The error stems from using the pictogram's symbol quantity directly instead of applying the key's scale factor. This aligns specifically with misunderstanding pictogram interpretation, distinct from general mean calculation errors where division by categories or median confusion would produce different miscalculations. The student correctly divided by the number of games but used incorrect raw symbol counts instead of actual attendance values.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

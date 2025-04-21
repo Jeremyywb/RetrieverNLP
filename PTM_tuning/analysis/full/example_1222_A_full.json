@@ -1,0 +1,7 @@
+{
+  "query_id": "1222_A",
+  "content_id": 151,
+  "explanation": "Correct calculation:  \n\\( 70.04 \\div 0.1 = 70.04 \\times 10 = 700.4 \\)  \nStudent's calculation:  \nMoved decimal point one place to the left: \\( 70.04 \\rightarrow 70.004 \\)\n\nThe student incorrectly shifted the decimal left when dividing by 0.1, which corresponds to dividing by 10 instead of multiplying. This reflects a misunderstanding of how division by decimals less than 1 increases the quotient's magnitude. The error specifically stems from reversing the direction of decimal movement required for division by tenths. \n\nThis flaw directly matches the misconception of moving the decimal in the wrong direction with small divisors, rather than place value errors or confusion about when to multiply/divide. The answer's reduced magnitude (70.004 instead of 700.4) confirms the directional error, not an arithmetic mistake with zeros or decimal placement.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

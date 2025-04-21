@@ -1,0 +1,7 @@
+{
+  "query_id": "285_D",
+  "content_id": 256,
+  "explanation": "Correct calculation:\n1. Start with \\( F = r\\omega^{2} \\)\n2. Divide both sides by \\( r \\): \\( \\frac{F}{r} = \\omega^{2} \\)\n3. Take square roots: \\( \\omega = \\sqrt{\\frac{F}{r}} \\)\n\nStudent's incorrect calculation:\n1. Starts with \\( F = r\\omega^{2} \\)\n2. Takes square roots of \\( F \\), yielding \\( \\sqrt{F} = r\\omega \\)\n3. Divides by \\( r \\): \\( \\omega = \\frac{\\sqrt{F}}{r} \\)\n\nThe student incorrectly applied the square root only to \\( F \\), not to the entire expression \\( \\frac{F}{r} \\). This reflects a failure to recognize that square-rooting a quotient requires taking the square root of both numerator and denominator. The error directly stems from treating the square root as distributive over division, splitting it into separate operations on \\( F \\) and \\( r \\).\n\nThis distinguishes from related misconceptions: The error isn't about inverse operations (they applied square roots appropriately to isolate \\( \\omega \\)) or grouping in fractions (they handled division correctly after misapplying the square root). The core flaw is specifically the partial application of the square root to terms rather than the whole expression.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

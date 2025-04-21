@@ -1,0 +1,7 @@
+{
+  "query_id": "43_D",
+  "content_id": 1156,
+  "explanation": "Correct calculation: \\( \\frac{4}{8} \\div 2 = \\frac{4}{8} \\times \\frac{1}{2} = \\frac{4}{16} = \\frac{2}{8} \\).\n\nStudent's incorrect calculation: \\( \\frac{4}{8} \\div 2 = \\frac{4}{4} \\).\n\nThe student incorrectly divided only the denominator by 2 (8 \u00f7 2 = 4) while leaving the numerator unchanged. This stems from misapplying division as an operation that directly manipulates the denominator alone rather than multiplying by the reciprocal. \n\nThe error matches the misconception that division of a fraction by an integer requires modifying only the denominator, distinct from subtracting the integer (which would yield 4/6) or multiplying both terms (which would produce 8/16). The student's preserved numerator and altered denominator show a specific focus on denominator manipulation, differentiating it from other listed misconceptions.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

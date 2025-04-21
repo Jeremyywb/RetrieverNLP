@@ -1,0 +1,7 @@
+{
+  "query_id": "275_C",
+  "content_id": 2346,
+  "explanation": "Correct calculation:\n```\n 50.09\n-  0.10\n--------\n 49.99\n```\nStudent's incorrect calculation likely:\n```\n 50.09\n-  0.1\n--------\n 50.08\n```\nThe error occurred when subtracting the tenths place (0-1). The student improperly borrowed 1 from the hundredths place (making it 8) instead of the ones place. This bypassed the required chain of borrowing: tens (5\u21924), ones (0\u21929 via tens), then tenths (0\u219210 via ones). By skipping the ones place adjustment, they preserved the \"50\" whole number portion instead of reducing it to \"49\". This matches the misconception of failing to borrow through multiple zeros rather than place-value alignment or commutative errors, as the issue specifically involves interrupted borrowing across zero placeholders.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

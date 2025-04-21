@@ -1,0 +1,7 @@
+{
+  "query_id": "273_C",
+  "content_id": 8,
+  "explanation": "The correct relationship requires recognizing adjacent angles on a straight line sum to 180\u00b0: \\( a + b = 180^{\\circ} \\). The student incorrectly concluded \\( a = b \\), likely assuming that adjacent angles positioned this way must be equal in measure. This stems from conflating the property of supplementary angles (summing to 180\u00b0) with congruence of angles. The error arises specifically from treating adjacent angles as inherently equal rather than complementary. This distinguishes it from vertically opposite angles (which are equal but not adjacent) or misapplied vertical angle properties. The misconception directly substitutes equality for supplementary relationships in adjacent angle pairs.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

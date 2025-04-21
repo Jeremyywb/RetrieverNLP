@@ -1,0 +1,7 @@
+{
+  "query_id": "373_A",
+  "content_id": 625,
+  "explanation": "The correct approach identifies corresponding angles as those occupying matching positions relative to the transversal and parallel lines. Angle \\( p \\) (vertical angle at left intersection) corresponds to angle \\( C \\) (same-side position at right intersection). \n\nThe student incorrectly selected \\( A \\), which is vertically opposite to \\( p \\). This mistake stems from conflating vertical angles (angles opposite each other at an intersection) with corresponding angles (angles in equivalent positions across parallel lines). \n\nThe error specifically arises from applying the term \"corresponding\" to angles sharing only a vertex relationship, rather than recognizing the positional requirement across distinct intersections created by the transversal. This directly aligns with the primary misconception of confusing vertical angles with corresponding angles. \n\nThe distinction from related misconceptions is clear: the student recognized angle relationships (vertical opposition) but mislabeled their type, rather than misunderstanding parallel line requirements or angle terminology broadly.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

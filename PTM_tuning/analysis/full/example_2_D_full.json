@@ -1,0 +1,7 @@
+{
+  "query_id": "2_D",
+  "content_id": 1073,
+  "explanation": "Correct calculations:\n- Original range: 42 cm (max) - 13 cm (min) = 29 cm\n- After halving: New range = (42/2) - (13/2) = 21 - 6.5 = 14.5 cm (range changes)\n- After adding 3 cm: New range = (42+3) - (13+3) = 45 - 16 = 29 cm (range unchanged)\n\nStudent's error:\nThe student likely concluded that adding 3 cm changes the range by assuming the operation increases both max and min values equally but failed to recognize that the difference between them (the range) remains constant. This stems from a misunderstanding of how additive operations affect spread measures. Specifically, they treated the range as an absolute value that increases with each data point rather than a relative difference.\n\nDistinction from related misconceptions:\nThe error is not about failing to reorder data (order remains unchanged after adding 3 cm) or multiplicative effects. The flaw lies in believing additive changes alter the spread, confusing absolute shifts with relative differences.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

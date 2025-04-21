@@ -1,0 +1,7 @@
+{
+  "query_id": "996_D",
+  "content_id": 2432,
+  "explanation": "Correct Calculation:\nIn a parallelogram, opposite angles are equal. Given one angle is 120\u00b0, angle \\( q \\), being opposite, must also be 120\u00b0.\n\nStudent's Reasoning Flaw:\nThe student likely failed to recognize the figure as a parallelogram due to missing or misinterpreting the side markings (dashes) that denote parallel sides. Without identifying the shape's defining property of having two pairs of parallel sides, they treated it as a generic quadrilateral. This prevented them from applying the \"opposite angles equal\" rule, leading them to conclude insufficient data.\n\nDistinction from Related Misconceptions:\nThe error stems from not interpreting side markings as indicators of parallelism, not from assuming opposite angles sum to 180\u00b0 (which would produce a numerical error like 60\u00b0). The absence of any attempted calculation confirms the student didn't engage with angle properties at all, aligning with a failure to recognize the shape's classification rather than a misapplication of angle relationships.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

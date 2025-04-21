@@ -1,0 +1,7 @@
+{
+  "query_id": "409_D",
+  "content_id": 699,
+  "explanation": "Correct calculation: \\( q = 180^{\\circ} - 126^{\\circ} = 54^{\\circ} \\).  \nStudent's error: Calculated \\( 180 - 126 = 64 \\).  \n\nThe student recognized that angles on a straight line sum to \\( 180^{\\circ} \\) but made a subtraction error. When subtracting \\( 126 \\) from \\( 180 \\), they likely treated the tens digit as \\( 8 \\) after borrowing (incorrectly writing \\( 8 - 2 = 6 \\) instead of reducing it to \\( 7 \\)), leading to \\( 64 \\). This reflects a computational error in borrowing during subtraction, not a misunderstanding of angle relationships.  \n\nThe error aligns with \"Makes computational error in basic subtraction\" rather than the listed primary misconception about angle sums. The student applied the correct geometric principle but failed to execute the arithmetic properly.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

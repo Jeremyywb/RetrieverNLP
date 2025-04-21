@@ -1,0 +1,7 @@
+{
+  "query_id": "54_C",
+  "content_id": 2190,
+  "explanation": "Correct calculation: 3 shaded parts / 10 total parts = \\(\\frac{3}{10}\\)\n\nStudent's error: Used \\(\\frac{3}{7}\\), implying 3 shaded parts out of 7 unshaded parts instead of total parts.\n\nSpecific flaw: The student treated the unshaded sections (7) as the whole, rather than the total parts (10). This directly stems from misidentifying the denominator as a subset of the figure (unshaded regions) instead of the entire rectangle.\n\nConnection to misconception: The error shows a failure to recognize that the denominator must represent all equal parts composing the whole. This distinguishes it from mixing up numerator/denominator terms (which would involve reversing 3 and 10) or miscounting total sections.\n\nDistinction: Unlike errors where students use the numerator as the whole (e.g., writing \\(\\frac{10}{3}\\)), here the student correctly counted the numerator but misapplied the denominator's role by using a non-total quantity.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

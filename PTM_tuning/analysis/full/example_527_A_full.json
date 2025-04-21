@@ -1,0 +1,7 @@
+{
+  "query_id": "527_A",
+  "content_id": 620,
+  "explanation": "The correct angle notation requires three points: the vertex (E) and one point on each side (C and G), forming \u2220CEG. The student identified only the vertex point (E), omitting the two additional points needed to specify the sides of the angle. This reflects a failure to recognize that angles are defined by two rays originating from a common vertex, necessitating three-letter notation. The error aligns with the misconception that a single point suffices to uniquely identify an angle, rather than requiring explicit reference to the sides. This is distinct from using two letters (which would describe a line segment) or mislabeling a wider angle (which would involve incorrect side points). The student's single-letter response directly stems from conflating the vertex with the complete angle descriptor.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

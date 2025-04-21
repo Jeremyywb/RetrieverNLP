@@ -1,0 +1,7 @@
+{
+  "query_id": "6_C",
+  "content_id": 847,
+  "explanation": "Correct calculation: 62% = 62/100 = 31/50 by dividing numerator and denominator by 2.\n\nStudent's error: Wrote 6/2 instead of 62/100. This occurred by treating the digits 6 and 2 as separate numerators and denominators rather than a single numerator (62) over 100. \n\nThe flaw stems from splitting the percentage's digits into independent components of the fraction. Instead of interpreting \"62%\" as 62 per 100, the student isolated the digits 6 and 2, placing them directly as numerator and denominator. This matches the \"divides each digit separately\" misconception, not errors like dividing by 10 (which would yield 62/10) or decimal misplacement (which would create 6.2). The error is uniquely tied to digit-separation rather than denominator choice or decimal conversion.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

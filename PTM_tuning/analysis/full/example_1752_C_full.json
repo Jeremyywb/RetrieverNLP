@@ -1,0 +1,7 @@
+{
+  "query_id": "1752_C",
+  "content_id": 2491,
+  "explanation": "To determine a line perpendicular to \\( x = -10 \\), note that vertical lines (undefined slope) require horizontal lines (0 slope) for perpendicularity. The correct answer \\( y = 7 \\) satisfies this. \n\nThe student chose \\( x = -\\frac{1}{10} \\), another vertical line. This error arises from treating the reciprocal of the x-coordinate (\\( -10 \\rightarrow -\\frac{1}{10} \\)) as a valid slope adjustment, misapplying reciprocal slope rules to vertical lines. \n\nVertical lines cannot have reciprocal slopes (undefined), and perpendicularity to \\( x = -10 \\) requires a horizontal line. The student conflated manipulating the equation's constant term with slope reciprocity, incorrectly assuming two vertical lines could be perpendicular. \n\nThis aligns with confusing parallel/perpendicular: vertical lines are parallel, not perpendicular. It differs from misconceptions about horizontal lines (e.g., misinterpreting \\( x = ? \\) as horizontal) or sign errors in reciprocals, as the error stems from misclassifying line orientations entirely.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

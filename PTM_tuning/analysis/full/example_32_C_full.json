@@ -1,0 +1,7 @@
+{
+  "query_id": "32_C",
+  "content_id": 347,
+  "explanation": "The correct first step multiplies both sides by 5:  \n\\( 5 \\cdot \\frac{2r-3}{5} = 5 \\cdot (2 + r) \\) \u2192 \\( 2r - 3 = 10 + 5r \\).\n\nThe student's incorrect step:  \n\\( 2r - 3 = 10 + r \\).\n\nThe error occurs when expanding \\( 5 \\cdot (2 + r) \\). The student multiplied the constant term (2 \u2192 10) but failed to multiply the variable term \\( r \\) by 5, leaving it as \\( r \\) instead of \\( 5r \\). This shows they did not apply the multiplication to all terms in the expression \\( 2 + r \\), violating the requirement to treat every term equally when eliminating denominators. \n\nThe flaw aligns with a failure to distribute multiplication across all terms in a sum, distinct from errors that target only one side of the equation or systematically omit either first or second terms. Here, only the variable term was neglected, not the constant term, ruling out other related misconceptions.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

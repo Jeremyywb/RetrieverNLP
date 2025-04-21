@@ -1,0 +1,7 @@
+{
+  "query_id": "1303_D",
+  "content_id": 1176,
+  "explanation": "The correct answer requires two equal angles because an isosceles triangle has exactly two equal sides, forcing the base angles opposite those sides to be equal. The student's answer (\"three equal angles\") incorrectly assumes all angles must be equal. This error stems from conflating isosceles triangles with equilateral triangles, where three equal angles are required. The student likely reasoned that \"equal angles\" define triangle types but failed to distinguish that only two angles are linked to two equal sides in isosceles triangles. This directly aligns with the primary misconception of not knowing isosceles properties, as opposed to confusing orientation or unrelated rules. The error specifically arises from misapplying the stricter condition of equilateral triangles (three equal angles) to the broader isosceles case.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

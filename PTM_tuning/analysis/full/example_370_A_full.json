@@ -1,0 +1,7 @@
+{
+  "query_id": "370_A",
+  "content_id": 1543,
+  "explanation": "Correct calculation:\n1. From x=0, y=-5: -5 = 2(0) + c \u2192 c = -5\n2. For x=3: y = 2(3) + (-5) = 6 - 5 = 1\n\nStudent's incorrect calculation:\n1. For x=3: y = 2(3) = 6\n\nReasoning flaw:\nThe student correctly identified the coefficient 2 but stopped after calculating 2\u00d73=6. They failed to incorporate the constant term c=-5 that was explicitly required by the equation format y=2x+c. This shows they understood the multiplicative relationship but neglected the additive component essential to linear equations.\n\nDistinction from related misconceptions:\nThis differs from \"does not include constant term\" because the problem explicitly provides c in the equation structure. The error occurred specifically in application, not in recognizing the equation's form. Other proportional reasoning errors are ruled out as the student's answer matches exactly 2\u00d73 without any incremental additions.\n\nKey connection:\nThe student treated the linear equation as purely proportional (y\u221dx) rather than affine (y=2x+c), demonstrating a failure to synthesize both multiplicative and additive components when substituting values.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

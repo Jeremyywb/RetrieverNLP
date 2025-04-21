@@ -1,0 +1,7 @@
+{
+  "query_id": "971_D",
+  "content_id": 1599,
+  "explanation": "The correct calculation for \"Increase 50 by 25\" is \\( 50 + 25 = 75 \\). \nThe student incorrectly associated \"How many 25s are there in 50?\" with \\( 50 + 25 \\), when it actually requires division: \\( 50 \\div 25 = 2 \\).\n\nThe error stems from misinterpreting the phrase \"how many 25s\" as a directive to combine quantities through addition rather than recognizing it as a request to determine how often 25 fits into 50. This confusion reflects a failure to link the wording to the mathematical operation of division, which calculates multiples. \n\nThe student\u2019s reasoning conflated additive language (\"increase by\") with multiplicative language (\"how many...s\"), a distinction critical to selecting the correct operation. This aligns with the primary misconception of not recognizing phrasing that signals finding a multiple, rather than errors like incorrect division execution or reversing multiplication/division operations. The error is specifically tied to misidentifying the question\u2019s intent, not computational mistakes.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

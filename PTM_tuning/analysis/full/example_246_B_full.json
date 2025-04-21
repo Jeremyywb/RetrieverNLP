@@ -1,0 +1,7 @@
+{
+  "query_id": "246_B",
+  "content_id": 2250,
+  "explanation": "The correct calculation recognizes triangle numbers follow \\( T_n = \\frac{n(n+1)}{2} \\). Given \\( T_{17} = 153 \\) and \\( T_{18} = 171 \\), the difference is \\( 18 \\), which equals \\( n+1 \\) for \\( n=17 \\). The next difference increases by \\( 1 \\), so \\( 171 + 19 = 190 \\).\n\nThe student likely calculated \\( 171 + (171 - 153) = 189 \\), assuming the constant difference \\( 18 \\). This ignores the inherent property that triangle numbers have differences increasing by \\( 1 \\) each step. The error stems from extrapolating a term-to-term rule from a single observed difference (\\( 18 \\)), treating it as fixed rather than dynamic. \n\nThis aligns with the primary misconception of deriving a term-to-term rule from insufficient terms. It differs from \"adds an arbitrary number\" because the student used a logical (but incomplete) pattern from the given terms, rather than random addition.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

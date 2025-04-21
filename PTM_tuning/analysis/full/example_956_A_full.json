@@ -1,0 +1,7 @@
+{
+  "query_id": "956_A",
+  "content_id": 852,
+  "explanation": "Correct calculation: \\( 30 \\, \\text{g} \\times \\frac{1000 \\, \\text{mg}}{1 \\, \\text{g}} = 30000 \\, \\text{mg} \\).\n\nStudent's calculation: \\( 30 \\times 100 = 3000 \\).\n\nThe student incorrectly used a conversion factor of 100 instead of 1000 when converting grams to milligrams. This stems from confusing the metric prefix \"milli-\" (which denotes \\( 10^{-3} \\)) with \"centi-\" (which denotes \\( 10^{-2} \\)). \n\nThe error specifically arises from misapplying the relationship between base units and subunits, not from choosing the wrong operation (they correctly multiplied for a smaller unit). This distinguishes it from related misconceptions like dividing instead of multiplying, or errors with kilometer/meter conversions.\n\nThe student's answer matches a miscalculation using 100 mg/g instead of the correct 1000 mg/g, directly linking to the misidentified prefix magnitude.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

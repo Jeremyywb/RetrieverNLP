@@ -1,0 +1,7 @@
+{
+  "query_id": "275_B",
+  "content_id": 699,
+  "explanation": "Correct calculation:\n50.09\n-\u00a0\u00a00.10\n--------\n49.99\n\nStudent's incorrect steps:\n50.09 \u2192 Subtract 0.1 by converting tenths' 0 to 9 and ones' 0 to 9 without adjusting tens:\n50.09 - 0.1 = 50.99\n\nSpecific flaw:\nThe student treated the ones digit as a borrow source for the tenths place without propagating the borrow through the tens place. When attempting to subtract 0.1, they incorrectly kept the tens digit as 5 while converting the ones digit to 9 and tenths digit to 9, skipping the required reduction in the tens place. This reflects a failure to recognize that borrowing from the tens requires reducing it by 1, then handling all intermediate zeros as 9s.\n\nDistinction from related errors:\nThe error is not due to decimal misalignment (digits are properly aligned) or adding instead of subtracting (operation is correct). The key issue is incomplete borrowing across multiple zeros: the student modified only the ones and tenths digits without adjusting the tens place, violating place value continuity.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

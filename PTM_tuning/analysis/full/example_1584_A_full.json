@@ -1,0 +1,7 @@
+{
+  "query_id": "1584_A",
+  "content_id": 733,
+  "explanation": "Correct calculation:  \n\\( 2 \\div \\frac{1}{5} = 2 \\times \\frac{5}{1} = 10 \\)\n\nStudent's likely calculation:  \n\\( 2 \\div \\frac{1}{5} = 2 \\times \\frac{1}{5} = \\frac{2}{5} \\)\n\nThe error occurs when converting division to multiplication: the student retained the original fraction \\(\\frac{1}{5}\\) rather than using its reciprocal. This shows they understood division requires multiplication but omitted the critical step of inverting the divisor. \n\nThe misconception directly caused the error by equating division-by-fraction with simple multiplication-by-fraction. This differs from reversing order (which would yield \\( \\frac{1}{10} \\)) or misapplying reciprocal operations to both numbers (which isn't indicated here). The incorrect result \\(\\frac{2}{5}\\) matches only the failure to invert the divisor fraction.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

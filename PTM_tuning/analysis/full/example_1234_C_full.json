@@ -1,0 +1,7 @@
+{
+  "query_id": "1234_C",
+  "content_id": 2026,
+  "explanation": "To rotate point (-1, 3) 180\u00b0 about the origin, the correct transformation is (x, y) \u2192 (-x, -y), resulting in (1, -3) (point D). The student incorrectly arrived at (3, -1) (point C). This suggests they calculated the rotation as if the center were the midpoint between (-1, 3) and its image. \n\nIf the student assumed the rotation center was the midpoint of the original point and its image, they would first compute the midpoint as ((-1 + 3)/2, (3 + (-1))/2) = (1, 1). Translating (-1, 3) relative to this midpoint gives (-2, 2), rotating 180\u00b0 yields (2, -2), and translating back results in (3, -1). This aligns with their answer but incorrectly uses (1, 1) as the center instead of the origin. \n\nThe error directly stems from misidentifying the rotation center as a midpoint rather than the origin. This distinguishes it from sign-change errors or reflection misconceptions, which would produce different incorrect coordinates (e.g., (1, 3) or (3, 1) if flipping over y=x). The directional rotation misconception is irrelevant here, as 180\u00b0 rotation is direction-agnostic.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

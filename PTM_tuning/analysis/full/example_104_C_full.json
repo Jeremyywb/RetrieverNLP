@@ -1,0 +1,7 @@
+{
+  "query_id": "104_C",
+  "content_id": 132,
+  "explanation": "The correct solution recognizes both positive and negative roots when taking square roots of both sides:  \n\u221a((d-6)\u00b2) = \u221a16 \u2192 d-6 = \u00b14  \n\nThe student likely performed:  \n\u221a((d-6)\u00b2) = \u221a16 \u2192 d-6 = 4  \n\nThe error stems from assuming square roots yield only positive results. This caused the student to discard the negative solution (-4) when undoing the square. While they properly isolated the squared term, the misconception specifically manifests in the square root operation, not in algebraic expansion or graph interpretation. This differs from related errors like unnecessary expansion or sign errors in multiplication, as the mistake occurs purely in root extraction.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

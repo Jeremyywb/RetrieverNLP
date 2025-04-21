@@ -1,0 +1,7 @@
+{
+  "query_id": "1145_B",
+  "content_id": 44,
+  "explanation": "Correct calculation: \\( \\sqrt{3} + \\sqrt{5} \\) cannot be combined because they are unlike radicals (different radicands). Addition requires identical radical terms.\n\nStudent's error: \\( \\sqrt{3} + \\sqrt{5} = \\sqrt{8} \\)\n\nThe student incorrectly assumed the sum of radicands could be combined under a single square root during addition. This violates the fundamental property that \\( \\sqrt{a} + \\sqrt{b} \\neq \\sqrt{a+b} \\). The error stems from misapplying the multiplication rule \\( \\sqrt{a} \\cdot \\sqrt{b} = \\sqrt{ab} \\) to addition.\n\nThis specifically matches the misconception of adding numbers under roots during addition (not multiplication). It's distinct from \"multiplies when asked to add\" because no multiplication occurred, and from \"adds unlike terms\" because the focus is on incorrect radical combination rather than variable term mismatches.\n\nThe key flaw was treating addition as a radical-combining operation rather than recognizing unlike terms. No intermediate steps show confusion between multiplication/addition operations - only invalid addition of radicands.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

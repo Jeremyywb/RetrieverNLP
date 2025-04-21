@@ -1,0 +1,7 @@
+{
+  "query_id": "1241_C",
+  "content_id": 1766,
+  "explanation": "To solve \\( x^2 + 4x = 0 \\), factor it as \\( x(x + 4) = 0 \\), yielding solutions \\( x = 0 \\) and \\( x = -4 \\). Katie\u2019s \\( x = 0 \\) is correct, but Tom\u2019s \\( x = 2 \\) is not. \n\nThe student likely assumed quadratic solutions must have symmetrical absolute values, incorrectly concluding \\( x = 2 \\) pairs with \\( x = 0 \\). This ignores the actual roots (\\( 0 \\) and \\( -4 \\)) and misapplies symmetry expectations to a parabola shifted left. \n\nUnlike misconceptions about factoring or zero-product properties, this error specifically stems from assuming symmetry around \\( x = 0 \\), despite the equation\u2019s axis of symmetry being at \\( x = -2 \\). The student\u2019s reasoning diverged by forcing symmetry where none exists, unlike errors involving incorrect factoring steps or misapplying equality of factors.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

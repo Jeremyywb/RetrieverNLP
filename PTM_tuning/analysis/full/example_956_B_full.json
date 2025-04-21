@@ -1,0 +1,7 @@
+{
+  "query_id": "956_B",
+  "content_id": 213,
+  "explanation": "Correct calculation: \\( 30 \\, \\text{g} \\times 1000 \\, \\frac{\\text{mg}}{\\text{g}} = 30000 \\, \\text{mg} \\).  \nStudent's incorrect step: \\( 30 \\, \\text{g} \\times 10 = 300 \\, \\text{mg} \\).  \n\nThe student incorrectly used a factor of 10 instead of 1000 for the gram-to-milligram conversion. This indicates they conflated the metric prefix \"milli-\" (which denotes \\( \\times 10^{-3} \\)) with \"deci-\" (which denotes \\( \\times 10^{-1} \\)), leading them to multiply by 10 rather than 1000.  \n\nThis error aligns with misunderstanding the relationship between metric prefixes: the student failed to recognize that \"milli-\" requires scaling by \\( 1000 \\times \\). Unlike the related misconception of confusing \"milli-\" with \"centi-\" (which would produce \\( 30 \\times 100 = 3000 \\)), the student's answer directly reflects a 10\u00d7 scaling, showing confusion with a smaller decimal prefix.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

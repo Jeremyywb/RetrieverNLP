@@ -1,0 +1,7 @@
+{
+  "query_id": "255_D",
+  "content_id": 20,
+  "explanation": "To convert \\( \\frac{13}{5} \\):  \nCorrect calculation: \\( 13 \u00f7 5 = 2 \\) wholes with remainder \\( 3 \\), yielding \\( 2 \\frac{3}{5} \\).  \n\nStudent's incorrect calculation:  \nThey directly assigned the numerator (13) as the whole number and retained the denominator (5), then wrote \\( \\frac{1}{5} \\) as the fractional part.  \n\nThe student failed to divide the numerator by the denominator to determine the whole number. Instead, they treated the numerator itself as the whole number component. This directly aligns with the misconception of using the improper fraction's numerator as the mixed number's whole number.  \n\nThe error differs from related misconceptions because the student did not reverse the remainder/denominator relationship (which would produce \\( 3 \\frac{13}{5} \\)) or confuse equivalent fractions. The mistake stems solely from bypassing the division step and misassigning the numerator's value.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "223_D",
+  "content_id": 2532,
+  "explanation": "The correct calculation applies addition first then multiplication: \\(3 \\times (5 + 2)\\).  \nThe student computed \\(5 + 2 \\times 3\\) as written, which evaluates to \\(5 + (2 \\times 3) = 11\\).  \n\nThe error stems from interpreting the operations in left-to-right sequence rather than prioritizing the function machine's defined order.  \nThe student correctly translated \"+2 then \u00d73\" into symbols but failed to group the addition step, allowing standard operator precedence (multiplication before addition) to override the problem's explicit sequence.  \nThis directly aligns with misapplying order of operations in worded problems by not using brackets to enforce non-standard execution order.  \n\nWhile related misconceptions mention ignoring brackets, here the flaw specifically involves omitting required brackets to preserve the machine's defined operation sequence, not misreading existing ones.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

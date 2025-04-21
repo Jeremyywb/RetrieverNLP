@@ -1,0 +1,7 @@
+{
+  "query_id": "1095_B",
+  "content_id": 702,
+  "explanation": "Correct calculation: \n- Start with 300200\n- Place decimal after first digit: 3.00200\n- Count decimal moves: 5 places \u2192 3.002 \u00d7 10\u2075\n\nStudent's error:\n- Wrote 3.2 \u00d7 10\u2075 instead of 3.002 \u00d7 10\u2075\n\nFlawed reasoning:\nThe student preserved only the first and last non-zero digits (3 and 2), omitting intermediate zeros. This shows a failure to recognize that standard form requires maintaining all significant digits between the first digit and remaining non-zero values, including placeholder zeros. They treated the number as 3_2_ instead of 3_00_2_, collapsing multiple place values into a single digit position.\n\nDistinction from related errors:\nWhile they maintained a decimal between 1-10 (avoiding the first listed misconception), the error specifically stems from misrepresenting place values between the 3 and 2. This differs from general conversion issues, as the power of 10 was correctly calculated as 10\u2075.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

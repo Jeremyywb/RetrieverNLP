@@ -1,0 +1,7 @@
+{
+  "query_id": "384_C",
+  "content_id": 401,
+  "explanation": "To determine which line is not parallel to \\( y = -2x + 7 \\), slopes must be compared. The correct answer \\( y = -(8 - 2x) \\) simplifies to \\( y = 2x - 8 \\), revealing a slope of \\( 2 \\), distinct from \\( -2 \\). The student incorrectly selected \\( y = 2 - 2x \\), which rearranges to \\( y = -2x + 2 \\), retaining the original slope of \\( -2 \\).\n\nThe student likely compared y-intercepts (7 vs. 2) instead of slopes. This misdirected focus caused them to equate non-parallelism with differing intercepts rather than slope differences. The error directly stems from conflating intercept changes with slope changes when assessing parallelism. \n\nRelated misconceptions like misidentifying coefficients in non-standard forms or misassigning \\( m \\) and \\( c \\) in \\( y = mx + c \\) do not apply here, as the student correctly parsed the slope from the equation \\( y = 2 - 2x \\). The flaw was exclusively prioritizing intercepts over slope equivalence.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

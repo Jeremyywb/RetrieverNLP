@@ -1,0 +1,7 @@
+{
+  "query_id": "86_A",
+  "content_id": 217,
+  "explanation": "Correct calculation: \\(\\frac{4}{11} + \\frac{7}{11} = \\frac{4+7}{11} = \\frac{11}{11} = 1\\).\n\nStudent's incorrect calculation: \\(\\frac{4}{11} + \\frac{7}{11} = \\frac{4+7}{11+11} = \\frac{11}{22}\\).\n\nThe student added both numerators and denominators separately, incorrectly assuming addition applies to both parts of the fractions. This violates the rule that only numerators are added when denominators are identical. The error stems from treating numerator and denominator as independent terms to combine through addition, rather than recognizing the denominator remains unchanged. \n\nThis differs from simplifying a fraction incorrectly (which would require altering an already-correct numerator/denominator pair) or multiplying fractions instead of adding. The error is strictly about misapplying addition to denominators that should stay fixed.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

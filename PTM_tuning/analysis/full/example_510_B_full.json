@@ -1,0 +1,7 @@
+{
+  "query_id": "510_B",
+  "content_id": 809,
+  "explanation": "Correct calculation: tan(32\u00b0) = opposite/adjacent = p/6  \nStudent's likely calculation: cos(32\u00b0) = adjacent/hypotenuse = 6/p (incorrectly assuming p is hypotenuse)\n\nThe student misidentified the side relationship by treating p (opposite side) as hypotenuse. This caused them to select cosine (adjacent/hypotenuse) instead of tangent (opposite/adjacent). The error stems from incorrect side labeling relative to the given angle, not from confusing hypotenuse with adjacent. \n\nThis differs from \"uses cos when sin is required\" because both adjacent and hypotenuse aren't involved in the required calculation (sine requires opposite/hypotenuse). The mistake specifically shows confusion between hypotenuse and opposite side identification rather than hypotenuse/adjacent confusion.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

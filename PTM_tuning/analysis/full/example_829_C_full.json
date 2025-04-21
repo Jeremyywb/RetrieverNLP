@@ -1,0 +1,7 @@
+{
+  "query_id": "829_C",
+  "content_id": 1639,
+  "explanation": "Correct expansion:\n\\[\n(m-3)(m-2) = m^2 -2m -3m +6 = m^2 -5m +6\n\\]\n\nStudent's calculation likely:\n\\[\n(m-3)(m-2) = m^2 +2m +3m +6 = m^2 +5m +6\n\\]\n\nThe student incorrectly converted negative products to positive in the outer and inner terms. When calculating \\(m \\cdot (-2)\\) and \\(-3 \\cdot m\\), they treated both products as \\(+2m\\) and \\(+3m\\) instead of \\(-2m\\) and \\(-3m\\). This indicates they disregarded the negative signs attached to 2 and 3 during multiplication, leading to erroneous addition of like terms. \n\nThe error stems from mishandling negative coefficients during the expansion phase, not from miscombining already-calculated terms. This distinguishes it from sign errors during term collection. The correct handling of \\((-3)(-2)=+6\\) shows they understood negative\u00d7negative rules but failed to apply negative\u00d7positive rules consistently.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

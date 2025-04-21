@@ -1,0 +1,7 @@
+{
+  "query_id": "86_B",
+  "content_id": 217,
+  "explanation": "Correct calculation: \\(\\frac{4}{11} + \\frac{7}{11} = \\frac{4+7}{11} = \\frac{11}{11} = 1\\)\n\nStudent's error: \\(\\frac{4}{11} + \\frac{7}{11} = \\frac{4+7}{11+11} = \\frac{11}{22} = \\frac{1}{2}\\)\n\nThe student incorrectly added both numerators **and denominators** instead of preserving the common denominator. This reflects a misunderstanding of fraction addition rules - when denominators are identical, only numerators are added while the denominator remains unchanged. \n\nThe error directly stems from treating denominators as quantities to be summed (like numerators), violating the fundamental principle of fraction addition. This distinguishes it from related misconceptions like multiplying denominators (which would produce \\(\\frac{11}{121}\\)) or failing to find common denominators (irrelevant here as denominators already match).\n\nThe specific 1/2 result uniquely matches the pattern of adding denominators (11+11=22), confirming this particular reasoning flaw.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

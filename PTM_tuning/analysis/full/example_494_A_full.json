@@ -1,0 +1,7 @@
+{
+  "query_id": "494_A",
+  "content_id": 1310,
+  "explanation": "Correct calculation: (5+2+3+2)=12 symbols \u2192 12\u00d710=120 total people \u2192 120\u00f74=30 mean\n\nStudent's incorrect calculation: (5+2+3+2)=12 \u2192 12\u00f74=3\n\nThe student treated pictogram symbols as direct counts rather than scaled values. They summed the smiley faces but failed to multiply by 10 (value per symbol) before averaging. This reveals a misunderstanding of data representation in pictograms where symbols carry weight. The error specifically stems from conflating symbol counts with actual quantities, not from confusing mean/median or miscounting categories. Related misconceptions like dividing categories by sum are less precise here, as the core issue is ignoring the scale factor in the key. The answer's 10:1 ratio mismatch (3 vs 30) directly matches the missing \u00d710 operation.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

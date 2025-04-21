@@ -1,0 +1,7 @@
+{
+  "query_id": "91_C",
+  "content_id": 265,
+  "explanation": "To solve \\( x^{2}+7 x=8 \\), the correct first step is subtracting 8 from both sides:  \n\\( x^{2}+7 x -8 = 0 \\), enabling factoring or quadratic formula application.  \n\nThe student subtracted \\( 7x \\) instead:  \n\\( x^{2} = 8 -7x \\), which complicates solving by leaving a mixed-term equation.  \n\nThe error stems from misapplying inverse operations to isolate \\( x^{2} \\) rather than preparing the equation for standard quadratic methods. By targeting the \\( 7x \\) term instead of the constant, the student failed to recognize that solving quadratics requires a zero on one side. This aligns with misunderstanding how inverse operations apply to equation structure, not just term elimination.  \n\nThe error differs from confusing addition/subtraction inverses (they correctly subtracted a term) or balancing errors (they maintained equality). The core issue is prioritizing term isolation over equation formatting for standard solving techniques.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

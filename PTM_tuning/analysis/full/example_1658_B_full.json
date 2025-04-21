@@ -1,0 +1,7 @@
+{
+  "query_id": "1658_B",
+  "content_id": 332,
+  "explanation": "The correct graph for inverse proportionality \\( x \\propto \\frac{1}{y} \\) is a hyperbola in the first quadrant, decreasing continuously without symmetry about the line \\( y = x \\). The student selected a U-shaped graph resembling \\( y = \\frac{1}{x^2} \\), incorrectly assuming symmetry between positive and negative regions. This stems from misapplying reciprocal relationships as quadratic functions (e.g., interpreting \\( x \\propto \\frac{1}{y} \\) as requiring \\( y \\)-values to mirror at a midpoint). The error specifically conflates reciprocal proportionality (\\( xy = k \\)) with quadratic dependence (\\( y = ax^2 + c \\)), distinct from confusing it with linear or exponential relationships. The symmetrical U-shape directly matches the misconception that reciprocal equations produce parabolic graphs rather than hyperbolic ones.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "100_D",
+  "content_id": 1326,
+  "explanation": "The correct calculation converts degrees to fractions: Blue (90\u00b0/360\u00b0)=1/4, therefore non-blue=1-1/4=3/4. The student failed to recognize that angular measurements directly represent proportional relationships in pie charts. Their answer (\"Impossible to say\") suggests they didn't understand that 90\u00b0 corresponds to a calculable fraction of the whole (360\u00b0), even though numerical degree values were explicitly provided. This stems from not connecting angular measurements to fractional parts of a whole circle, particularly missing that 90\u00b0 defines a quarter section. The error differs from angle estimation issues because all required measurements were given numerically, eliminating the need for visual estimation. It also can't be attributed to orientation misconceptions, as the problem didn't reference chart alignment.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

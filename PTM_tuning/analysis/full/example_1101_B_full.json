@@ -1,0 +1,7 @@
+{
+  "query_id": "1101_B",
+  "content_id": 624,
+  "explanation": "Correct calculation: \n- Ratio parts: Josh=3, Lucy=7\n- Value per part: \u00a384 \u00f7 3 = \u00a328\n- Lucy's amount: 7 \u00d7 \u00a328 = \u00a3196\n\nStudent's likely calculation:\n- Treated \u00a384 as the total for both shares\n- Calculated Lucy's share as (7/10) \u00d7 \u00a384 = \u00a358.80\n\nFlawed reasoning: \nThe student incorrectly assumed the ratio 3:7 represents portions of Josh's \u00a384 rather than parts of the total amount. This led them to divide \u00a384 into 10 parts (3+7) and assign 7 parts to Lucy, rather than using Josh's 3 parts to find the value per ratio unit.\n\nConnection to misconception: \nThis error stems from misunderstanding how ratios scale quantities. The student treated Josh's amount as the whole to be split by the ratio numbers, rather than recognizing that \u00a384 corresponds to only 3 parts of the larger total.\n\nDistinction from related errors: \nThe mistake isn't about ratio order or equivalent ratios, but specifically about misapplying the ratio to a single quantity rather than using it to relate separate quantities.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

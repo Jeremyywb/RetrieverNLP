@@ -1,0 +1,7 @@
+{
+  "query_id": "949_C",
+  "content_id": 221,
+  "explanation": "Correct Calculation:\n- Given AB:BC = 1:2, the ratio parts are directly AB=1 unit and BC=2 units. Total AC=3 units (1+2). The ratio remains 1:2 regardless of absolute lengths.\n\nStudent's Incorrect Calculation:\n- The student likely interpreted the ratio as AB:AC instead of AB:BC. They added the parts (1+2=3) and treated BC as the total (3 units), resulting in AB:BC = 1:3.\n\nSpecific Flaw:\n- The student confused the part-to-part ratio (AB:BC) with a part-to-whole relationship. They incorrectly assigned BC to represent the total parts (3) rather than the second part (2).\n\nConnection to Misconception:\n- This directly stems from misinterpreting ratio notation as relating a part to the whole rather than part-to-part. The student substituted BC with the sum of ratio terms instead of preserving the two-part comparison.\n\nDistinction from Related Errors:\n- Unlike confusing total with part (which would involve misapplying absolute lengths), this error specifically misattributes which quantities the ratio compares. It's a misinterpretation of ratio structure, not arithmetic errors with totals.\n\nKey Differentiation:\n- The error isn't about misunderstanding part sizes (e.g., BC being n times AB), but about fundamentally misidentifying what the ratio compares. The student conflated the roles of BC in the ratio versus BC in the whole segment.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "1376_A",
+  "content_id": 302,
+  "explanation": "Correct calculation: 3 shaded parts / 5 total parts = 3/5 = 0.6 = 60%.\n\nIncorrect calculation: 3 shaded parts \u00f7 10 = 0.3 = 30%.\n\nThe student treated the total parts as 10 instead of 5 when converting to percentage. This stems from misapplying the relationship between fractions and percentages by assuming division by 10 yields the percentage directly. \n\nThe error matches the misconception that dividing by 10 produces 1%, causing the student to divide 3 by 10 rather than the correct denominator (5). This differs from \"believes the total is always 1\" (which would involve decimal handling) or misreading percentage symbols, as the error specifically involves substituting the actual denominator with 10. \n\nThe core flaw is using an incorrect divisor (10) for percentage conversion instead of the given total (5).",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

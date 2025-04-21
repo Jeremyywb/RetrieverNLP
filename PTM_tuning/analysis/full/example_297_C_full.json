@@ -1,0 +1,7 @@
+{
+  "query_id": "297_C",
+  "content_id": 1790,
+  "explanation": "The correct side PQ is described using its two endpoints: \\( Q P \\).  \nThe student wrote QPRS, using four letters instead of two.  \n\nThe error stems from misunderstanding how geometric sides are labeled. A side is defined only by its two endpoints, but the student incorrectly concatenated multiple vertex labels from adjacent sides (QP then PR then RS).  \n\nThis indicates they treated the single side PQ as part of a sequence of connected sides (QP-PR-RS), misapplying path or perimeter notation to a single segment.  \n\nThe primary misconception here is conflating side labeling with multi-segment path descriptions, distinct from angle labeling (which uses three letters with the vertex in the middle) or parallel side notation (which uses matching tick marks).  \n\nThe error is specific to side terminology, not angle conventions or parallel notation.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "651_B",
+  "content_id": 102,
+  "explanation": "The correct calculation shows both expressions are equivalent:  \n3(n - 4) = 3n - 12 via distribution.  \nThe student likely evaluated Katie's expression as 3(n - 4) and Tom's as 3n - 12 but failed to recognize they are mathematically identical.  \n\nThe error stems from treating the two forms as distinct instead of applying the distributive property to verify equivalence. The student perceived 3(n - 4) and 3n - 12 as different outcomes rather than equivalent representations, missing that subtraction and multiplication order is preserved in both cases.  \n\nThis aligns with a lack of recognition that factorized and expanded forms can represent the same function. It differs from related misconceptions about partial term operations, as the student correctly processed both operations in sequence but failed to connect the algebraic representations.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

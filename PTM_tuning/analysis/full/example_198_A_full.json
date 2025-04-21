@@ -1,0 +1,7 @@
+{
+  "query_id": "198_A",
+  "content_id": 486,
+  "explanation": "Correct calculation:  \n\\( 2 \\, \\text{km}^2 = 2 \\times (1000 \\, \\text{m})^2 = 2 \\times 1{,}000{,}000 \\, \\text{m}^2 = 2{,}000{,}000 \\, \\text{m}^2 \\)\n\nStudent's error:  \n\\( 2 \\, \\text{km}^2 = 2 \\times 1000 \\, \\text{m}^2 = 2000 \\, \\text{m}^2 \\)\n\nThe student applied the linear conversion factor (1000 m = 1 km) directly to squared units without squaring the conversion factor. This caused them to multiply by 1000 instead of \\( 1000^2 \\), reducing the result by a factor of 1000. \n\nThe error stems from treating area conversion as equivalent to length conversion, ignoring the dimensionality of the units. This matches the misconception of using a length scale factor for area without squaring it. \n\nDistinction from related misconceptions:  \nThe error isn't due to cubing (which would produce \\( 1000^3 \\)), nor a misunderstanding of metric relationships (they correctly used 1 km = 1000 m). The mistake specifically lies in failing to square the conversion factor for area.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

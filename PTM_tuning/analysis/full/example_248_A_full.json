@@ -1,0 +1,7 @@
+{
+  "query_id": "248_A",
+  "content_id": 1133,
+  "explanation": "A quadratic graph is characterized by a parabolic U-shape, which occurs when the equation is degree 2 (e.g., \\( y = ax^2 + bx + c \\)). The student incorrectly identified a straight-line graph (degree 1) as quadratic. Their reasoning likely conflated \"graph with variables\" (any equation with \\( x \\)) with \"quadratic graph,\" failing to distinguish the defining curvature of a parabola. The error stems from not recognizing that linear equations produce straight lines, while quadratic equations produce curves. This aligns with a misunderstanding of how equation degree relates to graph shape, rather than confusing hyperbolas (degree 1 reciprocal functions) with linear graphs. The mistake is specific to misclassifying the graph type based on equation structure, not misinterpreting hyperbola asymptotes or cubic behavior.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

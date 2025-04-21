@@ -1,0 +1,7 @@
+{
+  "query_id": "1063_A",
+  "content_id": 1558,
+  "explanation": "Correct calculation: \\( y = \\frac{4}{-1} = -4 \\)\n\nStudent's error: Calculated \\( \\frac{4}{1} = 4 \\), treating \\( x=-1 \\) as \\( x=1 \\).\n\nThe student substituted \\( x=-1 \\) into \\( \\frac{4}{x} \\) but disregarded the negative sign in the denominator. This caused them to compute \\( \\frac{4}{1} \\) instead of \\( \\frac{4}{-1} \\), flipping the sign of the result. The misconception stems from failing to process the negative value of \\( x \\) during substitution, directly altering the outcome's sign. \n\nThis error differs from reversing coordinate signs (which would involve misreading graph points) or using the wrong data point (which would select an incorrect \\( x \\)-value). The flaw occurred purely in algebraic handling of the negative term, not graph interpretation.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

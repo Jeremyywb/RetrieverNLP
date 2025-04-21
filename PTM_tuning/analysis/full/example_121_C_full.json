@@ -1,0 +1,7 @@
+{
+  "query_id": "121_C",
+  "content_id": 1214,
+  "explanation": "To find the gradient of \\(5x + 3y = 15\\), the correct process requires solving for \\(y\\):  \n1. Subtract \\(5x\\): \\(3y = -5x + 15\\)  \n2. Divide by 3: \\(y = -\\frac{5}{3}x + 5\\), giving a gradient of \\(-\\frac{5}{3}\\).  \n\nThe student likely isolated \\(y\\) incorrectly by writing \\(3y = 5x + 15\\) (omitting the negative sign when moving \\(5x\\)) before dividing by 3. This produced \\(y = \\frac{5}{3}x + 5\\), leading to \\(\\frac{5}{3}\\).  \n\nThe error stems from mishandling algebraic signs when rearranging terms, specifically failing to apply the negation to \\(5x\\) when moving it across the equation. This directly connects to misunderstanding equation rearrangement steps.  \n\nThis differs from the misconception of directly using \\(5\\) as the gradient without solving for \\(y\\), as the student\u2019s \\(\\frac{5}{3}\\) implies they attempted rearrangement but erred in sign management.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

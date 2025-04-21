@@ -1,0 +1,7 @@
+{
+  "query_id": "265_A",
+  "content_id": 2517,
+  "explanation": "The correct application uses Pythagorean theorem for a right triangle with hypotenuse 9 cm: \\( h^2 + 6^2 = 9^2 \\), rearranged to \\( h^2 = 9^2 - 6^2 \\). The student instead wrote \\( h^2 = 9^2 + 6^2 \\), treating the height as the hypotenuse. \n\nThe error stems from misapplying the theorem's directionality: they added the squares of the legs rather than subtracting one leg's square from the hypotenuse's square to solve for the remaining leg. This reflects confusion about when to add (for hypotenuse calculation) versus subtract (for leg calculation) in the theorem. \n\nThe mistake is distinct from misidentifying hypotenuse length as the sum of legs (which would involve 9 = 6 + h), or trigonometric ratio errors. The core flaw is specifically reversing the operation required for leg calculation in the Pythagorean formula.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

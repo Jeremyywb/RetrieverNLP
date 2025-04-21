@@ -1,0 +1,7 @@
+{
+  "query_id": "1324_B",
+  "content_id": 624,
+  "explanation": "Correct calculation: \n1. Total ratio parts = 5 (Tom) + 4 (brother) = 9 (not used in correct method)\n2. Value per part = \u00a3180 \u00f7 5 = \u00a336\n3. Brother's share = 4 \u00d7 \u00a336 = \u00a3144\n\nStudent's likely calculation:\n1. Total ratio parts = 5 + 4 = 9\n2. Value per part = \u00a3180 \u00f7 9 = \u00a320\n3. Brother's share = 4 \u00d7 \u00a320 = \u00a380\n\nFlaw explanation: \nThe student incorrectly treated Tom's \u00a3180 as the total amount to be split into 9 parts rather than recognizing it represents only 5 parts. This caused them to divide by the sum of ratio terms (9) instead of Tom's ratio term (5), directly misapplying the relationship between part-to-whole and part-to-part ratios.\n\nDistinction from related errors: \nThis differs from ratio-order errors (which would produce \u00a3225) or unit-finding failures (which would stop at \u00a336). The critical confusion was assigning the given value to the wrong quantity in the proportion structure.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

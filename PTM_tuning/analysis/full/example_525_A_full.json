@@ -1,0 +1,7 @@
+{
+  "query_id": "525_A",
+  "content_id": 687,
+  "explanation": "Correct calculation: \n2 + 2 = 4 (whole numbers)\n7/10 + 1/4 = 14/20 + 5/20 = 19/20\nTotal: 4\u202f19/20\n\nStudent's calculation:\n27/10 + 9/4 = 54/20 + 45/20 = 99/20 (improper fraction)\n\nThe student correctly converted mixed numbers to improper fractions and added them with a common denominator but failed to convert the final improper fraction (99/20) back to a mixed number as required. This shows they understood fraction addition but misapplied the format requirement. The error aligns with the related misconception of \"Expresses initial improper fraction\" rather than the listed primary misconception. The student's answer is mathematically equivalent but formatted incorrectly, distinguishing it from errors involving incorrect addition or denominator handling.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

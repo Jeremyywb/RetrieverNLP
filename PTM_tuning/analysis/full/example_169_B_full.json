@@ -1,0 +1,7 @@
+{
+  "query_id": "169_B",
+  "content_id": 389,
+  "explanation": "The correct formula combines a fixed fee (\u00a340) with a variable cost (15n): \\( C=40+15n \\).\n\nThe student incorrectly calculated \\( C=55n \\), combining 40 and 15 before multiplying by \\( n \\). \n\nThis error occurred because the student treated both the fixed call-out fee (\u00a340) and the hourly rate (\u00a315) as coefficients of \\( n \\), summing them prematurely. The fixed fee is a constant term independent of hours worked, while only \u00a315 scales with \\( n \\).\n\nThe primary flaw was failing to recognize the distinct roles of fixed and variable costs in the problem structure. The student converted a fixed additive term into a multiplier, violating the formula's linear structure.\n\nThis explanation aligns with the \"does not add on the constant\" misconception, not order-of-operations errors. The student correctly multiplied 15 by \\( n \\), but misclassified the \u00a340 as part of the rate rather than a standalone term.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

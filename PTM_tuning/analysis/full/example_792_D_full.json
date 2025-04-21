@@ -1,0 +1,7 @@
+{
+  "query_id": "792_D",
+  "content_id": 391,
+  "explanation": "Correct calculation:\nSubstitute \\( y = 0 \\) into \\( 2x + 3y = 12 \\):\n\\( 2x + 3(0) = 12 \\)\n\\( 2x = 12 \\)\n\\( x = 6 \\)\n\nStudent's incorrect calculation:\nThey likely substituted \\( x = 0 \\) instead of \\( y = 0 \\):\n\\( 2(0) + 3y = 12 \\)\n\\( 3y = 12 \\)\n\\( y = 4 \\), then misassigned this \\( y \\)-value to the \\( x \\)-column.\n\nThe flaw stems from confusing which variable to substitute. The student incorrectly assumed the given \\( y \\)-value (0) required setting \\( x = 0 \\), solving for \\( y \\), then transferring that result to the \\( x \\)-field. This directly misapplies substitution by reversing the roles of \\( x \\) and \\( y \\).\n\nThe error aligns with substituting incorrectly rather than dividing coefficients (e.g., \\( 12/3 \\)) or misunderstanding multiplication by zero. The key distinction is the misassignment of variables during substitution, not arithmetic or algebraic manipulation errors.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

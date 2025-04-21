@@ -1,0 +1,7 @@
+{
+  "query_id": "771_B",
+  "content_id": 16,
+  "explanation": "The correct relationship follows inverse proportionality \\( t = \\frac{k}{p} \\), producing a hyperbola that curves asymptotically. The student plotted a linear graph \\( t = -mp + b \\), implying a constant rate of decrease. Their reasoning assumes the time decreases uniformly per additional worker, misapplying direct proportionality's linearity to an inverse relationship. This conflates the graphical representation of linear equations (constant slope) with reciprocal ones (variable rate of change). While they recognized the directional trend (more workers \u2192 less time), the misconception that inverse relations produce straight lines (not curves) directly caused the error. This differs from merely confusing direct/inverse proportionality, as the error specifically involves mischaracterizing the reciprocal function's shape rather than misjudging the relationship's direction.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

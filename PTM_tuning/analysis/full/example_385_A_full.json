@@ -1,0 +1,7 @@
+{
+  "query_id": "385_A",
+  "content_id": 620,
+  "explanation": "The correct angle notation requires three letters with the vertex in the middle: \\( Q P S \\). The student wrote \\( P \\), omitting the two other letters. \n\nThe error stems from using only the vertex letter, assuming it sufficiently identifies the angle. This ignores the geometrical rule that three-letter notation is necessary to distinguish angles sharing a common vertex (e.g., multiple angles at point \\( P \\) in the trapezium). \n\nThe student\u2019s misconception directly caused them to truncate the notation to a single letter, unlike related errors involving two letters or incorrect ordering. Their reasoning bypassed the need for explicit side specification, leading to ambiguity.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

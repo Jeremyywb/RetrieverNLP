@@ -1,0 +1,7 @@
+{
+  "query_id": "596_C",
+  "content_id": 143,
+  "explanation": "Correct calculation:\nNumerator: \\( q^2 + q - 12 = (q+4)(q-3) \\)\nDenominator: \\( q^2 - 2q - 3 = (q-3)(q+1) \\)\nSimplified: \\( \\frac{(q+4)\\cancel{(q-3)}}{\\cancel{(q-3)}(q+1)} = \\frac{q+4}{q+1} \\)\n\nStudent's incorrect steps:\n1. Treated numerator as \\( (q-4)(q+3) \\) instead of \\( (q+4)(q-3) \\)\n2. Incorrectly canceled \\( q^2 \\) terms directly\n3. Subtracted remaining linear terms: \\( q - (-2q) = 3q \\) \u2192 reduced to \\( q \\)\n4. Divided constants: \\( -12 \u00f7 -3 = 4 \\), producing \\( \\frac{q-4}{-2q-1} \\)\n\nSpecific flaw:\nThe student attempted term-by-term cancellation without factorizing quadratics first. They subtracted corresponding terms in numerator and denominator (\\( q^2 - q^2 = 0 \\), \\( q - (-2q) = 3q \\)), then incorrectly simplified this to \\( q \\) while mishandling signs. This reflects invalid cancellation of non-factor components rather than factoring errors.\n\nDistinction:\nUnlike quadratic factorization errors, the student bypassed factoring entirely. They treated polynomial division as arithmetic with separate terms rather than recognizing the need for common binomial factors. This matches \"incorrectly cancels terms without considering complete factorization\" rather than flawed factoring attempts.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

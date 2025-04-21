@@ -1,0 +1,7 @@
+{
+  "query_id": "585_C",
+  "content_id": 512,
+  "explanation": "Correct calculation:\nMultiply first equation by 2: \\(8x + 2y = 14\\)\nSubtract second equation: \\( (8x + 2y) - (3x + 2y) = 14 - 4 \\)\nSimplify: \\(5x = 10 \\rightarrow x = 2\\)\nSubstitute \\(x = 2\\) into \\(4x + y = 7\\): \\(y = -1\\)\n\nStudent's error:\nLikely subtracted equations before scaling:\nOriginal equations: \\(4x + y = 7\\) and \\(3x + 2y = 4\\)\nIncorrect subtraction: \\( (4x + y) - (3x + 2y) = 7 - 4 \\)\nResult: \\(x - y = 3\\)\nSolving this with \\(4x + y = 7\\) gives \\(x = 2, y = -1\\), but the student instead solved \\(x - y = 3\\) in isolation or combined it with a miscalculation.\n\nReasoning flaw:\nThe student likely attempted elimination without properly aligning coefficients first, treating the raw equations as directly subtractible. This caused an invalid intermediate equation (\\(x - y = 3\\)) that, when combined with misapplied substitutions or arithmetic errors, produced their answer. The error stems from applying subtraction prematurely rather than scaling equations first.\n\nDistinction from related misconceptions:\nThe error isn't ignoring a variable (they addressed both) or refusing to multiply equations. Instead, they used valid elimination steps but misapplied the operation order, differing from simple sign errors or addition/subtraction confusion.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "885_A",
+  "content_id": 1877,
+  "explanation": "The correct answer requires recognizing that a square aligns with itself every 90\u00b0 rotation (360\u00b0/4), achieving order 4. The student incorrectly selected a rectangle, which only aligns at 180\u00b0 and 360\u00b0 (order 2). \n\nThe error stems from conflating rotational symmetry with general quadrilateral properties rather than calculating the exact rotation increments needed for alignment. The student assumed equal rotational intervals apply to all rectangles, ignoring that unequal side lengths prevent 90\u00b0 alignment. This directly ties to misapplying rotational symmetry principles to shapes without equal-length sides. \n\nUnlike line symmetry misconceptions, the flaw here specifically involves failing to compute rotational increments (360\u00b0/n) based on side uniformity. A square's equal sides enable 90\u00b0 alignment, but a rectangle's unequal sides do not, making this distinct from simply forgetting rectangle properties.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

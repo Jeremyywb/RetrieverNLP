@@ -1,0 +1,7 @@
+{
+  "query_id": "124_B",
+  "content_id": 1435,
+  "explanation": "Correct calculation:  \n\\((-8) - (-5) = (-8) + 5 = -3\\)\n\nStudent's likely steps:  \nConverted \\(-(-5)\\) to \\(+5\\) but also treated \\(-8\\) as \\(+8\\), then added:  \n\\(8 + 5 = 13\\)\n\nSpecific flaw:  \nThe student incorrectly applied additive inverse conversion to *both* terms instead of only the second term. This stems from misapplying the rule for subtracting negatives, changing the first number's sign unnecessarily.\n\nConnection to misconception:  \nThe error shows partial recognition that subtraction of a negative involves addition but misidentifies *which* term's sign changes. This aligns with misunderstanding additive inverse application in subtraction.\n\nDistinction from related errors:  \nUnlike merely ignoring signs or misordering terms, this error specifically reflects incorrect dual sign-flipping, not absolute value subtraction or commutativity issues.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

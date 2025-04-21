@@ -1,0 +1,7 @@
+{
+  "query_id": "1842_D",
+  "content_id": 1621,
+  "explanation": "Correct calculation: \\(\\frac{2}{5} \\div 2 = \\frac{2}{5} \\times \\frac{1}{2} = \\frac{1}{5}\\).  \nStudent's calculation: \\(\\frac{2}{5} \\div 2 = \\frac{2 \\times 2}{5 \\times 2} = \\frac{4}{10}\\).  \n\nThe student incorrectly multiplied both the numerator and denominator by 2, treating division as equivalent-fraction scaling rather than true division. This stems from misapplying the concept of division to fraction components: they preserved the fraction's value by doubling both terms, effectively canceling the division.  \n\nThe error aligns with the misconception that dividing a fraction by an integer requires adjusting the denominator alone. Here, the student extended this flawed logic to both numerator and denominator, attempting to \"balance\" the operation. This distinguishes it from multiplying the numerator alone or swapping operations (commutativity), as the error specifically involves proportional scaling of both terms.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

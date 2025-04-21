@@ -1,0 +1,7 @@
+{
+  "query_id": "670_B",
+  "content_id": 730,
+  "explanation": "Correct calculation: \u00a35.00 - \u00a32.70  \n= \u00a34.100 (after borrowing 100p from \u00a35)  \n= \u00a34.00 - \u00a32.00 = \u00a32.00 (pounds)  \n100p - 70p = 30p (pence)  \nTotal: \u00a32.30  \n\nStudent's error:  \nLikely calculated \u00a35.00 - \u00a32.70 as:  \n5 - 2 = 3 (pounds)  \n100p - 70p = 30p (pence)  \nResult: \u00a33.30  \n\nThe flaw occurred when borrowing 100p from \u00a35.00. The student failed to reduce the original \u00a35 to \u00a34 after borrowing, leaving the pounds column as 5 - 2 = 3 instead of 4 - 2 = 2. This matches the misconception of not adjusting the preceding digit during borrowing.  \n\nThis differs from \"out by 10\" errors (which would involve pence miscalculations) or adding instead of subtracting. The core issue is the incorrect retention of the original digit after borrowing, not operational confusion or place-value misalignment.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "715_B",
+  "content_id": 340,
+  "explanation": "Correct first step: Add 1 to both sides to isolate the fraction term:\n\\(\\frac{m}{4}-1+1=20+1\\)\n\\(\\frac{m}{4}=21\\)\n\nStudent's incorrect step: Multiplying all terms by 4 but failing to apply it to both the fraction and the constant:\n\\((\\frac{m}{4}-1)\\times4=20\\times4\\)\n\\(m-1=80\\) (should be \\(m-4=80\\))\n\nThe error stems from incorrectly distributing multiplication across subtraction. When clearing denominators, the student multiplied \\(\\frac{m}{4}\\) by 4 but only multiplied the constant term (-1) by 1 instead of 4. This shows misunderstanding of the distributive property when applying operations to entire expressions. The mistake specifically involves partial application of multiplication to equation terms, distinct from related errors like using wrong inverse operations or inconsistent scaling across equations. The core flaw is improper term-by-term multiplication rather than misapplying inverse operations.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

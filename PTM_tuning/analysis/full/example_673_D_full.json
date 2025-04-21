@@ -1,0 +1,7 @@
+{
+  "query_id": "673_D",
+  "content_id": 563,
+  "explanation": "Correct reflection over \\( y = x \\) swaps the coordinates: \\( (3,2) \\rightarrow (2,3) \\). \n\nThe student likely preserved the \\( x \\)-coordinate (3) and added 2 to the \\( y \\)-coordinate (2 \u2192 4), treating the reflection as a vertical movement. This suggests they incorrectly interpreted the reflection direction as vertical (along the \\( y \\)-axis) rather than diagonal (over \\( y = x \\)). \n\nThe error aligns with misapplying the reflection's direction: they mirrored the point vertically relative to an imagined vertical line through \\( x = 3 \\), doubling the distance from \\( y = 1 \\) (the triangle's base) instead of swapping coordinates. \n\nThis differs from translating (which would shift all coordinates uniformly) or rotating (which would alter both coordinates asymmetrically). The specific misapplication of reflection direction directly explains the preserved \\( x \\)-value and altered \\( y \\)-value.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

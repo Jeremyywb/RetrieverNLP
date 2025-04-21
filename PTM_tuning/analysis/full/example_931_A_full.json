@@ -1,0 +1,7 @@
+{
+  "query_id": "931_A",
+  "content_id": 835,
+  "explanation": "The expression \\( A=\\frac{b h}{2} \\) represents a mathematical relationship between variables (area, base, height) to calculate triangle area. The student labeled this as an \"equation,\" which technically contains an equality, but missed that it specifically describes a geometric relationship using defined variables. The error stems from not recognizing that such relationships presented with equality signs are called \"formulas\" when they express a rule or principle (like area calculation). This differs from confusing equations with expressions (which lack equality) or variables with formulas (which are not standalone symbols). The student treated it as a general equality rather than a contextualized formula.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

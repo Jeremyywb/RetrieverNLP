@@ -1,0 +1,7 @@
+{
+  "query_id": "1042_A",
+  "content_id": 783,
+  "explanation": "Correct solution:\nFor (5x + 2) = 0:  \n5x = -2 \u2192 x = -2/5  \nFor (2x - 5) = 0:  \n2x = 5 \u2192 x = 5/2  \n\nStudent's error:\nWhen solving 5x + 2 = 0:  \n5x = 2 \u2192 x = 2/5 (missing negative sign)  \n\nFlaw explanation:\nThe student preserved the positive sign when moving the constant term across the equality, treating 5x + 2 = 0 as equivalent to 5x = 2 rather than 5x = -2. This directly corresponds to mishandling sign changes during equation rearrangement.  \n\nDifferentiation from related errors:\nThis is distinct from confusing coefficient/constant positions (x = -a/b) or sign-flipping final answers. The error specifically occurred in the sign preservation during additive inverse operations.  \n\nMisconception link:\nThe error stems from incorrect sign handling when isolating variables, not from misapplying fraction operations or sign reversal of solutions.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

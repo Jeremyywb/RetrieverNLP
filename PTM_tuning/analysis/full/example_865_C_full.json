@@ -1,0 +1,7 @@
+{
+  "query_id": "865_C",
+  "content_id": 510,
+  "explanation": "The correct equation factors the roots as \\( (x - 1) \\) and \\( (x + 5) \\), then introduces a negative coefficient to invert the parabola: \\( y = -(x - 1)(x + 5) \\), which simplifies to \\( (1 - x)(x + 5) \\). \n\nThe student wrote \\( (x - 1)(x + 5) \\), which expands to \\( x^2 + 4x - 5 \\), a positive quadratic. Their error stems from not applying the necessary sign inversion to reflect the parabola's downward orientation. \n\nThe flaw occurred when converting roots to factors: they correctly used \\( (x - r) \\) for roots \\( 1 \\) and \\( -5 \\), but failed to recognize that the graph's downward direction requires multiplying the entire expression by \\( -1 \\). This omission directly connects to misunderstanding how the factor form's coefficient relates to the parabola's concavity. \n\nThis misconception is distinct from arithmetic sign errors (e.g., believing two negatives multiply to a negative), as the mistake involves orientation adjustment rather than incorrect multiplication of constants.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

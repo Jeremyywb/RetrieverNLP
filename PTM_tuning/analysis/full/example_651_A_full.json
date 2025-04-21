@@ -1,0 +1,7 @@
+{
+  "query_id": "651_A",
+  "content_id": 102,
+  "explanation": "The correct output follows order of operations: subtract 4 from \\( n \\) first (\\( n-4 \\)), then multiply by 3, giving \\( 3(n-4) \\). Applying the distributive property shows this equals \\( 3n-12 \\).\n\nThe student likely calculated \\( 3n-12 \\) correctly but failed to recognize that \\( 3(n-4) \\) is mathematically equivalent. They treated the two expressions as distinct formulas rather than alternative forms of the same relationship.\n\nThis error stems from not recognizing that distributing the multiplier over a grouped subtraction preserves equality. The student saw Tom's linear expression as fundamentally different from Katie's factored form rather than equivalent representations.\n\nThis misconception specifically involves failing to apply or recognize the distributive property, not a general disregard for brackets. The error isn't about misplacing operations or ignoring parentheses entirely, but about lacking equivalence reasoning between factored and expanded forms.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

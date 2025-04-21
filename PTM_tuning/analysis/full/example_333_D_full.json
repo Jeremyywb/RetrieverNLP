@@ -1,0 +1,7 @@
+{
+  "query_id": "333_D",
+  "content_id": 2346,
+  "explanation": "Correct calculation:\n```\n 0.26\n-0.60\n------\n-0.34\n```\nStudent's incorrect calculation:\n```\n 0.26\n- 0.6\n------\n 0.20 \u2192 0.2\n```\nThe student subtracted the 6 (from 0.6's tenths place) directly from the 26 hundredths in 0.26, treating it as 26-6=20. This occurred because they didn't align decimals properly, converting 0.6 to 0.60 before subtracting. The error stems from treating tenths and hundredths as equivalent place values when subtracting digits across unaligned columns.\n\nThis matches the misconception of subtracting digits from multiple columns without proper decimal alignment, not a borrowing error. While the answer's positive sign suggests they might have reversed the operation, the core flaw is incorrect digit-column pairing due to unaligned decimals, distinct from miscounting zeros or borrowing failures.\n\nThe error is uniquely tied to mismatched decimal handling rather than other listed misconceptions like borrowing procedures or sign recognition.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

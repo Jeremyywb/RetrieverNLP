@@ -1,0 +1,7 @@
+{
+  "query_id": "1137_B",
+  "content_id": 1906,
+  "explanation": "The correct angle ECB is formed at vertex C by sides CE and BC. The student identified CDB, placing the vertex at D instead of C. \n\nThe student likely observed CE and BC but incorrectly associated them with a different intersection point (D) from attached triangles. They misapplied three-letter notation by selecting vertices from adjacent figures rather than the actual angle's vertex. \n\nThis directly stems from believing angle notation requires using the nearest visible vertices from each side, even if they belong to separate shapes. The error isn't about vertical angles or last-letter placement, as CDB's middle letter (D) wasn't the true intersection of CE and BC.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "1803_A",
+  "content_id": 1344,
+  "explanation": "The correct answer requires recognizing an obtuse angle exceeds 90\u00b0 and estimating its magnitude (e.g., 120\u00b0). The student incorrectly selected 60\u00b0, an acute angle. \n\nThe error occurred because the student misclassified the obtuse angle as acute. This stems from a failure to apply the definition that obtuse angles lie between 90\u00b0 and 180\u00b0. Instead, they treated the angle as if it were acute, defaulting to a smaller, common acute measure (60\u00b0). \n\nThis aligns with confusing obtuse and acute angles, not with misreading a protractor (irrelevant for estimation) or diagram scaling issues (the distinction between acute/obtuse holds regardless of drawing precision). The error reflects a conceptual misunderstanding of angle types rather than measurement technique or visual misjudgment.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

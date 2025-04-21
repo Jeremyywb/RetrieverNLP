@@ -1,0 +1,7 @@
+{
+  "query_id": "614_C",
+  "content_id": 2043,
+  "explanation": "The correct solution for \\( x^2 < 5 \\) involves identifying where the parabola \\( y = x^2 \\) lies below \\( y = 5 \\). This occurs between the roots \\( x = \\pm \\sqrt{5} \\approx \\pm 2.2 \\), yielding \\( -2.2 < x < 2.2 \\). \n\nThe student incorrectly selected \\( x < -2.2 \\) or \\( x > 2.2 \\), which corresponds to the regions where \\( y = x^2 \\) lies *above* \\( y = 5 \\). This indicates they reversed the inequality's graphical interpretation: instead of associating \"less than\" with the interval where the quadratic is below the horizontal line, they assigned it to the outer regions where the quadratic exceeds the line. \n\nThis aligns with a confusion about which regions on the graph satisfy the inequality \\( y < 5 \\). The error is distinct from symbol confusion (e.g., miswriting \\( < \\) as \\( > \\)) because the student preserved the inequality direction but misapplied it to the wrong intervals. Similarly, they did not default to always choosing \"between roots\" but actively inverted the correct interval selection.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

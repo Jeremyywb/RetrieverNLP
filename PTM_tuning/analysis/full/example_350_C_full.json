@@ -1,0 +1,7 @@
+{
+  "query_id": "350_C",
+  "content_id": 604,
+  "explanation": "The correct calculation subtracts the event's probability from 1:  \n1 - 2/7 = 5/7.\n\nThe student likely subtracted the numerator (2) from the denominator (7), computing 7 - 2 = 5, and treated this as a whole number probability. This error occurs when handling fractions as separate numerator/denominator components rather than unified values. The misconception caused the student to ignore the fractional representation and the requirement to maintain the same denominator, resulting in an invalid probability (5 instead of 5/7). \n\nThis differs from the related misconception of \"probability out of non-successes,\" which would still produce a fraction (e.g., 5/5+2). The error specifically stems from improper fraction subtraction mechanics, not misunderstanding probability axioms about total outcomes summing to 1.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "1494_B",
+  "content_id": 1453,
+  "explanation": "The correct expression follows the sequence \"subtract five from h\" (h-5) then \"multiply by six\" (6(h-5)). The student instead wrote 6(5-h), reversing the subtraction order. \n\nThe error stems from treating subtraction as commutative: the student assumed \"subtract five from h\" could be written as 5-h instead of h-5, disregarding the fixed order of terms in subtraction. This directly aligns with the misconception that subtraction order is interchangeable. \n\nDistinguishing from related ideas: This isn\u2019t about assuming h is smaller than 5 (which would require context), nor about misapplying operation priority (the parentheses correctly prioritize subtraction first). The reversal specifically reflects a belief that subtraction\u2019s terms can be swapped without altering meaning.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

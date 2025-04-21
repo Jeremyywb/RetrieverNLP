@@ -1,0 +1,7 @@
+{
+  "query_id": "218_D",
+  "content_id": 1860,
+  "explanation": "The correct relationship is t = d/v (time inversely proportional to speed), forming a hyperbola. The student plotted t = -kv + c (linear equation), assuming constant rate of time decrease. The error stems from misapplying direct proportion reasoning to an inverse relationship, expecting equal speed increments to cause equal time reductions. This linear misconception ignores the reciprocal nature where doubling speed halves time non-uniformly. While related to reciprocal equation recognition, the core confusion is graphing inverse proportion as direct. The straight line hitting the x-axis also reveals failure to recognize asymptotic behavior (time approaching zero only theoretically), unlike related gradient-curve misconceptions about slope changes.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

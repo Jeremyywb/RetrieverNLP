@@ -1,0 +1,7 @@
+{
+  "query_id": "536_B",
+  "content_id": 1602,
+  "explanation": "Correct Calculation:\n- Tom's points: \u221a(3\u00b2 + (-2)\u00b2) = \u221a13 and \u221a(2\u00b2 + (-3)\u00b2) = \u221a13 \u2192 equidistant.\n- Katie's points: \u221a(4\u00b2 +1\u00b2) = \u221a17 \u22484.12 and \u221a(7\u00b2 +(-2)\u00b2) = \u221a53 \u22487.28 \u2192 not equidistant.\n\nStudent's Likely Calculation:\n- For Tom: Assumed swapping coordinates (3,-2) and (2,-3) changes distance without verifying via formula.\n- For Katie: Possibly calculated (4+1)\u00b2 =25 and (7+(-2))\u00b2=25 \u2192 incorrectly concluded both distances =5.\n\nFlawed Reasoning:\nThe student treated coordinate sums as squared terms (e.g., (4+1)\u00b2) instead of summing squares (4\u00b2+1\u00b2). This misapplication led them to incorrectly equate Katie's distances. For Tom, they dismissed the equidistance due to swapped coordinates without validating through the correct formula. The primary misconception caused them to reject Tom's valid claim, while the additive error falsely validated Katie's.\n\nDistinction:\nThis error specifically combines misapplying the distance formula (adding before squaring) with dismissing coordinate-swap invariance. Related misconceptions like estimating diagonals or doubting their calculability don't explain the additive error in Katie's case.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

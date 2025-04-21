@@ -1,0 +1,7 @@
+{
+  "query_id": "403_B",
+  "content_id": 608,
+  "explanation": "The correct solution requires graphing:\n1. \\( y = 3 - x \\) (blue line) with slope -1 through (0,3) and (3,0)\n2. \\( 3x + 2y = 12 \\) (red line) through (0,6) and (4,0)\n\nThe student incorrectly graphed:\n- Blue line with slope +1 through (-3,0) and (0,3)\n- Red line correctly through (0,6) and (4,0)\n\nThe error stems from misinterpreting \\( y = 3 - x \\) as having a positive slope. The student treated the equation as \\( y = x + 3 \\) instead of \\( y = -x + 3 \\), reversing both the slope direction and x-intercept. This directly corresponds to misunderstanding how subtraction in the equation affects the slope coefficient, not merely confusing intercepts. While related misconceptions involve intercept misinterpretations, this specific error shows a failure to recognize negative coefficients in slope determination, distinct from confusing solutions with intercepts.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "1250_B",
+  "content_id": 2043,
+  "explanation": "The correct solution involves finding where \\( y = x^2 + 2x - 3 \\) is below \\( y = -3 \\). The parabola intersects \\( y = -3 \\) at \\( x = -2 \\) and \\( x = 0 \\), creating an interval \\( -2 < x < 0 \\) where the quadratic is below this line.\n\nThe student identified the intersection points \\( x = -2 \\) and \\( x = 0 \\) but incorrectly concluded the solution is \\( x < -2 \\) or \\( x > 0 \\). This suggests they assumed the inequality holds where the parabola is *above* \\( y = -3 \\), reversing the required regions.\n\nThis error directly stems from misinterpreting which regions satisfy \\( y < -3 \\). The student treated the unshaded regions (outside the intersection points) as valid, rather than the shaded region between them. This matches the misconception of confusing shaded/unshaded areas on a graph.\n\nThe error is distinct from mixing inequality signs or assuming solutions are always between roots, as the student correctly identified the critical points but misapplied the inequality\u2019s direction relative to the graph.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

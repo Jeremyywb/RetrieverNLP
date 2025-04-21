@@ -1,0 +1,7 @@
+{
+  "query_id": "1814_B",
+  "content_id": 1811,
+  "explanation": "Correct calculation:  \nTom: \\(49 \\times 10 = 490\\), \\(490 - 49 = 441\\).  \nKatie: \\(50 \\times 9 = 450\\), \\(450 - 9 = 441\\).  \nBoth equal \\(49 \\times 9 = 441\\).\n\nStudent's flawed reasoning:  \nThe student likely assumed Tom's subtraction of \\(49\\) (the original number) after multiplying by 10 was invalid, while Katie's adjustment of subtracting 9 (the excess from rounding to 50) was valid. They failed to recognize that \\(49 \\times 10 - 49\\) is algebraically equivalent to \\(49 \\times (10 - 1) = 49 \\times 9\\), just as \\(50 \\times 9 - 9 = (50 - 1) \\times 9 = 49 \\times 9\\).  \n\nThe misconception stems from not seeing that both methods are valid applications of the distributive property (\\(a \\times b = (a + c) \\times b - c \\times b\\) or \\(a \\times b = a \\times (b + d) - a \\times d\\)). The student fixated on Katie's smaller subtraction value (\\(9\\)) as \"correct\" but dismissed Tom's larger subtraction (\\(49\\)) as unrelated to the problem's structure. This differs from related misconceptions about identical results or compensation validity, as it specifically misjudges how the subtracted terms relate to the original factors.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

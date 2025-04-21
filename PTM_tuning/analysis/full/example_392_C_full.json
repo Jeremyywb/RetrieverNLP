@@ -1,0 +1,7 @@
+{
+  "query_id": "392_C",
+  "content_id": 1707,
+  "explanation": "Correct calculation: Angles on a straight line must sum to 180\u00b0. The student's chosen diagram (90\u00b0, 45\u00b0, and unmarked angle) could be valid if the third angle is 45\u00b0 (90 + 45 + 45 = 180).\n\nStudent's error: They rejected this diagram as invalid. This implies they likely calculated 90\u00b0 + 45\u00b0 = 135\u00b0 and concluded the remaining angle would need to be 135\u00b0 (360 - 135 - 90 = 135\u00b0), incorrectly assuming angles on a line must total 360\u00b0.\n\nFlaw connection: The student treated the straight line as a full rotation (360\u00b0) rather than a linear pair (180\u00b0), leading them to miscalculate the required third angle. This matches the primary misconception of summing to 360\u00b0.\n\nDistinction: This differs from thinking angles anywhere along a line sum to 180\u00b0 (which would not apply here) or equal-split assumptions. The error directly stems from the 360\u00b0 total misconception.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

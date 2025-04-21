@@ -1,0 +1,7 @@
+{
+  "query_id": "1441_C",
+  "content_id": 1079,
+  "explanation": "The correct factorization requires finding a common factor of both terms (8m and 10). The GCD is 2:  \n\\(8m - 10 = 2(4m - 5)\\), so \\(\\bigstar = 2\\), \\(\\triangle = 4\\).\n\nThe student likely factored 10 as \\(5 \\times 2\\) but failed to check if 5 divides 8m. Their calculation would incorrectly produce:  \n\\(8m - 10 = 5(\\frac{8}{5}m - 2)\\).  \nHowever, \\(\\frac{8}{5}\\) is not an integer, leading them to erroneously approximate \\(\\triangle = 3\\) to force integer values.\n\nThe flaw stems from selecting a factor (5) that only divides the constant term (10) but not the coefficient of \\(m\\) (8). This violates the requirement that the factor must divide both terms. The error aligns with the misconception of using a factor that applies to only one term rather than the whole expression. It differs from the \"add/multiply\" quadratic misconception, as this is linear factorization requiring a common divisor, not number pairs.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

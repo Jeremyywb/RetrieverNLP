@@ -1,0 +1,7 @@
+{
+  "query_id": "408_D",
+  "content_id": 1730,
+  "explanation": "Correct calculation:\n0.32 + 0.80\n= 0.32\n+ 0.80\n--------\n  1.12\n\nStudent's error:\n0.32\n+ 0.8\n--------\n0.328 (adding 2+8 to make 8 in tenths place, then appending remaining digits)\n\nThe student treated decimal places as separate strings to concatenate rather than aligned values. They added 2 (hundredths) + 8 (tenths) = 8, wrote 3 (tenths) next to it, then appended the 2 (hundredths) and 0 (thousandths), merging digits across place values. This reflects a failure to recognize that tenths and hundredths must align vertically before adding, and that sums exceeding 9 require carrying. The error specifically combines digits horizontally rather than maintaining place value columns, distinct from simple right-alignment or digit omission errors. Related misconceptions like ignoring place value entirely or improper carrying don't explain the digit concatenation pattern shown here.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

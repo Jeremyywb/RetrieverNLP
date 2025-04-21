@@ -1,0 +1,7 @@
+{
+  "query_id": "295_C",
+  "content_id": 2532,
+  "explanation": "Correct calculation:\n\\( y = 5^2 - 1 = 25 - 1 = 24 \\)\n\nStudent's likely calculation:\n\\( y = (5 - 1)^2 = 4^2 = 16 \\)\n\nThe student incorrectly prioritized subtraction over exponentiation when substituting \\( x = 5 \\). The equation requires squaring \\( x \\) first, then subtracting 1. By reversing this order, they effectively computed \\( (x - 1)^2 \\) instead of \\( x^2 - 1 \\). This directly stems from misapplying operation precedence, treating subtraction as equal/higher priority than exponents. \n\nThis error differs from confusing squaring with multiplying by 2 (which would yield \\( 10 - 1 = 9 \\)) or ignoring brackets (none present here). The core flaw is the reversed operation sequence dictated by incorrect priority assumptions.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

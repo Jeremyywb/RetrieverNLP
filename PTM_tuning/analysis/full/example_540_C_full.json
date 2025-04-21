@@ -1,0 +1,7 @@
+{
+  "query_id": "540_C",
+  "content_id": 1705,
+  "explanation": "Correct estimation:\n\\(\n\\frac{3 \\times 20}{0.2} = \\frac{60}{0.2} = 300\n\\)\n\nStudent's likely calculation:\n\\(\n\\frac{3 \\times 18}{0.2} = \\frac{54}{0.2} = 270\n\\)\n\nThe student incorrectly rounded 17.6 to 18 (nearest integer) rather than 20 (one significant figure). This caused the numerator to be underestimated by 6 (60 vs. 54). When dividing by 0.2, this 10% reduction in the numerator directly produced a 10% error in the final result (270 instead of 300). The error stems from treating integer rounding as equivalent to significant figure rounding, rather than recognizing that 17.6 requires rounding to 20 (1sf) for proper magnitude estimation. This distinguishes it from general 2sf errors, as the student specifically preserved decimal precision through integer rounding rather than applying uniform sig-fig rules.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "505_A",
+  "content_id": 1820,
+  "explanation": "The correct calculation:  \nTotal parts = 7 (denominator)  \nBoys = 3 parts \u2192 Girls = 7 - 3 = 4 parts  \nRatio of boys:girls = 3:4  \n\nThe student's incorrect calculation:  \nUsed boys (3) : total (7) instead of boys : girls.  \n\nThe error stems from treating the total group (7) as the second term in the ratio rather than calculating the girls' portion. The student mapped the fraction's denominator (total students) directly into the ratio, conflating \"part-to-whole\" fractions with \"part-to-part\" ratios. This matches the \"mixes up total and part in ratio\" misconception, where the total is substituted for one part of the comparison.  \n\nThis differs from \"writes total as one side\" because the student didn't simply append the total to the ratio - they specifically failed to compute the girls' quantity. It also isn't an order error, as the boys were correctly placed first.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

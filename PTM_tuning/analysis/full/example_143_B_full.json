@@ -1,0 +1,7 @@
+{
+  "query_id": "143_B",
+  "content_id": 1724,
+  "explanation": "To complete the square for \\(2g^2 -6g -5\\):\n\n1. Factor out 2 from the first two terms: \\(2(g^2 -3g) -5\\)\n2. Inside the brackets: Take half of -3 (coefficient of \\(g\\)) \u2192 \\(-1.5\\)\n3. Square it: \\((-1.5)^2 = 2.25\\)\n4. Add/subtract inside: \\(2[(g^2 -3g +2.25) -2.25] -5\\)\n5. Result: \\(2(g -1.5)^2 -9.5\\)\n\nThe student likely:\n- Took the original linear coefficient (-6) instead of the adjusted coefficient after factoring out 2 (-3)\n- Divided -6 by 2 to get -3 directly\n- Failed to recognize that factoring out 2 first reduces the linear term's coefficient to -3, requiring division by 2 again\n\nThis shows they treated the original coefficient as if no factoring occurred, conflating the -6g term with the coefficient inside the brackets. The error stems specifically from mishandling the leading coefficient's effect on the linear term, not from constant term adjustments or partial division of terms.\n\nDistinct from related errors: The mistake centers on the interaction between the leading coefficient and linear term, not forgetting to balance added constants or misapplying division to only part of the expression.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "95_A",
+  "content_id": 312,
+  "explanation": "Correct calculation: The ratio difference between Quentin (7) and Percy (3) is 4 parts, which equals 36 coins. Each part is 36 \u00f7 4 = 9. Robbie's 8 parts = 8 \u00d7 9 = 72.\n\nStudent's error: The student likely treated the 36-coin difference as the value of a single part. If they assumed 36 corresponds to Percy's 3 parts, each part would be 36 \u00f7 3 = 12. Robbie's 8 parts would then be 8 \u00d7 12 = 96.\n\nFlawed reasoning: The student misapplied the given difference by directly equating it to a component of the ratio (Percy's 3 parts) rather than the ratio difference (7 - 3 = 4 parts). This conflated the total difference with one term in the ratio.\n\nConnection to misconception: The error stems from treating the total numerical difference as equivalent to a single ratio term, bypassing the required division by the parts difference. This matches the misconception of using the difference \"as one part without dividing.\"\n\nDistinction from related errors: Unlike errors involving totals or unit differences, the student correctly identified the ratio terms but misassigned the difference to Percy's share rather than the parts gap between Percy and Quentin.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

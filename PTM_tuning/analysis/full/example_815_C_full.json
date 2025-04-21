@@ -1,0 +1,7 @@
+{
+  "query_id": "815_C",
+  "content_id": 904,
+  "explanation": "Correct calculation: \\( 0.20 \\times 140 = 28 \\).  \nStudent's likely calculation: \\( 140 - 20 = 120 \\).  \n\nThe student treated the percentage (20%) as a fixed numerical value to subtract (\u00a320) rather than a proportion to calculate. This directly replaces the required multiplication (\\( 0.20 \\times 140 \\)) with subtraction (\\( 140 - 20 \\)), conflating \"20% of\" with \"subtract 20.\"  \n\nThis aligns with subtracting instead of multiplying, not with misapplying division or addition. Related misconceptions like misusing division or misinterpreting percentage wording (e.g., \"20% off\") don't explain why subtraction of 20 occurred. The error stems from misapplying an operation (subtraction) to the percentage's numerical value, bypassing the proportional calculation entirely.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

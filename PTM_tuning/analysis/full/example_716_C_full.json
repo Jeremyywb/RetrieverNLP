@@ -1,0 +1,7 @@
+{
+  "query_id": "716_C",
+  "content_id": 1040,
+  "explanation": "The correct bearing calculation begins at 0\u00b0 (North) and measures 315\u00b0 clockwise to reach Northwest (45\u00b0 west of due North). The student's answer of 045\u00b0 reflects a measurement from North moving 45\u00b0 eastward (clockwise) to Northeast instead. \n\nThe error arises from misidentifying Northwest's position relative to the clockwise measurement system. The student likely measured the 45\u00b0 angle between North and Northwest but did so in the counterclockwise direction (interpreting \"West\" as leftward from North), inadvertently calculating the bearing for Northeast instead. This directly corresponds to a confusion between clockwise and counterclockwise angular measurement. \n\nThis explanation aligns with the primary misconception (direction of rotation) rather than related issues like reflex angles or cardinal direction placement, as the student correctly identified a 45\u00b0 offset from North but inverted the rotational direction.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

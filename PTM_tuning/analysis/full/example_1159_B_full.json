@@ -1,0 +1,7 @@
+{
+  "query_id": "1159_B",
+  "content_id": 558,
+  "explanation": "Correct calculation:\n1st term: -3\n2nd term: (-3)\u00b2 -4 = 9-4 =5\n3rd term: 5\u00b2 -4 =25-4=21\n\nStudent's calculation:\n1st term: -3\n2nd term: -((-3)\u00b2) -4 = -9-4 =-13\n3rd term: -((-13)\u00b2) -4 = -169-4 =-173\n\nThe student incorrectly applied a negative sign before squaring, then subtracted 4. The term-to-term rule requires squaring first then subtracting 4 from the positive result. By negating the square before subtraction, they inverted the quadratic growth pattern. This shows a misapplication of operations in the rule's sequence, distinct from position-based errors or double operations. The error stems from altering the operation order/components rather than confusing term/position relationships or repeated operations.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

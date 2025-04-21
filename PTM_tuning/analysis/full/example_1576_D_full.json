@@ -1,0 +1,7 @@
+{
+  "query_id": "1576_D",
+  "content_id": 2454,
+  "explanation": "The correct corresponding angle to \u2220MNS is \u2220QMX. Both angles are positioned on the same side of the transversal XY, with \u2220MNS at intersection N (below RS) and \u2220QMX at intersection M (above PQ), maintaining the \"upper right\" orientation relative to their respective parallel lines.\n\nThe student selected \u2220NMP, which is also at point M but formed between segments NM (transversal XY) and MP (parallel line PQ). This error occurs because the student incorrectly associated angles at the same vertex (M) rather than recognizing that corresponding angles must mirror positions across parallel lines. Specifically, they failed to align the angle's position relative to both the transversal and the correct parallel line (PQ vs. RS), leading to a misassignment of the angle's \"side\" relative to XY.\n\nThis directly aligns with confusing alternate and corresponding angles: \u2220NMP is an alternate interior angle to \u2220MNS, not a corresponding one. The student\u2019s misconception caused them to prioritize vertex proximity over positional correspondence, distinguishing this from errors like misapplying vertical angles or co-interior angles.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

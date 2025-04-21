@@ -1,0 +1,7 @@
+{
+  "query_id": "1658_C",
+  "content_id": 766,
+  "explanation": "The correct graph for inverse proportionality (xy = k) is a hyperbola, which decreases asymptotically. The student selected a straight line with a positive slope, characteristic of direct proportionality (y = kx). \n\nThe student assumed proportionality (direct or inverse) always produces a linear graph, misapplying the direct proportionality relationship \\( y \\propto x \\) to the inverse case. This caused them to incorrectly interpret the linear graph as valid for inverse proportionality. \n\nThe error stems from conflating the graphical representations of direct (linear) and inverse (hyperbolic) relationships. While related misconceptions include misidentifying linearity as direct proportionality, the core flaw here is specifically using direct proportionality\u2019s linearity to answer an inverse proportionality question. The graph\u2019s origin-intercept (y=0) further confirms the confusion, as true direct proportionality requires \\( y \\propto x \\) to pass through (0,0), not start at y=0.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

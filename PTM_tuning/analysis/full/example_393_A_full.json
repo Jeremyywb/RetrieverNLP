@@ -1,0 +1,7 @@
+{
+  "query_id": "393_A",
+  "content_id": 1956,
+  "explanation": "Correct calculation: The scale factor is 15/5 = 3. Applying this to the 4 cm side: 4 \u00d7 3 = 12 cm.\n\nStudent's likely calculation: They may have calculated the difference between 15 and 5 (10 cm), then added this to the 4 cm side: 4 + (15 - 5) = 8 cm.\n\nFlaw: The student treated the absolute difference between corresponding sides as an additive adjustment for all sides, rather than recognizing that similarity requires a multiplicative scale factor. They converted the 5\u219215 cm change (which requires \u00d73) into a +10 operation and applied the same +10 to the 4 cm side.\n\nConnection to misconception: This directly demonstrates confusion between additive relationships and proportional scaling. The error stems from manipulating differences rather than ratios, even though the problem explicitly states the shapes are similar (which mandates proportional scaling).\n\nDistinction: This differs from simply \"adding rather than multiplying\" because the student specifically used the inter-side difference (10 cm) as their additive constant, rather than arbitrarily adding unrelated numbers. It shows a misapplication of difference-based reasoning to a proportional relationship problem.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

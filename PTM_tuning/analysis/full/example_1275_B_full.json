@@ -1,0 +1,7 @@
+{
+  "query_id": "1275_B",
+  "content_id": 875,
+  "explanation": "The correct relationship derives from vertically opposite angles being equal: each angle equals the one directly across the intersection. \n\nThe student incorrectly summed the two marked angles to 360\u00b0, implying they treated them as angles around a point. This occurs when failing to recognize that vertically opposite angles are duplicated across the intersection. The error stems from conflating angle relationships at a point (total 360\u00b0) with relationships between pairs of opposite angles. \n\nThe student focused only on the two visible marked angles, neglecting that the remaining two unmarked angles complete the 360\u00b0 total. This aligns with misapplying angle sum rules to a subset of angles rather than the full set around the intersection. It specifically differs from unrelated errors like misidentifying vertical angles or arithmetic mistakes.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

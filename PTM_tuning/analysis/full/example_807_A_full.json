@@ -1,0 +1,7 @@
+{
+  "query_id": "807_A",
+  "content_id": 2245,
+  "explanation": "Correct application:\n1. Rearrange equation: \\( h^2 - 5h + 4 = 0 \\)\n2. Identify coefficients: \\( a=1, b=-5 \\)\n3. Apply quadratic formula: \\( \\frac{ -(-5) \\pm \\sqrt{(-5)^2 - 4(1)(4)}}{2(1)} \\)\n\nStudent's error:\n- Likely kept original equation \\( h^2 + 4 = 5h \\) without proper rearrangement\n- Mistakenly used \\( b=4 \\) (from the constant term) instead of \\( b=-5 \\)\n- Calculated numerator as \\( -4 \\pm \\sqrt{...} \\)\n\nSpecific flaw:\nThe student failed to recognize that moving \\( 5h \\) to the left requires changing its sign, violating equation equivalence. This caused them to incorrectly assign the coefficient \\( b=4 \\) (from \\( +4 \\)) rather than \\( b=-5 \\) (from \\( -5h \\)). The error stems from treating term rearrangement as sign-agnostic position swapping rather than algebraic equivalence preservation. This matches the primary misconception of improper standard form conversion, not commutative subtraction or formula misrecall (since the formula's structure was maintained with incorrect coefficients).",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

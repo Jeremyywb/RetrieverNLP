@@ -1,0 +1,7 @@
+{
+  "query_id": "392_A",
+  "content_id": 725,
+  "explanation": "Correct calculation: Angles on a straight line must sum to 180\u00b0. The invalid pair (150\u00b0 + 50\u00b0 = 200\u00b0) exceeds this sum.\n\nStudent's incorrect calculation: They rejected the valid pair 53\u00b0 + 127\u00b0 = 180\u00b0, likely because they believed the total should equal 360\u00b0.\n\nSpecific flaw: The student incorrectly applied a full-circle angle sum (360\u00b0) to a straight line scenario. This caused them to dismiss the valid 53\u00b0+127\u00b0 pair despite its correct 180\u00b0 total.\n\nConnection to misconception: The error directly stems from misapplying the full-circle angle property to a straight line context, treating linear angles as requiring a full rotation instead of a half-rotation.\n\nDistinction: This differs from co-interior angle confusion (parallel lines) or obtuse angle definitions, as the core error revolves around misremembering the required sum for linear angles.\n\nFinal confirmation: No other listed misconception explains rejecting a valid 180\u00b0 pair while the error aligns with the 360\u00b0 assumption.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "1276_D",
+  "content_id": 2261,
+  "explanation": "The correct answer combines rotation order 1 (no rotational symmetry) with 2 lines of symmetry, which is impossible because multiple lines of symmetry require rotational symmetry matching their count. \n\nThe student incorrectly claims rotation order 2 cannot coexist with 0 lines of symmetry. This error stems from assuming rotational symmetry necessitates at least one line of symmetry. \n\nFor example, a parallelogram with rotational symmetry order 2 (180\u00b0 rotations) has 0 lines of symmetry if it is not a rhombus. The student's misconception conflates rotational and reflectional symmetry, incorrectly linking their existence. \n\nThis differs from related misconceptions about specific shapes (e.g., rectangles or isosceles triangles) because it directly misapplies the relationship between rotational and reflectional symmetry as a general rule, rather than misunderstanding properties of particular polygons.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "497_B",
+  "content_id": 268,
+  "explanation": "The correct answer recognizes a rectangle has two lines of symmetry: the vertical and horizontal midlines. The student likely visualized folding the rectangle along one midline (e.g., vertical) and concluded only that single line worked. They failed to apply the same reasoning to the horizontal midline, incorrectly assuming symmetry requires identical side lengths in all directions. This aligns with misjudging which axes qualify as valid lines of symmetry, distinct from confusing diagonals (which would yield 2 incorrect lines) or misinterpreting side markings. The error stems from incomplete testing of symmetry axes rather than misapplying diagonal symmetry or misreading shape properties.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

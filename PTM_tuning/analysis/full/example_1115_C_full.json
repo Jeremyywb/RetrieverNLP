@@ -1,0 +1,7 @@
+{
+  "query_id": "1115_C",
+  "content_id": 540,
+  "explanation": "Correct discriminant calculation: For the equation \\( 3x\u00b2 + 6x + 7 = 0 \\), discriminant \\( D = 6\u00b2 - 4(3)(7) = 36 - 84 = -48 \\), leading to \\( \\sqrt{-48} \\). The student likely calculated \\( D = (-6)\u00b2 + 4(3)(-100) = 36 + (-1200) = -1164 \\), but mistakenly took \\( \\sqrt{1200} \\) instead of \\( \\sqrt{-1164} \\). The error stems from incorrectly applying the discriminant formula \\( b\u00b2 - 4ac \\) as \\( (-b)\u00b2 + 4ac \\), reversing both the sign of \\( b \\) and the subtraction operation. This double inversion (sign error in \\( b \\) and addition instead of subtraction) created a positive discriminant where a negative one existed, but the student failed to recognize the contradiction. This aligns with confusing operations in the discriminant formula rather than misremembering the entire quadratic formula or number positivity concerns. The radical's irrationality isn't the issue here - the miscalculation of the discriminant's sign is the core flaw.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

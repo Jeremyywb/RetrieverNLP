@@ -1,0 +1,7 @@
+{
+  "query_id": "1403_A",
+  "content_id": 1883,
+  "explanation": "Correct calculation: \\( 45 = \\frac{10 + 5}{2} \\times h \\) \u2192 \\( h = \\frac{45}{7.5} = 6 \\).\n\nStudent's likely calculation: \\( 45 = 10 \\times h \\) \u2192 \\( h = \\frac{45}{10} = 4.5 \\).\n\nThe student incorrectly treated the trapezium as a rectangle, multiplying a single base (10 cm) by height. This bypasses the trapezium formula\u2019s requirement to average both bases before multiplying by height. The error directly stems from substituting the trapezium formula with the simpler base-height relationship of a parallelogram or rectangle. This distinguishes from misconceptions about averaging bases or misdefining terms in the formula, as the core issue is formula substitution rather than misapplication of the trapezium formula\u2019s components.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

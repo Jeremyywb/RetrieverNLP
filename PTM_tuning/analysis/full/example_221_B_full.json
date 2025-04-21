@@ -1,0 +1,7 @@
+{
+  "query_id": "221_B",
+  "content_id": 1177,
+  "explanation": "The correct range calculation subtracts the minimum value from the maximum: \\( 19\\,\\text{cm} - 2\\,\\text{cm} = 17\\,\\text{cm} \\).  \nThe student incorrectly identified the range as \\( 19\\,\\text{cm} \\), directly equating the maximum value to the range.  \nThis error stems from conflating the definition of range (a measure of spread) with the maximum value alone, omitting the required subtraction of the minimum.  \nThe misconception manifests by treating the range as a single data point rather than a difference between extremes.  \nThis differs from related errors like assuming a range starts at zero (which would produce \\( 19\\,\\text{cm} \\) only if the minimum were zero) or confusing range with mode.  \nThe specific flaw is the failure to recognize the range as a calculated spread between two values, not a standalone measurement.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

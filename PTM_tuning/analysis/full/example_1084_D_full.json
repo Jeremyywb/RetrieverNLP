@@ -1,0 +1,7 @@
+{
+  "query_id": "1084_D",
+  "content_id": 2264,
+  "explanation": "Correct calculation:\n876,099 - 100 = 875,999 (subtract 1 from the hundreds place: 0\u21929 after borrowing from thousands place 6\u21925)\n\nStudent's calculation:\n876,099 - 100 = 875,099\n\nFlaw explanation:\nThe student correctly borrowed 1 from the thousands place (6\u21925) but failed to convert this borrowed value into 10 hundreds. They subtracted 100 by only adjusting the thousands digit while leaving the hundreds digit at 0 instead of setting it to 9. This demonstrates a failure to recognize that borrowing requires increasing the lower place value by its base (100s place increases by 10 when borrowing 1 from 1000s place).\n\nDistinction from related errors:\nThis isn't about treating 0 as 10 (they didn't attempt to subtract from 0 directly) or forgetting to decrement borrowed digits (they did reduce 6 to 5). The error specifically stems from not converting the borrowed value to the proper place value after initial borrowing.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

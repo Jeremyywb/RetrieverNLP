@@ -1,0 +1,7 @@
+{
+  "query_id": "699_D",
+  "content_id": 1073,
+  "explanation": "The correct range calculation starts with sorting the original heights: 17, 23, 25, 31, 40 cm. Original range = 40 - 17 = 23 cm.  \nAfter doubling, new heights are 34, 46, 50, 62, 80 cm. New range = 80 - 34 = 46 cm (twice the original), proving Tom wrong.  \nAfter adding 12 cm, heights become 29, 35, 37, 43, 52 cm. New range = 52 - 29 = 23 cm (unchanged), proving Katie correct.  \n\nThe student incorrectly concluded both were wrong. Their error occurred when analyzing the additive case: they likely assumed range would increase by 12 cm (e.g., 23 + 12 = 35) rather than recognizing that adding a constant preserves differences. This reflects a confusion between additive scaling (which leaves range unchanged) and multiplicative scaling (which scales range).  \n\nThe misconception directly caused the student to treat additive and multiplicative changes as equally altering the range. This distinguishes it from related errors like misordering data, as the student correctly identified original max/min but misapplied the effect of operations on their difference.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

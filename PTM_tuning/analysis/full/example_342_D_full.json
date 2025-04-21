@@ -1,0 +1,7 @@
+{
+  "query_id": "342_D",
+  "content_id": 1440,
+  "explanation": "The correct answer requires understanding that obtuse angles must satisfy \\(90^{\\circ} < \\theta < 180^{\\circ}\\). The student selected \\(180^{\\circ}\\), which equals a straight angle rather than an obtuse angle. \n\nThe error reveals the student failed to recognize that obtuse angles are excluded from being exactly \\(180^{\\circ}\\). Their reasoning likely treated all angles beyond \\(90^{\\circ}\\) as obtuse, disregarding the strict upper boundary. This directly aligns with misinterpreting angle classification for straight lines (which form \\(180^{\\circ}\\)), as opposed to conflating them with obtuse angles. \n\nThe error is distinct from confusing acute/obtuse ranges (since \\(180^{\\circ}\\) isn't acute) or circle angles, focusing instead on misapplying the straight-line angle property to an angle classification problem.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

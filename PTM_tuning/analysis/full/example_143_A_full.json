@@ -1,0 +1,7 @@
+{
+  "query_id": "143_A",
+  "content_id": 978,
+  "explanation": "Correct calculation:\nStart with \\(2g^2 -6g -5\\).\nFactor out 2 from the quadratic terms: \\(2(g^2 - 3g) -5\\).\nComplete the square inside: \\(g^2 - 3g = (g - 1.5)^2 - 2.25\\).\nThus, \\(2(g - 1.5)^2 - 4.5 -5 = 2(g - 1.5)^2 -9.5\\).\n\nStudent's error:\nThey likely skipped factoring out the leading coefficient first and directly associated the linear term's coefficient (-6) with the square completion step. This led them to write \\(2(g - 6)^2\\) instead of adjusting for the 2 factored out.\n\nReasoning flaw:\nThe student treated \\(-6g\\) as the linear term to complete the square, ignoring that the leading coefficient 2 had already scaled the quadratic and linear terms. This caused them to incorrectly use \\(-6\\) instead of \\(-3\\) (half of \\(-6/2 = -3\\)) for the squared term.\n\nConnection to misconception:\nThis directly aligns with \"ignores the leading coefficient when completing the square\" because they failed to account for the 2 factored out before computing the square adjustment.\n\nDistinction from related errors:\nUnlike errors where \\(a\\) is misapplied in equations, this stems from mishandling the coefficient during square completion, not algebraic solution steps.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "435_D",
+  "content_id": 1400,
+  "explanation": "Correct calculation:  \n-28 - (-4) \u00d7 2  \n= -28 - (-8) [Multiplication first: (-4) \u00d7 2 = -8]  \n= -28 + 8 [Subtracting negative becomes addition]  \n= -20  \n\nStudent's calculation:  \n(-42) \u00f7 (-2) + 1  \n= (-21) + 1 [Misapplied division sign rules]  \n= -20  \n\nThe student incorrectly calculated (-42) \u00f7 (-2) as -21 instead of +21. This stems from believing that dividing two negatives yields a negative result. Their misconception overrode the correct rule (dividing negatives gives a positive), leading them to treat the division as (-42)/2 = -21. Adding 1 then produced -20.  \n\nThis error specifically involves division of two negatives, distinguishing it from related misconceptions like handling negative-positive division or addition of negatives. The student\u2019s flaw was isolated to misapplying sign rules for division, not multiplication or addition.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

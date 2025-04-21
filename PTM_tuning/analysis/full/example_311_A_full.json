@@ -1,0 +1,7 @@
+{
+  "query_id": "311_A",
+  "content_id": 1925,
+  "explanation": "Correct calculation for nth term: 3n + 2  \nPaul correctly expands this as 3(n+2) - 4 = 3n + 2  \nJo's incorrect formula: 3n + 4\n\nThe student identified the 3n component from the term-to-term difference (+3 per pattern) but miscalculated the constant term. They likely:\n1. Correctly recognized the 3n relationship from the repeating rectangle height\n2. Saw Pattern 3 had 11 squares (3\u00d73=9 base)\n3. Mistakenly calculated 11-9=2 as \"extra squares\"\n4. Then erroneously doubled this difference (2\u21924) in Jo's formula\n\nThis shows they understood the variable component (3n) from the pattern difference but misapplied the constant term by arbitrarily scaling the observed difference rather than maintaining its true value (2) across all terms. The error stems from misusing the term-to-term relationship to modify the constant rather than maintaining consistency, distinct from visual pattern misinterpretation which would involve different structural analysis.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

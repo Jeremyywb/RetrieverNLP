@@ -1,0 +1,7 @@
+{
+  "query_id": "114_C",
+  "content_id": 2131,
+  "explanation": "Correct expansion:\n1. Expand (m+5)(m-5) using difference of squares: \\(m^2 - 25\\)\n2. Multiply by m: \\(m(m^2 - 25) = m^3 - 25m\\)\nResult: \\(m^3 - 25m\\), so \\(\\triangle = -25\\)\n\nStudent's likely steps:\n1. Incorrectly expanded \\(m(m+5)\\) as \\(m^2 + 5\\) (instead of \\(m^2 + 5m\\))\n2. Then multiplied by \\((m-5)\\): \\((m^2 + 5)(m - 5) = m^3 - 5m^2 + 5m - 25\\)\n3. Mistakenly identified the \\(+5m\\) term as the source of \\(\\triangle\\), resulting in \\(\\triangle = +5\\)\n\nSpecific flaw:\nThe student added the constant term 5 during distribution instead of multiplying \\(m \\cdot 5\\), converting \\(5m\\) to \\(5\\). This caused a spurious linear term \\(+5m\\) to appear in the final expansion. \n\nDistinction from related errors:\nThis is not a sign error (e.g., \\(5 \\cdot -5 = +25\\)) or partial multiplication of terms. The error specifically substitutes addition for required multiplication in the distribution step.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

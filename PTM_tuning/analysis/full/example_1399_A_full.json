@@ -1,0 +1,7 @@
+{
+  "query_id": "1399_A",
+  "content_id": 1897,
+  "explanation": "The correct relationship requires recognizing that angles around a point sum to \\(360\\degree\\), so \\(\\theta + \\text{(adjacent angle)} = 360\\degree\\). The student concluded \"they are equal\" instead. \n\nThe error occurred because the student assumed the angles' visual similarity in the diagram implied equality, bypassing calculation or geometric principles. This directly aligns with relying on appearance rather than applying the angle-sum rule. \n\nThe misconception here is distinct from not knowing vertically opposite angles (which would apply to intersecting lines, not a full rotation) or general angle-sum ignorance (which would lead to an incorrect sum, not equality). The error specifically stems from substituting visual estimation for deductive reasoning.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "1670_C",
+  "content_id": 2231,
+  "explanation": "To calculate the prism's volume, the area of the triangular base (cross-section) must be multiplied by its length. The student instead selected a rectangular face (C), treating its area as the base component. This implies they conflated lateral faces with the cross-sectional face required for volume calculations. The error stems from misidentifying the shape's defining uniform cross-section (triangle) as a non-cross-sectional rectangle. Unlike related misconceptions about triangle area halving, this specifically involves failing to recognize that only the triangular face's area propagates uniformly along the prism's length. The error isn't about miscalculating the area itself, but selecting the wrong geometric component to serve as the base area in the volume formula.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

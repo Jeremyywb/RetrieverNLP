@@ -1,0 +1,7 @@
+{
+  "query_id": "142_D",
+  "content_id": 1290,
+  "explanation": "The correct calculation reads the inner scale directly: from 0\u00b0 (inner) anti-clockwise to 335\u00b0 (midway between 330-340), giving \\(335^\\circ\\).\n\nThe student likely measured the acute angle between the lines (25\u00b0) via the outer scale (reading 205\u00b0 at the second line) and added 180\u00b0, calculating \\(25^\\circ + 180^\\circ = 205^\\circ\\).\n\nThe flaw lies in incorrectly assuming the reflex angle equals 180\u00b0 plus the acute angle, rather than \\(360^\\circ - \\text{acute angle}\\). This directly maps to the misconception of adding 180\u00b0 for reflex angles. The error is distinct from reading the wrong scale value, as the student's arithmetic (25\u00b0+180\u00b0) explicitly shows the additive reasoning rather than a scale-reading error. It also differs from providing the acute angle itself, as the result exceeds 180\u00b0.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

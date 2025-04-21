@@ -1,0 +1,7 @@
+{
+  "query_id": "1045_A",
+  "content_id": 1738,
+  "explanation": "The correct calculation uses cosine: adjacent/hypotenuse = 6/10. The hypotenuse (10cm) is fixed, and the 6cm side is adjacent to \u03b8. \n\nThe student incorrectly applied sine, implying they calculated opposite/hypotenuse. This suggests they misidentified the 6cm adjacent side as the \"opposite\" side relative to \u03b8. \n\nThe error stems from a reversal of adjacent/opposite labeling in the triangle. The 6cm side shares a vertex with \u03b8 (making it adjacent), but the student treated it as the non-included side (opposite). \n\nThis specific confusion matches swapping adjacent/opposite definitions, not a general misunderstanding of SOHCAHTOA. It differs from using cosine instead of sine, as the student's mistake occurred at the side-identification stage before selecting the ratio.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

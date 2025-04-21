@@ -1,0 +1,7 @@
+{
+  "query_id": "1239_B",
+  "content_id": 1292,
+  "explanation": "Correct calculation: Area = (base \u00d7 perpendicular height)/2. For a right-angled triangle with base 3 units and height 2 units, area = (3\u00d72)/2 = 3.\n\nStudent's likely error: Used a non-perpendicular \"height\" measurement of 7/3 units (e.g., counting diagonal grid intersections instead of vertical distance). Calculation: (3 \u00d7 7/3)/2 = 3.5.\n\nSpecific flaw: The student substituted the length of a slanted side for the perpendicular height in the area formula. This directly misapplies the triangle area formula, which requires perpendicular height, not arbitrary side lengths. \n\nDistinction: This differs from miscounting half-squares (which would involve visual estimation rather than formula misuse) or whole-grid errors (which ignore shape boundaries). The error stems specifically from conflating slant lengths with vertical/horizontal distances in the formula.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

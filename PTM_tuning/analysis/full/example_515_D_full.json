@@ -1,0 +1,7 @@
+{
+  "query_id": "515_D",
+  "content_id": 1265,
+  "explanation": "To determine the translation vector mapping \\( Q \\) to \\( P \\), subtract a vertex of \\( Q \\) from the corresponding vertex of \\( P \\):  \n\\[\n\\begin{pmatrix}1 - 4 \\\\ 7 - 2\\end{pmatrix} = \\begin{pmatrix}-3 \\\\ 5\\end{pmatrix}.\n\\]\nThe student likely subtracted in the reverse order (\\( Q - P \\)):  \n\\[\n\\begin{pmatrix}4 - 1 \\\\ 2 - 7\\end{pmatrix} = \\begin{pmatrix}3 \\\\ -5\\end{pmatrix}.\n\\]\nThis reverses both components, producing a vector pointing in the opposite direction. The error stems from misinterpreting the translation vector as originating from \\( P \\) (the image) rather than \\( Q \\) (the original). While the student preserved the magnitude of the shifts, they inverted the required direction entirely. This aligns with confusing the vector's origin and destination, distinct from misassigning directions to positive/negative values (e.g., thinking positive \\( x \\)-values mean left). The error reflects a reversal of the translation's start and end points, not a misunderstanding of coordinate axes.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "265_D",
+  "content_id": 307,
+  "explanation": "Correct calculation: The right triangle has legs \\( h \\) (height) and 6 cm (radius), with hypotenuse 9 cm (slant height). Applying Pythagoras: \\( h^2 = 9^2 - 6^2 \\).\n\nStudent's error: They computed \\( h^2 = 12^2 - 9^2 \\), implying they used 12 cm as a leg. This suggests they incorrectly treated the full base length (12 cm diameter) as the leg instead of the radius (6 cm). \n\nThe flaw arises from misidentifying the triangle's components: the radius (half the base) is required for the right triangle, but the student used the entire base length. This directly corresponds to using the wrong dimension (diameter instead of radius) in the Pythagorean theorem. \n\nThis error differs from other listed misconceptions, as it specifically substitutes the radius with the diameter rather than miscalculating hypotenuse relationships or failing to recognize the right triangle entirely.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

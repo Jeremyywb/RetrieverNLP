@@ -1,0 +1,7 @@
+{
+  "query_id": "34_A",
+  "content_id": 2264,
+  "explanation": "Correct calculation:\n901,426 - 10,000 = 891,426  \n(Subtracting 1 from the 9 in the hundred thousands place after borrowing, resulting in 8 hundred thousands and 9 ten thousands)\n\nStudent's incorrect calculation:\n901,426 - 10,000 = 801,426  \n(Subtracting 1 directly from the 9 in the hundred thousands place and setting the ten thousands digit to 0 instead of borrowing)\n\nThe student subtracted 1 from the hundred thousands place (9\u21928) but failed to account for the required borrowing when the ten thousands digit was 0. This caused them to incorrectly set the ten thousands digit to 0 rather than increasing it to 9 after borrowing. The error stems from not recognizing that 901,426 has 0 ten thousands, requiring borrowing from the hundred thousands place to perform the subtraction. \n\nThis directly connects to mishandling place value when borrowing across zeros: the student treated the subtraction as a simple column operation without adjusting neighboring digits. It differs from confusing ten thousands/thousands places or standard borrowing errors because the mistake specifically occurs in managing the zero intermediary digit during multi-place borrowing.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

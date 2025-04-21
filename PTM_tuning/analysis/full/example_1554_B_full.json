@@ -1,0 +1,7 @@
+{
+  "query_id": "1554_B",
+  "content_id": 474,
+  "explanation": "Correct calculation: \\(5\\ \\text{liters} \\times 1000\\ \\mathrm{cm}^3/\\text{liter} = 5000\\ \\mathrm{cm}^3\\).\n\nIncorrect calculation: \\(5 \\times 100 = 500\\).\n\nThe student incorrectly multiplied by 100 instead of 1000. This stems from misapplying the conversion factor between liters and cubic centimeters, likely confusing the cubic decimeter relationship. Since \\(1\\ \\text{liter} = 1\\ \\mathrm{dm}^3\\) and \\(1\\ \\mathrm{dm} = 10\\ \\mathrm{cm}\\), the correct volume conversion requires cubing the linear factor: \\(10^3 = 1000\\). The student used \\(10 \\times 10 = 100\\), treating it as a square relationship rather than a cubic one. This distinguishes the error from dividing by 100 (which would reverse the conversion direction) or using \\(1\\ \\text{liter} = 10\\ \\mathrm{cm}^3\\) (which would yield 50).",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "1269_D",
+  "content_id": 107,
+  "explanation": "Correct calculation:  \n6(p - 2) = (6 \u00d7 p) - (6 \u00d7 2) = 6p - 12  \n\nStudent's error:  \nThey likely calculated 6 \u00d7 p correctly but treated the second term as 6 - 2 instead of 6 \u00d7 2, resulting in 6p - 4.  \n\nThe flaw occurs at the second term's expansion: the student subtracted the constant (2) from the coefficient (6) rather than performing multiplication. This stems from misunderstanding the distributive property's requirement to multiply all terms inside the parentheses by the factor outside.  \n\nThis differs from related misconceptions like \"subtracts instead of multiplies\" in general (which could apply to either term) or incorrect addition. The error specifically shows correct multiplication on the first term but substitution of subtraction for multiplication on the second term.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

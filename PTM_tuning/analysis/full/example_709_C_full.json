@@ -1,0 +1,7 @@
+{
+  "query_id": "709_C",
+  "content_id": 2113,
+  "explanation": "The correct equation uses the constant x-value from all given points: \\( x = -2 \\), representing a vertical line. The student wrote \\( y = -2 \\), which would be a horizontal line. \n\nThe error occurred because the student associated the repeated coordinate (-2) with the y-variable instead of recognizing it as the x-coordinate common to all points. This indicates a reversal of axis conventions: the student treated the x-coordinate as if it governed the y-variable. \n\nThe misconception directly caused the substitution of \\( y \\) for \\( x \\) in the equation, despite the vertical nature of the line. This differs from confusing line orientation (e.g., thinking \\( y = ? \\) is vertical) or axis directionality, as the error specifically stems from misassigning the constant coordinate to the wrong variable. The student correctly identified the constant value but misattributed its axis.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

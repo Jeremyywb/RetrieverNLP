@@ -1,0 +1,7 @@
+{
+  "query_id": "23_C",
+  "content_id": 2032,
+  "explanation": "In a distance-time graph, slope represents velocity (distance change over time). The negative slope indicates decreasing distance from home, corresponding to movement toward home at constant velocity. \n\nThe student incorrectly associated negative slope with acceleration (change in velocity). They likely calculated the slope's sign/direction but misattributed its meaning to velocity-time graph logic where slope indicates acceleration. \n\nThis confusion between graph types caused them to misinterpret a velocity value (negative slope) as an acceleration value. The error stems from applying velocity-time interpretations to a distance-time graph's slope. \n\nThis differs from \"downward slope means traveling away\" (misreading direction) or \"gradient as rate change\" (constant slope here). The student correctly identified slope direction but misapplied its physical meaning across graph types.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "1118_A",
+  "content_id": 293,
+  "explanation": "To verify similarity, corresponding sides must maintain equal ratios. For Tom's rectangles (2\u00d73 vs. 4\u00d79):  \nCorrect ratios: 4/2 = 2 (width) vs. 9/3 = 3 (height).  \nStudent likely calculated 4/2 = 2 and 9/3 = 3 separately but failed to recognize that 2 \u2260 3 invalidates similarity.  \n\nThe error stems from treating each side's scaling independently rather than requiring identical ratios. The student accepted different scale factors for width and height (2 vs. 3), violating the definition of similarity.  \n\nThis aligns with the misconception that \"any\" proportional scaling suffices, rather than requiring a uniform scale factor. It differs from \"doubles side length\" errors, as the student recognized scaling but not the need for consistency.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

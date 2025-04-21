@@ -1,0 +1,7 @@
+{
+  "query_id": "1581_D",
+  "content_id": 746,
+  "explanation": "Correct calculation: \\(5 \\times 5 \\times 5 = 125\\ \\mathrm{cm}^3\\)  \nIncorrect calculation: Likely \\(6 \\times (5 \\times 5) = 150\\ \\mathrm{cm}^3\\)  \n\nThe student computed surface area instead of volume, summing all six face areas. Volume requires multiplying three dimensions (length\u00b3 for cubes), but the student conflated the number of faces (6) with the required exponents (3) for spatial measurement. This directly matches confusing surface area with volumetric calculation, not misapplying cuboid formulas or unequal dimensions. The error stems from treating volume as a sum of 2D areas rather than a 3D multiplicative measure, distinct from mixing cuboid/cube properties or multiplying unique faces.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

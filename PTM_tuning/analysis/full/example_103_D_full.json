@@ -1,0 +1,7 @@
+{
+  "query_id": "103_D",
+  "content_id": 695,
+  "explanation": "Correct calculation: \\(10\\,\\text{cm} \\times 3\\,\\text{cm} = 30\\,\\text{cm}^2\\)\n\nStudent's calculation: Likely \\(10\\,\\text{cm} \\times 3\\,\\text{cm} \\div 2 = 15\\,\\text{cm}^2\\)\n\nThe student correctly identified the base (10 cm) and perpendicular height (3 cm) but erroneously divided the product by 2. This stems from conflating the area formulas for parallelograms (base \u00d7 height) and triangles (base \u00d7 height \u00f7 2). The error specifically occurs at the final operation, where an unwarranted halving was applied. This distinguishes it from using slant height (which would yield 10 \u00d7 4 = 40) or other listed misconceptions about triangular area calculations. The core issue is misapplying a formula from a similar shape rather than using incorrect dimensions.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

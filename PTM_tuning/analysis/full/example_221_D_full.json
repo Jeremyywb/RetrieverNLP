@@ -1,0 +1,7 @@
+{
+  "query_id": "221_D",
+  "content_id": 691,
+  "explanation": "The correct calculation for range requires subtracting the smallest value from the largest: \\(19\\ \\mathrm{cm} - 2\\ \\mathrm{cm} = 17\\ \\mathrm{cm}\\). The student likely added the maximum and minimum values directly: \\(19\\ \\mathrm{cm} + 2\\ \\mathrm{cm} = 21\\ \\mathrm{cm}\\). \n\nThis error stems from misinterpreting the range formula as a sum of extremes rather than their difference. The misconception \"believes the range is largest add smallest\" directly explains this operation, as opposed to errors like failing to reorder data (which would not affect this set since 19 and 2 are already identifiable as extremes). The student's arithmetic matches this specific misunderstanding rather than confusion about data ordering or zero-based measurement.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

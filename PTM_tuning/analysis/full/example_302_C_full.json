@@ -1,0 +1,7 @@
+{
+  "query_id": "302_C",
+  "content_id": 792,
+  "explanation": "The correct simplification cancels the common factor (x+3):  \n\\(\\frac{(x+3)(x+5)}{(x+3)(x+10)} = \\frac{x+5}{x+10}\\).  \n\nThe student expanded the numerator and denominator fully, resulting in:  \n\\(\\frac{x^{2}+8x+15}{x^{2}+13x+30}\\).  \n\nThe error stems from not recognizing that the shared binomial (x+3) in numerator and denominator can be canceled directly. Instead of simplifying first, the student multiplied out all terms, treating the problem as requiring polynomial expansion rather than factorization reduction.  \n\nThis matches the misconception of only looking for number factors (not algebraic ones) when simplifying fractions. The student applied arithmetic fraction rules (where expansion is needed) to an algebraic fraction, failing to see that cancellation of identical factors applies here.  \n\nThis is distinct from general \"does not know how to simplify\" because the student correctly performed expansion, indicating they understand basic fraction operations but misapplied simplification strategies specific to algebraic forms.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

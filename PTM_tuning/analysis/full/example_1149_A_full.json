@@ -1,0 +1,7 @@
+{
+  "query_id": "1149_A",
+  "content_id": 835,
+  "explanation": "The correct answer identifies \\( V=\\frac{1}{3} \\pi r^{2} h \\) as a formula because it defines a mathematical relationship (volume of a cone) using variables and constants. The student incorrectly labeled it as an equation. While the statement is technically an equation (due to the equality), the error lies in missing the contextual distinction: formulas are equations that express calculative relationships. The student likely focused solely on the presence of an equals sign and variables, equating all such statements as generic \"equations.\" This reflects a failure to recognize that \"formula\" specifically applies to equations defining measurable quantities. The error is distinct from confusing equations with expressions (which lack equality) or terms (single components of expressions), as the student correctly identified the equality but misapplied the terminology.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

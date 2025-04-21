@@ -1,0 +1,7 @@
+{
+  "query_id": "575_A",
+  "content_id": 2234,
+  "explanation": "Correct calculation:\n1. Find common denominator: 12\n2. Convert \\( \\frac{3}{4} \\) to \\( \\frac{9}{12} \\)\n3. Subtract: \\( \\frac{9}{12} - \\frac{1}{12} = \\frac{8}{12} \\)\n4. Simplify: \\( \\frac{8}{12} = \\frac{2}{3} \\)\n\nStudent's likely error:\n- Incorrectly converted \\( \\frac{3}{4} \\) to \\( \\frac{3}{12} \\) (keeping numerator 3 instead of multiplying by 3)\n- Subtracted numerators: \\( 3 - 1 = 2 \\)\n- Kept denominator 12: \\( \\frac{2}{12} \\)\n\nThe flaw stems from misunderstanding equivalent fractions. The student adjusted the denominator to 12 but failed to scale the numerator proportionally (\u00d73). This directly caused the invalid conversion of \\( \\frac{3}{4} \\), leading to \\( \\frac{2}{12} \\) instead of \\( \\frac{2}{3} \\). This distinguishes from \"leaves denominator unchanged\" (they did change it to 12) and \"common denominator only as LCM\" (12 is correctly the LCM here).",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

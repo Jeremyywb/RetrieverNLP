@@ -1,0 +1,7 @@
+{
+  "query_id": "499_D",
+  "content_id": 86,
+  "explanation": "Correct Calculation:  \n50 oak trees \u00f7 20 trees per symbol = 2.5 symbols  \n\nStudent's Incorrect Calculation:  \n50 \u00f7 5 = 10 symbols  \n\nSpecific Flaw:  \nThe student incorrectly divided 50 by 5 instead of 20. This suggests they treated the scale as 1 symbol = 5 trees, not 20. The error stems from halving the scale value twice (20 \u2192 10 \u2192 5) without justification, likely misapplying proportional reasoning.  \n\nConnection to Misconception:  \nThe student altered the scale through repeated halving (\"doubles instead of halves\" logic in reverse) rather than using the given 1:20 ratio. This differs from \"misreads scale,\" which would involve directly misinterpreting the key, and from \"divides instead of multiplies,\" as division was the correct operation.  \n\nDistinction from Related Errors:  \nUnlike \"does not divide to get a unitary amount,\" the student attempted scaling but used an invalid divisor derived from unwarranted halving. The error specifically involves modifying the scale itself, not failing to apply it.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

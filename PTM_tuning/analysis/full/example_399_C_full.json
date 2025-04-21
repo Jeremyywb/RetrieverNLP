@@ -1,0 +1,7 @@
+{
+  "query_id": "399_C",
+  "content_id": 2087,
+  "explanation": "Correct calculation for \\(3h^2\\): \\(3 \\times 10^2 = 3 \\times 100 = 300\\). \nStudent's incorrect calculation: \\(3h^2 = (3 \\times 10)^2 = 900\\).\n\nThe student treated \\(3h^2\\) as \\((3h)^2\\), incorrectly squaring the product of 3 and \\(h\\) instead of squaring \\(h\\) first. This shows they prioritized multiplication before exponentiation in the absence of parentheses, violating order of operations. \n\nThe error stems from executing operations left-to-right (multiplying \\(3 \\times 10\\) first) rather than applying exponents first. This directly aligns with misapplying operation priority, not merely ignoring brackets (the student correctly handled \\((3h)^2\\)). Unlike \"multiplying by the index\" or confusing squaring with doubling, the error specifically reflects a failure to recognize exponentiation's higher precedence over multiplication.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

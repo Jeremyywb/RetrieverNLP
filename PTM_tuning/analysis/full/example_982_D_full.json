@@ -1,0 +1,7 @@
+{
+  "query_id": "982_D",
+  "content_id": 2262,
+  "explanation": "Correct calculation:  \nTotal film = 1 (whole)  \nRemaining = 1/7 \u21d2 Watched = 1 - 1/7 = 6/7  \nRatio (watched:remaining) = (6/7):(1/7) = 6:1  \n\nStudent's incorrect reasoning:  \nIf remaining = 1/7, then watched = 6/7  \nBut they mapped the fraction denominators directly to the ratio:  \n1 (remaining) : 6 (watched) \u21d2 1:6  \n\nSpecific flaw:  \nThe student treated the denominator \"7\" in the fraction \"1/7 remaining\" as the total parts, then assigned 1 part remaining and 6 parts watched. However, ratios compare quantities directly, not fractions of a whole. By prioritizing the fraction's denominator over the actual proportional relationship, they reversed the required watched:remaining order.  \n\nConnection to misconception:  \nThis reflects a confusion between fraction components and ratio structure. The student incorrectly used the denominator (7 total parts) to split the ratio into 1:6 instead of comparing the numerators (6 watched vs 1 remaining).  \n\nDistinction from related errors:  \nThis isn't a part-to-whole confusion (they correctly identified both parts) or a total/part mix-up. The error stems from misapplying fraction terms to ratio positions rather than misunderstanding ratio types.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

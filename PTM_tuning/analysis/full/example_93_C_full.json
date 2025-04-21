@@ -1,0 +1,7 @@
+{
+  "query_id": "93_C",
+  "content_id": 460,
+  "explanation": "Correct calculation: The vertex form \\( y = (x-1)^2 \\) shifts the base parabola \\( y = x^2 \\) right by 1 unit to place the vertex at (1,0).\n\nStudent's error: They wrote \\( y = x^2 - 1 \\), which shifts the parabola down 1 unit instead of right.\n\nFlawed reasoning: The student treated the horizontal shift as a vertical one. They assumed subtracting 1 directly from \\( x^2 \\) (like \\( f(x) - 1 \\)) would move the vertex horizontally to x=1, rather than applying the shift within the squared term (\\( f(x-1) \\)).\n\nMisconception link: This directly matches confusing horizontal/vertical translations in function transformations. The student incorrectly mapped the required x-coordinate shift (1 unit right) to a vertical adjustment.\n\nDistinguishing factors: Unlike errors about turning points in \\( x^2 + c \\) (which would produce vertical shifts to (0,c)), this mistake specifically conflates input/output modifications in transformations. It\u2019s not an expansion error (e.g., \\( (x-1)^2 \\) \u2260 \\( x^2 - 1 \\)) but a misapplication of translation direction.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "1302_D",
+  "content_id": 1307,
+  "explanation": "Correct calculation: \\( F = \\frac{12}{16+4+12} \\times 360 = 135 \\) or \\( 360 - 180 - 45 = 135 \\).\n\nStudent's incorrect calculation: \\( \\frac{360}{32} = 11.25 \\).\n\nThe student divided 360\u00b0 by the total frequency (32) but failed to multiply by the Conger Eel's specific frequency (12). This shows they treated the total frequency as the number of equal slices rather than using proportional allocation. The error stems from misapplying the formula for equal distribution across individual observations, not categories. \n\nThis differs from \"uses frequency directly as the angle\" (which would give F=12) or \"divides 360 by the sector's frequency\" (which would give \\( \\frac{360}{12}=30 \\)). The student's method uniquely reflects a misunderstanding of proportional scaling for grouped data in pie charts.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

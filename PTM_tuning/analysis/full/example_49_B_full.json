@@ -1,0 +1,7 @@
+{
+  "query_id": "49_B",
+  "content_id": 1322,
+  "explanation": "Correct calculation: \\(2 \\times 366 = 732\\) days (each leap year has 366 days).  \nStudent's calculation: \\(2 \\times 365 = 730\\) days.  \nThe error stems from treating leap years as regular years with 365 days instead of accounting for the extra day in February. The student incorrectly assumed both years in the problem had 365 days, neglecting the +1 day per leap year adjustment. This directly aligns with a failure to recognize the defining feature of leap years (366 days), not merely a calculation mistake or misinterpretation of the question's requirements. The error is distinct from other listed misconceptions like miscounting days in a week or performing unrelated operations.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

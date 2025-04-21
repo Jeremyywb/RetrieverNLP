@@ -1,0 +1,7 @@
+{
+  "query_id": "1423_A",
+  "content_id": 1781,
+  "explanation": "The correct standard form requires moving the decimal point 4 places right to get 3.001, using \\(10^{-4}\\) because the original number is less than 1. The student correctly counted the decimal moves but wrote \\(10^{4}\\) instead of \\(10^{-4}\\). This stems from misapplying the sign convention for exponents: they recognized the need to adjust magnitude through decimal movement but failed to associate rightward movement with negative exponents for values <1. The error specifically relates to sign assignment after correct decimal placement, not miscalculating movement direction (they moved right appropriately) or misunderstanding exponent magnitude (the power 4 is correct). This distinguishes it from errors where students might move the decimal left or miscount positions.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

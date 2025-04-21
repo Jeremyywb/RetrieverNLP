@@ -1,0 +1,7 @@
+{
+  "query_id": "1812_B",
+  "content_id": 393,
+  "explanation": "Correct calculation:\nGiven midpoint (-2,1) between (-5,5) and (\u2605,\u25b3), solve \\(\\frac{-5 + \\bigstar}{2} = -2\\)\n\\(\\bigstar = (-2 \\times 2) - (-5) = 1\\)\n\nStudent's likely error:\nSet up equation as \\(\\bigstar - (-5) = -2\\) instead of \\(\\frac{-5 + \\bigstar}{2} = -2\\)\nCalculation: \\(\\bigstar + 5 = -2\\) \u2192 \\(\\bigstar = -7\\)\n\nSpecific flaw:\nThe student treated the midpoint as a simple difference between coordinates rather than an average. By equating the coordinate difference directly to the midpoint value (rather than half the sum), they performed directional subtraction instead of averaging.\n\nConnection to misconception:\nThis matches \"Finds the difference in a coordinate pair rather than the midpoint\" - they calculated \\(\\bigstar - (-5)\\) instead of \\(\\frac{-5 + \\bigstar}{2}\\).\n\nDistinction from related errors:\nThis differs from subtraction direction errors (which would still use midpoint formula structure) or arithmetic mistakes - the core issue is misidentifying what quantity the midpoint represents.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

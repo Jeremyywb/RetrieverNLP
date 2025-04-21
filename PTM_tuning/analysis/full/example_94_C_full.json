@@ -1,0 +1,7 @@
+{
+  "query_id": "94_C",
+  "content_id": 1388,
+  "explanation": "To determine if a sequence is quadratic, check if the second differences are constant. For Tom's sequence \\(24,15,8,3,0\\ldots\\):\n\nFirst differences: \\(-9, -7, -5, -3\\)  \nSecond differences: \\(2, 2, 2\\) (constant), confirming it is quadratic.\n\nFor Katie's sequence \\(124,63,26,7,3,0\\ldots\\):\n\nFirst differences: \\(-61, -37, -19, -4, -3\\)  \nSecond differences: \\(24, 18, 15, 1\\) (not constant), so it is not quadratic.\n\nThe student likely calculated only the first few second differences for Katie's sequence (e.g., \\(24, 18\\)) and assumed a pattern without verifying all terms. This reflects a failure to recognize that quadratic sequences require *all* second differences to be constant, not just some. The error aligns with the misconception of using insufficient terms to establish a rule, rather than directionality (right-to-left differences) or misapplying term-to-term rules. The student prematurely generalized partial calculations, leading to the incorrect conclusion.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

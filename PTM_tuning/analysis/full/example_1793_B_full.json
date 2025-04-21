@@ -1,0 +1,7 @@
+{
+  "query_id": "1793_B",
+  "content_id": 1716,
+  "explanation": "The correct nth-term rule for this arithmetic sequence is \\( -6n + 26 \\), derived from the common difference of \\(-6\\) between terms. The student likely identified the numerical difference \\(6\\) (e.g., \\(20 - 14 = 6\\)) but failed to recognize that the sequence decreases, requiring a negative coefficient. \n\nBy focusing on the absolute difference rather than the direction of change, the student incorrectly assigned \\(6\\) as the coefficient. This directly stems from treating the difference as a magnitude instead of a signed value tied to the sequence's progression. \n\nThis error aligns with ignoring the negative sign in the common difference, distinct from miscalculating the difference itself or using insufficient terms. The student\u2019s answer reflects a misinterpretation of the term-to-term relationship\u2019s sign, not a failure to compute the numerical gap.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

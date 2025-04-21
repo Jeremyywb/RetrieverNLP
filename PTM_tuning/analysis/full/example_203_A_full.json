@@ -1,0 +1,7 @@
+{
+  "query_id": "203_A",
+  "content_id": 1658,
+  "explanation": "To find the distance between (4,10) and (9,2), one calculates the horizontal difference (9-4=5) and vertical difference (10-2=8), then applies Pythagoras: \u221a(5\u00b2+8\u00b2)=\u221a89. This requires a right-angled triangle with legs 5 and 8.\n\nThe student likely subtracted coordinates to find horizontal/vertical distances but stopped there, observing two unequal sides (5\u22608). They incorrectly labeled the triangle as isosceles based on the presence of two sides, overlooking the need to use these sides as legs of a right-angled triangle to compute the hypotenuse (the actual distance).\n\nThis error stems from focusing on side-length comparisons rather than recognizing that horizontal/vertical differences inherently form a right angle at their intersection. The student treated the problem as a classification task (naming triangle types) instead of identifying the geometric tool (right-angled triangle) required to apply Pythagoras.\n\nThe misconception differs from \"only considering vertical/horizontal distances\" because the student did extract both distances. It also differs from doubting diagonal calculations, as the error lies in misnaming the triangle type rather than rejecting the diagonal's computability.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

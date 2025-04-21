@@ -1,0 +1,7 @@
+{
+  "query_id": "1370_D",
+  "content_id": 1832,
+  "explanation": "A linear function's graph must be a straight line with constant slope. The student selected a hyperbola (two curved branches) instead. Their error stems from believing that curved graphs can represent linear relationships. This misconception leads to misidentifying the non-constant rate of change in the hyperbola as linear. Unlike the related \"multiple lines\" misconception, the error here specifically involves accepting curvature rather than quantity of lines. The hyperbola's shape directly contradicts the fundamental requirement of linearity for straightness, not merely the presence of multiple branches.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

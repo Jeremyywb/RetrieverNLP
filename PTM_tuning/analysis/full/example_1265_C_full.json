@@ -1,0 +1,7 @@
+{
+  "query_id": "1265_C",
+  "content_id": 1028,
+  "explanation": "Correct calculation:  \n4 liters \u00f7 (4/9 liters/m\u00b2) = 4 \u00d7 (9/4) = 9 m\u00b2  \n\nStudent's calculation:  \n4 liters \u00d7 (4/9 liters/m\u00b2) = 16/9 m\u00b2  \n\nThe student treated the paint-to-area ratio (4/9 L per 1 m\u00b2) as a direct scaling factor to multiply by total liters, rather than recognizing it requires division to invert the rate. This caused them to erroneously multiply 4 \u00d7 4/9 instead of dividing 4 by 4/9. The error stems from misapplying proportional reasoning: they preserved the original ratio's orientation (liters per area) instead of converting it to area per liter.  \n\nThis aligns with the primary misconception of not dividing to establish a unitary rate (1 L covers 9/4 m\u00b2) before scaling. It differs from \"multiplies numerator only\" because the student correctly multiplied both numerator and denominator - but did so in the wrong operation (multiplication instead of division).",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

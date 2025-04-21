@@ -1,0 +1,7 @@
+{
+  "query_id": "376_D",
+  "content_id": 1510,
+  "explanation": "Correct calculation: \n6\u00d7(2) = 12 and 6\u00d7(-3p) = -18p \u2192 12 - 18p\n\nStudent's error: \nCalculated 6\u00d7(-3p) as +18p (ignoring the negative sign) and treated 6\u00d7(2) as -6 instead of +12.\n\nSpecific flaw: \nThe student failed to apply the negative sign to the second term during distribution, converting -3p to +3p. They also incorrectly inverted the sign of the first term, subtracting 6 rather than adding 12. This indicates a double misapplication of signs during expansion.\n\nConnection to misconception: \nIgnoring the negative in -3p directly caused the +18p error. The -6 suggests they either subtracted 6\u00d71 (unrelated to the original 2) or misread 2 as -2, compounding the sign mishandling.\n\nDistinguishing from related errors: \nThis isn't a commutative property issue (order isn't swapped) or order-of-operations error (distribution was attempted). The error specifically stems from mishandling signs during term-by-term multiplication.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

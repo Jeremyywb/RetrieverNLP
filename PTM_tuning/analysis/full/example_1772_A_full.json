@@ -1,0 +1,7 @@
+{
+  "query_id": "1772_A",
+  "content_id": 2341,
+  "explanation": "Correct calculation:  \nSum of interior angles = \\((8-2) \\times 180 = 1080^\\circ\\),  \nEach angle = \\(1080 \\div 8 = 135^\\circ\\).\n\nStudent's error:  \nIf the student computed \\(360 - (180 \\div 8)\\), they would get \\(360 - 22.5 = 337.5\\).  \nMistakenly interpreting this as the total sum, dividing by \\(4\\) (assuming \\(n/2\\) triangles) yields \\(337.5 \\div 4 = 84.375^\\circ\\), approximating to \\(80^\\circ\\).\n\nFlaw explanation:  \nThe student incorrectly used \\(360 - (180/n)\\) as the sum formula instead of \\((n-2) \\times 180\\). This misapplication directly aligns with the stated misconception of substituting \\(360 - (180/n)\\) for the valid formula. The subsequent division by \\(4\\) (erroneous triangle count) compounded the error. This distinguishes from \"sum = 100n\" or \"subtracting 1 from \\(n\\)\" errors, as the core flaw lies in the invalid \\(360\\)-based formula, not scaling factors or subtraction errors.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

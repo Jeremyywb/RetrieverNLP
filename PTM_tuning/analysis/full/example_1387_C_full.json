@@ -1,0 +1,7 @@
+{
+  "query_id": "1387_C",
+  "content_id": 947,
+  "explanation": "The reciprocal of \\( 7 \\) is calculated as \\( \\frac{1}{7} \\), since reciprocals satisfy \\( a \\cdot \\frac{1}{a} = 1 \\). The student incorrectly wrote \\( -7 \\), implying they computed \\( 7 \\times (-1) = -7 \\) instead of \\( 7 \\times \\frac{1}{7} = 1 \\). \n\nThe error stems from misinterpreting \"reciprocal\" as sign inversion rather than multiplicative inversion. This conflates the multiplicative inverse (\\( \\frac{1}{a} \\)) with the additive inverse (\\( -a \\)), leading to an incorrect negation instead of fraction inversion. \n\nThis explanation aligns with the primary misconception of confusing inverse function notation (additive vs. multiplicative), as opposed to errors like fraction inversion (irrelevant for integers) or equating \\( \\frac{1}{x} \\) to \\( x \\) itself (which would yield \\( 7 \\), not \\( -7 \\)).",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

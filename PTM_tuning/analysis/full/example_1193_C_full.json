@@ -1,0 +1,7 @@
+{
+  "query_id": "1193_C",
+  "content_id": 2362,
+  "explanation": "The correct calculation recognizes that angles forming a straight line are supplementary: \\(a + b = 180^{\\circ}\\). The student likely treated the straight line as a full rotation, computing \\(a + b = 360^{\\circ}\\). \n\nThe error stems from conflating a straight angle (half-circle, \\(180^{\\circ}\\)) with a full circle. The student applied the total angle measure for a full rotation (\\(360^{\\circ}\\)) to a straight line configuration. This directly matches confusing linear pairs with full-circle angles, rather than misapplying supplementary angle properties. \n\nIt differs from the related misconception about \"180 degrees in a full turn\" because the student used \\(360^{\\circ}\\), indicating they correctly associate full rotations with \\(360^{\\circ}\\) but misidentified the geometric context. Their reasoning mapped the visual of two angles to a full circle rather than a straight line.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

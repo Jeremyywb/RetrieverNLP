@@ -1,0 +1,7 @@
+{
+  "query_id": "1199_C",
+  "content_id": 950,
+  "explanation": "Correct calculation: \\(5 \\times 7 \\times 24\\) (weeks \u2192 days \u2192 hours)  \nStudent's calculation: \\(5 \\times 5 \\times 24\\)  \n\nThe student substituted the number of weeks (5) for the days-per-week conversion factor (7). Instead of multiplying by the correct 7 days/week, they repeated the initial 5 weeks value, inserting it where the conversion factor belonged. This reflects a misapplication of dimensional analysis, where a quantity (5 weeks) was incorrectly reused as a conversion rate.  \n\nThe error stems from treating the original quantity (5 weeks) as a repeated multiplier rather than applying the required conversion constant (7 days/week). This distinguishes it from general time-conversion confusion (e.g., mixing hours/minutes) - the specific flaw is duplicating the initial numerical value instead of using the correct proportionality constant.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

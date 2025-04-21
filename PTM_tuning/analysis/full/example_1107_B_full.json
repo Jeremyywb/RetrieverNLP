@@ -1,0 +1,7 @@
+{
+  "query_id": "1107_B",
+  "content_id": 1274,
+  "explanation": "Correct calculation:\nAdding the equations:\n(3x - 2y) + (x + 2y) = 15 + 20 \u2192 4x = 35 \u2192 x = 35/4\nThis eliminates y as -2y + 2y = 0\n\nStudent's likely incorrect reasoning:\nSubtracting equations:\n(3x - 2y) - (x + 2y) = 15 - 20 \u2192 2x - 4y = -5\nThis retains both variables\n\nSpecific flaw:\nThe student assumed different signs (-2y vs +2y) require subtraction to eliminate variables. However, elimination occurs through cancellation (summing additive inverses), not subtraction. The -2y and +2y terms naturally cancel when equations are added due to their opposite signs.\n\nDistinction from related misconceptions:\nThis error specifically stems from misapplying subtraction to opposing signs, rather than general confusion about same/different sign requirements. The student recognized sign differences but selected the wrong operation, unlike misconceptions about mandatory same/opposite signs for elimination.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "1393_B",
+  "content_id": 466,
+  "explanation": "Correct calculation:\n(3\u00d710\u2074) - (2\u00d710\u2075) = 0.3\u00d710\u2075 - 2\u00d710\u2075 = (0.3 - 2)\u00d710\u2075 = -1.7\u00d710\u2075\n\nStudent's error:\nThey likely performed (3 - 2) = 1 for the coefficients and (10\u2074 - 10\u2075) = 10\u207b\u00b9 for the exponents, yielding 1\u00d710\u207b\u00b9.\n\nFlawed reasoning:\nThe student treated subtraction of terms in standard form as independent operations on coefficients and exponents. They subtracted the exponents directly (4 - 5 = -1) instead of aligning them first, violating the requirement to match exponents before combining coefficients.\n\nConnection to misconception:\nThis stems from misapplying index laws to subtraction, assuming exponents can be subtracted like in division (where 10\u2074/10\u2075 = 10\u207b\u00b9). Subtraction instead requires equal exponents before coefficient operations.\n\nDistinction from related errors:\nThe error isn't about misinterpreting exponent magnitude (e.g., thinking 10\u2074 > 10\u2075) but specifically invalid exponent arithmetic. It differs from base-number confusion as both terms were already in standard form.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

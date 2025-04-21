@@ -1,0 +1,7 @@
+{
+  "query_id": "117_A",
+  "content_id": 2356,
+  "explanation": "Correct Calculation:\n- Ratio 3:4 \u2192 Red = 3 parts = 1200 ml \u2192 1 part = 400 ml\n- White = 4 parts = 4 \u00d7 400 = 1600 ml\n\nStudent's Incorrect Calculation:\n- If red increased from 3 \u2192 1200 (adds 1197), student added 1197 to white's original 4: 4 + 1197 = 1201\n\nSpecific Flaw:\nThe student treated ratios as additive increments rather than multiplicative scaling. They preserved the absolute difference (3\u21921200 requires +1197) instead of preserving the proportional relationship. This directly aligns with the misconception that equivalent ratios can be formed by adding equal quantities to both terms.\n\nDistinction from Related Misconceptions:\nUnlike errors in scaling (e.g., multiplying only one term) or misinterpreting ratio components, this error specifically stems from substituting multiplicative relationships with additive ones. The proximity of 1201 to 1200 confirms the student added rather than scaled, ruling out place-value or digit-writing errors.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

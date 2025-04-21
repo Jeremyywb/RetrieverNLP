@@ -1,0 +1,7 @@
+{
+  "query_id": "1252_B",
+  "content_id": 1408,
+  "explanation": "Correct calculation for Tom: 4122 + 428 = (4122 + 426) + 2 = 4548 + 2 = 4550.  \nCorrect calculation for Katie: 4122 - 428 = (4122 - 426) - 2 = 3696 - 2 = 3694.  \n\nThe student likely reasoned:  \n- For Katie: Subtracting 428 (2 more than 426) reduces the result by 2 \u2192 3696 - 2 = 3694 (correct).  \n- For Tom: Adding 428 (2 more than 426) was incorrectly treated as requiring a *smaller* total, perhaps assuming \"adding more means the sum decreases\" (e.g., 4548 - 2 = 4546).  \n\nThe error stems from misapplying subtraction logic to addition: treating the increased addend (428) as analogous to an increased subtrahend, which decreases the result. This conflates the directionality of operations.  \n\nDistinction from related misconceptions:  \n- The error is not about commutativity (operations are applied sequentially, not reversed).  \n- It specifically involves misjudging the number line direction for addition (rightward increase) vs. subtraction (leftward decrease).",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

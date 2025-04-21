@@ -1,0 +1,7 @@
+{
+  "query_id": "1760_D",
+  "content_id": 578,
+  "explanation": "Correct calculation:\n\u221a12 = \u221a(4\u00d73) = 2\u221a3  \n\u221a27 = \u221a(9\u00d73) = 3\u221a3  \nSum: 2\u221a3 + 3\u221a3 = 5\u221a3\n\nStudent's error:\nTreated \u221a12 + \u221a27 as final form without simplifying either term.\n\nSpecific reasoning flaw:\nThe student failed to recognize that both radicals contain perfect square factors (4 in 12, 9 in 27). This prevented them from rewriting the terms with a common \u221a3 base, which is required for combining like terms.\n\nHow misconception caused error:\nBy not simplifying individual surds first, the student saw \u221a12 and \u221a27 as fundamentally different radicals rather than multiples of \u221a3. This obscured the common term needed for addition.\n\nDistinction from related errors:\nThis differs from misadding radicands (which would yield \u221a39) or partial simplification. The core issue is the absence of initial simplification steps, not incorrect combination methods.\n\nFinal consequence:\nWithout expressing both terms in terms of \u221a3, the student correctly concluded they couldn't combine the original forms - but missed that simplification makes combination possible.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

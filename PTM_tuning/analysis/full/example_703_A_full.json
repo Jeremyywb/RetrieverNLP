@@ -1,0 +1,7 @@
+{
+  "query_id": "703_A",
+  "content_id": 1505,
+  "explanation": "Correct calculation: In a parallelogram, consecutive angles are supplementary. If one angle is \\(65^\\circ\\), the adjacent angle \\(p\\) must be \\(180^\\circ - 65^\\circ = 115^\\circ\\).\n\nStudent's error: The student likely concluded \\(p = 65^\\circ\\) by assuming the angle was equal to the given \\(65^\\circ\\) angle due to parallel lines.\n\nSpecific flaw: The student misapplied the alternate angles rule (which states alternate angles are equal) to co-interior angles. In reality, co-interior angles between parallel lines sum to \\(180^\\circ\\). By treating them as alternate angles instead, the student equated \\(p\\) to \\(65^\\circ\\) directly.\n\nConnection to misconception: This directly stems from confusing co-interior and alternate angle properties. The error is not about opposite angles being equal (which is true in parallelograms but applies to non-adjacent angles) or vertical angles, as \\(p\\) is adjacent to the given angle.\n\nDistinction: Unlike the related misconception about opposite angles, the error here specifically involves misidentifying the angle relationship type (co-interior vs. alternate) tied to parallel lines.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

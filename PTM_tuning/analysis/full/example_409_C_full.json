@@ -1,0 +1,7 @@
+{
+  "query_id": "409_C",
+  "content_id": 1707,
+  "explanation": "Correct calculation: \\( q = 180^{\\circ} - 126^{\\circ} = 54^{\\circ} \\).  \nStudent's error: \\( 180^{\\circ} - 126^{\\circ} - 37^{\\circ} = 17^{\\circ} \\).  \n\nThe student incorrectly treated the 37\u00b0 angle (from a separate intersection) as part of the same linear pair as \\( q \\). This led them to subtract both 126\u00b0 and 37\u00b0 from 180\u00b0, assuming all marked angles lie on the same straight-line segment.  \n\nThe flaw stems from conflating angles from distinct linear pairs (left and right intersections) into a single calculation. This distinguishes the error from related misconceptions like assuming angles on a straight line sum to 90\u00b0 or 100\u00b0, as the student correctly used 180\u00b0 but misapplied it to non-adjacent angles.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

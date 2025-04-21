@@ -1,0 +1,7 @@
+{
+  "query_id": "1570_C",
+  "content_id": 617,
+  "explanation": "Correct calculation:\n1. Start with output: \\( 8m - 20 \\)\n2. Reverse \"\u00d74\" by dividing by 4: \\( \\frac{8m - 20}{4} = 2m - 5 \\)\n3. Reverse \"\u22124\" by adding 4: \\( 2m - 5 + 4 = 2m - 1 \\)\n\nStudent's incorrect calculation:\n1. Divided only the \\( 8m \\) term by 4: \\( \\frac{8m}{4} = 2m \\)\n2. Left the \\( -20 \\) unchanged: \\( 2m - 20 \\)\n\nThe student failed to apply division to both terms in \\( 8m - 20 \\), treating \\( -20 \\) as a standalone constant rather than part of the expression requiring division. This caused them to omit the critical step of reducing \\( -20 \\) to \\( -5 \\) before reversing the subtraction. The error stems from incorrectly isolating operations term-by-term rather than distributing them across the entire expression. This matches the primary misconception of not applying operations to all terms, distinct from order-reversal errors or partial multiplication in expansions.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

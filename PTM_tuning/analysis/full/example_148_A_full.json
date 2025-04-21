@@ -1,0 +1,7 @@
+{
+  "query_id": "148_A",
+  "content_id": 760,
+  "explanation": "The correct conversion requires recognizing 1.4 as 1 + 4/10, which simplifies to 14/10 = 7/5. The student incorrectly wrote 1.4 as \\( \\frac{1}{4} \\), treating the digit \"4\" after the decimal as the denominator directly. This error stems from misinterpreting the decimal's fractional component as a standalone integer rather than a value scaled by place value (tenths). By isolating the decimal digit \"4\" and placing it under 1, the student neglected to apply the positional meaning of the decimal (4 tenths) or adjust for the whole number \"1.\" This aligns with writing 1 over the decimal digits without considering place value, distinct from errors like splitting at the decimal point or using digits as denominators separately. Related misconceptions about digit separation or denominator construction don't explain the direct 1/4 substitution here.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

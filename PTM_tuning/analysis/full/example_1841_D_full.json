@@ -1,0 +1,7 @@
+{
+  "query_id": "1841_D",
+  "content_id": 1540,
+  "explanation": "To simplify \\(\\frac{5m-10}{m^2+3m-10}\\), factor both numerator and denominator:\n- Numerator: \\(5(m-2)\\)\n- Denominator: \\(m^2+3m-10 = (m+5)(m-2)\\)\n\nThis gives \\(\\frac{5(m-2)}{(m+5)(m-2)} = \\frac{5}{m+5}\\) after cancelling \\(m-2\\).\n\nThe student likely attempted to identify common factors without factoring the expressions. They saw \\(5m-10\\) and \\(m^2+3m-10\\) in their unfactored forms, failing to recognize that \\(m-2\\) is a hidden common factor. This stems from not applying factoring as a prerequisite step to reveal algebraic structure, causing them to miss the cancellation. \n\nThis error aligns with not recognizing when simplification requires factoring, as opposed to related misconceptions like inability to factor (they might have correctly factored if attempted) or partial simplification (no intermediate steps were taken). The critical gap was the initial failure to restructure the expressions to expose common terms.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

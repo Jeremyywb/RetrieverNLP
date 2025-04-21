@@ -1,0 +1,7 @@
+{
+  "query_id": "942_C",
+  "content_id": 1487,
+  "explanation": "Correct calculation: To translate \\( y = x^2 \\) left 2 and down 5, replace \\( x \\) with \\( x + 2 \\) (horizontal shift) and subtract 5 (vertical shift): \\( y = (x + 2)^2 - 5 \\).\n\nStudent's error: The student wrote \\( y = (x - 2)^2 + 5 \\), reversing both translation directions.\n\nReasoning flaw: The student incorrectly associated leftward horizontal translation with subtraction in the squared term (\\( x - 2 \\)) instead of addition (\\( x + 2 \\)). Similarly, they treated downward vertical translation as addition (+5) instead of subtraction (-5). The primary misconception caused a sign reversal in both components: horizontal shifts require opposite signs in the argument of the function, and vertical shifts directly use the stated sign. This matches the first listed misconception (sign confusion in brackets) but does not align with coordinate-swapping errors (second listed misconception), as both x and y shifts were misapplied independently. The vertical error further demonstrates a failure to recognize that \\( f(x) - a \\) corresponds to downward shifts.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

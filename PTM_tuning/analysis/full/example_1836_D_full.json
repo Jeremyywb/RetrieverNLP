@@ -1,0 +1,7 @@
+{
+  "query_id": "1836_D",
+  "content_id": 965,
+  "explanation": "Correct calculation:\nTotal combinations: C(7,2) = 21\nUnfavorable combinations (both yellow): C(3,2) = 3\nProbability(at least one red) = 1 - 3/21 = 18/21 = 36/42\n\nStudent's likely calculation:\nTotal ordered pairs: 7\u00d76 = 42\nFavorable ordered pairs:\n- One red then yellow: 4\u00d73 = 12\n- Yellow then red: 3\u00d74 = 12\n- Two reds: 4\u00d73 = 12\nTotal: 12+12+12 = 36\nBut student added an extra invalid case (e.g., duplicate red pair) to get 37\n\nSpecific flaw:\nThe student included an overlapping/impossible scenario (like counting R\u2081R\u2081 as a valid pair) when tallying two-red combinations. This reflects overcounting due to misapplying ordered reasoning to unordered selections - they treated \"at least one red\" as three distinct ordered categories but added a fourth redundant case.\n\nDistinction from related errors:\nThis isn't a failure to subtract overlap (which would cause larger errors) or simple addition of probabilities. The error specifically shows improper case inclusion in combinatorial counting, not arithmetic mistakes.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

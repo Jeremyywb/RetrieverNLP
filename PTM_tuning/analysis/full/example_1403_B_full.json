@@ -1,0 +1,7 @@
+{
+  "query_id": "1403_B",
+  "content_id": 2353,
+  "explanation": "Correct calculation: \\( \\frac{1}{2} \\times (10 + 5) \\times h = 45 \\) \u2192 \\( 7.5h = 45 \\) \u2192 \\( h = 6 \\).  \nStudent's error: Calculated \\( (10 + 5) \\times h = 45 \\) \u2192 \\( 15h = 45 \\) \u2192 \\( h = 3 \\).  \nThe student omitted the \\( \\frac{1}{2} \\) in the trapezium area formula, treating it as \\( (a + b) \\times h \\) instead of \\( \\frac{1}{2}(a + b) \\times h \\).  \nThis directly stems from applying the formula for a parallelogram (base \u00d7 height) to a trapezium, where the \"base\" is incorrectly interpreted as the sum of both parallel sides rather than their average.  \nThis differs from related misconceptions because the error specifically involves retaining the structure of a parallelogram formula (summing sides without averaging) rather than confusing variable definitions or using unrelated formulas.  \nThe calculation aligns with substituting the trapezium's sides into a parallelogram-type formula, not merely forgetting the formula entirely or misassigning terms.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

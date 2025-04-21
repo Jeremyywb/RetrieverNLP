@@ -1,0 +1,7 @@
+{
+  "query_id": "753_B",
+  "content_id": 1704,
+  "explanation": "The correct gradient calculation uses (y\u2082 - y\u2081)/(x\u2082 - x\u2081):  \n(6 - 2)/(0 - 1) = 4/-1 = -4  \n\nThe student likely computed (x\u2082 - x\u2081)/(y\u2082 - y\u2081):  \n(0 - 1)/(6 - 2) = -1/4  \n\nThis shows they reversed the numerator and denominator, treating run/rise instead of rise/run. The error directly stems from misapplying the gradient formula's component order. This matches the \"reverses rise over run\" misconception rather than alternatives: they didn't multiply changes (which would yield -4), nor used sums/differences of coordinates. The reciprocal relationship between their answer (-1/4) and the correct answer (-4) confirms the inversion of components.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

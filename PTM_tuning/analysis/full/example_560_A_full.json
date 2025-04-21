@@ -1,0 +1,7 @@
+{
+  "query_id": "560_A",
+  "content_id": 2356,
+  "explanation": "Correct calculation:\n1. Ratio parts: 3 (Jess) : 5 (Heena)\n2. Jess's 3 parts = 15 sweets \u2192 1 part = 15 \u00f7 3 = 5\n3. Heena's 5 parts = 5 \u00d7 5 = 25\n\nStudent's error path:\n1. Likely calculated 5 - 3 = 2 (difference between ratio terms)\n2. Added 2 to Jess's 15 sweets: 15 + 2 = 17\n\nFlawed reasoning:\nThe student treated the ratio difference as an absolute quantity to add rather than recognizing ratio terms must scale proportionally. They converted the relationship (5:3) into a fixed increment instead of using multiplicative scaling. This directly corresponds to adding instead of multiplying when extending proportions.\n\nDistinction from related errors:\nThis differs from forgetting to multiply parts (which would yield 5) or misdividing (which could yield 9.375). The core error was additive interpretation of ratio terms rather than multiplicative scaling.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

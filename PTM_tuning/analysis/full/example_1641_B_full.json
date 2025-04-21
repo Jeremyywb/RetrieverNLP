@@ -1,0 +1,7 @@
+{
+  "query_id": "1641_B",
+  "content_id": 589,
+  "explanation": "To determine which measure isn't representative:\n- **Median**: The middle value in the ordered list is 8, aligning with the majority of data points.\n- **Mean**: Calculated as (5+6+7+8+8+9+11+12+320)/9 \u2248 42.89, skewed by the outlier 320.\n\nThe student incorrectly selected \"median\" as non-representative. Their error likely stemmed from assuming the median equals half the largest value (320/2 = 160) rather than identifying the middle value. This flawed reasoning caused them to view the median as artificially inflated, misaligning it with the outlier. \n\nThis directly matches the misconception \"Assumes the median is half of the largest number.\" It differs from related errors like confusing mean/median terminology or mislocating the middle value, as the student specifically distorted the median's definition to include the outlier's influence.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

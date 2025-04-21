@@ -1,0 +1,7 @@
+{
+  "query_id": "1267_B",
+  "content_id": 639,
+  "explanation": "Correct calculation: \\( 180^{\\circ} - (34^{\\circ} + 22^{\\circ}) = 124^{\\circ} \\).  \nStudent's likely error: \\( 180^{\\circ} - 34^{\\circ} = 146^{\\circ} \\).  \n\nThe student failed to sum the two known angles before subtracting from \\( 180^{\\circ} \\). They subtracted only one angle instead of the total of both. This directly corresponds to the primary misconception of forgetting to combine known angles before performing the subtraction.  \n\nThis differs from the \"sum to 360\" misconception (which would produce \\( 304^{\\circ} \\)) and \"adding instead of subtracting\" (which would yield \\( 236^{\\circ} \\)). The error pattern matches specifically omitting the addition step, not a numerical operation error.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

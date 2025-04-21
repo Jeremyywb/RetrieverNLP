@@ -1,0 +1,7 @@
+{
+  "query_id": "114_D",
+  "content_id": 2256,
+  "explanation": "Correct expansion:\n1. Multiply \\((m+5)(m-5)\\) using difference of squares: \\(m^2 - 25\\)\n2. Multiply by \\(m\\): \\(m(m^2) - m(25) = m^3 - 25m\\)\nResult: \\(m^3 - 25m\\), so \\(\\triangle = -25\\)\n\nStudent's error:\nThey likely expanded \\(m(m+5)\\) first to \\(m^2 + 5m\\), then multiplied only \\(m^2\\) by \\((m-5)\\), producing \\(m^3 - 5m^2\\). This ignores the \\(5m \\cdot (m-5)\\) term, which contains the \\(-25m\\) contribution. By failing to multiply the second term (\\(5m\\)) with \\((m-5)\\), they eliminated the entire \\(m\\)-term from the final expression.\n\nFlawed reasoning:\nThe student incorrectly assumed only the first term of a bracket needs multiplication in subsequent steps. This caused them to omit cross-terms involving \\(5m \\cdot (m-5)\\), specifically the \\(-25m\\) component. The error matches the misconception of only multiplying the first term in an expanded bracket, as they neglected subsequent terms in the distribution.\n\nDistinction from related errors:\nThis differs from \"only multiplying first/last pairs\" (which preserves cross-terms) or \"ignoring coefficients\" (which would affect all terms equally). The error specifically stems from partial multiplication of a single bracket's terms.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

@@ -1,0 +1,7 @@
+{
+  "query_id": "1163_D",
+  "content_id": 2077,
+  "explanation": "To eliminate \\( q \\) in Pair 1:\n\\[\n\\begin{align*}\n-5p + 2q &= 12 \\\\\n3p - 2q &= 8 \\\\\n\\hline\n(-5p + 3p) + (2q - 2q) &= 12 + 8 \\quad \\text{(Addition cancels } 2q - 2q)\n\\end{align*}\n\\]\nThe student subtracted the equations instead:\n\\[\n\\begin{align*}\n(-5p + 2q) - (3p - 2q) &= 12 - 8 \\\\\n-8p + 4q &= 4 \\quad \\text{(Fails to eliminate } q)\n\\end{align*}\n\\]\nThe error occurred because the student subtracted equations with opposite coefficients for \\( q \\), preserving the \\( q \\)-term. This stems from incorrectly assuming subtraction universally eliminates variables without checking coefficient signs. The misconception specifically relates to not recognizing that opposite coefficients require addition for cancellation, not subtraction. This differs from related errors about ambiguous coefficient matches, as the coefficients here were explicitly opposites.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

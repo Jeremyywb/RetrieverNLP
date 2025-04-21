@@ -1,0 +1,7 @@
+{
+  "query_id": "131_D",
+  "content_id": 1360,
+  "explanation": "Correct calculation:\np - 5 = \u00b9\u2044\u2081\u2080  \nAdd 5 to both sides:  \np = \u00b9\u2044\u2081\u2080 + 5  \nConvert 5 to \u2075\u2070\u2044\u2081\u2080:  \np = \u00b9\u2044\u2081\u2080 + \u2075\u2070\u2044\u2081\u2080 = \u2075\u00b9\u2044\u2081\u2080  \n\nStudent's error:\nApparent calculation:  \np = \u00b9\u2044\u2081\u2080 \u00f7 5 = (\u00b9\u2044\u2081\u2080) \u00d7 (\u00b9\u2044\u2085) = \u00b9\u2044\u2085\u2080 or equivalent, but wrote \u2075\u2044\u2085\u2080  \n\nFlawed reasoning:\nThe student treated the inverse operation (addition) as division. To isolate p, they should have added 5 to \u00b9\u2044\u2081\u2080. Instead, they divided \u00b9\u2044\u2081\u2080 by 5, misapplying division as the inverse of subtraction rather than addition. This directly stems from conflating inverse operations (using division to \"undo\" subtraction instead of addition).  \n\nDistinction from related errors:\nUnlike fraction addition errors (e.g., adding numerators/denominators), this error specifically misidentifies the required inverse operation during equation solving. The focus is on operation selection, not fraction arithmetic mechanics.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

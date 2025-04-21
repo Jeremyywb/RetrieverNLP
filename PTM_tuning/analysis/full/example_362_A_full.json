@@ -1,0 +1,7 @@
+{
+  "query_id": "362_A",
+  "content_id": 1417,
+  "explanation": "Correct calculation:\n1. Start with \\( 4x + 3y = 5 \\)\n2. Subtract \\( 4x \\): \\( 3y = -4x + 5 \\)\n3. Divide by 3: \\( y = -\\frac{4}{3}x + \\frac{5}{3} \\)\n4. Gradient is \\( -\\frac{4}{3} \\).\n\nStudent's incorrect steps:\n1. Start with \\( 4x + 3y = 5 \\)\n2. Subtract \\( 4x \\): \\( 3y = -4x + 5 \\)\n3. Assume gradient is \\( -4 \\), the coefficient of \\( x \\) in this intermediate step.\n\nThe student incorrectly took the coefficient of \\( x \\) from the equation \\( 3y = -4x + 5 \\) without isolating \\( y \\). They treated the intermediate form as equivalent to \\( y = mx + b \\), skipping the division by 3 required to solve for \\( y \\). This reflects a failure to complete the second step of equation solving, where dividing by the coefficient of \\( y \\) is necessary. \n\nThis aligns with misunderstanding linear two-step equations, as the error specifically involves omitting the division step after subtraction. It differs from \"coefficients must be 1 before rearranging\" because the error occurred during isolation of \\( y \\), not rearrangement to standard form.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

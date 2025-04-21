@@ -1,0 +1,7 @@
+{
+  "query_id": "1653_B",
+  "content_id": 2026,
+  "explanation": "Correct calculation: A 180\u00b0 rotation about the origin transforms (x,y) \u2192 (-x,-y). Applying this to (2,2) gives (-2,-2) \u2192 point A.\n\nStudent's error: Their answer (2,-2) suggests they likely performed (x,y) \u2192 (x,-y) instead. This would occur if they incorrectly treated the rotation as a reflection over the x-axis rather than a full half-turn about the origin.\n\nSpecific flaw: The student failed to invert both coordinates through the origin. This stems from misunderstanding how coordinates transform in rotational symmetry - specifically not recognizing that 180\u00b0 rotation requires both coordinates to be negated.\n\nDistinction: This differs from rotating about the wrong center (which would produce different coordinates entirely) or confusing quarter/half turns (which would involve coordinate swapping). The pattern (x,y)\u2192(x,-y) specifically matches an x-axis reflection error rather than other rotation-related misconceptions.\n\nThe error directly matches a failure to apply the rotational transformation formula, not a misidentification of rotation type or center.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

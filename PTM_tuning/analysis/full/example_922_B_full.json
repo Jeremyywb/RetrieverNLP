@@ -1,0 +1,7 @@
+{
+  "query_id": "922_B",
+  "content_id": 2514,
+  "explanation": "Correct calculation:  \n\\(1\\ \\mathrm{cm}^3 = (10\\ \\mathrm{mm})^3 = 10 \\times 10 \\times 10 = 1000\\ \\mathrm{mm}^3\\).\n\nStudent's likely calculation:  \n\\(1\\ \\mathrm{cm}^3 = 10\\ \\mathrm{mm} \\times 10\\ \\mathrm{mm} = 100\\ \\mathrm{mm}^3\\).\n\nThe student correctly converted \\(1\\ \\mathrm{cm}\\) to \\(10\\ \\mathrm{mm}\\) but treated the cubic conversion as a square, applying \\(10^2\\) instead of \\(10^3\\). This reflects a confusion between area (\\(10^2\\)) and volume (\\(10^3\\)) unit conversions. While they used the correct linear conversion factor, the error stems from misapplying the exponent rather than the factor itself. This distinguishes it from the listed primary misconception (incorrect linear conversion factor) and aligns with the related misconception of mixing cubing and squaring. The student's answer matches the result of squaring the conversion factor instead of cubing it.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

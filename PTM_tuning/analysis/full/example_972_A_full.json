@@ -1,0 +1,7 @@
+{
+  "query_id": "972_A",
+  "content_id": 1948,
+  "explanation": "Correct calculation: To reverse the square root operation, square the output: \\(16^2 = 256\\)\n\nStudent's calculation: Applied \\(16 \\times 2 = 32\\)\n\nFlaw: The student treated square root's inverse as doubling instead of squaring. They likely interpreted \"undoing a square root\" as multiplying by 2 rather than applying the inverse function (squaring). This matches confusing square root reversal with multiplicative doubling rather than exponentiation.\n\nDistinction: While related misconceptions mention halving, this error specifically substitutes squaring with doubling. The student's 32 shows they used multiplication by 2 rather than division (halving) or other operations.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}

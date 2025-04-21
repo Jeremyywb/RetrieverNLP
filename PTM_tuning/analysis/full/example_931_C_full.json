@@ -1,0 +1,7 @@
+{
+  "query_id": "931_C",
+  "content_id": 1091,
+  "explanation": "The equation \\( A=\\frac{b h}{2} \\) represents a mathematical relationship between variables (A, b, h) to calculate area, making it a formula. The student labeled it a \"variable,\" likely fixating on the presence of individual variables (b, h, A) rather than recognizing the equation as a unified statement defining their relationship. \n\nThis error occurs when interpreting the entire equality as a single variable entity, rather than understanding that formulas are equations composed of variables connected by operations. The misconception conflates components of an equation (variables) with the equation's purpose (a formula). \n\nThis differs from confusing formulas with expressions (which lack equality signs) or equations with variables (which are singular symbols), as the error specifically misclassifies a multi-variable equality as a variable itself.",
+  "timestamp": "2025-04-20T22:00:24.440664",
+  "error": null
+}
