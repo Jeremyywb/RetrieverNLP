@@ -1,7 +1,0 @@
-{
-  "query_id": "1531_A",
-  "content_id": 1956,
-  "explanation": "Correct calculation:\nScale factor = 6 cm / 9 cm = 2/3\nMissing side = 7.5 cm \u00d7 2/3 = 5 cm\n\nStudent's likely calculation:\nScale factor = (9 cm - 6 cm) / 6 cm = 3/6 = 0.5\nMissing side = 7.5 cm \u00d7 0.5 = 3.75 cm\n\nThe student incorrectly derived the scale factor using additive differences (9-6=3) relative to the smaller side (3/6=0.5) rather than using the multiplicative ratio of corresponding sides (6/9). This shows a fundamental confusion between absolute differences and proportional relationships in similarity. \n\nThe error stems from treating the arithmetic difference as equivalent to scaling proportionally, violating the constant ratio requirement for similar figures. This specific miscalculation matches the misconception of using additive changes instead of multiplicative scaling, distinct from other listed errors like incorrect ratio setup or estimation mistakes. \n\nThe student's approach would incorrectly suggest similarity can be maintained by subtracting half the original length from each side, rather than applying a consistent proportional reduction to all dimensions.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "445_B",
-  "content_id": 2256,
-  "explanation": "Correct expansion:\n(p-5)(p+2) = p\u00b2 +2p -5p -10 = p\u00b2 -3p -10  \nConstant term comes from (-5)\u00d7(+2) = -10\n\nStudent's error:\nAppears to have calculated (-5)+(+2) = -3 for the constant term instead of multiplying\n\nSpecific flaw:\nThe student treated the constant terms additively when forming the product's constant term, rather than applying multiplicative combination required for binomial expansion. This directly substitutes summation where multiplication is mathematically mandated for cross terms.\n\nDistinction:\nWhile related misconceptions mention similar additive errors in grid methods or product contexts, this specific error exclusively concerns the final constant term calculation - a distinct step where multiplication is required between numerical terms, not additive combination.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

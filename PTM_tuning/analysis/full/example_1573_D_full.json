@@ -1,7 +1,0 @@
-{
-  "query_id": "1573_D",
-  "content_id": 297,
-  "explanation": "The correct SAS construction requires using a ruler to draw a base side, a protractor to measure the given angle, and a compass to transfer the length of the second side and locate the third vertex via arc intersection. \n\nThe student likely used the ruler to draw both labeled sides directly and the protractor for the angle, assuming the labeled side lengths could be drawn freehand without a compass. \n\nTheir reasoning flaw stems from conflating direct measurement (using ruler markings) with geometric construction: while a ruler measures straight-line distances, a compass is required to precisely replicate lengths in constructions. By omitting the compass, they incorrectly assumed the labeled side lengths could be drawn accurately without it. \n\nThis aligns with the misconception that measurement tools alone suffice for geometric constructions, rather than recognizing the compass's role in enforcing length equivalence. It is distinct from confusion about dashes (irrelevant here) or uniqueness (not addressed in the answer).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

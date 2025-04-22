@@ -1,7 +1,0 @@
-{
-  "query_id": "1119_D",
-  "content_id": 549,
-  "explanation": "Correct calculation: \\(5\\,\\text{km} = 5 \\times 1000 = 5000\\,\\text{m}\\) and \\(7\\,\\text{cm} = 7 \\div 100 = 0.07\\,\\text{m}\\), totaling \\(5000 + 0.07 = 5000.07\\,\\text{m}\\).\n\nStudent's error: Converted \\(5\\,\\text{km}\\) correctly to \\(5000\\,\\text{m}\\) but treated \\(7\\,\\text{cm}\\) as \\(700\\,\\text{m}\\) (likely via \\(7 \\times 100\\)), then added \\(5000 + 700 = 5700\\,\\text{m}\\).\n\nSpecific flaw: The student multiplied centimeters by \\(100\\) instead of dividing by \\(100\\) to convert to meters. This indicates a misunderstanding of metric scaling factors, specifically inserting extra zeros without adjusting the decimal placement.\n\nMisconception link: The error directly stems from adding an extra zero (equivalent to multiplying by \\(10\\)) twice (total \u00d7100), conflating the direction of unit conversion. This matches \"adds an extra zero when converting\" rather than other listed errors like ignoring unit conversion or misdefining base relationships (e.g., 10cm/m).\n\nDistinction: Unlike \"thinks there are 10cm in a metre,\" which would yield \\(7\\,\\text{cm} = 0.7\\,\\text{m}\\), this error shows improper zero-placement during conversion, not an incorrect base unit ratio.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

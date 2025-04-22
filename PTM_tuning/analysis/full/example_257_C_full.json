@@ -1,7 +1,0 @@
-{
-  "query_id": "257_C",
-  "content_id": 306,
-  "explanation": "Correct calculation:  \n\\( \\frac{30 \\text{ km}}{5 \\text{ km}} \\times 3 \\text{ miles} = 6 \\times 3 = 18 \\text{ miles} \\).\n\nStudent's likely calculation:  \n\\( 30 \\text{ km} - 2 \\text{ km} = 28 \\text{ miles} \\) (assuming a mistaken subtraction of 2 to convert units).\n\nFlaw: The student incorrectly treated the proportional relationship as a fixed subtraction. Instead of scaling via division/multiplication (\\( \\frac{3}{5} \\times 30 \\)), they attempted to adjust the value by subtracting 2 km \u2192 miles. This reflects a failure to recognize that conversions require multiplicative scaling, not additive adjustments. \n\nDistinction: While related misconceptions include errors in division or subtraction, this specific error shows a mismatch in operation type (subtracting instead of applying a ratio), distinct from pure addition or inversion of conversion factors. The student\u2019s focus on a linear adjustment (e.g., \"remove 2\") rather than proportional reasoning caused the error.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

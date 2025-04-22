@@ -1,7 +1,0 @@
-{
-  "query_id": "392_D",
-  "content_id": 725,
-  "explanation": "Correct calculation: Angles on a straight line must sum to 180\u00b0. The invalid option is 150\u00b0 + 50\u00b0 = 200\u00b0, which exceeds 180\u00b0.\n\nStudent's reasoning: The student likely saw two 90\u00b0 angles and concluded they cannot form a straight line. They may have assumed angles on a straight line must be unequal or cannot both be right angles, even though 90\u00b0 + 90\u00b0 = 180\u00b0 satisfies the requirement.\n\nSpecific flaw: The student incorrectly rejected equal angles (90\u00b0 + 90\u00b0) as invalid, likely believing angles on a straight line must be supplementary but distinct (e.g., one acute and one obtuse). This directly stems from the misconception that \"any two angles along a straight line are equal\" was misapplied inversely, assuming unequal angles are required for validity.\n\nDistinction: This differs from the \"sum to 100\u00b0\" misconception, as the student correctly identified the total sum (180\u00b0) but misjudged the validity of equal angles. It also contrasts with \"angles around a point sum to 180\u00b0,\" which would not explain rejecting a valid straight-line case.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

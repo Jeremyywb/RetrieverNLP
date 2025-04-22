@@ -1,7 +1,0 @@
-{
-  "query_id": "860_A",
-  "content_id": 1435,
-  "explanation": "Correct calculation: \\( (-3) - 5 = -8 \\). This requires moving 5 units left from -3 on the number line.\n\nStudent's likely steps: \\( (-3) - 5 = (-3) + 5 = 2 \\). They treated subtraction as addition, moving right instead of left.\n\nThe error stems from misapplying subtraction as an operation that reduces a number's negativity. The student incorrectly assumed removing 5 from -3 would make it \"less negative,\" reversing the direction of subtraction. This aligns with interpreting subtraction as moving toward zero rather than extending further from it.\n\nThis directly connects to the misconception that subtracting a positive from a negative decreases negativity, distinct from general number-line direction errors (which could apply to other operations) or sign-order confusion (which would involve misplaced negative signs).\n\nThe student\u2019s reversal of subtraction to addition specifically reflects a flawed understanding of how subtraction modifies negative values, not a broader directional or sign-placement error.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

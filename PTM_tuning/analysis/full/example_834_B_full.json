@@ -1,7 +1,0 @@
-{
-  "query_id": "834_B",
-  "content_id": 1421,
-  "explanation": "To factor \\( x^2 +12x +32 \\), we seek numbers \\( m,n \\) where \\( m+n=12 \\) and \\( m \\cdot n=32 \\). The correct pair (4,8) satisfies both conditions: \\( 4+8=12 \\), \\( 4 \\times8=32 \\).\n\nThe student's answer \\( (x+4)(x+28) \\) implies they selected numbers where \\( 4+28=32 \\) (the constant term) and \\( 4 \\times28=112 \\). This shows they incorrectly required the numbers to sum to the constant term (32) instead of the middle coefficient (12), while simultaneously miscalculating the product relationship.\n\nThe error stems from reversing the required sum and product conditions: they enforced \\( m+n=32 \\) (constant term) rather than \\( m+n=12 \\) (coefficient of \\( x \\)), while still attempting to use factors of 32. This directly conflates the roles of the quadratic's coefficients in the factoring process.\n\nThis differs from related errors like \"adds instead of multiplies\" (the student did multiply correctly) or \"wrong factor pair\" (they didn't select valid factors of 32 for the sum). The core confusion was swapping the sum/product targets, not misapplying arithmetic operations.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

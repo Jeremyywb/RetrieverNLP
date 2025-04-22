@@ -1,7 +1,0 @@
-{
-  "query_id": "605_C",
-  "content_id": 70,
-  "explanation": "Correct calculation: The total Tea sales (Monday+Tuesday) reach 2 ticks above 100. If each vertical tick represents 10 units (0-50 scale divided into 5 ticks = 10 per tick), the total height is 120. Monday's sales (lower section) are 1 tick below 50 \u2192 40. Tuesday's sales = 120-40 = 80.\n\nStudent's calculation: They likely read the full bar height (120) as Tuesday's sales alone, missing that the upper section shows Tuesday *added to* Monday's base. \n\nSpecific flaw: The student treated the composite bar as separate adjacent columns rather than stacked values. They failed to recognize that Tuesday's sales are represented by the *difference* between the top of the full bar and the bottom section.\n\nThis matches the \"wrong data point\" misconception - they selected the total bar height instead of the Tuesday portion. It's distinct from scale misreading (which would involve incorrect tick interpretations) or axis confusion (which would involve mixing axes). The error specifically stems from misunderstanding stacked bar chart structure.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

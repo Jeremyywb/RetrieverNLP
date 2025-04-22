@@ -1,7 +1,0 @@
-{
-  "query_id": "191_C",
-  "content_id": 1981,
-  "explanation": "To determine which number is closest to zero, compare absolute values:\nCorrect calculation: |\u22122.01| = 2.01 vs |\u22122.105| = 2.105 \u2192 2.01 < 2.105 \u2192 \u22122.01 is closer.\n\nThe student likely compared the decimal portions directly as positive values: viewing 0.105 as \"greater than\" 0.01. This caused them to incorrectly conclude \u22122.105 is \"farther right\" (closer to zero) than \u22122.01. \n\nThe error stems from treating decimal extensions in negative numbers identically to positive decimals, where 2.105 > 2.01 implies rightward placement. However, negative numbers with larger absolute values are actually farther left. \n\nThis differs from \"ignores the negative sign\" (which would compare 2.105 > 2.01 as positives) because the student maintained the negative signs but misapplied directionality. It also differs from left-to-right digit comparison, as tenths digits (2.0 vs 2.1) would correctly identify \u22122.01 as closer if place value were properly considered.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

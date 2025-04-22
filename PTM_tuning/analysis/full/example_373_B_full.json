@@ -1,7 +1,0 @@
-{
-  "query_id": "373_B",
-  "content_id": 2336,
-  "explanation": "The correct corresponding angle to \\( p \\) is determined by matching positions relative to the transversal and parallel lines. Since \\( p \\) is vertically opposite angle \\( A \\) at the left intersection, its corresponding angle must be at the same relative position (lower left) at the right intersection, which is angle \\( C \\).\n\nThe student incorrectly selected angle \\( B \\), likely observing that \\( B \\) and \\( p \\) are both on the same side of the transversal. However, \\( B \\) is co-interior to \\( p \\), positioned inside the parallel lines but not in the matching corner configuration. The student conflated \"same side of the transversal\" with \"corresponding,\" failing to verify the angle's placement relative to the intersection point. This directly stems from misidentifying co-interior angles as corresponding due to their shared transversal side, rather than requiring identical positional alignment. The error is distinct from confusing alternate angles (which would involve opposite sides of the transversal) or overgeneralizing relationships (e.g., assuming non-parallel line rules).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

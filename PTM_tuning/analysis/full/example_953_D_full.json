@@ -1,7 +1,0 @@
-{
-  "query_id": "953_D",
-  "content_id": 81,
-  "explanation": "The correct calculation starts from the 3rd term (712) and adds 22 twice to reach the 1st term:  \n712 (3rd term) + 22 = 734 (2nd term), then 734 + 22 = 756 (1st term).  \n\nThe student likely subtracted 22 twice instead:  \n712 - 22 = 690, then 690 - 22 = 668.  \n\nThe error stems from misapplying the direction of the constant difference in a descending sequence. Since the sequence decreases by 22 for each subsequent term, earlier terms must be larger. The student incorrectly treated the sequence as ascending when moving backward, subtracting the difference to reach prior terms.  \n\nThis aligns with a misconception about the relationship between term order and operations in linear sequences: the student reversed the required operation (subtraction instead of addition) when navigating backward in a descending sequence.  \n\nThis is distinct from simply confusing term positions or giving the next term, as the error specifically involves directionality of the difference relative to term progression.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

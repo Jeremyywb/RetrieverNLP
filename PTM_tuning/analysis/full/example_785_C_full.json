@@ -1,7 +1,0 @@
-{
-  "query_id": "785_C",
-  "content_id": 455,
-  "explanation": "The correct calculation uses the formula \\((n-2) \\times 180^\\circ\\) where \\(n=5\\) (pentagon): \\((5-2) \\times 180^\\circ = 540^\\circ\\). The student likely calculated \\((6-2) \\times 180^\\circ = 720^\\circ\\), applying the correct formula but with \\(n=6\\). \n\nThis shows they misidentified the pentagon as a hexagon, using \\(n=6\\) instead of \\(n=5\\). The error stems from confusing the number of sides in the shape, not from misapplying the formula itself. This distinction rules out the misconception of \"not subtracting 2\" (which would produce \\(5 \\times 180^\\circ = 900^\\circ\\)) and aligns with polygon confusion rather than formula misunderstanding. The specific mismatch between the student\u2019s answer and the correct result directly corresponds to substituting \\(n=6\\) instead of \\(n=5\\) in the formula.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

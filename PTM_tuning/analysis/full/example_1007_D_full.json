@@ -1,7 +1,0 @@
-{
-  "query_id": "1007_D",
-  "content_id": 2071,
-  "explanation": "Correct calculation:\n1. Recognize the ratio 1:4 means 1 adult per 4 children\n2. Set up proportion: 1 part = 20 adults\n3. Calculate children: 4 parts \u00d7 20 = 80\n\nStudent's error:\n1. Correctly identified 1 ratio unit = 20 adults\n2. Stopped calculation at this point\n3. Assigned children = 1 ratio unit (20) instead of 4 units\n\nSpecific flaw:\nThe student found the unit value (20 per ratio part) but failed to apply the ratio's multiplicative relationship. They treated the children's quantity as matching the adult's single ratio unit rather than requiring 4 units. This shows understanding of unit conversion but lacks application of ratio scaling.\n\nConnection to misconception:\nThis matches \"Finds unit amount but doesn't multiply up\" - they determined 1 part = 20 adults but didn't multiply by 4 to calculate children's quantity. It's distinct from \"maintains original quantity\" because the student used ratio concepts to find the unit value, then misapplied the ratio structure rather than ignoring proportions entirely.\n\nDistinction from related errors:\nUnlike quantity maintenance errors, the student engaged with ratio components. They avoided order reversal mistakes by keeping adults as the first ratio term. The error specifically resides in scaling failure after unit identification.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

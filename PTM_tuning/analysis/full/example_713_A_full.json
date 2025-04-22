@@ -1,7 +1,0 @@
-{
-  "query_id": "713_A",
-  "content_id": 946,
-  "explanation": "The correct calculation uses the sector degrees divided by total circle degrees: \\(\\frac{40}{360} \\times 540\\).  \nThe student inverted the ratio: \\(\\frac{360}{40} \\times 540\\).  \n\nThe error stems from reversing the proportional relationship: instead of treating the pork sector (40\u00b0) as a fraction of the entire pie chart (360\u00b0), the student mistakenly treated the total circle as a fraction of the pork sector. This inversion directly corresponds to swapping the numerator and denominator when forming the proportion.  \n\nThe misconception is distinct from calculating degrees per person (which would involve 540 in the denominator) or misapplying reciprocals unrelated to proportional reasoning (e.g., \\(1/40\\)). Here, the core issue is misidentifying which quantity represents the part versus the whole in the fraction.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

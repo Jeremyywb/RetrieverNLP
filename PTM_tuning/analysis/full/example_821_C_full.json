@@ -1,7 +1,0 @@
-{
-  "query_id": "821_C",
-  "content_id": 792,
-  "explanation": "Correct calculation:\nNumerator: \\(2 \\times (m-3) = 2(m-3)\\)\nDenominator: \\((m^2-4m+3) \\times 4 = 4(m-1)(m-3)\\)\nSimplified: \\(\\frac{2(m-3)}{4(m-1)(m-3)} = \\frac{1}{2(m-1)}\\)\n\nStudent's incorrect calculation:\nLeft numerator as \\(2m-6\\) and denominator as \\(4m^2-16m+12\\) without factoring.\n\nSpecific flaw:\nThe student correctly multiplied numerators/denominators but failed to factor \\(m^2-4m+3\\) into \\((m-1)(m-3)\\). This prevented them from canceling the common \\((m-3)\\) term and simplifying the numerical coefficients.\n\nConnection to misconception:\nThe error stems from focusing only on numerical factors (simplifying 2/4 to 1/2 if attempted) while ignoring algebraic factorization opportunities. The denominator was treated as an irreducible polynomial rather than recognizing factorable terms.\n\nDistinction from related misconceptions:\nThis is not about bracket multiplication errors but specifically about missing algebraic simplification. The student multiplied terms correctly but stopped before factoring and canceling algebraic components.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

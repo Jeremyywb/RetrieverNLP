@@ -1,7 +1,0 @@
-{
-  "query_id": "91_B",
-  "content_id": 265,
-  "explanation": "To solve \\( x^{2}+7 x=8 \\), the correct first step is to subtract 8 from both sides, yielding \\( x^{2} + 7x - 8 = 0 \\), preparing for factoring or the quadratic formula. The student instead attempted to take square roots of both sides directly. \n\nThe error stems from treating the entire left side \\( x^{2} + 7x \\) as a single squared term. Square roots cannot distribute over addition, so \\( \\sqrt{x^{2} + 7x} \\) does not simplify to \\( x + \\sqrt{7x} \\), invalidating this approach. The student likely conflated squaring and square-rooting as inverse operations applicable to entire equations, ignoring the requirement for isolating a squared term first (e.g., \\( (x + a)^2 = b \\)). \n\nThis directly aligns with misapplying square roots to non-isolated squared terms, not confusion about factoring or equation forms. Unlike misconceptions about rearranging equations, the error specifically involves improper operational inversion due to misinterpreting the equation's structure.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "982_B",
-  "content_id": 1820,
-  "explanation": "Correct Calculation:\nTotal film = 7 parts\nWatched: 6 parts (since 1/7 remains)\nRatio = 6:1\n\nStudent's Incorrect Calculation:\nConsidered total parts as 7, remaining as 1\nDirectly wrote 7:1 without subtracting watched portion\n\nReasoning Flaw:\nThe student treated the total film duration (7 parts) as the \"watched\" portion, rather than calculating the actual watched amount (6 parts). This conflated the total with one component of the ratio.\n\nMisapplication:\nThey assigned the denominator of the remaining fraction (1/7) to represent the total parts (7), then used that total as the first ratio term. This bypassed the critical step of computing 7 - 1 = 6 for the watched portion.\n\nDistinction from Related Errors:\nThis isn't an order reversal (which would produce 1:6) or simplification failure. The error specifically stems from incorrectly mapping the fraction's denominator to a ratio term rather than calculating proportionally separated quantities.\n\nKey Confusion:\nMisinterpreted the relationship between fractional components and ratio terms, assuming the denominator in \"1/7 remaining\" directly corresponds to the total rather than requiring proportional comparison between segments.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

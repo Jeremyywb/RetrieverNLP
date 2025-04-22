@@ -1,7 +1,0 @@
-{
-  "query_id": "582_D",
-  "content_id": 2114,
-  "explanation": "Correct calculation:\n1. Start with \\(3g^2 - 18g - 7\\).\n2. Factor out 3: \\(3(g^2 - 6g) - 7\\).\n3. Complete the square: \\(3[(g^2 - 6g + 9) - 9] - 7 = 3(g - 3)^2 - 27 - 7\\).\n4. Combine constants: \\(-27 - 7 = -34\\).\n\nStudent's error:\nThey likely expanded \\(3(g - 3)^2\\) to \\(3g^2 - 18g + 27\\), then incorrectly calculated the adjustment as \\(-7 - (3 \\times 27) = -88\\) instead of \\(-7 - 27 = -34\\).\n\nSpecific flaw:\nThe student treated the coefficient 3 as needing to multiply the squared term \\(9\\) twice: first in \\(3(g - 3)^2\\) (correctly producing +27) and again when balancing (incorrectly subtracting \\(3 \\times 27 = 81\\)). This double application of the coefficient to the adjustment term caused the error.\n\nConnection to misconception:\nThe error reflects a misunderstanding of how the external coefficient interacts with the completed square. The student failed to recognize that the adjustment term \\(-9\\) inside the brackets is already scaled by 3 when expanded, requiring only a single subtraction of 27.\n\nDistinction from related misconceptions:\nUnlike misconceptions about misidentifying \\(a\\) or mishandling the original constant, this error specifically stems from over-applying the coefficient to the balancing term after expansion.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,4 +1,5 @@
 import os
+import re
 import json
 import asyncio
 import argparse
@@ -67,6 +68,9 @@ class ProgressManager:
         return processed
 
     def is_processed(self, query_id: str) -> bool:
+        _is_processed = self._load_existing()
+        for qid in _is_processed:
+            self._processed.add(qid)
         return query_id in self._processed
 
     def mark_success(self, query_id: str):
@@ -88,7 +92,7 @@ class BailianMathEvaluator:
         self.task_type = task_type
         self.stream = stream  # Store stream parameter
 
-        if task_type == "full":
+        if task_type == "lite":
             self.full_df = pd.read_csv(Config.FULL_INPUT_DIR)
 
         self.full_analysis_pool = self._get_full_files() if task_type == "lite" else None
@@ -197,6 +201,7 @@ class BailianMathEvaluator:
         import random
         seed_analysis_file = random.choice(self.full_analysis_pool)
         seed_analysis = self._preview_full_analysis(seed_analysis_file)
+        
         try_count = 0
         while seed_analysis == "" and try_count < 3:
             seed_analysis_file = random.choice(self.full_analysis_pool)
@@ -205,7 +210,11 @@ class BailianMathEvaluator:
         if seed_analysis == "":
             raise ValueError("Failed to get a valid seed analysis")
         
-        query_id = seed_analysis_file.split("_")[1]
+        pattern = r"example_(\d+_[A-Za-z]+)_full\.json"
+
+        match = re.search(pattern, seed_analysis_file)
+        query_id = match.group(1)
+
         full_row = self.full_df[self.full_df['query_id'].map(str) == query_id].iloc[0].to_dict()
         full_prompt = self._build_full_prompt(full_row)
 
@@ -229,21 +238,27 @@ class BailianMathEvaluator:
             error=result.error
         )
 
+    # @retry(
+    #     wait=wait_exponential(min=1, max=60),
+    #     stop=stop_after_attempt(3),
+    #     retry=retry_if_exception_type((OSError, TimeoutError))
+    # )
+
     @retry(
         wait=wait_exponential(min=1, max=60),
         stop=stop_after_attempt(3),
-        retry=retry_if_exception_type((OSError, TimeoutError))
+        retry=retry_if_exception_type((OSError, TimeoutError, ConnectionError))
     )
     async def _safe_api_call(self, messages: str, time_out: int) -> AnalysisResult:
-        """带重试机制的API调用"""
+        """带重试机制的API调用，兼容同步和异步模型API"""
         async with self.semaphore:
             with self.rate_limiter.ratelimit("api_call", delay=True):
                 start_time = datetime.now()
                 try:
-                    # Use the model client instead of direct API calls
+                    # Use the model client abstraction, which handles the appropriate API pattern
                     response = await self.model_client.get_completion(
                         messages=messages,
-                        stream=self.stream,  # Enable streaming
+                        stream=self.stream, 
                         temperature=0.3,
                         timeout=time_out
                     )
@@ -257,6 +272,29 @@ class BailianMathEvaluator:
                 except Exception as e:
                     API_CALL_COUNTER.labels(status="error", task_type=self.task_type).inc()
                     raise e
+    # async def _safe_api_call(self, messages: str, time_out: int) -> AnalysisResult:
+    #     """带重试机制的API调用"""
+    #     async with self.semaphore:
+    #         with self.rate_limiter.ratelimit("api_call", delay=True):
+    #             start_time = datetime.now()
+    #             try:
+    #                 # Use the model client instead of direct API calls
+    #                 response = await self.model_client.get_completion(
+    #                     messages=messages,
+    #                     stream=self.stream,  # Enable streaming
+    #                     temperature=0.3,
+    #                     timeout=time_out
+    #                 )
+                    
+    #                 # Record metrics
+    #                 api_duration = (datetime.now() - start_time).total_seconds()
+    #                 API_RESPONSE_TIME.labels(task_type=self.task_type).observe(api_duration)
+    #                 API_CALL_COUNTER.labels(status="success", task_type=self.task_type).inc()
+
+    #                 return self._parse_response(response)
+    #             except Exception as e:
+    #                 API_CALL_COUNTER.labels(status="error", task_type=self.task_type).inc()
+    #                 raise e
     def validate_response(self, response) -> bool:
         """验证API响应的有效性"""
         if not hasattr(response, "choices") or len(response.choices) == 0:
@@ -336,7 +374,9 @@ class BailianMathEvaluator:
 async def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--task", choices=["full", "lite"], required=True)
-    parser.add_argument("--model", choices=["deepseek", "openai"], default="deepseek")
+    parser.add_argument("--model", choices=["deepseek", "openai", "zhipu","tencent_r1","doubao_15_pro",
+                                            "qwq_plus","deepseek_dis_llama","qwen_math72",
+                                            'doubao_think_pro','doubao_r1_distil_qwen','doubao_r1'], default="deepseek")
     parser.add_argument("--stream", action="store_true", help="Enable streaming mode")
 
     args = parser.parse_args()
@@ -355,6 +395,7 @@ async def main():
         df = pd.read_csv(filemap[args.task]) 
 
         rows_to_process = [row for _, row in df.iterrows() if not progress.is_processed(row['query_id'])]
+        rows_to_process = rows_to_process[:80]
         tasks = [evaluator.process_row(row, progress) for row in rows_to_process]
         with tqdm(total=len(tasks), desc=f"Processing {args.task} tasks") as pbar:
             for future in asyncio.as_completed(tasks):

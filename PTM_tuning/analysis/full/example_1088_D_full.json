@@ -1,7 +1,0 @@
-{
-  "query_id": "1088_D",
-  "content_id": 2230,
-  "explanation": "Correct calculation: \\(10 + (-2) = 8\\)  \nStudent's calculation: \\(-8 + 1 = -7\\) (\u2260 8)\n\nThe student selected values without verifying they satisfy the equation. They likely assumed \\(x = -8\\) and \\(y = 1\\) would work without performing the sum, treating the equation as a placeholder for arbitrary number pairs rather than a constraint requiring validation. This directly aligns with the misconception of not ensuring solutions satisfy the equation(s), even in single-equation contexts. The error is distinct from sign confusion (they used negatives correctly) or substitution errors (no system to mix). Instead, it reflects a failure to check basic arithmetic validity.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

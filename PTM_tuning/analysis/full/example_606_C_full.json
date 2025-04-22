@@ -1,7 +1,0 @@
-{
-  "query_id": "606_C",
-  "content_id": 2017,
-  "explanation": "The correct calculation requires finding a number \\( x \\) such that \\( x^2 = 81 \\). Since \\( 9 \\times 9 = 81 \\), \\( \\sqrt{81} = 9 \\).\n\nThe student likely computed \\( 81 \\times 2 = 162 \\), treating the square root operation as equivalent to doubling. This reflects a belief that reversing squaring requires multiplication by 2 rather than identifying the original base. \n\nThe error stems from misapplying inverse operations: instead of solving \\( x^2 = 81 \\), the student incorrectly assumed squaring and its inverse are linear operations (doubling). This directly aligns with the misconception that the inverse of squaring is doubling, not root extraction. \n\nThis differs from multiplying by the root power (e.g., \\( 81^2 \\)) or squaring 81, which would produce larger values. The specific doubling mechanism matches the stated misconception rather than general confusion about squares and roots.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

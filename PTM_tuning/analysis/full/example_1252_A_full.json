@@ -1,7 +1,0 @@
-{
-  "query_id": "1252_A",
-  "content_id": 2408,
-  "explanation": "The correct calculation for Katie's subtraction shows that increasing the subtrahend by 2 (from 426 to 428) requires decreasing the result by 2: 3696 - 2 = 3694. The student likely assumed that since 428 > 426, the answer should increase similarly to how addition increases with larger addends. This reflects a failure to recognize that subtraction reverses the relationship between input changes and output changes - when the subtrahend grows, the difference shrinks. The error specifically involves misapplying additive reasoning (where larger inputs produce larger outputs) to a subtractive operation, rather than a general belief that subtraction is commutative or failure to invert operations. This precise confusion about directional relationships in subtraction distinguishes it from the listed related misconceptions.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

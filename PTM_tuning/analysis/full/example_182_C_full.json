@@ -1,7 +1,0 @@
-{
-  "query_id": "182_C",
-  "content_id": 2549,
-  "explanation": "The expression \\( p^2 - 16 \\) is a difference of squares, correctly factored as \\( (p+4)(p-4) \\). The student incorrectly wrote \\( p(p-16) \\), suggesting they treated \\( p^2 - 16 \\) as a quadratic with a common factor of \\( p \\). \n\nThis error arises from misapplying the distributive property: the student attempted to \"pull out\" \\( p \\) from \\( p^2 \\), leaving \\( p \\cdot p \\), but ignored that \\( -16 \\) cannot be expressed as \\( p \\cdot (-16) \\). The misconception stems from failing to recognize the structure of a difference of squares (two squared terms separated by subtraction), leading them to default to an invalid common factor approach. \n\nThis is distinct from confusing repeated roots or general quadratic factorization errors, as the mistake specifically bypasses the required identity \\( a^2 - b^2 = (a+b)(a-b) \\).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "551_B",
-  "content_id": 2535,
-  "explanation": "The marked reflex angle measures \\(240^\\circ\\), calculated as \\(360^\\circ - 120^\\circ\\) (where \\(120^\\circ\\) is the smaller angle). The student likely measured the smaller angle but misread the protractor's inner scale: \\(240^\\circ\\) on the outer scale corresponds to \\(60^\\circ\\) on the inner scale. They incorrectly assumed the inner scale reading \\(60^\\circ\\) applied to the reflex angle instead of recognizing \\(240^\\circ\\) as the actual measurement. This reflects a direct misapplication of protractor scales for reflex angles. The error is distinct from assuming angle size by appearance (which would not involve protractor scales) or reading the complementary angle (which would yield \\(30^\\circ\\) or \\(150^\\circ\\), not \\(60^\\circ\\)).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

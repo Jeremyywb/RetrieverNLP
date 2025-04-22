@@ -1,7 +1,0 @@
-{
-  "query_id": "352_B",
-  "content_id": 158,
-  "explanation": "Correct calculation:\n\\( (-6)^2 + 4 = 36 + 4 = 40 \\)\n\nStudent's likely error:\n\\( -6^2 + 4 = -36 + 4 = -32 \\) (incorrectly applied sign after squaring)  \nBut student answered 4, suggesting they instead calculated:  \n\\( (-6 + 4)^2 = (-2)^2 = 4 \\) (incorrect order of operations)\n\nSpecific flaw:\nThe student either (1) assumed squaring preserves negativity (\\(-6^2 = -36\\)), then inconsistently discarded the negative sign before adding 4, or (2) misapplied operations by adding before squaring. The answer 4 matches scenario (2), indicating a priority reversal between squaring and addition.\n\nDistinction from related misconceptions:\nThis is not about negative squares (which would yield -32) or symmetry, but about misordering operations. The error stems from treating \\(x^2 + 4\\) as \\((x + 4)^2\\) rather than following exponentiation-first hierarchy.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "1000_A",
-  "content_id": 891,
-  "explanation": "Correct Calculation:\n\\( \\frac{1-t}{t-1} = \\frac{-(t-1)}{t-1} = -1 \\)\n\nStudent's Error:\nInvalid term cancellation: \\( \\frac{1\\cancel{-t}}{\\cancel{t}-1} \\Rightarrow \\frac{-t}{-1} = t \\)\n\nKey Flaw:\nThe student treated subtraction as separable terms, cancelling 1 with the denominator's \\( t \\) and \\( -t \\) with \\( -1 \\). This violates fraction simplification rules requiring identical factors in numerator/denominator - not individual terms in sums/differences.\n\nMisconception Link:\nThis stems from viewing \\( 1-t \\) and \\( t-1 \\) as independent terms rather than recognizing their relationship as negatives. The error specifically involves invalid partial cancellation of variables across a subtraction expression, not merely dividing by different values or altering terms through addition.\n\nDistinction:\nUnlike general simplification errors, this specifically misapplies cancellation to unconnected components of a difference. Related misconceptions like dividing numerator/denominator by different values would produce different error patterns (e.g., \\( \\frac{1}{t} \\) instead of \\( t \\)).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

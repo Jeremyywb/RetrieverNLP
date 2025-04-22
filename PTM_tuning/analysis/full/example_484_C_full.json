@@ -1,7 +1,0 @@
-{
-  "query_id": "484_C",
-  "content_id": 207,
-  "explanation": "Correct calculation: The shape (likely a cone) has 1 edge - the circular base where two faces meet.\n\nIncorrect calculation: Student counted both the circular base and another straight line (likely the slant height or axis) as edges (1+1=2).\n\nSpecific flaw: The student interpreted a straight line in the diagram as representing a separate edge, rather than recognizing it as part of a continuous lateral face in 3D space.\n\nHow misconception caused error: Straight lines in 3D representations (like a cone's central axis or slant height) were misclassified as edges, which only occur where two faces meet.\n\nDistinction from related misconceptions: This differs from confusing faces/vertices or counting net lines, as the error specifically stems from misinterpreting dimensional features in a 3D rendering.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

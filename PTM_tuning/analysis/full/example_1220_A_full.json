@@ -1,7 +1,0 @@
-{
-  "query_id": "1220_A",
-  "content_id": 1893,
-  "explanation": "Correct calculation:\nUsing y = mx + c with m=4 and point (1,9):\n9 = 4(1) + c \u2192 c = 9 - 4 = 5 \u2192 y = 4x + 5\n\nStudent's error:\nSubstituted (1,9) but calculated:\n9 = 4 + c \u2192 c = 8 (presumed without subtracting 4 from 9)\n\nReasoning flaw:\nThe student treated the given y-value (9) as the y-intercept itself rather than recognizing it must satisfy y = mx + c. They failed to subtract the mx term (4\u00d71) from the y-coordinate when solving for c.\n\nMisconception link:\nThis directly stems from incorrectly believing the equation's constant term (c) equals the point's y-value regardless of the x-value's non-zero status, rather than calculating c = y - mx.\n\nDistinction:\nThis differs from confusing gradient with intercept (they used m=4 correctly) or using wrong x-coordinates (they used x=1 appropriately). The error specifically lies in mishandling the relationship between the given point and c's calculation.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

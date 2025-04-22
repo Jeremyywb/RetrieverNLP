@@ -1,7 +1,0 @@
-{
-  "query_id": "609_B",
-  "content_id": 2401,
-  "explanation": "The correct calculation multiplies days by hours per day: \\(365 \\times 24 = 8,\\!760\\).  \nThe student computed \\(365 \\times 60 = 21,\\!900\\), substituting 60 (minutes in an hour) for 24 (hours in a day).  \n\nThe error stems from misapplying the conversion factor between hours and minutes to days and hours. The student likely recognized that time conversions involve 60 but conflated \"minutes per hour\" with \"hours per day.\" This caused them to use 60 (a minute-hour relationship) instead of 24 (the correct day-hour relationship).  \n\nThe distinction lies in the unit hierarchy: the error isn't about minutes-to-seconds or incorrect minutes/hour values (e.g., 10 or 100), but specifically misplacing the 60-minute conversion into a context requiring days-to-hours. The misconception directly replaces the required days-to-hours multiplier with an unrelated minutes-per-hour factor.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

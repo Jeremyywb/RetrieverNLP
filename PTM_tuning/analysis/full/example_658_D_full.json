@@ -1,7 +1,0 @@
-{
-  "query_id": "658_D",
-  "content_id": 780,
-  "explanation": "The correct analysis shows \\( y = x^2 - 4 \\) is quadratic (non-linear) and \\( y = x - 4 \\) is linear. Both have \\( y \\)-intercepts at \\( (0, -4) \\), making Katie correct. The student's answer (\"Neither\") implies they rejected Katie's claim. \n\nThe error likely occurred when the student evaluated the \\( y \\)-intercept. If they mistakenly solved for \\( y = 0 \\) (x-intercepts) instead of \\( x = 0 \\), they would calculate \\( x^2 - 4 = 0 \\) (solutions \\( x = \\pm 2 \\)) and \\( x - 4 = 0 \\) (solution \\( x = 4 \\)), concluding the intercepts differ. This directly aligns with the misconception that the \\( y \\)-intercept occurs where \\( y = 0 \\), not \\( x = 0 \\). \n\nThis explanation distinguishes from other misconceptions: the student correctly identified \\( y = x^2 - 4 \\) as non-linear (rejecting Tom) but erred specifically in intercept interpretation, not function classification.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

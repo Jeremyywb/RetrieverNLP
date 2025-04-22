@@ -1,7 +1,0 @@
-{
-  "query_id": "763_C",
-  "content_id": 2425,
-  "explanation": "Correct calculation: The roots at x = -2 and x = 1 lead to the factored form \\( y = (x + 2)(x - 1) \\). Expanding this gives \\( y = x^2 + x - 2 \\), where the linear term (+x) arises from the sum of the roots (-2 + 1 = -1) with a sign change.\n\nStudent's error: The student wrote \\( y = x^2 - 2 \\), which omits the linear term. This implies they used factors whose constants multiply to -2 (e.g., \\( (x + \\sqrt{2})(x - \\sqrt{2}) \\)) but sum to 0, resulting in no x-term.\n\nReasoning flaw: The student selected numbers that multiply to the constant term (-2) but ignored their sum. They incorrectly assumed any pair of numbers with the correct product suffices, neglecting the requirement that their sum must match the linear coefficient.\n\nConnection to misconception: This directly aligns with the belief that factorisation only requires matching the constant term, not the linear term. The student prioritized the product of roots over their sum, leading to an incorrect middle term.\n\nDistinction from related errors: Unlike misconceptions about absolute values or coefficient origins, this error specifically stems from disregarding the sum of roots, focusing solely on their product.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

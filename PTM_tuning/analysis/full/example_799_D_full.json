@@ -1,7 +1,0 @@
-{
-  "query_id": "799_D",
-  "content_id": 1206,
-  "explanation": "Correct calculation:  \n\\( \\frac{5}{12} - \\frac{1}{6} = \\frac{5}{12} - \\frac{2}{12} = \\frac{3}{12} \\).  \n\nStudent's incorrect calculation:  \n\\( \\frac{5}{12} - \\frac{1}{6} = \\frac{5-1}{12} = \\frac{4}{12} \\).  \n\nThe student recognized that 12 was a common denominator but failed to adjust the numerator of \\( \\frac{1}{6} \\) when converting it to twelfths. They incorrectly kept the numerator as 1 instead of multiplying it by 2 (since \\( 6 \\times 2 = 12 \\)), leading to a subtraction of \\( \\frac{1}{12} \\) instead of \\( \\frac{2}{12} \\).  \n\nThis error directly stems from forgetting to scale the numerator when creating equivalent fractions, distinct from simply ignoring denominators or subtracting denominators. The student\u2019s process shows awareness of common denominators but misapplies the equivalence step.  \n\nDistinguishing factors:  \n- Not an issue of ignoring denominators entirely (denominator 12 was used).  \n- Not subtracting denominators (denominator remained 12).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

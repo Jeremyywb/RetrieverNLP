@@ -1,7 +1,0 @@
-{
-  "query_id": "1554_D",
-  "content_id": 1863,
-  "explanation": "Correct calculation: \\( 5\\,\\text{liters} \\times 1000\\,\\text{cm}^3/\\text{liter} = 5000\\,\\text{cm}^3 \\).\n\nStudent's error: \\( 5 \\times 10 = 50 \\).\n\nThe student incorrectly treated the conversion from liters to cubic centimeters as a linear relationship, multiplying by 10 instead of \\( 10^3 \\). This occurred because they applied the decimeter-to-centimeter conversion factor (10) directly to volume units without cubing it, resulting in \\( 10\\,\\text{cm}^3 \\) per liter rather than \\( 1000\\,\\text{cm}^3 \\). \n\nThis aligns with the misconception of not cubing unit conversions for volume, not merely misremembering \\( 1\\,\\text{liter} = 100\\,\\text{cm}^3 \\). If the student believed \\( 1\\,\\text{liter} = 100\\,\\text{cm}^3 \\), their answer would have been \\( 500 \\), not \\( 50 \\). The error is distinct from other listed misconceptions because it specifically involves mishandling the exponential nature of volume conversions.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

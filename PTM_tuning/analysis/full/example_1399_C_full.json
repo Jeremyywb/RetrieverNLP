@@ -1,7 +1,0 @@
-{
-  "query_id": "1399_C",
-  "content_id": 2266,
-  "explanation": "The correct relationship requires recognizing angles forming a full circle sum to \\(360\\degree\\). The student incorrectly calculated \\(180\\degree\\), suggesting they applied the straight-line angle total to a circular arrangement. This indicates they conflated the angle measure of a semicircle (straight line) with a full rotation. The error occurs when interpreting the spatial relationship: they treated angles completing a circular path as if they formed a linear pair. This aligns specifically with confusing full-circle properties (360\u00b0) with linear ones (180\u00b0), not with errors about vertical angles or circle sectors. Related misconceptions about straight lines summing to 360\u00b0 are contradicted here, as those would involve different spatial reasoning.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

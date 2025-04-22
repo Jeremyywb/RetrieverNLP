@@ -1,7 +1,0 @@
-{
-  "query_id": "771_D",
-  "content_id": 766,
-  "explanation": "The correct relationship is \\( t = \\frac{k}{p} \\), producing a hyperbolic curve where time decreases as people increase. The student plotted \\( t = kp \\), a linear direct proportion where time increases with people. \n\nThe error stems from interpreting \"more people\" as requiring \"more time\" rather than recognizing that increased workers reduce completion time. This led them to model an inverse relationship as direct proportion. \n\nThe misconception manifests in their assumption that increased workers correspond to increased time, directly linking quantities instead of seeing their reciprocal nature. While the graph's linearity is incorrect, the core flaw is misidentifying the relationship type rather than purely graphical confusion. This distinguishes it from misconceptions about graph shapes alone, as the error originated in proportional reasoning before graphical representation.",
-  "timestamp": "2025-04-20T14:44:28.633543",
-  "error": null
-}

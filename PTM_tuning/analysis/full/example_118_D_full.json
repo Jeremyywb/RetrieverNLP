@@ -1,7 +1,0 @@
-{
-  "query_id": "118_D",
-  "content_id": 2332,
-  "explanation": "Correct calculation: \\(\\frac{90+40}{2} \\times 50 = 3250\\ \\text{mm}^2\\) (with 5cm converted to 50mm as height).  \nStudent's likely calculation: \\(\\frac{90+40}{2} \\times 60 = 3900\\ \\text{mm}^2\\).  \n\nThe student incorrectly used the slant height (6cm = 60mm) instead of the perpendicular height (5cm = 50mm) in the formula. This directly substitutes the given slant length for \\(h\\), violating the requirement to use the perpendicular distance between the bases.  \n\nThe error matches the misconception of using slant height rather than perpendicular height, not unit conversion (measurements were already in compatible mm/cm units). The student correctly applied the trapezium formula structure but misidentified the height parameter.  \n\nDistinct from other misconceptions: the student did halve the sum of the bases (they computed \\(\\frac{90+40}{2}\\)) and used height rather than base as \\(h\\), ruling out those alternatives.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,0 +1,16 @@
+# requirements.txt
+# 注意：PyTorch 和 Faiss-GPU 需要根据 CUDA 版本通过 Conda 安装（见下方注释）
+
+# ==== PyTorch 安装命令（需手动选择 CUDA 版本）====
+# conda install pytorch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 pytorch-cuda=11.8 -c pytorch -c nvidia
+# 或通过 pip（不推荐）：
+# pip install torch==2.2.1+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+
+# ==== FAISS-GPU 安装命令 ====
+# conda install -c pytorch faiss-gpu=1.7.4 cudatoolkit=11.8
+
+# ==== 其他核心依赖 ====
+transformers>=4.40.0    # 模型加载与分词
+pandas>=2.0.3           # 数据处理
+tqdm>=4.66.0            # 进度条
+numpy>=1.23.5           # 数值计算

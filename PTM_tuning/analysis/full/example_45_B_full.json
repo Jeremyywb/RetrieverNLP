@@ -1,7 +1,0 @@
-{
-  "query_id": "45_B",
-  "content_id": 1911,
-  "explanation": "The correct calculation applies multiplication to both terms: \\(2 \\times (5a + 2) = 10a + 4\\).  \nThe student's incorrect calculation likely performed \\(2 \\times 2 = 4\\) but left \\(5a\\) unchanged, resulting in \\(5a + 4\\).  \n\nThe error occurred because the student multiplied only the constant term (2) by 2, failing to apply the operation to the entire expression \\(5a + 2\\). This shows a misunderstanding of distributing multiplication over addition in algebraic expressions.  \n\nThe misconception directly caused the error by treating \\(5a\\) and \\(2\\) as separate entities rather than parts of a single expression requiring full distribution.  \n\nThis differs from \"adds instead of multiplies\" because the student did multiply the constant term correctly but neglected the variable term. It also isn't a multi-step error, as only one operation was present.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

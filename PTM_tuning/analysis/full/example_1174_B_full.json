@@ -1,7 +1,0 @@
-{
-  "query_id": "1174_B",
-  "content_id": 800,
-  "explanation": "Correct calculation: \\( \\frac{3}{10} = 0.3 = 30\\% \\), \\( \\frac{7}{1000} = 0.007 = 0.7\\% \\). Sum: \\( 30\\% + 0.7\\% = 30.7\\% \\).\n\nStudent's error: Calculated \\( \\frac{3}{10} \\) as \\( 3\\% \\) (multiplying \\( 0.3 \\times 10 \\)) and \\( \\frac{7}{1000} \\) as \\( 0.7\\% \\), then added \\( 3\\% + 0.7\\% = 3.7\\% \\).\n\nThe student incorrectly multiplied \\( 0.3 \\) by \\( 10 \\) instead of \\( 100 \\) to convert to a percentage, treating the decimal as a direct percentage without proper scaling. This caused a systematic 10\u00d7 under-calculation for the first term. The second term was converted correctly (\\( 0.007 \\times 100 = 0.7\\% \\)), confirming the error was isolated to the first conversion. \n\nThis aligns with multiplying by 10 instead of 100 for percentage conversion, not with decimal addition errors or denominator issues. The student correctly added the percentages once they were (incorrectly) scaled, ruling out common denominator or carrying errors.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "1087_D",
-  "content_id": 2334,
-  "explanation": "Correct calculation: \\( 360^{\\circ} - 290^{\\circ} = 70^{\\circ} \\).  \nStudent's error: \\( 290^{\\circ} + 45^{\\circ} = 335^{\\circ} \\), implying an assumed total of \\( 335^{\\circ} \\).  \n\nThe student incorrectly believed the total angles around a point sum to \\( 335^{\\circ} \\), not \\( 360^{\\circ} \\). This flawed total led them to compute \\( x = 335^{\\circ} - 290^{\\circ} = 45^{\\circ} \\).  \n\nThis directly stems from misrecalling the total angle in a full circle. Unlike estimation errors or diagram misinterpretation, the error arises from an incorrect foundational fact (total angle) rather than visual approximation or arithmetic mistakes.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

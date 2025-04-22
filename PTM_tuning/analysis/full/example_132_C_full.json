@@ -1,7 +1,0 @@
-{
-  "query_id": "132_C",
-  "content_id": 811,
-  "explanation": "Correct solution for Tom's inequality:\n\\( -2m > 12 \\)  \nDivide both sides by -2 (reverse inequality):  \n\\( m < -6 \\)\n\nStudent's incorrect reasoning for Tom:\n\\( -2m > 12 \\)  \nDivide by -2 without flipping inequality:  \n\\( m > -6 \\)\n\nThe error occurs when dividing by a negative number without reversing the inequality direction. The student treated division by -2 as equivalent to division by a positive number, maintaining the original inequality orientation. This directly corresponds to the listed primary misconception about inequality reversal when dividing by negatives. \n\nDistinguishing from related errors: This isn't about misapplying inverse operations (like subtraction instead of division) or ignoring negative signs in expressions. The flawed step specifically involves inequality reversal rules during division with negative coefficients.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

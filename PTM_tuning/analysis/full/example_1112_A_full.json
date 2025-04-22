@@ -1,7 +1,0 @@
-{
-  "query_id": "1112_A",
-  "content_id": 1313,
-  "explanation": "Correct calculation: 120% of 50 = 1.2 \u00d7 50 = 60  \nStudent's incorrect calculation: 50 \u00f7 5 = 10  \n\nThe student likely converted 120% to 20% by misinterpreting the percentage value, then calculated 20% of 50 as (50 \u00f7 5) = 10. This error stems from a failure to recognize that percentages greater than 100% require calculations exceeding the original amount.  \n\nThe flaw occurred when the student treated 120% as if only the \"20\" portion mattered, ignoring the full percentage value. This aligns with misunderstanding percentages over 100%, not merely calculating 10% or division errors. Unlike the 10% misconception (which would yield 5), the error specifically reflects truncation of the percentage value due to unacknowledged magnitude.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "933_C",
-  "content_id": 1937,
-  "explanation": "To verify correctness:\n- For (5,7): 2(5) - 3 = 10 - 3 = 7 \u2714\ufe0f\n- For (-5,-7): 2(-5) - 3 = -10 - 3 = -13 \u2260 -7 \u274c\n\nThe student likely calculated:\n- For (5,7): Correct substitution as shown\n- For (-5,-7): Incorrectly assumed symmetry by reversing coordinates' signs without substitution: If (5,7) works, (-5,-7) must too\n\nThe error stems from assuming points mirroring (a,b) to (-a,-b) automatically lie on the line. This directly corresponds to the misconception about symmetry in tables of values. \n\nThe student did not make a calculation error with negatives (which would require 2(-5) being miscalculated as +10) or subtraction order (which would require 3 - 2x instead of 2x - 3). The mistake was geometric pattern recognition overriding algebraic verification.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "34_D",
-  "content_id": 228,
-  "explanation": "Correct calculation:  \n901,426  \n- \u00a010,000  \n= 891,426  \n\nStudent's incorrect calculation:  \n901,426 \u00f7 10,000 = 90.1426  \n\nThe student treated \"10,000 less than\" as division by 10,000 rather than subtraction. This stems from misinterpreting \"less than\" as a scaling operation (\u00f7) instead of a decrease (-). The error directly matches dividing the original number by 10,000, producing a decimal result.  \n\nThis distinguishes from place-value errors (which would preserve whole numbers) and scale-factor subtraction errors (e.g., misaligning digits). The flaw is specifically substituting division for subtraction due to misreading the problem's phrasing, not a mechanical arithmetic mistake.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

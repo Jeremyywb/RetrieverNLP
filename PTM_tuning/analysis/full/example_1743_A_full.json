@@ -1,7 +1,0 @@
-{
-  "query_id": "1743_A",
-  "content_id": 904,
-  "explanation": "Correct calculation:\n1. First increase: \u00a3150 \u00d7 1.60 = \u00a3240\n2. Second increase: \u00a3240 \u00d7 1.10 = \u00a3264\n3. Final percentage: (264/150) \u00d7 100 = 176%\n\nStudent's incorrect calculation:\n1. 60% + 10% = 70% total increase\n2. 150 \u00d7 1.70 = 255\n3. (255/150) \u00d7 100 = 170%\n\nThe error stems from adding percentage increases directly rather than applying them sequentially. The student treated the two percentage changes as cumulative additions to the original base amount (60%+10%=70%), failing to recognize that the second percentage must be calculated on the modified amount after the first increase. This aligns with the misconception of treating percentage increases as additive rather than multiplicative. \n\nThe distinction from related misconceptions: This isn't forgetting to add to 100% (the student did include the original amount in their 170%), but specifically mishandling how successive percentages interact. The error demonstrates arithmetic combination of percentages rather than incomplete calculations.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

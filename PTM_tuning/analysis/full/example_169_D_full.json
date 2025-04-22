@@ -1,7 +1,0 @@
-{
-  "query_id": "169_D",
-  "content_id": 727,
-  "explanation": "The correct formula combines a fixed \u00a340 call-out fee with \u00a315 multiplied by hours worked: \\( C=40+15n \\). The student's answer \\( C=40n+15 \\) erroneously applies the hourly rate to the constant and vice versa.\n\nThe error occurs in identifying which numerical value represents a fixed cost versus a variable rate. The student incorrectly associates the 40 (call-out fee) with the variable \\( n \\) (hours) rather than recognizing it as a one-time constant. This swaps the roles of additive constant and multiplicative coefficient.\n\nThe misconception manifests as misassigning coefficients to constants and variables in linear relationships. While the student correctly identified both numerical values, they reversed their roles: treating the fixed fee as variable-dependent (\u00a340n) and the hourly rate as fixed (\u00a315).\n\nThis differs from \"not adding the constant\" (which would omit 40 entirely) or \"not recognizing time as a variable\" (which might use a different variable). The core flaw is specifically in pairing constants/variables incorrectly rather than omitting or misidentifying variables.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

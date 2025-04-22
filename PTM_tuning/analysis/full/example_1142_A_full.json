@@ -1,7 +1,0 @@
-{
-  "query_id": "1142_A",
-  "content_id": 103,
-  "explanation": "Correct calculation:\nStarting with \\( p^2 - p -1 \\):\n1. Coefficient of p is -1. Halve it: \\( -1 \\times \\frac{1}{2} = -0.5 \\)\n2. Square it: \\( (-0.5)^2 = 0.25 \\)\n3. Rewrite as \\( (p - 0.5)^2 - 0.25 -1 \\), so \\( \\bigstar = -0.5 \\).\n\nStudent's error:\nThey likely took the coefficient of p (-1), doubled it to -2 (instead of halving), and placed it directly in the bracket as \\( (p - 2)^2 \\).\n\nSpecific flaw:\nThe student doubled the coefficient of p rather than halving it when forming the squared term. This directly stems from misapplying the formula's requirement to halve the linear coefficient. The error matches \"misuses formula leads to incorrect doubling,\" not merely using the coefficient as-is or confusing squaring/halving steps. The answer -2 specifically shows doubling occurred, distinguishing it from other misconceptions that would produce different values like -1.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

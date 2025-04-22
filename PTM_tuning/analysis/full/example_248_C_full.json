@@ -1,7 +1,0 @@
-{
-  "query_id": "248_C",
-  "content_id": 332,
-  "explanation": "A quadratic graph represents a parabola, characterized by a single U-shaped curve with one vertex. The student selected a graph with two distinct hyperbolic curves in different quadrants, which matches the shape of a reciprocal function (e.g., \\( y = \\frac{1}{x} \\)) rather than \\( y = ax^2 + bx + c \\). \n\nThe error stems from conflating the symmetry of a quadratic parabola with the asymptotic behavior of reciprocal graphs. The student likely focused on the presence of \"curves\" and \"steep changes\" but misidentified the graph type by associating rapid changes in direction (leveling off and near-parallel segments) with quadratic behavior. This directly aligns with mistaking reciprocal features (two hyperbola branches) for quadratic symmetry. \n\nThe distinction from exponential/cubic confusion is critical: exponential graphs lack symmetry, and cubic graphs have inflection points, neither of which match the student's description of two asymptotic curves. The error uniquely reflects a failure to recognize the defining single-curve structure of quadratics.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

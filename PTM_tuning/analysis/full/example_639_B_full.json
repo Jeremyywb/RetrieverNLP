@@ -1,7 +1,0 @@
-{
-  "query_id": "639_B",
-  "content_id": 467,
-  "explanation": "Correct calculation:\n900 - 263 = 637\n1. Units: 10-3=7 (borrow from tens)\n2. Tens: 8-6=2 (original 9 became 8 after first borrow, then 8-1=7 after second borrow)\n3. Hundreds: 7-2=5 (original 9 became 7 after two borrows)\n\nStudent's calculation:\n900 - 263 = 747\n1. Units: 10-3=7 (incorrectly left tens digit at 0 instead of 9)\n2. Tens: 10-6=4 (incorrectly left hundreds digit at 9 instead of 8)\n3. Hundreds: 9-2=7 (failed to account for both borrows)\n\nThe student treated each digit column independently when borrowing, neglecting to reduce the preceding digit after each borrow. This caused both the tens and hundreds places to remain artificially high (0 instead of 9 in tens, 9 instead of 7 in hundreds). The error matches the misconception of not adjusting preceding digits during borrowing, not merely subtracting smaller digits from larger ones (which would produce different digit errors) or basic subtraction mistakes.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

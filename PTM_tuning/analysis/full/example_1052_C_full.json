@@ -1,7 +1,0 @@
-{
-  "query_id": "1052_C",
-  "content_id": 2446,
-  "explanation": "Correct calculation: The difference between consecutive triangle numbers \\( T_n \\) and \\( T_{n+1} \\) is \\( n+1 \\). Given \\( T_{15} = 120 \\) and \\( T_{16} = 136 \\), the next difference is \\( 17 \\), yielding \\( 136 + 17 = 153 \\).\n\nStudent's error: They likely subtracted \\( 1 \\) from the previous difference (\\( 16 \\)), incorrectly assuming the differences decrease, and added \\( 15 \\) to \\( 136 \\), resulting in \\( 151 \\).\n\nSpecific flaw: The student misapplied the rule for triangle number differences, treating them as decreasing by \\( 1 \\) instead of increasing. This reflects a fundamental misunderstanding of how triangle numbers grow.\n\nConnection to misconception: The error stems from assuming an incorrect sequence formation rule (decreasing differences) rather than using the formula \\( T_{n+1} - T_n = n+1 \\). \n\nDistinction: This differs from adding fixed numbers (e.g., repeating \\( 16 \\)) or Fibonacci-style addition (\\( 120 + 136 \\)), as the student altered the difference based on a flawed pattern.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

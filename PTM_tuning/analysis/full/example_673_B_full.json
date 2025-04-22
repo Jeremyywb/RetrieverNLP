@@ -1,7 +1,0 @@
-{
-  "query_id": "673_B",
-  "content_id": 563,
-  "explanation": "The correct reflection across y=x swaps coordinates: (3,2) \u2192 (2,3).  \nThe student's answer (1,2) suggests they altered the x-coordinate while keeping y=2.  \nThis indicates they likely treated the reflection line as a vertical axis (x=2), calculating 3 - (3-2)*2 = 1, rather than swapping coordinates for y=x.  \nThe error stems from misidentifying the reflection line as vertical instead of y=x, causing incorrect horizontal adjustment.  \nThis differs from the related \"switches coordinates\" misconception, which would produce (2,3) if misapplied to another line.  \nThe specific vertical-line assumption explains the x=1 result better than other listed misconceptions.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

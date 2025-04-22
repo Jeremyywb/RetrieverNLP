@@ -1,7 +1,0 @@
-{
-  "query_id": "1392_A",
-  "content_id": 2331,
-  "explanation": "Correct calculation:\n1. Total students = (Science students) \u00d7 (360\u00b0 / Science angle) = 18 \u00d7 (360/36) = 180\n2. French students = (French angle / 360\u00b0) \u00d7 total students = (108/360) \u00d7 180 = 54\n\nStudent's incorrect calculation:\n1. French students = (French angle) \u00d7 (Science students / 360\u00b0) = 108 \u00d7 (18/360) = 108 \u00d7 0.05 = 5.4 \u2192 Rounded to 36 (error here)\n\nReasoning flaw:\nThe student treated the total frequency (360\u00b0) as the total number of students rather than calculating the actual total. They directly multiplied French's angle by the ratio of Science students to 360\u00b0, incorrectly assuming degrees directly scale to student count without establishing the proportionality constant (students per degree).\n\nMisconception link:\nThis error stems from conflating angular measure with total population size. The student applied the formula (sector angle/360\u00b0) \u00d7 total_angle (360) instead of (sector angle/360\u00b0) \u00d7 actual_total_students (180), demonstrating a failure to recognize that 360\u00b0 represents proportions, not quantities.\n\nDistinction from related misconceptions:\nUnlike misconceptions about visual judgment or percentage/degree confusion, this error specifically misapplies angle-frequency proportionality by using 360 as the total quantity rather than a scaling factor.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

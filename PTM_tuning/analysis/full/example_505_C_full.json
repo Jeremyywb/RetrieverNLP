@@ -1,7 +1,0 @@
-{
-  "query_id": "505_C",
-  "content_id": 326,
-  "explanation": "Correct calculation: If \\( \\frac{3}{7} \\) are boys, the remaining \\( \\frac{4}{7} \\) are girls. The ratio of boys to girls is \\( 3:4 \\), derived from the numerators when total parts = 7.\n\nStudent's error: They calculated \\( 3:10 \\), likely reasoning as follows:\n1. Interpreted \\( \\frac{3}{7} \\) as \"3 boys per 7 girls\" (misassigning denominator as girls).\n2. Added 3 (boys) + 7 (incorrectly assumed girls) = 10 total, then used this total as the girls' count.\n\nSpecific flaw: The student treated the denominator (7) as the girls' quantity rather than the total parts. This caused them to miscalculate the girls as 7 and then incorrectly use the total (10) as the girls' value in the ratio.\n\nDistinction: Unlike the related misconception of directly using numerator:denominator (3:7), this error further conflates the total with the girls' count through addition, leading to 3:10 instead of 3:7.\n\nThe core failure was misidentifying the denominator's role (total parts) and introducing an extraneous summation step to derive the invalid ratio.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

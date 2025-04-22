@@ -1,7 +1,0 @@
-{
-  "query_id": "288_C",
-  "content_id": 1792,
-  "explanation": "Correct calculation: \\(3^{-5} = \\frac{1}{3^5} = \\frac{1}{243}\\).\n\nStudent's calculation: \\(3^{-5} = 3 \\times (-5) = -15\\).\n\nThe student treated the exponent as a multiplicative factor rather than an instruction for repeated multiplication. This caused them to multiply 3 by -5 directly instead of computing \\(3^5\\) and taking the reciprocal. The error stems from conflating exponential notation (\\(a^n\\)) with linear scaling (\\(a \\times n\\)), bypassing the required multi-step process for negative exponents. This matches the misconception of misinterpreting index notation as simple multiplication rather than exponentiation. It differs from \"repeated addition\" errors because the result (-15) specifically reflects a single multiplication operation, not accumulated additions or misapplied cubing rules.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

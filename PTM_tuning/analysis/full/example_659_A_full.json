@@ -1,7 +1,0 @@
-{
-  "query_id": "659_A",
-  "content_id": 654,
-  "explanation": "The correct calculation for each interior angle in a regular 18-sided polygon is \\(\\frac{(18-2) \\times 180}{18} = \\frac{16 \\times 180}{18} = 160^\\circ\\). \n\nTom's incorrect calculation \\(\\frac{20 \\times 180}{18}\\) implies he used \\(18+2\\) instead of \\(18-2\\) when calculating the total interior angles. This shows a flaw in applying the formula for the sum of interior angles: he added 2 to the number of sides rather than subtracting 2. \n\nThe student accepted Tom's formula, indicating they believed the total interior angle sum is \\((n+2) \\times 180^\\circ\\) instead of \\((n-2) \\times 180^\\circ\\). This directly aligns with the primary misconception of adding instead of subtracting 2. \n\nThe error is distinct from related misconceptions like multiplying \\(n \\times 180\\) (Tom used \\(n+2\\), not \\(n\\)) or confusing interior/exterior angles (Katie\u2019s error, which the student rejected). The student correctly divided the total by \\(n\\), ruling out the \"forgot to divide\" misconception.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "1646_D",
-  "content_id": 1908,
-  "explanation": "Correct calculation:  \n(m+50) + (2m+n) + (220-2m) = 360  \nSimplifies to:  \n(m + 2m - 2m) + n + (50 + 220) = 360 \u2192 m + n + 270 = 360 \u2192 m + n = 90  \n\nStudent's error:  \nThey likely wrote:  \n(m+50) + (2m+n) + (220-2m) = 360 \u2192 m + n = 360  \n\nFlaw:  \nThe student omitted the constant terms (50 and 220) when summing the angles. They treated the variable terms (m, 2m, -2m, n) as the total sum, ignoring the numerical values entirely.  \n\nMisconception link:  \nThis reflects a failure to recognize that angle expressions combine variables and constants, all contributing to the total. The error matches ignoring parts of the labeled angle measures rather than unlabeled angles.  \n\nDistinction:  \nUnlike \"angles sum to 180,\" the student correctly used 360 as the total. The error isn't about coefficients but about excluding constants in the sum.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

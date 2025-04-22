@@ -1,7 +1,0 @@
-{
-  "query_id": "7_B",
-  "content_id": 2123,
-  "explanation": "Correct calculation: \\(43.2 \\div 10 = 4.32\\) (decimal moves one place left).  \nStudent's calculation: \\(43.2 \\div 10 = 0.432\\) (decimal moved two places left).  \n\nThe student incorrectly shifted the decimal point two places instead of one when dividing by 10. This occurred because they likely conflated the number of zeros in the divisor (10 has one zero) with the number of decimal shifts required, adding an extra shift. The error matches moving the decimal too far left, distinct from misapplying division direction (e.g., moving right) or ignoring the original decimal placement. Related misconceptions like \"10 times smaller\" are consequences of this over-shifting, not the root cause.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

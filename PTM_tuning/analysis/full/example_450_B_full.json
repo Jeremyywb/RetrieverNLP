@@ -1,7 +1,0 @@
-{
-  "query_id": "450_B",
-  "content_id": 1431,
-  "explanation": "Correct calculation:\n\\( 1 \\frac{2}{3} = \\frac{5}{3} \\), then \\( \\frac{5}{3} + \\frac{1}{3} = \\frac{6}{3} = 2 \\).\n\nStudent's likely error:\nThey added the whole number directly to both fraction numerators: \\( 1 + (2 + 1) = 4 \\), ignoring denominator handling.\n\nReasoning flaw:\nThe student treated the whole number as a separate term to combine with numerators instead of converting the mixed number to a fraction. This caused them to sum \\( 1 + 2 + 1 \\) instead of \\( \\frac{5}{3} + \\frac{1}{3} \\).\n\nConnection to misconception:\nThis matches \"When adding an integer to a fraction, thinks you add the integer to the numerator,\" as they combined the whole number with numerators arithmetically.\n\nDistinction from related errors:\nUnlike improper fraction conversion errors (which would alter denominators), this error stems from mishandling the whole number's role in addition, not multiplication or denominator operations.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

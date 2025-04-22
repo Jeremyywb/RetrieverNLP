@@ -1,7 +1,0 @@
-{
-  "query_id": "411_C",
-  "content_id": 1978,
-  "explanation": "Correct calculation: Starting with number \\( x \\), \\( x +97 = (x +100) -3 \\). This adjusts for the extra 3 added when using 100 instead of 97.\n\nStudent's incorrect calculation: \\( x -100 +3 = x -97 \\). This subtracts 97 instead of adding it.\n\nThe student treated addition of 97 as an inverse operation, first subtracting 100 (as if compensating for a larger number) but then incorrectly added 3 instead of subtracting it. This converts \\( +97 \\) into \\( -97 \\), reversing the intended operation entirely.\n\nThis error stems from misapplying inverse operations: the student recognized 97 is 3 less than 100 but incorrectly used subtraction for the initial step (mirroring the \"subtracts instead of adds\" misconception) and failed to preserve the original operation's direction. The error isn't about commutativity or consecutive subtractions but specifically substituting addition with subtraction in the primary step.\n\nThe student's answer aligns with the misconception \"subtracts instead of adds,\" not confusion about operation order or additive inverses. Their method inverts the intended operation at the outset, making it fundamentally distinct from other listed misconceptions.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

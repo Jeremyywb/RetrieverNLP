@@ -1,7 +1,0 @@
-{
-  "query_id": "1156_C",
-  "content_id": 658,
-  "explanation": "Correct calculation: \\( \\frac{8}{20} = 0.4 \\), then \\( 0.4 \\times 100 = 40\\% \\).\n\nStudent's error: Likely multiplied \\( 8 \\times 2 = 16 \\), treating the denominator 20 as requiring multiplication by 2 to reach a percentage. \n\nThe flaw stems from incorrectly associating the denominator 20 with doubling the numerator instead of recognizing the need to scale to 100. To convert \\( \\frac{8}{20} \\), multiplying numerator and denominator by 5 achieves \\( \\frac{40}{100} = 40\\% \\). The student misapplied a scaling factor of 2 instead of 5, directly linking to the misconception of multiplying by 2 when encountering 20. \n\nThis differs from multiplying numerator/denominator directly (which would yield \\( 8 \\times 20 = 160 \\)) or reversing the fraction (which would produce \\( 250\\% \\)). The error is uniquely tied to an incorrect scaling factor choice, not arithmetic errors or inversion.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

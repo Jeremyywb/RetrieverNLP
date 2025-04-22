@@ -1,7 +1,0 @@
-{
-  "query_id": "1206_A",
-  "content_id": 1792,
-  "explanation": "Correct calculation:\n\\( P = 4^{-3} = \\frac{1}{4^3} = \\frac{1}{64} \\)\n\nStudent's incorrect calculation:\n\\( 4 \\times (-3) = -12 \\)\n\nThe student treated the exponent \\(-3\\) as a multiplicative coefficient instead of performing exponentiation. This caused them to multiply \\(4\\) by \\(-3\\) directly, bypassing the reciprocal relationship and repeated multiplication inherent in negative exponents. The error stems from conflating exponential notation (\\(4^k\\)) with linear scaling (\\(4 \\times k\\)), ignoring the fundamental operation of exponents as iterated multiplication. \n\nThis explanation aligns with the primary misconception (exponents as coefficients) rather than repeated addition or index multiplication errors, as the numerical result \\(-12\\) specifically matches coefficient multiplication (\\(4 \\times -3\\)), not additive processes.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

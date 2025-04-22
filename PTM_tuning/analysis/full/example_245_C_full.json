@@ -1,7 +1,0 @@
-{
-  "query_id": "245_C",
-  "content_id": 1313,
-  "explanation": "To increase 160 by 30%, the correct calculation is:  \n160 + (0.30 \u00d7 160) = 160 + 48 = 208.  \n\nThe student likely calculated 0.30 \u00d7 160 = 48 and treated this as the final answer.  \n\nThe error stems from interpreting \"increase by 30%\" as simply calculating 30% of the original amount, rather than adding that percentage to the original value. The student isolated the percentage value (48) but omitted the critical step of combining it with the base amount (160).  \n\nThis aligns with misapplying the concept of percentage increase as a standalone value instead of a relative addition. It differs from related misconceptions like misunderstanding percentage calculation itself, as the student correctly computed 30% of 160 but misapplied the operation required by \"increase by.\"",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

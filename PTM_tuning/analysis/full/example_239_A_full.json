@@ -1,7 +1,0 @@
-{
-  "query_id": "239_A",
-  "content_id": 951,
-  "explanation": "The correct answer recognizes that quadratic functions can have either positive or negative leading coefficients, resulting in upward or downward opening parabolas. The student concluded only Tom's upward-opening parabola was valid. Their error stems from incorrectly assuming that all quadratic graphs must open upward, overlooking the role of the coefficient in determining orientation. This aligns with a failure to recognize that quadratics are defined by their degree (second-order term), not the direction they open. The misconception differs from confusing quadratic graphs with other function types (e.g., cubic or exponential), as the student correctly identified both graphs as potential quadratics but excluded one based solely on directionality.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

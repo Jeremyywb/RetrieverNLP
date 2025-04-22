@@ -1,7 +1,0 @@
-{
-  "query_id": "207_D",
-  "content_id": 220,
-  "explanation": "Correct calculation:\n- Expand \\( x(3x-5) \\): \\( 3x^2 -5x \\)\n- Expand \\( 6(2x-3) \\): \\( 12x -18 \\)\n- Combine terms: \\( 3x^2 +7x -18 \\)\n- \\( R = -18 \\)\n\nStudent's error:\n- Likely computed \\( 6(2x) =12x \\) but treated \\(6(-3)\\) as \\(-3\\) instead of \\(-18\\)\n- Final expression became \\( 3x^2 +7x -3 \\)\n\nSpecific flaw:\nThe student distributed \\(6\\) to \\(2x\\) but failed to apply it to the \\(-3\\) term in \\(6(2x-3)\\). This indicates they only partially applied the distributive property, multiplying the coefficient by the first term in the parentheses while neglecting the second term. The error directly stems from incomplete application of distribution, not from omitting parentheses or misordering operations. Related misconceptions like ignoring parentheses entirely would affect multiple terms, but here the error is localized to the constant term's calculation.\n\nDistinction:\nUnlike general order-of-operation errors, this specifically shows selective distribution (applying multiplication to one term but not another in the same parentheses).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

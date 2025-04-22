@@ -1,7 +1,0 @@
-{
-  "query_id": "1130_C",
-  "content_id": 100,
-  "explanation": "Correct calculation:\n4x + (2x - 12) + (4x + 42) = 180  \n10x + 30 = 180  \n10x = 150  \nx = 15  \n\nStudent's likely calculation:\n4x + (2x - 12) + (4x + 42) = 360  \n10x + 30 = 360  \n10x = 330  \nx = 33  \n\nThe student incorrectly assumed triangle angles sum to 360\u00b0 instead of 180\u00b0. This caused them to set the equation equal to 360\u00b0, leading to an answer exactly triple the correct value (330 vs 110 total terms). The error directly stems from misapplying angle sums for quadrilaterals to triangles. This distinguishes it from inverse-operation errors or coefficient misunderstandings, as the equation structure and coefficient handling were otherwise correct.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "2_A",
-  "content_id": 1287,
-  "explanation": "The original range is \\(42\\,\\text{cm} - 13\\,\\text{cm} = 29\\,\\text{cm}\\). When halving all values, the new maximum becomes \\(21\\,\\text{cm}\\) and minimum \\(6.5\\,\\text{cm}\\), producing a range of \\(14.5\\,\\text{cm}\\). When adding \\(3\\,\\text{cm}\\), both maximum and minimum increase by \\(3\\,\\text{cm}\\), preserving the range at \\(29\\,\\text{cm}\\).\n\nThe student incorrectly assumed that proportional scaling (division by 2) preserves range differences. They calculated \\(42 \\div 2 = 21\\,\\text{cm}\\) and \\(13 \\div 2 = 6.5\\,\\text{cm}\\) but failed to recognize that \\(21 - 6.5\\) reduces the range proportionally. This stems from treating multiplicative scaling as equivalent to additive shifts for spread preservation.\n\nThe error directly arises from conflating multiplicative and additive relationships in spread calculations. The student applied uniform scaling but did not adjust their understanding of how it affects differences between extremes. This contrasts with related errors like misapplying additive constants multiplicatively, which does not apply here since the student correctly performed division but misinterpreted its statistical effect.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

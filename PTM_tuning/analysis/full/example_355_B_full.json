@@ -1,7 +1,0 @@
-{
-  "query_id": "355_B",
-  "content_id": 2355,
-  "explanation": "The correct order of rotational symmetry for a parallelogram is 2, achieved through 180\u00b0 and 360\u00b0 rotations matching the original shape. An irregular quadrilateral (with no equal sides or angles) has rotational symmetry of order 1, as it only coincides with itself after a full 360\u00b0 rotation.\n\nThe student incorrectly concluded that an irregular quadrilateral has higher rotational symmetry. Their reasoning likely assumed quadrilaterals inherently gain symmetry proportional to their number of sides, without analyzing specific properties like equal opposite sides or angles. This reflects a failure to connect rotational symmetry to the presence of congruent features that allow alignment after partial rotation.\n\nThe misconception caused the error by prioritizing the generic category \"quadrilateral\" over the structural properties that enable rotational symmetry. Unlike the related misconception about rectangle symmetry order, this error specifically stems from not identifying how a parallelogram's geometric constraints create rotational equivalence, even among quadrilaterals.\n\nThis distinction is critical: the error isn't about miscounting symmetry orders (e.g., claiming order 3 instead of 4 for a square) but about missing the relationship between a shape's defining traits and its symmetry.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

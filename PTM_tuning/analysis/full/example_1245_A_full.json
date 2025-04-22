@@ -1,7 +1,0 @@
-{
-  "query_id": "1245_A",
-  "content_id": 1701,
-  "explanation": "The correct quadratic equation derived from the trapezium area formula is \\(x^2 + x - 12 = 0\\), which factors to \\((x + 4)(x - 3) = 0\\). Solving these factors gives \\(x = -4\\) and \\(x = 3\\). \n\nThe student likely factored the equation correctly but incorrectly solved \\(x + 4 = 0\\) as \\(x = 4\\) instead of \\(x = -4\\). This indicates they failed to apply the necessary sign change when isolating \\(x\\), treating the constant term as a positive value rather than negating it. \n\nThe error directly stems from misinterpreting the relationship between the factorized form and its roots. The student assumed the solution to \\(x + 4 = 0\\) is the absolute value of the constant term (4) rather than its negative counterpart (-4). This aligns with the misconception that solutions are derived from the constants' magnitudes without properly accounting for sign changes during solving.\n\nThis flaw differs from other listed misconceptions (e.g., misapplying sign rules in multiplication or squaring) because it specifically pertains to extracting roots from factorized quadratics. The error occurs at the linear-equation-solving stage within the quadratic context, not in earlier algebraic manipulations.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

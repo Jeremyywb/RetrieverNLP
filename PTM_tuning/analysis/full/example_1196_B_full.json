@@ -1,7 +1,0 @@
-{
-  "query_id": "1196_B",
-  "content_id": 1735,
-  "explanation": "To apply the quadratic formula, the equation must be in standard form \\(ax^2 + bx + c = 0\\). Starting with \\(p^2 - 16 = p\\), the correct step is to subtract \\(p\\) from both sides, yielding \\(p^2 - p - 16 = 0\\). \n\nThe student instead added \\(16\\) to both sides, resulting in \\(p^2 = p + 16\\). This fails to isolate all terms on one side of the equation, leaving it unsolvable via the quadratic formula as written. The error stems from prioritizing elimination of the constant term (\\(-16\\)) rather than aligning all variable terms to establish a valid quadratic form. \n\nThis reflects a misapplication of inverse operations: the student treated the constant term as the primary obstacle, using addition to \"cancel\" \\(-16\\), rather than recognizing that moving the \\(p\\) term was necessary to achieve \\(0\\) on one side. The error is distinct from confusion about addition/subtraction inverses or misremembering the quadratic formula itself, as the mistake centers on selecting which term to relocate rather than arithmetic reversal.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

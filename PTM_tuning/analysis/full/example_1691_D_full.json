@@ -1,7 +1,0 @@
-{
-  "query_id": "1691_D",
-  "content_id": 1655,
-  "explanation": "Correct calculation:  \nConvert to common denominator (40):  \n\\( \\frac{5}{8} = \\frac{25}{40}, \\frac{1}{5} = \\frac{8}{40} \\)  \nSubtract numerators: \\( 25 - 8 = 17 \\) \u2192 \\( \\frac{17}{40} \\).\n\nStudent's error:  \nThey subtracted numerators directly: \\( 5 - 1 = 4 \\), and multiplied denominators: \\( 8 \\times 5 = 40 \\), resulting in \\( \\frac{4}{40} = \\frac{1}{10} \\).\n\nFlawed reasoning:  \nThe student treated subtraction of fractions as requiring multiplication of denominators (like fraction multiplication) instead of finding a common denominator. This conflates two distinct operations: subtraction requires aligned denominators through a common denominator, while multiplication uses direct denominator multiplication. \n\nConnection to misconception:  \nThe error stems from not recognizing the necessity of a common denominator for subtraction. Instead, they incorrectly applied a hybrid method: subtracting numerators (as in correct subtraction) but multiplying denominators (as in multiplication). This distinct misapplication separates it from related errors like retaining original denominators or improper simplification.\n\nDistinction from related misconceptions:  \nUnlike errors where denominators are kept or the highest is chosen, here the student combined subtraction with denominator multiplication, reflecting a unique blend of incorrect procedures rather than a simpler oversight.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

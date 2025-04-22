@@ -1,7 +1,0 @@
-{
-  "query_id": "167_D",
-  "content_id": 2109,
-  "explanation": "The correct calculation determines the scale by dividing the total span (-10 to 2 = 12 units) by the number of intervals (6), yielding 2 units per interval. The middle (4th) dash is at -10 + 3\u00d72 = -4.\n\nThe student likely calculated 2 + (3\u00d72) = 8, treating the bottom dash as 0 instead of -10. This stems from assuming the number line starts at zero, causing them to incorrectly anchor the scale. They preserved the correct interval size (2 units) but misapplied it to a 0-based system rather than the given -10 starting point. This differs from misconceptions about interval size (e.g., assuming 10 or 1 per dash) because the student correctly identified 2 units per interval but mislocated the origin.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "1088_C",
-  "content_id": 2487,
-  "explanation": "The correct solution requires \\( x + y = 8 \\). Substituting \\( x=10 \\) and \\( y=-2 \\): \\( 10 + (-2) = 8 \\), which satisfies the equation. The student's answer \\( x=8 \\), \\( y=1 \\) results in \\( 8 + 1 = 9 \\neq 8 \\). \n\nThe student likely assumed \\( x=8 \\) aligns with the equation's constant term (8) but failed to adjust \\( y \\) to ensure the sum equals 8. This demonstrates a failure to recognize that both variables must collectively satisfy the equation, not just one. The error directly stems from not verifying the solution's validity by substituting both values into the equation. \n\nThis differs from \"substitutes incorrectly\" (a mechanical error in substitution steps) or \"wrong variable\" (assigning values meant for one variable to another), as the student selected values without testing their combined result.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

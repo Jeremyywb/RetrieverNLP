@@ -1,7 +1,0 @@
-{
-  "query_id": "1090_C",
-  "content_id": 2046,
-  "explanation": "Correct calculation:\n(6x - x) + (-2y + 3y) = 5x + y\n\nStudent's incorrect calculation:\n6x + (-x) \u2192 7x (instead of 5x)\n-2y + 3y \u2192 5y (instead of y)\n\nThe student treated all coefficients as absolute values: they added 6x + x (misreading \"-x\" as \"+x\"), and added 2y + 3y (treating \"-2y\" as \"+2y\"). This shows they failed to preserve the original signs of terms when combining like terms, specifically ignoring negative coefficients. The error matches the primary misconception of assigning positivity/negativity incorrectly, not merely arithmetic errors with signed numbers. It differs from \"adds instead of subtracts\" because the operation between terms was preserved (addition), but the terms themselves were misread.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

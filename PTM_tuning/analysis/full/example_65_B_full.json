@@ -1,7 +1,0 @@
-{
-  "query_id": "65_B",
-  "content_id": 2316,
-  "explanation": "Correct calculation:\n1. Rearrange equation to standard form: \\( h^2 - 5h + 4 = 0 \\)\n2. Identify coefficients: \\( a = 1 \\), \\( b = -5 \\), \\( c = 4 \\)\n3. Discriminant: \\( (-5)^2 - 4(1)(4) = 25 - 16 = 9 \\)\n\nStudent's error:\n- Likely kept the equation as \\( h^2 + 4 = 5h \\), using \\( b = 5 \\) (from \\( 5h \\)) instead of \\( -5 \\)\n- Computed \\( b = 5 \\), then incorrectly calculated \\( -2b = -10 \\) instead of \\( b^2 \\)\n\nSpecific flaw:\nThe student failed to move \\( 5h \\) to the left side, misidentifying \\( b \\) as \\( 5 \\) instead of \\( -5 \\). This led them to improperly derive the discriminant's first term. Their answer \\( -10 \\) suggests they confused the linear term coefficient \\( b \\) with a term requiring scaling (e.g., misapplying \\( -2b \\) instead of \\( b^2 \\)), directly caused by not standardizing the equation first.\n\nDistinction from related misconceptions:\nUnlike errors in handling coefficients of unrearranged terms or misapplying the quadratic formula to non-standard forms, this error specifically stems from retaining \\( 5h \\) on the right, corrupting the \\( b \\)-value used in calculations.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

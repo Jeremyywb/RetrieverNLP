@@ -1,7 +1,0 @@
-{
-  "query_id": "1610_D",
-  "content_id": 382,
-  "explanation": "The correct calculation uses subtractive notation: 900 = 1000 - 100 = M - C = CM.  \nThe student wrote CCCCCCCCC (9\u00d7C), calculating 9\u00d7100=900 through repeated addition.  \nThe error stems from using additive repetition instead of subtractive notation, violating the 3-symbol repetition rule.  \nThis shows the student equated Roman numerals to simple base-10 addition without recognizing the positional subtractive principle (e.g., CM\u2260CCCCCCCCC).  \nThe error aligns with repeatedly breaking the three-symbol limit rather than misapplying allowed subtractive pairs (like IX vs. VIV), since all repeated Cs remain identical.  \nIt specifically demonstrates additive repetition rather than a misunderstanding of which letters can precede others in subtraction.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

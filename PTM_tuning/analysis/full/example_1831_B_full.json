@@ -1,7 +1,0 @@
-{
-  "query_id": "1831_B",
-  "content_id": 962,
-  "explanation": "Correct calculation: \\(1\\,\\text{m}^3 = (100\\,\\text{cm})^3 = 100^3\\,\\text{cm}^3 = 1,\\!000,\\!000\\,\\text{cm}^3\\).\n\nStudent's error: Calculated \\(1\\,\\text{m}^3 = 1 \\times 100\\,\\text{cm}^3 = 1000\\,\\text{cm}^3\\).\n\nSpecific flaw: The student treated the unit conversion as a linear scaling (multiplying by 100 once) instead of a volumetric scaling (cubing 100). This occurred because they failed to recognize that converting cubic units requires applying the conversion factor to all three spatial dimensions.\n\nConnection to misconception: The error directly stems from not cubing the meter-to-centimeter conversion factor (100). The student converted 1D length instead of 3D volume, showing they conflated linear and cubic unit conversions.\n\nDistinguishing factors: This differs from confusing liters with cubic centimeters (a separate unit relationship issue) or general misunderstandings about scale factors in unrelated geometric contexts. The error is purely about unit conversion mechanics for cubed measures.\n\nCritical misstep: The student's arithmetic stopped at \\(10^3 = 1000\\) (incorrectly equating \"cubic\" to multiplying by 10\u00b3) instead of \\(100^3 = 1,\\!000,\\!000\\).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

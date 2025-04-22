@@ -1,7 +1,0 @@
-{
-  "query_id": "79_D",
-  "content_id": 1880,
-  "explanation": "The quadratic \\( y = x^2 - x - 6 \\) crosses the x-axis at \\( x = -2 \\) and \\( x = 3 \\), opening upward. The inequality \\( y \\geq 0 \\) holds where the parabola is above or on the x-axis: \\( x \\leq -2 \\) or \\( x \\geq 3 \\). The student incorrectly wrote \\( x \\geq -2 \\) or \\( x \\leq 3 \\), which represents the interval between the roots where \\( y < 0 \\).\n\nThe error stems from reversing the solution intervals. The student identified the parabola's \"valley\" (between roots) as satisfying \\( y \\geq 0 \\), failing to recognize upward-opening parabolas require union solutions outside the roots. This directly aligns with inverting the solution direction rather than misapplying inequality symbols or misjudging \\( y > a \\) vs. \\( y < a \\). Related misconceptions about symbol directions or inequality reversal are less applicable, as the error specifically involves interval selection rather than symbol manipulation.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

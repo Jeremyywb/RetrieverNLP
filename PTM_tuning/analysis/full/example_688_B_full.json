@@ -1,7 +1,0 @@
-{
-  "query_id": "688_B",
-  "content_id": 114,
-  "explanation": "The two angles form a straight line, requiring their measures to sum to \\(180^\\circ\\). The student incorrectly stated \"they are parallel\" instead of recognizing the supplementary relationship. \n\nThe error stems from misapplying geometric terminology about lines (parallelism) to angle measures themselves. The student confused the linear pair relationship (angle measures) with line properties (parallelism), though no parallel lines are present in this configuration. \n\nThis specifically shows a failure to distinguish between angle measurement facts and line position relationships. It differs from confusing co-interior angles (which require parallel lines) or misusing parallel line notation, as the error directly substitutes a line property term for an angle measure relationship.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

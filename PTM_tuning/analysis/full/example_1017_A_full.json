@@ -1,7 +1,0 @@
-{
-  "query_id": "1017_A",
-  "content_id": 2217,
-  "explanation": "Correct calculation:\n-3 > p - 1  \nAdd 1 to both sides:  \n-3 + 1 > p  \n-2 > p \u2192 p < -2  \n\nStudent's calculation:\n-3 > p - 1  \nSubtracts 1 from both sides:  \n-3 -1 > p  \n-4 > p \u2192 p < -4  \n\nThe student incorrectly subtracted 1 instead of adding it to isolate p. When solving for p in \"-3 > p - 1,\" the inverse operation requires **adding** 1 to both sides to cancel the \"-1.\" The student likely treated the \"-1\" as requiring subtraction (same operation) rather than addition (inverse operation). This directly aligns with the misconception of using the same operation instead of the inverse when isolating variables. Related misconceptions about negative number operations don't apply here, as the core error stems from misapplying inverse operations, not computational errors with negatives.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

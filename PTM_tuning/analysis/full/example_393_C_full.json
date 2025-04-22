@@ -1,7 +1,0 @@
-{
-  "query_id": "393_C",
-  "content_id": 912,
-  "explanation": "Correct calculation: Scale factor = 15/5 = 3 \u2192 star = 4 \u00d7 3 = 12 cm  \nStudent's likely calculation: Star = 4 + (15 - 5) = 14 cm  \n\nThe student incorrectly treated the absolute difference between corresponding sides (15 - 5 = 10) as an additive constant to apply to the 4 cm side. This conflates proportional scaling with linear translation, disregarding the multiplicative nature of similarity ratios. The error matches the \"finds the difference between given lengths\" misconception, not a general addition or guesswork error. The student recognized the relationship between 5 cm and 15 cm but misapplied it to the 4 cm side through addition instead of multiplication by 3. This distinguishes it from simpler additive errors (like +2) or random guessing.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

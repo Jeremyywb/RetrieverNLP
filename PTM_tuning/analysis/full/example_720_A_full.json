@@ -1,7 +1,0 @@
-{
-  "query_id": "720_A",
-  "content_id": 1524,
-  "explanation": "The correct expression \\(10n\\) is divisible by 5 because \\(10 = 5 \\times 2\\), making \\(10n = 5 \\times 2n\\) a multiple of 5 for any integer \\(n\\). \n\nThe student's choice \\(n+5\\) fails when \\(n=1\\) (resulting in 6, not divisible by 5). Their reasoning likely assumed \"adding 5\" ensures divisibility by 5, but this only occurs when \\(n\\) itself is a multiple of 5. \n\nThe flaw stems from misunderstanding that a guaranteed multiple must work for all \\(n\\), not just specific cases. The error reflects confusion about how additive constants versus multiplicative factors affect divisibility. \n\nThis directly aligns with the primary misconception: failing to recognize that structural properties (like a term's coefficient being a multiple of 5) ensure universal divisibility, rather than arbitrary addition. \n\nIt differs from \"does not understand the term multiple\" because the error isn't about misdefining multiples, but rather misapplying operations to guarantee them universally. The student likely knows 5 is a multiple of 5 but didn\u2019t grasp that \\(n+5\\)\u2019s divisibility depends on \\(n\\)\u2019s value.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

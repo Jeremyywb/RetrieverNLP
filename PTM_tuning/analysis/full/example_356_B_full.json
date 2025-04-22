@@ -1,7 +1,0 @@
-{
-  "query_id": "356_B",
-  "content_id": 2035,
-  "explanation": "Correct calculation: The number line spans 100 to 200. If there are 10 equal intervals, each interval = 10 units. The arrow at 160 is the 6th interval from 100: \\(100 + (6 \\times 10) = 160\\).\n\nStudent's error: They likely calculated \\(100 + (7 \\times 10) = 170\\). \n\nFlaw: The student counted the starting point (100) as the first interval, adding an extra 10 units. This caused them to miscount the number of intervals between 100 and the arrow. \n\nMisapplication: The misconception stems from misaligning the count of intervals with the starting value. Instead of treating 100 as the 0th interval, they treated it as the 1st interval, shifting all subsequent values by +10. \n\nDistinction: This differs from assuming each dash = 1 or 2 units (which would produce larger deviations) or confusing increments (e.g., mislabeling 150 as 160). The error is purely a counting misalignment, not a scale misinterpretation.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

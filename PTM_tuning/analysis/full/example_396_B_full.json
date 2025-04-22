@@ -1,7 +1,0 @@
-{
-  "query_id": "396_B",
-  "content_id": 1233,
-  "explanation": "Correct calculation:\n(-6g + g) + (-2h -2h) = -5g -4h  \n(-2) + 10 = 8  \nResult: -5g -4h = 8\n\nStudent's incorrect calculation:\n-6g + g = 5g  \n-2h -2h = 0 (eliminated)  \nResult: 5g = 8\n\nThe student incorrectly treated -6g + g as positive 5g rather than -5g, revealing a sign handling error. More critically, they eliminated the h-terms despite both equations having identical -2h coefficients with matching signs. This indicates they believed adding equations with identical terms cancels those variables, when in reality only subtracting equations cancels identical terms. While the sign error relates to numerical operations, the core flaw stems from misunderstanding elimination conditions - they applied addition where subtraction is required for cancellation, making this distinct from simple arithmetic errors. The simultaneous elimination of h-terms and sign reversal in g show these were separate, concurrent errors.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "318_D",
-  "content_id": 1044,
-  "explanation": "The correct substitution uses \\( -b \\) where \\( b = 2 \\), yielding \\( -2 \\) in the numerator.  \nThe student substituted \\( 2 \\) directly instead of \\( -2 \\).  \nThe error stems from failing to apply the negative sign to \\( b \\) as required by the quadratic formula \\( \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\).  \nThis reflects a misapplication of the formula's structure, specifically omitting the negation of \\( b \\), despite \\( b \\) being positive in the original equation.  \nThis differs from misconceptions about squaring negatives (since \\( 2^2 \\) is correct) or sign-switching during operations like addition/subtraction.  \nThe error is isolated to mishandling the formula's explicit \\(-b\\) component.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "1061_B",
-  "content_id": 1213,
-  "explanation": "The correct nth term calculation involves recognizing the quadratic component (n\u00b2) and solving for the linear part. After subtracting n\u00b2 from each term:\n\nn=1: 10-1=9  \nn=2: 21-4=17  \nn=3: 34-9=25  \n...  \n\nThe resulting sequence (9, 17, 25, ...) has a common difference of 8, leading to the linear term +8n. The student likely reversed the subtraction direction (e.g., calculating 1-10=-9 instead of 10-1=9), generating a sequence (-9, -17, -25, ...) with a common difference of -8. This caused them to incorrectly assign -8 as the coefficient of n. \n\nThe error stems from misapplying the step to isolate the linear component after handling the quadratic term. Specifically, the student's reversal of the subtraction altered the sign of the derived sequence, directly producing the -8 coefficient. This contrasts with related misconceptions like using only the first term (which would yield inconsistent results across terms) or misapplying arithmetic sequence rules (which would ignore the quadratic structure entirely). The flaw is tied to the computational misstep during subtraction, not a broader misunderstanding of sequence types.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

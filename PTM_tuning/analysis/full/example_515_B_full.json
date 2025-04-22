@@ -1,7 +1,0 @@
-{
-  "query_id": "515_B",
-  "content_id": 905,
-  "explanation": "To determine the translation vector from \\( Q \\) to \\( P \\), subtract corresponding vertices of \\( Q \\) (original) from \\( P \\) (image). For example, using \\((1,7)\\) in \\( P \\) and \\((4,2)\\) in \\( Q \\):  \n\\[\n\\text{Vector} = \\begin{pmatrix}1 - 4 \\\\ 7 - 2\\end{pmatrix} = \\begin{pmatrix}-3 \\\\ 5\\end{pmatrix}.\n\\]  \nThe student likely reversed the component order, writing \\(\\begin{pmatrix}5 \\\\ -3\\end{pmatrix}\\). This implies they correctly computed the vertical change (\\(+5\\)) and horizontal change (\\(-3\\)) but transposed the components, treating the vertical shift as the first component and horizontal as the second.  \n\nThe error stems from misaligning the horizontal (\\(x\\)) and vertical (\\(y\\)) components in the vector notation. The misconception involves conflating the component order (writing \\(y\\) before \\(x\\)) rather than misinterpreting directionality (e.g., confusing left/right or up/down) or reversing the translation direction (which would yield \\(\\begin{pmatrix}3 \\\\ -5\\end{pmatrix}\\), not \\(\\begin{pmatrix}5 \\\\ -3\\end{pmatrix}\\)). This distinguishes it from related misconceptions about directionality or translation reversal.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

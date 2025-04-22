@@ -1,7 +1,0 @@
-{
-  "query_id": "184_B",
-  "content_id": 1720,
-  "explanation": "The correct pattern subtracts 10 each term:  \n23 - 10 = 13  \n13 - 10 = 3  \n3 - 10 = -7  \n\nThe student likely calculated the consistent difference (-10) between terms but misinterpreted this difference as the next term itself. This conflates the term-to-term operation with the actual sequence values. For example, they may have concluded \"the rule is subtract 10\" and directly reported \"-10\" as the next entry rather than applying the rule to the last term (3 - 10). This matches the misconception of identifying the rule instead of the next term, distinct from errors like using only the first two terms (which would still produce -7 if applied correctly).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

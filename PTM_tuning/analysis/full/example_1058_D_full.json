@@ -1,7 +1,0 @@
-{
-  "query_id": "1058_D",
-  "content_id": 283,
-  "explanation": "Correct reflection over \\( y = -x \\) transforms \\((a, b)\\) to \\((-b, -a)\\). For \\((-3, 3)\\):\n\\[\n(-3, 3) \\rightarrow (-3, -(-3)) = (-3, 3)\n\\]\nThe student computed:\n\\[\n(-3, 3) \\rightarrow (3, -3)\n\\]\nThis error occurred because they swapped coordinates (as if reflecting over \\( y = x \\)) but omitted the required negation. Their reasoning treated reflection as a simple coordinate swap, ignoring the sign inversion inherent to \\( y = -x \\). This distinguishes from related misconceptions about sign changes without swapping or directional errors, as the flawed process directly matches a misapplied coordinate-swap rule rather than partial sign modifications or axis-direction issues.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

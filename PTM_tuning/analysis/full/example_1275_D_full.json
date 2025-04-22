@@ -1,7 +1,0 @@
-{
-  "query_id": "1275_D",
-  "content_id": 114,
-  "explanation": "The correct relationship stems from vertically opposite angles formed by two intersecting lines, which are always equal. \n\nThe student incorrectly stated \"they are parallel,\" which misapplies terminology (parallel describes lines, not angles). This indicates a failure to recognize that intersecting lines create vertical angles with a measurement relationship. \n\nThe error arises from conflating line properties with angle properties, likely due to confusion between \"parallel lines\" (which can create equal corresponding angles) and the actual case here of intersecting lines creating equal vertical angles. \n\nThis aligns with the misconception of not understanding vertical angles' equality, leading the student to incorrectly associate the angle relationship with parallel line terminology rather than recognizing the inherent equality from intersection. \n\nIt differs from related parallel line misconceptions because the diagram does not involve parallel lines; the error stems from mislabeling angle relationships rather than misinterpreting line markings or transversal rules.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

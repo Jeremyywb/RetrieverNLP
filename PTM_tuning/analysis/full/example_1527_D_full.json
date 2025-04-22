@@ -1,7 +1,0 @@
-{
-  "query_id": "1527_D",
-  "content_id": 1942,
-  "explanation": "The correct angle notation places the vertex (G) between two points on each side (E and H), forming \\( \\mathrm{EGH} \\). The student's answer \\( \\mathrm{CGE} \\) uses the same vertex (G) but incorrectly selects points C and E. This indicates they identified sides CG and GE instead of EG and GH. The error stems from mislabeling the sides of the angle by choosing a point (C) not on the actual side (GH), despite correctly locating the vertex. This aligns with a misunderstanding of how to assign the first and third letters to represent the angle's sides. It differs from selecting a wider angle or using two letters, as the student applied the three-letter convention but with incorrect side identification.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

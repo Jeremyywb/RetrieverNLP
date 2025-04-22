@@ -1,7 +1,0 @@
-{
-  "query_id": "747_B",
-  "content_id": 1701,
-  "explanation": "Correct calculation:\n1) Line of symmetry: Roots are x=-4 and x=2 \u2192 midpoint at (-4+2)/2 = -1\n2) Y-intercept: (0+4)(0-2) = -8 (negative)\n\nStudent's error:\n1) Likely calculated line of symmetry as (4 + (-2))/2 = 1 \u2192 incorrect x=1.5? But answer B requires x=3. Alternatively, added constants without sign consideration: (4 + 2)/2 = 3\n\nFlaw explanation:\nThe student incorrectly derived the line of symmetry by averaging the constants from the factored form (4 and -2) rather than the roots (-4 and 2). This shows a misunderstanding of how symmetry relates to roots in factored form.\n\nMisconception link:\nThe error stems from misapplying the relationship between factored form and parabola properties - specifically treating constants as roots rather than their opposites.\n\nDistinction from related errors:\nThis differs from expansion errors (e.g., adding instead of multiplying terms) as it specifically misuses the factored form's constants to calculate symmetry rather than processing roots correctly.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

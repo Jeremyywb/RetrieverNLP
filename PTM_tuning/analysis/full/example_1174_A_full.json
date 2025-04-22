@@ -1,7 +1,0 @@
-{
-  "query_id": "1174_A",
-  "content_id": 1033,
-  "explanation": "The correct calculation converts each fraction to decimal form:\n3/10 = 0.3 and 7/1000 = 0.007. Adding these gives 0.307. Multiplying by 100 yields 30.7%.\n\nThe student likely converted 3/10 to 30% correctly but treated 7/1000 as 7/100 (0.07) instead of 0.007. Adding 30% + 7% = 37% would not reach 307%, so the error stems elsewhere. A more plausible path: They converted 0.307 to a percentage by multiplying by 1000 instead of 100 (0.307 \u00d7 1000 = 307%).\n\nThe flaw is using a 1000x multiplier for percentage conversion, misaligning the decimal places. This matches the misconception of multiplying by 1000 instead of 100. It differs from simply removing the decimal point (which would also produce 307) because the error specifically involves scale factor choice, not decimal placement. The answer magnitude confirms this: 307% is exactly 10\u00d7 too large, matching 1000/100 scaling.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "181_A",
-  "content_id": 2435,
-  "explanation": "The correct calculation requires subtracting Saturday's total potatoes from Sunday's total. For example:\nSunday total - Saturday total = 35 kg - 25 kg = 10 kg.\n\nThe student likely did:  \nSunday value (35 kg) - 0 kg = 35 kg.\n\nThe error occurred because the student compared a single category (e.g., one potato dish on Sunday) to nothing on Saturday instead of summing all categories for each day. This caused them to treat a partial value as the entire difference, skipping the critical step of calculating daily totals first. \n\nThis directly aligns with the misconception of comparing isolated categories rather than aggregated totals, as they failed to combine all relevant data points for each day before subtraction. It differs from \"adds instead of subtracts\" because the student did attempt subtraction, but with incomplete data due to missing aggregation.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

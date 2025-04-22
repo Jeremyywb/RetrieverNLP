@@ -1,7 +1,0 @@
-{
-  "query_id": "822_D",
-  "content_id": 76,
-  "explanation": "The correct exponential graph shows continuous growth without symmetry, increasing slowly then rapidly. The student selected a symmetrical downward-opening parabola. \n\nThe student's graph peaks at the vertex, indicating a quadratic relationship (y = -ax\u00b2 + c). Exponential functions (y = a^x) have no maximum point and are never symmetrical.\n\nThe student likely focused on the curved nature but missed the critical difference in growth patterns. They treated any curved graph as potentially exponential, failing to recognize the parabola's symmetry and directional change as hallmarks of quadratic functions.\n\nThis aligns with confusing quadratic characteristics (symmetrical U-shapes) with exponential behavior, rather than the listed primary misconception of cubic/exponential confusion. Cubic graphs show inflection points, not symmetrical peaks, making this error distinct from cubic/exponential mixing.\n\nThe error specifically stems from misapplying curve recognition without analyzing monotonicity or symmetry - key features distinguishing quadratic and exponential graphs.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

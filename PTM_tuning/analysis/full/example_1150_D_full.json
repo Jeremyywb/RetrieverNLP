@@ -1,7 +1,0 @@
-{
-  "query_id": "1150_D",
-  "content_id": 256,
-  "explanation": "Correct calculation:\nStarting with \\( F = \\frac{v^2}{r} \\),\n1. Multiply both sides by \\( r \\): \\( v^2 = F r \\),\n2. Take square roots: \\( v = \\sqrt{F r} \\).\n\nStudent's incorrect step:\nFrom \\( v^2 = F r \\), the student wrote \\( v = r \\sqrt{F} \\), treating \\( \\sqrt{F r} \\) as \\( r \\sqrt{F} \\).\n\nThe error stems from incorrectly splitting the square root across the product \\( F r \\), applying it only to \\( F \\) while leaving \\( r \\) outside. The square root operation must apply to the entire product \\( F r \\), yielding \\( \\sqrt{F} \\cdot \\sqrt{r} \\), not \\( r \\sqrt{F} \\). This matches the misconception of isolating square roots to individual terms rather than the whole expression. \n\nIt differs from swapping surd terms (which would produce \\( \\sqrt{r} F \\)) or algebraic inverses, as the student correctly isolated \\( v^2 \\) first but misapplied the square root's scope.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

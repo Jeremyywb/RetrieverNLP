@@ -1,7 +1,0 @@
-{
-  "query_id": "1107_C",
-  "content_id": 930,
-  "explanation": "The correct elimination occurs by adding the equations:\n\\[\n\\begin{aligned}\n3x - 2y &=15 \\\\\n+\\quad x + 2y &=20 \\\\\n\\hline\n4x \\quad \\quad &=35\n\\end{aligned}\n\\]\nThis eliminates \\(y\\) as Tom stated. Katie's subtraction approach would instead yield:\n\\[\n\\begin{aligned}\n3x - 2y &=15 \\\\\n-\\quad (x + 2y &=20) \\\\\n\\hline\n2x - 4y &= -5\n\\end{aligned}\n\\]\nThe student incorrectly assumed subtraction would eliminate a variable. The error stems from not recognizing that elimination requires matching coefficients with *opposite signs* to use addition, or *same signs* to use subtraction. Here, the \\(y\\)-terms have opposite signs (\\(-2y\\) and \\(+2y\\)), making addition the correct operation. The student treated the operations as interchangeable regardless of coefficient signs, leading them to validate both methods. This distinguishes from related misconceptions about same-sign requirements, as the flaw here specifically involves misapplying operations to mismatched signs.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

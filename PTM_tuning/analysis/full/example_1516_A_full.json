@@ -1,7 +1,0 @@
-{
-  "query_id": "1516_A",
-  "content_id": 205,
-  "explanation": "Correct calculation:  \n100 km \u00d7 1,000 m/km = 100,000 m  \n100,000 m \u00d7 1,000 mm/m = 100,000,000 mm  \n\nStudent's likely calculation:  \n100 km \u00f7 1,000 = 100 m  \n100 m \u00d7 1,000 = 100,000 mm  \n\nSpecific flaw:  \nThe student divided by 1,000 when converting km \u2192 m (a larger to smaller unit), instead of multiplying. This reduced the value prematurely to 100 m before converting to millimeters. The misconception of dividing for smaller-unit conversions directly caused the missing factor of 1,000 in their final answer.  \n\nDistinction from related errors:  \nIf they had confused mm/cm or m/km ratios, their intermediate steps would show incorrect scaling factors (e.g., 10 instead of 1,000). Here, the error stems specifically from inversion of the required multiplicative operation.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

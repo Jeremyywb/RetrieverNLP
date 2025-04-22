@@ -1,7 +1,0 @@
-{
-  "query_id": "900_D",
-  "content_id": 474,
-  "explanation": "Correct calculation: \\( 500{,}000 \\, \\text{cm}^3 \\div 1000 = 500 \\, \\text{L} \\).\n\nStudent's likely calculation: \\( 500{,}000 \\, \\text{cm}^3 \\div 100 = 5000 \\, \\text{L} \\).\n\nThe student incorrectly divided by 100 instead of 1000 when converting cubic centimeters to liters. This indicates a misunderstanding of the relationship between liters and cubic centimeters: they used a divisor corresponding to a linear (100 cm/m) rather than volumetric (1000 cm\u00b3/L) conversion. The error aligns with dividing by 100 instead of 1000, as their answer is exactly 10 times larger than the correct value. \n\nThis differs from the misconception \"1L = 10,000 cm\u00b3\" (which would yield 50L) or \"1L = 10 cm\u00b3\" (yielding 50,000L). The error specifically stems from misapplying a two-order-of-magnitude divisor rather than three, distinct from other listed volume-conversion errors.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

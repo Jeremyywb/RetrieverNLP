@@ -1,7 +1,0 @@
-{
-  "query_id": "1803_D",
-  "content_id": 1344,
-  "explanation": "The correct answer requires recognizing that obtuse angles fall between \\(90^{\\circ}\\) and \\(180^{\\circ}\\), with \\(120^{\\circ}\\) being a common estimate for angles approximately two-thirds of the way to a straight line. The student selected \\(160^{\\circ}\\), which exceeds typical visual approximations for angles of this type. The error stems from assuming the diagram's visual representation (e.g., a more \"spread out\" angle) directly corresponds to its actual measure, despite diagrams often not being drawn to scale. This misconception caused the student to overvalue the angle's apparent openness, interpreting it as closer to \\(180^{\\circ}\\) than it truly is. Unlike confusion about obtuse angle ranges (where \\(160^{\\circ}\\) still fits) or arm-length influence (which does not alter angular measure), the flaw specifically ties to uncritically trusting the diagram's appearance.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

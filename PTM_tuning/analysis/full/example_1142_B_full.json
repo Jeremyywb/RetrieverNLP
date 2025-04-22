@@ -1,7 +1,0 @@
-{
-  "query_id": "1142_B",
-  "content_id": 978,
-  "explanation": "Correct calculation:\nTo complete the square for \\( p^2 - p \\), take half of the coefficient of \\( p \\): \n\\(-1 \\div 2 = -0.5\\).  \nThis gives \\( (p - 0.5)^2 - (-0.5)^2 = (p - 0.5)^2 - 0.25 \\), so the star is \\(-0.5\\).\n\nStudent's error:\nThe student likely directly used the coefficient of \\( p \\) (\\(-1\\)) as the constant term in the binomial:  \n\\( (p - 1)^2 \\), ignoring the halving step.\n\nSpecific flaw:\nThe student assumed the constant term in the squared binomial equals the original linear coefficient.  \nThey failed to recognize that the linear term in \\( (p + a)^2 \\) is \\( 2a \\), requiring \\( a = \\frac{-1}{2} \\).\n\nConnection to misconception:\nThis matches the error of treating the coefficient of \\( p \\) as the direct value of \\( a \\), rather than solving \\( 2a = -1 \\).  \n\nDistinction from related errors:\nUnlike confusing squaring with doubling, this error specifically stems from omitting the halving step required to isolate \\( a \\).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

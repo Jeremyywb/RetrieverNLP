@@ -1,7 +1,0 @@
-{
-  "query_id": "114_B",
-  "content_id": 974,
-  "explanation": "Correct calculation:\n1. Multiply (m+5)(m-5) first:  \n   \\( m^2 - 5m + 5m -25 = m^2 - 25 \\)\n2. Multiply by m:  \n   \\( m(m^2 - 25) = m^3 - 25m \\)\nThus, the coefficient of \\( m \\) (\u25b3) is \\(-25\\).\n\nStudent's likely steps:\n1. Incorrectly calculated \\((m+5)(m-5)\\) as \\( m^2 + 25 \\), missing the subtraction.  \n2. Then multiplied by \\( m \\): \\( m^3 + 25m \\), resulting in \u25b3=+25.\n\nSpecific flaw:  \nThe student treated \\((m+a)(m-a)\\) as \\(m^2 + a^2\\) instead of \\(m^2 - a^2\\). This stems from adding the constant terms (5 and -5) rather than multiplying them, which would produce \\(-25\\). The error matches the \"adds instead of subtracts\" misconception directly, as opposed to sign-swapping or incomplete term multiplication. The negative result from \\(5 \\times (-5)\\) was lost, but not due to miscounting negatives (only two terms, one negative) or omitting combinations (only one cross-term exists here).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

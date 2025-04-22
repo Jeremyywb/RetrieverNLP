@@ -1,7 +1,0 @@
-{
-  "query_id": "1701_A",
-  "content_id": 1271,
-  "explanation": "The correct answer identifies a line connecting two points on the circle's circumference as a chord. The student labeled it a radius, implying they assumed the line extended from the circle's center to its edge. The error stems from misidentifying the line's endpoints: radii connect the center to one circumference point, while chords connect two circumference points. The student likely focused on the line's visibility as a \"marked\" segment but failed to verify whether it originated at the center. This directly aligns with confusing chord/radius definitions, not diameter/radius confusion (since diameters require two radii forming a straight line). Unlike sector-angle confusion, the error centers on misapplying basic line-segment terminology tied to positional relationships in the diagram.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

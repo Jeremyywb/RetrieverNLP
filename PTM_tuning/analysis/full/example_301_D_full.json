@@ -1,7 +1,0 @@
-{
-  "query_id": "301_D",
-  "content_id": 829,
-  "explanation": "Correct calculation: \\( 360^{\\circ} - 310^{\\circ} = 50^{\\circ} \\).  \nStudent's likely error: Subtracting \\( 315^{\\circ} \\) (a multiple of 45\u00b0) from \\( 360^{\\circ} \\), yielding \\( 45^{\\circ} \\).  \n\nThe student incorrectly treated the angle split as a division into 8 equal 45\u00b0 segments (since \\( 315^{\\circ} = 7 \\times 45^{\\circ} \\)), assuming symmetry despite no evidence of equal partitioning. This reflects a misapplication of supplementary angle properties to a non-symmetrical configuration.  \n\nThe primary misconception caused the student to impose a numerical pattern (multiples of 45\u00b0) rather than compute the residual angle. This differs from visual estimation errors, as the error stems from assuming a structured division, not diagram scale or approximate measurement.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

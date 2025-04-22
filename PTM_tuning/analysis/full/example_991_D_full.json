@@ -1,7 +1,0 @@
-{
-  "query_id": "991_D",
-  "content_id": 2105,
-  "explanation": "Correct calculation: Area = base \u00d7 perpendicular height = 5 cm \u00d7 4 cm = 20 cm\u00b2.\n\nStudent's error: 5 cm \u00d7 6 cm = 30 cm\u00b2.\n\nThe student multiplied the base by the slant length instead of the perpendicular height. This indicates they confused the non-perpendicular side length with the vertical height required for area calculation. The misconception caused them to select the visually prominent 6 cm slant edge rather than the 4 cm height marked perpendicular to the base. This distinguishes from perimeter errors (which would sum sides) and trapezium-related errors (which involve misapplying parallel side pairs). The error stems from misidentifying which measurement represents the true height in the area formula.",
-  "timestamp": "2025-04-20T14:44:28.633543",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "1722_C",
-  "content_id": 1652,
-  "explanation": "Correct calculation:\n1. Convert 2 meters to millimeters: \\(2 \\, \\text{m} \\times 1000 = 2000 \\, \\text{mm}\\)\n2. Convert \\(0.5 \\, \\text{cm}\\) to millimeters: \\(0.5 \\, \\text{cm} \\times 10 = 5 \\, \\text{mm}\\)\n3. Subtract: \\(2000 \\, \\text{mm} - 5 \\, \\text{mm} = 1995 \\, \\text{mm}\\)\n\nStudent's incorrect calculation:\n1. \\(2 \\, \\text{m} = 2000 \\, \\text{mm}\\) (correct)\n2. Treated \\(0.5 \\, \\text{cm}\\) as \\(50 \\, \\text{mm}\\) (error here): \\(0.5 \\, \\text{cm} \\times 100 = 50 \\, \\text{mm}\\)\n3. Subtracted: \\(2000 \\, \\text{mm} - 50 \\, \\text{mm} = 1950 \\, \\text{mm}\\)\n\nThe student incorrectly multiplied \\(0.5 \\, \\text{cm}\\) by \\(100\\) instead of \\(10\\), assuming \\(1 \\, \\text{cm} = 100 \\, \\text{mm}\\). This directly aligns with a flawed understanding of metric conversions, specifically misapplying the scale factor between centimetres and millimetres. \n\nDistinction from related misconceptions:\n- The error is not due to forgetting unit conversions (e.g., mixing metres and centimetres) or misdefining larger units (e.g., \\(1 \\, \\text{m} = 10 \\, \\text{mm}\\)), but stems explicitly from the erroneous \\(100:1\\) ratio between centimetres and millimetres.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

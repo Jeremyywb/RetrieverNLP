@@ -1,7 +1,0 @@
-{
-  "query_id": "1238_C",
-  "content_id": 2221,
-  "explanation": "The correct calculation adds the fixed initial charge to the variable per-mile cost: \\( T = 1.20m + 2.50 \\). The student incorrectly wrote \\( T = 1.20(2.50 + m) \\), distributing the per-mile rate across both terms. \n\nThe error stems from misidentifying which components of the problem require multiplication by \\( m \\). The \u00a32.50 is a fixed constant, but the student treated it as a variable term to be scaled by miles traveled. This caused them to apply the \\( 1.20 \\times m \\) operation to both the per-mile rate and the initial fee, erroneously combining them in a single product.\n\nThis differs from simply swapping constants/coefficients (which would produce \\( T = 2.50m + 1.20 \\)) or partial bracket expansion errors. The flaw specifically involves misattributing multiplicative relationships to both fixed and variable components of the cost structure.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

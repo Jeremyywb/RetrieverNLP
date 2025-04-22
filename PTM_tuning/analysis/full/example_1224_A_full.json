@@ -1,7 +1,0 @@
-{
-  "query_id": "1224_A",
-  "content_id": 1505,
-  "explanation": "The correct calculation shows corresponding angles are equal (Katie's correct statement) while co-interior angles sum to 180\u00b0 (Tom's error). The student incorrectly concluded co-interior angles are equal. Their reasoning flaw stems from conflating co-interior angles with alternate angles' properties. \n\nThis confusion led them to misattribute the equality of alternate angles (which are equal) to co-interior angles (which are supplementary). The error specifically involves swapping angle relationships rather than miscalculating sums or overgeneralizing all angle pairs. It differs from related sum misconceptions because the error centers on equality claims, not arithmetic errors about supplementary angles.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

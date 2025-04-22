@@ -1,7 +1,0 @@
-{
-  "query_id": "498_B",
-  "content_id": 767,
-  "explanation": "Correct calculation: \\(2.5 \\times 60 = 150\\) (converting hours to minutes via 60 minutes/hour).\n\nStudent's calculation: \\(2.5 \\times 50 = 125\\).\n\nThe student incorrectly treated 1 hour as 50 minutes instead of 60, multiplying the decimal value by 50. This directly corresponds to a decimal-to-minute conversion error where the fractional part isn't recognized as a proportion of 60 minutes. Unlike errors involving 100 minutes/hour (which would yield 250), this specific 50-minute assumption preserves the decimal structure but misapplies the base unit. The error isn't about splitting 0.5 as 30 minutes (which would be correct) but stems from a faulty hourly-minute equivalence applied to the entire decimal value.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

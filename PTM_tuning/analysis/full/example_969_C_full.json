@@ -1,7 +1,0 @@
-{
-  "query_id": "969_C",
-  "content_id": 2119,
-  "explanation": "Correct calculation: The difference between \\(5^{\\circ}\\mathrm{C}\\) and \\(-7^{\\circ}\\mathrm{C}\\) is \\(5 - (-7) = 12^{\\circ}\\mathrm{C}\\). This accounts for both the positive temperature and the negative temperature's distance from zero.\n\nStudent's error: The student likely subtracted the absolute values of the temperatures directly: \\(|5| - |-7| = 5 - 7 = -2\\), then took the absolute value (resulting in \\(2^{\\circ}\\mathrm{C}\\)), or incorrectly treated the negative sign as irrelevant.\n\nReasoning flaw: The student failed to recognize that subtracting \\(-7^{\\circ}\\mathrm{C}\\) requires adding its additive inverse. Instead, they treated the negative temperature as a standalone positive value when calculating the difference, bypassing the directional aspect of the number line.\n\nDistinction from related misconceptions: This is distinct from simply subtracting in the wrong direction (e.g., \\(-7 - 5\\)) or ignoring one negative sign. The error specifically stems from misapplying absolute values to the original numbers rather than properly handling the subtraction of a negative.\n\nThe misconception directly caused the student to miscalculate the temperature span by reducing it to a simple subtraction of magnitudes, rather than computing the total interval between the two values.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

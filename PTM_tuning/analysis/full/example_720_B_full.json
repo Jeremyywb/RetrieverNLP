@@ -1,7 +1,0 @@
-{
-  "query_id": "720_B",
-  "content_id": 845,
-  "explanation": "The correct expression \\(10n\\) factors as \\(5 \\times 2n\\), ensuring divisibility by 5 for all \\(n\\). The student's answer \\(2n + 3\\) incorrectly assumes adding 3 to \\(2n\\) guarantees divisibility by 5. The flaw arises from treating the constant term 3 as a universal adjustment to force divisibility, ignoring that \\(2n\\) varies with \\(n\\). For example, when \\(n=2\\), \\(2(2)+3=7\\), which is not a multiple of 5. This directly stems from the misconception that adding a fixed number (here, 3) to a variable term can universally create a multiple of 5, rather than ensuring the entire expression inherently contains the required factor (e.g., via coefficients like 10). Unlike the \"single example\" misconception, the error here specifically involves invalid additive manipulation rather than isolated testing.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

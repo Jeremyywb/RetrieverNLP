@@ -1,7 +1,0 @@
-{
-  "query_id": "85_B",
-  "content_id": 2376,
-  "explanation": "The correct calculation substitutes \\( n = 1 \\) into \\( 2 - 7n \\):  \n\\( 2 - 7(1) = -5 \\).  \n\nThe student likely computed \\( -7 \\times 1 = -7 \\), omitting the constant term \\( 2 \\).  \n\nThe error stems from misinterpreting the formula as solely dependent on the coefficient of \\( n \\), neglecting the additive constant. This aligns with treating the coefficient of \\( n \\) as the standalone term value, bypassing the full expression.  \n\nThis misconception directly caused the error: the student isolated the \\( -7n \\) component, assumed \\( n=1 \\), and ignored the \\( +2 \\).  \n\nIt differs from \"mixing term and position\" (which would involve incorrect \\( n \\)-values) or \"using the first term as the coefficient\" (which would imply \\( 2 \\) is misinterpreted, not omitted).  \n\nThe flaw is strictly about disregarding the constant term in the linear expression when calculating the first term.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

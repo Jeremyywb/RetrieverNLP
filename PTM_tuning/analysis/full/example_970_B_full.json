@@ -1,7 +1,0 @@
-{
-  "query_id": "970_B",
-  "content_id": 1324,
-  "explanation": "Correct solution:  \nAfter subtracting equations:  \n(3x + 2y) - (2x + 2y) = 14 - 10 \u2192 x = 4  \nSubstitute x=4 into 2x + 2y =10:  \n8 + 2y =10 \u2192 2y=2 \u2192 y=1  \n\nStudent's error:  \nAfter finding x=4, substituting into 3x + 2y =14:  \n12 + 2y =14 \u2192 2y=2  \nBut then claims y=2  \n\nFlaw:  \nThe student correctly isolated 2y=2 but failed to divide both sides by 2. This stems from neglecting to eliminate the coefficient of y in the final step.  \n\nConnection:  \nThe error occurs at the last algebraic step - treating 2y=2 as y=2 instead of y=1. This directly matches forgetting to divide by the coefficient.  \n\nDistinction:  \nThis isn't substitution error (values were plugged correctly) or elimination confusion (x was found properly). The mistake specifically occurs in resolving the isolated term.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "1238_A",
-  "content_id": 727,
-  "explanation": "The correct expression combines the fixed \u00a32.50 initial charge (constant term) with the variable \u00a31.20 per mile rate (coefficient of \\( m \\)): \\( T = 1.20m + 2.50 \\).\n\nThe student incorrectly wrote \\( T = 2.50m + 1.20 \\), reversing the coefficients. This suggests they assigned the fixed cost to the variable term and the per-mile rate to the constant term.\n\nThe error stems from misidentifying which numerical value corresponds to the rate of change (slope) versus the fixed value (y-intercept). The student treated the initial \u00a32.50 as the multiplier for \\( m \\), failing to recognize that only the per-mile cost scales with distance traveled.\n\nThis directly aligns with confusing the roles of \\( m \\) and \\( c \\) in \\( y=mx+c \\), where the student incorrectly mapped the larger value (\u00a32.50) to the slope position. It does not relate to BIDMAS errors, as the mistake involves variable-term assignment, not operational order within a calculation.\n\nThe reversal shows a fundamental misunderstanding of how fixed and variable costs translate into linear equation components, not a misapplication of arithmetic operations.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

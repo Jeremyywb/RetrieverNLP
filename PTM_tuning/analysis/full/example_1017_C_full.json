@@ -1,7 +1,0 @@
-{
-  "query_id": "1017_C",
-  "content_id": 38,
-  "explanation": "Correct calculation:  \n\\(-3 > p - 1\\)  \nAdd 1 to both sides:  \n\\(-3 + 1 > p\\)  \nSimplify:  \n\\(-2 > p\\) or \\(p < -2\\)\n\nStudent's incorrect calculation:  \n\\(-3 > p - 1\\)  \nAdd 1 to both sides:  \n\\(-2 > p\\)  \nThen incorrectly rewrote as \\(p > -2\\)\n\nThe student reversed the inequality direction after isolating \\(p\\) despite only performing addition, which does not require sign reversal. This stems from conflating the rule for reversing inequalities (applicable only when multiplying/dividing by negatives) with basic additive steps. The error specifically shows improper sign reversal during solution transcription, not a failure to reverse when required. This distinguishes it from the related misconception about multiplying/dividing by negatives, as no such operation occurred here.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

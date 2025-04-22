@@ -1,7 +1,0 @@
-{
-  "query_id": "983_C",
-  "content_id": 234,
-  "explanation": "Correct calculation: Substitute \\( h=3 \\) into \\( 2+h \\) to get \\( 2+3=5 \\).\n\nIncorrect calculation: The student likely interpreted the \"+\" as subtraction, computing \\( 2-3=-1 \\).\n\nThe error stems from misapplying the operation sign: The student treated the addition symbol as interchangeable with subtraction, despite both numbers being positive. This directly aligns with the misconception of swapping signs during addition/subtraction operations, rather than a simple arithmetic error or misread.\n\nThe negative result confirms the operation reversal, not a failure to recognize numerical values. Related misconceptions like \"summing digits regardless of sign\" or misjudging operation based on number size don't fit, as \\( h=3 \\) is positive and the problem explicitly uses \"+\".",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

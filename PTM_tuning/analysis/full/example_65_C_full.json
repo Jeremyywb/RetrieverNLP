@@ -1,7 +1,0 @@
-{
-  "query_id": "65_C",
-  "content_id": 2245,
-  "explanation": "Correct calculation:\n1. Rearrange equation: \\( h^2 - 5h + 4 = 0 \\)\n2. Identify coefficients: \\( a = 1 \\), \\( b = -5 \\), \\( c = 4 \\)\n3. Discriminant's first term: \\( (-5)^2 = 25 \\)\n\nStudent's error:\n- Calculated \\( 4ac = 4(1)(4) = 16 \\) instead of \\( b^2 \\)\n\nReasoning flaw:\nThe student failed to recognize the equation needed rearrangement to \\( ax^2 + bx + c = 0 \\). This caused them to misidentify which coefficient corresponded to \\( b \\), leading them to compute \\( 4ac \\) (a secondary term in the discriminant) instead of \\( b^2 \\). Their calculation matches \\( 4ac \\), indicating they substituted the wrong component into the discriminant's first term.\n\nDistinction from related misconceptions:\nThis isn't confusion about subtraction commutativity or sign errors when rearranging - the error specifically stems from misapplying the quadratic formula to an unstandardized equation, swapping \\( b^2 \\) with \\( 4ac \\).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

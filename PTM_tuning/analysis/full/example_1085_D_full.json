@@ -1,7 +1,0 @@
-{
-  "query_id": "1085_D",
-  "content_id": 447,
-  "explanation": "Correct calculation: \\(50.09 \\div 0.1 = 500.9\\), achieved by multiplying both numbers by 10 to convert to \\(500.9 \\div 1\\).  \nStudent's error: They calculated \\(50.09 \\div 10 = 5.009\\), reversing the required operation for division by 0.1.  \nThe student treated division by 0.1 as division by 10 instead of multiplication by 10, incorrectly shifting the decimal left instead of right. This stems from misapplying decimal placement rules for division by decimal divisors, specifically reversing the direction of decimal movement when adjusting for the divisor.  \nThis error directly aligns with misunderstanding how decimal position affects division magnitude, not merely digit order or placeholder zeros. Related misconceptions like commutative property errors or wrong-end alignment don't explain the reversed decimal shift direction here.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

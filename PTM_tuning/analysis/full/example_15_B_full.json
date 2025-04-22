@@ -1,7 +1,0 @@
-{
-  "query_id": "15_B",
-  "content_id": 590,
-  "explanation": "Correct calculation: For an equilateral triangle with side length 12m, the area is \\(\\frac{\\sqrt{3}}{4} \\times 12^2 \\approx 62.35\\) m\u00b2, requiring calculation of the height via \\(h = \\frac{\\sqrt{3}}{2} \\times 12\\).\n\nStudent's error: They computed \\(\\frac{12 \\times 12}{2}\\), incorrectly using the side length (12m) as both base and height in the triangle area formula.\n\nFlawed reasoning: The student treated the given side length as the vertical height. In reality, the height of an equilateral triangle must be derived using trigonometry or Pythagorean theorem (\\(h \\neq\\) side length). This shows confusion between side lengths and perpendicular height in non-right triangles.\n\nDistinction from related errors: While other misconceptions involve parallelogram area or base selection, this specific error stems from misidentifying which dimensions constitute valid base-height pairs for triangles. The student correctly applied the triangle area formula structure (\\(\\frac{1}{2}bh\\)) but with invalid components.\n\nCritical misapplication: Equating \"all sides equal\" to \"any side can serve as height\" without geometric justification, ignoring the need for orthogonal height measurement.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

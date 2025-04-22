@@ -1,7 +1,0 @@
-{
-  "query_id": "1421_A",
-  "content_id": 1321,
-  "explanation": "Correct calculation: 180\u00b0 - (49\u00b0 + 51\u00b0) = 80\u00b0\nStudent's calculation: Possibly assumed p = 51\u00b0 directly\n\nThe student incorrectly treated two non-parallel triangle sides as parallel lines with co-interior angles. They misapplied the co-interior angle property (which states co-interior angles sum to 180\u00b0 when lines are parallel) by assuming equality instead of supplementary relationships. This caused them to copy the 51\u00b0 angle value rather than calculate the missing angle through triangle angle summation.\n\nThis aligns with the misconception about co-interior angles being equal rather than supplementary, as their answer matches an existing angle measure without arithmetic operations. It differs from forgetting to subtract angle sums, which would still require addition of given angles before miscalculating 180\u00b0 - 100\u00b0.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

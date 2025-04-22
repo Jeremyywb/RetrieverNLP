@@ -1,7 +1,0 @@
-{
-  "query_id": "266_D",
-  "content_id": 1976,
-  "explanation": "Correct calculation:  \n\\( 1 \\frac{2}{3} \\times 2 = \\frac{5}{3} \\times 2 = \\frac{10}{3} = 3 \\frac{1}{3} \\).\n\nStudent's error:  \nThey likely calculated \\(1 \\times 2 = 2\\) for the whole number and \\( \\frac{2}{3} \\times 2 = \\frac{4}{6} \\), then combined these as \\(2 \\frac{4}{6}\\).\n\nFlawed reasoning:  \nThe student multiplied both numerator and denominator of \\( \\frac{2}{3} \\) by 2, incorrectly treating the integer multiplier as a fraction requiring denominator multiplication. This preserved the denominator (3 \u2192 6) instead of keeping it fixed, reducing the fractional value.\n\nConnection to misconception:  \nThis matches \"when multiplying fractions, multiplies both numerator and denominator,\" applied erroneously to integer multiplication. The error stems from misapplying fraction\u00d7fraction rules to fraction\u00d7integer.\n\nDistinction:  \nUnlike related errors (e.g., multiplying denominators alone), this specifically doubles both parts of the fraction, creating an equivalent fraction (\\(\\frac{4}{6}\\)) instead of scaling its magnitude (\\(\\frac{4}{3}\\)).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

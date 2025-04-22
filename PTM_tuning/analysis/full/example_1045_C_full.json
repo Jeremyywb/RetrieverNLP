@@ -1,7 +1,0 @@
-{
-  "query_id": "1045_C",
-  "content_id": 501,
-  "explanation": "The correct calculation uses cosine: adjacent/hypotenuse = 6/10 = cos\u03b8 \u2192 \u03b8 = arccos(3/5).  \nThe student likely calculated tan\u03b8 = opposite/adjacent. To do this, they first derived the opposite side using Pythagoras: \u221a(10\u00b2-6\u00b2) = 8, then used tan\u03b8 = 8/6.  \n\nThe error stems from misidentifying which sides were initially given relative to \u03b8. The problem explicitly provides the adjacent leg (6cm) and hypotenuse (10cm), but the student treated the calculated opposite side (8cm) as a given value when selecting their ratio.  \n\nThis demonstrates a failure to recognize that trigonometric ratio selection must be based only on the original given sides in the problem statement (6cm and 10cm), not derived values. The confusion between adjacent/hypotenuse (cos) and opposite/adjacent (tan) directly caused the error.  \n\nThis differs from related misconceptions about inverse tangent calculations or general SOHCAHTOA confusion, as the student specifically prioritized a calculated side over given information when choosing their ratio.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

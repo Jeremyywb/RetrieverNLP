@@ -1,7 +1,0 @@
-{
-  "query_id": "1193_B",
-  "content_id": 2121,
-  "explanation": "The correct solution recognizes that angles forming a straight line sum to \\(180^{\\circ}\\), regardless of their individual measures. The student likely visually estimated angle \\(a\\) and \\(b\\) from the non-scalar diagram (e.g., interpreting one as \\(60^{\\circ}\\) and the other as \\(40^{\\circ}\\)) and added these perceived values. This directly stems from relying on the diagram's appearance rather than applying the geometric principle of linear pairs. The error is distinct from ignoring adjacent angles or misapplying angle relationships in polygons, as the problem explicitly involves only two angles on a straight line. The misconception manifests here as prioritizing visual estimation over deductive reasoning about straight angles.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

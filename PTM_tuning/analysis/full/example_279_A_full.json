@@ -1,7 +1,0 @@
-{
-  "query_id": "279_A",
-  "content_id": 1188,
-  "explanation": "The correct reflex angle calculation requires subtracting the acute angle from 360\u00b0. The inner scale at the second line reads 35\u00b0 (halfway between 30 and 40), giving 360\u00b0 - 35\u00b0 = 325\u00b0. \n\nThe student's answer shows the second line at 25\u00b0 on the outer scale (halfway between 20 and 30), which corresponds to 155\u00b0 on the inner scale. This led them to calculate 360\u00b0 - 25\u00b0 = 335\u00b0 instead. \n\nThe flaw stems from using the outer scale to measure the acute angle when measuring a reflex angle, which requires using the inner scale to determine the correct supplementary angle. \n\nThis directly aligns with the misconception of reading the wrong protractor scale for reflex angles, as they selected the outer scale's 25\u00b0 rather than the inner scale's 35\u00b0. \n\nIt's distinct from related errors like failing to add 180\u00b0 or using complementary angles, as the student correctly attempted to subtract from 360\u00b0 but used the wrong scale to determine the acute angle.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

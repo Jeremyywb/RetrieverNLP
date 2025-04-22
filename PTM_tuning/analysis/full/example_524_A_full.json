@@ -1,7 +1,0 @@
-{
-  "query_id": "524_A",
-  "content_id": 2487,
-  "explanation": "Correct calculation: 8 + 12 = 20\nStudent's calculation: 10 + 2 = 12 (incorrect sum)\n\nThe student selected numbers producing 12 instead of 20, indicating they solved for a difference of 8 (10 - 2 = 8) rather than the required sum. This shows they substituted subtraction for addition when interpreting the equation. The error stems from misapplying subtraction to a purely additive relationship, directly aligning with the \"subtracts instead of adds\" misconception. \n\nThis differs from \"adds instead of multiplies\" because the student didn't use addition where multiplication was required - they replaced addition with subtraction entirely. It also contrasts with commutativity issues, as the operation itself was misapplied, not the order of terms.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "120_D",
-  "content_id": 1652,
-  "explanation": "Correct calculation:\n4 cm\u00b2 \u00d7 (10 mm/cm)\u00b2 = 4 \u00d7 100 mm\u00b2 = 400 mm\u00b2\nTotal area = 400 mm\u00b2 + 4 mm\u00b2 = 404 mm\u00b2\n\nStudent's calculation:\n4 cm\u00b2 \u00d7 100\u00b2 = 4 \u00d7 10,000 = 40,000 mm\u00b2\nTotal area = 40,000 + 4 = 40,004 mm\u00b2\n\nFlaw explanation:\nThe student applied an incorrect length conversion (1 cm = 100 mm rather than 10 mm) when squaring to convert area units. This caused them to multiply by 10,000 (100\u00b2) instead of 100 (10\u00b2) for the cm\u00b2\u2192mm\u00b2 conversion. The error stems from misapplying a base-10 relationship to an invented unit scale, not merely forgetting to square or misplacing decimals. This differs from \"1000 mm in 1 cm\" errors that would produce larger magnitudes (1,000,000 mm\u00b2/cm\u00b2). The core issue is creating a non-standard unit ratio (100:1) rather than misapplying standard ratios through addition or directionality.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

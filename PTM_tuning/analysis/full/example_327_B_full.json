@@ -1,7 +1,0 @@
-{
-  "query_id": "327_B",
-  "content_id": 1605,
-  "explanation": "Correct calculation: To round 999.999 to the nearest ten, examine the ones place (9). Since 9 \u2265 5, round up the tens place (9 \u2192 10). This carries through the number: 99(9) \u2192 100(0), resulting in 1000.\n\nStudent's error: The student likely looked at the tenths place (first decimal 9) instead of the ones place, or stopped at the tens digit when carrying. They may have calculated 999.999 \u2192 1000.0 but then truncated to 100 by removing two zeros, mistaking the required place value.\n\nSpecific flaw: The student changed the hundreds place instead of maintaining the number's magnitude through proper carrying. This shows confusion about which digit controls rounding (ones place) and how multiple carries affect higher place values.\n\nDistinction: This isn't simply rounding down (misconception 1) or zero removal (misconception 2), but a failure to recognize that rounding 999.999 requires incrementing the hundreds place (999 \u2192 1000), not altering the thousands place or decimals.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

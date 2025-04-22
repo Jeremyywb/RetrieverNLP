@@ -1,7 +1,0 @@
-{
-  "query_id": "561_B",
-  "content_id": 2380,
-  "explanation": "The correct transformation adds 1 to all y-values, requiring a vertical shift upward. This corresponds to the vector \\(\\left[\\begin{array}{l}0 \\\\ 1\\end{array}\\right]\\). The student incorrectly concluded the vector is \\(\\left[\\begin{array}{l}0 \\\\ -1\\end{array}\\right]\\), reversing the vertical direction. \n\nThe error stems from misapplying the relationship between algebraic operations and geometric translations: adding a positive constant to \\(f(x)\\) increases y-values, which should shift the graph upward. The student likely associated \"adding\" with \"moving downward\" on the coordinate plane, inverting the expected directionality of the vertical transformation. \n\nThis misconception specifically relates to direction reversal in vertical shifts rather than misinterpreting vector components (which remained correctly vertical) or confusing horizontal/vertical axes. The error is isolated to the vertical translation's sign, not the vector structure or horizontal movement.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "50_D",
-  "content_id": 964,
-  "explanation": "Correct calculation: \\(23.04 \\div 1000 = 0.02304\\)  \nIncorrect calculation: Student likely moved the decimal point four places left instead of three, arriving at \\(0.002304\\).  \n\nThe error stems from misapplying the division-by-powers-of-10 rule. The student incorrectly added a decimal place instead of strictly moving the decimal point three positions left. Starting at \\(23.04\\), moving three places left correctly lands at \\(0.02304\\), but the student inserted an extra zero before the digits \"2304,\" effectively shifting four places.  \n\nThis aligns with the misconception of conflating \"adding decimal places\" (e.g., appending zeros) with the proper decimal movement. Unlike errors involving incorrect power-of-10 adjustments (e.g., dividing by \\(10^4\\) instead of \\(10^3\\)), this flaw specifically involves mispositioning the decimal by treating division as additive zero-insertion rather than digit displacement.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

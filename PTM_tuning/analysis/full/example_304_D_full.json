@@ -1,7 +1,0 @@
-{
-  "query_id": "304_D",
-  "content_id": 2532,
-  "explanation": "Correct calculation:  \n1. Evaluate parentheses: \\(3 - 4 = -1\\)  \n2. Multiply: \\(2 \\times (-1) = -2\\)  \n3. Add: \\(1 + (-2) = -1\\)  \n\nStudent's incorrect approach:  \nIf they performed addition first:  \n1. \\(1 + 2 = 3\\)  \n2. \\(3 \\times (3 - 4) = 3 \\times (-1) = -3\\)  \nResulting in \\(-3\\) instead of \\(-1\\).  \n\nThe student incorrectly assumed addition and multiplication could be reordered without affecting the result, ignoring the parentheses' priority. By treating all operations as equally weighted, they failed to recognize that parentheses must dictate the initial step. This directly aligns with the misconception of disregarding PEMDAS hierarchy.  \n\nDistinction from related errors:  \n- The error is not due to right-to-left calculation (e.g., \\(4 - 3\\) first) or a pure arithmetic mistake.  \n- The student explicitly claimed equivalence between orderings, showing a systemic disregard for operational precedence rather than isolated misapplication.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

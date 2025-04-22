@@ -1,7 +1,0 @@
-{
-  "query_id": "160_C",
-  "content_id": 2436,
-  "explanation": "The correct quadratic equation is \\(x^2 + 3x - 40 = 0\\). Factoring requires two numbers that multiply to \\(-40\\) and add to \\(3\\), which are \\(8\\) and \\(-5\\). This gives \\((x + 8)(x - 5) = 0\\), yielding solutions \\(x = -8\\) and \\(x = 5\\).\n\nThe student likely factored the equation as \\((x - 8)(x + 5) = 0\\), producing \\(x = 8\\) and \\(x = -5\\). This shows they correctly identified the numerical values \\(8\\) and \\(5\\) but reversed the signs when forming the binomials. \n\nThe error stems from a misapplication of sign allocation in factoring: the student preserved the magnitude of the root-determining constants but inverted their positive/negative assignments. This directly corresponds to swapping signs in the factors despite identifying the correct pair of numbers. \n\nThe misconception is distinct from general quadratic form errors (the equation was properly set to zero) or sign association with the constant term (the student didn't strictly match signs to \\(-40\\)). Instead, it specifically involves sign reversal during factorization while retaining correct numerical values.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

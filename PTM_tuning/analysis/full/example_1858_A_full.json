@@ -1,7 +1,0 @@
-{
-  "query_id": "1858_A",
-  "content_id": 1029,
-  "explanation": "A line graph requires continuous quantitative data, typically showing trends over time. The correct answer uses time as the continuous independent variable with traffic levels as dependent measurements, forming a continuous relationship.\n\nThe student selected data about siblings per child - discrete counts (0,1,2...) that can't have intermediate values. They incorrectly assumed this numerical count constitutes continuous data suitable for line connection points.\n\nThe error stems from treating discrete numerical quantities (counts of siblings) as continuous measurements. While the values are numerical, the distinct whole numbers represent separate categories rather than points along a measurable continuum.\n\nThis specific confusion matches treating real-world discrete counts as continuous data better than the related misconception about qualitative data, as sibling counts are quantitative but discrete. The error shows an inability to distinguish between discrete count data and continuous measurement data in visualization selection.\n\nThe student likely reasoned that \"number of siblings\" involves numbers that can be plotted, but failed to recognize that individual counts (discrete data points) require categorical comparisons rather than connected line segments showing continuous variation.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

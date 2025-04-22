@@ -1,7 +1,0 @@
-{
-  "query_id": "833_C",
-  "content_id": 797,
-  "explanation": "The correct reflection over \\( y = x \\) swaps coordinates: \\( (2,1) \\rightarrow (1,2) \\). The student's answer \\( (0,1) \\) suggests they subtracted 2 from the \\( x \\)-coordinate while leaving \\( y \\) unchanged. \n\nThis error indicates the student treated \\( y = x \\) as a vertical line \\( x = 1 \\), not a diagonal. Reflecting \\( (2,1) \\) over \\( x = 1 \\) would yield \\( (0,1) \\), matching their answer. \n\nThe flaw stems from misinterpreting \\( y = x \\) as a vertical axis rather than recognizing it requires coordinate swapping. This directly aligns with confusing the diagonal reflection line for a vertical axis, not merely translating or misapplying direction. Other misconceptions like flipping direction or keeping points on the line unchanged don't explain the specific coordinate shift to \\( (0,1) \\).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

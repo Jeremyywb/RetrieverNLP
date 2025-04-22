@@ -1,7 +1,0 @@
-{
-  "query_id": "492_B",
-  "content_id": 1960,
-  "explanation": "To verify triangle validity using the triangle inequality theorem:\n\nFor Tom's sides (11,10,2):\n- 11 + 10 > 2 (21 > 2 \u2714\ufe0f)\n- 11 + 2 > 10 (13 > 10 \u2714\ufe0f)\n- 10 + 2 > 11 (12 > 11 \u2714\ufe0f)\n\nFor Katie's sides (8,5,3):\n- 5 + 3 = 8 (8 \u226f 8 \u274c)\n\nThe student likely checked only two valid inequalities for Katie's case:\n- 8 + 5 > 3 \u2714\ufe0f\n- 8 + 3 > 5 \u2714\ufe0f\nbut failed to verify the critical third combination (5 + 3 > 8). This incomplete checking caused them to incorrectly accept Katie's triangle while missing the equality violation. The error directly stems from not testing all three required inequalities, differing from related misconceptions like focusing on hypotenuse relationships or single-side comparisons.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

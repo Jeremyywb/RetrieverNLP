@@ -28,14 +28,16 @@
 #### **3. 数学模型设计**
 提出三元组联合优化损失函数：
 
-$$
+<!-- $$
 \begin{aligned}
 \mathcal{L}_{\text{total}} = 
 & \underbrace{\alpha \cdot \text{TripletLoss}(Q, R^+, R^-)}_{\text{答案区分度}} \\
 & + \underbrace{\beta \cdot \|\mathbf{e}_Q - \mathbf{e}_{\text{CoT}}\|^2}_{\text{Q-CoT对齐}} \\
 & + \underbrace{\gamma \cdot \|\mathbf{e}_{\text{CoT}} - \mathbf{e}_{R^+}\|^2}_{\text{推理一致性}}
 \end{aligned}
-$$
+$$ -->
+
+![公式图](./asset/svg.svg)
 
 
 

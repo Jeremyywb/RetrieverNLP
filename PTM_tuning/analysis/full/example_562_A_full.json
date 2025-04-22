@@ -1,7 +1,0 @@
-{
-  "query_id": "562_A",
-  "content_id": 2433,
-  "explanation": "Correct calculation:  \n\\$5 \u00f7 \\$1.31/\u00a31 = \u00a33.82\n\nIncorrect calculation:  \n\\$5 \u00d7 1.31 = \u00a36.55\n\nThe student treated the dollar-to-pound conversion as a direct multiplication using the given \"\u00a31=\\$1.31\" rate instead of dividing. This assumes pounds increase linearly with dollars (like currency multiplication rather than reciprocal conversion), misapplying the exchange rate as a multiplier instead of a divisor. The error stems from conflating proportional relationships in opposite directions (currency conversion requires inverse operations). \n\nThis distinguishes from \"multiplies up without finding unit price\" because the student isn't skipping steps in a multi-part problem - they fundamentally reversed the conversion direction. It also isn't about division commutativity, as there's no indication they swapped operands in division.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

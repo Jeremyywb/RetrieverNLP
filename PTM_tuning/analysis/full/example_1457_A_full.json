@@ -1,7 +1,0 @@
-{
-  "query_id": "1457_A",
-  "content_id": 488,
-  "explanation": "The correct calculations:\n- Tom: \\(21 \\times 12 = (7 \\times 3) \\times 12 = 7 \\times (3 \\times 12) = 7 \\times 36 = 252\\)\n- Katie: \\(21 \\times 12 = 21 \\times (6 \\times 2) = (21 \\times 6) \\times 2 = 126 \\times 2 = 252\\)\n\nThe student likely thought:\n- Only Tom's approach preserves the original product because he directly splits the first number (21) into factors, while Katie's splitting of the second number (12) alters the problem.\n\nSpecific flaw:\nThe student failed to recognize that the associative property allows regrouping factors from either multiplicand. They assumed the decomposition must apply strictly to the first number (21) rather than understanding either number can be split. This restricted view of factor decomposition led them to invalidate Katie's valid strategy.\n\nDistinction from related misconceptions:\nThis isn't about commutativity (order of numbers) or arithmetic errors with 6s tables, but specifically about not recognizing factor decomposition applies to both multiplicands equally. The error stems from a limited application of the associative property, not a total denial of multiplication properties.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

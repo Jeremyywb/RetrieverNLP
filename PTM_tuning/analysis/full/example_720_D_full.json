@@ -1,7 +1,0 @@
-{
-  "query_id": "720_D",
-  "content_id": 2027,
-  "explanation": "The correct expression \\(10n\\) is a multiple of 5 because \\(10 = 5 \\times 2\\), ensuring \\(10n = 5(2n)\\) for any integer \\(n\\). \n\nThe student\u2019s answer \\(5n + 2\\) adds 2 to the multiple \\(5n\\). This addition disrupts divisibility by 5: \\(5n\\) divided by 5 leaves remainder 0, but \\(5n + 2\\) leaves remainder 2, making it never a multiple of 5. \n\nThe error stems from assuming that adding any integer (here, 2) to a multiple of 5 preserves divisibility. The student incorrectly treated the constant term as part of the multiple\u2019s structure rather than altering its remainder. \n\nThis directly aligns with the misconception that adding a value to a multiple of \\(b\\) yields another multiple of \\(b\\), ignoring how modular arithmetic works. It differs from related misconceptions about \"next multiples\" or specific numerical examples, as the flaw here is a general misunderstanding of additive offsets in divisibility.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "1117_D",
-  "content_id": 1184,
-  "explanation": "Correct calculation: 20% corresponds to 90 \u2192 \\( \\frac{90}{0.20} = 450 \\).\n\nStudent's calculation: \\( 90 \\times 0.20 = 18 \\).\n\nThe student treated the given 20% value (90) as the whole instead of the part. They multiplied 90 by 20% to compute \"a percentage of\" the number they misinterpreted as the whole. This directly reverses the part-whole relationship: they calculated 20% of 90 rather than finding the whole that 90 represents 20% of. \n\nThis aligns with confusing part/whole roles in percentage problems, not merely dividing instead of multiplying. The error is distinct from scaling errors (e.g., dividing by 5 instead of multiplying) because the core issue is misidentifying which value represents the percentage portion versus the total.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "1716_A",
-  "content_id": 1153,
-  "explanation": "The correct expansion is:\n\\[\n(3m+2)(m-2) = 3m^2 -6m +2m -4 = 3m^2 -4m -4\n\\]\nThe student likely calculated:\n\\[\n(3m)(m) + (2)(-2) = 3m^2 -4\n\\]\nThis shows they only multiplied the first terms (3m\u00b7m) and last terms (2\u00b7-2), skipping the outer (3m\u00b7-2) and inner (2\u00b7m) terms entirely. Their misconception caused them to omit the cross-multiplications required by the distributive property. This specifically matches the error pattern of multiplying only the first and last pairs in a double bracket expansion, rather than the broader category of misapplying distributive property in other ways (e.g., adding terms instead of multiplying). The absence of -6m and +2m in their calculation directly explains why they concluded the m-term coefficient was zero.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

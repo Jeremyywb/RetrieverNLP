@@ -1,7 +1,0 @@
-{
-  "query_id": "1576_A",
-  "content_id": 625,
-  "explanation": "The correct corresponding angle to MNS is QMX, located at intersection M on PQ, maintaining the same relative position to transversal XY and parallel lines as MNS does at N on RS.\n\nThe student incorrectly selected YNR, which shares vertex N with MNS but lies on the opposite side of transversal XY. This indicates they identified an angle at the same intersection point rather than recognizing the required positional relationship across parallel lines.\n\nThe error stems from misapplying vertical angle relationships (which occur at a single intersection) to a corresponding angle scenario requiring positions at different intersections. This directly conflates vertical angles with corresponding angles, rather than confusing co-interior angles (which would involve same-side interior positions) or alternate angles (which switch sides of the transversal).\n\nThis distinction shows the error specifically arises from misidentifying geometric relationships at a single intersection point, not from confusion between interior/exterior angle pairs or transversal-side consistency.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

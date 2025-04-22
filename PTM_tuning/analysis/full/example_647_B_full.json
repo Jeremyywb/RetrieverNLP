@@ -1,7 +1,0 @@
-{
-  "query_id": "647_B",
-  "content_id": 2082,
-  "explanation": "Correct calculation: \\(9 \\times \\sqrt{3} = 9\\sqrt{3}\\) (no simplification possible since 3 has no square factors).  \nStudent's incorrect calculation: \\(9 \\times \\sqrt{3} = \\sqrt{9 \\times 3} = \\sqrt{27}\\).  \n\nThe error occurs when converting \\(9\\sqrt{3}\\) to a single radical. The student incorrectly placed the coefficient 9 directly under the radical without squaring it first. To express \\(a\\sqrt{b}\\) as \\(\\sqrt{a^2 \\times b}\\), the coefficient must be squared. Here, \\(9\\sqrt{3}\\) would correctly become \\(\\sqrt{81 \\times 3} = \\sqrt{243}\\), not \\(\\sqrt{27}\\).  \n\nThis matches the misconception of treating the coefficient as a multiplier for the existing radicand instead of squaring it before combining. The student mistakenly applied \\(a\\sqrt{b} = \\sqrt{a \\times b}\\) rather than \\(\\sqrt{a^2 \\times b}\\).  \n\nThis differs from \"squares the number under the radical\" (which would imply \\(9\\sqrt{3} = \\sqrt{9 \\times 3^2}\\)) or \"multiplies coefficients but fails to multiply under the radical\" (which would leave \\(9\\sqrt{3}\\) unchanged). The error is specific to mishandling the coefficient-to-radical conversion.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

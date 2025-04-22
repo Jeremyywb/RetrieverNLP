@@ -1,7 +1,0 @@
-{
-  "query_id": "263_B",
-  "content_id": 2234,
-  "explanation": "Correct calculation:  \nConvert \\(\\frac{2}{3}\\) to \\(\\frac{20}{30}\\) (multiplying numerator/denominator by 10) and \\(\\frac{1}{10}\\) to \\(\\frac{3}{30}\\) (multiplying by 3).  \nSubtract: \\(20 - 3 = 17\\).\n\nStudent's error:  \nLikely converted \\(\\frac{2}{3}\\) correctly to \\(\\frac{20}{30}\\) but failed to adjust \\(\\frac{1}{10}\\) properly.  \nIf they multiplied the denominator \\(10\\) by \\(3\\) to get \\(30\\) but left the numerator as \\(1\\), they would incorrectly compute \\(20 - 1 = 19\\).\n\nSpecific flaw:  \nThe student changed the denominator of \\(\\frac{1}{10}\\) without applying the same scaling factor (\\(\u00d73\\)) to the numerator. This violates the principle that equivalent fractions require proportional adjustments to both numerator and denominator.\n\nConnection to misconception:  \nThe error directly stems from misunderstanding equivalence in fractions \u2013 altering only one component of the fraction breaks its proportionality. This is distinct from errors like assuming subtraction commutativity or incorrect denominator selection, as the mistake occurred specifically in maintaining equivalent values during conversion.\n\nDistinction:  \nUnlike \"common denominator must be product of denominators\" (which the student followed correctly), this error specifically involves improper scaling of the numerator after selecting the correct denominator.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

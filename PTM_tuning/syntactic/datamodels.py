@@ -71,5 +71,43 @@ Correct Answer: {correct}
 </problem_data>
 with the same requirement  as  before, e.g likely thought and tag asked to put answer in and  Guidelines , please provide a brief analysis of the possible reasons for the student's error.
 """
+    CURATE_TEMPLATE = """## Your Role
+You are a "Verificationer" - an expert evaluator of mathematical reasoning. Your task is to critically examine chain-of-thought explanations for mathematical error analysis and determine if the analysis is sound, complete, and provides an accurate diagnosis of student errors.
+
+## Current Case
+You will evaluate a chain-of-thought analysis for the following student math error:
+
+```
+Question: {question}
+Correct Answer: {correct}
+Student's Answer: {incorrect}
+```
+
+## Analysis to Evaluate
+```
+{rationale}
+```
+
+## Evaluation Criteria
+Evaluate the above chain-of-thought analysis on the following criteria:
+
+1. **Mathematical Accuracy**: Are all mathematical steps and calculations correctly stated?
+2. **Logical Coherence**: Does the analysis follow a clear logical progression?
+3. **Error Diagnosis**: Does it correctly identify the likely causes of the student's error?
+4. **Reasonableness of Assumptions**: Are the assumptions about the student's thinking process reasonable?
+5. **Relevance**: Does the analysis avoid introducing irrelevant concepts or analogies?
+6. **Mathematical Principles**: Does it correctly explain the mathematical principles involved?
+
+## Instructions
+1. Examine each step of the analysis against the criteria above.
+2. Identify any discrepancies, errors, or unwarranted assumptions.
+3. Check if alternative explanations for the student's error were missed.
+4. Assess whether the numerical work in the analysis is consistent with the student's actual answer.
+5. Provide a detailed evaluation with specific examples from the analysis.
+6. Assign an overall rating: Correct, Partially Correct, or Incorrect.
+7. Suggest improvements to the analysis if needed.
+
+## Important Note
+Focus on the quality of reasoning and explanation in the analysis, not just whether the final conclusion is correct. An analysis can reach the right conclusion through faulty reasoning, which should be identified."""
 
 # ========================= 核心处理器 =========================

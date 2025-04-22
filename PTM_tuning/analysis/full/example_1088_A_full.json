@@ -1,7 +1,0 @@
-{
-  "query_id": "1088_A",
-  "content_id": 2487,
-  "explanation": "Correct calculation: When x=10, substituting into x+y=8 gives 10+y=8. Solving for y: y=8-10=-2.\n\nStudent's calculation: The student likely substituted x=10 and wrote 10+y=8, but then incorrectly subtracted 8 from x instead of subtracting x from 8: y=10-8=2.\n\nSpecific flaw: The student reversed the subtraction order when isolating y. They performed y=x-8 (10-8) instead of y=8-x (8-10), treating the equation as y=x-8 rather than y=8-x.\n\nConnection to misconception: This directly stems from misapplying inverse operations - they used subtraction (the correct inverse of addition) but inverted the relationship between terms instead of maintaining y=8-x.\n\nDistinction: This isn't about subtracting instead of adding (they used subtraction appropriately) or negative number misunderstandings, but specifically about reversing the operands when applying inverse operations.\n\nFinal consequence: The reversed subtraction produced a positive y value where a negative was required, making 10+2=12\u22608 instead of 10+(-2)=8.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

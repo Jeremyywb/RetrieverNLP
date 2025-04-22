@@ -1,7 +1,0 @@
-{
-  "query_id": "1437_D",
-  "content_id": 691,
-  "explanation": "The correct range calculation identifies the maximum (22 cm) and minimum (4 cm) values, then subtracts:  \n22 cm \u2212 4 cm = 18 cm.  \n\nThe student likely selected the correct maximum and minimum but added them instead:  \n22 cm + 4 cm = 26 cm.  \n\nThis error stems from conflating range calculation with summing the extremes rather than computing their difference. The misconception directly replaces subtraction with addition when determining the spread between values, even though the student correctly identified the relevant values for range.  \n\nThis distinguishes from \"does not know the definition of range,\" as the student still isolated the correct maximum/minimum pair. The error is specifically in the final arithmetic operation, not in conceptual understanding of which values to use.  \n\nThe addition instead of subtraction aligns precisely with the stated primary misconception, as opposed to alternative errors like misidentifying the extremes or calculating total spread differently.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

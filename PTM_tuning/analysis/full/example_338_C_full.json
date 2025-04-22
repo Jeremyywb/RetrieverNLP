@@ -1,7 +1,0 @@
-{
-  "query_id": "338_C",
-  "content_id": 1429,
-  "explanation": "The correct calculation requires multiplying numerator and denominator by 2: \\( \\frac{4}{6} \\times \\frac{2}{2} = \\frac{8}{12} \\).  \nThe student's answer (10/12) suggests they added 6 to the denominator (6 \u2192 12) and then added 6 to the numerator (4 \u2192 10), treating equivalence as requiring equal addition rather than equal scaling.  \n\nThis error stems from incorrectly assuming equivalence is maintained by additive relationships rather than multiplicative ones. The student applied the same absolute change (+6) to both terms, violating the proportional scaling required for equivalent fractions.  \n\nThis reasoning aligns with the misconception of using additive strategies for ratios, not merely forgetting to adjust the numerator or multiplying by the wrong factor. Unlike multiplicative errors (e.g., multiplying by 5), the student's arithmetic (+6) directly reflects an additive misinterpretation of equivalence.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

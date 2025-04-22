@@ -1,7 +1,0 @@
-{
-  "query_id": "951_C",
-  "content_id": 328,
-  "explanation": "Correct calculation:\n3 \u00d7 5 + 4 - 2  \n= 15 + 4 - 2  \n= 19 - 2  \n= 17\n\nStudent's likely calculation:\n3 \u00d7 (5 + 4 - 2)  \n= 3 \u00d7 7  \n= 21\n\nThe student incorrectly prioritized all addition/subtraction before multiplication, despite no parentheses in the original problem. This shows they treated addition/subtraction as equal in priority to multiplication rather than lower. The error stems from grouping sequential additions/subtractions as a single unit to multiply, overriding operator hierarchy. This differs from right-to-left execution (which would yield 3\u00d75=15 \u2192 15+4=19 \u2192 19-2=17 correctly) or isolated addition-before-subtraction errors. The core flaw was misapplying operation priority tiers rather than directional execution or isolated precedence swaps.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

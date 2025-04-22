@@ -1,7 +1,0 @@
-{
-  "query_id": "584_D",
-  "content_id": 2226,
-  "explanation": "Correct calculation: \n6 cm \u00f7 3 squares = 2 cm/square \n1 square \u00d7 2 cm/square = 2 cm\n\nStudent's incorrect calculation: \n3 squares \u00f7 6 cm = 0.5 squares/cm \n1 square \u00d7 0.5 squares/cm = 0.5 cm\n\nThe student inverted the ratio by dividing the number of squares (3) by the actual length (6 cm) to compute 0.5 squares/cm instead of calculating cm per square. This caused them to multiply the star's 1 square by the inverted ratio (0.5) instead of the correct scale factor (2). The error stems from treating the diagram's squares as the numerator rather than the actual measurement when determining proportionality. This matches the misconception of dividing original (diagram) by image (real length) for scaling. It differs from other division errors because the inversion specifically occurs at the ratio-definition step, not during subsequent scaling operations.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

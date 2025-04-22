@@ -1,7 +1,0 @@
-{
-  "query_id": "542_A",
-  "content_id": 2209,
-  "explanation": "The mathematical phrase \\(6 - 3g\\) is an **expression** composed of two terms: the constant term \\(6\\) and the variable term \\(-3g\\). The student incorrectly labeled it as a \"variable,\" likely focusing solely on the presence of \\(g\\) while ignoring the structure of the entire phrase. \n\nThe error stems from conflating the **component** (the variable \\(g\\)) with the **entire mathematical entity**. The student treated the entire expression as equivalent to its variable part, failing to recognize that an expression combines numbers, variables, and operations. This reflects a misunderstanding of how terms and operations interact to form expressions, distinct from isolated variables. \n\nThe distinction from related misconceptions is critical: the error is not about misclassifying a single term (e.g., \\(-3g\\)) as a variable, but about misapplying the definition of \"expression\" to a multi-component structure. The student\u2019s reasoning conflated the role of a variable within an expression with the classification of the expression itself.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

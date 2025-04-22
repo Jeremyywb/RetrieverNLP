@@ -1,7 +1,0 @@
-{
-  "query_id": "158_C",
-  "content_id": 1098,
-  "explanation": "The correct calculation for range requires identifying the minimum and maximum values, then computing maximum - minimum. The student instead performed summation: sum = x\u2081 + x\u2082 + ... + x\u2099. \n\nThe error stems from conflating two distinct statistical measures: range (which measures spread) and total sum (which aggregates data). The student likely associated \"range\" with general numerical calculations rather than understanding it specifically quantifies the distance between extremes. \n\nThis directly corresponds to confusing the fundamental purpose of range with arithmetic summation. The misconception differs from related errors because the student didn't confuse subtraction with addition of extremes (which would still involve only two numbers) or misinterpret \"sum\" terminology. Instead, they substituted an entirely unrelated operation by processing all data points instead of focusing on boundary values.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "1028_A",
-  "content_id": 110,
-  "explanation": "The correct height calculation uses the vertical distance between y-coordinates: \\( 7 - (-12) = 19 \\).  \nThe student likely added the absolute y-values: \\( |7| + |-12| = 7 + 12 = 19 \\), but mistakenly treated one value as negative, resulting in \\( 7 + (-12) = -5 \\), then took the absolute value to get \\( 5 \\).  \n\nThe error stems from conflating coordinate positions with additive magnitudes, incorrectly summing y-values instead of computing their difference. This directly misapplies distance calculation as a sum of coordinates rather than their difference.  \n\nThe misconception is distinct from assuming equal sides or misapplying rectangle properties, as the error occurs purely in vertical distance computation. It also isn't diagram estimation, since the answer matches a coordinate arithmetic error.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

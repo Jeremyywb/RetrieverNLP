@@ -1,7 +1,0 @@
-{
-  "query_id": "1038_D",
-  "content_id": 443,
-  "explanation": "The correct calculation converts weeks to days (10\u00d77) then days to hours (\u00d724), totaling 10\u00d77\u00d724.  \nThe student performed 10\u00d77\u00d712, indicating they multiplied days by 12 instead of 24.  \nThe error stems from using 12 hours/day rather than 24. This reflects confusion between the 12-hour clock cycle (AM/PM periods) and the full 24-hour day.  \nThe misconception directly substitutes half the correct hourly conversion, as the student likely conflated \"12-hour segments\" with total daily hours.  \nThis differs from thinking there are 7 hours/day (which would produce 10\u00d77\u00d77) or 60 hours/day (which would use \u00d760).  \nThe student\u2019s arithmetic was correct, so the flaw lies entirely in the conversion factor, not calculation errors.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

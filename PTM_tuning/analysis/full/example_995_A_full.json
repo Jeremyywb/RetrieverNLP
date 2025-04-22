@@ -1,7 +1,0 @@
-{
-  "query_id": "995_A",
-  "content_id": 355,
-  "explanation": "Correct calculation:\nSum of interior angles = (6-2) \u00d7 180\u00b0 = 720\u00b0\nEach interior angle = 720\u00b0 \u00f7 6 = 120\u00b0\n\nStudent's likely steps:\n1. Calculated 360\u00b0 \u00f7 6 = 60\u00b0\n2. Treated this result as the interior angle\n\nSpecific flaw:\nThe student conflated the exterior angle formula (360\u00b0\u00f7n) with interior angles, failing to recognize they must subtract this value from 180\u00b0. This shows they didn't apply the supplementary relationship between interior/exterior angles (180\u00b0 - 60\u00b0 = 120\u00b0), directly causing the error. \n\nDistinction from related errors:\nThis isn't a miscalculation of the angle sum formula (which would require (n-2) manipulation) or an estimation issue - the error stems specifically from misapplying exterior angle properties to interior angles.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

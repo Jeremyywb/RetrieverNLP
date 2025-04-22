@@ -1,7 +1,0 @@
-{
-  "query_id": "1303_A",
-  "content_id": 2423,
-  "explanation": "The correct answer requires recognizing that an isosceles triangle must have at least two equal sides and two equal base angles. The student's assertion of \"no equal side lengths\" directly contradicts this definition. \n\nThe error stems from conflating isosceles triangles with scalene triangles, which do have all sides unequal. The student likely misapplied the property of scalene triangles to isosceles ones, reversing the definitions. \n\nThis confusion shows a failure to retain or apply the core property defining isosceles triangles (two equal sides), rather than a misunderstanding of symbols or insufficient example analysis. The error aligns specifically with misknowing the triangle's properties, not with symbolic misinterpretation or observational bias. No other listed misconception explains this inversion of definitions as precisely.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

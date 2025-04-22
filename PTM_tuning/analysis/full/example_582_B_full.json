@@ -1,7 +1,0 @@
-{
-  "query_id": "582_B",
-  "content_id": 2131,
-  "explanation": "Correct calculation:\n1. Start with \\( 3g^2 - 18g -7 \\)\n2. Factor out 3: \\( 3(g^2 - 6g) -7 \\)\n3. Complete the square for \\( g^2 - 6g \\): Add/subtract \\( 9 \\): \\( 3[(g-3)^2 - 9] -7 \\)\n4. Distribute the 3: \\( 3(g-3)^2 - 27 -7 \\)\n5. Combine constants: \\( \\triangle = -34 \\)\n\nStudent's error:\nAfter forming \\( 3(g-3)^2 \\), they likely subtracted only \\( 9 \\) (the squared term) directly from \\(-7\\), calculating \\(-7 -9 = -16\\). They failed to account for the coefficient 3 multiplying the subtracted \\( 9 \\).\n\nFlaw explanation:\nThe student neglected to multiply the added square term (9) by the coefficient outside the bracket (3) before adjusting the constant term. This caused them to subtract 9 instead of 27 from the original constant. The error stems from treating the perfect square adjustment as a standalone subtraction rather than one scaled by the leading coefficient.\n\nDistinction:\nThis differs from \"forgetting to adjust the constant\" entirely, as they did attempt an adjustment. The specific failure was in scaling the adjustment amount, which is distinct from errors in expansion or misapplying \\( a^2 + \\text{constant} \\).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

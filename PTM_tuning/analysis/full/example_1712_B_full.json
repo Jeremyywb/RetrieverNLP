@@ -1,7 +1,0 @@
-{
-  "query_id": "1712_B",
-  "content_id": 801,
-  "explanation": "Correct Calculation:\n1. To verify rotation: Find center (x,y) where corresponding points satisfy rotation formulas.\n2. Take point (-2,3) from P. Rotating 90\u00b0 clockwise around (1,1):\n   - Translate: (-2-1, 3-1) = (-3,2)\n   - Rotate: (2,3)\n   - Translate back: (2+1,3+1) = (3,4) which matches Q's point (3,4)\n3. However, applying Tom's description (missing direction) would default to counterclockwise rotation, which fails. Katie's description (missing center) would default to origin rotation, which also fails.\n\nStudent's Error:\n- Accepted Katie's answer (90\u00b0 clockwise) without verifying the center. Assumed direction alone suffices.\n\nReasoning Flaw:\n- The student recognized the correct rotation direction but failed to account for the required center (1,1). They treated rotation as purely directional (like translations), neglecting that center specification is mandatory. This matches the primary misconception of focusing solely on angle/direction while ignoring the center's role.\n\nDistinction from Related Misconceptions:\n- Unlike errors selecting the wrong center (e.g., origin), this error stems from omitting the center entirely, not miscalculating its coordinates.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

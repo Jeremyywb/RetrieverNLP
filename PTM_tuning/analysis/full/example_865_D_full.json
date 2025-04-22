@@ -1,7 +1,0 @@
-{
-  "query_id": "865_D",
-  "content_id": 510,
-  "explanation": "The correct equation uses factors corresponding to the roots \\( x = -5 \\) and \\( x = 1 \\), written as \\( (x + 5) \\) and \\( (1 - x) \\), respectively. The student wrote \\( (x - 1)(x - 5) \\), implying roots at \\( x = 1 \\) and \\( x = 5 \\). \n\nThe error occurs because the student directly used the x-intercept values as constants in the factors without negating them. For the root \\( x = -5 \\), the correct factor \\( (x + 5) \\) requires negating the root (\\( -(-5) = 5 \\)), but the student incorrectly used \\( (x - 5) \\). This reflects a misunderstanding that the factor form \\( (x - a) \\) corresponds to a root \\( x = a \\), requiring the constant term to be the negative of the root. \n\nThis directly aligns with the primary misconception: failing to recognize that the non-variable term in each factor must be the negative of the root. The student\u2019s error is not about reversing signs of solutions (as in related misconceptions) but about incorrectly translating the root value into the factor\u2019s constant term.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

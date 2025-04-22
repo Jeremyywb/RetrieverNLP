@@ -1,7 +1,0 @@
-{
-  "query_id": "447_C",
-  "content_id": 2087,
-  "explanation": "Correct calculation:\n1. \\(3h^2 = 3 \\times (5^2) = 3 \\times 25 = 75\\)\n2. \\((3h)^2 = (15)^2 = 225\\)\n\nStudent's incorrect calculation:\n1. \\(3h^2 = (3 \\times 5)^2 = 15^2 = 225\\)\n2. \\((3h)^2 = 225\\) (correctly calculated)\n\nThe student treated \\(3h^2\\) as \\((3h)^2\\), executing multiplication before exponentiation despite the absence of parentheses. This shows they prioritized left-to-right sequencing over operation hierarchy, squaring the product of 3 and h instead of squaring h first. The identical result for both expressions confirms they applied the same incorrect order to both (though one happened to match the correct answer). This differs from index multiplication errors (which would involve exponents altering coefficients) or simple arithmetic mistakes. The core issue is disregarding exponentiation's priority over multiplication when no brackets exist.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

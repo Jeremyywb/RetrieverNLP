@@ -1,7 +1,0 @@
-{
-  "query_id": "948_D",
-  "content_id": 2264,
-  "explanation": "Correct calculation:\n325,076 - 100 = 325,076 - 0\u00b900 = 324,976\n(Subtracting 100 reduces the hundreds place: 0\u21929 after borrowing from thousands place)\n\nStudent's incorrect calculation:\n325,076 - 100 = 324,076\n(They subtracted 1 from the thousands place instead of the hundreds place)\n\nThe error occurred because the student subtracted 1 from the thousands digit (5\u21924) rather than modifying the hundreds digit. This shows they treated \"100 less\" as requiring a thousands-place adjustment instead of recognizing that 100 corresponds to the third digit from the right. The misconception directly relates to place value misunderstanding when subtracting powers of ten, not a basic arithmetic error. This differs from computational errors because the operation (5-1=4) was performed correctly - just on the wrong digit column. It's distinct from borrowing errors as no multi-digit regrouping was attempted.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

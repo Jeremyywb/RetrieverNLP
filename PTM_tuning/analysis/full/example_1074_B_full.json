@@ -1,7 +1,0 @@
-{
-  "query_id": "1074_B",
-  "content_id": 519,
-  "explanation": "To factor \\(6n^2 - 9\\), first identify the greatest common factor (GCF) of the coefficients 6 and 9. The GCF is 3, so the expression factors to \\(3(2n^2 - 3)\\), confirming 3 is a factor. \n\nThe student likely observed the term \\(-9\\) and assumed its divisor (9) automatically qualifies as a factor of the entire expression. However, 9 does not divide 6 (the coefficient of \\(n^2\\)), making it impossible for 9 to be a common factor. \n\nThe error stems from failing to recognize that a \"common factor\" must divide all terms in the polynomial. The student selected a divisor of one term (9) rather than verifying divisibility across both terms. This directly aligns with misunderstanding the definition of a common factor. \n\nThis distinguishes from the misconception about selecting the smallest coefficient (which would incorrectly prioritize 6 over 3) or focusing on numerical sums. The error specifically reflects a lack of understanding of the \"common\" requirement in common factors.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

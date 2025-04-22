@@ -1,7 +1,0 @@
-{
-  "query_id": "831_C",
-  "content_id": 91,
-  "explanation": "To factor \\(6p^2 + 11p\\), identify the common factor in both terms:  \n\\(6p^2 = p \\cdot 6p\\)  \n\\(11p = p \\cdot 11\\)  \nFactoring out \\(p\\) gives \\(p(6p + 11)\\), showing \\(p\\) is a factor.  \n\nThe student incorrectly selected \\(p^2\\). They likely observed \\(p^2\\) in the first term but failed to verify if it divides both terms. Since \\(p^2\\) cannot divide \\(11p\\) (leaving a non-integer \\(11/p\\) when divided), it violates the requirement for factors to apply to all terms in the expression.  \n\nThis error stems from conflating the presence of a term's component (like \\(p^2\\)) with being a valid factor of the entire polynomial. The student treated factors as isolated to individual terms rather than requiring divisibility across all terms.  \n\nThis directly aligns with misunderstanding common factors in algebra, as opposed to related misconceptions like choosing different factors per term (the student focused on one term's factor, not multiple) or power simplification errors (they correctly handled exponents but misapplied divisibility).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

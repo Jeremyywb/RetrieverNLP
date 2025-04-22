@@ -1,7 +1,0 @@
-{
-  "query_id": "125_A",
-  "content_id": 583,
-  "explanation": "The correct expansion after Line 1 should be:\n\\[\n(n^2 + 2n + 1) - (n^2 - 2n + 1) = n^2 + 2n + 1 - n^2 + 2n - 1 = 4n\n\\]\nIn Line 2, the student incorrectly wrote:\n\\[\nn^2 + 2n + 1 - n^2 - 2n + 1 = 2\n\\]\nThe error stems from misapplying the negative sign to only the first term of the subtracted polynomial \\((n^2 - 2n + 1)\\), converting \\(-(-2n)\\) into \\(-2n\\) instead of \\(+2n\\). This violates the distributive property, where the negative sign must distribute to all terms inside the parentheses. The student's calculation shows they altered only the \\(n^2\\) term's sign, leaving the \\(-2n\\) unchanged. This specific failure to distribute the negative coefficient distinguishes it from related misconceptions like only modifying the second term or believing subtraction is commutative, as the error occurs systematically across all terms in the expansion. The flawed distribution directly reduces the expression to \\(2\\) instead of \\(4n\\), invalidating the divisibility proof.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

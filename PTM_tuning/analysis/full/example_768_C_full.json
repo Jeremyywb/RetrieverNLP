@@ -1,7 +1,0 @@
-{
-  "query_id": "768_C",
-  "content_id": 1533,
-  "explanation": "Correct calculation:  \n899,051 + 10,000 = 909,051  \nAddition occurs in the ten thousands place: 9 (ten thousands) + 1 = 10, carrying over to make 8 (hundred thousands) \u2192 9.\n\nStudent's error:  \n899,051 + 10,000 = 999,051  \n\nSpecific flaw:  \nThe student incorrectly added 1 to the hundred thousands place (8 \u2192 9) instead of the ten thousands place. This indicates they treated the hundred thousands digit as the target for a 10,000 increment, misaligning place values. The error matches confusion about which column represents 10,000 changes.  \n\nDistinction from related misconceptions:  \nThis isn't a digit-appending error (which would alter smaller places) or an extra increment (which would add 1,000,000). The direct mismatch between the 10,000 increment's correct placement and the student's chosen column confirms place-value confusion.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "1168_D",
-  "content_id": 2354,
-  "explanation": "To move from V(2,2) to W(-3,-1), the correct translation vector is calculated as (-3-2, -1-2) = (-5, -3). This translates to left 5 (negative x-direction) and down 3 (negative y-direction). \n\nThe student correctly computed the x-component (-5 \u2192 left 5) but likely calculated the y-component as -1-2 = -3, then interpreted the negative result as \"up\" instead of \"down.\" \n\nThe error stems from misapplying the relationship between algebraic signs and directional terms for vertical movement. While the student properly associated negative x-values with \"left,\" they incorrectly mapped the negative y-value to \"up\" rather than \"down,\" reversing the standard convention that negative vertical changes correspond to downward movement. \n\nThis differs from sign errors affecting both coordinates or quadrant confusion, as the student correctly handled the x-direction and only misapplied the vertical direction. The flaw specifically reflects a disconnect between the computed translation vector and the directional terminology for the y-axis.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "9_D",
-  "content_id": 1312,
-  "explanation": "The correct transformation for \\( y = f(x-3) \\) is a rightward shift of 3 units. This occurs because replacing \\( x \\) with \\( x-3 \\) means each input value must be increased by 3 to produce the same output as the original function, effectively moving the graph right. \n\nThe student incorrectly associated \\( f(x-3) \\) with a leftward shift, likely reasoning that subtracting 3 from \\( x \\) implies movement in the negative \\( x \\)-direction. This reflects a direct reversal of the required horizontal translation direction. \n\nThe misconception stems from misapplying the relationship between the algebraic form \\( f(x-a) \\) and its geometric interpretation. The error specifically involves confusing the sign inside the function argument with the direction of translation, rather than errors related to vertical shifts or coordinate system inversions. \n\nThis distinguishes it from related misconceptions like confusing image/original relationships or misattributing vertical shifts, as the error is isolated to horizontal directionality in function transformations.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

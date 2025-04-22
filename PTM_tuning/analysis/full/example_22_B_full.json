@@ -1,7 +1,0 @@
-{
-  "query_id": "22_B",
-  "content_id": 1408,
-  "explanation": "The correct calculation for Katie's claim is:\n\\( 3748 - 427 = 3321 \\) (since 427 is 1 more than 426, subtracting an additional 1 reduces the result by 1 from 3322).\n\nThe student likely calculated:\n\\( 3322 + 1 = 3323 \\), treating subtraction as analogous to addition.\n\nThe error stems from misapplying additive reasoning to subtraction: the student assumed increasing the subtrahend by 1 would increase the result by 1, rather than decreasing it. This directly reflects a failure to recognize the inverse relationship between subtrahend size and difference magnitude. \n\nThe misconception differs from borrowing errors or digit-order mistakes, as the arithmetic steps themselves aren't flawed - only the conceptual relationship between operand change and result direction. The student correctly computed \\( 3748-426=3322 \\) but incorrectly generalized the additive pattern to subtraction.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

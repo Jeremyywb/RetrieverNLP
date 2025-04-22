@@ -1,7 +1,0 @@
-{
-  "query_id": "45_A",
-  "content_id": 220,
-  "explanation": "The correct calculation applies multiplication to both terms: \\( 2 \\times (5a + 2) = 2 \\times 5a + 2 \\times 2 = 10a + 4 \\).  \nThe student likely calculated \\( 2 \\times 5a = 10a \\) but only retained the original constant term, writing \\( 10a + 2 \\).  \nThis shows they multiplied the coefficient of \\( a \\) correctly but failed to multiply the constant term by 2, ignoring the distributive property's requirement to apply multiplication to all terms in the sum.  \nThe error aligns with a failure to recognize that \\( 2 \\times (5a + 2) \\) necessitates \\( 2 \\times 2 \\), not leaving the \"+2\" unchanged.  \nThis is distinct from merely \"completing one operation\" (e.g., forgetting to multiply at all) or inverse function errors, as the student did partially apply the operation but not fully.  \nThe core flaw is the selective application of multiplication to only part of the expression, directly linking to a distributive property misunderstanding.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

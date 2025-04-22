@@ -1,7 +1,0 @@
-{
-  "query_id": "1_A",
-  "content_id": 2142,
-  "explanation": "To simplify \\(\\frac{m^{2}+2 m-3}{m-3}\\), factor the numerator:  \nCorrect factorization: \\(m^2 + 2m - 3 = (m + 3)(m - 1)\\).  \nSince the denominator is \\(m - 3\\), there is no common factor to cancel.  \n\nStudent likely factored the numerator as \\((m - 3)(m + 1)\\):  \n\\((m - 3)(m + 1) = m^2 - 2m - 3 \\neq m^2 + 2m - 3\\).  \n\nThe error stems from selecting the correct pair of numbers (\\(3\\) and \\(-1\\)) that multiply to \\(-3\\) and add to \\(2\\), but incorrectly assigning their signs in the factors. This swapped the \\(+3\\) and \\(-1\\) terms to \\(-3\\) and \\(+1\\), creating an illusory cancellation with the denominator.  \n\nThis specifically matches the misconception of swapping signs during factorization, not general quadratic factorization errors. The student correctly identified the required numbers but misapplied their signs, unlike misconceptions about arbitrary number selection or misunderstanding coefficient relationships.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

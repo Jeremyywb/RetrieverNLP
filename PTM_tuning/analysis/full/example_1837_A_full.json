@@ -1,7 +1,0 @@
-{
-  "query_id": "1837_A",
-  "content_id": 621,
-  "explanation": "Correct calculation: \\(-5^2 = -(5^2) = -25\\).  \nStudent's calculation: \\(-5^2 = (-5)^2 = 25\\).  \n\nThe student treated the negative sign as part of the base being squared, rather than recognizing it as a separate operation applied after exponentiation. This occurs because they misapplied the order of operations, failing to distinguish between \\(- (5^2)\\) and \\((-5)^2\\).  \n\nThe misconception directly caused the error by conflating the unary minus with the base value before applying the exponent. This differs from \"squaring a negative changes the sign,\" which would yield \\(-25\\) through incorrect logic, and \"ignores the negative sign,\" which would result in \\(25\\) but omit the sign entirely rather than misapplying it.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

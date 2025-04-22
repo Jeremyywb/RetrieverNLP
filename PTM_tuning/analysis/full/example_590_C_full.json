@@ -1,7 +1,0 @@
-{
-  "query_id": "590_C",
-  "content_id": 295,
-  "explanation": "The correct answer identifies that constructing circles requires a compass, which maintains a fixed radius to draw arcs and circles. The student selected \"protractor,\" a tool designed to measure angles. \n\nThe error stems from conflating a tool's angle-measuring function (protractor) with the geometric action of constructing a circle. The student likely associated the concept of angles (e.g., a circle having 360\u00b0) with circle construction, misapplying the protractor's purpose. This directly aligns with the primary misconception of forgetting that drawing arcs/circles specifically requires a compass, not angle-related tools. \n\nRelated misconceptions like measuring lengths with degrees or forgetting a ruler are distinct, as the error here centers on tool functionality rather than unit misuse or measurement steps.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

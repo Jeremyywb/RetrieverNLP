@@ -1,7 +1,0 @@
-{
-  "query_id": "1740_B",
-  "content_id": 2080,
-  "explanation": "To find the line of symmetry for \\( y=(x+1)(x-3) \\), first determine the roots by solving \\((x+1)=0\\) and \\((x-3)=0\\), giving \\( x=-1 \\) and \\( x=3 \\). The axis of symmetry is the midpoint: \\( \\frac{-1+3}{2}=1 \\).\n\nThe student likely treated the constants in the factors as direct roots, interpreting \\((x+1)\\) as \\( x=1 \\) and \\((x-3)\\) as \\( x=-3 \\). They then selected \\(-3\\) as the line of symmetry instead of averaging the actual roots.\n\nThis error directly stems from misidentifying the roots as the constants in the factors without accounting for sign changes. Unlike related misconceptions involving averaging errors or coordinate misinterpretations, the flaw lies in the initial root determination, leading to an incorrect value being chosen outright. The student\u2019s reasoning bypassed the critical step of deriving roots from factors, resulting in a nonsensical axis value disconnected from the parabola\u2019s structure.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

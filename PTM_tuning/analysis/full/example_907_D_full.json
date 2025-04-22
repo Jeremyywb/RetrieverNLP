@@ -1,7 +1,0 @@
-{
-  "query_id": "907_D",
-  "content_id": 481,
-  "explanation": "Correct calculation: The function subtracts 4 from the input to produce 11. To reverse this, we add 4 to 11:  \n\\( 11 + 4 = 15 \\).\n\nStudent's likely calculation: They multiplied 11 by 4:  \n\\( 11 \\times 4 = 44 \\).\n\nThe student treated subtraction as requiring multiplication to reverse, misapplying inverse operations. This stems from conflating subtraction with division (where multiplication reverses division) rather than recognizing addition as its inverse. \n\nThis error aligns with reverse calculation failure, not confusion about operation order (e.g., commutativity) or input/output roles. The answer 44 directly reflects multiplying to \"undo\" subtraction, distinguishing it from other listed misconceptions.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

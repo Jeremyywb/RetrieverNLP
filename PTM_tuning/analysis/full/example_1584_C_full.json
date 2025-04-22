@@ -1,7 +1,0 @@
-{
-  "query_id": "1584_C",
-  "content_id": 1152,
-  "explanation": "Correct calculation: \\( 2 \\div \\frac{1}{5} = 2 \\times \\frac{5}{1} = 10 \\).\n\nStudent's error: Likely computed \\( \\frac{1}{2} \\times \\frac{1}{5} = \\frac{1}{10} \\), taking the reciprocal of the dividend (2) instead of the divisor (\\(\\frac{1}{5}\\)).\n\nThe student inverted the first number (2) rather than the second (\\(\\frac{1}{5}\\)), converting division into \\( \\frac{1}{2} \\times \\frac{1}{5} \\) instead of \\( 2 \\times 5 \\). This reflects a direct inversion of the wrong term in the division expression.\n\nThis differs from order reversal (which would require writing \\(\\frac{1}{5} \\div 2\\)) or reciprocal of both fractions (which would produce \\(\\frac{1}{2} \\times 5 = \\frac{5}{2}\\)). The error specifically stems from misidentifying which fraction requires reciprocal when converting division to multiplication.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "563_C",
-  "content_id": 1971,
-  "explanation": "To solve \\( p = 3r - 5 \\) for \\( r \\):\n1. Add 5 to both sides: \\( p + 5 = 3r \\)\n2. Divide by 3: \\( r = \\frac{p + 5}{3} \\).\n\nThe student instead calculated \\( r = \\frac{p - 5}{3} \\), indicating they subtracted 5 from \\( p \\). This error occurs when handling the \\(-5\\) term: the student used subtraction (mirroring the original equation's \\(-5\\)) rather than applying the inverse operation. The misconception caused them to replicate the existing operation (subtraction) instead of reversing it (addition). This differs from general sign-change errors, as the flaw specifically involves misapplying inverse operations rather than broader sign-handling mistakes. The error is isolated to the step where terms are moved across the equality, not a misunderstanding of the entire solving process.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "1853_A",
-  "content_id": 1114,
-  "explanation": "Correct calculation:\n1. Start with \\( A = \\frac{1}{2}bh \\)\n2. Multiply both sides by 2: \\( 2A = bh \\)\n3. Divide both sides by \\( h \\): \\( b = \\frac{2A}{h} \\)\n\nStudent's incorrect calculation:\n1. Starts with \\( A = \\frac{1}{2}bh \\)\n2. Attempts to solve for \\( b \\) by moving \\( \\frac{1}{2} \\) to the other side but retains it as multiplication by \\( \\frac{1}{2} \\), writing \\( b = \\frac{1}{2}(h \\times A) \\).\n\nThe student misapplied inverse operations by treating division by 2 as multiplication by \\( \\frac{1}{2} \\) on the same side of the equation, rather than reversing it. They preserved the original \\( \\frac{1}{2} \\) coefficient instead of eliminating it through multiplication by 2. This reflects a failure to recognize that isolating \\( b \\) requires systematic undoing of operations applied to it. The error is distinct from order-of-operations reversal or general variable isolation issues, as it specifically involves retaining the original coefficient rather than inverting its effect.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

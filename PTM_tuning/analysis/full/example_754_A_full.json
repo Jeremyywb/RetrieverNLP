@@ -1,7 +1,0 @@
-{
-  "query_id": "754_A",
-  "content_id": 1537,
-  "explanation": "To convert \\( y = x^2 - 2x - 3 \\) to vertex form \\( y = (x+p)^2 + q \\):\n1. Correct: \\( x^2 - 2x = (x-1)^2 - 1 \\), yielding \\( y = (x-1)^2 -4 \\), so \\( p = -1 \\)\n2. Student's error: Likely wrote \\( (x+1)^2 \\) instead of \\( (x-1)^2 \\)\n\nThe student correctly completed the square but misapplied the vertex form structure. The expression \\( (x-1)^2 \\) must match \\( (x+p)^2 \\), requiring \\( p = -1 \\). The student likely took the coefficient directly from the binomial term (1) without accounting for the negative sign in \\( (x - h) \\).\n\nThis matches the \"reverses coordinate\u2019s signs\" misconception: interpreting \\( (x-h) \\) as \\( (x+p) \\) requires \\( p = -h \\), which the student failed to apply. The error is distinct from other listed misconceptions because it specifically involves sign reversal in the completed square term, not solutions, symmetry, or translation direction.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

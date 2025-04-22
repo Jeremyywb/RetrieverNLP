@@ -1,7 +1,0 @@
-{
-  "query_id": "231_C",
-  "content_id": 1499,
-  "explanation": "The correct equation \\( y = 4 - 2x \\) has a slope of \\(-2\\) and y-intercept at \\(4\\). To find the x-intercept:  \n\\[ 0 = 4 - 2x \\Rightarrow x = 2 \\]  \nThis places the x-intercept at \\((2,0)\\), right of the origin.  \n\nThe student's graph crosses the x-axis left of the origin, implying they calculated \\(x = -2\\). This error occurs if the slope is incorrectly treated as \\(+2\\) instead of \\(-2\\). For example, solving \\(0 = 4 + 2x\\) (as if the equation were \\(y = 4 + 2x\\)) gives \\(x = -2\\).  \n\nThe flaw lies in misidentifying the slope by ignoring the negative sign in \\( -2x \\). The student assumed the coefficient of \\(x\\) was \\(+2\\), leading to a positive slope and a leftward x-intercept. This directly stems from misinterpreting the equation's structure, specifically failing to recognize that \\(4 - 2x\\) equates to \\(y = -2x + 4\\).  \n\nThis distinguishes from misconceptions like confusing the y-intercept with the slope (the student correctly identified the y-intercept as \\(4\\)) or misapplying formulas for non-slope-intercept forms (the equation is already in \\(y = mx + c\\) form).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

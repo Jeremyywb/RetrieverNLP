@@ -1,7 +1,0 @@
-{
-  "query_id": "441_A",
-  "content_id": 2056,
-  "explanation": "Correct calculation: \\( [(2 \\times 7)+(4 \\times 2)+(4 \\times 7)] \\times 2 \\).  \nStudent's calculation: \\( (2 \\times 7)+(4 \\times 2)+(4 \\times 7) \\).  \n\nThe student correctly summed the areas of the three distinct rectangular faces but omitted the final multiplication by 2. This occurred because they treated the cuboid as having only one instance of each face type rather than recognizing that opposite faces are identical and must be counted twice. Their error aligns with a failure to account for all six faces, stopping after calculating three.  \n\nThis differs from \"finds volume\" errors (which would multiply all three dimensions) or \"only considers some faces\" (which would exclude a term). The missing doubling step directly reflects the misconception that surface area requires only unique face areas, not their total paired contributions.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "759_C",
-  "content_id": 1295,
-  "explanation": "Correct calculation: \\(8 \\times 20 - 8 \\times 6\\)  \nStudent's calculation: \\(8 \\times 14 - 8 \\times 6\\)\n\nThe student likely recognized that the shaded area equals total area minus the unshaded part but incorrectly modified the original dimensions. They subtracted 6 from 20 first (\\(20 - 6 = 14\\)) and multiplied by width 8, then erroneously subtracted \\(8 \\times 6\\) again. This duplicates the subtraction step: \\(8 \\times (20 - 6)\\) already represents the shaded area, so subtracting \\(8 \\times 6\\) a second time invalidates the calculation. The error stems from failing to see that \\(8 \\times (20 - 6)\\) inherently distributes to \\(8 \\times 20 - 8 \\times 6\\), making the second subtraction redundant. This aligns with a misunderstanding of how multiplication distributes over subtraction, not merely an arithmetic error or incorrect operation order. Related misconceptions like addition errors or shape decomposition mistakes don't explain the redundant subtraction of the same term.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

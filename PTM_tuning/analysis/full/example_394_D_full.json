@@ -1,7 +1,0 @@
-{
-  "query_id": "394_D",
-  "content_id": 746,
-  "explanation": "Correct calculation: \\(10 \\times 4 \\times 5 = 200\\ \\mathrm{cm}^3\\)  \nStudent's likely calculation: \\(2 \\times (10 \\times 4 + 10 \\times 5 + 4 \\times 5) = 220\\ \\mathrm{cm}^3\\)  \n\nThe student confused volume with surface area. They calculated the sum of all six rectangular faces (surface area formula) instead of multiplying the three dimensions. This indicates they substituted the formula for total surface area (\\(2(lw + lh + wh)\\)) in place of the volume formula (\\(lwh\\)).  \n\nThe error stems from misapplying geometric formulas for different quantities (surface area vs. volume), not merely adding dimensions. Related misconceptions like simple addition errors or face-counting don't explain the systematic use of the surface area formula.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

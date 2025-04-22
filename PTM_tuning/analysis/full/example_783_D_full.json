@@ -1,7 +1,0 @@
-{
-  "query_id": "783_D",
-  "content_id": 166,
-  "explanation": "To determine \\( q \\), the correct approach identifies the vertex \\((2, -9)\\) from the translation (2 right, 9 down). In the form \\( y=(x+p)^2+q \\), \\( q \\) directly corresponds to the vertical shift: moving down 9 units gives \\( q=-9 \\).\n\nThe student likely recognized the vertical shift as 9 units but incorrectly assigned \\( q=9 \\). This error stems from misinterpreting the direction of the vertical translation: downward shifts require subtraction (negative \\( q \\)), but the student treated the downward movement as a positive additive value.\n\nThis directly aligns with the misconception where downward translations are erroneously represented as positive values in the equation. It differs from other listed misconceptions (e.g., axis misreading or sign-flipping both \\( p \\) and \\( q \\)) because the error specifically involves misapplying the sign of the vertical translation alone, not coordinate interpretation or dual sign changes.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

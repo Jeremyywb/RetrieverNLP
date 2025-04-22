@@ -1,7 +1,0 @@
-{
-  "query_id": "149_D",
-  "content_id": 397,
-  "explanation": "Correct calculation: \n0.331 (largest) - 0.30 (smallest) = 0.031\n\nStudent's likely error:\n0.331  \n- 0.30  \n-------  \n0.21  \n\nSpecific flaw: The student aligned digits by value position (units, tens, hundreds) rather than decimal places. This caused them to subtract 0.30's hundredths digit (0) from 0.331's thousandths digit (1) directly, skipping proper place-value alignment. For example:\n- They may have treated 0.331 as having digits 3 (tenths), 3 (units), 1 (tens) instead of 3 tenths, 3 hundredths, 1 thousandth.\n\nDistinction from related errors: \n- This isn't adding instead of subtracting (student performed subtraction)  \n- Subtraction order was correct (largest - smallest), ruling out commutative error  \n- The error specifically stems from place-value misalignment, not arithmetic mistakes in borrowing or carrying.\n\nThe misalignment led to an over-subtraction in the hundredths/thousandths places, producing 0.21 instead of 0.031.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

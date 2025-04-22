@@ -1,7 +1,0 @@
-{
-  "query_id": "350_A",
-  "content_id": 2265,
-  "explanation": "Correct calculation:  \nProbability not occurring = 1 - Probability occurring  \n= 1 - \\( \\frac{2}{7} \\)  \n= \\( \\frac{5}{7} \\)\n\nStudent's flawed calculation:  \nProbability not occurring = Probability occurring  \n= \\( \\frac{2}{7} \\)\n\nThe error stems from treating complementary events as equal rather than summing to 1. The student directly equated \"not occurring\" with \"occurring\" instead of performing subtraction. This matches the misconception that complementary probabilities don't require calculation via 1 - P(occurring). \n\nThe error is distinct from other listed misconceptions because:\n1. No incorrect operations were applied to multiple events\n2. The answer shows recognition of \"not occurring\" as a concept\n3. The error is purely in missing the critical 1 - P(original) step\n\nThis specific mistake reflects a failure to implement the foundational relationship between complementary probabilities rather than misunderstanding certainty or outcome spaces.",
-  "timestamp": "2025-04-20T14:44:28.633543",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "253_A",
-  "content_id": 2365,
-  "explanation": "Correct calculation: The three angles form a straight line (180\u00b0). \n180\u00b0 - 46\u00b0 - 115\u00b0 = 19\u00b0.\n\nStudent's error: 46\u00b0 directly matches one of the given angles in the diagram.\n\nFlawed reasoning: The student selected the angle labeled 46\u00b0 as the answer, assuming it should equal another visible angle measurement in the configuration. This reflects a failure to recognize that the total of all three angles must equal 180\u00b0, requiring calculation through subtraction.\n\nMisconception link: The error stems from copying a given angle value rather than applying the supplementary angle property. The student prioritized visual matching over quantitative reasoning.\n\nDistinction from related errors: This isn\u2019t a confusion about vertical angles (no intersecting lines shown) or a belief that angles add to 90\u00b0 (which would make 46\u00b0 + 115\u00b0 alone exceed that). The answer matches an explicitly labeled angle, ruling out assumptions about equal adjacent pairs.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

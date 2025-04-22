@@ -1,7 +1,0 @@
-{
-  "query_id": "688_D",
-  "content_id": 2362,
-  "explanation": "The correct calculation recognizes two adjacent angles forming a straight line: \\( \\text{green angle} + \\text{pink angle} = 180^\\circ \\).  \nThe student incorrectly summed them as \\( \\text{green angle} + \\text{pink angle} = 360^\\circ \\).  \nThe error stems from misapplying the total angle around a point (360\u00b0) to angles that are actually on a straight line.  \nThe student treated the two visible angles as comprising a full circle rather than a linear pair, confusing the angle sum rule for a straight line with that for a full rotation.  \nThis distinguishes from \"ignores unlabelled angles\" because no third angle is present, and from \"incorrectly recalls total angle in a circle\" because the error specifically conflates two distinct geometric configurations.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

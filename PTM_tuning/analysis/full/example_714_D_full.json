@@ -1,7 +1,0 @@
-{
-  "query_id": "714_D",
-  "content_id": 712,
-  "explanation": "The correct calculation:  \n\\( 609 - 1000 = -(1000 - 609) = -391 \\)\n\nThe student's reasoning:  \nStopped at \"609 - 1000\" without proceeding, concluding impossibility.\n\nSpecific flaw:  \nThe student treated subtraction as strictly directional (smaller number from larger), failing to recognize that reversing the operands introduces a negative sign. This halted their calculation entirely, preventing them from computing \\( 1000 - 609 \\) and applying the negative result.\n\nConnection to misconception:  \nThe error stems from viewing subtraction as an operation requiring the minuend to be larger than the subtrahend, rather than recognizing the result as a negative value derived from the difference.\n\nDistinction from related errors:  \nThis differs from borrowing issues (no attempt was made to subtract digit-wise) or not understanding negative magnitudes (the error occurred before any numerical result was considered).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

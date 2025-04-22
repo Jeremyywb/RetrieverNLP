@@ -1,7 +1,0 @@
-{
-  "query_id": "334_C",
-  "content_id": 760,
-  "explanation": "The correct probability \\( \\frac{1}{5} = 0.2 \\) falls near the left end of a 0-1 scale. The student likely misread \\( \\frac{1}{5} \\) as 0.5 (the decimal form of \\( \\frac{1}{2} \\)) instead of calculating \\( 1 \\div 5 = 0.2 \\). This caused them to select the midpoint (C) rather than the true position closer to 0 (B). The error stems from conflating the fraction's denominator with its decimal equivalent's first digit, a direct mismatch between reciprocal notation and decimal conversion. This explanation aligns better with the reciprocal misconception than with denominator-numerator difference reasoning, as no arithmetic involving \\( 5-1 \\) was required to misidentify 0.5.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

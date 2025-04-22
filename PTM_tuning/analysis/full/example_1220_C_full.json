@@ -1,7 +1,0 @@
-{
-  "query_id": "1220_C",
-  "content_id": 1108,
-  "explanation": "Correct calculation:\n1. Start with gradient-intercept form: \\( y = 4x + c \\)\n2. Substitute \\( (1,9) \\): \\( 9 = 4(1) + c \\)\n3. Solve for \\( c \\): \\( c = 9 - 4 = 5 \\)\n4. Final equation: \\( y = 4x + 5 \\)\n\nStudent's incorrect calculation:\n1. Assumed \\( y \\)-intercept equals the \\( y \\)-coordinate of the given point.\n2. Wrote \\( y = 4x + 9 \\) without solving for \\( c \\).\n\nThe student treated the \\( y \\)-coordinate of the point \\( (1,9) \\) as the \\( y \\)-intercept directly, rather than substituting \\( x=1 \\) and \\( y=9 \\) into \\( y=4x+c \\) to solve for \\( c \\). This conflates the general \\( y \\)-intercept (a property of the entire line) with a specific \\( y \\)-value from one point on the line. \n\nThe error aligns with confusing a line's arbitrary \\( y \\)-coordinate with its \\( y \\)-intercept, not with misidentifying the gradient or formula components. Related misconceptions like confusing \\( m \\) and \\( c \\) are excluded here, as the gradient was correctly identified as 4.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

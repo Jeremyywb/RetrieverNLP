@@ -1,7 +1,0 @@
-{
-  "query_id": "1676_A",
-  "content_id": 1954,
-  "explanation": "Correct calculation: \\( 3 \\times 1000 = 3000 \\)  \nStudent's calculation: \\( 3 \\div 10 = 0.3 \\)  \n\nThe student incorrectly divided by 10 instead of multiplying by 1000. This stems from reversing the required operation for unit conversion (dividing when converting to smaller units instead of multiplying) combined with using an incorrect conversion factor (10 instead of 1000). While the answer might suggest they thought 1 litre = 10ml, the critical flaw was applying division to the conversion process. This distinction shows the primary error was operational (division vs multiplication) rather than solely an incorrect conversion rate.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

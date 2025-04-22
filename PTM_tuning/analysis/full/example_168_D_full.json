@@ -1,7 +1,0 @@
-{
-  "query_id": "168_D",
-  "content_id": 631,
-  "explanation": "Correct calculation:\n1. Total people = (4+2+3+1) symbols \u00d7 12 people/symbol = 10\u00d712 = 120\n2. Mean = 120 \u00f7 4 games = 30\n\nStudent's calculation:\n1. Total people = 10 symbols \u00d7 12 = 120\n2. Reported answer as 120 (no division)\n\nThe student correctly calculated total attendance but omitted dividing by the number of games to find the mean. This shows they confused total quantity with average quantity - they treated the aggregated sum as the final answer rather than a value needing distribution across the games. The error directly stems from misapplying the mean formula (sum \u00f7 count) by stopping at summation. This distinguishes it from related errors like symbol-value miscalculations, as the student properly converted symbols using the key first.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

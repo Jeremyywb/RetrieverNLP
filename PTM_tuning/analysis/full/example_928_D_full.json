@@ -1,7 +1,0 @@
-{
-  "query_id": "928_D",
-  "content_id": 2354,
-  "explanation": "Correct movement calculation: From (1,4) to (4,3),  \nx-direction: 4 - 1 = +3 (right)  \ny-direction: 3 - 4 = -1 (down)\n\nStudent's error:  \nThey calculated:  \ny-direction: 4 - 3 = 1 (but incorrectly applied as horizontal \"right\")  \nx-direction: 4 - 1 = 3 (but incorrectly applied as vertical \"down\")\n\nThe student transposed x and y coordinates when interpreting direction changes. They subtracted coordinates correctly but assigned the horizontal difference (x-axis) to vertical movement and vertical difference (y-axis) to horizontal movement. This directly stems from confusing which coordinate corresponds to each axis, not from translation order or sign errors. Related misconceptions like reversing translation order would instead produce mirrored directions (left/up) rather than axis transposition.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

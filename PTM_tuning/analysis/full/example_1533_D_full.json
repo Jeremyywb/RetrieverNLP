@@ -1,7 +1,0 @@
-{
-  "query_id": "1533_D",
-  "content_id": 2517,
-  "explanation": "Correct calculation: \\( \\sqrt{11^2 + 5^2} = \\sqrt{121 + 25} = \\sqrt{146} \\).\n\nStudent's likely calculation: \\( \\sqrt{11^2 - 5^2} = \\sqrt{121 - 25} = \\sqrt{96} \\).\n\nThe student incorrectly subtracted the squares of the horizontal and vertical distances instead of adding them. This reflects a misapplication of the Pythagorean theorem, where they treated the hypotenuse calculation as if solving for a leg (which requires subtraction) rather than the hypotenuse itself (which requires addition). \n\nThe error is distinct from \"mixing squaring and multiplying by 2\" (which would involve errors like \\(2 \\times 11 + 2 \\times 5\\)) or \"multiplying sides before square-rooting\" (which would yield \\(\\sqrt{11 \\times 5}\\)). The specific subtraction error directly aligns with the misconception of reversing the required operation in the Pythagorean theorem for hypotenuse calculations.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

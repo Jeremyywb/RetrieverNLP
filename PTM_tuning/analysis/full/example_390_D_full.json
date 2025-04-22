@@ -1,7 +1,0 @@
-{
-  "query_id": "390_D",
-  "content_id": 1070,
-  "explanation": "Correct calculation: \\( 5.5\\% = 0.055 \\), so \\( 400 \\times 0.055 = 22 \\).\n\nStudent's likely calculation: \\( 400 \\times 0.55 = 220 \\).\n\nThe student converted \\( 5.5\\% \\) to \\( 0.55 \\) instead of \\( 0.055 \\), moving the decimal point one place (dividing by 10) rather than two (dividing by 100). This caused their result to be 10\u00d7 larger than the correct value. \n\nThe error matches dividing by 10 instead of 100, not finding 10% (which would yield 40) or using an unrelated percentage. The mistake occurred precisely in decimal conversion, not in selecting the percentage or arithmetic operations.\n\nDistinct from related errors: If they had calculated 10% of 400 (40) and adjusted from there, the result would differ. The error is isolated to the decimal shift during percentage conversion.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

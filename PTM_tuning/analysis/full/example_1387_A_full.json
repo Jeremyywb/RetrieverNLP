@@ -1,7 +1,0 @@
-{
-  "query_id": "1387_A",
-  "content_id": 1251,
-  "explanation": "The reciprocal of \\( 7 \\) is calculated as \\( 7^{-1} = \\frac{1}{7} \\). The student incorrectly wrote \\( -\\frac{1}{7} \\), introducing an extraneous negative sign. This suggests they conflated the negative exponent in \\( 7^{-1} \\) with a negative value, interpreting the notation as requiring a sign change rather than inversion. The misconception directly links to misapplying exponent rules: confusing \\( a^{-n} = \\frac{1}{a^n} \\) (which preserves the sign) with \\( -a^n = -(a^n) \\). This differs from errors like inverting fractions incorrectly (they properly inverted \\( 7 \\) to \\( \\frac{1}{7} \\)) or reacting to nonexistent negatives in the problem. The core flaw was treating the exponent's negative as a multiplicative sign change.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

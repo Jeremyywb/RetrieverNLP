@@ -1,7 +1,0 @@
-{
-  "query_id": "95_D",
-  "content_id": 105,
-  "explanation": "Correct calculation:\n1. Difference between Quentin's and Percy's ratio parts: 7 - 3 = 4\n2. 4 parts = 36 coins \u2192 1 part = 9 coins\n3. Robbie's share: 8 parts \u00d7 9 = 72\n\nStudent's error:\n1. Correctly calculated 1 part = 9 from the 4-part difference\n2. Multiplied 9 \u00d7 7 (Quentin's ratio) instead of 8 (Robbie's ratio) to get 63\n\nSpecific flaw:\nThe student associated the calculated part value with the wrong ratio term. After correctly determining the part size using the difference, they mistakenly applied it to Quentin's ratio component (7) rather than Robbie's (8). This shows a disconnect between solving for the part value and maintaining the original ratio structure for the final answer.\n\nDistinction from related misconceptions:\nThis error isn't about misinterpreting the difference as a total or part value (which was handled correctly) but stems from misaligning the solved part value to the intended ratio component after the difference calculation. The student completed all mathematical steps but failed to map the result to the correct person in the ratio.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

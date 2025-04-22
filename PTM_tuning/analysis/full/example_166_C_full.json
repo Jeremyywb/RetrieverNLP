@@ -1,7 +1,0 @@
-{
-  "query_id": "166_C",
-  "content_id": 547,
-  "explanation": "Correct calculation:  \n\\( x^{2}-1 = (x+1)(x-1) \\) (difference of squares factorization)  \nStudent's error:  \nFactored \\( x^{2}-1 \\) as \\( (x-1)(x-1) \\)\n\nThe student incorrectly treated \\( x^{2}-1 \\) as a perfect square trinomial instead of recognizing it as a difference of squares. This caused them to write identical binomial factors \\( (x-1) \\) twice rather than the conjugate pair \\( (x+1)(x-1) \\). The error stems from conflating the factorization rules for \\( a^{2}-b^{2} \\) (which requires opposite signs) with \\( (a-b)^{2} \\) (which expands to \\( a^{2}-2ab+b^{2} \\), not \\( a^{2}-b^{2} \\)). \n\nThis specifically aligns with misapplying quadratic factorization patterns, not with sign-swapping in binomials or repeated roots. The distinction is crucial: difference of squares requires distinct factors with alternating signs, while the student's answer implies a repeated linear factor, which would only occur in a perfect square or repeated root scenario.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "510_A",
-  "content_id": 718,
-  "explanation": "The correct calculation uses tangent: \\( \\tan(32^\\circ) = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{p}{6} \\).  \nThe student incorrectly applied sine: \\( \\sin(32^\\circ) = \\frac{p}{6} \\), which assumes the hypotenuse is 6 cm.  \n\nThe error stems from misapplying the sine ratio (opposite/hypotenuse) instead of tangent (opposite/adjacent). The student recognized \\( p \\) as the opposite side but mistakenly treated the given adjacent side (6 cm) as the hypotenuse. This directly reflects a failure to properly associate the given sides with the correct trigonometric ratio via SOHCAHTOA.  \n\nThis is distinct from confusing adjacent/opposite labels (which would involve swapping sides) or mixing sine/cosine (which would retain hypotenuse usage). The error specifically substitutes hypotenuse for adjacent in the ratio, indicating a flawed application of the trigonometric relationships rather than a side-labeling issue.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

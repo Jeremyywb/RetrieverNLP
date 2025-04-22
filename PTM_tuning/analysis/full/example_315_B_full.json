@@ -1,7 +1,0 @@
-{
-  "query_id": "315_B",
-  "content_id": 1206,
-  "explanation": "The correct first step requires multiplying numerator and denominator of \\(\\frac{3}{x-2}\\) by \\(x\\) (the second fraction's denominator) and \\(\\frac{5}{x}\\) by \\(x-2\\) (the first fraction's denominator). This ensures equivalent fractions with the common denominator \\(x(x-2)\\):\n\\[\n\\frac{3 \\cdot x}{(x-2) \\cdot x} - \\frac{5 \\cdot (x-2)}{x \\cdot (x-2)} = \\frac{3x}{x(x-2)} - \\frac{5(x-2)}{x(x-2)}.\n\\]\n\nThe student instead multiplied the first fraction's numerator by its own denominator \\((x-2)\\) and the second fraction's numerator by its own denominator \\(x\\), yielding:\n\\[\n\\frac{3(x-2)}{x(x-2)} - \\frac{5x}{x(x-2)}.\n\\]\n\nThe error stems from reversing which denominator to use when adjusting numerators. The student applied each fraction's own denominator to its numerator instead of cross-multiplying with the other fraction's denominator. This directly corresponds to reversing the required multiplication order for equivalent fractions. \n\nThis differs from merely forgetting to adjust numerators (which would retain original numerators) or multiplying numerators by original denominators (which would produce \\(3x -5(x-2)\\) without proper denominators). The reversal of multiplication order uniquely explains the swapped terms in the numerators.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

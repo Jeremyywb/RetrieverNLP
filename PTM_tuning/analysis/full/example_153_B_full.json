@@ -1,7 +1,0 @@
-{
-  "query_id": "153_B",
-  "content_id": 1717,
-  "explanation": "Correct solution:\n1) \\(12d - 3 = 0\\)\n2) \\(12d = 3\\) (adding 3 to both sides)\n3) \\(d = \\frac{3}{12} = \\frac{1}{4}\\) (dividing by 12)\n\nStudent's error:\nAfter reaching \\(12d = 3\\), they likely calculated \\(d = \\frac{12}{3}\\) instead of \\(\\frac{3}{12}\\).\n\nThe student inverted the numerator and denominator when executing division to isolate \\(d\\), treating 12 as the dividend rather than the divisor. This demonstrates confusion about which quantity should be divided by which when solving \\(ax = b\\) equations. \n\nThe error specifically stems from reversing divisor/dividend roles during division, not from confusing multiplication/division operations. This distinguishes it from similar misconceptions about operation selection, as the student correctly identified division was needed but misapplied its direction.\n\nThe final result \\(d=4\\) directly shows this reversal, since \\(\\frac{12}{3}=4\\) instead of the required \\(\\frac{3}{12}\\).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

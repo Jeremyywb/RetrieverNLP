@@ -1,7 +1,0 @@
-{
-  "query_id": "1339_B",
-  "content_id": 2266,
-  "explanation": "The correct equation combines two angles (f and f-20) around a point: \\( f + (f - 20) = 360 \\) \u2192 \\( 2f - 20 = 360 \\).\n\nThe student incorrectly wrote \\( 2f - 20 = 180 \\), implying they summed the angles to 180\u00b0 instead of 360\u00b0.\n\nThis error stems from applying the rule for angles on a straight line (which sum to 180\u00b0) to a full rotation around a point (which requires 360\u00b0). \n\nThe student recognized there were two angles but misapplied the geometric context, treating the diagram as a linear pair rather than a full circle. \n\nThis directly aligns with confusing angle sums at a point with those along a line, not with adjacent angle misconceptions (which would require the angles to share a side) or circle angle misunderstandings (which involve arcs, not angles at a center point).",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

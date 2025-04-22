@@ -1,7 +1,0 @@
-{
-  "query_id": "874_A",
-  "content_id": 718,
-  "explanation": "To find \u03b8 opposite the 10 cm side with adjacent 7 cm, the correct ratio is \\( \\tan\\theta = \\frac{10}{7} \\). The student calculated \\( \\sin\\theta \\), which requires \\( \\frac{\\text{opposite}}{\\text{hypotenuse}} \\). \n\nThe student likely identified the 10 cm side as opposite \u03b8 but incorrectly treated the 7 cm side as the hypotenuse instead of the adjacent. This led them to compute \\( \\sin\\theta = \\frac{10}{7} \\), ignoring that the hypotenuse must be longer than either leg. The error stems from mislabeling the adjacent side as the hypotenuse, directly aligning with the misconception of confusing adjacent/opposite roles. \n\nThis differs from \"believes any non-hypotenuse side is opposite,\" as the student specifically misassigned the hypotenuse role to a leg rather than mislabeling which leg is opposite. The error is rooted in side-identification, not general ratio selection.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

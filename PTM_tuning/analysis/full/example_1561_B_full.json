@@ -1,7 +1,0 @@
-{
-  "query_id": "1561_B",
-  "content_id": 1717,
-  "explanation": "Correct solution:\n1. 20t - 5 = 0  \n2. 20t = 5          (add 5 to both sides)  \n3. t = 5/20 = 1/4   (divide both sides by 20)\n\nStudent's likely steps:\n1. 20t - 5 = 0  \n2. 20t = 5  \n3. t = 20/5 = 4     (divided 20 by 5 instead of 5 by 20)\n\nThe student correctly isolated the term with the variable but reversed the dividend and divisor when performing division. This shows they treated the division operation as commutative by flipping numerator and denominator positions, converting the required t = 5/20 into t = 20/5. The error stems from misapplying division order rather than confusing inverse operations (they used division appropriately) or dealing with denominators (the variable wasn't in denominator position). This specifically matches reversing divisor/dividend relationships rather than other listed misconceptions.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

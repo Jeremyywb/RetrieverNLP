@@ -1,7 +1,0 @@
-{
-  "query_id": "737_D",
-  "content_id": 1140,
-  "explanation": "Correct calculation:  \n\u221a75 = \u221a(25\u00d73) = \u221a25 \u00d7 \u221a3 = 5\u221a3 \u2192 n=5  \n\nStudent's error:  \nLikely treated the equation as \u221a75 = n + \u221a3, then computed n = 75 - 3 = 72.  \n\nSpecific flaw:  \nThe student incorrectly interpreted the multiplicative relationship (n\u221a3) as an additive one (n + \u221a3). This caused them to subtract 3 from 75 instead of dividing 75 by 3 under the radical.  \n\nConnection to misconception:  \nThe error stems from misapplying operations to surds, specifically conflating multiplication with addition. This aligns with a fundamental misunderstanding of how coefficients interact with radicals in equations.  \n\nDistinction:  \nThis differs from related misconceptions like incorrect square factoring or squaring errors, as the core issue here is misinterpreting the equation's structure rather than simplification steps.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

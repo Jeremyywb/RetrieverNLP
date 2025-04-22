@@ -1,7 +1,0 @@
-{
-  "query_id": "1760_B",
-  "content_id": 44,
-  "explanation": "Correct calculation:  \n\u221a12 = \u221a(4\u00d73) = 2\u221a3  \n\u221a27 = \u221a(9\u00d73) = 3\u221a3  \nSum: 2\u221a3 + 3\u221a3 = 5\u221a3\n\nStudent's error:  \n\u221a12 + \u221a27 = \u221a(12 + 27) = \u221a39\n\nFlawed reasoning:  \nThe student treated radical addition as equivalent to adding radicands directly under a single radical. This violates the mathematical principle that \u221aa + \u221ab \u2260 \u221a(a + b) unless a or b is zero. The error stems from incorrectly applying the additive property of radicals as if they were multiplicative (where \u221aa \u00d7 \u221ab = \u221a(ab)).\n\nDistinction from related misconceptions:  \nThis is not merely adding base numbers (e.g., 12 + 27 = 39) without radicals, but specifically misapplying radical addition rules. The error shows awareness of radical operations but confuses addition with multiplication properties.\n\nKey divergence point:  \nInstead of simplifying each radical to common terms (\u221a3) and combining coefficients, the student prematurely merged distinct radicals through invalid addition of radicands.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "1656_D",
-  "content_id": 1445,
-  "explanation": "The correct calculation is \\(\\frac{7}{30} \\times 360\\), which computes the proportion of the total frequency (7 out of 30) and scales it to degrees. The student calculated \\(7 \\times 30 = 210\\), omitting both division and scaling to 360\u00b0. \n\nTheir error stems from directly multiplying the frequency and total instead of first forming the fraction \\(\\frac{7}{30}\\). This indicates a failure to recognize that pie chart angles require calculating a proportional share of 360\u00b0, which necessitates dividing the category frequency by the total frequency. \n\nThe misconception aligns with treating frequency and total as independent multipliers rather than a numerator and denominator of a fraction. This differs from related errors like dividing the total by 360 first or confusing the order of operations, as the student bypassed forming a proportion entirely. The flawed reasoning conflates \"finding a part of a whole\" with simple multiplication of given values.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "218_A",
-  "content_id": 99,
-  "explanation": "The correct relationship between journey time and average speed is inverse proportionality (time = distance/speed), producing a hyperbola that approaches but never touches the axes. The student instead plotted a straight line through the origin, implying they treated time as directly proportional to speed (time = k\u00b7speed). \n\nThis error stems from misapplying direct proportionality rules to an inverse relationship. The student recognized that speed and time are related but failed to process the inverse nature of the relationship (where doubling speed halves time). They defaulted to linearity, incorrectly assuming constant rate of change. \n\nThis specifically matches the \"direct proportion rules apply to inverse problems\" misconception, not just general linear assumptions, as the origin-starting line directly mirrors direct proportionality's graphical signature. Other listed misconceptions like curve misinterpretation or origin fixation don't explain the linear shape choice as precisely.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

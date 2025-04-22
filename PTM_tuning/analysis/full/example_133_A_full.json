@@ -1,7 +1,0 @@
-{
-  "query_id": "133_A",
-  "content_id": 1406,
-  "explanation": "The correct interior angle calculation uses either:\n1) [(n-2)\u00d7180]/n = (18\u00d7180)/20 (Tom's correct method)\n2) 180 - (360/n) = 180 - (360/20) (Katie's correct method)\n\nThe student likely:\n- Recognized that Tom's formula divides (n-2)\u00d7180 by n\n- Failed to see that 360/20 calculates an exterior angle\n- Did not connect that subtracting this exterior angle from 180 yields the interior angle\n\nThis shows the student:\n- Understood the sum formula and division for regular polygons (validating Tom)\n- Misunderstood the relationship between interior/exterior angles (rejecting Katie)\n- Thought interior angles could only be calculated through total sum division\n\nThis differs from related errors:\n- They properly divided the sum by sides (unlike the \"180(n+2)/n\" misconception)\n- The error stems specifically from not recognizing supplementary angles in polygons",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

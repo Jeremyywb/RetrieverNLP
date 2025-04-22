@@ -1,7 +1,0 @@
-{
-  "query_id": "105_C",
-  "content_id": 8,
-  "explanation": "Correct calculation: Vertically opposite angles are equal. The angle marked \\( p \\) is vertically opposite the 42\u00b0 angle, so \\( p = 42^\\circ \\).\n\nStudent's incorrect reasoning: The student likely assumed \\( p \\) was vertically opposite the 138\u00b0 angle instead of the 42\u00b0 angle. This caused them to incorrectly conclude \\( p = 138^\\circ \\), mirroring the 138\u00b0 angle they saw. \n\nSpecific flaw: The student misidentified the vertical angle pair. They assigned \\( p \\) to the angle opposite 138\u00b0 rather than recognizing it as opposite 42\u00b0. This directly stems from misunderstanding how to locate vertically opposite angles in intersecting line configurations.\n\nDistinction from related misconceptions: The error is not due to believing vertical angles sum to 180\u00b0 (which would require \\( p = 180^\\circ - 42^\\circ \\)), but rather a failure to correctly associate \\( p \\) with its true vertical counterpart (42\u00b0). The student applied the equality property of vertical angles but to the wrong pair.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

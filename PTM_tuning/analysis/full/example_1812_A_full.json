@@ -1,7 +1,0 @@
-{
-  "query_id": "1812_A",
-  "content_id": 118,
-  "explanation": "Correct calculation:\nMidpoint formula: ((-5) + x)/2 = -2 \u2192 x = 2*(-2) - (-5) = -4 +5 =1\n\nStudent's likely calculation:\nAdded known endpoint and midpoint coordinates: (-5) + (-2) = -7 (x-coordinate)\nBut since answer is 5, possible alternative error path:\nMistakenly used first endpoint's y-coordinate (5) as x-coordinate for other endpoint\n\nSpecific flaw:\nStudent incorrectly assumed coordinate values could be directly transferred between axes without mathematical relationship. This diverges from midpoint formula's requirement to average coordinates.\n\nConnection to misconception:\nWhile listed misconceptions focus on arithmetic operations, this error stems from misapplying spatial reasoning (confusing x/y coordinates) rather than midpoint calculation rules.\n\nDistinction from related:\nNot a failure to divide or add coordinates properly, but rather misidentifying which coordinate values relate to the midpoint calculation.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

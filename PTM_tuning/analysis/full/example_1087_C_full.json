@@ -1,7 +1,0 @@
-{
-  "query_id": "1087_C",
-  "content_id": 2334,
-  "explanation": "Correct calculation: \\(360^\\circ - 290^\\circ = 70^\\circ\\).  \nStudent's likely incorrect step: \\(340^\\circ - 290^\\circ = 50^\\circ\\).  \n\nThe student incorrectly treated the total degrees around the point as \\(340^\\circ\\) instead of \\(360^\\circ\\). This specific numerical error in recalling the full angle (360\u00b0) directly caused their subtraction \\(340 - 290 = 50\\).  \n\nThis flaw aligns with misremembering the total angle in a circle rather than assuming a 180\u00b0 total, which would have produced an impossible negative result (\\(180 - 290\\)). The error is distinct from misjudging the diagram's scale or misapplying supplementary angles, as it centers on an incorrect numerical total rather than geometric relationships.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

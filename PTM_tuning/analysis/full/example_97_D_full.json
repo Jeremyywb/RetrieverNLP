@@ -1,7 +1,0 @@
-{
-  "query_id": "97_D",
-  "content_id": 2365,
-  "explanation": "The correct relationship is vertically opposite angles, formed by two intersecting lines where each angle is directly across from the other. The student incorrectly identified them as angles on a straight line, which requires adjacent angles forming 180\u00b0. \n\nThe student likely observed that both angles lie along a line segment in the diagram but failed to recognize they are separated by intervening angles on both sides, making them non-adjacent. This misapplication assumes any angles sharing a line are supplementary, regardless of adjacency. \n\nThe error directly stems from misinterpreting the definition of angles on a straight line, which specifically requires adjacency. Related misconceptions about vertically opposite angles summing to 180\u00b0 or confusion with angles around a point do not apply here, as the student focused on linear alignment rather than supplementary sums or full-circle relationships.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "535_A",
-  "content_id": 2119,
-  "explanation": "Correct calculation:\n1. Convert to improper fractions: \\( 3\\frac{4}{7} = \\frac{25}{7} \\), \\( 1\\frac{3}{4} = \\frac{7}{4} \\)\n2. Find common denominator (28): \\( \\frac{25}{7} = \\frac{100}{28} \\), \\( \\frac{7}{4} = \\frac{49}{28} \\)\n3. Subtract fractions: \\( \\frac{100}{28} - \\frac{49}{28} = \\frac{51}{28} \\)\n4. Convert to mixed number: \\( 1\\frac{23}{28} \\)\n\nStudent's likely calculation:\n1. Subtract whole numbers: \\( 3 - 1 = 2 \\)\n2. Subtract fractions directly: \\( \\frac{4}{7} - \\frac{3}{4} = \\frac{16}{28} - \\frac{21}{28} \\)\n3. Treat \\( \\frac{21}{28} - \\frac{16}{28} = \\frac{5}{28} \\) (ignoring negative result)\n4. Combine: \\( 2 + \\frac{5}{28} = 2\\frac{5}{28} \\)\n\nSpecific flaw: The student recognized the need for a common denominator but failed to borrow from the whole number when the subtrahend's fraction exceeded the minuend's. This caused them to reverse the fraction subtraction (\\( \\frac{21}{28} - \\frac{16}{28} \\) instead of \\( \\frac{16}{28} - \\frac{21}{28} \\)) while keeping the whole number unchanged. \n\nThe error directly stems from mishandling cases where fraction borrowing is required, distinct from related errors like denominator neglect or improper borrowing adjustments. The student maintained correct denominator conversion but misapplied subtraction order instead of adjusting the whole number.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

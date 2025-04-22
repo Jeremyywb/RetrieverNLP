@@ -1,7 +1,0 @@
-{
-  "query_id": "842_A",
-  "content_id": 1542,
-  "explanation": "To convert \\( \\frac{4}{20} \\) to a decimal, divide 4 by 20:  \n\\( 4 \\div 20 = 0.2 \\).  \n\nThe student calculated \\( 20 \\div 4 = 5.0 \\).  \n\nThe error stems from reversing the dividend and divisor during division. The student treated the denominator (20) as the dividend and the numerator (4) as the divisor, misapplying the fraction-to-decimal conversion process. This directly aligns with the misconception of swapping the division order, where \\( \\frac{a}{b} \\) is incorrectly computed as \\( b \\div a \\).  \n\nThis differs from reciprocal misconceptions (e.g., interpreting \\( \\frac{4}{20} \\) as \\( \\frac{20}{4} \\)) because the student performed division but inverted the operands, rather than altering the fraction's form. The integer-swapping motivation is also less likely, as the result (5.0) doesn\u2019t simplify \\( \\frac{4}{20} \\) but reverses the operation entirely.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

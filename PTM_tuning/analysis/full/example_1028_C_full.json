@@ -1,7 +1,0 @@
-{
-  "query_id": "1028_C",
-  "content_id": 110,
-  "explanation": "Correct Calculation:\nThe height is the vertical distance between y-coordinates of the top and bottom sides. The top left corner is at y=7, and the bottom right is at y=-12. Height = 7 - (-12) = 19.\n\nStudent's Likely Error:\nThey subtracted the x-coordinate of the bottom right corner (2) from the y-coordinate of the top left corner (7): 7 - 5 = 2 (assuming 5 was derived from another value, but no clear path). Alternatively, they may have directly used the x-coordinate (2) of the bottom right corner as the height.\n\nReasoning Flaw:\nThe student conflated horizontal positional coordinates with vertical distances. They incorrectly treated the x-coordinate of one corner (2) as a direct measure of vertical height, rather than computing the difference in y-values.\n\nConnection to Misconception:\nThis reflects a failure to recognize that distances require calculating differences between corresponding coordinates (y\u2082 - y\u2081 for vertical height), not using raw positional values.\n\nDistinction from Related Misconceptions:\nThis isn't about assuming equal sides or misapplying rectangle properties, but specifically misinterpreting coordinate values as distances. The error stems from conflating coordinates with lengths, not from misunderstanding rectangle side equality.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

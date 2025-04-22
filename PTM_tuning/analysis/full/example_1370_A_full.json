@@ -1,7 +1,0 @@
-{
-  "query_id": "1370_A",
-  "content_id": 1456,
-  "explanation": "A linear function's graph must maintain a constant slope, producing a single straight line. The student selected a graph with two steep upward segments separated by a downward dip, indicating they focused on overall upward trend rather than constant rate of change. Their reasoning likely conflated \"linear\" with \"generally increasing,\" ignoring the requirement for uniform direction and slope. This directly aligns with failing to recognize that linearity demands a single consistent gradient, not multiple disconnected segments. Unlike confusion about quadratic graphs (which would involve smooth curves) or gradual slope changes (like in nonlinear functions), this error specifically demonstrates an inability to identify the defining straight-line characteristic of linear relationships.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

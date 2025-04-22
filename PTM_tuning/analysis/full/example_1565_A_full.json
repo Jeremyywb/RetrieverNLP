@@ -1,7 +1,0 @@
-{
-  "query_id": "1565_A",
-  "content_id": 309,
-  "explanation": "Correct calculation: Adjacent angles on a straight line are supplementary, so their measures sum to \\(180^\\circ\\). For example, if one angle is \\(x\\), the adjacent angle must be \\(180^\\circ - x\\).\n\nStudent's error: The student concluded the sum is \\(90^\\circ\\), suggesting they computed \\(90^\\circ\\) directly as the total instead of \\(180^\\circ\\).\n\nReasoning flaw: The student likely confused the definition of a right angle (\\(90^\\circ\\)) with the angle measure of a straight line (\\(180^\\circ\\)). They misapplied the property of right angles (common in perpendicular intersections) to the context of a straight line, treating the straight line as equivalent to a single right angle rather than a straight angle.\n\nDistinction from related errors: This is not a case of overgeneralizing angle relationships (e.g., assuming all angle pairs sum to \\(90^\\circ\\)), because the error specifically substitutes \\(90^\\circ\\) for the required \\(180^\\circ\\) in the straight-line context. The student recognized the relevance of angle addition but conflated the measures of right angles and straight angles.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

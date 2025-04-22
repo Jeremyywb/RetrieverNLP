@@ -1,7 +1,0 @@
-{
-  "query_id": "467_A",
-  "content_id": 312,
-  "explanation": "Correct Calculation:\n1. Difference in ratio parts: 9 - 5 = 4 parts\n2. \u00a372 difference = 4 parts \u2192 1 part = \u00a372 \u00f7 4 = \u00a318\n3. Total parts: 9 + 5 = 14 \u2192 Total = 14 \u00d7 \u00a318 = \u00a3252\n\nStudent's Incorrect Calculation:\n1. Treated \u00a372 as 9 parts (Bill's share alone)\n2. 1 part = \u00a372 \u00f7 9 = \u00a38\n3. Total = (9 + 5) \u00d7 \u00a38 = \u00a3112\n\nReasoning Flaw:\nThe student incorrectly associated the \u00a372 difference with Bill's entire share (9 parts) rather than the difference between the shares (4 parts). By dividing \u00a372 by 9 instead of 4, they miscalculated the unit value. This caused their total to be based on an artificially reduced unit (\u00a38 instead of \u00a318).\n\nDistinction from Related Errors:\n- Not a case of forgetting to multiply (they multiplied by 14)\n- Not an order-of-ratio error (they maintained 9:5)\n- Directly matches the misconception of misapplying the difference to ratio parts\n\nThis specific misapplication of the difference to a single ratio component rather than the parts' difference directly produced the erroneous \u00a3112 total.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

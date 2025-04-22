@@ -1,7 +1,0 @@
-{
-  "query_id": "318_A",
-  "content_id": 1044,
-  "explanation": "The correct substitution requires both the -b term and the square root to be divided by 2a:  \n\\(\\frac{-2 \\pm \\sqrt{2^{2}-4(3)(-5)}}{2(3)}\\).\n\nThe student's answer placed only the square root portion under the division:  \n\\(-2 \\pm \\frac{\\sqrt{2^{2}-4(3)(-5)}}{2(3)}\\).\n\nThe error stems from misinterpreting the quadratic formula's structure, treating the numerator as two separate components rather than a single expression divided by 2a. The student incorrectly split the formula into two distinct operations: keeping \"-b\" outside the fraction and isolating the radical portion with division. This aligns with a transformation error where the formula's grouping symbols (the fraction bar) were not properly applied to all terms in the numerator. The coefficients were substituted correctly (ruling out misidentification of a/b/c), and the error isn't about inverse operations but specifically the structural placement of the denominator. Related misconceptions like term-order confusion or surd notation don't apply here, as the mistake is purely about fraction scope.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

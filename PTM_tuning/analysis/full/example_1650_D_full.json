@@ -1,7 +1,0 @@
-{
-  "query_id": "1650_D",
-  "content_id": 1710,
-  "explanation": "Correct calculation: \\( 20\\% \\times 35 = 0.20 \\times 35 = 7 \\).\n\nStudent's error: \\( 35 \\times 2 = 70 \\).\n\nThe student incorrectly converted 20% to 2 instead of 0.2 by dividing 20 by 10 rather than 100. This caused them to multiply 35 by 2 instead of 0.2, doubling the original number. The error stems from misapplying percentage conversion, not a general tendency to multiply by 2 when seeing \"20%.\" This distinguishes it from related errors like failing to adjust after multiplying by 10, which would involve intermediate steps not present here. The direct substitution of 20% with 2 reveals a specific decimal conversion flaw.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

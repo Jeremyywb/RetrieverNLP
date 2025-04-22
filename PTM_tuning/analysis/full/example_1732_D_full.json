@@ -1,7 +1,0 @@
-{
-  "query_id": "1732_D",
-  "content_id": 1939,
-  "explanation": "Correct calculation:  \n321 \u00f7 7 = 45.857... \u2192 46 adults (rounding up the remainder)\n\nStudent's calculation:  \n321 \u00f7 7 = 45 (ignoring the remainder of 6)\n\nThe student divided correctly but treated the result as a whole number (45), failing to recognize that the 6 remaining children require an additional adult. This shows they applied mathematical division without considering that partial groups in real-world contexts demand full units. \n\nThe error directly stems from not rounding up despite a remainder - even though 45.857 is closer to 46 numerically, the student truncated the decimal. This differs from \"rounding the wrong way\" (which implies intentional rounding down vs. up) or \"ignoring constraints\" (which would involve missing the ratio entirely). The core flaw was stopping at integer division without addressing incomplete groupings.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

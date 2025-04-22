@@ -1,7 +1,0 @@
-{
-  "query_id": "951_B",
-  "content_id": 328,
-  "explanation": "Correct calculation: \\(3 \\times 5 = 15\\), then \\(15 + 4 = 19\\), then \\(19 - 2 = 17\\).\n\nStudent's likely steps: \\(5 + 4 = 9\\), then \\(3 \\times 9 = 27\\), then \\(27 - 2 = 25\\).\n\nThe student incorrectly prioritized addition over multiplication, treating \\(3 \\times 5 + 4\\) as \\(3 \\times (5 + 4)\\). This reflects a failure to apply multiplication before addition per order of operations. The error aligns with grouping adjacent operations without regard for priority, not strictly left-to-right execution (which would have produced the correct result). Distinguishing from related misconceptions: the student didn't misread the multiplication symbol or stop after one operation, but specifically altered the operation sequence by grouping additions prematurely.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

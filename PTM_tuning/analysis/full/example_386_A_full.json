@@ -1,7 +1,0 @@
-{
-  "query_id": "386_A",
-  "content_id": 120,
-  "explanation": "Correct calculation:\n1. Find common denominator 2(s+1)\n2. Convert both fractions: \\(\\frac{2}{2(s+1)} - \\frac{t(s+1)}{2(s+1)}\\)\n3. Subtract numerators: \\(\\frac{2 - t(s+1)}{2(s+1)}\\)\n\nStudent's incorrect calculation:\n1. Wrote denominators multiplied: \\(2(s+1)\\)\n2. Subtracted original numerators directly: \\(1 - t\\)\n\nThe student recognized the need for a common denominator but failed to adjust both numerators accordingly. They subtracted the original numerators (1 - t) while keeping the multiplied denominators (2(s+1)), indicating they believed fractions can be subtracted by simply combining original numerators over multiplied denominators. This differs from related errors like ignoring denominators entirely, as they correctly identified the common denominator but misunderstood how to modify numerators. The error stems specifically from treating subtraction as direct numerator combination rather than proportional adjustment through multiplication by the other fraction's denominator factor.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

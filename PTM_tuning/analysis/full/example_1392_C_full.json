@@ -1,7 +1,0 @@
-{
-  "query_id": "1392_C",
-  "content_id": 2331,
-  "explanation": "Correct calculation:\n- Science sector angle = 36\u00b0, students = 18\n- Total students = (18/36) \u00d7 360\u00b0 = 180\n- French students = (108/360) \u00d7 180 = 54\n\nStudent's error:\n- Directly equated French angle (108\u00b0) to number of students (108)\n\nReasoning flaw:\nThe student treated angular measure as a direct count rather than a proportional representation. They failed to recognize that angles correspond to relative frequencies, not absolute counts. This led them to bypass the required proportional calculation (sector angle/total degrees \u00d7 total students).\n\nDistinction from related misconceptions:\nThis differs from \"angle divided by total frequency\" (which would yield 108/18=6) or \"1/degrees\" errors. The student's direct angle-to-count mapping aligns uniquely with the misconception that sector proportions equal frequencies.\n\nThe error stems from interpreting the chart's angular dimensions as literal numerical values rather than ratio indicators.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

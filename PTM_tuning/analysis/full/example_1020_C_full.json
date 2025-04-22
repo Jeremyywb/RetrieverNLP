@@ -1,7 +1,0 @@
-{
-  "query_id": "1020_C",
-  "content_id": 637,
-  "explanation": "Correct calculation: To find the original length of rectangle P, divide Q's length by the scale factor: \\( 12 \\, \\text{cm} \\div 1.5 = 8 \\, \\text{cm} \\).\n\nStudent's error: The student likely divided Q's width by the scale factor (\\( 9 \\, \\text{cm} \\div 1.5 = 6 \\, \\text{cm} \\)) to find P's width correctly, but then incorrectly assumed P's length matched Q's width (\\( 9 \\, \\text{cm} \\)) without applying the scale factor to the length. \n\nFlawed reasoning: The student applied the scale factor only to the width of Q to determine P's width but treated the length of P as equal to Q's width, ignoring the need to scale Q's length (\\( 12 \\, \\text{cm} \\)) to find P's original length. This demonstrates they scaled only one dimension. \n\nDistinction: Unlike misconceptions about adding scale factors or assuming equal sides, this error specifically arises from selectively scaling one dimension while leaving the other unchanged. The student recognized scaling for width but neglected it for length, directly linking to the primary misconception.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

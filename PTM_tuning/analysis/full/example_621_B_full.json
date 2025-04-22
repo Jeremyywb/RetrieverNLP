@@ -1,7 +1,0 @@
-{
-  "query_id": "621_B",
-  "content_id": 1013,
-  "explanation": "Correct calculation:  \n09:25 + 3h = 12:25;  \n12:25 + 50m = 13:15 (converting 60m to 1h when minutes exceed 59).  \n\nStudent's calculation:  \n09:25 + 3h = 12:25;  \n12:25 + 50m = 12:75 (adding minutes directly without adjustment).  \n\nThe student treated 75 minutes as valid instead of converting it to 1h 15m. This shows they failed to recognize that minutes \u226560 require incrementing the hour value. The error stems from not applying the base-60 conversion between minutes and hours during addition.  \n\nThis differs from the \"100 minutes in an hour\" misconception because the student didn't use decimal time (75m vs 1h15m), but rather retained invalid minutes. It also isn't a borrowing error (used in subtraction) but a failure to carry over during addition.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

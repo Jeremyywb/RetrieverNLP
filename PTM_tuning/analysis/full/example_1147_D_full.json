@@ -1,7 +1,0 @@
-{
-  "query_id": "1147_D",
-  "content_id": 2031,
-  "explanation": "The correct calculation for \\( \\tan(30^\\circ) \\) uses the 30-60-90 triangle ratios: opposite side = 1, adjacent side = \\( \\sqrt{3} \\), hypotenuse = 2. Thus, \\( \\tan(30^\\circ) = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{1}{\\sqrt{3}} = \\frac{\\sqrt{3}}{3} \\).\n\nThe student likely calculated \\( \\frac{1}{2} \\) by incorrectly using the ratio of the opposite side to the hypotenuse (\\( \\frac{1}{2} \\)) instead of the opposite to adjacent. This indicates they conflated the definitions of sine and tangent. \n\nThe error directly stems from misapplying the trigonometric ratios: they used the sine ratio (SOH) instead of the tangent ratio (TOA). This is distinct from swapping adjacent/opposite sides (which would yield \\( \\sqrt{3} \\)) or confusing cosine for sine. The core flaw is failing to distinguish which sides correspond to \"opposite over adjacent\" in the tangent ratio.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

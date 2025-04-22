@@ -1,7 +1,0 @@
-{
-  "query_id": "142_B",
-  "content_id": 1290,
-  "explanation": "Correct calculation: The reflex angle is read directly from the inner scale as \\(335^\\circ\\) (from \\(0^\\circ\\) to \\(335^\\circ\\) anti-clockwise).\n\nStudent's error: The student likely measured the acute angle between the lines using the outer scale. They read the outer scale value as \\(215^\\circ\\) (midway between 200 and 210) instead of the correct \\(25^\\circ\\). Subtracting the outer scale's starting point (\\(180^\\circ\\)) gave them \\(215^\\circ - 180^\\circ = 35^\\circ\\) for the acute angle. They then added \\(180^\\circ\\) to this value, assuming \\(180^\\circ + 35^\\circ = 215^\\circ\\) equals the reflex angle.\n\nSpecific flaw: The student incorrectly applied the rule for reflex angles by adding \\(180^\\circ\\) to the acute angle instead of subtracting the acute angle from \\(360^\\circ\\). This reflects a misunderstanding of reflex angle measurement as requiring a fixed \\(180^\\circ\\) addition rather than calculating the full rotation minus the acute angle.\n\nDistinction from related errors: Unlike scale-reading errors (e.g., misaligning the protractor), this error stems from a flawed conceptual step (adding \\(180^\\circ\\)) rather than misidentifying numerical markings. It also differs from providing the non-reflex angle, as the student explicitly attempted to compute a reflex value.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

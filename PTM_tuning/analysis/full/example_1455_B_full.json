@@ -1,7 +1,0 @@
-{
-  "query_id": "1455_B",
-  "content_id": 871,
-  "explanation": "The correct equation applies multiplication to the entire sum: \\(4(n+5)=17\\). The student's equation \\(4n+5=17\\) instead multiplies the original number first, then adds 5. The error occurs in misinterpreting the order of operations: \"add five, then multiply by four\" requires grouping \\(n+5\\) as a single term before multiplication. The student treated the operations as sequential steps (first multiply \\(n\\) by 4, then add 5), failing to recognize that the addition must be completed prior to multiplication. This directly aligns with misapplying the distributive property, as they did not multiply both terms in the parentheses. It differs from related misconceptions like \"only multiplying the second term,\" since the student omitted the parentheses entirely rather than incorrectly distributing across terms.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

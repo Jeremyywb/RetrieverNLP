@@ -1,7 +1,0 @@
-{
-  "query_id": "571_D",
-  "content_id": 1163,
-  "explanation": "Correct calculation:  \n646 \u00f7 20 = 32.3 \u2192 rounds to 32 \u2192 32 \u00d7 20 = 640.  \nAlternatively, since 646 - 640 = 6 (less than 10, halfway to 20), it rounds down.\n\nStudent's error:  \nLikely treated the tens digit (4) as the rounding point, setting it and the ones digit to zero: 646 \u2192 600.  \n\nFlaw:  \nThe student incorrectly modified multiple place values (tens and ones digits) to zero instead of determining the nearest multiple of 20. This reflects a misapplication of rounding rules, where digits beyond the target precision are erroneously reset rather than adjusting to the correct interval.  \n\nConnection to misconception:  \nChanging multiple digits assumes rounding resets all lower place values, bypassing the need to compare proximity to adjacent multiples of 20.  \n\nDistinction:  \nThis differs from rounding to the wrong degree (e.g., rounding to 100 instead of 20) because the error stems from improper digit manipulation, not selecting an incorrect rounding interval.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

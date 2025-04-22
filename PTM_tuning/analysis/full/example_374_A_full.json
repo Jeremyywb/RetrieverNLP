@@ -1,7 +1,0 @@
-{
-  "query_id": "374_A",
-  "content_id": 821,
-  "explanation": "To rotate point \\( A(2,4) \\) about \\( (5,4) \\):\n1. Translate: \\( (2-5, 4-4) = (-3,0) \\)\n2. Rotate 90\u00b0 clockwise: \\( (0,3) \\)\n3. Translate back: \\( (0+5, 3+4) = (5,7) \\)\n\nStudent likely performed:\n1. Rotated original coordinates 90\u00b0: \\( (4,-2) \\)\n2. Then added center coordinates: \\( (4+5, -2+4) = (9,2) \\)\n\nThe error stems from applying rotation first without translating to origin. This treats the rotation matrix as absolute coordinates rather than relative to the center. The student incorrectly assumed rotation formulas automatically account for arbitrary centers, skipping the required translation steps. This specifically matches \"wrong center\" handling rather than direction errors or reflections, as the operation preserves angles but misplaces the pivot. The vector \\( \\begin{pmatrix}5\\\\4\\end{pmatrix} \\) appears as direct translation of rotated points instead of proper center adjustment.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

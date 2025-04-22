@@ -1,7 +1,0 @@
-{
-  "query_id": "613_B",
-  "content_id": 942,
-  "explanation": "Correct calculation: Karen:Marty = 2:3 (direct comparison of their individual quantities)\n\nStudent's incorrect calculation: 2:3:5 (adding the total 2+3=5 as third term)\n\nThe student correctly identified the individual parts (2 and 3) but erroneously appended their sum. This shows confusion between representing a two-part ratio and listing components with their combined total. The error stems from treating ratio notation as requiring a complete accounting of all numerical relationships (individual quantities plus total) rather than understanding ratios strictly compare specified quantities. \n\nThis differs from part-to-whole confusion (which would produce 2:5) and order errors (which would swap numbers). The student preserved the correct order and component values but misapplied ratio syntax by including an unrelated sum.",
-  "timestamp": "2025-04-20T14:44:28.633543",
-  "error": null
-}

@@ -1,7 +1,0 @@
-{
-  "query_id": "121_B",
-  "content_id": 1324,
-  "explanation": "Correct calculation:\n1. Start with \\(5x + 3y = 15\\)\n2. Subtract \\(5x\\): \\(3y = -5x + 15\\)\n3. Divide all terms by 3: \\(y = -\\frac{5}{3}x + 5\\)\n4. Gradient is \\(-\\frac{5}{3}\\).\n\nStudent's error:\n- After \\(3y = -5x + 15\\), they likely wrote \\(y = -5x + 15\\) instead of dividing all terms by 3.\n\nReasoning flaw:\nThe student neglected to divide the \\(-5x\\) term by 3 when isolating \\(y\\). This caused them to incorrectly retain the \\(-5\\) coefficient as the gradient. The error stems from misapplying division to only the constant term, not all terms in the equation. This directly aligns with failing to multiply/divide all terms equally during equation solving. \n\nDistinction from related misconceptions:\nUnlike copying coefficients or confusing \\(a/b\\), this error specifically shows partial division during rearrangement. The student recognized the need to isolate \\(y\\) but inconsistently applied division, distinguishing it from other listed misconceptions.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

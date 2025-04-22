@@ -1,7 +1,0 @@
-{
-  "query_id": "1047_A",
-  "content_id": 2500,
-  "explanation": "Correct calculation: Gradient = (\u0394y)/(\u0394x) = (2-0)/(1-0) = 2  \nStudent's error: Likely used 0 (the y-intercept value) instead of computing \u0394y/\u0394x  \n\nThe student incorrectly equated the gradient with the y-axis intersection (0) rather than calculating the slope. This directly substitutes the y-intercept value for the gradient, bypassing any analysis of vertical and horizontal changes between points. The error aligns with interpreting \"where the line meets the y-axis\" as defining the gradient, not merely the intercept. This distinguishes from other misconceptions like inverting \u0394x/\u0394y (which would give 0.5) or subtracting changes (which would yield -1). The answer 0 uniquely matches the y-intercept value.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

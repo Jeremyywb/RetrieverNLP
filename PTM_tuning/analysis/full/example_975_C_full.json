@@ -1,7 +1,0 @@
-{
-  "query_id": "975_C",
-  "content_id": 1820,
-  "explanation": "Correct calculation: Convert each fraction to have a common denominator (10). Blue: \\( \\frac{2}{10} \\), red: \\( \\frac{3}{10} \\), purple: \\( \\frac{5}{10} \\). The numerators 2, 3, 5 form the ratio 2:3:5.\n\nStudent's error: The student used the denominators of the original fractions (5, 10, 2) directly as the ratio components, resulting in 5:10:2.\n\nSpecific flaw: The student treated the denominators (total parts in each fraction) as the proportional values for the ratio, rather than using the numerators (actual counts) after establishing equivalent fractions. This directly corresponds to swapping the roles of numerator and denominator in each fraction.\n\nMisconception link: The error arises from interpreting the denominator as the representative quantity for each category in the ratio, rather than the numerator. This matches the \"mixes up numerator and denominator\" misconception.\n\nDistinction: Unlike errors involving equivalent fractions or ratios, the student didn't fail to simplify or find common terms. They directly misassigned the denominator as the ratio component for each color.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

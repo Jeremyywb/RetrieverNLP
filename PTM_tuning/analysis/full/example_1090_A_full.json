@@ -1,7 +1,0 @@
-{
-  "query_id": "1090_A",
-  "content_id": 1380,
-  "explanation": "Correct calculation:\n- Combine x terms: \\(6x - x = 5x\\)\n- Combine y terms: \\(-2y + 3y = 1y\\)\n- Result: \\(5x + y\\)\n\nStudent's error:\n- Likely calculated y terms as \\(-2y + 3y = 5y\\) instead of \\(1y\\)\n\nSpecific flaw:\nThe student incorrectly treated the coefficients \\(-2\\) and \\(3\\) as absolute values when adding, neglecting the negative sign on the \\(-2y\\) term. This caused them to compute \\(2 + 3 = 5\\) instead of \\(-2 + 3 = 1\\).\n\nConnection to misconception:\nThis demonstrates a failure to preserve negative signs during addition of coefficients, specifically misapplying positive number addition rules to signed integers.\n\nDistinction from related errors:\nUnlike adding unlike terms (e.g., mixing x and y), the error occurred exclusively within valid like terms. The mistake centers on sign handling, not term classification or cancellation.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

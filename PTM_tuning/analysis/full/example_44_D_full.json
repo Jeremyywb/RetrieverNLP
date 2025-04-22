@@ -1,7 +1,0 @@
-{
-  "query_id": "44_D",
-  "content_id": 1970,
-  "explanation": "The correct solution recognizes that in rectangle \\(ABCD\\), sides \\(BC\\) and \\(CD\\) are adjacent sides of the rectangle, forming a right angle at \\(C\\). The diagonal \\(BD\\) creates triangle \\(BCD\\) with one \\(90^\\circ\\) angle, making it right-angled.\n\nThe student likely assumed all sides of triangle \\(BCD\\) are equal. They may have incorrectly equated the lengths of \\(BC\\), \\(CD\\), and \\(BD\\), ignoring that the diagonal \\(BD\\) is longer than the sides \\(BC\\) or \\(CD\\) unless the rectangle is a square. This directly stems from conflating properties of right-angled triangles (which require one \\(90^\\circ\\) angle) with equilateral triangles (which require all sides equal and all angles \\(60^\\circ\\)).\n\nThe error arises from misapplying triangle classification: the student focused on side equality without verifying lengths or recognizing the right angle. This aligns with confusing right-angled and equilateral triangles, not merely forgetting side properties, as the error specifically substitutes one triangle type for another. It is distinct from diagram misinterpretation, as the error persists even with correct rectangle visualization.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

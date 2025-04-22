@@ -1,7 +1,0 @@
-{
-  "query_id": "1760_A",
-  "content_id": 2011,
-  "explanation": "Correct calculation:\n\u221a12 = \u221a(4\u00d73) = 2\u221a3  \n\u221a27 = \u221a(9\u00d73) = 3\u221a3  \nSum: 2\u221a3 + 3\u221a3 = 5\u221a3\n\nStudent's error:\nThe student likely simplified \u221a12 = 2\u221a3 and \u221a27 = 3\u221a3 correctly, but then treated the coefficients (2 and 3) as factors to multiply with the radical parts. They combined 2+3=5 but erroneously attached the sum to the coefficient position (5 \u2192 3) and moved the 3 from \u221a3 to the radical (3 \u2192 5), resulting in 3\u221a5.\n\nReasoning flaw:\nThe student correctly simplified individual radicals but misapplied the addition process. They conflated the additive combination of like terms (2\u221a3 + 3\u221a3) with multiplicative pairing of coefficients and radicals, reversing their positions. This aligns with misplacing simplified components rather than misunderstanding simplification itself.\n\nDistinction from related misconceptions:\nThis isn't a failure to simplify radicals (they did simplify to \u221a3 terms) or adding under the radical (which would yield \u221a39). The error specifically involves transposing properly derived components after correct simplification.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

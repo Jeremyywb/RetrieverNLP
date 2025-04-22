@@ -1,7 +1,0 @@
-{
-  "query_id": "1646_C",
-  "content_id": 51,
-  "explanation": "Correct calculation:  \nSum of angles around a point:  \n\\[\n(m + 50) + (2m + n) + (220 - 2m) = 360  \n\\]\nSimplifies to:  \n\\[\nm + n + 270 = 360 \\implies m + n = 90\n\\]\n\nStudent's error:  \nThe student likely summed the constant terms (50 + 220 = 270) and directly equated this to \\(m + n\\), ignoring the variable terms and the total angle requirement.  \n\nReasoning flaw:  \nThe student treated the sum of numerical values (270) as the final result for \\(m + n\\), failing to recognize that these constants are part of a larger equation requiring subtraction from 360\u00b0. This indicates a failure to apply the angle-sum property correctly.  \n\nMisconception link:  \nThe error stems from not recognizing that the total (360\u00b0) must include both variables and constants. The student isolated the numerical sum without accounting for the full equation.  \n\nDistinction from related misconceptions:  \nUnlike errors involving straight-line angles or partial bracket expansions, this mistake specifically omits the critical step of subtracting from 360\u00b0 after combining all terms.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

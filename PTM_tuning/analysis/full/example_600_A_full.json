@@ -1,7 +1,0 @@
-{
-  "query_id": "600_A",
-  "content_id": 1417,
-  "explanation": "Correct calculation:\n1. Let tea = T (pence), cake = C (pence)\n2. Equations: 2T + C = 140 and 4T + C = 220\n3. Subtract equations: (4T + C) - (2T + C) = 220 - 140 \u2192 2T = 80 \u2192 T = 40\n\nStudent's likely calculation:\n1. Correctly found difference: \u00a32.20 - \u00a31.40 = \u00a30.80\n2. Mistook \u00a30.80 as cost per tea instead of total for 2 extra teas\n\nFlawed reasoning:\nThe student recognized the price difference stems from 2 additional teas but incorrectly concluded the total difference equals one tea's cost. They failed to divide the \u00a30.80 difference by 2 (number of extra teas) to isolate T. This shows a failure to recognize equations must be manipulated to solve for single variables through inverse operations.\n\nDistinction from related errors:\nThe student correctly subtracted equations to eliminate C but misapplied the relationship between quantity difference and price difference. This differs from errors in equation setup or elimination methods - the flaw occurred during interpretation of the derived result.\n\nThe error directly stems from misunderstanding inverse operations required to solve for variables after establishing relationships between quantities.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

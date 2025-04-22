@@ -1,7 +1,0 @@
-{
-  "query_id": "1494_C",
-  "content_id": 1453,
-  "explanation": "Correct calculation: Subtract 5 from h first (h-5), then multiply by 6 \u2192 6(h-5)\n\nStudent's calculation: Subtracted h from 5 first (5-h), then multiplied by 6 \u2192 (5-h)\u00d76\n\nThe error stems from reversing the minuend and subtrahend in the subtraction operation. The student treated \"subtract five from h\" as equivalent to \"subtract h from five,\" incorrectly assuming the order of terms in subtraction doesn't affect the result. This reflects a misunderstanding that subtraction is order-sensitive, not commutative like addition. \n\nThe misconception directly caused the term reversal, as opposed to errors from misapplying order of operations (which would involve misplaced parentheses) or digit-value misunderstandings. The student correctly followed the two-step structure but inverted the subtraction components.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

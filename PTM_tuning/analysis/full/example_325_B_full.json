@@ -1,7 +1,0 @@
-{
-  "query_id": "325_B",
-  "content_id": 1257,
-  "explanation": "Correct calculation:  \n1 full turn = 360\u00b0, so \\(1 \\frac{1}{4}\\) turns = \\(1.25 \\times 360\u00b0 = 450\u00b0\\).\n\nStudent's error:  \nLikely calculated \\(360\u00b0 + 25\u00b0 = 385\u00b0\\).\n\nReasoning flaw:  \nThe student treated the quarter turn (\\( \\frac{1}{4} \\)) as 25\u00b0 instead of calculating \\( \\frac{1}{4} \\times 360\u00b0 = 90\u00b0 \\). This suggests they incorrectly associated \"quarter\" with 25 (a common percentage equivalent) rather than applying it to 360\u00b0. \n\nConnection to misconception:  \nThis matches estimating angles without using degree relationships for fractional turns, as they substituted 25\u00b0 for the mathematical value of \\( \\frac{1}{4} \\times 360\u00b0 \\).\n\nDistinguishing from related errors:  \nThe answer doesn't align with \"90\u00b0 per full turn\" (which would yield 112.5\u00b0) or miscalculating three-quarter turns. The error specifically stems from misapplying the fraction to the total degrees in a full turn.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

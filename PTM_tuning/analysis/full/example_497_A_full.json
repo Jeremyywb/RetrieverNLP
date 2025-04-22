@@ -1,7 +1,0 @@
-{
-  "query_id": "497_A",
-  "content_id": 576,
-  "explanation": "The correct solution recognizes a rectangle has two lines of symmetry: one vertical (through midpoints of horizontal sides) and one horizontal (through midpoints of vertical sides). \n\nThe student likely concluded there are no lines of symmetry because they assumed these midlines do not qualify as valid symmetry axes. Specifically, they may have incorrectly believed that lines of symmetry must align with the shape's edges or corners (e.g., like a square\u2019s diagonals) rather than internal midlines. \n\nThis directly stems from the misconception that vertical/horizontal symmetry lines must coincide with visible features of the shape (e.g., edges), rather than understanding symmetry is determined by folding/reflection equivalence. The error is distinct from confusing rotational symmetry or color-based design issues, as the flaw lies in misidentifying valid symmetry axes within the standard rectangle structure.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

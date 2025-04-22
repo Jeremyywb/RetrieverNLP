@@ -1,7 +1,0 @@
-{
-  "query_id": "249_A",
-  "content_id": 1233,
-  "explanation": "Correct approach: Subtracting equations eliminates x:\n(3x - 2y) - (3x + y) = 8 - 14 \u2192 -3y = -6\nStudent's incorrect approach: Adding equations would yield:\n(3x -2y) + (3x + y) = 8 +14 \u2192 6x - y = 22 (no elimination)\n\nThe student assumed terms with matching coefficients (3x) would cancel through addition. However, identical coefficients with matching signs require subtraction to eliminate. This shows a misunderstanding of elimination criteria - when matching terms have identical signs, they reinforce rather than cancel through addition. The error aligns with confusing elimination conditions, not sign requirements (related misconceptions mention sign comparisons, but this error specifically involves operation choice for same-signed terms). The student selected addition when subtraction was mathematically necessary for elimination.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

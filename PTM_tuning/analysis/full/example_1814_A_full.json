@@ -1,7 +1,0 @@
-{
-  "query_id": "1814_A",
-  "content_id": 1811,
-  "explanation": "Correct calculation: \n- Tom: 49\u00d710 = 490; 490 - 49 = 441\n- Katie: 50\u00d79 = 450; 450 - 9 = 441\n\nStudent's error: \nAssumed Katie's subtraction of 9 (instead of 49) invalidates her method.\n\nSpecific flaw: \nThe student failed to recognize that Katie's 50\u00d79 introduces an extra 9 (1\u00d79), making the subtraction of 9 sufficient to balance it. They likely thought only Tom's direct subtraction of the original number (49) preserves correctness.\n\nConnection to misconception: \nThe error stems from not seeing that both methods apply equivalent distributive properties: 49\u00d79 = (50-1)\u00d79 = 50\u00d79 - 9. The student treated the subtraction values as arbitrary rather than derived from the distributive law.\n\nDistinguishing from related errors: \nThe student correctly performed both subtraction steps, ruling out \"only multiplies first term.\" They understood consecutive operations but missed the equivalence principle.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

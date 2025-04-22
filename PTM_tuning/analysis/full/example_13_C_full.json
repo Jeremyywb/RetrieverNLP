@@ -1,7 +1,0 @@
-{
-  "query_id": "13_C",
-  "content_id": 161,
-  "explanation": "Correct calculation: 3 hours \u00d7 60 = 180 minutes \u2192 180 + 16 = 196 minutes \u2192 214 - 196 = 18 minutes  \nStudent's error: 3 hours \u00d7 100 = 300 minutes \u2192 300 + 16 = 316 minutes \u2192 316 - 214 = 102 minutes  \n\nThe student incorrectly converted hours to minutes by multiplying by 100 instead of 60. This caused Hannah's time to be overestimated by 120 minutes (3\u00d740 excess minutes) before subtraction. The direct substitution of 100 minutes/hour matches the arithmetic pattern in their answer (3\u00d7100=300), unlike related errors like using 30 or 10 minutes/hour (which would produce 90+16=106 or 30+16=46 respectively). Their calculation shows systematic conversion of all hours to 100-minute units, distinct from separate hour/minute subtraction errors.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}

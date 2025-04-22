@@ -1,7 +1,0 @@
-{
-  "query_id": "311_D",
-  "content_id": 1925,
-  "explanation": "The correct formula for Pattern \\( n \\) is \\( 3n + 2 \\), which matches Paul's method when simplified: \\( (n+2) \\times 3 - 4 = 3n + 6 - 4 = 3n + 2 \\). Jo's method \\( 3n + 4 \\) overcounts by 2 for all \\( n \\).\n\nThe student likely dismissed both formulas because they didn't recognize equivalent algebraic forms. They saw Paul's \\( (n+2) \\times 3 - 4 \\) as unrelated to \\( 3n + 2 \\), rather than simplifying it to verify equivalence. Testing with \\( n=3 \\): Paul's method gives \\( (3+2) \\times 3 - 4 = 11 \\), matching the pattern, while Jo's \\( 3 \\times 3 + 4 = 13 \\) does not. \n\nThe error stems from not validating methods through substitution. The student assumed both expressions were invalid based on surface structure, rather than mathematically verifying equivalence. This distinguishes it from misconceptions about direct proportion or constant differences - the student correctly identified a linear relationship but failed to analyze alternative forms of the same linear expression.",
-  "timestamp": "2025-04-20T22:00:24.440664",
-  "error": null
-}
