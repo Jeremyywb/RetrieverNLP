@@ -1,0 +1,801 @@
+query_id,content_id,QuestionText,CorrectAnswerText,InCorrectAnswerText
+105153_D,28721,"the “ length of integer x ” refers to the number of prime factors , not necessarily distinct , that x has . ( if x = 60 , the length of x would be 4 because 60 = 2 × 2 × 3 × 5 . ) what is the greatest possible length of integer z if z < 500 ?",8,10
+114476_E,31077,define r * by the equation r * = π - r . then ( ( − π ) * ) * =,− π,4 π
+18024_C,6674,"a rotameter is a device that measures flow of liquid and gases . when measuring liquid phase flows , 2.5 inches represent 60 liters per minute of liquid . with gas measurements the rotameter moves 50 % of the movement he moves with the liquid phase . how many liters of gas passed through the rotameter if it measured 4 inches ?",192,202
+25381_C,8534,the average age of 3 boys is 15 years and their ages are in proportion 3 : 5 : 7 . what is the age in years of the eldest boy ?,21,16
+109085_D,29716,"a boat takes 19 hours for travelling downstream from point a to point b and coming back to a point c midway between a and b . if the velocity of the stream is 4 kmph and the speed of the boat in still water is 14 kmph , what is the distance between a and b ?",180 km,220 km
+94045_B,25912,"if one positive integer is greater than another positive integer by 4 , and the difference of their cubes is 316 , what is their sum ?",10,8
+113396_C,30805,the wages earned by robin is 30 % more than that earned by erica . the wages earned by charles is 70 % more than that earned by erica . how much percent is the wages earned by charles more than that earned by robin ?,31 %,30 %
+20536_D,7308,how many seconds will a 400 metre long train take to cross a man walking with a speed of 3 km / hr in the direction of the moving train if the speed of the train is 63 km / hr ?,24,45
+65983_D,18811,"in a rectangular coordinate system , what is the area of a rectangle whose vertices have the coordinates ( - 8 , 1 ) , ( 1 , 1 ) , ( 1 , - 7 and ( - 8 , - 7 ) ?",72,56
+44598_A,13398,there are 24 students in a class . in how many different ways can a committee of 3 students be formed ?,2024,1250
+16311_C,6242,what sum of money will produce rs . 60 as simple interest in 4 years at 3 1 / 2 percent ?,429,266
+69639_A,19740,in what time will a railway train 70 m long moving at the rate of 36 kmph pass a telegraph post on its way ?,7 sec,6 sec
+21094_A,7449,a dishonest dealer claims to sell a product at its cost price . he uses a counterfeit weight which is 20 % less than the real weight . further greed overtook him and he added 35 % impurities to the product . find the net profit percentage of the dealer ?,68.75 %,44 %
+63681_E,18229,"y = x ^ 2 + bx + 128 cuts the x axis at ( h , 0 ) and ( k , 0 ) . if h and k are integers , what is the least value of b ?",- 129,128
+104931_D,28665,"the malibu country club needs to drain its pool for refinishing . the hose they use to drain it can remove 60 cubic feet of water per minute . if the pool is 40 feet wide by 150 feet long by 10 feet deep and is currently at 80 % capacity , how long will it take to drain the pool ?",800,700
+94002_B,25901,895.7 – 573.07 – 95.007 = ?,227.623,224.777
+83432_A,23228,"if p ( a ) = 4 / 7 and p ( b ) = 2 / 5 , find p ( a n b ) if a and b are independent events .",8 / 35,7 / 25
+5714_E,3558,a train 400 m long is running at a speed of 54 km / hr . if it crosses a tunnel in 2 minutes . then what is the length of tunnel ?,1400 m,2200 m
+116663_A,31630,"the slant height of a cone is 15 cm and radius of the base is 3 cm , find the curved surface of the cone ?",141,26
+96613_B,26561,the ratio of the area of a square to that of the square drawn on its diagonal is ?,1 : 2,3 : 4
+95395_E,26253,"abcd is a square . e , f , g , h is the midpoint of the sides of square . j and k is the midpoint of the sides hg and fg . l is a point on sides ef such that lf = 1 / 3 ef . find the ratio of area of triangle jkl to the area of square abcd .",5 : 48,5 : 4
+18851_A,6883,"rates for having a manuscript typed at a certain typing service are $ 5 per page for the first time a page is typed and $ 3 per page each time a page is revised . if a certain manuscript has 100 pages , of which 30 were revised only once , 20 were revised twice , and the rest required no revisions , what was the total cost of having the manuscript typed ?",$ 710,$ 430
+103825_A,28385,in a throw of dice what is the probability of ge æ « ng number greater than 2,2 / 3,1 / 2
+114820_B,31164,"the average age of applicants for a new job is 10 , with a standard deviation of 8 . the hiring manager is only willing to accept applicants whose age is within one standard deviation of the average age . assuming that all applicants ' ages are integers and that the endpoints of the range are included , what is the maximum number of different ages of the applicants ?",17,16
+112560_A,30595,"a person is saving money to purchase a car . he earns â £ 4000 per month and saves â £ 500 to buy the car . if he needs â £ 45000 to buy his dream car . how much money he will earn , before he saves enough money to buy the car ?",c - 360000,a - 352000
+30429_A,9814,"a certain music store stocks 800 cellos and 600 violas . of these instruments , there are 100 cello - viola pairs , such that a cello and a viola were both made with wood from the same tree ( each tree can make at most one viola and one cello , so there are no pairs other than these 90 ) . if one viola and one cello are chosen at random , what is the probability that the two instruments are made with wood from the same tree ?",1 / 4,3 / 16
+4881_A,3349,"john want to buy a $ 100 trouser at the store , but he think it ’ s too expensive . finally , it goes on sale for $ 20 . what is the percent decrease ?",80 %,20 %
+84946_E,23610,"1,2 , 3,2 , 4,6 , 4,8 , _____",12,14
+2342_B,2706,"one pump drains one - half of a pond in 2 hours , and then a second pump starts draining the pond . the two pumps working together finish emptying the pond in one - half hour . how long would it take the second pump to drain the pond if it had to do the job alone ?",1.3 hour,1.2 hour
+76937_E,21586,a shopkeeper sold an article offering a discount of 10 % and earned a profit of 25 % . what would have been the percentage of profit earned if no discount was offered ?,39 %,28 %
+95029_E,26161,"tom opened a shop investing rs . 500 . jose joined him 2 months later , investing rs . 350 . they earned a profit of rs . 1720 after completion of one year . what will be jose ' s share of profit ?",80,15
+89678_C,24807,14 is what percent of 70 ?,20 %,5 %
+21963_B,7668,a train running at the speed of 60 km / hr crosses a pole in 21 seconds . find the length of the train .,350 m,145 m
+38787_C,11929,"the ages of 2 persons differ by 35 years . if 10 years ago the elder one be 6 times as old as the younger one , find the present age of elder person .",50,52
+101714_B,27852,how many positive integers less than 160 are there such that they are multiples of 13 or multiples of 12 but not both ?,23,19
+39880_A,12205,a number when multiplied by 3 is odd and divisible by 9 . this number when multiplied by 4 is 108 . what is the original number ?,27,10
+15953_D,6151,a boat having a length 4 m and breadth 3 m is floating on a lake . the boat sinks by 1 cm when a man gets on it . the mass of the man is :,120 kg,96 kg
+74008_D,20845,what is the greatest positive integer x such that 4 ^ x is a factor of 64 ^ 10 ?,30,20
+31063_C,9974,if the average of 10 consecutive integers is 23.5 then the 10 th integer is : -,28,23
+92743_D,25582,"a sum of money is to be distributed among a , b , c , d in the proportion of 5 : 2 : 4 : 3 . if c gets rs . 10000 more than d , what is b ' s share ?",e ) 20000,d ) 23930
+113300_B,30781,"how many seconds does sandy take to cover a distance of 700 meters , if sandy runs at a speed of 18 km / hr ?",140,120
+60597_D,17445,the area of a circular field is 17.56 hectares . find the cost of fencing it at the rate of rs . 5 per metre approximately,7429,4547
+9351_B,4478,a and b go around a circular track of length 1800 m on a cycle at speeds of 36 kmph and 54 kmph . after how much time will they meet for the first time at the starting point ?,360 sec,165 sec
+3079_D,2892,"a = { 0 , 1 , - 3 , 6 , - 8 } b = { - 1 , 2 , - 4 , 7 } if a is a number that is randomly selected from set a , and b is a number that is randomly selected from set b , what is the probability that ab > 0 ?",2 / 5,4 / 9
+32369_B,10305,"if a speaks the truth 40 % of the times , b speaks the truth 20 % of the times . what is the probability that at least one will tell the truth",0.52,2.0
+48967_E,14502,divide rs . 32000 in the ratio 1 : 7 ?,4000,12000
+7101_E,3908,how many seconds will a train 100 meters long take to cross a bridge 160 meters long if the speed of the train is 36 kmph ?,26,27
+41496_D,12613,[ ( 5 / 2 ÷ 1 / 2 × 5 / 2 ) ] / [ ( 5 / 2 × 1 / 2 ÷ 5 / 2 ) ] = ?,25,16
+109547_D,29833,"pipe a fills a tank in 30 minutes . pipe b can fill the same tank 5 times as fast as pipe a . if both the pipes were kept open when the tank is empty , how much time will it take for the tank to overflow ?",5 mins,3 mins
+54887_B,16001,a library has an average of 660 visitors on sundays and 240 on other days . the average number of visitors per day in a month of 30 days beginning with a sunday is :,310,276
+61926_B,17783,"when positive integer x is divided by positive integer y , the remainder is 7 . if x / y = 86.1 , what is the value of y ?",70,71
+33156_D,10504,"a sporting goods store sold 60 frisbees in one week , some for $ 3 and the rest for $ 4 each . if receipts from frisbee sales for the week totaled $ 204 , what is the fewest number of $ 4 frisbees that could have been sold ?",24,4
+118793_B,32168,solve for x the equation log 9 ( x 3 ) = log 2 ( 8 ),9,8
+108517_B,29572,a farmer planned to plough a field by doing 120 hectares a day . after two days of work he increased his daily productivity by 25 % and he finished the job two days ahead of schedule . a ) what is the area of the field ? b ) in how many days did the farmer get the job done ? c ) in how many days did the farmer plan to get the job done ?,1440,2667
+102207_B,27976,in 1 kg mixture of iron and manganese 20 % of manganese . how much iron should be added so that the proportion of manganese becomes 10 %,1 kg,2 kg
+48019_E,14262,how many multiples of 5 are there between 1 and 100 ( both are inclusive ) ?,20.8,8.2
+10478_A,4764,john ' s bank ' s saving amount is decreased 12 % due to loan payment and current balance is rs . 44000 . find the actual balance before deduction ?,50000,8000
+8643_D,4299,"compound x contains elements a and b at an approximate ratio , by weight , of 2 : 10 . approximately how many grams of element b are there in 222 grams of compound x ?",185,270
+21575_E,7570,the sum of the present age of henry and jill is 40 . what is their present ages if 11 years ago henry was twice the age of jill ?,and 23,of these
+10241_B,4703,"what least number should be subtracted from 2590 so that the remainder when divided by 9 , 11 , and 13 will leave in each case the same remainder 6 ?",10,3
+86163_C,23919,"39 persons can repair a road in 12 days , working 5 hours a day . in how many days will 15 persons , working 6 hours a day , complete the work ?",26,14
+50772_C,14959,"if x is an integer such that 0 < x < 12 , 1 < x < 15 , 10 > x > 5 , 11 > x > 8 , and x + 2 < 12 , then x is",9,7
+64639_A,18471,"rectangular tile each of size 70 cm by 30 cm must be laid horizontally on a rectangular floor of size 900 cm by 600 cm , such that the tiles do not overlap and they are placed with edges jutting against each other on all edges . a tile can be placed in any orientation so long as its edges are parallel to the edges of floor . no tile should overshoot any edge of the floor . the maximum number of tiles that can be accommodated on the floor is :",100,50
+119626_B,32378,"in a sample of 800 high school students in which all students are either freshmen , sophomores , juniors , or seniors , 27 percent are juniors and 75 percent are not sophomores . if there are 160 seniors , how many more freshmen than sophomores are there among the sample of students ?",24,18
+13556_B,5545,the sum of all the digits of the integers from 18 to 21 inclusive is 24 ( 1 + 8 + 1 + 9 + 2 + 0 + 2 + 1 = 24 ) . what is the sum w of all the digits of the integers from 0 to 99 inclusive ?,900,810
+13160_A,5444,one - third of 1206 is what percent of 134 ?,300,3
+50926_E,14998,if shares of two persons in profits are rs . 800 and rs . 600 then ratio of their capitals is,4 : 3,1 : 5
+51709_E,15196,"if a coin has an equal probability of landing heads up or tails up each time it is flipped , what is the probability that the coin will land tails up exactly twice in 2 consecutive flips ?",0.25,0.666
+111232_D,30259,a train speeds past a pole in 20 seconds and a platform 100 m long in 25 seconds . its length is ?,400 m,150 m
+84240_D,23432,"a luxury liner , queen marry ii , is transporting several cats as well as the crew ( sailors , a cook , and captain ) to a nearby port . altogether , these passengers have 15 heads and 42 legs . how many cats does the ship host ?",6,8
+94332_E,25984,"two trains 200 m and 180 m long are running on parallel rails at the rate of 40 kmph and 45 kmph respectively . in how much time will they cross each other , if they are running in the same direction ?",273.6 sec,none
+106445_A,29048,a batsman makes a score of 87 runs in the 17 th inning and thus increases his average by 2 . find his average after 17 th inning .,none of the above,36
+90863_E,25106,a room is 7 meters 20 centimeters in length and 4 meters 32 centimeters in width . find the least number of square tiles of equal size required to cover the entire floor of the room .,15,21
+80117_B,22390,the banker ' s gain on a bill due due 1 year hence at 12 % per annum is rs . 9 . the true discount is,rs . 75,rs . 36
+5800_B,3580,the sum of two consecutive integers is 21 . find the numbers .,10,7
+98037_E,26922,"the distance between west - town to east - town is 14 kilometers . two birds start flying simultaneously towards one another , the first leaving from west - town at a speed of 5 kilometers per minute and the second bird , leaving from east - town , at a speed of 2 kilometers per minute . what will be the distance , in kilometers , between the meeting point and west - town ?",10 .,15 .
+3599_A,3024,"it takes printer a 4 more minutes more than printer b to print 40 pages . working together , the two printers can print 50 pages in 6 minutes . how long will it take printer a to print 160 pages ?",48,12
+74480_A,20965,"a can run 2 km distance in 2 min . , while b can run this distance in 2 min 40 sec . by how much distance can a beat b ?",500 m,150 m
+94960_C,26144,"a cat leaps 5 leaps for every 4 leaps of a dog , but 3 leaps of the dog are equal to 4 leaps of the cat . what is the ratio of the speed of the cat to that of the dog ?",15 : 16,16 : 15
+49044_C,14522,"alice , benjamin , and carol each try independently to win a carnival game . if their individual probabilities for success are 1 / 5 , 3 / 8 , and 2 / 7 , respectively , what is the probability that exactly two of the 3 players will win but one will lose ?",7 / 40,3 / 56
+106480_E,29056,"how many positive integers less than 8,000 are there in which the sum of the digits equals 5 ?",56,53
+115951_E,31449,"an amount of rs . 10000 is invested in two types of shares . the first yields an interest of 9 % p . a and the second , 11 % p . a . if the total interest at the end of one year is 9 3 / 4 % , then the amount invested at 11 % was ?",3750,1987
+52143_B,15306,"a , b , c subscribe rs . 50,000 for a business . a subscribes rs . 4000 more than b and b rs . 5000 more than c . out of a total profit of rs . 35,000 , a receives :",rs . 14,rs . 11
+71626_C,20243,"for any integer n greater than 1 , # n denotes the product of all the integers from 1 to n , inclusive . how many prime numbers v are there between # 6 + 2 and # 6 + 6 , inclusive ?",none,two
+115881_B,31432,two trains are moving in the same direction at 72 kmph and 36 kmph . the faster train crosses a man in the slower train in 18 seconds . find the length of the faster train ?,180,277
+95613_D,26308,"the ratio between the presents of the a and b is 6 : 7 . if b is 4 years older than a , what will be the ratio of the ages of a and b after 4 years ?",7 : 8,6 : 7
+87624_A,24289,"in business , a and c invested amounts in the ratio 3 : 2 , whereas the ratio between amounts invested by a and b was 3 : 1 , if rs 60000 was their profit , how much amount did c receive .",20000,10000
+102545_D,28061,the population of a village is 12000 . it increases annually at the rate of 24 % p . a . what will be its population after 2 years ?,18451,18786
+76304_B,21426,"at an upscale fast - food restaurant , shin can buy 3 burgers , 7 shakes , and one cola for $ 130 . at the same place it would cost $ 164.50 for 4 burgers , 10 shakes , and one cola . how much would it cost for a meal of one burger , one shake , and one cola ?",$ 61,$ 27
+3857_C,3089,"crazy eddie has a key chain factory . eddie managed to decrease the cost of manufacturing his key chains while keeping the same selling price , and thus increased the profit from the sale of each key chain from 40 % of the selling price to 50 % of the selling price . if the manufacturing cost is now $ 50 , what was it before the decrease ?",$ 60,$ 50
+112183_C,30499,"if 1 / ( x + 2 ) + 1 / ( x - 2 ) = 1 / ( x + 2 ) , what is the value of x ?",- 2,1
+11133_D,4930,"a 6000 liter tank , half - full of water is being filled from a pipe with a flow rate of 1 kiloliter every 2 minutes . at the same time , the tank is losing water from two drains at a rate of 1 kiloliter every 4 minutes and every 6 minutes . how many minutes does it take to fill the tank completely ?",36,24
+19268_A,6988,what is 12 percent of 80 ?,9.6,11.21
+55539_B,16166,"a line has a slope of 3 / 4 and intersects the point ( - 12 , - 39 ) . at which point e does this line intersect the x - axis ?",( 400 ),( 300 )
+35026_A,10976,the compound interest earned by sunil on a certain amount at the end of two years at the rate of 8 % p . a . was rs . 2828.80 . find the total amount that sunil got back at the end of two years in the form of principal plus interest earned ?,19828.8,19828.29
+3290_E,2945,three numbers are in the ratio 4 : 5 : 6 and their average is 36 . the largest number is :,43.2,45
+64280_D,18380,one year before the age of pramila was 4 times than her daughter swati . after 6 years the age of pramila will be 24 year greater than the age of swati . then calculate the ratio of ages of pramila and swati ?,11 : 3,11 : 5
+60516_A,17425,what is the minimum value of | x - 4 | + | x + 6 | + | x - 5 | ?,11,- 3
+25589_A,8587,"a certain sum of money is divided among a , b and c so that for each rs . a has , b has 65 paisa and c 40 paisa . if c ' s share is rs . 48 , find the sum of money ?",246,288
+60266_E,17361,"at the end of year x , automobile installment credit accounted for 36 % of all outstanding consumer installment credit . at that time automobile finance companies extended $ 35 billion of credit , or 1 / 3 of the automobile installment credit . how many billion dollars of consumer installment credit was outstanding at that time ?",291.67,249.55
+7929_E,4117,what is the units digit of 17 ^ 83 × 13 ^ 82 × 11 ^ 87 ?,7,8
+85278_E,23694,"how many positive integers less than 28 are prime numbers , odd multiples of 5 , or the sum of a positive multiple of 2 and a positive multiple of 4 ?",22,20
+21679_B,7597,"a is an integer greater than 49 but less than 61 , b is an integer greater than 59 but less than 71 , what is the range of a / b ?",2 / 7,1 / 2
+9849_B,4603,"an empty fuel tank with a capacity of 200 gallons was filled partially with fuel a and then to capacity with fuel b . fuel a contains 12 % ethanol by volume and fuel b contains 16 % ethanol by volume . if the full fuel tank contains 30 gallons of ethanol , how many gallons of fuel a were added ?",50,150
+23972_A,8177,"if two projectiles are launched at the same moment from 1182 km apart and travel directly towards each other at 460 km per hour and 525 km per hour respectively , how many minutes will it take for them to meet ?",72,68
+117899_C,31941,"a women in her conversation said ` ` if u reverse my own age , in figures represent my husbands age . he is of course senior to me and difference between our age is one 0 ne - eleventh of their sum . what is the woman ' s and her husbands age ?",4554,8457
+16885_C,6386,in an election a candidate who gets 60 % of the votes is elected by a majority of 1040 votes . what is the total number of votes polled ?,b ) 5200,c ) 6900
+74376_D,20938,a dishonest person wants to make a profit on the selling of milk . he would like to mix water ( costing nothing ) with milk costing 33 $ per litre so as to make a profit of 20 % on cost when he sells the resulting milk and water mixture for 36 $ . in what ratio should he mix the water and milk ?,1 : 10,1 : 4
+118486_D,32089,what is the sum of the multiples of 4 between 13 and 125 inclusive ?,1,3
+75836_A,21308,( ( 1 ^ m ) / ( 5 ^ m ) ) ( ( 1 ^ 16 ) / ( 4 ^ 16 ) ) = 1 / ( 2 ( 10 ) ^ 31 ) what is m ?,31,17
+86646_B,24042,"each week , harry is paid x dollars per hour for the first 30 hours and 1.5 x dollars for each additional hour worked that week . each week , james is paid x dollars per hour for the first 40 hours and 2 x dollars for each additional hour worked that week . last week james worked a total of 53 hours . if harry and james were paid the same amount last week , how many hours did harry work last week ?",54,36
+114484_A,31080,"a person travels equal distances with speeds of 3 km / hr , 6 km / hr , 9 km / hr . and takes a total time of 11 minutes . find the total distance ?",900 mts,1 km
+104303_B,28505,"city x has a population 7 times as great as the population of city y , which has a population twice as great as the population of city z . what is the ratio of the population of city x to the population of city z ?",14 : 1,1 : 4
+2896_B,2846,"ratio between rahul and deepak is 5 : 2 , after 6 years rahul age will be 26 years . what is deepak present age .",8,15
+15806_B,6114,the distance between delhi and mathura is 140 kms . a starts from delhi with a speed of 24 kmph at 7 a . m . for mathura and b starts from mathura with a speed of 46 kmph at 8 a . m . from delhi . when will they meet ?,9 1 / 2,23 3 / 4
+24129_E,8216,"angelo and isabella are both salespersons . in any given week , angelo makes $ 540 in base salary plus 8 percent of the portion of his sales above $ 1,000 for that week . isabella makes 10 percent of her total sales for any given week . for what amount of weekly sales would angelo and isabella earn the same amount of money ?",23,27
+18809_B,6872,the value of ( 34.5 * 0.473 * 1.567 ) / ( 0.0673 * 23.25 * 7.57 ) is close to,2.16,1.15
+56814_D,16488,the sector of a circle has radius of 14 cm and central angle 144 o . find its perimeter ?,63.2 cm,80 cm
+115217_D,31264,"if n is the greatest positive integer for which 4 ^ n is a factor of 8 ! , then n = ?",2,8
+71512_E,20214,"the output of a factory is increased by 10 % to keep up with rising demand . to handle the holiday rush , this new output is increased by 40 % . by approximately what percent would the output of the factory now have to be decreased in order to restore the original output ?",35 %,79 %
+98123_D,26944,what is the rate percent when the simple interest on rs . 2000 amount to rs . 500 in 2 years ?,12.5 %,95 %
+98836_E,27124,"a rectangular field is to be fenced on three sides leaving a side of 20 feet uncovered . if the area of the field is 680 sq . ft , how many feet of fencing will be required ?",88 feet,83 feet
+65032_D,18569,light glows for every 13 seconds . how many max . times did it glow between 1 : 57 : 58 and 3 : 20 : 47 am .,382 times,392 times
+111667_C,30369,"what is the sum of two consecutive even numbers , the difference of whose squares is 84 ?",42,48
+105155_A,28722,after decreasing 50 % in the price of an article costs rs . 620 . find the actual cost of an article ?,1240,1400
+14096_C,5682,a train running at the speed of 180 km / hr crosses a pole in 8 seconds . find the length of the train .,400,480
+77496_B,21728,"a glucose solution contains 10 grams of glucose per 100 cubic centimeters of solution . if 45 cubic centimeters of the solution were poured into an empty container , how many grams of glucose would be in the container ?",4.50,5.00
+28186_C,9245,"you cook a pot of beef stew for you and your roommate . normally it lasts 7 days between the two of you . if 3 guests are now staying with you and your roommate , how many days will the beef stew now last if everyone eats it ?",2.8,3.5
+18365_C,6760,the volumes of two cones are in the ratio 1 : 12 and the radii of the cones are in the ratio of 1 : 3 . what is the ratio of their heights ?,a ) 3 : 4,c ) 2 : 2
+41228_A,12546,"suresh started a business , investing rs . 18000 . after 3 months and 4 months respectively , rohan and sudhir joined him with capitals of 12000 and 9000 . at the end of the year the total profit was rs . 4048 . what is the difference between rohan ’ s and sudhir ’ s share in the profit ?",s . 368,s . 345
+38615_C,11885,"a clock hangs on the wall of a railway station , 71 ft 9 in long and 10 ft 4 in high . those are the dimension of the wall , not the clock ! while waiting for a train we noticed that the hands of the clock were pointing in opposite directions , and were parallel to one of the diagonals of the wall , what was the exact time ?",7 : 5,7 : 25
+92212_C,25448,"a certain shade of gray paint is obtained by mixing 3 parts of white paint with 5 parts of black paint . if 2 gallons of the mixture is needed and the individual colors can be purchased only in one gallon or half gallon cans , what is the least amount of paint r , in gallons , that must be purchased in order to measure out the portions needed for the mixture ?",2 1 / 2,3
+38324_A,11812,16 boys or 24 girls can construct the wall in 6 days . the number of days that 8 boys and 6 girls will take to construct ?,8 days,7 days
+52661_D,15437,"a train consists of 12 boggies , each boggy 15 metres long . the train crosses a telegraph post in 9 seconds . due to some problem , two boggies were detached . the train now crosses a telegraph post in",7.5 sec,20 sec
+10627_C,4801,a train speeds past a pole in 15 seconds and a platform 100 m long in 25 seconds . its length is :,150 m,130 m
+54184_C,15823,a certain taxi company charges $ 3.00 for the first 1 / 5 of a mile plus $ 0.40 for each additional 1 / 5 of a mile . what would this company charge for a taxi ride that was 8 miles long ?,18.6,17.5
+69775_B,19774,a can run 4 times as fast as b and gives b a start of 72 m . how long should the race course be so that a and b might reach in the same time ?,96 m,60 m
+105091_B,28706,"nicky and cristina are running a race . since cristina is faster than nicky , she gives him a 30 meter head start . if cristina runs at a pace of 5 meters per second and nicky runs at a pace of only 3 meters per second , how many seconds will nicky have run before cristina catches up to him ?",15 seconds,18 seconds
+99466_E,27284,"a wire can be bent in the form of a circle of radius 56 cm . if it is bent in the form of a square , then its area will be",7744,3444
+93836_D,25858,a profit of rs . 700 is divided between x and y in the ratio of 1 / 2 : 1 / 3 . what is the difference between their profit shares ?,s . 140,s . 50
+115120_B,31240,how long does a train 110 m long traveling at 60 kmph takes to cross a bridge of 290 m in length ?,24.00 sec,88.9 sec
+104085_D,28450,the cash difference between the selling prices of an book at a profit of 4 % and 6 % is $ 3 . the ratio of the two selling prices is :,52 : 53,42 : 36
+65734_E,18747,"a furniture dealer purchased a desk for $ 140 and then set the selling price equal to the purchase price plus a markup that was 30 % of the selling price . if the dealer sold the desk at the selling price , what was the amount of the dealer ' s gross profit from the purchase and the sale of the desk ?",$ 60,$ 100
+73710_E,20770,"average of 10 matches is 32 , how many runs one should should score to increase his average by 3 runs .",a ) 65,e ) 88
+66142_E,18851,"if length of rectangle is increased by 10 % , and breadth is decreased by 10 % . what will it effect on area of rectangle ?",1 % decrease,2 % decrease
+30290_C,9779,"a pipe can empty 2 / 3 rd of a cistern in 12 mins . in 5 mins , what part of the cistern will be empty ?",5 / 18,4 / 9
+58236_D,16848,convert 50 miles into yards ?,88000 yards,42560 yards
+93609_B,25801,the two lines y = x and x = - 7 intersect on the coordinate plane . what is the value of the area of the figure formed by the intersecting lines and the x - axis ?,24.5,21.5
+20345_D,7260,"along a yard 414 metres long , 24 trees are palnted at equal distances , one tree being at each end of the yard . what is the distance between two consecutive trees",18,11
+40363_E,12326,what is the total number of d integers between 100 and 200 that are divisible by 3 ?,33,29
+46609_A,13908,a 300 m long train crosses a platform in 39 sec while it crosses a signal pole in 24 sec . what is the length of the platform ?,187.5 m,389 m
+110283_A,30019,"find the principal which yields a simple interest of rs . 20 and compound interest of rs . 21 in two years , at the same percent rate per annum ?",rs . 200,rs . 520
+16692_E,6337,a third of arun â € ™ s marks in mathematics exceed a half of his marks in english by 15 . if he got 170 marks in two subjects together how many marks did he got in english ?,120,none of them
+61843_C,17762,the cost of carpeting a room 15 meters long with a carpet 75 cm wide at 30 paisa per meter is rs . 36 . the breadth of the room is ?,6 meters,9 meters
+3505_E,2999,"a rectangular grass field is 85 m * 55 m , it has a path of 2.5 m wide all round it on the outside . find the area of the path and the cost of constructing it at rs . 2 per sq m ?",1450,2691
+112146_C,30490,"in the xy - coordinate system , if ( m , n ) and ( m 1 2 , n 1 k ) are two points on the line with the equation x 5 2 y 1 5 , then k 5",1,2
+62946_A,18043,a thief goes away with a santro car at a speed of 45 kmph . the theft has been discovered after half an hour and the owner sets off in a bike at 50 kmph when will the owner over take the thief from the start ?,b ) 4,a ) 2
+34495_C,10841,the difference between the local value and the face value of 7 in the numerical 32675149 is,69993,5149
+99912_A,27398,"the speed at which a man can row a boat in still water is 6.5 kmph . if he rows downstream , where the speed of current is 2.5 kmph , what time will he take to cover 90 metres ?",36 seconds,90 seconds
+32276_E,10281,"a telephone company needs to create a set of 3 - digit area codes . the company is entitled to use only digits 6 , 4 and 3 , which can be repeated . if the product of the digits in the area code must be even , how many different codes can be created ?",26,30
+92820_D,25602,the difference between the place value and the face value of 4 in the numeral 854973 is,3996,6084
+66281_A,18887,find the sum of all 2 digit numbers divisible by 3 .,1665,1565
+104174_E,28472,"tickets to a certain concert sell for $ 20 each . the first 10 people to show up at the ticket booth received a 40 % discount , and the next 20 received a 15 % discount . if 45 people bought tickets to the concert , what was the total revenue from ticket sales ?",$ 760,$ 1
+56123_D,16313,"in the johnsons ' monthly budget , the dollar amounts allocated to household expenses , food , and miscellaneous items are in the ratio 5 : 4 : 1 , respectively . if the total amount allocated to these 3 categories is $ 1800 , what is the amount allocated to food ?",$ 720,$ 450
+38757_C,11921,"find the least multiple of 23 , which when divided by 1821 and 24 leaves remainders 710 and 13 respectively .",3013,3024
+48164_A,14299,a number when divided by 342 gives a remainder 47 . when the same number is divided by 19 what would be the remainder ?,9,0
+72769_B,20533,a fruit seller had some oranges . he sells 40 % oranges and still has 360 oranges . how many oranges he had originally ?,600,710
+52297_C,15345,"a bag has 1 , 3 , 5 , 7 , 9,11 and 13 cm sticks . find the probability that they they will form a triangle if 3 sticks are drawn ?",13 / 35,1 / 2
+106752_C,29125,"one - tenth of the students at a nursery school are 4 years old or older . if 20 students have not yet reached their third birthday , and a total of 50 students are not between 3 years old and 4 years old , how many children are in the nursery school ?",300,450
+15504_C,6038,a man can row his boat with the stream at 16 km / h and against the stream in 6 km / h . the man ' s rate is ?,5 kmph,7 kmph
+95031_B,26162,"the sides of a rectangular field are in the ratio 3 : 4 . if the area of the field is 8748 sq . m , the cost of fencing the field @ 25 paise per metre is",rs . 94.50,rs . 67.50
+38847_E,11944,a man can row his boat with the stream at 22 km / h and against the stream in 10 km / h . the man ' s rate is ?,6 kmph,9 kmph
+17153_E,6453,a train 180 m long is running with a speed of 60 km / hr . in what time will it pass a man who is running at 6 km / hr in the direction opposite to that in which the train is going ?,10,4
+94720_C,26083,"if two dice are thrown together , the probability of getting a square number on both the dice is",1 / 12,1 / 4
+74415_B,20948,"if 0.25 : x : : 2 : 6 , then x is equal to",0.75,0.25
+22216_B,7732,"a watch was sold at a loss of 15 % . if it was sold for rs . 400 more , there would have been a gain of 5 % . what is the cost price ?",1600,2998
+49009_E,14513,"the two lines y = x and x = - 7 intersect on the coordinate plane . if z represents the area of the figure formed by the intersecting lines and the x - axis , what is the side length of a cube whose surface area is equal to 6 z ?",7 / √ 2,( √ 2 ) / 3
+114804_A,31160,"a bag contains 6 white marbles and 6 black marbles . if each of 6 girls and 6 boys randomly selects and keeps a marble , what is the probability that all of the girls select the same colored marble ?",1 / 462,1 / 35
+88255_D,24447,two goods trains each 850 m long are running in opposite directions on parallel tracks . their speeds are 45 km / hr and 30 km / hr respectively . find the time taken by the slower train to pass the driver of the faster one ?,81.6 sec,18.3 sec
+21449_D,7538,"a side of beef lost 20 percent of its weight in processing . if the side of beef weighed 640 pounds after processing , how many pounds did it weigh before processing ?",800,840
+58429_B,16897,a car started running at a speed of 30 km / hr and the speed of the car was increased by 2 km / hr at the end of every hour . find the total distance covered by the car in the first 12 hours of the journey .,492 km,352 km
+57760_D,16728,how many seconds will a train 200 meters long running at the rate of 36 kmph take to pass a certain telegraph post ?,20 sec,30 sec
+61809_C,17753,"tough and tricky questions : number properties . if ( z + 3 ) / 9 is an integer , what is remainder when z is divided by 9 ?",6,4
+75177_D,21141,find the smallest number of 6 digits which is exactly divisible by 111 ?,15550,158993
+49966_A,14756,"3 people decided to put a down payment on a car for 3500 dollars . how much money do they each have to pay , given that that they have to pay the same amount , and they can not use any bills below $ 1 ?",$ 1167,$ 1166
+70862_C,20051,"if 8 men can reap 80 hectares in 24 days , then how many hectares can 36 men reap in 30 days ?",450,287
+16922_D,6395,"two pipes can fill a tank in 10 minutes and 15 minutes . an outlet pipe can empty the tank in 30 minutes . if all the pipes are opened when the tank is empty , then how many minutes will it take to fill the tank ?",7.5,8.5
+77725_E,21785,"if in a race of 130 m , a covers the distance in 20 seconds and b in 25 seconds , then a beats b by :",26 m,15 m
+46896_A,13981,"how many integers are between 3 and 86 / 7 , inclusive ?",10,8
+50433_B,14874,1.20 can be expressed in terms of percentage as,120 %,0.120 %
+14378_A,5754,divide rs . 32000 in the ratio 3 : 7 ?,9600,12000
+109063_A,29711,"a batsman in his 15 th innings makes a score of 85 , and thereby increases his average by 3 . what is his average after the 15 th innings ? he had never been ’ not out ’ .",43,47
+108615_B,29597,a 80 gallon solution of salt and water is 10 % salt . how many gallons of water must be added to the solution in order to decrease the salt to 8 % of the volume ?,20,12
+41104_A,12515,"the length of the bridge , which a train 170 metres long and travelling at 45 km / hr can cross in 30 seconds , is ?",205,245
+21610_E,7579,2 men and 2 women are lined up in a row . what is the number of cases where they stand with each other in turn ? ( the number of cases in which men ( or women ) do not stand next to each other ),4,24
+64007_C,18311,"if 75 percent of a class answered the first question on a certain test correctly , 65 percent answered the second question on the test correctly , and 20 percent answered neither of the questions correctly , what percent answered both correctly ?",60 %,30 %
+82790_C,23066,"the average ( arithmetic mean ) of 20 , 40 , and 60 is 7 more than the average of 10 , 70 , and what number ?",19,35
+118459_E,32082,the effective annual rate of interest corresponding to a nominal rate of 12 % per annum payable half - yearly is ?,12.36 %,6.19 %
+96032_B,26414,"each factor of 230 is inscribed on its own plastic ball , and all of the balls are placed in a jar . if a ball is randomly selected from the jar , what is the probability that the ball is inscribed with a multiple of 42 ?",3 / 16,5 / 42
+15518_E,6041,jar a has 16 % more marbles than jar b . what percent of marbles from jar a need to be moved into jar b so that both jars have equal marbles ?,7 %,13 %
+79257_D,22173,"the area of a rectangular plot is 23 times its breadth . if the difference between the length and the breadth is 10 metres , what is its breadth ?",13 metres,data inadequate
+108241_E,29502,a candidate got 40 % of the votes polled and he lost to his rival by 2000 votes . how many votes were cast ?,10000,6851
+77822_C,21810,"two pipes can fill a tank in 12 minutes and 15 minutes . an outlet pipe can empty the tank in 10 minutes . if all the pipes are opened when the tank is empty , then how many minutes will it take to fill the tank ?",20,24
+39468_D,12100,cubes with each side one inch long are glued together to form a larger cube . the larger cube ' s face is painted with red color and the entire assembly is taken apart . 26 small cubes are found with no paints on them . how many of unit cubes have at least one face that is painted red ?,99,98
+90270_B,24957,an error 4 % in excess is made while measuring the side of a square . what is the percentage of error in the calculated area of the square ?,8.16 %,4.02 %
+30706_B,9884,"the workforce of company x is 60 % female . the company hired 28 additional male workers , and as a result , the percent of female workers dropped to 55 % . how many employees did the company have after hiring the additional male workers ?",336,220
+68979_C,19573,"ages of two sisters differ by 9 years . if 5 years ago , the elder one was twice as old the younger one , find their present age",1423,1632
+54544_C,15914,"if $ 5,000 is invested in an account at a simple annual rate of r percent , the interest is $ 250 . when $ 18,000 is invested at the same interest rate , what is the interest from the investment ?",$ 900,$ 800
+64595_A,18460,"danny is sitting on a rectangular box . the area of the front face of the box is half the area of the top face , and the area of the top face is 1.5 times the area of the side face . if the volume of the box is 648 , what is the area of the side face of the box ?",72,32
+4632_B,3286,"the average weight of 10 oarsmen in a boat is increased by 1.8 kg when one of the crew , who weight 53 kg is replaced by a new man . find the weight of the new man .",71 kg,62 kg
+13557_D,5545,the sum of all the digits of the integers from 18 to 21 inclusive is 24 ( 1 + 8 + 1 + 9 + 2 + 0 + 2 + 1 = 24 ) . what is the sum w of all the digits of the integers from 0 to 99 inclusive ?,900,1000
+80933_B,22595,an error 1 % in excess is made while measuring the side of a square . what is the percentage of error in the calculated area of the square ?,2.01 %,4.02 %
+4642_E,3288,"how many multiples of 13 are less than 6000 , and also multiples of 16 ?",29,33
+37372_B,11571,"if in a race of 70 m , a covers the distance in 20 seconds and b in 25 seconds , then a beats b by :",14 m,16 m
+59940_B,17279,two trains of equal length are running on parallel lines in the same direction at 46 km / hr and 36 km / hr . the faster train catches and completely passes the slower train in 72 seconds . what is the length of each train ( in meters ) ?,100,80
+74824_D,21052,"tom drives from town a to town b , driving at a constant speed of 60 miles per hour . from town b tom immediately continues to town c . the distance between a and b is twice the distance between b and c . if the average speed of the whole journey was 36 mph , then what is tom ' s speed driving from b to c in miles per hour ?",20,30
+100426_A,27527,"twenty four meters of wire is available to fence off a flower bed in the form of a circular sector . what must the radius of the circle in meters be , if we wish to have a flower bed with the greatest possible surface area ?",6,2 √ 2
+20010_B,7175,"a committee is reviewing a total of 20 x black - and - white films and 6 y color films for a festival . if the committee selects y / x % of the black - and - white films and all of the color films , what fraction q of the selected films are in color ?",30 / 31,1 / 5
+9229_B,4447,"if ( 1 / 5 ) ^ m * ( 1 / 4 ) ^ 4 = 1 / ( 16 * ( 10 ) ^ 4 ) , then m =",4,2
+28836_C,9410,"36 people { a 1 , a 2 … a 36 } meet and shake hands in a circular fashion . in other words , there are totally 36 handshakes involving the pairs , { a 1 , a 2 } , { a 2 , a 3 } , … , { a 35 , a 36 } , { a 36 , a 1 } . then size of the smallest set of people such that the rest have shaken hands with at least one person in the set is",12,44
+18749_A,6857,"in a garment industry , 12 men working 8 hours per day complete a piece of work in 10 days . to complete the same work in 8 days , working 20 hours a day , the number of men required is :",6,4
+35656_E,11135,"julie put half of her savings in a savings account that pays an annual simple interest and half in a savings account that pays an annual compound interest . after two years she earned $ 100 and $ 105 from the simple interest account and the compound interest account respectively . if the interest rates for both accounts were the same , what was the amount of julie ' s initial savings ?",1000,1440
+83075_C,23137,john makes $ 60 a week from his job . he earns a raise andnow makes $ 68 a week . what is the % increase ?,13.33 %,16.56 %
+116379_B,31558,the number which exceeds 16 % of it by 105 is :,125,52
+50453_C,14879,"in measuring the sides of a rectangle , one side is taken 5 % in excess , and the other 4 % in deficit . find the error percent in the error percent in the area calculated from these measurements .",0.8 %,0.4 %
+96643_A,26569,"list k consists of 10 consecutive integers . if - 4 is the least integer in list k , what is the range of the positive integers in list k ?",4,5
+35408_E,11072,how many digits are required to write numbers between 1 to 100 .,192,none
+14632_E,5817,"a computer manufacturer produces a certain electronic component at a cost of $ 75 per component . shipping costs for delivering the components are $ 2 per unit . further , the manufacturer has costs of $ 16,500 a month related to the electronic component regardless of how many it produces . if the manufacturer produces and sells 150 components a month , what is the lowest price it can sell them for such that the costs do n ' t exceed the revenues ?",$ 187,$ 192
+48714_B,14439,a trader sells 92 meters of cloth for rs . 9890 at the profit of rs . 24 per metre of cloth . what is the cost price of one metre of cloth ?,83.5,89.5
+24443_C,8296,"due to construction , the speed limit along an 10 - mile section of highway is reduced from 55 miles per hour to 30 miles per hour . approximately how many minutes more will it take to travel along this section of highway at the new speed limit than it would have taken at the old speed limit ?",d ) 9.1,c ) 10
+107192_A,29237,"which of the numbers 1 , 2 , 3 , 4 , or 5 is nearest in value to the sum 2007 / 2999 + 8001 / 5998 + 2001 / 3999 = ?",3,1
+46869_D,13973,if 2 / z = 2 / ( z + 1 ) + 2 / ( z + 36 ) which of these integers could be the value of z ?,6,3
+9835_E,4599,"right now , the ratio between the ages of sandy and molly is 4 : 3 . after 6 years , sandy ’ s age will be 30 years . what is molly ' s age right now ?",18,20
+89445_C,24748,"the price of a coat in a certain store is $ 500 . if the price of the coat is to be reduced by $ 150 , by what percent is the price to be reduced ?",30 %,20 %
+49703_E,14688,120 is what percent of 40 ?,300 %,500 %
+87630_C,24290,"the average ( arithmetic mean ) of 20 , 40 , and 60 is 5 more than the average of 10 , 50 , and what number ?",45,55
+56398_B,16383,"a worker can load one truck in 6 hours . a second worker can load the same truck in 8 hours . if both workers load one truck simultaneously while maintaining their constant rates , approximately how long , in hours , will it take them to fill one truck ?",3.4,2.8
+37414_A,11582,"a certain roller coaster has 5 cars , and a passenger is equally likely to ride in any 1 of the 5 cars each time that passenger rides the roller coaster . if a certain passenger is to ride the roller coaster 5 times , what is the probability that the passenger will ride in each of the 5 cars ?",24 / 625,0
+41990_E,12737,a man buys a cycle for rs . 1600 and sells it at a loss of 15 % . what is the selling price of the cycle ?,s . 1360,s . 1256
+33501_C,10591,"a certain college ' s enrollment at the beginning of 1992 was 20 percent greater than it was at the beginning of 1991 , and its enrollment at the beginning of 1993 was 15 percent greater than it was at the beginning of 1992 . the college ' s enrollment at the beginning of 1993 was what percent greater than its enrollment at the beginning of 1991 ?",38 %,30 %
+65947_B,18802,"the sum of the non - prime numbers between 40 and 50 , non - inclusive , is",274,176
+49197_C,14561,"3 persons invested rs . 9000 in a joint business . the second person invested rs . 1000 more than the first and the third rs . 1000 more than second . after two years , they gained rs . 1800 . how much third person will get ?",800,600
+23537_C,8066,"two pipes a and b can fill a tank in 4 and 5 hours respectively . if they are turned up alternately for one hour each , the time taken to fill the tank is ?",4 hrs 24 min,8 hrs 24 min
+32315_D,10291,"sally has a gold credit card with a certain spending limit , and a platinum card with twice the spending limit of the gold card . currently , she has a balance on her gold card that is 1 / 3 of the spending limit on that card , and she has a balance on her platinum card that is 1 / 8 of the spending limit on that card . if sally transfers the entire balance on her gold card to her platinum card , what portion of her limit on the platinum card will remain unspent ?",17 / 24,19 / 30
+75758_D,21288,"an outlet pipe empties a tank which is full in 10 hours . if the inlet pipe is kept open , which lets water in at the rate of 4 litres / min then outlet pipe would take 6 hours longer . find the capacity of the tank .",6400 litres,11200 litres
+89473_C,24755,"if 20 men can build a wall 112 metres long in 6 days , what length of a similar wall can be built by 15 men in 3 days ?",42 mtr .,70 mtr .
+12727_B,5334,"working together , jose and jane can complete an assigned task in 12 days . however , if jose worked alone and complete half the work and then jane takes over the task and completes the second half of the task , the task will be completed in 48 days . how long will jose take to complete the task if he worked alone ? assume that jane is more efficient than jose",36 days,30 days
+87333_E,24215,"if the price of a book is first decreased by 25 % and then increased by 20 % , then the decrease in the price will be ?",10 %,30 %
+80641_E,22521,"seed mixture x is 40 percent ryegrass and 60 percent bluegrass by weight ; seed mixture y is 25 percent ryegrass and 75 percent fescue . if a mixture of x and y contains 32 percent ryegrass , what percent of the weight of this mixture is x ?",46.66 %,66.66 %
+40232_A,12294,robert left from a pvt company . management hold his salary rs . 15000 / - for one month . earlier robert earned a performance incentive rs . 7280 / - from company . but robert forgot that . after one month robert asked his salary and accountant gives rs . 18500 / - to him . what is the bonus amount given to robert ?,c ) 10780,a ) 9500
+63171_D,18100,"if the price of a certain computer increased 20 percent from d dollars to 351 dollars , then 2 d =",585,649
+92848_E,25609,two circular frames are kept one above the other . frame x has a diameter of 16 cm and frame y has a diameter of 12 cm . what fraction of the surface of frame x is not covered by frame y ?,7 / 16,2 / 3
+104773_E,28624,"if 2 and 3 are positive integers , then 2 * 3 + 2 is",8,16
+20668_E,7341,the unit digit in the product 1457 * 7863 * 4575 * 9719 is ?,5,4
+118542_E,32103,evaluate : 30 - | - x + 6 | for x = 10,26,56
+41007_B,12490,if ( 2 ^ 14 ) ( 25 ^ s ) = 5 ( 10 ^ m ) what is the value of m ?,14,8
+61811_A,17754,"if x dollars is invested at 9 percent for one year and y dollars is invested at 8 percent for one year , the annual income from the 9 percent investment will exceed the annual income from the 8 percent investment by $ 48 . if $ 2,000 is the total amount invested , how much is invested at 9 percent ?",1223.53,300
+18400_A,6769,"a dishonest dealer professes to sell goods at the cost price but uses a weight of 500 grams per kg , what is his percent ?",100 %,20 %
+78745_E,22043,a pipe takes a hours to fill the tank . but because of a leakage it took 6 times of its original time . find the time taken by the leakage to empty the tank,72 min,70 min
+4944_E,3364,the total number of digits used in numbering the pages of a book having 360 pages is,972,1405
+66028_A,18823,if a man lost 1 % by selling oranges at the rate of 16 a rupee at how many a rupee must he sell them to gain 44 % ?,11,12
+52913_A,15501,a person crosses a 1000 m long street in 10 minutes . what is his speed in km per hour ?,6.0,7.1
+105964_E,28925,dhoni spent 20 percent of his earning last month on rent and 5 percent less than what he spent on rent to purchase a new dishwasher . what percent of last month ' s earning did dhoni have left over ?,61 %,50 %
+76605_D,21502,"a and b together have rs . 1210 . if of a ' s amount is equal to of b ' s amount , how much amount does b have ?",484,664
+88523_E,24514,"if you multiply two integers together and then add 4 , the result is 40 . which of the following could not be the sum of the two numbers ?",18,20
+100325_E,27501,"a number when divided by 6 leaves a remainder 3 . when the square of the same number is divided by 6 , the remainder is :",3,4
+31719_E,10140,"a small beaker is 1 / 2 filled with salt water . another beaker , which has 5 times the capacity of the small beaker , is 1 / 5 filled with fresh water . after dumping all of the salt water from the small beaker into the large beaker , to what fraction of its capacity will the large beaker be filled ?",3 / 10,7 / 20
+41848_E,12701,"the temperature of a certain cup of coffee 10 minutes after it was poured was 120 degrees fahrenheit . if the temperature f of the coffee t minutes after it was poured can be determined by the formula f = 120 ( 2 ^ - at ) + 60 , where f is in degrees fahrenheit and a is a constant . then the temperature of the coffee 60 minutes after it was poured was how many degrees fahrenheit ?",61.8,50
+25308_B,8516,"given that 268 x 74 = 19832 , find the value of 2.68 x . 74 .",1.9832,1.0025
+2619_D,2776,"a cube of edge 12 cm is immersed completely in a rectangular vessel containing water . if the dimensions of the base of vessel are 20 cm * 15 cm , find the rise in water level ?",5.76 cm,15.12 cm
+38586_A,11878,"the current of a stream runs at the rate of 4 kmph . a boat goes 6 km and back to the starting point in 4 hours , then find the speed of the boat in still water ?",d ) 5.77,a ) 7
+95188_E,26201,"if two positive numbers are in the ratio 1 / 10 : 1 / 7 , then by what percent is the second number more than the first ?",42.8 % .,80 % .
+41134_D,12522,"in a division , a student took 72 as divisor instead of 36 . his answer was 24 . the correct answer is -",48,28
+53251_A,15587,"if the average of 55 , 48 , 507 , 2 , 684 and y is 223 , then what is y ?",42,701
+76626_E,21507,"a basket contains 6 apples , of which 1 is spoiled and the rest are good . if we select 2 apples from the basket simultaneously and at random , what is the probability that the 2 apples selected will include the spoiled apple ?",1 / 2,1 / 6
+33078_B,10485,"a telephone company needs to create a set of 3 - digit area codes . the company is entitled to use only digits 2 , 4 and 6 , which can be repeated . if the product of the digits in the area code must be even , how many different codes can be created ?",27,22
+90282_B,24960,"a certain number when divided by 95 leaves a remainder 25 , what is the remainder if the same no . be divided by 15 ?",8,5
+107710_A,29368,15 - 2 + 4 ÷ 1 / 2 × 8 = ?,77,272
+81118_B,22642,the age of somu is one - third his father ' s . 5 years back he was one - fifth of his father ' s age . what is his persent age ?,10,13
+71207_B,20138,"a alone can do a piece of work in 6 days and b alone in 8 days . a and b undertook to do it for rs . 4000 . with the help of c , they completed the work in 3 days . how much is to be paid to c ?",s . 500,s . 400
+76268_B,21417,"if 3 ^ x * 4 ^ y = 1 , 594,323 and x – y = 13 , then x = ?",13,11
+29083_B,9472,a trader bought a car at 20 % discount on its original price . he sold it at a 100 % increase on the price he bought it . what percent of profit did he make on the original price ?,60 %,13 %
+50911_A,14995,"if a / b = 1 / 7 , b / c = 3 , c / d = 2 / 3 , d / e = 2 and e / f = 1 / 2 , then what is the value of abc / def ?",16 / 21,72 / 21
+55325_A,16112,"if 7 men and 2 boys working together , can do 6 times as much work per hour as a man and a boy together . find the ratio of the work done by a man and that of a boy for a given time ?",4 : 1,2 : 5
+66490_E,18939,john has rs 360 for his expenses . if he exceeds his days by 4 days he must cut down daily expenses by rs 3 . the number of days of john ' s tour program is,20,27
+51530_A,15152,"sides of a rectangular park are in the ratio 3 : 2 and its area is 7350 sq m , the cost of fencing it at 50 ps per meter is ?",175,287
+53338_E,15608,how many of the positive divisors of 480 are also multiples of 4 not including 480 ?,15,24
+32868_B,10432,"the average of 5 numbers is 6.8 . if one of the numbers is multiplied by a factor of 3 , the average of the numbers increases to 12.8 . what number is multiplied by 3 ?",15.0,13.0
+57961_A,16779,marts income is 60 percent more than tims income and tims income is 40 percent less than juans income . what percentage of juans income is marts income,96 %,124 %
+112785_B,30651,"find the compound interest accrued on an amount of rs . 14,800 at 13.5 % p . a at the end of two years . ( round off your answer to nearest integer )",4266,2782
+106590_B,29084,"a is a working partner and b is a sleeping partner in the business . a puts in rs . 2000 and b rs . 3000 , a receives 10 % of the profit for managing the business the rest being divided in proportion of their capitals . out of a total profit of rs . 9600 , money received by a is ?",4416,2707
+99372_E,27260,"in an election between two candidates , one got 55 % of the total valid votes , 20 % of the votes were invalid . if the total number of votes was 7500 , the number of valid votes that the other candidate got , was :",2700,2300
+50088_A,14787,what is the remainder when 1044 * 1047 * 1050 * 1053 is divided by 33 ?,30,3
+101485_E,27794,"a gambler bought $ 3,000 worth of chips at a casino in denominations of $ 20 and $ 100 . that evening , the gambler lost 14 chips , and then cashed in the remainder . if the number of $ 20 chips lost was 2 more or 2 less than the number of $ 100 chips lost , what is the largest amount of money that the gambler could have received back ?",$ 2,$ 1
+28420_E,9304,"if x and y are the two digits of the number 653 xy . such that this number is divisible by 80 , then x + y is equal to",2,0
+32064_B,10228,"if w / x = 1 / 6 and w / y = 1 / 5 , then ( x + y ) / y =",11 / 5,6 / 5
+87670_C,24300,"42 persons can repair a road in 12 days , working 5 hours a day . in how many days will 30 persons , working 6 hours a day , complete the work ?",14,13
+118380_E,32062,"mike needs 30 % to pass . if he scored 212 marks and falls short by 28 marks , what was the maximum marks he could have got ?",800,932
+40777_D,12431,the average expenditure of a labourer for 6 months was 90 and he fell into debt . in the next 4 months by reducing his monthly expenses to 60 he not only cleared off his debt but also saved 30 . his monthly income i,81,78
+47645_D,14168,a invested $ 400 in a business after 6 months b invested $ 200 in the business . end of the year if they got $ 100 as profit . find a shares ?,$ 80,$ 120
+40589_A,12384,"for each month of a given year except december , a worker earned the same monthly salary and donated one - tenth of that salary to charity . in december , the worker earned n times his usual monthly salary and donated one - fourth of his earnings to charity . if the worker ' s charitable contributions totaled one - eighth of his earnings for the entire year , what is the value of n ?",22 / 10,8 / 5
+8215_A,4191,what is the distance covered by a car if it travels with a speed of 160 kmh for 5 hours ?,800 km,350 km
+45260_A,13565,"the volume of a sphere with radius r is ( 4 / 3 ) * pi * r ^ 3 and the surface area is 4 * pi * r ^ 3 . if a sperical balloon has a volume of 12348 pi cubic centimeters , what is hte surface area of the balloon in square centimeters ?",e . 5,a . 40
+18235_C,6727,"two trains of lengths 156.62 and 100 meters are running on parallel lines with respective speeds of 30 km / hr and 36 km / hr . the time of crossing each other , if they run in the opposite direction is",14 sec,11 sec
+70742_A,20020,a man swims downstream 60 km and upstream 40 km taking 4 hours each time ; what is the speed of the current ?,2.5 kmph,3 kmph
+15663_A,6078,2.09 can be expressed in terms of percentage as,209 %,2.09 %
+50050_C,14777,solution for 2.75 + . 003 + . 158,2.911,2.938
+118284_E,32038,what is the value of 4 ^ 5 + 4 ^ 7 ?,17 ( 4 ^ 5 ),7 ( 4 ^ 5 )
+88033_E,24391,"a factory produces 4560 toys per week . if the workers at this factory work 4 days a week and if these workers make the same number of toys everyday , how many toys are produced each day ?",1140 toys,5375 toys
+42482_D,12861,"pipe a can fill a tank in 4 hours . due to a leak at the bottom , it takes 6 hours for the pipe a to fill the tank . in what time can the leak alone empty the full tank ?",12,36
+46624_E,13911,perimeter of an equilateral and isosceles is 45 and 40 respectively . at least one of the sides of isosceles is equal to the equilateral . what ' s the base of isosceles triangle ?,10,11
+15871_B,6131,a man can row a distance of 5 km in 60 min with the help of the tide . the direction of the tide reverses with the same speed . now he travels a further 40 km in 10 hours . how much time he would have saved if the direction of tide has not changed ?,2,8
+84907_D,23600,"if the sides of a square are multiplied by sqrt ( 20 ) , the area of the original square is how many times as large as the area of the resultant square ?",5 %,50 %
+90620_A,25046,which fraction should be added to : 1 / ( 2 ã — 3 ) + 1 / ( 3 ã — 4 ) + 1 / ( 4 ã — 5 ) + . . . . . . . + 1 / ( 23 ã — 24 ) so that the result is equal to 1 ?,13 / 24,7 / 24
+66586_D,18964,"due to a reduction of 25 / 4 % in the price of sugar , a man is able to buy 1 kg more for rs . 120 . find the original rate of sugar .",8,9
+117595_B,31865,"the average of 5 numbers is calculated as 15 . it is discovered later on that while calculating the average , one number namely 36 was wrongly read as 26 . the correct average is ?",7.5,26.2
+4224_B,3182,"find large number from below question the difference of two no . is 1365 . on dividing the larger no . by the smaller , we get 6 as quotient and the 15 as remainder ?",1635,1456
+48622_A,14416,the radius of a wheel is 24.2 cm . what is the distance covered by the wheel in making 500 resolutions ?,760.57 m,708 m
+19871_A,7140,a man can row downstream at the rate of 45 kmph and upstream at 23 kmph . find the man ’ s rate in still water and rate of current ?,11.0,8.5
+42793_E,12939,what is the least common multiple of 152 and 190 ?,760,1520
+44680_D,13418,"at a certain committee meeting only associate professors and assistant professors are present . each associate professor has brought 2 pencils and 1 chart to the meeting , while each assistant professor has brought 1 pencil and 2 charts . if a total of 10 pencils and 8 charts have been brought to the meeting , how many people are present ?",6,9
+112760_A,30645,"30 ladies and 60 gentlemen are present at a party . there are 23 couples among them . if a lady and a gentleman is selected at random , what is the probability that they will be a couple ?",23 / 1800,1 / 200
+93709_C,25826,"a man goes downstream at 14 kmph , and upstream 8 kmph . the speed of the stream is",3 kmph,16 kmph
+87514_B,24261,the surface of a cube is 150 sq cm . find its volume ?,125 cc,9 cc
+105570_C,28826,"if x and y are the two digits of the number 653 xy such that this number is divisible by 80 , then x + y = ?",6,8
+5189_C,3426,"if a person walks at 16 km / hr instead of 10 km / hr , he would have walked 20 km more . the actual distance traveled by him is :",33.3 km,60 km
+27327_B,9029,we bought a total of 80 books at the store . math books cost $ 4 and history books cost $ 5 . the total price was $ 390 . how many math books did we buy ?,10,20
+49497_C,14636,"boy sells a book for rs . 720 he gets a loss of 10 % , to gain 10 % , what should be the sp ?",880,550
+74976_D,21090,"what is the least number which when divided by 5 , 6 , 7 and 8 leaves a remainder 3 , but when divided by 9 leaves no remainder ?",1683,3363
+70541_B,19969,"when tossed , a certain coin has equal probability of landing on either side . if the coin is tossed 5 times , what is the probability that it will land on either side all 5 times ?",1 / 16,1 / 10
+67449_E,19182,"in goshawk - eurasian nature reserve 30 percent of the birds are hawks , and 40 percent of the non - hawks are paddyfield - warblers . if there are 25 percent as many kingfishers as paddyfield - warblers in the reserve , then what percent of the birds r in the nature reserve are not hawks , paddyfield - warblers , or kingfishers ?",35 %,80 %
+96551_D,26545,the sum of the present age of henry and jill is 43 . what is their present ages if 5 years ago henry was twice the age of jill ?,and 27,and 29
+90200_D,24939,"a 6 - meter long wire is cut into two pieces . if the longer piece is then used to form a perimeter of a square , what is the probability that the area of the square will be more than 1 if the original wire was cut at an arbitrary point ?",2 / 3,5 / 6
+49614_A,14666,a student committee on academic integrity has 72 ways to select a president and vice president from a group of candidates . the same person can not be both president and vice president . how many candidates are there ?,9,7
+35090_B,10992,"the sum of the present ages of two persons a and b is 60 . if the age of a is twice that of b , find the sum of their ages 6 years hence ?",72,77
+22325_B,7759,what is the units digit of 31 ! + 50 ! + 2 ! + 3 ! ?,8,2
+51661_E,15184,"for every integer n ≥ 3 , the function g ( n ) is defined as the product of all the odd integers from 1 to n , inclusive . what is the value of g ( 99 ) – g ( 97 ) ?",98,97
+24895_C,8411,what is the ratio of 4 / 7 to the product 2 * ( 7 / 3 ) ?,6 : 49,3 : 21
+26736_B,8878,"alice is now 10 years older than bob . if in 6 years alice will be twice as old as bob , how old will alice be in 5 years ?",19,21
+52247_D,15332,"when positive integer x is divided by positive integer y , the remainder is 1.44 . if x / y = 96.12 , what is the value of y ?",12,25
+77408_C,21705,find the sum lend at c . i . at 5 p . c per annum will amount to rs . 650 in 2 years ?,589,400
+57998_C,16788,find the area of a parallelogram with base 22 cm and height 21 cm ?,462 cm 2,490 cm 2
+32818_B,10419,"if c is 25 % of a and 10 % of b , what percent of a is b ?",250 %,15 %
+20077_B,7192,the remainder when q = 1 + 3 + 3 ^ 2 + 3 ^ 3 + . . . . . . . . . . + 3 ^ 200 is divided 13 .,0,7
+105820_D,28889,"sam ’ s car was fined when he gave joe and peter a ride , so they decided to help sam pay the fine . joe paid $ 10 more than 1 / 4 of the fine and peter paid $ 10 less than 1 / 3 of the fine , leaving pay $ 25 less than 1 / 2 the fine to complete the payment . what fraction of the fine did sam pay ?",$ 125,$ 135
+22745_B,7865,"each of the integers from 1 to 14 is written on the a seperate index card and placed in a box . if the cards are drawn from the box at random without replecement , how many cards must be drawn to ensure that the product of all the integers drawn is even ?",8,12
+81360_E,22702,"jane makes toy bears . when she works with an assistant , she makes 71 percent more bears per week and works 10 percent fewer hours each week . having an assistant increases jane ’ s output of toy bears per hour by what percent ?",90 %,200 %
+49097_E,14535,a bag contains 10 balls numbered from 0 to 9 . the balls are such that the person picking a ball out of the bag is equally likely to pick anyone of them . a person picked a ball and replaced it in the bag after noting its number . he repeated this process 2 more times . what is the probability that the ball picked first is numbered higher than the ball picked second and the ball picked second is numbered higher than the ball picked third ?,3 / 25,1 / 9
+47436_D,14116,"if 85 percent of the test takers taking an old paper and pencil gmat exam answered the first question on a given math section correctly , and 65 percent of the test takers answered the second question correctly , and 5 percent of the test takers answered neither question correctly , what percent answered both correctly ?",55 %,75 %
+89803_B,24839,3 men and 2 women are lined up in a row . what is the number of cases where they stand with each other in turn ? ( the number of cases in which men ( or women ) do not stand next to each other ),12,15
+71455_D,20200,"a marketing survey of anytown found that the ratio of trucks to sedans to motorcycles was 3 : 7 : 2 , respectively . given that there are 9,800 sedans in anytown , how many motorcycles are there ?",2800,4200
+39382_A,12079,"a man has rs . 400 in the denominations of one - rupee notes , 5 - rupee notes and 10 rupee notes . the number of notes of each denomination is equal . what is the total number of notes that he has ?",75,45
+89766_D,24829,steve traveled the first 2 hours of his journey at 40 mph and the last 3 hours of his journey at 60 mph . what is his average speed of travel for the entire journey ?,52 mph,64 mph
+23978_C,8178,a and b complete a work in 20 days . a alone can do it in 40 days . if both together can do the work in how many days ?,0.075 days,0.0675 days
+100228_C,27477,what is the area of a square field whose diagonal of length 10 m ?,50,60
+48680_E,14430,"excluding stoppages , the speed of a bus is 54 kmph and including stoppages , it is 41 kmph . for how many minutes does the bus stop per hour ?",14.4 min,11 min
+63098_A,18082,the ratio between the radii of two spheres is 1 : 3 . find the ratio between their volumes ?,1 : 27,1 : 28
+8235_B,4196,"in a certain supermarket , a triangular display of cans is arranged in 9 rows , numbered 1 through 9 from top to bottom . each successively numbered row contains 3 more cans than the row immediately above it . if there are fewer than 120 cans in the entire display , how many cans are in the six row ?",16,14
+99023_D,27171,"if p is the product of the integers from 1 to 35 , inclusive , what is the greatest integer k for which 3 ^ k is a factor of p ?",15,17
+37013_B,11480,"in a 500 m race , the ratio of the speeds of two contestants a and b is 3 : 4 . a has a start of 140 m . then , a wins by :",20 m,20 m
+5931_C,3613,find the value of ( √ 1.21 ) / ( √ 0.81 ) + ( √ 0.81 ) / ( √ 0.49 ) is,2.5,155 / 63
+109947_C,29934,"if { x } is the product of all even integers from 1 to x inclusive , what is the greatest prime factor of { 18 } + { 16 } ?",19,11
+87998_A,24383,"there are 2 more women than there are men on a local co - ed softball team . if there are a total of 16 players on the team , what is the ratio of men to women ?",7 / 9,10 / 16
+20154_D,7211,"a vendor sells 60 percent of the apples he had and throws away 40 percent of the remainder . the next day , the vendor sells 50 percent of the remaining apples and throws away the rest . in total , what percent of his apples does the vendor throw away ?",28,30
+9418_A,4495,"a train 350 m long , running with a speed of 63 km / hr will pass a tree in ?",20 sec,22 sec
+24470_D,8303,tom purchased 8 kg of apples at the rate of 70 per kg and 9 kg of mangoes at the rate of 45 per kg . how much amount did he pay to the shopkeeper ?,c ) 965,d ) 1060
+14522_B,5790,a batsman in his 12 th innings makes a score of 65 and thereby increases his average by 3 runs . what is his average after the 12 th innings if he had never been ‘ not out ’ ?,32,43
+96299_D,26481,what is the units digit of ( 493 ) ( 915 ) ( 381 ) ( 756 ),4,5
+36764_E,11416,a and b complete a work in 16 days . a alone can do it in 40 days . if both together can do the work in how many days ?,0.0875 days,0.0775 days
+6316_B,3710,a batsman in his 17 th innings makes a score of 85 and their by increasing his average by 3 . what is his average after the 17 th innings ?,37,27
+46690_D,13928,"two passenger trains start at the same hour in the day from two different stations and move towards each other at the rate of 16 kmph and 21 kmph respectively . when they meet , it is found that one train has traveled 60 km more than the other one . the distance between the two stations is ?",444,278
+25490_E,8561,a person incurs 10 % loss by selling a watch for $ 100 . at what price should the watch be sold to earn 10 % profit ?,$ 122,$ 170
+115962_D,31452,a powder tin has a square base with side 8 cm and height 14 cm . another tin has a circular base with diameter 8 cm and height 14 cm . the difference in their capacities is :,192 cm ³,236 cm ³
+18587_B,6816,"mr yadav spends 60 % of his monthly salary on consumable items and 50 % of the remaining on clothes and transport . he saves the remaining amount . if his savings at the end of the year were 19008 , how much amount per month would he have spent on clothes and transport ?",1584,8076
+29097_E,9475,"if a motorist had driven 1 hour longer on a certain day and at an average rate of 5 miles per hour faster , he would have covered 70 more miles than he actually did . how many more miles would he have covered than he actually did if he had driven 2 hours longer and at an average rate of 10 miles per hour faster on that day ?",150 miles,160
+111656_D,30366,"if sharon ' s weekly salary increased by 16 percent , she would earn $ 406 per week . if instead , her weekly salary were to increase by 10 percent , how much would she earn per week ?",$ 385,$ 392
+50879_A,14987,"a and b start a business , with a investing the total capital of rs . 25000 , on the condition that b pays a interest @ 10 % per annum on his half of the capital . a is a working partner and receives rs . 250 per month from the total profit and any profit remaining is equally shared by both of them . at the end of the year , it was found that the income of a is twice that of b . find the total profit for the year ?",e ) 11500,a ) 22500
+110177_C,29992,how many positive integers less than 247 are multiple of 4 but not multiples of 6 ?,41,42
+18187_C,6715,"two trains 141 meters and 165 meters in length respectively are running in opposite directions , one at the rate of 80 km and the other at the rate of 65 kmph . in what time will they be completely clear of each other from the moment they meet ?",7.59,7.12
+113969_E,30949,if the cost price is 25 % of selling price . then what is the profit percent,300,129
+45382_C,13595,| 13 - 3 | - | 4 - 10 | = ?,4,1
+92824_E,25603,the mean of 50 observations was 36 . it was found later that an observation 29 was wrongly taken as 23 . the corrected new mean is :,36.12,36.18
+16387_C,6261,a shopkeeper sells 20 % of his stock at 10 % profit ans sells the remaining at a loss of 5 % . he incurred an overall loss of rs . 300 . find the total worth of the stock ?,15000,20289
+110710_B,30126,"the average age of applicants for a new job is 30 , with a standard deviation of 7 . the hiring manager is only willing to accept applications whose age is within one standard deviation of the average age . what is the maximum number of different ages of the applicants ?",15,14
+48894_D,14484,"there are 8 stores in town that had a total of 21 visitors on a particular day . however , only 12 people went shopping that day ; some people visited more than one store . if 8 people visited exactly two stores each , and everyone visited at least one store , what is the largest number of stores anyone could have visited ?",2,5
+108195_E,29490,how much greater is the combined area in square inches of the front and back of a rectangular sheet of paper measuring 11 inches by 11 inches than that of a rectangular sheet of paper measuring 5.5 inches by 11 inches ?,100 %,200 %
+15339_B,5996,a number is said to be prime saturated if the product of all the different positive prime factors of d is less than the square root of d . what is the greatest two digit prime saturated integer ?,96,98
+89392_A,24735,"with both valves open , the pool will be filled with water in 48 minutes . the first valve alone would fill the pool in 2 hours . if the second valve emits 50 cubic meters of water more than the first every minute , then what is the capacity q of the pool ?",12000 cubic meters,9000 cubic meters
+109110_A,29723,"how many words , with or without meaning , can be formed using all letters of the word equation using each letter exactly once ?",40,38
+44322_D,13327,a candidate who gets 40 % of the marks fails by 40 marks . but another candidate who gets 60 % marks gets 20 marks more than necessary for passing . find the number of marks for passing ?,160 marks,371 marks
+104842_E,28642,"the dimensions of a field are 10 m by 10 m . a pit 10 m long , 5 m wide and 4 m deep is dug in one corner of the field and the earth removed has been evenly spread over the remaining area of the field . what will be the rise in the height of field as a result of this operation ?",4 m,1.5 m
+78245_D,21917,what is the value of 3 x ^ 2 − 1.8 x + 0.3 for x = 0.3 ?,0.03,1.08
+12748_C,5339,"what will be the cost of building a fence around a square plot with area equal to 36 sq ft , if the price per foot of building the fence is rs . 58 ?",1392,2999
+80367_A,22453,"nicky and cristina are running a 300 meter race . since cristina is faster than nicky , she gives him a 12 second head start . if cristina runs at a pace of 5 meters per second and nicky runs at a pace of only 3 meters per second , how many seconds will nicky have run before cristina catches up to him ?",30,40
+27015_D,8949,"an article is bought for rs . 575 and sold for rs . 675 , find the gain percent ?",17.39 %,38 1 / 3 %
+90604_A,25042,"the arithmetic mean and standard deviation of a certain normal distribution are 16.5 and 1.5 , respectively . what value is exactly 2 standard deviations less than the mean ?",13.5,10.5
+118548_D,32105,a shopkeeper has 280 kg of apples . he sells 40 % of these at 20 % profit and remaining 50 % at 30 % profit . find his % profit on total .,23 %,28 %
+112152_E,30491,"if 625 ^ ( - x ) + 25 ^ ( - 2 x ) + 5 ^ ( - 4 x ) = 11 , what is the value of x ?",1 / 4,4
+8708_E,4315,90 is increased by 50 % . find the final number .,135,160
+42047_A,12752,"a man rows his boat 90 km downstream and 72 km upstream , taking 3 hours each time . find the speed of the stream ?",3,6
+44676_C,13417,"the sum of the present ages of two persons a and b is 60 . if the age of a is twice that of b , find the sum of their ages 10 years hence ?",80,62
+23899_B,8158,"the price ratio of oranges to lemons is 2 : 3 . the price ratio of grapefruits to lemons is 3 : 5 . what is the ratio , by price , of grapefruit to oranges ?",18 : 20,10 : 9
+51065_D,15033,the jogging track in a sports complex is 1000 meters in circumference . deepak and his wife start from the same point and walk in opposite directions at 20 km / hr and 16 km / hr respectively . they will meet for the first time in ?,36 min,25 min
+93409_E,25750,"if the perimeter of δ acd is 9 + 3 √ 3 , what is the perimeter of equilateral triangle δ abc ?",18,27
+87007_A,24134,"a teacher grades students ’ tests by subtracting twice the number of incorrect responses from the number of correct responses . if student a answers each of the 100 questions on her test and receives a score of 64 , how many questions did student a answer correctly ?",88,55
+19515_E,7050,what is the remainder when 1201 × 1202 × 1203 × 1207 is divided by 6 ?,0,4
+44576_B,13392,"a man invests rs . 6,000 at the rate of 5 % per annum . how much more should he invest at the rate of 8 % , so that he can earn a total of 6 % per annum ?",rs . 3000,rs . 1300
+87965_D,24374,a can do a work in 4 days . b can do the same work in 6 days . both a & b together will finish the work and they got $ 1000 from that work . find their shares ?,600,800
+50493_C,14889,evaluate : 35 - 12 * 3 * 2 = ?,27,32
+59614_B,17197,how many liters of water must be evaporated from 50 liters of a 1 - percent sugar solution to get a 10 - percent solution ?,45,40
+52923_D,15503,two trains from opposite directions are to cross each other . the length of two trains are 100 meter and 200 meter respectively . the speed of first train is 100 km / hour and second train 200 km / hour . in how much time will they cross each other ?,3.6 second,5.5 second
+63487_E,18180,a can do a piece of work in 4 days . b can do it in 15 days . with the assistance of c they completed the work in 24 days . find in how many days can c alone do it ?,0.391 days,0.301 days
+30961_B,9949,find the area of a parallelogram with base 32 cm and height 18 cm ?,576 cm 2,384 cm 2
+53887_E,15747,"equal amount of water were poured into two empty jars of different capacities , which made one jar 1 / 7 full and other jar 1 / 6 full . if the water in the jar with lesser capacity is then poured into the jar with greater capacity , what fraction of the larger jar will be filled with water ?",2 / 7,2 / 3
+103023_D,28181,if a man lost 8 % by selling oranges at the rate of 18 a rupee at how many a rupee must he sell them to gain 45 % ?,11.42,9.56
+46242_E,13813,"a circular ground whose diameter is 34 metres , has a 2 metre - broad garden around it . what is the area of the garden in square metres ?",226.3,226
+106033_B,28943,"if a 2 - b 2 = 11 and a * b = 5 , find a 4 + b 4 .",171,181
+73897_E,20817,"a train 240 m long , running with a speed of 108 km / hr will pass a tree in ?",8 sec,12 sec
+15867_B,6130,"the number of stamps that p and q had were in the ratio of 9 : 2 respectively . after p gave q 33 stamps , the ratio of the number of p ' s stamps to the number of q ' s stamps was 6 : 5 . as a result of the gift , p had how many more stamps than q ?",11,33
+40850_A,12450,"david works at a resort from the beginning of march to the end of september . during the month of august this past year , he made 4 times the average ( arithmetic mean ) of his monthly totals in tips for the other months . his total tips for august were what fraction of his total tips for all of the months he worked ?",2 / 5,3 / 5
+65433_C,18670,compound interest of rs . 5000 at 10 % per annum for 1 1 / 2 years will be ( interest compounded half yearly ) .,rs . 788,rs . 495
+97459_C,26775,"a certain list consists of 21 different numbers . if n is in the list and n is 4 times the average ( arithmetic mean ) of the other 20 numbers in the list , then n is what fraction u of the sum of the 21 numbers in the list ?",1 / 6,1 / 5
+113629_C,30864,"an agent , gets a commission of 2.5 % on the sales of cloth . if on a certain day , he gets rs . 15 as commission , the cloth sold through him on that day is worth",600,887
+70023_A,19837,a jogger running at 9 kmph along side a railway track is 250 metres ahead of the engine of a 120 metre long train running at 45 kmph in the same direction . in how much time will the train pass the jogger ?,37 sec,3.6 sec
+81928_D,22846,the cost of 3 pens and 5 pencils is rs . 100 . also the cost of one pen and one pencil is in the ratio of 5 : 1 respectively . what is the cost of one dozen pens ?,rs . 300,rs . 150
+93773_E,25842,"8 machines , each working at the same constant rate , together can complete a certain job in 24 days . how many additional machines , each working at the same constant rate , will be needed to complete the job in 16 days ?",4,8
+69846_B,19792,a batsman makes a score of 87 runs in the 17 th inning and thus increases his average by 4 . find his average after 17 th inning .,23,39
+8717_A,4318,a taxi company charges $ 1.25 for the first quarter of a mile and fifteen cents for each additional quarter of a mile . what is the maximum distance someone could travel with $ 4.90 ?,6 1 / 3 miles,4 miles
+80036_E,22369,the radius of a semi circle is 6.7 cm then its perimeter is ?,34.45,32.15
+53742_B,15711,"carina has 70 ounces of coffee divided into 5 - and 10 - ounce packages . if she has 2 more 5 - ounce packages than 10 - ounce packages , how many 10 - ounce packages does she have ?",4,3
+83617_B,23275,"when positive integer n is divided by positive integer j , the remainder is 27 . if n / j = 204.09 , what is value of j ?",300,320
+107876_A,29410,"cost is expressed by the formula tb ^ 4 . if b is doubled , the new cost is what percent of the original cost ?",1600,200
+84771_B,23566,the average of first five prime numbers greater than 37 is ?,48.6,32.98
+116771_C,31657,a man walking at a rate of 10 km / hr crosses a bridge in 18 minutes . the length of the bridge is ?,3000,1667
+58080_C,16809,"if 3 ^ x * 4 ^ y = 19,683 and x – y = 9 , then x = ?",9,10
+80441_D,22471,"ifaequals the sum of the even integers from 2 to 60 , inclusive , andbequals the sum of the odd integers from 1 to 59 , inclusive , what is the value of a - b ?",30,20
+24962_B,8428,the contents of a certain box consist of 72 apples and 30 oranges . how many oranges must be added to the box so that exactly 30 % of the pieces of fruit in the box will be apples ?,138,78
+6501_C,3757,"a store owner estimates that the average price of type a products will increase by 20 % next year and that the price of type b products will increase by 11 % next year . this year , the total amount paid for type a products was $ 3500 and the total price paid for type b products was $ 8600 . according to the store owner ' s estimate , and assuming the number of products purchased next year remains the same as that of this year , how much will be spent for both products next year ?",$ 13,$ 16
+117465_D,31832,find the fraction which has the same ratio to 1 / 13 that 5 / 34 has to 7 / 48 .,120 / 1547,160 / 1547
+105001_D,28683,"if a certain toy store ' s revenue in november was 3 / 5 of its revenue in december and its revenue in january was 1 / 3 of its revenue in november , then the store ' s revenue in december was how many times the average ( arithmetic mean ) of its revenues in november and january ?",5 / 2,15 / 4
+55163_D,16070,"if 10 gallons of grape juice are added to 40 gallons of a mixture , which contains 30 percent grape juice then what percent of the resulting mixture is grape juice ?",48 %,34 %
+4480_C,3247,"a train which has 440 m long , is running 45 kmph . in what time will it cross a person moving at 9 kmph in same direction ?",44 sec,36 sec
+83751_E,23308,"a prize of $ 500 is to be distributed among 20 winners , each of whom must be awarded at least $ 20 . if 2 / 5 of the prize will be distributed to 3 / 5 of the winners , what is the greatest possible individual award ?",$ 160,$ 360
+102984_D,28171,how many digits 2 ^ 1000 has ?,310,99
+9050_A,4402,"the content of several smaller cylinders ( 3 meter diameter and 6 meter height ) were to be emptied into a larger cylinder ( 20 meter diameter and 10 meter height ) , how many smaller cylinders will fill up the larger cylinder ?",74,20
+102942_C,28161,the percentage profit earned by selling an article for rs . 1920 is equal to the percentage loss incurred by selling the same article for rs . 1280 . at what price should the article be sold to make 35 % profit ?,2080,2299
+42225_E,12796,"if a light flashes every 10 seconds , how many times will it flash in 2 / 3 of an hour ?",241,542
+21134_A,7459,"while working alone at their respective constant rates , server g uploads 480 files in 4 hours and server y uploads 480 files in 8 hours . if all files uploaded by these servers are the same size , how long would it take the two servers , working at the same time and at their respective constant rates , to process a total of 480 files ?",2 hr 40 min,2 hr
+45086_D,13520,a car takes 6 hours to cover a distance of 450 km . how much should the speed in kmph be maintained to cover the same direction in 3 / 2 th of the previous time ?,50,70
+87494_C,24256,"if a is a positive integer , and if the units digit of a ^ 2 is 1 and the units digit of ( a + 1 ) ^ 2 is 0 , what is the units digit of ( a + 2 ) ^ 2 ?",1 .,5 .
+58191_B,16837,how many ounces of a 60 % salt solution must be added to 50 ounces of a 20 percent salt solution so that the resulting mixture is 40 % salt ?,50,30
+63924_E,18290,what is the sum of the first 30 odd natural numbers,900,700
+10231_D,4700,the h . c . f . of two numbers is 60 and the other two factors of their l . c . m . are 11 and 15 . the larger of the two numbers is :,900,700
+23348_C,8018,"suresh started a business , investing rs . 18000 . after 3 months and 4 months respectively , rohan and sudhir joined him with capitals of 12000 and 9000 . at the end of the year the total profit was rs . 3795 . what is the difference between rohan ’ s and sudhir ’ s share in the profit ?",s . 345,s . 352
+50903_A,14993,a and b start walking towards each other at 7 am at speed of 12 kmph and 13 kmph . they were initially 25 km apart . at what time do they meet ?,8 am,8 pm
+68852_B,19541,the present worth of rs . 1404 due in two equal half - yearly installments at 8 % per annum simple interest is :,rs . 1350,rs . 1300
+73023_E,20597,( 565945 x 121 ) = ?,68479345,68463814
+24542_E,8321,"to be considered for “ movie of the year , ” a film must appear in at least 1 / 4 of the top - 10 - movies lists submitted by the cinematic academy ’ s 795 members . what is the smallest number of top - 10 lists a film can appear on and still be considered for “ movie of the year ” ?",199,213
+57167_B,16578,"a certain electric - company plan offers customers reduced rates for electricity used between 8 p . m . and 8 a . m . weekdays and 24 hours a day saturdays and sundays . under this plan , the reduced rates x apply to what fraction of a week ?",9 / 14,5 / 8
+77812_E,21807,"the smallest number which when diminished by 15 , is divisible 10 , 15 , 25 , 30 and 35 is :",1055,1048
+85492_D,23749,"a fruit seller had some apples . he sells 35 % and still has 6500 apples . originally , he had ?",none,700 apples
+75742_C,21284,"a grocer has a sale of rs . 5420 , rs . 5660 , rs . 6200 , rs . 6350 and rs . 6500 for 5 consecutive months . find the sale he should have in the sixth month , so that he gets an average sale of rs . 6000 ?",rs . 5870,rs . 6020
+14432_D,5767,a train running at the speed of 50 km / hr crosses a pole in 18 seconds . find the length of the train .,250,288
+67775_A,19266,0.0004 ? = 0.01,0.04,4
+115903_D,31437,"pipe a fills a swimming pool in 4 hours . pipe b empties the pool in 6 hours . if pipe a was opened at 7 : 00 am and pipe b at 8 : 00 am , at what time will the pool be full ?",17 : 00,20 : 00
+110561_A,30089,the number of sailors on a ship is 82 % more than the number of officers . the ratio of sailors to officers would be,91 : 50,33 : 25
+67281_E,19139,a trader bought a car at 5 % discount on its original price . he sold it at a 60 % increase on the price he bought it . what percent of profit did he make on the original price ?,52 %,22 %
+4816_D,3332,what will be the fraction of 30 %,3 / 10,1 / 11
+38420_A,11836,"in x game of billiards , x can give y 20 points in 60 and he can give z 50 points in 60 . how many points can y give z in x game of 100 ?",75,30
+6279_A,3701,"after an ice began to melt out from the freezer , in the first hour lost 3 / 4 , in the second hour lost 3 / 4 of its remaining . if after two hours , the volume is 0.4 cubic inches , what is the original volume of the cubic ice , in cubic inches ?",6.4,2.5
+87966_E,24374,a can do a work in 4 days . b can do the same work in 6 days . both a & b together will finish the work and they got $ 1000 from that work . find their shares ?,600,550
+22365_B,7769,"a company has 15 managers and 75 associates . the 15 managers have an average salary of $ 180,000 . the 75 associates have an average salary of $ 30,000 . what is the average salary for the company ?",$ 55,$ 45
+115742_C,31397,you have 59 cubic blocks . what is the minimum number that needs to be taken away in order to construct a solid cube with none left over ?,32,11
+15238_C,5970,"on multiplying a number b by 153 , the result obtained was 102325 . however , it is found that both the 2 ' s are wrong . find the correct result .",109395,108385
+94817_A,26108,"the average waight of a , b , c is 45 kg . the avg wgt of a & b be 40 kg & that of b , c be 43 kg . find the wgt of b .",31 kg,34 kg
+71325_E,20167,"on june 1 a bicycle dealer noted that the number of bicycles in stock had decreased by 4 for each of the past 5 months . if the stock continues to decrease at the same rate for the rest of the year , how many fewer bicycles will be in stock on september 1 than were in stock on january 1 ?",32,36
+52121_D,15300,two stations a and b are 110 km apart on a straight line . one train starts from a at 6 a . m . and travels towards b at 20 kmph . another train starts from b at 8 a . m . and travels towards a at a speed of 25 kmph . at what time will they meet ?,9,12
+99365_A,27259,"the population of a bacteria colony doubles every day . if it was started 6 days ago with 2 bacteria and each bacteria lives for 12 days , how large is the colony today ?",128,512
+20883_B,7396,a 160 meter long train crosses a man standing on the platform in 12 sec . what is the speed of the train ?,48 kmph,54 kmph
+12502_E,5277,a certain quantity of 40 % solution is replaced with 25 % solution such that the new concentration is 35 % . what is the fraction of the solution that was replaced ?,1 / 3,3 / 4
+99736_A,27353,"a man sells an article at a profit of 25 % . if he had bought it at 20 % less and sold it for rs . 16.80 less , he would have gained 30 % . find the cost of the article .",80,30
+14118_B,5688,"the average of 9 observations was 7 , that of the 1 st of 5 being 10 and that of the last 5 being 8 . what was the 5 th observation ?",27,12
+101998_E,27923,"given f ( x ) = 3 x – 5 , for what value of x does 2 * [ f ( x ) ] + 5 = f ( 3 x – 6 )",6,13
+112721_C,30635,"an investment yields an interest payment of $ 225 each month . if the simple annual interest rate is 9 % , what is the amount of the investment ?",$ 30,$ 31
+45733_D,13684,"a company has two types of machines , type r and type s . operating at a constant rate a machine of r does a certain job in 36 hours and a machine of type s does the job in 9 hours . if the company used the same number of each type of machine to do job in 12 hours , how many machine r were used ?",18 / 5,9
+39831_B,12192,"let q represent a set of 7 distinct prime numbers . if the sum of the numbers in q is even and x is a member of q , then what is the least possible value that x can be ?",3,2
+114450_A,31071,"a tank can be filled by pipe a in 5 hours and by pipe b in 8 hours , each pump working on its own . when the tank is full and a drainage hole is open , the water is drained in 20 hours . if initially the tank was empty and someone started the two pumps together but left the drainage hole open , how long does it take for the tank to be filled ?",3.6 hours,2.6 hours
+40902_D,12463,"find compound interest on rs . 7500 at 4 % per annum for 2 years , compounded annually .",rs . 612,rs . 622
+59879_B,17264,"an assembly line produces 30 cogs per hour until an initial order of 60 cogs is completed . the speed of the assembly line is then immediately increased so that it can produce 60 cogs per hour until another 60 cogs are produced . what is the overall average output , in cogs per hour , for the assembly line during this whole time ?",40,44
+77354_A,21692,"on a certain road , 20 % of the motorists exceed the posted speed limit and receive speeding tickets , but 20 % of the motorists who exceed the posted speed limit do not receive speeding tickets . what percent of the motorists on that road exceed the posted speed limit ?",25 %,10.5 %
+10337_C,4727,"the average weight of a group of boys is 20 kg . after a boy of weight 25 kg joins the group , the average weight of the group goes up by 1 kg . find the number of boys in the group originally ?",4.0,6.0
+79114_B,22137,how much is 80 % of 40 is greater than 4 / 5 of 25 ?,12,77
+5007_D,3380,"in town p , 60 percent of the population are employed , and 42 percent of the population are employed males . what percent of the employed people in town p are females ?",30 %,35 %
+5424_C,3485,"in the first 10 overs of a cricket game , the run rate was only 3.2 . what should be the run rate in the remaining 40 0 vers to reach the target of 282 runs ?",6.25,6.75
+108683_B,29614,"in a group of ducks and cows , the total number of legs are 28 more than twice the number of heads . find the total number of cows .",14,12
+28900_C,9426,"there are 2 sections a and b in a class , consisting of 30 and 20 students respectively . if the average weight of section a is 40 kg and that of section b is 35 kg , find the average of the whole class ?",38 kg,42 kg
+9100_E,4414,a train 360 m long is running at a speed of 45 km / hr . in what time will it pass a bridge 190 m long ?,44 sec,50 sec
+34793_B,10917,at what price must an article costing rs . 57 be marked in order that after deducting 5 % from the list price . it may be sold at a profit of 25 % on the cost price ?,75,69.5
+34020_A,10722,"in a flight of 600 km , an aircraft was slowed down due to bad weather . its average speed for the trip was reduced by 200 km / hr and the time of flight increased by 30 minutes . what is the duration of the flight ?",1 hour,3 hours
+114196_A,31007,"a special municipal payroll tax charges not tax on a payroll less than $ 200000 and only 0.2 % on a company ’ s payroll above $ 200000 . if belfried industries paid $ 200 in this special municipal payroll tax , then they must have had a payroll of ?",$ 300,$ 180
+110432_D,30056,the banker â € ™ s discount of a certain sum of money is rs . 80 and the true discount on the same sum for the same time is rs . 70 . the sum due is,560,450
+41610_B,12642,"a fruit seller sells mangoes at the rate of rs . 5 per kg and thereby loses 20 % . at what price per kg , he should have sold them to make a profit of 5 %",rs 6.56,rs 9.56
+18388_B,6766,"with a uniform speed a car covers the distance in 8 hours . had the speed been increased by 3 km / hr , the same distance could have been covered in 7 1 / 2 hours . what is the distance covered ?",360 km,480 km
+98827_B,27122,how many positive integer solutions does the equation 2 x + 5 y = 100 have ?,10,33
+115507_D,31338,the average of 25 results is 19 . the average of first 12 of those is 14 and the average of last 12 is 17 . what is the 13 th result ?,103,78
+59060_B,17057,if 2 / z = 2 / ( z + 1 ) + 2 / ( z + 64 ) which of these integers could be the value of z ?,8,1
+78268_B,21923,how many trailing zeros will be there after the rightmost non - zero digit in the value of 25 ! ( factorial 25 ) ?,6,8
+48354_A,14348,the speed of a car increases by 2 kms after every one hour . if the distance travelling in the first one hour was 35 kms . what was the total distance travelled in 12 hours ?,552 kms,456 kms
+86649_A,24043,"triangle xyz is an isosceles right triangle . if side xy is longer than side yz , and the area of the triangle is 9 , what is the measure of side xy ?",6,4
+19350_A,7009,"if x ^ 2 + ( 1 / x ^ 2 ) = 7 , x ^ 4 + ( 1 / x ^ 4 ) = ?",47,10
+39559_D,12123,"there are 6 chess amateurs playing in villa ' s chess club tournament . if each chess amateur plays with exactly 15 other amateurs , what is the total number of chess games possible to be played in the tournament ?",45,60
+46666_D,13922,"if x + y = 14 , x - y = 60 , for integers of x and y , x = ?",37,20
+110515_D,30077,"a cycle is bought for rs . 850 and sold for rs . 1080 , find the gain percent ?",27,88
+66376_A,18911,"fonzie , aunt bee and lapis paid $ 7000 , $ 8000 and $ 9000 respectively to buy a map to capt . plaidstache ' s treasure . when they found it , the treasure turned out to be worth a cool $ 900000 . how much of it should lapis get ?",$ 337500,$ 300000
+92339_B,25480,"a combustion reaction forms carbon dioxide . a carbon dioxide molecule contains one carbon and two oxygen atoms . if , over a period of 12 minutes , a combustion reaction creates 12,000 molecules of carbon dioxide then approximately how many more atoms of oxygen than carbon are created on average per minute ?",1,60
+97429_D,26767,"when 100 is divided by positive integer x , the remainder is 4 . what is the remainder when 196 is divided by x ?",4,6
+66089_D,18838,"the mass of 1 cubic meter of a substance is 300 kilograms under certain conditions . what is the volume , in cubic centimeters , of 1 gram of this substance under these conditions ? ( 1 kilogram = 1,000 grams and 1 cubic meter = 1 , 000,000 cubic centimeters )",1.33,12.5
+91257_C,25206,"ganesh , ram and sohan together can do a work in 16 days . if ganesh and ram together can do a the same work in 24 days then , how long will take sohan to do the same work ?",48,68
+109866_A,29914,the difference between a number and its two - fifth is 510 . what is 50 % of that number ?,425,426
+37142_D,11513,car a runs at the speed of 50 km / hr & reaches its destination in 8 hr . car b runs at the speed of 25 km / h & reaches its destination in 4 h . what is the respective ratio of distances covered by car a & car b ?,4 : 1,15 : 7
+25076_D,8457,how long does a train 110 m long running at the speed of 36 km / hr takes to cross a bridge 132 m length ?,24.2 sec,13.1 sec
+66461_C,18932,"a broker invested her own money in the stock market . during the first year , she increased her stock market wealth by 50 percent . in the second year , largely as a result of a slump in the stock market , she suffered a 30 percent decrease in the value of her stock investments . what was the net increase or decrease on her overall stock investment wealth by the end of the second year ?",5 %,15 %
+65525_B,18694,dividing by 3 ⁄ 7 and then multiplying by 5 ⁄ 6 is the same as dividing by what number ?,35 ⁄ 18,16 ⁄ 5
+62318_E,17882,a cyclist rides a bicycle 9 km at an average speed of 12 km / hr and again travels 12 km at an average speed of 9 km / hr . what is the average speed for the entire trip ?,10.1,11.2
+48990_A,14509,"in the first m games of a team ' s season , the ratio of the team ' s wins to its losses was 3 : 1 . in the subsequent n games , the ratio of the team ´ s wins to losses was 1 : 4 . if m : n = 4 : 5 , what was the ratio of the team ' s wins to its losses for all m + n games ?",4 : 5,1 : 2
+100492_E,27543,"two train each 500 m long , are running in opposite directions on parallel tracks . if their speeds are 45 km / hr and 30 km / hr respectively , the time taken by the slower train to pass the driver of the faster one is ?",24 s,21 s
+113984_D,30953,"a boat takes 90 minutes less to travel 36 miles downstream than to travel the same distance upstream . if the speed of the boat in still water is 10 mph , the speed of the stream is",2 mph,4 mph
+14877_D,5879,find the numbers which are in the ratio 3 : 2 : 2 such that the sum of the first and the second added to the difference of the third and the second is 20 ?,12,9
+42302_A,12816,"what is the perimeter , in meters , of a rectangular garden 12 meters wide that has the same area as a rectangular playground 16 meters long and 12 meters wide ?",56,48
+22496_A,7802,"for any integer k greater than 1 , the symbol k * denotes the product of all integers between 1 and k , inclusive . if k * is a multiple of 2835 what is the least possible value of k ?",9,5
+83161_C,23159,"a and b are two partially filled buckets of water . if 2 liters are transferred from a to b , then a would contain one - third of the amount of water in b . alternatively , if 2 liters are transferred from b to a , b would contain one - half of the amount of water in a . bucket a contains how many liters of water ?",22 / 5,17
+104073_D,28447,a batsman makes a score of 87 runs in the 17 th inning and thus increases his avg by 3 . find his average after 17 th inning .,39,52
+52839_D,15482,"in arun ' s opinion , his weight is greater than 65 kg but leas than 72 kg . his brother does not agree with arun and he thinks that arun ' s weight is greater than 60 kg but less than 70 kg . his mother ' s view is that his weight can not be greater than 68 kg . if all of them are correct in their estimation , what is the average of diferent probable weights of arun ?",66.5 kg,56.5 kg
+48560_C,14400,two coins are tossed . find the probability of at most 2 tails ?,1,1 / 3
+98331_D,26996,"a car traveled 462 miles per tankful of gasoline on the highway and 336 miles per tankful of gasoline in the city . if the car traveled 15 fewer miles per gallon in the city than on the highway , how many miles per gallon did the car travel in the city ?",40,22
+116617_C,31618,"a train 200 m long passes a man , running at 5 km / hr in the same direction in which the train is going , in 20 seconds . the speed of the train is ?",23,88
+51058_B,15032,"john bought a shirt on sale for 25 % off the original price and another 25 % off the discounted price . if the final price was $ 18 , what was the price before the first discount ?",$ 32,$ 34.31
+12747_B,5339,"what will be the cost of building a fence around a square plot with area equal to 36 sq ft , if the price per foot of building the fence is rs . 58 ?",1392,2882
+49479_E,14631,"if the ratio of apples to bananas is 5 to 2 and the ratio of bananas to cucumbers is 1 to 4 , what is the ratio of apples to cucumbers ?",5 : 8,4 : 7
+114836_C,31168,"the speed at which a man can row a boat in still water is 15 kmph . if he rows downstream , where the speed of current is 3 kmph , what time will he take to cover 80 metres ?",16 seconds,26 seconds
+9197_C,4439,what sum of money will produce rs . 70 as simple interest in 4 years at 3 1 / 2 percent ?,500,188
+104761_D,28621,"two workers a and b are engaged to do a work . a working alone takes 8 hours more to complete the job than if both worked together . if b worked alone , he would need 4 1 / 2 hours more to complete the job than they both working together . what time would they take to do the work together ?",6 hours,7 hours
+36113_A,11251,"at a certain fruit stand , the price of each apple is 40 cents and the price of each orange is 60 cents . mary selects a total of 10 apples and oranges from the fruit stand , and the average ( arithmetic mean ) price of the 10 pieces of fruit is 48 cents . how many oranges must mary put back so that the average price of the pieces of fruit that she keeps is 45 cents ?",2,1
+98892_E,27138,"a can finish a work in 6 days and b can do the same work in 15 days . b worked for 10 days and left the job . in how many days , a alone can finish the remaining work ?",2,8
+99712_E,27346,"the length of a rectangular plot is thrice its width . if the area of the rectangular plot is 507 sq meters , then what is the width ( in meters ) of the rectangular plot ?",13,15
+13820_D,5612,"the smallest number which when diminished by 4 , is divisible by 12 , 16 , 18 , 21 and 28 is",1012,1032
+69070_C,19596,the floor of a rectangular room is 17 m long and 12 m wide . the room is surrounded by a veranda of width 2 m on all its sides . the area of the veranda is :,132 m 2,148 m 2
+29821_C,9659,"an isosceles triangle those sides are 13 cm , 13 cm , 10 cm long inscribed in a circle . find the radius of the circle",8 cm,10 cm
+57604_C,16689,"thabo owns exactly 160 books , and each book is either paperback fiction , paperback nonfiction , or hardcover nonfiction . if he owns 20 more paperback nonfiction books than hardcover nonfiction books , and twice as many paperback fiction books as paperback nonfiction books , how many hardcover books nonfiction books does thabo own ?",25,35
+105589_D,28831,what is the unit digit in the product ( 3 ^ 68 x 6 ^ 59 x 7 ^ 71 ) ?,4,6
+83943_D,23357,"by selling a book for 300 , 20 % profit was earned . what is the cost price of the book ?",b ) 250,d ) 235
+23284_A,8002,a circular wire of radius 42 cm is cut and bent into the form of a rectangle whose sides are in the ratio of 6 : 5 . the smaller side of the rectangle is :,60 cm,30 cm
+64592_C,18459,"if k and w are the dimensions of a rectangle that has area 20 and if k and w are integers such that k > w , what is the total number of possible values of k ?",three,four
+92414_D,25499,"in a race of 1000 m , a can beat by 100 m , in a race of 800 m , b can beat c by 100 m . by how many meters will a beat c in a race of 1000 m ?",212.5 m,222.9 m
+117675_C,31885,"solution p is 20 percent lemonade and 80 percent carbonated water by volume ; solution q is 45 percent lemonade and 55 percent carbonated water by volume . if a mixture of pq contains 65 percent carbonated water , what percent of the volume of the mixture is p ?",40 %,50 %
+108711_B,29621,find the highest common factor of 36 and 84 .,12,10
+101011_E,27674,66 small identical cubes are used to form a large cube . how many more cubes are needed to add one top layer of small cube all over the surface of the large cube ?,150,256
+47667_B,14174,"a store has 10 bottles of juice , including 6 bottles of apple juice . in the evening , 6 bottles of juice are sold one by one . what is the probability of selling 2 bottles of apple juice among the 6 bottles ? assume that every bottle has an equal chance of being bought .",1 / 14,1 / 12
+41361_C,12579,"a , b and c rent a pasture . if a puts 10 oxen for 7 months , b puts 12 oxen for 5 months and c puts 15 oxen for 3 months for grazing and the rent of the pasture is rs . 280 , then how much amount should c pay as his share of rent ?",72,25
+4805_E,3329,"what is the average ( arithmetic mean ) of the numbers 100 , 150 , 200 , 200 , 250 , and 300 ?",200,250
+112066_B,30470,"if 6 < x < 10 < y < 17 , then what is the greatest possible positive integer difference of x and y ?",10,4
+34905_C,10945,"a 8000 liter tank , half - full of water is being filled from a pipe with a flow rate of 1 kiloliter every 2 minutes . at the same time , the tank is losing water from two drains at a rate of 1 kiloliter every 4 minutes and every 6 minutes . how many minutes does it take to fill the tank completely ?",48,18
+37999_A,11730,"a total of $ 20,000 was invested in two certificates of deposit at simple annual interest rates of 6 percent and 10 percent , respectively . if the total interest on the two certificates was $ 1,440 at the end of one year , what fractional part of the $ 20.000 was invested at the higher rate ?",9 / 10,3 / 8
+47018_C,14011,how many two - digit whole numbers yield a remainder of 3 when divided by 10 and also yield a remainder of 3 when divided by 4 ? options :,four,three
+44856_E,13462,"a grocery shop has a sale of rs . 6235 , rs . 6927 , rs . 6855 , rs . 7230 and rs . 6562 for 5 consecutive months . how much sale must he have in the sixth month so that he gets an average sale of rs . 6500 ?",5191,5291
+10967_C,4888,"the number of stamps that kaye and alberto had were in the ration of 5 : 3 respectively . after kaye gave alberto 10 of her stamps , the ration of the number of kaye had to the number of alberto had was 3 : 2 . as a result of the gift , kaye had how many more stamps than alberto ?",80,40
+86176_E,23922,a leak in the bottom of a tank can empty the full tank in 6 hours . an inlet pipe fills water at the rate of 4.5 liters per minute . when the tank is full in inlet is opened and due to the leak the tank is empties in 8 hours . the capacity of the tank is ?,6480,2799
+20262_E,7238,"keats library purchases a number of new books , all in the category of biography , and the library does not acquire any other books . with the addition of the new biographies , the biography collection of the library amounts to 32 % of the total number of books in the library . if prior to the purchase , only 20 % of the books in keats library were biographies , by what percent has the number of biographies in the library increased ?",88 %,110 %
+41392_C,12587,the tax on a commodity is diminished by 28 % but its consumption is increased by 12 % . find the decrease percent in the revenue derived from it ?,19 %,32 %
+74845_D,21057,what is the decimal equivalent of ( 1 / 10 ) ^ 2 ?,0.01,0.25
+86462_B,23995,a semicircle has a radius of 11 . what is the approximate perimeter of the semicircle ?,57,51
+103826_C,28385,in a throw of dice what is the probability of ge æ « ng number greater than 2,2 / 3,1 / 5
+53094_B,15547,"a cab driver 5 days income was $ 250 , $ 400 , $ 750 , $ 400 , $ 500 . then his average income is ?",$ 460,$ 450
+39434_B,12092,what is ( 21 ^ 7 + 21 ) / 21 ?,85766122,83786095
+13688_B,5579,"every day daniel drives 96 miles back from work . on sunday , daniel drove all the way back from work at a constant speed of x miles per hour . on monday , daniel drove the first 32 miles back from work at ( 2 x ) miles per hour , and the rest of the way at ( x / 2 ) miles per hour . the time it took daniel to drive back from work on monday is longer than the time it took him to drive back from work on sunday by what percent ?",50 %,20 %
+75104_A,21123,"find large no . from below question the difference of two numbers is 1365 . on dividing the larger number by the smaller , we get 6 as quotient and the 20 as remainder",1634,1235
+29656_D,9616,"a train 125 m long passes a man , running at 6 km / hr in the same direction in which the train is going , in 10 seconds . the speed of the train is ?",51,65
+15672_D,6080,"a clockwise rotation around point z ( that is , a rotation in the direction of the arrow ) transforms the shaded quadrilateral to the unshaded quadrilateral . the angle of rotation is approximately",270 o,45 o
+97899_E,26887,"a test has 150 questions . each question has 5 options , but only 1 option is correct . if test - takers mark the correct option , they are awarded 1 point . however , if an answer is incorrectly marked , the test - taker loses 0.25 points . no points are awarded or deducted if a question is not attempted . a certain group of test - takers attempted different numbers of questions , but each test - taker still received the same net score of 40 . what is the maximum possible number of such test - takers ?",23,27
+69888_E,19802,"karen places a bet with tom that she will beat tom in a car race by 4 miles even if karen starts 4 minutes late . assuming that karen drives at an average speed of 60 mph and tom drives at an average speed of 45 mph , how many e miles will tom drive before karen wins the bet ?",24,27
+28498_E,9324,"a cargo ships engines failed 100 miles away from the port . due to the changing wind direction , it is moving 12 miles towards the port and 6 miles away from the port . if the wind pattern remains same , how many miles it will travel before reaching the port ?",c - 280,e - 155
+27921_D,9178,"joan and karl each bought a telescopes and the sum of their purchases was $ 400 . if twice of what joan paid was $ 74 more than what karl paid , what did joan pay for her telescope ?",$ 158,$ 156
+71535_D,20220,a pharmaceutical company received $ 3 million in royalties on the first $ 20 million in sales of the generic equivalent of one of its products and then $ 9 million in royalties on the next $ 108 million in sales . by approximately what percent did the ratio of royalties to sales decrease from the first $ 20 million in sales to the next $ 108 million in sales ?,45 %,52 %
+72910_A,20569,a train running at the speed of 40 km / hr crosses a pole in 27 seconds . what is the length of the train ?,300,250
+2576_D,2765,how many numbers are divisible by 4 between 1 and 100 .,24,21
+20506_E,7300,"a survey of n people in the town of eros found that 50 % of them preferred brand a . another survey of 150 people in the town of angie found that 60 % preferred brand a . in total , 55 % of all the people surveyed together preferred brand a . what is the total number of people surveyed ?",300,250
+40877_A,12457,a cistern of capacity 8000 litres measures externally 3.3 m by 2.6 m by 1.5 m and its walls are 5 cm thick . the thickness of the bottom is :,5 dm,90 cm
+100223_A,27476,a certain telescope increases the visual range at a particular location from 100 kilometers to 150 kilometers . by what percent is the visual range increased by using the telescope ?,50 %,30 %
+52766_C,15464,"for 2 consecutive yrs , my incomes are in the ratio of 4 : 7 and expenses in the ratio of 3 : 5 . if my income in the 2 nd yr is rs . 42000 & my expenses in the first yr in rs . 25000 , my total savings for the two - year is",s . 6000,s . 9900
+113931_B,30940,"if 625 ^ ( - x ) + 25 ^ ( - 2 x ) + 5 ^ ( - 4 x ) = 10 , what is the value of x ?",0,- 1 / 4
+63699_B,18234,"an aeroplane covers a certain distance at a speed of 240 kmph in 4 hours . to cover the same distance in 1 2 / 3 hours , it must travel at a speed of :",576,620
+71079_C,20106,"in the storage room of a certain bakery , the ratio of sugar to flour is 3 to 8 , and the ratio of flour to baking soda is 10 to 1 . if there were 60 more pounds of baking soda in the room , the ratio of flour to baking soda would be 8 to 1 . how many pounds of sugar are stored in the room ?",900,1500
+62103_B,17828,"a fruit seller had some apples . he sells 40 % apples and still has 420 apples . originally , he had",700 apples,600 apples
+3447_B,2985,1 / 2 - [ ( 2 / 7 * 7 / 32 ) + 1 ] + 9 / 16 =,0,19 / 16
+26860_B,8910,a shopkeeper sold an article at $ 100 with 45 % profit . then find its cost price ?,$ 69,$ 100
+2212_E,2672,"a salesman â € ™ s terms were changed from a flat commission of 5 % on all his sales to a fixed salary of rs . 1000 plus 2.5 % commission on all sales exceeding rs . 4,000 . if his remuneration as per new scheme was rs . 800 more than that by the previous schema , his sales were worth ?",s . 4,s . 50
+102339_D,28009,"3 pumps , working 8 hours a day , can empty a tank in 2 days . how many hours a day must 6 pumps work to empty the tank in 1 day ?",8,12
+68711_E,19505,"after a storm deposits 120 billion gallons of water into the city reservoir , the reservoir is 60 % full . if the original contents of the reservoir totaled 240 billion gallons , the reservoir was approximately what percentage full before the storm ?",54 %,65 %
+84276_D,23441,"john has 10 pairs of matched socks . if he loses 9 individual socks , what is the greatest number of pairs of matched socks he can have left ?",5,4
+78264_C,21922,"4 men and 6 women finish a job in 8 days , while 3 men and 7 women finish it in 10 days . in how many days will 10 women working together finish it ?",40 days,50 days
+118650_A,32132,"in a neighborhood having 90 households , 11 did not have either a car or a bike . if 16 households had a both a car and a bike and 44 had a car , how many had bike only ?",35,30
+54905_E,16005,"excluding stoppages , the speed of a train is 45 kmph and including stoppages it is 32 kmph . of how many minutes does the train stop per hour ?",17,28
+40078_C,12255,"divide $ 450 among a , b in the ratio 1 : 4 . how many $ that a get ?",$ 90,$ 150
+114045_E,30968,"the length of the bridge , which a train 130 metres long and travelling at 45 km / hr can cross in 30 seconds , is :",245 meters,300 meters
+38991_E,11980,"a man engaged a servant on the condition that he would pay him rs . 900 and a uniform after 1 year service . he served only for 9 months and receiveduniform and rs . 650 , find the price of the uniform ?",rs . 100,rs . 190
+76279_A,21420,"jane makes toy bears . when she works with an assistant , she makes 80 percent more bears per week and works 10 percent fewer hours each week . having an assistant increases jane ’ s output of toy bears per hour by what percent t ?",100 %,20 %
+29794_A,9652,"a father said his son , ` ` i was as old as you are at present at the time of your birth . ` ` if the father age is 62 now , the son age 5 years back was",26,14
+83695_C,23294,how many 3 digit positive integers exist that when divided by 7 leave a remainder of 5 ?,129,143
+39856_E,12198,"pipe a can fill a pool in 12 hours at a constant rate . if pipe a does the job for 8 hours and pipe b does the rest of the job , which works at 1 / 3 constant rate of pipe a . how long will it take for pipe b alone to do the rest of the job ?",12 hrs,24 hrs
+7770_D,4077,"in a certain apartment building , there are one - bedroom and two - bedroom apartments . the rental prices of the apartment depend on a number of factors , but on average , two - bedroom apartments have higher rental prices than do one - bedroom apartments . let m be the average rental price for all apartments in the building . if m is $ 1,000 higher than the average rental price for all one - bedroom apartments , and if the average rental price for all two - bedroom apartments is $ 9,000 higher that m , then what percentage of apartments in the building are two - bedroom apartments ?",10 %,30 %
+17417_A,6521,there are cats got together and decided to kill the mice of 999936 . each cat kills equal number of mice and each cat kills more number of mice than cats there were . then what are the number of cats ?,992,941
+109113_E,29723,"how many words , with or without meaning , can be formed using all letters of the word equation using each letter exactly once ?",40,39
+2046_A,2631,vinoth can complete a painting work in 20 days . prakash can do the same work in 25 days . they start the work together but vinoth quit after 3 days of work . how many days are required to complete the remaining painting work by prakash .,18.25 days,15.25 days
+105831_B,28892,"in a college , the ratio of the number of boys to girls is 8 : 5 . if there are 300 girls , the total number of students in the college is",780,520
+85262_E,23690,"69 laboratories raise the bacterium , the laboratory have 48 culture dishes on average , which has about 25,075 bacteria each . how many bacteria are there approximately ?",10 ^ 7,10 ^ 11
+102992_D,28173,"if the population of a certain country increases at the rate of two person every 60 seconds , by how many persons does the population increase in 100 minutes ?",200,220
+56860_C,16500,"a rectangular grass field is 75 m * 55 m , it has a path of 2.5 m wide all round it on the outside . find the area of the path and the cost of constructing it at rs . 2 per sq m ?",1350,2677
+105166_E,28724,"if the compound interest on a certain sum of money for 7 years at 10 % per annum be rs . 993 , what would be the simple interest ?",rs . 2100,none
+97012_C,26662,tabby is training for a triathlon . she swims at a speed of 1 mile per hour . she runs at a speed of 8 miles per hour . she wants to figure out her average speed for these two events . what is the correct answer for her ?,4.5 mph,3.5 mph
+91623_D,25298,how many liters of water must be evaporated from 50 liters of a 4 percent sugar solution to get a 10 percent sugar solution ?,30,28
+17953_D,6656,"of the 120 passengers on flight 750 , 40 % are female . 10 % of the passengers sit in first class , and the rest of the passengers sit in coach class . if 1 / 3 of the passengers in first class are male , how many females are there in coach class ?",40,52
+107394_A,29288,the tax on a commodity is diminished by 10 % and its consumption increased by 25 % . the effect on revenue is ?,12.5 % increase,12 % decrease
+49480_A,14632,"a box contains 100 balls , numbered from 1 to 100 . if 3 balls are selected at random and with replacement from the box . if the 3 numbers on the balls selected contain two odd and one even . what is the probability l that the first ball picked up is odd numbered ?",2 / 3,0
+79359_D,22199,car a runs at the speed of 65 km / hr & reaches its destination in 8 hr . car b runs at the speed of 70 km / h & reaches its destination in 4 h . what is the respective ratio of distances covered by car a & car b ?,13 : 7,14 : 6
+96294_C,26480,the tax on a commodity is diminished by 10 % but its consumption is increased by 20 % . find the decrease percent in the revenue derived from it ?,4 %,32 %
+54100_C,15802,"pascal has 96 miles remaining to complete his cycling trip . if he reduced his current speed by 4 miles per hour , the remainder of the trip would take him 16 hours longer than it would if he increased his speed by 50 % . what is his current speed o ?",8,10
+54177_D,15821,ramesh purchased a refrigerator for rs . 12500 after getting a discount of 20 % on the labelled price . he spent rs . 125 on transport and rs . 250 on installation . at what price should it be sold so that the profit earned would be 16 % if no discount was offered ?,18560,17600
+66255_C,18880,"six bells commence tolling together and toll at intervals of 2 , 4 , 6 , 8 10 and 12 seconds respectively . in 50 minutes , how many times do they toll together ?",26,15
+38052_C,11743,"in the standard formulation of a flavored drink the ratio by volume of flavoring to corn syrup to water is 1 : 12 : 30 . in the sport formulation , the ratio of flavoring to corn syrup is three times as great as in the standard formulation , and the ratio of flavoring to water is half that of the standard formulation . if a large bottle of the sport formulation contains 2 ounces of corn syrup , how many ounces of water does it contain ?",30,45
+38899_E,11957,a car gets 40 kilometers per gallon of gasoline . how many gallons of gasoline would the car need to travel 150 kilometers ?,3.75 gallons,7.50 gallons
+95716_C,26334,"in an examination , 25 % of total students failed in hindi , 48 % failed in english and 27 % in both . the percentage of these who passed in both the subjects is :",54,28
+70278_D,19902,"angelina walked 180 meters from her home to the grocery at a constant speed . she then walked 240 meters to the gym at double the speed . she spent 40 seconds less on her way from the grocery to the gym than on her way from home to the grocery . what was angelina ' s speed , in meters per second , from the grocery to the gym ?",3,6
+29583_C,9598,"the price of an item is discounted 2 percent on day 1 of a sale . on day 2 , the item is discounted another 12 percent , and on day 3 , it is discounted an additional 25 percent . the price of the item on day 3 is what percentage of the sale price on day 1 ?",66 %,69 %
+24762_E,8377,little krish had $ 200.50 . he spent $ 35.25 on sweets and gave to his two friends $ 25.20 each . how much money was left ?,$ 114.85,$ 104.85
+76586_D,21497,after decreasing 24 % in the price of an article costs rs . 320 . find the actual cost of an article ?,421,525
+49105_E,14537,"a person x working alone can complete a work in 5 days . a person y completes the same amount of work in 20 days , and a person z when working alone can complete the same amount of work in 30 days . all 3 people work together for 2 days but then x and y leave . how many more days does z need to complete the work after x and y leave ?",13,17
+50581_C,14911,"a grocery shop has a sale of rs . 6335 , rs . 6927 , rs . 6855 , rs . 7230 and rs . 6562 for 5 consecutive months . how much sale must he have in the sixth month so that he gets an average sale of rs . 6500 ?",5091,4012
+62370_B,17896,"a reduction of 25 % in the price of salt enables a lady to obtain 10 kgs more for rs . 100 , find the original price per kg ?",3.3,2.3
+30499_C,9831,"average of 10 matches is 32 , how many runs one should should score to increase his average by 5 runs .",e ) 87,c ) 78
+10851_C,4859,"youseff lives x blocks from his office . it takes him 1 minute per block to walk to work and 20 seconds per block to ride his bike to work . it is takes him exactly 4 minutes more to walk to work than to ride his bike to work , then x equals ?",6,10
+45803_B,13702,"in a fuel station the service costs $ 1.75 per car , every liter of fuel costs 0.75 $ . assuming that a company owns 12 cars and that every fuel tank contains 55 liters and they are all empty , how much money total will it cost to fuel all cars ?",516 $,420 $
+17340_A,6501,10 women can complete a work in 8 days and 10 children take 12 days to complete the work . how many days will 6 women and 3 children together take to complete the work ?,10,7
+64048_A,18322,"what is the least number which should be added to 2782 so that the sum is exactly divisible by 5 , 6 , 4 , and 3 ?",38,26
+45490_D,13622,one fourth of one third of two fifth of a number is 17 . what will be 40 % of that number,204,200
+18441_C,6779,a train 550 meters long is running with a speed of 60 kmph . in what time will it pass a man who is running at 6 kmph in the direction opposite to that in which the train is going ?,30,25
+55917_D,16261,walking at the rate of 3 kmph a man cover certain distance in 3 hr 20 min . running at a speed of 9 kmph the man will cover the same distance in .,54 min,48 min
+118246_A,32029,"when 52416 is divided by 312 , the quotient is 168 . what will be the quotient when 52.416 is divided by 0.12510168 ?",10,5
+69698_E,19754,. a car covers a distance of 742 km in 7 hours . find its speed ?,148,159
+56568_B,16426,what is the decimal equivalent of ( 1 / 9 ) ^ 2 ?,0.0123,0.0625
+7447_A,3996,after decreasing 24 % in the price of an article costs rs . 608 . find the actual cost of an article ?,800,128
+34254_A,10781,"of the 120 passengers on flight 750 , 55 % are female . 10 % of the passengers sit in first class , and the rest of the passengers sit in coach class . if 1 / 3 of the passengers in first class are male , how many females are there in coach class ?",58,44
+104320_C,28509,how long does a train 120 m long travelling at 60 kmph takes to cross a bridge of 170 m in length ?,17.4 sec,12.4 sec
+18217_E,6722,"working together , wayne and his son can shovel the entire driveway in 3 hours . if wayne can shovel 6 times as fast as his son can , how many hours would it take for his son to shovel the entire driveway on his own ?",7,12
+6067_D,3647,an alloy of zinc and copper contains the metals in the ratio 5 : 3 . the quantity of zinc to be added to 16 kg of the alloy so that the ratio of the metal may be 3 : 1 is :,8,3
+104765_E,28622,"a rectangular field is to be fenced on three sides leaving a side of 20 feet uncovered . if the area of the field is 80 sq . feet , how many feet of fencing will be required ?",28,78
+90417_C,24994,"if a : b : : 3 : 4 , then what is ( 5 a + 6 b ) : ( a - 2 b ) ?",- 39 : 5,11 : 10
+111408_B,30304,"if 12 ! / 3 ^ x is an integer , what is the greatest possible value of x ?",5,4
+7797_D,4084,"the price of lunch for 15 people was $ 211.00 , including a 15 percent gratuity for service . what was the average price per person , excluding the gratuity ?",$ 12.78,$ 14.00
+36038_B,11232,the area of an isosceles trapezoid with sides of length 5 and bases of length 7 and 13 is ?,40,41
+4564_E,3268,"the cricket team of 11 members is 26 yrs old & the wicket keeper is 3 yrs older . if the ages ofthese 2 are excluded , the average age of the remainingplayers is 1 year less than the average age of the whole team . what is the average age of the team ?",23,27
+78844_E,22068,"the average ( arithmetic mean ) of the integers from 200 to 400 , inclusive , is how much greater than the average of the integers from 100 to 200 , inclusive ?",150,300
+64387_D,18407,ramesh purchased a refrigerator for rs . 12500 after getting a discount of 20 % on the labelled price . he spent rs . 125 on transport and rs . 250 on installation . at what price should it be sold so that the profit earned would be 12 % if no discount was offered ?,17920,17600
+3846_D,3086,a certain debt will be paid in 52 installments from january 1 to december 31 of a certain year . each of the first 8 payments is to be $ 410 ; each of the remaining payments is to be $ 65 more than each of the first 8 payments . what is the average ( arithmetic mean ) payment that will be made on the debt for the year ?,465,468
+48793_B,14459,raman ' s salary was decreased by 50 % and subsequently increased by 50 % . how much percent does he loss,25,65
+64767_B,18503,the average expenditure of a labourer for 7 months was 85 and he fell into debt . in the next 4 months by reducing his monthly expenses to 60 he not only cleared off his debt but also saved 30 . his monthly income is,86.5,72.02
+20863_A,7391,"the average weight of a class is x pounds . when a new student weighing 100 pounds joins the class , the average decreases by 1 pound . in a few months the student ’ s weight increases to 110 pounds and the average weight of the class becomes x + 4 pounds . none of the other students ’ weights changed . what is the value of x ?",92,85
+27162_E,8986,"3 candidates in an election and received 1000 , 2000 and 4000 votes respectively . what % of the total votes did the winning candidate got in that election ?",57.14 %,65.12 %
+53838_C,15735,the measurement of a rectangular box with lid is 25 cmx 18 cmx 18 cm . find the volume of the largest sphere that can be inscribed in the box ( in terms of π cm 3 ) . ( hint : the lowest measure of rectangular box represents the diameter of the largest sphere ),972,72
+109436_B,29805,a small island country of 5000 people has an emigration and immigration statistic per 500 persons of 50.4 and 15.4 respectively . how long will it take for the population to be half of its current number .,7.14,8.5
+117579_C,31861,"how much time will a train of length 250 m moving at a speed of 72 kmph take to cross another train of length 300 m , moving at 36 kmph in the same direction ?",55,88
+7771_A,4078,a person travels from p to q a speed of 30 km / hr and returns by increasing his speed by 30 % . what is his average speed for both the trips ?,34.5,33
+46446_C,13866,"the population of a bacteria colony doubles every day . if it was started 7 days ago with 2 bacteria and each bacteria lives for 12 days , how large is the colony today ?",256,512
+14544_D,5795,a bullet train 220 m long is running with a speed of 59 kmph . in what time will it pass a man who is running at 7 kmph in the direction opposite to that in which the bullet train is going ?,12 sec,11 sec
+106596_D,29085,"annie and sam set out together on bicycles traveling at 15 and 12 km per hour respectively . after 40 minutes , annie stops to fix a flat tire . if it takes annie 35 minutes to fix the flat tire and sam continues to ride during this time , how many minutes will it take annie to catch up with sam assuming that annie resumes riding at 15 km per hour ?",100,80
+22784_A,7875,"of 70 players on a cricket team , 37 are throwers . the rest of the team is divided so one third are left - handed and the rest are right handed . assuming that all throwers are right handed , how many right - handed players are there total ?",59,54
+99313_D,27245,how many 3 digit positive integers e exist that when divided by 7 leave a remainder of 5 ?,129,141
+102561_C,28065,"a and b can do a piece of work in 10 days , b and c in 15 days , c and a in 12 days . how long will c take to do it ?",40 days,24 days
+36210_D,11275,"in measuring the sides of a rectangle , one side is taken 12 % in excess and other 5 % in deficit . find the error percentage in the area calculated from these measurements .",6.4 %,5 %
+93631_E,25806,"jen has a jar of jam , and she ate 1 / 3 of the jam for lunch . if jen ate 1 / 7 of the remaining jam for dinner , what fraction of the jam was left after dinner ?",4 / 7,11 / 14
+57437_C,16646,what two - digit number is less than the sum of the square of its digits by 12 and exceeds their doubled product by 5 ?,99,26
+49550_D,14649,fresh grapes contain 90 % by weight while dried grapes contain 20 % water by weight . what is the weight of dry grapes available from 25 kg of fresh grapes ?,3.12 kg,10 kg
+79556_E,22248,the ration of the number of boys and girls in a college is 2 : 3 . if the percentage is increase in the number of boys and girls be 10 % and 20 % respectively . what will be the new ration ?,11 : 18,15 : 23
+80348_B,22448,"if there is an equal probability of a child being born a boy or a girl , what is the probability that a couple who have 6 children have two children of the same sex and one of the opposite sex ?",3 / 16,2 / 3
+116246_B,31524,"a sells a cricket bat to b at a profit of 20 % . b sells it to c at a profit of 25 % . if c pays $ 231 for it , the cost price of the cricket bat for a is :",154,120
+51877_C,15239,"factory x ' s bulbs work for over 4000 hours in 59 % of cases , whereas factory y ' s bulbs work for over 4000 hours in 65 % of cases . it is known that factory x supplies 60 % of the total bulbs available . what is the chance that a purchased bulb will work for longer than 4000 hours ?",61.4 %,77.4 %
+95807_A,26357,a van takes 5 hours to cover a distance of 450 km . what speed in kph should the van maintain to cover the same distance in 3 / 2 of the previous time ?,60,56
+111420_B,30307,"what is the minimum possible range in scores of the 3 test - takers ? 3 people each took 5 tests . if the ranges of their scores in the 5 practice tests were 18 , 26 and 32 .",30,32
+83526_A,23252,the sum of the 1 st and 3 rd of 3 consecutive odd integers is 131 less than 3 times the second integer . find the 3 integers ?,133,121
+94770_B,26096,"a military camp has a food reserve for 250 personnel for 40 days . if after 15 days 50 more personnel are added to the camp , find the number of days the reserve will last for ?",25,67
+35933_C,11205,"how many cuboids of length 5 m , width 6 m and height 3 m can be farmed from a cuboid of 18 m length , 15 m width and 2 m height .",6,10
+10698_D,4819,"of the 3,600 employees of company x , 1 / 3 are clerical . if the clerical staff were to be reduced by 1 / 4 , what percent of the total number of the remaining employees would then be clerical ?",28.1 %,12.5 %
+84528_E,23504,in what time will a railway train 90 m long moving at the rate of 36 kmph pass a telegraph post on its way ?,9 sec,2 sec
+52068_B,15287,"excluding stoppages , the speed of a bus is 64 kmph and including stoppages , it is 50 kmph . for how many minutes does the bus stop per hour ?",13.12,12.3
+44608_D,13400,"a camera lens filter kit containing 5 filters sells for $ 72.50 . if the filters are purchased individually , 2 of them are priced at $ 12.45 each , 2 at $ 14.05 each , 1 at $ 11.50 . the amount saved by purchasing the kit is what percent of the total price of the 5 filters purchased individually ?",11.03 %,13.03 %
+88209_A,24436,"ratio between rahul and deepak is 4 : 3 , after 22 years rahul age will be 26 years . what is deepak present age",3,10
+116230_B,31520,"a man sold 18 toys for rs . 21000 , gaining thereby the cost price of 3 toy find the cost price of a toy",s . 1000,s . 800
+37624_A,11635,"to be considered for “ movie of the year , ” a film must appear in at least 1 / 4 of the top - 10 - movies lists submitted by the cinematic academy ’ s 775 members . what is the smallest number of top - 10 lists a film can appear on and still be considered for “ movie of the year ” ?",194,191
+89401_B,24737,"in a graduating class , the difference between the highest and lowest salaries is $ 100000 . the median salary is $ 50000 higher than the lowest salary and the average salary is $ 20000 higher than the median . what is the minimum number of students t in the class ?",c ) 15,b ) 12
+19019_B,6925,log 3 n + log 6 n what is 3 digit number n that will be whole number,216,729
+113676_A,30876,"what is the square root of 3,969 ?",d ) 63,a ) 18
+41903_E,12715,"with both valves open , the pool will be filled with water in 48 minutes . the first valve alone would fill the pool in 2 hours . if the second valve emits 50 cubic meters of water more than the first every minute , then what is the capacity t of the pool ?",12000 cubic meters,12500 cubic meters
+3861_C,3090,"while driving from a - ville to b - town , harriet drove at a constant speed of 110 kilometers per hour . upon arriving in b - town , harriet immediately turned and drove back to a - ville at a constant speed of 140 kilometers per hour . if the entire trip took 5 hours , how many minutes did it take harriet to drive from a - ville to b - town ?",168,150
+118792_E,32167,"the value of a machine depreciates at the rate of 10 % every year . it was purchased 3 years ago . if its present value is rs . 8748 , its purchase price was :",12000,12019
+67382_E,19165,61 small identical cubes are used to form a large cube . how many more cubes are needed to add one top layer of small cube all over the surface of the large cube ?,155,256
+11786_B,5096,add 16 % of 36 and 13 % of 45 .,7.2,8.5
+75684_D,21269,a is half good a work man as b and together they finish a job in 15 days . in how many days working alone b finish the job ?,45 / 2,36
+102505_D,28051,the sum of all solutions for x in the equation x ^ 2 – 4 x + 14 = | x – 4 | + 8 is equal to :,8,12
+113928_C,30939,"martin bought 10 concert tickets , some at the full price of $ 2.00 per ticket , and some at a discounted price of $ 1.60 per ticket . if he spent a total of $ 17.20 , how many discounted tickets did he buy ?",7,5
+68015_E,19327,"when 2 is added to half of one - third of one - fifth of a number , the result is one - fifteenth of the number . find the number ?",60,80
+11557_C,5037,a number is selected at random from the first 30 natural numbers . what is the probability that the number is a multiple of either 2 or 19 ?,8 / 15,7 / 15
+5966_B,3622,a vendor buys 10 t - shirts at an average price of $ 14 per t - shirt . he then buys 15 more t - shirts at an average price of $ 11 per t - shirt . what is the average price d per t - shirt that the vendor paid for these purchases ?,$ 12.20,$ 12.50
+91842_C,25354,"a factory has 15 machines of equal efficiency in its factory . the annual manufacturing costs are rs . 42000 & establishment charges are rs . 12000 . the annual output of the company is rs . 70000 . the annual output and manufacturing costs are directly proportional to the number of machines . the shareholders get 12 . 512.5 profit , which is directly proportional to the annual output of the company . if 7 . 147.14 machines remain closed throughout the year , then the % decrease in the amountof profit of the shareholders would be ?",12.5 %,14 %
+39057_B,11997,"a factory produces 5500 toys per week . if the workers at this factory work 4 days a week and if these workers make the same number of toys everyday , how many toys are produced each day ?",1375 toys,5487 toys
+35970_D,11214,"find the least number which when divided by 5 , 67 , and 8 leaves a remainder 3 , but when divided by 9 leaves no remainder",1683,1582
+28727_B,9383,"a mixture contains milk and water in the ratio 3 : 2 . on adding 10 litters of water , the ratio of milk to water becomes 2 : 3 . total quantity of milk & water before adding water to it ?",20,30
+68730_D,19510,speed of a boat in standing water is 9 kmph and speed of the stream is 1.5 kmph . a man can rows to a place at a distance of 105 km and comes back to the starting point . the total time taken by him is ?,24 hours,10 hours
+5970_A,3623,"a certain manufacturer produces items for which the production costs consist of annual fixed costs totaling $ 120,000 and variables costs averaging $ 8 per item . if the manufacturer ’ s selling price per item is $ 12 , how many items the manufacturer produce and sell to earn an annual profit of $ 140,000 ?",65,2
+14651_D,5822,"if a rectangular room measures 9 meters by 5 meters by 4 meters , what is the volume of the room in cubic centimeters ? ( 1 meter = 100 centimeters )",18,24
+29994_C,9704,"a and b start a business , with a investing the total capital of rs . 5000 , on the condition that b pays a interest @ 10 % per annum on his half of the capital . a is a working partner and receives rs . 500 per month from the total profit and any profit remaining is equally shared by both of them . at the end of the year , it was found that the income of a is twice that of b . find the total profit for the year ?",b ) 3500,c ) 5000
+99288_C,27239,"if 1 / 2 of the air in a tank is removed with each stroke of a vacuum pump , what fraction of the original amount of air has been removed after 5 strokes ?",31 / 32,1 / 4
+111195_B,30250,"a certain bus driver is paid a regular rate of $ 20 per hour for any number of hours that does not exceed 40 hours per week . for any overtime hours worked in excess of 40 hours per week , the bus driver is paid a rate that is 75 % higher than his regular rate . if last week the bus driver earned $ 1000 in total compensation , how many total hours did he work that week ?",46,40
+62810_C,18008,"at a monthly meeting , 2 / 3 of the attendees were males and 3 / 4 of the male attendees arrived on time . if 5 / 6 of the female attendees arrived on time , what fraction of the attendees at the monthly meeting did not arrive on time ?",2 / 9,3 / 8
+93496_B,25773,two trains 140 m and 180 m long run at the speed of 60 km / hr and 40 km / hr respectively in opposite directions on parallel tracks . the time which they take to cross each other is ?,11.52 sec,10.1 sec
+88968_C,24627,a parking garage rents parking spaces for $ 10 per week or $ 42 per month . how much does a person save in a year by renting by the month rather than by the week ?,$ 16,$ 22
+18740_E,6854,find the 37.5 % of 976 ?,366,545
+89181_A,24681,"rani bought more apples than oranges . she sells apples at ₹ 23 apiece and makes 15 % profit . she sells oranges at ₹ 10 apiece and makes 25 % profit . if she gets ₹ 653 after selling all the apples and oranges , find her profit percentage x .",17.4 %,16.8 %
+105406_A,28785,"3,7 , 12,18 , 25,33 , . . . . . . . . . . . . . . 7 th terms",42,43
+5591_D,3527,"i sold a book at a profit of 10 % . had i sold it for $ 120 more , 15 % would have been gained . find the cost price ?",$ 2400,$ 3120
+82846_C,23080,"if the cost price of 30 articles is equal to the selling price of 45 articles , what is the % profit or loss made by the merchant ?",33.33 % loss,20 % loss
+113221_B,30761,"carol and jordan draw rectangles of equal area . if carol ' s rectangle measures 12 inches by 15 inches and jordan ' s rectangle is 6 inches long , how wide is jordan ' s rectangle , in inches ?",30,26
+116432_D,31571,"if an integer n is to be selected at random from 1 to 100 , inclusive , what is probability n ( n + 1 ) will be divisible by 8 ?",1 / 4,2 / 3
+68096_A,19348,how many two - digit numbers that do not contain the digits 1 or 4 are there ?,56,112
+117897_D,31940,"a test has 100 questions . each question has 5 options , but only 1 option is correct . if test - takers mark the correct option , they are awarded 1 point . however , if an answer is incorrectly marked , the test - taker loses 0.25 points . no points are awarded or deducted if a question is not attempted . a certain group of test - takers attempted different numbers of questions , but each test - taker still received the same net score of 40 . what is the maximum possible number of such test - takers ?",13,12
+103548_A,28315,how many cubes of 5 cm edge can be put in a cubical box of 1 m edge .,8000 cm,1770 cm
+65564_B,18704,"the probability that a man will be alive for 10 more yrs is 1 / 4 & the probability that his wife will alive for 10 more yrs is 1 / 3 . the probability that none of them will be alive for 10 more yrs , is",1 / 2,1
+24838_A,8397,"if 6 women can color 360 m long cloth in 3 days , then 5 women can color 100 m long cloth in ?",1 day,2 days
+41904_A,12716,convert 500 miles to km ?,800 km,600 km
+73803_B,20794,"two tains of equal lengths take 10 seconds and 20 seconds respectively to cross a telegraph post . if the length of each train be 120 metres , in what time ( in seconds ) will they cross each other travelling in opposite direction ?",13.3,14
+20818_E,7379,"the radius of a cone is 10 m , height 21 m . the volume of the cone is :",2200,1050
+78038_A,21865,three unbiased coins are tossed . what is the probability of getting 3 heads ?,1 / 8,3 / 4
+82300_E,22940,a department store perceived a run on a lower priced garment and raised the price by 20 % to keep stock available until another shipment arrived . customers fumed and the department store manager allowed them to purchase the garments at 80 % of the new price to save face . what was the difference in the new retail price and the price the customers were allowed to pay instead ?,4.0 %,8.0 %
+97236_A,26719,"of the land owned by a farmer , 90 percent was cleared for planting . of the cleared land , 10 percent was planted with grapes and 80 percent of the cleared land was planted with potato . if the remaining 450 acres of cleared land was planted with tomato , how many acres did the farmer own ?",5000,3500
+70231_E,19890,"on a map , 1 inch represents 28 miles . how many c inches would be necessary to represent a distance of 383.6 miles ?",13.7,28.7
+3041_A,2883,the speed of a car is 80 km in the first hour and 40 km in the second hour . what is the average speed of the car ?,60 kmph,72 kmph
+46283_B,13824,"a man can row upstream at 35 kmph and downstream at 45 kmph , and then find the speed of the man in still water ?",40 kmph,34 kmph
+33885_C,10688,two whole numbers whose sum is 36 can not be in the ratio,3 : 4,3 : 6
+2816_B,2826,a 50 kg metal bar made of alloy of tin and silver lost 5 kg of its weight in the water . 10 kg of tin loses 1.375 kg in the water ; 5 kg of silver loses 0.375 kg . what is the ratio of tin to silver in the bar ?,2 / 3,2 / 5
+105000_C,28683,"if a certain toy store ' s revenue in november was 3 / 5 of its revenue in december and its revenue in january was 1 / 3 of its revenue in november , then the store ' s revenue in december was how many times the average ( arithmetic mean ) of its revenues in november and january ?",5 / 2,10 / 3
+89597_A,24787,"a fruit drink is made of orange , watermelon , and grape juice , where 25 percent of the drink is orange juice and 40 percent is watermelon juice . if the drink is made with 70 ounces of grape juice , how many ounces is the drink total ?",200,125
+110058_D,29962,a goods train runs at a speed of 72 kmph and crosses a 280 m long platform in 26 seconds . what is the length of the goods train ?,240 m,270 m
+72966_D,20583,"a group of men decided to do a work in 50 days , but 10 of them became absent . if the rest of the group did the work in 60 days , find the original number of men ?",60,100
+88228_E,24440,two trains are moving in the same direction at 54 kmph and 36 kmph . the faster train crosses a man in the slower train in 27 seconds . find the length of the faster train ?,135,271
+54816_B,15983,"in a certain accounting class of 100 students , 70 % of the students took the final exam on the assigned day while the rest of the students took the exam on a make - up date . if the students on the assigned day had an average score of 65 % , and the students on the make - up date had an average score of 95 % , what was the average score for the entire class ?",74 %,70 %
+98824_D,27121,how long does a train 110 m long traveling at 36 kmph takes to cross a bridge of 170 m in length ?,28,16.8
+2276_C,2689,"sarah operated her lemonade stand monday through friday over a two week period and made a total profit of 450 dollars . on hot days she sold cups of lemonade for a price that was 25 percent higher than the regular days . each cup she sold had a total cost of 75 cents and sarah did not incur any other costs . if every day she sold exactly 32 cups and 3 of the days were hot , then what was the price of 1 cup on a hot day ?",$ 2.50,$ 2.25
+60302_E,17370,find the average of first 15 natural numbers .,8,16
+108896_C,29668,"a farmer spent $ 35 on feed for chickens and goats . he spent 40 % money on chicken feed , which he bought at a 60 % discount off the full price , and spent the rest on goat feed , which he bought at full price . if the farmer had paid full price for both the chicken feed and the goat feed , what amount would he have spent on the chicken feed and goat feed combined ?",$ 51,$ 39.20
+118084_B,31988,at what price must an article costing rs . 47.50 be marked in order that after deducting 10 % from the list price . it may be sold at a profit of 25 % on the cost price ?,65.9,62.3
+107999_B,29441,"if [ x ] is the greatest integer less than or equal to x , what is the value of [ - 5.6 ] + [ 3.4 ] + [ 12.7 ] ?",3,5
+108965_A,29686,"by selling an article at rs . 150 , a profit of 25 % is made . find its cost price ?",s . 120,s . 486
+76692_B,21524,60 % of x is greater than 1 / 3 rd of x by 110 . what is x ?,412.5,200.5
+1896_C,2593,6 workers should finish a job in 8 days . after 3 days came 4 workers join them . how many days m do they need to finish the same job ?,3,5
+41715_D,12668,the area of square abcd above is 22 . the shaded region is the intersection of the square and a circular region centered at c . what is the area of the shaded region ?,22 − 11 / 2 ∗ π,9 + 9 / 2 ∗ π
+1941_C,2604,what is the number of integers from 1 to 1100 ( inclusive ) that are divisible by neither 11 nor by 35 ?,945,892
+60146_D,17331,"if 30 honey bees make 30 grams of honey in 30 days , then 1 honey bee will make 1 gram of honey in how many days ?",30,49
+75856_A,21313,one drier dries certain quantity of material in 24 minutes . another drier does the same work in 2 minutes how much time will it take to do the same job when both driers are put to work ?,1.85 min,1.00 minutes
+16869_B,6382,"dick and jane each saved $ 1,000 in 1989 . in 1990 dick saved 15 percent more than in 1989 , and together he and jane saved a total of $ 2,000 . approximately what percent less did jane save in 1990 than in 1989 ?",15 %,5 %
+52048_B,15282,"on a certain day , orangeade was made by mixing a certain amount of orange juice with an equal amount of water . on the next day , orangeade was made by mixing the same amount of orange juice with twice the amount of water . on both days , all the orangeade that was made was sold . if the revenue from selling the orangeade was the same for both days and if the orangeade was sold at $ 0.60 per glass on the first day , what was the price r per glass on the second day ?",$ 0.40,$ 0.20
+66766_E,19009,"a hat company ships its hats , individually wrapped , in 8 - inch by 10 - inch by 12 - inch boxes . each hat is valued at $ 5.50 . if the company ’ s latest order required a truck with at least 288,000 cubic inches of storage space in which to ship the hats in their boxes , what was the minimum value of the order ?",$ 1,$ 2
+52035_B,15279,"on thursday mabel handled 90 transactions . anthony handled 10 % more transactions than mabel , cal handled 2 / 3 rds of the transactions that anthony handled , and jade handled 14 more transactions than cal . how much transactions did jade handled ?",80,81
+105807_C,28886,ratio of two numbers x and y is 5 : 7 . if x is increased by 20 % and y is increased by 2 then the new ratio becomes 2 : 3 . what is the ratio 3 y : ( x + 6 ),7 : 8,6 : 7
+31816_E,10165,"on the first of the year , james invested x dollars at proudstar bank in an account that yields 3 % in interest every quarter year . at the end of the year , during which he made no additional deposits or withdrawals , he had y dollars in the account . if james had invested the same amount in an account which pays interest on a yearly basis , what must the interest rate be for james to have y dollars at the end of the year ?",12.5 %,10 %
+43282_D,13063,"1 , 1 , 2 , 1 , 2 , 3 , 1 , 2 , 3 , 4 , 1 , 2 , __ ?",3,4
+11374_D,4991,a car started running at a speed of 38 km / hr and the speed of the car was increased by 2 km / hr at the end of every hour . find the total distance covered by the car in the first 10 hours of the journey .,47 km,15 km
+65662_B,18729,"in a ratio which is equal to 4 : 6 , if the antecedent is 20 , then the consequent is ?",30,85
+82259_D,22930,what is 35 % of 4 / 13 of 845 ?,80,91
+28413_A,9303,"the present ratio of students to teachers at a certain school is 35 to 1 . if the student enrollment were to increase by 50 students and the number of teachers were to increase by 5 , the ratio of students to teachers would then be 25 to 1 . what is the present number of teachers ?",8,5
+109826_D,29903,jim â € ™ s taxi service charges an initial fee of $ 2.25 at the beginning of a trip and an additional charge of $ 0.3 for each 2 / 5 of a mile traveled . what is the total charge for a trip of 3.6 miles ?,$ 4.95,$ 5.05
+87865_C,24349,a person can row at 9 kmph and still water . he takes 3 1 / 2 hours to row from a to b and back . what is the distance between a and b if the speed of the stream is 1 kmph ?,16,29
+67177_C,19113,"excluding stoppages , the speed of a bus is 50 kmph and including stoppages , it is 42 kmph . for how many minutes does the bus stop per hour ?",9.6 min,8.2 min
+79745_E,22296,"the rate of interest on a sum of money is 2 % p . a . for the first 3 years , 4 % p . a . for the next 4 years , and 5 % for the period beyond 7 years . if the s . i , occured on the sum for the total period of 8 years is rs . 540 / - , the sum is",2,2
+26828_D,8901,"if remainder is 8 , quotient is 43 and dividend is 997 then what is divisor ?",23,27
+4981_A,3374,a train running at 1 / 6 of its own speed reached a place in 24 hours . how much time could be saved if the train would have run at its own speed ?,20 hrs,8 hrs
+46550_D,13892,how many factors does 34 ^ 2 have ?,20,25
+108691_A,29616,"a certain no . when divided by 50 leaves a remainder 25 , what is the remainder if the same no . be divided by 15 ?",5,2
+71319_B,20166,7 people went to a restaurant for dinner . 6 of them spent $ 11 each on their meals and the seventh person spent $ 6 more than the average expenditure of all 7 people . what was the total amount of money that the 7 people spent ?,$ 84,$ 81
+118197_D,32016,a train 330 meters long is running with a speed of 60 kmph . in what time will it pass a man who is running at 6 kmph in the direction opposite to that in which the train is going ?,18 sec,16 sec
+101436_C,27782,"there are thirty - 4 lines that are tangent to a circle , and these lines create regions in the plane . can you tell how many of these regions are not enclosed ?",68,37
+12329_A,5234,"when positive integer x is divided by positive integer y , the remainder is 9 . if x / y = 86.12 , what is the value of y ?",75,96
+112625_C,30611,a fair coin is tossed 15 times . what is the probability of getting more heads than tails in 15 tosses ?,1 / 2,4 / 7
+71759_D,20276,the average of first 10 prime numbers is ?,12.9,12.2
+87909_D,24360,"a car was driving at 50 km / h for 30 minutes , and then at 90 km / h for another 40 minutes . what was its average speed ?",102,70
+23848_A,8145,"two trains , one from howrah to patna and the other from patna to howrah , start simultaneously . after they meet , the trains reach their destinations after 4 hours and 16 hours respectively . the ratio of their speeds is ?",4 : 2,4 : 5
+9923_A,4622,what is the sum of all remainders obtained when the first 200 natural numbers are divided by 9 ?,401,397
+57125_C,16567,the ratio of the volumes of a cube to that of the sphere which will fit inside the cube is ?,6.832 kg,6.632 kg
+18468_B,6786,dames school has 2000 boys and 5000 girls . what is the percentage increase from boys to total attendance and girls to total attendance ?,a ) 40 %,b ) 10 %
+69451_A,19693,"a man rows his boat 90 km downstream and 70 km upstream , taking 3 hours each time . find the speed of the stream ?",3.5 kmph,76 kmph
+108612_A,29596,"a bag contains an equal number of one rupee , 50 paise and 25 paise coins respectively . if the total value is 140 , how many coins of each type are there ?",80 coins,20 coins
+21795_B,7626,"paul ' s income is 20 % less than rex ' s income , quentin ' s income is 20 % less than paul ' s income , and sam ' s income is 40 % less than paul ' s income . if rex gave 60 % of his income to sam and 40 % of his income to quentin , quentin ' s new income would be what fraction of sam ' s new income ?",26 / 27,13 / 17
+118145_B,32003,( 23341379 × 72 ) = ?,1680579288,2142579288

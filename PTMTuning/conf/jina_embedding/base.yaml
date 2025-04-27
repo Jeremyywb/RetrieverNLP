@@ -1,0 +1,81 @@
+debug: false
+enable_cuda_optimizations: true
+use_wandb: false
+fold: 0
+task: base
+
+dataset:
+  query_dataset: ../input/synthetic.csv
+  content_dataset: ../input/eedi_content.csv
+  folder_dataset: ../input/fold_df.csv
+  negative_dataset: ...
+
+model:
+  name: jina_embedding
+  model_name: jina-embeddings-v3
+  backbone_path: jinaai/jina-embeddings-v3
+  model_type: jina_embedding
+  trust_remote_code: false
+  max_length: 512
+  sentence_pooling_method: cls
+  gradient_checkpointing: true
+  compile: false
+  attn_implementation: torch
+  negatives_cross_device: false
+  padding_side: right
+  add_eos_token: false
+
+  use_bnb: false
+  use_lora: false
+  lora:
+    r: 4
+    lora_alpha: 16
+    lora_dropout: 0.1
+    target_modules:
+      - q_proj
+      - k_proj
+      - v_proj
+      - o_proj
+    modules_to_save: []
+  
+
+train_params:
+  retriever_bs: 128 #memory ~ bs * num_negative or bs(if negative_dataset ==0)
+  sub_batch_size: 4 # emebding memory
+  query_bs: 128 # evaluate
+  content_bs: 128 # evaluate
+
+  num_negative: 0
+  warmup_pct: 0.1
+  num_epochs: 10
+  grad_accumulation_steps: 1
+  patience: 20
+  eval_at_start: false
+
+  
+  loss:
+    alpha: 0.3
+    beta: 0.5
+    gamma: 0.2
+optimizer:
+  name: AdamW
+  head_keywords: head
+  
+  lr:  1e-5
+  lr_lora_a:  1e-5
+  lr_lora_b: 5e-5
+  lr_embed_tokens: 8e-5
+  lr_head: 3e-4 
+
+  max_grad_norm: 1
+  adam_beta_1: 0.9
+  adam_beta_2: 0.95
+  adam_epsilon: 1e-8
+  weight_decay: 1e-2
+# 前10%训练步：max_grad_norm=0.5（严格稳定）
+
+# 中间50%训练步：max_grad_norm=1.0（平衡）
+
+# 后40%训练步：max_grad_norm=2.0（加速收敛）
+outputs:
+  model_dir: ../models/eedi_embed_jina

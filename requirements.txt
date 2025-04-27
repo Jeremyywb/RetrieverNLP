@@ -1,1 +1,52 @@
 bm25s
+
+数据1 dataframe：：
+查询数据｛
+query_id:查询id，唯一值,
+content_id: 正样本id， 
+MisconceptionName:正样本文本,
+QuestionText: 查询文本,
+Explanation: cot数据
+｝
+
+数据2 dataframe：
+样本池{
+	content_id:唯一值 其他所有content id都可以在这个字段找到，
+	MisconceptionName:正样本标签文本,
+}
+
+数据3 json：#数据来源 查询数据dataframe1的每个query_id对应内容构造prompt通过API获得COT
+	额外cot数据{
+
+		"query_id":查询id,
+		"content_id":样本id,
+		"Explanation":其他API获取的额外cot数据
+	}
+
+
+数据4 json:
+	semi 中等难度负样本}{
+		"query_id":查询 id，
+		"content_ids":10个中等难度样本的content_id 逗号分隔的拼接文本 如 22,33,22,33...	
+	}
+
+数据4 json:
+	hard 困难难度负样本}{
+		"query_id":查询 id，
+		"content_ids":10个困难难度样本的content_id 逗号分隔的拼接文本 如 22,33,22,33...	
+	}
+
+设计dataset，以简单为主。
+1. 一个统一可用的dataset，旨在可以对于查询文本、样本标签 MisconceptionName 文本 也即content的tokenized，以及cot文本进行tokenized，但是需要注意保留 query_id与每个dataset的item对应关系
+2. 减少计算量，所有样本content_id的tokenize通过样本池的tokenize关联获取
+3. 用于train的dataset，以query_id作为主键（但是注意他是文本，可能不能直接用到dataloader），收集其对应的 
+- 当前query_id下，QuestionText 的  tokenized
+- 当前query_id下，positive 正样本对应 的 MisconceptionName 标签 的tokenized
+- 当前query_id下，两个 cot （ 查询数据本身带有的cot以及额外的cot） 对应的 tokenized
+- 当模式为 easy 时，要求到此为止
+- 当模式为 semi 时，要求添加 当前 query_id 对应的 中等难度负样本，其tokenized
+- 当模式为 hard 时，要求添加 当前 query_id 对应的 中等难度负样本，其tokenized
+
+
+
+	

@@ -1,0 +1,55 @@
+debug: false
+enable_cuda_optimizations: true
+use_wandb: false
+fold: 0
+task: easy
+model:
+  name: jina_embedding
+  model_name: BGE-large-en
+  backbone_path: BAAI/bge-large-en-v1.5
+  model_type: bge_embedding
+  trust_remote_code: false
+  max_length: 512
+  sentence_pooling_method: cls
+  gradient_checkpointing: true
+  compile: false
+  attn_implementation: torch
+  negatives_cross_device: false
+  padding_side: right
+  add_eos_token: false
+  use_bnb: false
+  use_lora: false
+  lora:
+    r: 4
+    lora_alpha: 16
+    lora_dropout: 0.1
+    target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    modules_to_save: []
+train_params:
+  retriever_bs: 128
+  sub_batch_size: 4
+  query_bs: 128
+  content_bs: 128
+  loss:
+    alpha: 0.3
+    beta: 0.5
+    gamma: 0.2
+optimizer:
+  name: AdamW
+  head_keywords: head
+  lr: 1.0e-05
+  lr_lora_a: 1.0e-05
+  lr_lora_b: 5.0e-05
+  lr_embed_tokens: 8.0e-05
+  lr_head: 0.0003
+  max_grad_norm: 1
+  adam_beta_1: 0.9
+  adam_beta_2: 0.95
+  adam_epsilon: 1.0e-08
+  weight_decay: 0.01
+outputs:
+  model_dir: ../models/eedi_embed_bge

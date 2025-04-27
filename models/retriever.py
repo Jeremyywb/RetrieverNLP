@@ -153,13 +153,13 @@ class BgeBiEncoderModel(nn.Module):
 
                 target = torch.arange(scores.size(0), device=scores.device, dtype=torch.long)
                 target = target * group_size
-                loss = self.compute_loss(scores, target)
+                loss = self.compute_loss(q_reps, p_reps, p_reps)
             else:
                 scores = self.compute_similarity(q_reps[:, None, :,], p_reps.view(q_reps.size(0), group_size, -1)).squeeze(1) / self.temperature # B G
 
                 scores = scores.view(q_reps.size(0), -1)
                 target = torch.zeros(scores.size(0), device=scores.device, dtype=torch.long)
-                loss = self.compute_loss(scores, target)
+                loss = self.compute_loss(q_reps, p_reps, p_reps)
 
         else:
             scores = self.compute_similarity(q_reps, p_reps)
@@ -172,44 +172,32 @@ class BgeBiEncoderModel(nn.Module):
             p_reps=None,
         )
 
-    # def compute_loss(self, scores, target):
-    #     return self.cross_entropy(scores, target)
-    def compute_loss(self,scores, target, margin=1.0):
+    def compute_loss(self, query_emb, pos_emb, neg_emb, margin=1.0):
         """
-        计算 Pairwise Ranking Loss (Hinge Loss)
+        Compute triplet loss for query, positive and negative embeddings
         
-        参数:
-        scores: (batch_size, num_doc) - 每个查询的候选文档相似度分数
-        target: (batch_size, 1) - 正样本在每个查询中的索引
-        margin: float - 正样本与负样本的分数差的最小阈值
-        
-        返回:
-        loss: (batch_size,) - 每个查询的损失值
+        Args:
+            query_emb: (batch_size, hidden_size) - query embeddings
+            pos_emb: (batch_size, hidden_size) - positive content embeddings
+            neg_emb: (num_negatives, hidden_size) - negative content embeddings
+            margin: float - margin for triplet loss
+            
+        Returns:
+            loss: scalar tensor - average loss across batch
         """
-        batch_size, num_doc = scores.shape
+        # Compute positive similarities
+        pos_sim = torch.matmul(query_emb, pos_emb.t()).diag()
         
-        # 去掉 target 的维度，变成 (batch_size,) 
-        target = target
+        # Compute negative similarities
+        neg_sim = torch.matmul(query_emb, neg_emb.t())
         
-        # 提取正样本的分数 (batch_size,)
-        positive_scores = scores.gather(1, target.unsqueeze(1)).squeeze(1)
+        # Get hardest negative for each query
+        hardest_neg_sim = neg_sim.max(dim=1).values
         
-        # 创建负样本掩码 (正样本位置为 False，负样本位置为 True)
-        negative_mask = torch.ones_like(scores, dtype=torch.bool)
-        negative_mask.scatter_(1, target.unsqueeze(1), False)
+        # Compute triplet loss
+        loss = F.relu(margin - (pos_sim - hardest_neg_sim))
         
-        # 提取所有负样本的分数 (batch_size, num_doc-1)
-        negative_scores = scores.masked_select(negative_mask).view(batch_size, -1)
-        
-        # 计算最大负样本分数 (hardest negative) (batch_size,)
-        hardest_negative_scores = negative_scores.max(dim=1).values
-        
-        # 计算 Hinge Loss
-        loss = F.relu(margin - (positive_scores - hardest_negative_scores))
-        
-        # 返回损失
         return loss.mean()
-
 
     def _dist_gather_tensor(self, t: Optional[torch.Tensor]):
         if t is None:

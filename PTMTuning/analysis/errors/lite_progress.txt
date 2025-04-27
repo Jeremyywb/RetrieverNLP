@@ -1,0 +1,1657 @@
+1888_C,failed,2025-04-22T01:41:32.440235,'BailianMathEvaluator' object has no attribute 'full_df'
+1883_B,failed,2025-04-22T01:41:32.442226,'BailianMathEvaluator' object has no attribute 'full_df'
+1878_E,failed,2025-04-22T01:41:32.443977,'BailianMathEvaluator' object has no attribute 'full_df'
+1885_D,failed,2025-04-22T01:41:32.443977,'BailianMathEvaluator' object has no attribute 'full_df'
+1880_C,failed,2025-04-22T01:41:32.443977,'BailianMathEvaluator' object has no attribute 'full_df'
+1875_A,failed,2025-04-22T01:41:32.451913,'BailianMathEvaluator' object has no attribute 'full_df'
+1887_B,failed,2025-04-22T01:41:32.453962,'BailianMathEvaluator' object has no attribute 'full_df'
+1882_E,failed,2025-04-22T01:41:32.453962,'BailianMathEvaluator' object has no attribute 'full_df'
+1877_D,failed,2025-04-22T01:41:32.453962,'BailianMathEvaluator' object has no attribute 'full_df'
+1884_C,failed,2025-04-22T01:41:32.460325,'BailianMathEvaluator' object has no attribute 'full_df'
+1879_A,failed,2025-04-22T01:41:32.460325,'BailianMathEvaluator' object has no attribute 'full_df'
+1874_C,failed,2025-04-22T01:41:32.460325,'BailianMathEvaluator' object has no attribute 'full_df'
+1886_E,failed,2025-04-22T01:41:32.460325,'BailianMathEvaluator' object has no attribute 'full_df'
+1881_D,failed,2025-04-22T01:41:32.460325,'BailianMathEvaluator' object has no attribute 'full_df'
+1876_C,failed,2025-04-22T01:41:32.460325,'BailianMathEvaluator' object has no attribute 'full_df'
+1886_E,failed,2025-04-22T01:43:55.557892,single positional indexer is out-of-bounds
+1881_D,failed,2025-04-22T01:43:55.557892,single positional indexer is out-of-bounds
+1876_C,failed,2025-04-22T01:43:55.572526,single positional indexer is out-of-bounds
+1888_C,failed,2025-04-22T01:43:55.573688,single positional indexer is out-of-bounds
+1883_B,failed,2025-04-22T01:43:55.573688,single positional indexer is out-of-bounds
+1878_E,failed,2025-04-22T01:43:55.573688,single positional indexer is out-of-bounds
+1885_D,failed,2025-04-22T01:43:55.573688,single positional indexer is out-of-bounds
+1880_C,failed,2025-04-22T01:43:55.588532,single positional indexer is out-of-bounds
+1875_A,failed,2025-04-22T01:43:55.588532,single positional indexer is out-of-bounds
+1887_B,failed,2025-04-22T01:43:55.588532,single positional indexer is out-of-bounds
+1882_E,failed,2025-04-22T01:43:55.588532,single positional indexer is out-of-bounds
+1877_D,failed,2025-04-22T01:43:55.588532,single positional indexer is out-of-bounds
+1884_C,failed,2025-04-22T01:43:55.604566,single positional indexer is out-of-bounds
+1879_A,failed,2025-04-22T01:43:55.604566,single positional indexer is out-of-bounds
+1874_C,failed,2025-04-22T01:43:55.604566,single positional indexer is out-of-bounds
+1917_D,failed,2025-04-22T01:44:56.423265,single positional indexer is out-of-bounds
+1891_A,failed,2025-04-22T01:44:56.429936,single positional indexer is out-of-bounds
+1897_D,failed,2025-04-22T01:44:56.429936,single positional indexer is out-of-bounds
+1871_D,failed,2025-04-22T01:44:56.437096,single positional indexer is out-of-bounds
+1904_B,failed,2025-04-22T01:44:56.437096,single positional indexer is out-of-bounds
+1878_E,failed,2025-04-22T01:44:56.437096,single positional indexer is out-of-bounds
+1911_B,failed,2025-04-22T01:44:56.447480,single positional indexer is out-of-bounds
+1885_D,failed,2025-04-22T01:44:56.450982,single positional indexer is out-of-bounds
+1918_E,failed,2025-04-22T01:44:56.455141,single positional indexer is out-of-bounds
+1892_C,failed,2025-04-22T01:44:56.456779,single positional indexer is out-of-bounds
+1898_E,failed,2025-04-22T01:44:56.462874,single positional indexer is out-of-bounds
+1872_A,failed,2025-04-22T01:44:56.465627,single positional indexer is out-of-bounds
+1905_D,failed,2025-04-22T01:44:56.465627,single positional indexer is out-of-bounds
+1879_A,failed,2025-04-22T01:44:56.465627,single positional indexer is out-of-bounds
+1912_C,failed,2025-04-22T01:44:56.477310,single positional indexer is out-of-bounds
+1886_E,failed,2025-04-22T01:44:56.478597,single positional indexer is out-of-bounds
+1893_D,failed,2025-04-22T01:44:56.478597,single positional indexer is out-of-bounds
+1899_A,failed,2025-04-22T01:44:56.487154,single positional indexer is out-of-bounds
+1873_B,failed,2025-04-22T01:44:56.487154,single positional indexer is out-of-bounds
+1906_E,failed,2025-04-22T01:44:56.494645,single positional indexer is out-of-bounds
+1880_C,failed,2025-04-22T01:44:56.496976,single positional indexer is out-of-bounds
+1913_D,failed,2025-04-22T01:44:56.496976,single positional indexer is out-of-bounds
+1887_B,failed,2025-04-22T01:44:56.503167,single positional indexer is out-of-bounds
+1894_E,failed,2025-04-22T01:44:56.509435,single positional indexer is out-of-bounds
+1900_B,failed,2025-04-22T01:44:56.509435,single positional indexer is out-of-bounds
+1874_C,failed,2025-04-22T01:44:56.509435,single positional indexer is out-of-bounds
+1907_B,failed,2025-04-22T01:44:56.509435,single positional indexer is out-of-bounds
+1881_D,failed,2025-04-22T01:44:56.523717,single positional indexer is out-of-bounds
+1914_E,failed,2025-04-22T01:44:56.525454,single positional indexer is out-of-bounds
+1888_C,failed,2025-04-22T01:44:56.525454,single positional indexer is out-of-bounds
+1895_B,failed,2025-04-22T01:44:56.525454,single positional indexer is out-of-bounds
+1901_C,failed,2025-04-22T01:44:56.525454,single positional indexer is out-of-bounds
+1875_A,failed,2025-04-22T01:44:56.542600,single positional indexer is out-of-bounds
+1908_C,failed,2025-04-22T01:44:56.542600,single positional indexer is out-of-bounds
+1882_E,failed,2025-04-22T01:44:56.547615,single positional indexer is out-of-bounds
+1915_A,failed,2025-04-22T01:44:56.547615,single positional indexer is out-of-bounds
+1889_D,failed,2025-04-22T01:44:56.556837,single positional indexer is out-of-bounds
+1869_B,failed,2025-04-22T01:44:56.558396,single positional indexer is out-of-bounds
+1896_C,failed,2025-04-22T01:44:56.558396,single positional indexer is out-of-bounds
+1902_E,failed,2025-04-22T01:44:56.558396,single positional indexer is out-of-bounds
+1876_C,failed,2025-04-22T01:44:56.558396,single positional indexer is out-of-bounds
+1909_D,failed,2025-04-22T01:44:56.572950,single positional indexer is out-of-bounds
+1883_B,failed,2025-04-22T01:44:56.572950,single positional indexer is out-of-bounds
+1916_C,failed,2025-04-22T01:44:56.581016,single positional indexer is out-of-bounds
+1890_E,failed,2025-04-22T01:44:56.584563,single positional indexer is out-of-bounds
+1870_C,failed,2025-04-22T01:44:56.588708,single positional indexer is out-of-bounds
+1903_A,failed,2025-04-22T01:44:56.589964,single positional indexer is out-of-bounds
+1877_D,failed,2025-04-22T01:44:56.589964,single positional indexer is out-of-bounds
+1910_E,failed,2025-04-22T01:44:56.589964,single positional indexer is out-of-bounds
+1884_C,failed,2025-04-22T01:44:56.602790,single positional indexer is out-of-bounds
+1917_D,failed,2025-04-22T01:46:08.017459,single positional indexer is out-of-bounds
+1891_A,failed,2025-04-22T01:46:08.023007,single positional indexer is out-of-bounds
+1897_D,failed,2025-04-22T01:46:08.023007,single positional indexer is out-of-bounds
+1871_D,failed,2025-04-22T01:46:08.023007,single positional indexer is out-of-bounds
+1904_B,failed,2025-04-22T01:46:08.023007,single positional indexer is out-of-bounds
+1878_E,failed,2025-04-22T01:46:08.038722,single positional indexer is out-of-bounds
+1911_B,failed,2025-04-22T01:46:08.038722,single positional indexer is out-of-bounds
+1885_D,failed,2025-04-22T01:46:08.046049,single positional indexer is out-of-bounds
+1918_E,failed,2025-04-22T01:46:08.050471,single positional indexer is out-of-bounds
+1892_C,failed,2025-04-22T01:46:08.053926,single positional indexer is out-of-bounds
+1898_E,failed,2025-04-22T01:46:08.055431,single positional indexer is out-of-bounds
+1872_A,failed,2025-04-22T01:46:08.055431,single positional indexer is out-of-bounds
+1905_D,failed,2025-04-22T01:46:08.055431,single positional indexer is out-of-bounds
+1879_A,failed,2025-04-22T01:46:08.055431,single positional indexer is out-of-bounds
+1912_C,failed,2025-04-22T01:46:08.055431,single positional indexer is out-of-bounds
+1886_E,failed,2025-04-22T01:46:08.070043,single positional indexer is out-of-bounds
+1893_D,failed,2025-04-22T01:46:08.074351,single positional indexer is out-of-bounds
+1899_A,failed,2025-04-22T01:46:08.074351,single positional indexer is out-of-bounds
+1873_B,failed,2025-04-22T01:46:08.074351,single positional indexer is out-of-bounds
+1906_E,failed,2025-04-22T01:46:08.087644,single positional indexer is out-of-bounds
+1880_C,failed,2025-04-22T01:46:08.087644,single positional indexer is out-of-bounds
+1913_D,failed,2025-04-22T01:46:08.087644,single positional indexer is out-of-bounds
+1887_B,failed,2025-04-22T01:46:08.087644,single positional indexer is out-of-bounds
+1894_E,failed,2025-04-22T01:46:08.087644,single positional indexer is out-of-bounds
+1900_B,failed,2025-04-22T01:46:08.101776,single positional indexer is out-of-bounds
+1874_C,failed,2025-04-22T01:46:08.101776,single positional indexer is out-of-bounds
+1907_B,failed,2025-04-22T01:46:08.101776,single positional indexer is out-of-bounds
+1881_D,failed,2025-04-22T01:46:08.101776,single positional indexer is out-of-bounds
+1914_E,failed,2025-04-22T01:46:08.117787,single positional indexer is out-of-bounds
+1888_C,failed,2025-04-22T01:46:08.117787,single positional indexer is out-of-bounds
+1895_B,failed,2025-04-22T01:46:08.117787,single positional indexer is out-of-bounds
+1901_C,failed,2025-04-22T01:46:08.117787,single positional indexer is out-of-bounds
+1875_A,failed,2025-04-22T01:46:08.117787,single positional indexer is out-of-bounds
+1908_C,failed,2025-04-22T01:46:08.135073,single positional indexer is out-of-bounds
+1882_E,failed,2025-04-22T01:46:08.135073,single positional indexer is out-of-bounds
+1915_A,failed,2025-04-22T01:46:08.135073,single positional indexer is out-of-bounds
+1889_D,failed,2025-04-22T01:46:08.135073,single positional indexer is out-of-bounds
+1869_B,failed,2025-04-22T01:46:08.135073,single positional indexer is out-of-bounds
+1896_C,failed,2025-04-22T01:46:08.150503,single positional indexer is out-of-bounds
+1902_E,failed,2025-04-22T01:46:08.150503,single positional indexer is out-of-bounds
+1876_C,failed,2025-04-22T01:46:08.150503,single positional indexer is out-of-bounds
+1909_D,failed,2025-04-22T01:46:08.150503,single positional indexer is out-of-bounds
+1883_B,failed,2025-04-22T01:46:08.150503,single positional indexer is out-of-bounds
+1916_C,failed,2025-04-22T01:46:08.167439,single positional indexer is out-of-bounds
+1890_E,failed,2025-04-22T01:46:08.167439,single positional indexer is out-of-bounds
+1870_C,failed,2025-04-22T01:46:08.167439,single positional indexer is out-of-bounds
+1903_A,failed,2025-04-22T01:46:08.167439,single positional indexer is out-of-bounds
+1877_D,failed,2025-04-22T01:46:08.181924,single positional indexer is out-of-bounds
+1910_E,failed,2025-04-22T01:46:08.181924,single positional indexer is out-of-bounds
+1884_C,failed,2025-04-22T01:46:08.181924,single positional indexer is out-of-bounds
+1917_D,failed,2025-04-22T01:48:57.200429,single positional indexer is out-of-bounds
+1891_A,failed,2025-04-22T01:48:57.209218,single positional indexer is out-of-bounds
+1897_D,failed,2025-04-22T01:48:57.231280,single positional indexer is out-of-bounds
+1871_D,failed,2025-04-22T01:48:57.248788,single positional indexer is out-of-bounds
+1904_B,failed,2025-04-22T01:48:57.265039,single positional indexer is out-of-bounds
+1878_E,failed,2025-04-22T01:48:57.286943,single positional indexer is out-of-bounds
+1911_B,failed,2025-04-22T01:48:57.305960,single positional indexer is out-of-bounds
+1885_D,failed,2025-04-22T01:48:57.321525,single positional indexer is out-of-bounds
+1918_E,failed,2025-04-22T01:48:57.340172,single positional indexer is out-of-bounds
+1892_C,failed,2025-04-22T01:48:57.352810,single positional indexer is out-of-bounds
+1898_E,failed,2025-04-22T01:48:57.369785,single positional indexer is out-of-bounds
+1872_A,failed,2025-04-22T01:48:57.382325,single positional indexer is out-of-bounds
+1905_D,failed,2025-04-22T01:48:57.404964,single positional indexer is out-of-bounds
+1879_A,failed,2025-04-22T01:48:57.421984,single positional indexer is out-of-bounds
+1912_C,failed,2025-04-22T01:48:57.434088,single positional indexer is out-of-bounds
+1886_E,failed,2025-04-22T01:48:57.459685,single positional indexer is out-of-bounds
+1893_D,failed,2025-04-22T01:48:57.480488,single positional indexer is out-of-bounds
+1899_A,failed,2025-04-22T01:48:57.502307,single positional indexer is out-of-bounds
+1873_B,failed,2025-04-22T01:48:57.517548,single positional indexer is out-of-bounds
+1906_E,failed,2025-04-22T01:48:57.532213,single positional indexer is out-of-bounds
+1880_C,failed,2025-04-22T01:48:57.548067,single positional indexer is out-of-bounds
+1913_D,failed,2025-04-22T01:48:57.561931,single positional indexer is out-of-bounds
+1887_B,failed,2025-04-22T01:48:57.584567,single positional indexer is out-of-bounds
+1894_E,failed,2025-04-22T01:48:57.602285,single positional indexer is out-of-bounds
+1900_B,failed,2025-04-22T01:48:57.620832,single positional indexer is out-of-bounds
+1874_C,failed,2025-04-22T01:48:57.641486,single positional indexer is out-of-bounds
+1907_B,failed,2025-04-22T01:48:57.659239,single positional indexer is out-of-bounds
+1881_D,failed,2025-04-22T01:48:57.675927,single positional indexer is out-of-bounds
+1914_E,failed,2025-04-22T01:48:57.691719,single positional indexer is out-of-bounds
+1888_C,failed,2025-04-22T01:48:57.707007,single positional indexer is out-of-bounds
+1895_B,failed,2025-04-22T01:48:57.723133,single positional indexer is out-of-bounds
+1901_C,failed,2025-04-22T01:48:57.736561,single positional indexer is out-of-bounds
+1875_A,failed,2025-04-22T01:48:57.753732,single positional indexer is out-of-bounds
+1908_C,failed,2025-04-22T01:48:57.770886,single positional indexer is out-of-bounds
+1882_E,failed,2025-04-22T01:48:57.781038,single positional indexer is out-of-bounds
+1915_A,failed,2025-04-22T01:48:57.796774,single positional indexer is out-of-bounds
+1889_D,failed,2025-04-22T01:48:57.814691,single positional indexer is out-of-bounds
+1869_B,failed,2025-04-22T01:48:57.834999,single positional indexer is out-of-bounds
+1896_C,failed,2025-04-22T01:48:57.850719,single positional indexer is out-of-bounds
+1902_E,failed,2025-04-22T01:48:57.865674,single positional indexer is out-of-bounds
+1876_C,failed,2025-04-22T01:48:57.881575,single positional indexer is out-of-bounds
+1909_D,failed,2025-04-22T01:48:57.898259,single positional indexer is out-of-bounds
+1883_B,failed,2025-04-22T01:48:57.913000,single positional indexer is out-of-bounds
+1916_C,failed,2025-04-22T01:48:57.922783,single positional indexer is out-of-bounds
+1890_E,failed,2025-04-22T01:48:57.945221,single positional indexer is out-of-bounds
+1870_C,failed,2025-04-22T01:48:57.961766,single positional indexer is out-of-bounds
+1903_A,failed,2025-04-22T01:48:57.971218,single positional indexer is out-of-bounds
+1877_D,failed,2025-04-22T01:48:57.992757,single positional indexer is out-of-bounds
+1910_E,failed,2025-04-22T01:48:58.010005,single positional indexer is out-of-bounds
+1884_C,failed,2025-04-22T01:48:58.024905,single positional indexer is out-of-bounds
+1917_D,failed,2025-04-22T01:50:53.278427,single positional indexer is out-of-bounds
+1891_A,failed,2025-04-22T01:50:53.278427,single positional indexer is out-of-bounds
+1897_D,failed,2025-04-22T01:50:53.278427,single positional indexer is out-of-bounds
+1871_D,failed,2025-04-22T01:50:53.278427,single positional indexer is out-of-bounds
+1904_B,failed,2025-04-22T01:50:53.293226,single positional indexer is out-of-bounds
+1878_E,failed,2025-04-22T01:50:53.294288,single positional indexer is out-of-bounds
+1911_B,failed,2025-04-22T01:50:53.300520,single positional indexer is out-of-bounds
+1885_D,failed,2025-04-22T01:50:53.300520,single positional indexer is out-of-bounds
+1918_E,failed,2025-04-22T01:50:53.300520,single positional indexer is out-of-bounds
+1892_C,failed,2025-04-22T01:50:53.311979,single positional indexer is out-of-bounds
+1898_E,failed,2025-04-22T01:50:53.311979,single positional indexer is out-of-bounds
+1872_A,failed,2025-04-22T01:50:53.311979,single positional indexer is out-of-bounds
+1905_D,failed,2025-04-22T01:50:53.311979,single positional indexer is out-of-bounds
+1879_A,failed,2025-04-22T01:50:53.328013,single positional indexer is out-of-bounds
+1912_C,failed,2025-04-22T01:50:53.328524,single positional indexer is out-of-bounds
+1886_E,failed,2025-04-22T01:50:53.328524,single positional indexer is out-of-bounds
+1893_D,failed,2025-04-22T01:50:53.328524,single positional indexer is out-of-bounds
+1899_A,failed,2025-04-22T01:50:53.344251,single positional indexer is out-of-bounds
+1873_B,failed,2025-04-22T01:50:53.345019,single positional indexer is out-of-bounds
+1906_E,failed,2025-04-22T01:50:53.345019,single positional indexer is out-of-bounds
+1880_C,failed,2025-04-22T01:50:53.345019,single positional indexer is out-of-bounds
+1913_D,failed,2025-04-22T01:50:53.345019,single positional indexer is out-of-bounds
+1887_B,failed,2025-04-22T01:50:53.364914,single positional indexer is out-of-bounds
+1894_E,failed,2025-04-22T01:50:53.366921,single positional indexer is out-of-bounds
+1900_B,failed,2025-04-22T01:50:53.366921,single positional indexer is out-of-bounds
+1874_C,failed,2025-04-22T01:50:53.366921,single positional indexer is out-of-bounds
+1907_B,failed,2025-04-22T01:50:53.380637,single positional indexer is out-of-bounds
+1881_D,failed,2025-04-22T01:50:53.382643,single positional indexer is out-of-bounds
+1914_E,failed,2025-04-22T01:50:53.382643,single positional indexer is out-of-bounds
+1888_C,failed,2025-04-22T01:50:53.382643,single positional indexer is out-of-bounds
+1895_B,failed,2025-04-22T01:50:53.395743,single positional indexer is out-of-bounds
+1901_C,failed,2025-04-22T01:50:53.400675,single positional indexer is out-of-bounds
+1875_A,failed,2025-04-22T01:50:53.400675,single positional indexer is out-of-bounds
+1908_C,failed,2025-04-22T01:50:53.400675,single positional indexer is out-of-bounds
+1882_E,failed,2025-04-22T01:50:53.411414,single positional indexer is out-of-bounds
+1915_A,failed,2025-04-22T01:50:53.411414,single positional indexer is out-of-bounds
+1889_D,failed,2025-04-22T01:50:53.411414,single positional indexer is out-of-bounds
+1869_B,failed,2025-04-22T01:50:53.411414,single positional indexer is out-of-bounds
+1896_C,failed,2025-04-22T01:50:53.429229,single positional indexer is out-of-bounds
+1902_E,failed,2025-04-22T01:50:53.429229,single positional indexer is out-of-bounds
+1876_C,failed,2025-04-22T01:50:53.429229,single positional indexer is out-of-bounds
+1909_D,failed,2025-04-22T01:50:53.429229,single positional indexer is out-of-bounds
+1883_B,failed,2025-04-22T01:50:53.444904,single positional indexer is out-of-bounds
+1916_C,failed,2025-04-22T01:50:53.444904,single positional indexer is out-of-bounds
+1890_E,failed,2025-04-22T01:50:53.444904,single positional indexer is out-of-bounds
+1870_C,failed,2025-04-22T01:50:53.444904,single positional indexer is out-of-bounds
+1903_A,failed,2025-04-22T01:50:53.461631,single positional indexer is out-of-bounds
+1877_D,failed,2025-04-22T01:50:53.461631,single positional indexer is out-of-bounds
+1910_E,failed,2025-04-22T01:50:53.467415,single positional indexer is out-of-bounds
+1884_C,failed,2025-04-22T01:50:53.467415,single positional indexer is out-of-bounds
+1917_D,failed,2025-04-22T01:51:32.146051,single positional indexer is out-of-bounds
+1891_A,failed,2025-04-22T01:51:32.150310,single positional indexer is out-of-bounds
+1897_D,failed,2025-04-22T01:51:32.153858,single positional indexer is out-of-bounds
+1871_D,failed,2025-04-22T01:51:32.157334,single positional indexer is out-of-bounds
+1904_B,failed,2025-04-22T01:51:32.161770,single positional indexer is out-of-bounds
+1878_E,failed,2025-04-22T01:51:32.166014,single positional indexer is out-of-bounds
+1911_B,failed,2025-04-22T01:51:32.168779,single positional indexer is out-of-bounds
+1885_D,failed,2025-04-22T01:51:32.172678,single positional indexer is out-of-bounds
+1918_E,failed,2025-04-22T01:51:32.176856,single positional indexer is out-of-bounds
+1892_C,failed,2025-04-22T01:51:32.180081,single positional indexer is out-of-bounds
+1898_E,failed,2025-04-22T01:51:32.183853,single positional indexer is out-of-bounds
+1872_A,failed,2025-04-22T01:51:32.189177,single positional indexer is out-of-bounds
+1905_D,failed,2025-04-22T01:51:32.192453,single positional indexer is out-of-bounds
+1879_A,failed,2025-04-22T01:51:32.196349,single positional indexer is out-of-bounds
+1912_C,failed,2025-04-22T01:51:32.199684,single positional indexer is out-of-bounds
+1886_E,failed,2025-04-22T01:51:32.205203,single positional indexer is out-of-bounds
+1893_D,failed,2025-04-22T01:51:32.209426,single positional indexer is out-of-bounds
+1899_A,failed,2025-04-22T01:51:32.213444,single positional indexer is out-of-bounds
+1873_B,failed,2025-04-22T01:51:32.213444,single positional indexer is out-of-bounds
+1906_E,failed,2025-04-22T01:51:32.213444,single positional indexer is out-of-bounds
+1880_C,failed,2025-04-22T01:51:32.213444,single positional indexer is out-of-bounds
+1913_D,failed,2025-04-22T01:51:32.226891,single positional indexer is out-of-bounds
+1887_B,failed,2025-04-22T01:51:32.229040,single positional indexer is out-of-bounds
+1894_E,failed,2025-04-22T01:51:32.235036,single positional indexer is out-of-bounds
+1900_B,failed,2025-04-22T01:51:32.235036,single positional indexer is out-of-bounds
+1874_C,failed,2025-04-22T01:51:32.242727,single positional indexer is out-of-bounds
+1907_B,failed,2025-04-22T01:51:32.246305,single positional indexer is out-of-bounds
+1881_D,failed,2025-04-22T01:51:32.248312,single positional indexer is out-of-bounds
+1914_E,failed,2025-04-22T01:51:32.251265,single positional indexer is out-of-bounds
+1888_C,failed,2025-04-22T01:51:32.251265,single positional indexer is out-of-bounds
+1895_B,failed,2025-04-22T01:51:32.260572,single positional indexer is out-of-bounds
+1901_C,failed,2025-04-22T01:51:32.260572,single positional indexer is out-of-bounds
+1875_A,failed,2025-04-22T01:51:32.260572,single positional indexer is out-of-bounds
+1908_C,failed,2025-04-22T01:51:32.268927,single positional indexer is out-of-bounds
+1882_E,failed,2025-04-22T01:51:32.276273,single positional indexer is out-of-bounds
+1915_A,failed,2025-04-22T01:51:32.278343,single positional indexer is out-of-bounds
+1889_D,failed,2025-04-22T01:51:32.283444,single positional indexer is out-of-bounds
+1869_B,failed,2025-04-22T01:51:32.283444,single positional indexer is out-of-bounds
+1896_C,failed,2025-04-22T01:51:32.283444,single positional indexer is out-of-bounds
+1902_E,failed,2025-04-22T01:51:32.290869,single positional indexer is out-of-bounds
+1876_C,failed,2025-04-22T01:51:32.293796,single positional indexer is out-of-bounds
+1909_D,failed,2025-04-22T01:51:32.299072,single positional indexer is out-of-bounds
+1883_B,failed,2025-04-22T01:51:32.301080,single positional indexer is out-of-bounds
+1916_C,failed,2025-04-22T01:51:32.305564,single positional indexer is out-of-bounds
+1890_E,failed,2025-04-22T01:51:32.310692,single positional indexer is out-of-bounds
+1870_C,failed,2025-04-22T01:51:32.312707,single positional indexer is out-of-bounds
+1903_A,failed,2025-04-22T01:51:32.317262,single positional indexer is out-of-bounds
+1877_D,failed,2025-04-22T01:51:32.317262,single positional indexer is out-of-bounds
+1910_E,failed,2025-04-22T01:51:32.317262,single positional indexer is out-of-bounds
+1884_C,failed,2025-04-22T01:51:32.327388,single positional indexer is out-of-bounds
+1885_D,success,2025-04-22T01:59:32.367869
+1892_C,success,2025-04-22T02:00:25.447450
+1871_D,success,2025-04-22T02:00:25.447450
+1917_D,success,2025-04-22T02:00:25.452492
+1918_E,success,2025-04-22T02:00:25.456185
+1897_D,success,2025-04-22T02:00:25.456185
+1891_A,success,2025-04-22T02:00:25.458086
+1904_B,success,2025-04-22T02:00:25.460006
+1878_E,success,2025-04-22T02:00:25.462591
+1911_B,success,2025-04-22T02:00:25.462591
+1879_A,success,2025-04-22T02:00:33.118149
+1899_A,success,2025-04-22T02:01:25.497053
+1912_C,success,2025-04-22T02:01:25.518379
+1886_E,success,2025-04-22T02:01:25.518379
+1898_E,success,2025-04-22T02:01:25.518379
+1893_D,success,2025-04-22T02:01:25.518379
+1873_B,success,2025-04-22T02:01:25.518379
+1906_E,success,2025-04-22T02:01:25.518379
+1905_D,success,2025-04-22T02:01:25.518379
+1872_A,success,2025-04-22T02:01:25.531342
+1894_E,success,2025-04-22T02:01:33.571663
+1880_C,success,2025-04-22T02:02:25.436794
+1900_B,success,2025-04-22T02:02:25.473761
+1874_C,success,2025-04-22T02:02:25.473761
+1881_D,success,2025-04-22T02:02:25.493472
+1907_B,success,2025-04-22T02:02:25.493472
+1914_E,success,2025-04-22T02:02:25.493472
+1888_C,success,2025-04-22T02:02:25.493472
+1887_B,success,2025-04-22T02:02:25.493472
+1913_D,success,2025-04-22T02:02:25.540232
+1896_C,success,2025-04-22T02:02:31.054740
+1869_B,success,2025-04-22T02:03:25.437757
+1875_A,success,2025-04-22T02:03:25.459368
+1902_E,success,2025-04-22T02:03:25.460983
+1895_B,success,2025-04-22T02:03:25.462509
+1908_C,success,2025-04-22T02:03:25.462509
+1915_A,success,2025-04-22T02:03:25.466627
+1889_D,success,2025-04-22T02:03:25.469214
+1882_E,success,2025-04-22T02:03:25.471300
+1901_C,success,2025-04-22T02:03:25.473311
+1903_A,success,2025-04-22T02:03:29.335035
+1870_C,success,2025-04-22T02:03:31.350499
+1877_D,success,2025-04-22T02:03:31.420543
+1883_B,success,2025-04-22T02:03:31.481787
+1876_C,success,2025-04-22T02:03:31.546248
+1910_E,success,2025-04-22T02:03:31.848354
+1884_C,success,2025-04-22T02:03:32.139209
+1909_D,success,2025-04-22T02:03:32.145973
+1916_C,success,2025-04-22T02:03:32.505866
+1890_E,success,2025-04-22T02:03:38.306086
+111420_B,success,2025-04-22T02:06:18.348667
+33156_D,success,2025-04-22T02:07:11.872887
+94817_A,success,2025-04-22T02:07:11.873394
+62946_A,success,2025-04-22T02:07:12.181687
+61926_B,success,2025-04-22T02:07:12.183843
+9923_A,success,2025-04-22T02:07:12.185897
+36764_E,success,2025-04-22T02:07:12.189325
+28498_E,success,2025-04-22T02:07:12.191363
+34495_C,success,2025-04-22T02:07:12.192389
+105964_E,success,2025-04-22T02:07:12.192389
+57125_C,success,2025-04-22T02:07:17.469897
+46690_D,success,2025-04-22T02:08:12.014315
+99912_A,success,2025-04-22T02:08:12.014315
+118793_B,success,2025-04-22T02:08:12.024265
+76605_D,success,2025-04-22T02:08:12.024265
+71325_E,success,2025-04-22T02:08:12.028746
+6316_B,success,2025-04-22T02:08:12.028746
+83526_A,success,2025-04-22T02:08:12.028746
+27921_D,success,2025-04-22T02:08:12.035814
+88523_E,success,2025-04-22T02:08:12.037981
+32276_E,success,2025-04-22T02:08:20.287955
+99365_A,success,2025-04-22T02:09:12.008245
+105153_D,success,2025-04-22T02:09:12.010305
+100325_E,success,2025-04-22T02:09:12.013910
+25490_E,success,2025-04-22T02:09:12.019245
+94770_B,success,2025-04-22T02:09:12.020273
+52121_D,success,2025-04-22T02:09:12.023591
+71535_D,success,2025-04-22T02:09:12.024593
+18468_B,success,2025-04-22T02:09:12.026594
+108517_B,success,2025-04-22T02:09:12.193531
+92820_D,success,2025-04-22T02:09:20.070738
+2576_D,success,2025-04-22T02:10:11.990807
+102207_B,success,2025-04-22T02:10:12.005297
+31719_E,success,2025-04-22T02:10:12.006303
+20883_B,success,2025-04-22T02:10:12.007304
+69451_A,success,2025-04-22T02:10:12.009304
+72910_A,success,2025-04-22T02:10:12.010304
+115962_D,success,2025-04-22T02:10:12.012692
+35933_C,success,2025-04-22T02:10:12.013852
+114476_E,success,2025-04-22T02:10:12.015299
+84528_E,success,2025-04-22T02:10:18.355063
+18587_B,success,2025-04-22T02:11:12.155450
+20506_E,success,2025-04-22T02:11:12.162128
+10698_D,success,2025-04-22T02:11:12.162128
+66281_A,success,2025-04-22T02:11:12.166836
+41848_E,success,2025-04-22T02:11:12.167860
+12502_E,success,2025-04-22T02:11:12.168887
+48019_E,success,2025-04-22T02:11:12.170941
+108612_A,success,2025-04-22T02:11:12.172940
+18024_C,success,2025-04-22T02:11:12.173972
+118145_B,success,2025-04-22T02:11:18.460501
+99736_A,success,2025-04-22T02:12:12.006912
+52068_B,success,2025-04-22T02:12:12.006912
+40877_A,success,2025-04-22T02:12:12.006912
+25308_B,success,2025-04-22T02:12:12.013189
+29097_E,success,2025-04-22T02:12:12.016817
+10478_A,success,2025-04-22T02:12:12.018377
+104174_E,success,2025-04-22T02:12:12.018377
+25381_C,success,2025-04-22T02:12:12.018377
+21795_B,success,2025-04-22T02:12:12.023894
+100223_A,success,2025-04-22T02:12:16.831115
+38586_A,success,2025-04-22T02:13:12.141786
+2619_D,success,2025-04-22T02:13:12.221009
+111656_D,success,2025-04-22T02:13:12.221009
+14118_B,success,2025-04-22T02:13:12.221009
+56123_D,success,2025-04-22T02:13:12.221009
+94045_B,success,2025-04-22T02:13:12.238153
+8643_D,success,2025-04-22T02:13:12.239684
+44608_D,success,2025-04-22T02:13:12.240694
+109085_D,success,2025-04-22T02:13:12.250536
+95188_E,success,2025-04-22T02:13:18.228842
+21575_E,success,2025-04-22T02:14:12.275543
+10241_B,success,2025-04-22T02:14:12.278405
+113396_C,success,2025-04-22T02:14:12.281405
+48164_A,success,2025-04-22T02:14:12.284417
+52766_C,success,2025-04-22T02:14:12.286418
+88209_A,success,2025-04-22T02:14:12.288201
+38757_C,success,2025-04-22T02:14:12.289681
+101998_E,success,2025-04-22T02:14:12.421324
+50879_A,success,2025-04-22T02:14:12.421324
+86163_C,success,2025-04-22T02:14:17.683838
+41134_D,success,2025-04-22T02:15:12.085575
+18187_C,success,2025-04-22T02:15:12.087650
+116230_B,success,2025-04-22T02:15:12.087650
+72769_B,success,2025-04-22T02:15:12.090059
+20536_D,success,2025-04-22T02:15:12.092234
+110177_C,success,2025-04-22T02:15:12.094658
+112721_C,success,2025-04-22T02:15:12.095768
+45733_D,success,2025-04-22T02:15:12.097919
+113931_B,success,2025-04-22T02:15:12.099947
+113969_E,success,2025-04-22T02:15:17.478162
+63699_B,success,2025-04-22T02:16:12.167470
+50772_C,success,2025-04-22T02:16:12.167470
+53251_A,success,2025-04-22T02:16:12.167470
+89401_B,success,2025-04-22T02:16:12.174855
+52297_C,success,2025-04-22T02:16:12.175869
+39831_B,success,2025-04-22T02:16:12.175869
+71079_C,success,2025-04-22T02:16:12.179564
+37624_A,success,2025-04-22T02:16:12.182013
+65983_D,success,2025-04-22T02:16:12.183702
+44598_A,success,2025-04-22T02:16:17.851013
+19019_B,success,2025-04-22T02:17:12.238529
+16311_C,success,2025-04-22T02:17:12.240907
+114450_A,success,2025-04-22T02:17:12.241943
+62103_B,success,2025-04-22T02:17:12.242949
+45382_C,success,2025-04-22T02:17:12.247014
+76626_E,success,2025-04-22T02:17:12.249037
+119626_B,success,2025-04-22T02:17:12.250041
+106752_C,success,2025-04-22T02:17:12.325021
+64639_A,success,2025-04-22T02:17:12.445996
+15504_C,success,2025-04-22T02:17:16.635409
+90282_B,success,2025-04-22T02:18:12.140733
+95031_B,success,2025-04-22T02:18:12.140733
+92824_E,success,2025-04-22T02:18:12.143883
+3447_B,success,2025-04-22T02:18:12.155290
+69639_A,success,2025-04-22T02:18:12.156856
+113676_A,success,2025-04-22T02:18:12.157965
+13556_B,success,2025-04-22T02:18:12.157965
+33078_B,success,2025-04-22T02:18:12.157965
+40902_D,success,2025-04-22T02:18:12.421436
+26860_B,success,2025-04-22T02:18:16.492529
+38847_E,success,2025-04-22T02:19:12.197700
+13160_A,success,2025-04-22T02:19:12.221145
+107710_A,success,2025-04-22T02:19:12.228051
+41903_E,success,2025-04-22T02:19:12.229621
+110710_B,success,2025-04-22T02:19:12.229621
+59879_B,success,2025-04-22T02:19:12.233150
+77354_A,success,2025-04-22T02:19:12.233150
+16387_C,success,2025-04-22T02:19:12.386452
+21094_A,success,2025-04-22T02:19:12.386452
+81118_B,success,2025-04-22T02:19:17.960861
+63681_E,success,2025-04-22T02:20:12.072752
+10337_C,success,2025-04-22T02:20:12.072752
+2212_E,success,2025-04-22T02:20:12.080719
+50926_E,success,2025-04-22T02:20:12.082176
+102339_D,success,2025-04-22T02:20:12.084184
+118792_E,success,2025-04-22T02:20:12.084184
+17153_E,success,2025-04-22T02:20:12.084184
+3861_C,success,2025-04-22T02:20:12.088819
+48894_D,success,2025-04-22T02:20:12.088819
+108195_E,success,2025-04-22T02:20:17.343587
+10627_C,failed,2025-04-22T02:20:43.910271,Error code: 404 - {'error': {'message': 'The model `dqwq-plus` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': 'ee013f53-de2a-91bb-8557-d50584851774'}
+71207_B,success,2025-04-22T02:21:12.145493
+111232_D,success,2025-04-22T02:21:12.145493
+67382_E,success,2025-04-22T02:21:12.157248
+94002_B,success,2025-04-22T02:21:12.159377
+79114_B,success,2025-04-22T02:21:12.161539
+94720_C,success,2025-04-22T02:21:12.161539
+51709_E,success,2025-04-22T02:21:12.166556
+104931_D,success,2025-04-22T02:21:12.168177
+68711_E,success,2025-04-22T02:21:12.460204
+83432_A,success,2025-04-22T02:21:16.317630
+18400_A,failed,2025-04-22T02:21:41.238366,Error code: 404 - {'error': {'message': 'The model `dqwq-plus` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': 'bab0f934-8fa2-98ac-8415-374e04b09559'}
+25076_D,failed,2025-04-22T02:21:41.239394,Error code: 404 - {'error': {'message': 'The model `dqwq-plus` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': '69378223-8962-962a-bf56-d67b6d24cf58'}
+52661_D,failed,2025-04-22T02:21:41.260881,Error code: 404 - {'error': {'message': 'The model `dqwq-plus` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': 'fd26d957-2efe-97ba-af42-faa99fb575f6'}
+61811_A,failed,2025-04-22T02:21:41.262934,Error code: 404 - {'error': {'message': 'The model `dqwq-plus` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': '5d763ea4-d835-9b18-8114-9732ff34030d'}
+52048_B,failed,2025-04-22T02:21:41.263963,Error code: 404 - {'error': {'message': 'The model `dqwq-plus` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': 'e0adce07-fc53-9fc0-a2c0-a442bd502d45'}
+45490_D,failed,2025-04-22T02:21:41.276383,Error code: 404 - {'error': {'message': 'The model `dqwq-plus` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': 'bcf142ee-b9b2-9d5e-aa5a-153719127e63'}
+8708_E,failed,2025-04-22T02:21:41.279469,Error code: 404 - {'error': {'message': 'The model `dqwq-plus` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': 'cc4c1454-f4fc-93b4-820c-c1accd2d3d6e'}
+66461_C,failed,2025-04-22T02:21:41.280498,Error code: 404 - {'error': {'message': 'The model `dqwq-plus` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': '41d3a8cc-2687-97e5-8b66-072ad8135f23'}
+112152_E,failed,2025-04-22T02:21:41.282578,Error code: 404 - {'error': {'message': 'The model `dqwq-plus` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': '4e42665e-cdc1-9109-88c1-b3c4196c43df'}
+66766_E,failed,2025-04-22T02:21:41.382656,Error code: 404 - {'error': {'message': 'The model `dqwq-plus` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': '3040be47-21e2-9d16-b52a-138de93f64ce'}
+22216_B,success,2025-04-22T02:22:12.109996
+29083_B,success,2025-04-22T02:22:12.109996
+5007_D,success,2025-04-22T02:22:12.113813
+84240_D,success,2025-04-22T02:22:12.113813
+11786_B,success,2025-04-22T02:22:12.113813
+84276_D,success,2025-04-22T02:22:12.119551
+15339_B,success,2025-04-22T02:22:12.119551
+76268_B,success,2025-04-22T02:22:12.119551
+74415_B,success,2025-04-22T02:22:12.124454
+109110_A,success,2025-04-22T02:22:17.739056
+115903_D,success,2025-04-22T02:23:35.716745
+87624_A,success,2025-04-22T02:24:00.137381
+39856_E,success,2025-04-22T02:24:31.222986
+37372_B,success,2025-04-22T02:24:54.374862
+110561_A,success,2025-04-22T02:25:04.119321
+108683_B,success,2025-04-22T02:25:28.642342
+94332_E,success,2025-04-22T02:25:28.646050
+75684_D,success,2025-04-22T02:25:28.647358
+5714_E,success,2025-04-22T02:25:28.649889
+50911_A,success,2025-04-22T02:25:28.649889
+89392_A,success,2025-04-22T02:25:28.649889
+78264_C,success,2025-04-22T02:25:28.649889
+5424_C,success,2025-04-22T02:25:28.657413
+49009_E,success,2025-04-22T02:25:28.659467
+54905_E,success,2025-04-22T02:25:33.751409
+44322_D,success,2025-04-22T02:25:33.885208
+24129_E,success,2025-04-22T02:25:37.027122
+3857_C,success,2025-04-22T02:26:27.582620
+5714_E,success,2025-04-22T02:26:27.727613
+11133_D,failed,2025-04-22T02:26:31.711723,Output data may contain inappropriate content.
+3079_D,success,2025-04-22T02:27:35.765998
+116663_A,success,2025-04-22T02:27:57.217667
+115217_D,success,2025-04-22T02:28:07.334823
+56814_D,success,2025-04-22T02:28:56.380439
+60597_D,success,2025-04-22T02:29:04.754409
+76304_B,success,2025-04-22T02:29:12.600305
+71512_E,success,2025-04-22T02:29:45.574872
+7101_E,success,2025-04-22T02:31:05.317020
+48967_E,success,2025-04-22T02:31:12.948931
+55539_B,success,2025-04-22T02:32:01.220169
+96613_B,success,2025-04-22T02:32:34.282013
+95395_E,success,2025-04-22T02:34:22.210144
+32369_B,failed,2025-04-22T02:34:22.365288,False response format, no <evaluation>
+109547_D,failed,2025-04-22T02:34:23.568726,Output data may contain inappropriate content.
+41496_D,success,2025-04-22T02:34:24.091242
+112183_C,success,2025-04-22T02:34:35.956679
+35026_A,success,2025-04-22T02:34:56.837872
+18809_B,success,2025-04-22T02:34:56.859610
+103825_A,success,2025-04-22T02:35:01.208166
+3290_E,success,2025-04-22T02:36:39.913919
+16885_C,failed,2025-04-22T02:36:52.032687,Error code: 404 - {'error': {'message': 'The model `DeepSeek-R1-Distill-Llama-70B` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': 'd4185d55-f433-9c38-bc01-2d6f02567924'}
+114820_B,success,2025-04-22T02:36:52.923630
+64280_D,success,2025-04-22T02:37:09.036719
+94332_E,success,2025-04-22T02:37:19.280570
+69775_B,failed,2025-04-22T02:37:51.506247,Error code: 404 - {'error': {'message': 'The model `DeepSeek-R1-Distill-Llama-70B` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': 'eb029cb6-5a28-979a-a7fd-0f05f66d57a0'}
+80117_B,failed,2025-04-22T02:37:51.506247,Error code: 404 - {'error': {'message': 'The model `DeepSeek-R1-Distill-Llama-70B` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': '5479b2e1-07a8-9b6d-87f4-04332ac75480'}
+23972_A,failed,2025-04-22T02:37:51.510281,Error code: 404 - {'error': {'message': 'The model `DeepSeek-R1-Distill-Llama-70B` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': '82dfa91e-73a8-9cf2-97e8-74a29fa39133'}
+90863_E,failed,2025-04-22T02:37:51.510812,Error code: 404 - {'error': {'message': 'The model `DeepSeek-R1-Distill-Llama-70B` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': 'f81cc2cf-63c0-9592-be4f-6166f182e175'}
+117899_C,failed,2025-04-22T02:37:51.513965,Error code: 404 - {'error': {'message': 'The model `DeepSeek-R1-Distill-Llama-70B` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': '21018e2b-26e8-9358-86b5-311548e94878'}
+105091_B,failed,2025-04-22T02:37:51.516314,Error code: 404 - {'error': {'message': 'The model `DeepSeek-R1-Distill-Llama-70B` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': 'b5f8d0ce-736d-93b8-84c0-b24d49395468'}
+74376_D,failed,2025-04-22T02:37:51.518068,Error code: 404 - {'error': {'message': 'The model `DeepSeek-R1-Distill-Llama-70B` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': 'e61072fc-c32b-9491-81f2-4d45f38ce1bc'}
+99466_E,failed,2025-04-22T02:37:51.520556,Error code: 404 - {'error': {'message': 'The model `DeepSeek-R1-Distill-Llama-70B` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': '45f7ae94-b5b4-98f5-abf3-2cb6fa4ae039'}
+106445_A,failed,2025-04-22T02:37:51.520556,Error code: 404 - {'error': {'message': 'The model `DeepSeek-R1-Distill-Llama-70B` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': 'c34746a6-1e0e-96a2-b0d0-bdaa7c77b963'}
+18851_A,failed,2025-04-22T02:37:51.651871,Error code: 404 - {'error': {'message': 'The model `DeepSeek-R1-Distill-Llama-70B` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}, 'request_id': '914b58fc-6645-91f2-9055-83a70d4df6e7'}
+98123_D,success,2025-04-22T02:38:04.951474
+65032_D,success,2025-04-22T02:38:14.264324
+9351_B,failed,2025-04-22T02:38:45.910155,False response format, no <evaluation>
+18851_A,success,2025-04-22T02:39:04.118212
+60516_A,success,2025-04-22T02:39:06.818376
+19268_A,failed,2025-04-22T02:39:31.816071,False response format, no <evaluation>
+14096_C,success,2025-04-22T02:39:32.022132
+105155_A,success,2025-04-22T02:40:25.519942
+112560_A,success,2025-04-22T02:40:55.187076
+75836_A,failed,2025-04-22T02:41:01.236738,False response format, no <evaluation>
+4881_A,success,2025-04-22T02:41:15.647451
+30290_C,failed,2025-04-22T02:41:49.468157,False response format, no <evaluation>
+106445_A,success,2025-04-22T02:41:59.469336
+5800_B,failed,2025-04-22T02:42:19.474636,False response format, no <evaluation>
+98037_E,success,2025-04-22T02:42:30.098900
+60266_E,success,2025-04-22T02:42:38.332923
+112560_A,failed,2025-04-22T02:42:55.433204,False response format, no <evaluation>
+73710_E,success,2025-04-22T02:42:59.415853
+77496_B,success,2025-04-22T02:43:00.525673
+111667_C,failed,2025-04-22T02:43:31.486614,False response format, no <evaluation>
+118486_D,failed,2025-04-22T02:43:46.642229,False response format, no <evaluation>
+28186_C,success,2025-04-22T02:43:50.976407
+80117_B,success,2025-04-22T02:43:53.406347
+98836_E,success,2025-04-22T02:44:05.755965
+66142_E,failed,2025-04-22T02:44:07.019365,False response format, no <evaluation>
+7929_E,success,2025-04-22T02:44:10.175271
+80117_B,failed,2025-04-22T02:44:40.591183,False response format, no <evaluation>
+58236_D,failed,2025-04-22T02:44:54.001738,False response format, no <evaluation>
+84946_E,success,2025-04-22T02:44:58.509003
+3599_A,success,2025-04-22T02:45:39.519266
+85278_E,success,2025-04-22T02:45:41.309760
+21679_B,success,2025-04-22T02:45:48.553717
+20345_D,failed,2025-04-22T02:45:55.428778,False response format, no <evaluation>
+93609_B,success,2025-04-22T02:46:10.849378
+76937_E,success,2025-04-22T02:46:27.409406
+49044_C,failed,2025-04-22T02:46:28.863676,False response format, no <evaluation>
+54887_B,failed,2025-04-22T02:46:46.730942,False response format, no <evaluation>
+3599_A,success,2025-04-22T02:47:07.172807
+15806_B,failed,2025-04-22T02:47:11.165211,False response format, no <evaluation>
+86646_B,success,2025-04-22T02:47:13.617327
+98037_E,success,2025-04-22T02:47:18.615229
+9849_B,success,2025-04-22T02:47:19.531882
+4881_A,failed,2025-04-22T02:47:41.674628,False response format, no <evaluation>
+2342_B,success,2025-04-22T02:47:50.384866
+105091_B,failed,2025-04-22T02:48:08.401296,False response format, no <evaluation>
+114484_A,failed,2025-04-22T02:48:38.800652,False response format, no <evaluation>
+2896_B,failed,2025-04-22T02:48:43.061629,False response format, no <evaluation>
+16922_D,failed,2025-04-22T02:48:54.168014,Output data may contain inappropriate content.
+115881_B,failed,2025-04-22T02:48:54.444334,False response format, no <evaluation>
+69775_B,failed,2025-04-22T02:48:54.444334,False response format, no <evaluation>
+52143_B,failed,2025-04-22T02:48:54.444334,False response format, no <evaluation>
+99466_E,failed,2025-04-22T02:48:54.444334,False response format, no <evaluation>
+71626_C,failed,2025-04-22T02:48:54.444334,False response format, no <evaluation>
+70862_C,failed,2025-04-22T02:48:54.444334,False response format, no <evaluation>
+77725_E,failed,2025-04-22T02:48:54.444334,False response format, no <evaluation>
+54184_C,failed,2025-04-22T02:48:54.444334,False response format, no <evaluation>
+11133_D,failed,2025-04-22T02:48:54.683817,Error code: 400 - {'error': {'code': 'data_inspection_failed', 'param': None, 'message': 'Input data may contain inappropriate content.', 'type': 'data_inspection_failed'}, 'id': 'chatcmpl-0dd4e504-3a07-95ac-8f1c-6a51539fb77b', 'request_id': '0dd4e504-3a07-95ac-8f1c-6a51539fb77b'}
+98836_E,failed,2025-04-22T02:49:10.465346,False response format, no <evaluation>
+30429_A,failed,2025-04-22T02:49:48.619073,False response format, no <evaluation>
+46896_A,failed,2025-04-22T02:49:55.087916,False response format, no <evaluation>
+95613_D,failed,2025-04-22T02:49:55.305216,False response format, no <evaluation>
+30429_A,failed,2025-04-22T02:49:55.305216,False response format, no <evaluation>
+50433_B,failed,2025-04-22T02:49:55.305216,False response format, no <evaluation>
+95029_E,failed,2025-04-22T02:49:55.413560,False response format, no <evaluation>
+115120_B,failed,2025-04-22T02:49:55.418867,False response format, no <evaluation>
+94960_C,success,2025-04-22T02:50:00.063558
+115951_E,failed,2025-04-22T02:50:01.078244,False response format, no <evaluation>
+89678_C,failed,2025-04-22T02:50:11.248423,False response format, no <evaluation>
+19268_A,failed,2025-04-22T02:50:12.325826,False response format, no <evaluation>
+109063_A,failed,2025-04-22T02:50:13.602490,False response format, no <evaluation>
+41228_A,success,2025-04-22T02:50:15.377309
+104085_D,failed,2025-04-22T02:50:16.903045,False response format, no <evaluation>
+38615_C,success,2025-04-22T02:50:19.878490
+40363_E,failed,2025-04-22T02:50:27.806916,False response format, no <evaluation>
+89678_C,success,2025-04-22T02:50:39.941889
+84946_E,success,2025-04-22T02:50:43.633849
+25589_A,failed,2025-04-22T02:50:43.834764,False response format, no <evaluation>
+92212_C,success,2025-04-22T02:50:44.145330
+108615_B,failed,2025-04-22T02:50:54.582800,False response format, no <evaluation>
+93836_D,failed,2025-04-22T02:50:54.583848,False response format, no <evaluation>
+21963_B,failed,2025-04-22T02:50:54.583848,False response format, no <evaluation>
+102545_D,failed,2025-04-22T02:50:54.585398,False response format, no <evaluation>
+38787_C,failed,2025-04-22T02:50:54.686165,False response format, no <evaluation>
+25589_A,failed,2025-04-22T02:50:54.687742,False response format, no <evaluation>
+14378_A,failed,2025-04-22T02:50:54.687742,False response format, no <evaluation>
+23972_A,failed,2025-04-22T02:50:54.689566,False response format, no <evaluation>
+65734_E,failed,2025-04-22T02:51:20.758014,False response format, no <evaluation>
+39880_A,failed,2025-04-22T02:51:24.658411,False response format, no <evaluation>
+5800_B,failed,2025-04-22T02:51:32.591766,False response format, no <evaluation>
+74480_A,failed,2025-04-22T02:51:35.269414,False response format, no <evaluation>
+76937_E,success,2025-04-22T02:51:38.599267
+46609_A,failed,2025-04-22T02:51:38.734838,False response format, no <evaluation>
+104303_B,success,2025-04-22T02:51:40.150354
+94960_C,success,2025-04-22T02:51:43.118840
+18365_C,failed,2025-04-22T02:51:48.891444,False response format, no <evaluation>
+117899_C,failed,2025-04-22T02:51:54.640983,False response format, no <evaluation>
+66142_E,failed,2025-04-22T02:51:54.642490,False response format, no <evaluation>
+101714_B,failed,2025-04-22T02:51:54.645020,False response format, no <evaluation>
+30290_C,failed,2025-04-22T02:51:54.645020,False response format, no <evaluation>
+64007_C,failed,2025-04-22T02:51:54.645020,False response format, no <evaluation>
+16885_C,failed,2025-04-22T02:51:54.647826,False response format, no <evaluation>
+41104_A,failed,2025-04-22T02:51:54.647826,False response format, no <evaluation>
+58236_D,failed,2025-04-22T02:51:54.649709,False response format, no <evaluation>
+21610_E,failed,2025-04-22T02:51:54.649709,False response format, no <evaluation>
+30429_A,success,2025-04-22T02:51:54.714458
+95029_E,success,2025-04-22T02:51:55.908557
+16885_C,success,2025-04-22T02:52:29.231019
+20345_D,failed,2025-04-22T02:52:30.885158,False response format, no <evaluation>
+49044_C,success,2025-04-22T02:52:31.323818
+110283_A,failed,2025-04-22T02:52:32.235415,False response format, no <evaluation>
+38324_A,success,2025-04-22T02:52:36.018751
+71626_C,success,2025-04-22T02:52:36.899710
+74008_D,failed,2025-04-22T02:52:54.553997,False response format, no <evaluation>
+82790_C,failed,2025-04-22T02:52:54.556751,False response format, no <evaluation>
+15953_D,failed,2025-04-22T02:52:54.557256,False response format, no <evaluation>
+118486_D,failed,2025-04-22T02:52:54.560109,False response format, no <evaluation>
+31063_C,failed,2025-04-22T02:52:54.561412,False response format, no <evaluation>
+118459_E,failed,2025-04-22T02:52:54.562314,False response format, no <evaluation>
+46609_A,failed,2025-04-22T02:52:54.563445,False response format, no <evaluation>
+74376_D,failed,2025-04-22T02:52:54.564847,False response format, no <evaluation>
+52143_B,success,2025-04-22T02:52:56.318409
+104303_B,failed,2025-04-22T02:53:27.396517,False response format, no <evaluation>
+96032_B,failed,2025-04-22T02:53:27.671385,False response format, no <evaluation>
+40363_E,failed,2025-04-22T02:53:54.518871,False response format, no <evaluation>
+110283_A,failed,2025-04-22T02:53:54.518871,False response format, no <evaluation>
+114484_A,failed,2025-04-22T02:53:54.520895,False response format, no <evaluation>
+15518_E,failed,2025-04-22T02:53:54.520895,False response format, no <evaluation>
+75836_A,failed,2025-04-22T02:53:54.522594,False response format, no <evaluation>
+16692_E,failed,2025-04-22T02:53:54.523122,False response format, no <evaluation>
+113300_B,failed,2025-04-22T02:53:54.523122,False response format, no <evaluation>
+92743_D,failed,2025-04-22T02:53:54.523122,False response format, no <evaluation>
+79257_D,failed,2025-04-22T02:53:54.523122,False response format, no <evaluation>
+106480_E,failed,2025-04-22T02:53:57.960970,False response format, no <evaluation>
+16692_E,failed,2025-04-22T02:54:04.324211,False response format, no <evaluation>
+115881_B,failed,2025-04-22T02:54:31.517084,False response format, no <evaluation>
+109547_D,failed,2025-04-22T02:54:36.622200,Output data may contain inappropriate content.
+2342_B,failed,2025-04-22T02:54:36.953917,False response format, no <evaluation>
+52661_D,success,2025-04-22T02:54:38.777391
+106480_E,success,2025-04-22T02:54:52.357200
+77822_C,failed,2025-04-22T02:54:54.219489,Output data may contain inappropriate content.
+108241_E,failed,2025-04-22T02:54:54.919999,False response format, no <evaluation>
+15806_B,failed,2025-04-22T02:54:55.429776,False response format, no <evaluation>
+2896_B,failed,2025-04-22T02:54:55.430989,False response format, no <evaluation>
+9351_B,failed,2025-04-22T02:54:55.430989,False response format, no <evaluation>
+32369_B,failed,2025-04-22T02:54:55.432517,False response format, no <evaluation>
+3505_E,failed,2025-04-22T02:54:56.617250,False response format, no <evaluation>
+74480_A,failed,2025-04-22T02:55:04.232147,False response format, no <evaluation>
+90270_B,failed,2025-04-22T02:55:11.941872,False response format, no <evaluation>
+112146_C,failed,2025-04-22T02:55:11.941872,False response format, no <evaluation>
+95613_D,failed,2025-04-22T02:55:18.885736,False response format, no <evaluation>
+90863_E,failed,2025-04-22T02:55:27.447836,False response format, no <evaluation>
+74376_D,success,2025-04-22T02:55:31.958360
+101714_B,success,2025-04-22T02:55:46.237175
+90863_E,success,2025-04-22T02:55:51.416896
+114804_A,failed,2025-04-22T02:55:54.508080,False response format, no <evaluation>
+18365_C,failed,2025-04-22T02:55:54.509934,False response format, no <evaluation>
+39468_D,failed,2025-04-22T02:55:54.509934,False response format, no <evaluation>
+61843_C,failed,2025-04-22T02:55:56.020181,False response format, no <evaluation>
+111667_C,failed,2025-04-22T02:55:56.021779,False response format, no <evaluation>
+54887_B,failed,2025-04-22T02:55:56.048628,False response format, no <evaluation>
+28186_C,failed,2025-04-22T02:56:02.254857,False response format, no <evaluation>
+21449_D,failed,2025-04-22T02:56:08.520729,False response format, no <evaluation>
+41228_A,failed,2025-04-22T02:56:11.928628,False response format, no <evaluation>
+92212_C,failed,2025-04-22T02:56:12.369917,False response format, no <evaluation>
+95029_E,success,2025-04-22T02:56:21.407009
+58429_B,failed,2025-04-22T02:56:27.982412,False response format, no <evaluation>
+74480_A,failed,2025-04-22T02:56:27.989599,False response format, no <evaluation>
+68979_C,failed,2025-04-22T02:56:27.991123,False response format, no <evaluation>
+94960_C,failed,2025-04-22T02:56:27.991862,False response format, no <evaluation>
+38615_C,failed,2025-04-22T02:56:27.991862,False response format, no <evaluation>
+118486_D,success,2025-04-22T02:56:30.238125
+88255_D,failed,2025-04-22T02:56:56.420759,False response format, no <evaluation>
+54544_C,failed,2025-04-22T02:56:56.420759,False response format, no <evaluation>
+3505_E,success,2025-04-22T02:57:05.329452
+112146_C,failed,2025-04-22T02:57:09.208685,False response format, no <evaluation>
+52661_D,failed,2025-04-22T02:57:09.973183,False response format, no <evaluation>
+21963_B,failed,2025-04-22T02:57:10.146120,False response format, no <evaluation>
+39880_A,success,2025-04-22T02:57:11.089595
+61809_C,failed,2025-04-22T02:57:11.327362,False response format, no <evaluation>
+10627_C,failed,2025-04-22T02:57:12.487413,False response format, no <evaluation>
+52143_B,success,2025-04-22T02:57:16.513764
+41228_A,failed,2025-04-22T02:57:17.604587,False response format, no <evaluation>
+30706_B,failed,2025-04-22T02:57:27.820926,False response format, no <evaluation>
+64595_A,failed,2025-04-22T02:57:27.822181,False response format, no <evaluation>
+75177_D,failed,2025-04-22T02:57:27.824773,False response format, no <evaluation>
+49044_C,failed,2025-04-22T02:57:27.825287,False response format, no <evaluation>
+106480_E,failed,2025-04-22T02:57:27.825287,False response format, no <evaluation>
+5800_B,failed,2025-04-22T02:57:27.827610,False response format, no <evaluation>
+38324_A,failed,2025-04-22T02:57:27.828840,False response format, no <evaluation>
+57760_D,failed,2025-04-22T02:57:27.830004,False response format, no <evaluation>
+115951_E,failed,2025-04-22T02:57:27.836629,False response format, no <evaluation>
+89678_C,failed,2025-04-22T02:57:34.885403,False response format, no <evaluation>
+49966_A,failed,2025-04-22T02:57:40.107411,False response format, no <evaluation>
+77496_B,failed,2025-04-22T02:57:42.206402,False response format, no <evaluation>
+18365_C,failed,2025-04-22T02:57:49.790434,False response format, no <evaluation>
+114804_A,failed,2025-04-22T02:57:50.779250,False response format, no <evaluation>
+61843_C,success,2025-04-22T02:57:53.205001
+117899_C,failed,2025-04-22T02:57:58.864259,False response format, no <evaluation>
+105155_A,failed,2025-04-22T02:57:59.151291,False response format, no <evaluation>
+11133_D,failed,2025-04-22T02:57:59.828792,Output data may contain inappropriate content.
+38787_C,success,2025-04-22T02:58:05.433112
+115951_E,success,2025-04-22T02:58:23.736166
+92212_C,failed,2025-04-22T02:58:23.834994,False response format, no <evaluation>
+39880_A,failed,2025-04-22T02:58:28.781148,False response format, no <evaluation>
+19268_A,failed,2025-04-22T02:58:32.643947,False response format, no <evaluation>
+71626_C,success,2025-04-22T02:58:40.735137
+15953_D,success,2025-04-22T02:58:40.789611
+38615_C,failed,2025-04-22T02:58:53.791974,False response format, no <evaluation>
+74008_D,success,2025-04-22T02:59:16.418820
+74008_D,failed,2025-04-22T02:59:16.422095,False response format, no <evaluation>
+23972_A,failed,2025-04-22T02:59:36.479298,False response format, no <evaluation>
+38787_C,success,2025-04-22T02:59:45.515068
+60266_E,failed,2025-04-22T03:00:04.096708,False response format, no <evaluation>
+58429_B,failed,2025-04-22T03:00:04.108551,False response format, no <evaluation>
+10627_C,failed,2025-04-22T03:00:11.256628,False response format, no <evaluation>
+38324_A,failed,2025-04-22T03:00:12.748381,False response format, no <evaluation>
+101714_B,success,2025-04-22T03:00:13.766000
+105091_B,success,2025-04-22T03:00:14.940549
+95613_D,success,2025-04-22T03:00:26.125126
+25589_A,success,2025-04-22T03:00:47.569111
+114484_A,success,2025-04-22T03:01:09.972094
+10627_C,failed,2025-04-22T03:01:29.829401,False response format, no <evaluation>
+69775_B,success,2025-04-22T03:01:33.106006
+88255_D,failed,2025-04-22T03:01:34.694995,False response format, no <evaluation>
+86646_B,success,2025-04-22T03:01:48.869564
+31063_C,success,2025-04-22T03:02:17.576314
+21963_B,failed,2025-04-22T03:02:27.248148,False response format, no <evaluation>
+31063_C,success,2025-04-22T03:02:38.267755
+57760_D,failed,2025-04-22T03:02:48.443106,False response format, no <evaluation>
+92743_D,failed,2025-04-22T03:02:57.199048,False response format, no <evaluation>
+21449_D,failed,2025-04-22T03:02:59.022071,False response format, no <evaluation>
+61809_C,success,2025-04-22T03:02:59.915454
+113300_B,success,2025-04-22T03:03:08.279056
+54184_C,success,2025-04-22T03:03:10.450916
+102545_D,success,2025-04-22T03:03:17.027056
+52661_D,success,2025-04-22T03:03:19.558596
+75177_D,failed,2025-04-22T03:03:27.732737,False response format, no <evaluation>
+102545_D,failed,2025-04-22T03:03:39.326243,False response format, no <evaluation>
+49966_A,failed,2025-04-22T03:03:49.096493,False response format, no <evaluation>
+7929_E,success,2025-04-22T03:03:53.277894
+75836_A,failed,2025-04-22T03:03:57.891752,False response format, no <evaluation>
+21679_B,failed,2025-04-22T03:04:00.553492,False response format, no <evaluation>
+9351_B,failed,2025-04-22T03:05:12.728665,peer closed connection without sending complete message body (incomplete chunked read)
+15806_B,failed,2025-04-22T03:05:12.739712,peer closed connection without sending complete message body (incomplete chunked read)
+2896_B,failed,2025-04-22T03:05:12.743769,peer closed connection without sending complete message body (incomplete chunked read)
+92743_D,failed,2025-04-22T03:05:12.745782,peer closed connection without sending complete message body (incomplete chunked read)
+104303_B,failed,2025-04-22T03:05:12.747797,peer closed connection without sending complete message body (incomplete chunked read)
+115881_B,failed,2025-04-22T03:05:12.752336,peer closed connection without sending complete message body (incomplete chunked read)
+85278_E,failed,2025-04-22T03:05:12.754368,peer closed connection without sending complete message body (incomplete chunked read)
+9849_B,failed,2025-04-22T03:05:12.780347,peer closed connection without sending complete message body (incomplete chunked read)
+54184_C,failed,2025-04-22T03:05:12.784400,peer closed connection without sending complete message body (incomplete chunked read)
+111667_C,failed,2025-04-22T03:05:12.788464,peer closed connection without sending complete message body (incomplete chunked read)
+113300_B,failed,2025-04-22T03:05:12.790476,peer closed connection without sending complete message body (incomplete chunked read)
+69775_B,failed,2025-04-22T03:05:12.794996,peer closed connection without sending complete message body (incomplete chunked read)
+70862_C,failed,2025-04-22T03:05:12.798431,peer closed connection without sending complete message body (incomplete chunked read)
+15953_D,failed,2025-04-22T03:05:12.802471,peer closed connection without sending complete message body (incomplete chunked read)
+105091_B,failed,2025-04-22T03:05:12.805498,peer closed connection without sending complete message body (incomplete chunked read)
+16922_D,failed,2025-04-22T03:05:14.106952,Connection error.
+117899_C,failed,2025-04-22T03:05:14.110092,Connection error.
+54887_B,failed,2025-04-22T03:06:12.766695,Connection error.
+32369_B,failed,2025-04-22T03:06:12.835489,Connection error.
+77725_E,failed,2025-04-22T03:06:12.838017,Connection error.
+109547_D,failed,2025-04-22T03:06:12.838017,Connection error.
+16885_C,failed,2025-04-22T03:06:12.842266,Connection error.
+23972_A,failed,2025-04-22T03:06:12.843710,Connection error.
+99466_E,failed,2025-04-22T03:06:12.843710,Connection error.
+93836_D,failed,2025-04-22T03:06:12.843710,Connection error.
+65734_E,failed,2025-04-22T03:06:14.157743,Connection error.
+106445_A,failed,2025-04-22T03:06:14.161253,Connection error.
+104085_D,failed,2025-04-22T03:06:14.163804,Connection error.
+90863_E,failed,2025-04-22T03:06:14.220840,Connection error.
+74376_D,failed,2025-04-22T03:06:14.220840,Connection error.
+115120_B,failed,2025-04-22T03:06:14.284579,Connection error.
+50453_C,failed,2025-04-22T03:11:34.831042,Connection error.
+30290_C,failed,2025-04-22T03:11:34.831042,Connection error.
+116379_B,failed,2025-04-22T03:12:21.782839,Connection error.
+64007_C,failed,2025-04-22T03:12:33.250820,Connection error.
+96643_A,failed,2025-04-22T03:12:33.250820,Connection error.
+118459_E,failed,2025-04-22T03:12:33.253956,Connection error.
+82790_C,failed,2025-04-22T03:12:33.253956,Connection error.
+21963_B,failed,2025-04-22T03:12:33.253956,Connection error.
+66142_E,failed,2025-04-22T03:12:33.257023,Connection error.
+116379_B,failed,2025-04-22T03:12:33.257023,Connection error.
+58236_D,failed,2025-04-22T03:12:33.259570,Connection error.
+30290_C,failed,2025-04-22T03:12:33.732879,Connection error.
+32369_B,failed,2025-04-22T03:12:34.516678,Connection error.
+96643_A,success,2025-04-22T03:13:33.022707
+20345_D,failed,2025-04-22T03:13:33.215010,Connection error.
+109547_D,failed,2025-04-22T03:13:39.733804,Output data may contain inappropriate content.
+96643_A,failed,2025-04-22T03:13:42.712644,False response format, no <evaluation>
+50453_C,failed,2025-04-22T03:13:44.949294,False response format, no <evaluation>
+20345_D,failed,2025-04-22T03:13:45.223881,False response format, no <evaluation>
+82790_C,failed,2025-04-22T03:13:49.027483,False response format, no <evaluation>
+64007_C,failed,2025-04-22T03:13:49.293158,False response format, no <evaluation>
+116379_B,failed,2025-04-22T03:13:52.215783,False response format, no <evaluation>
+118459_E,failed,2025-04-22T03:13:52.815621,False response format, no <evaluation>
+21963_B,failed,2025-04-22T03:13:53.176751,False response format, no <evaluation>
+66142_E,failed,2025-04-22T03:13:56.522848,False response format, no <evaluation>
+92743_D,failed,2025-04-22T03:14:00.926926,False response format, no <evaluation>
+79257_D,failed,2025-04-22T03:14:06.022685,False response format, no <evaluation>
+77822_C,failed,2025-04-22T03:14:21.806336,Output data may contain inappropriate content.
+92743_D,failed,2025-04-22T03:14:22.488617,False response format, no <evaluation>
+108241_E,failed,2025-04-22T03:14:25.183702,False response format, no <evaluation>
+9351_B,failed,2025-04-22T03:14:32.644308,False response format, no <evaluation>
+96032_B,failed,2025-04-22T03:14:32.645821,False response format, no <evaluation>
+15518_E,failed,2025-04-22T03:14:32.692424,False response format, no <evaluation>
+32369_B,failed,2025-04-22T03:14:32.693227,False response format, no <evaluation>
+110283_A,failed,2025-04-22T03:14:32.694872,False response format, no <evaluation>
+46609_A,failed,2025-04-22T03:14:32.695659,False response format, no <evaluation>
+79257_D,failed,2025-04-22T03:14:32.697676,False response format, no <evaluation>
+40363_E,failed,2025-04-22T03:14:32.697676,False response format, no <evaluation>
+39468_D,failed,2025-04-22T03:14:55.650908,False response format, no <evaluation>
+58236_D,failed,2025-04-22T03:14:57.040443,False response format, no <evaluation>
+109547_D,failed,2025-04-22T03:15:03.558684,Output data may contain inappropriate content.
+58236_D,success,2025-04-22T03:15:03.980460
+77822_C,failed,2025-04-22T03:15:32.474207,Output data may contain inappropriate content.
+90270_B,failed,2025-04-22T03:15:32.628993,False response format, no <evaluation>
+114804_A,failed,2025-04-22T03:15:32.628993,False response format, no <evaluation>
+54887_B,failed,2025-04-22T03:15:32.628993,False response format, no <evaluation>
+112146_C,failed,2025-04-22T03:15:32.628993,False response format, no <evaluation>
+108241_E,failed,2025-04-22T03:15:32.628993,False response format, no <evaluation>
+96032_B,success,2025-04-22T03:15:35.512567
+39468_D,failed,2025-04-22T03:15:42.744371,False response format, no <evaluation>
+118459_E,success,2025-04-22T03:15:43.197430
+20345_D,success,2025-04-22T03:15:48.177286
+54887_B,failed,2025-04-22T03:15:51.144301,False response format, no <evaluation>
+5800_B,failed,2025-04-22T03:15:54.125014,False response format, no <evaluation>
+40363_E,success,2025-04-22T03:15:55.927899
+16692_E,failed,2025-04-22T03:16:07.891894,False response format, no <evaluation>
+66142_E,success,2025-04-22T03:16:11.392841
+74480_A,failed,2025-04-22T03:16:11.922631,False response format, no <evaluation>
+21449_D,failed,2025-04-22T03:16:16.033615,False response format, no <evaluation>
+58429_B,failed,2025-04-22T03:16:16.716162,False response format, no <evaluation>
+15518_E,failed,2025-04-22T03:16:17.217569,False response format, no <evaluation>
+112146_C,failed,2025-04-22T03:16:19.184102,False response format, no <evaluation>
+11133_D,failed,2025-04-22T03:16:32.292643,Output data may contain inappropriate content.
+5800_B,failed,2025-04-22T03:16:32.437813,False response format, no <evaluation>
+68979_C,failed,2025-04-22T03:16:32.438787,False response format, no <evaluation>
+15518_E,success,2025-04-22T03:16:41.806021
+54544_C,failed,2025-04-22T03:16:42.716816,False response format, no <evaluation>
+16692_E,failed,2025-04-22T03:16:42.718261,False response format, no <evaluation>
+115881_B,failed,2025-04-22T03:16:42.719274,False response format, no <evaluation>
+64595_A,failed,2025-04-22T03:16:52.364735,False response format, no <evaluation>
+49966_A,failed,2025-04-22T03:17:00.495974,False response format, no <evaluation>
+40363_E,success,2025-04-22T03:17:02.184105
+9351_B,failed,2025-04-22T03:17:05.186135,False response format, no <evaluation>
+88255_D,failed,2025-04-22T03:17:12.375616,False response format, no <evaluation>
+4632_B,failed,2025-04-22T03:17:12.375616,False response format, no <evaluation>
+79257_D,success,2025-04-22T03:17:16.465371
+96032_B,failed,2025-04-22T03:17:20.654184,False response format, no <evaluation>
+19268_A,failed,2025-04-22T03:17:32.346656,False response format, no <evaluation>
+23972_A,failed,2025-04-22T03:17:32.346656,False response format, no <evaluation>
+30706_B,failed,2025-04-22T03:17:32.346656,False response format, no <evaluation>
+75177_D,failed,2025-04-22T03:17:32.346656,False response format, no <evaluation>
+117899_C,failed,2025-04-22T03:17:32.346656,False response format, no <evaluation>
+13557_D,failed,2025-04-22T03:17:32.346656,False response format, no <evaluation>
+46609_A,failed,2025-04-22T03:17:56.193861,False response format, no <evaluation>
+11133_D,failed,2025-04-22T03:17:57.943986,Output data may contain inappropriate content.
+30290_C,success,2025-04-22T03:17:58.715822
+115881_B,success,2025-04-22T03:18:04.403573
+4642_E,failed,2025-04-22T03:18:06.722483,False response format, no <evaluation>
+75836_A,failed,2025-04-22T03:18:08.070285,False response format, no <evaluation>
+80933_B,failed,2025-04-22T03:18:12.048764,False response format, no <evaluation>
+70862_C,failed,2025-04-22T03:18:12.049782,False response format, no <evaluation>
+59940_B,failed,2025-04-22T03:18:12.049782,False response format, no <evaluation>
+74480_A,failed,2025-04-22T03:18:29.529337,False response format, no <evaluation>
+16922_D,failed,2025-04-22T03:18:43.150169,False response format, no <evaluation>
+111667_C,failed,2025-04-22T03:18:43.215891,False response format, no <evaluation>
+46896_A,failed,2025-04-22T03:18:43.215891,False response format, no <evaluation>
+57760_D,failed,2025-04-22T03:18:43.251769,False response format, no <evaluation>
+90270_B,failed,2025-04-22T03:18:56.142345,False response format, no <evaluation>
+50433_B,failed,2025-04-22T03:18:59.837886,False response format, no <evaluation>
+46609_A,success,2025-04-22T03:19:01.811683
+109547_D,failed,2025-04-22T03:19:03.117020,Output data may contain inappropriate content.
+14378_A,failed,2025-04-22T03:19:04.712847,False response format, no <evaluation>
+18365_C,failed,2025-04-22T03:19:08.103185,False response format, no <evaluation>
+74824_D,failed,2025-04-22T03:19:12.113516,False response format, no <evaluation>
+68979_C,failed,2025-04-22T03:19:14.580031,False response format, no <evaluation>
+114804_A,success,2025-04-22T03:19:15.705336
+100426_A,failed,2025-04-22T03:19:16.220387,False response format, no <evaluation>
+64595_A,success,2025-04-22T03:19:20.750736
+21449_D,failed,2025-04-22T03:19:23.300057,False response format, no <evaluation>
+88255_D,failed,2025-04-22T03:19:27.321303,False response format, no <evaluation>
+20010_B,failed,2025-04-22T03:19:32.455738,False response format, no <evaluation>
+2896_B,failed,2025-04-22T03:19:32.457750,False response format, no <evaluation>
+15806_B,failed,2025-04-22T03:19:32.459383,False response format, no <evaluation>
+109063_A,failed,2025-04-22T03:19:32.461079,False response format, no <evaluation>
+77725_E,failed,2025-04-22T03:19:32.461079,False response format, no <evaluation>
+99466_E,failed,2025-04-22T03:19:32.464307,False response format, no <evaluation>
+57760_D,failed,2025-04-22T03:19:56.677495,False response format, no <evaluation>
+9229_B,failed,2025-04-22T03:20:00.071882,False response format, no <evaluation>
+93836_D,failed,2025-04-22T03:20:00.072414,False response format, no <evaluation>
+54544_C,failed,2025-04-22T03:20:12.175761,False response format, no <evaluation>
+10627_C,failed,2025-04-22T03:20:14.143104,False response format, no <evaluation>
+30706_B,success,2025-04-22T03:20:19.044782
+28836_C,failed,2025-04-22T03:20:24.071031,False response format, no <evaluation>
+41104_A,failed,2025-04-22T03:20:28.134837,False response format, no <evaluation>
+21610_E,failed,2025-04-22T03:20:28.519196,False response format, no <evaluation>
+18749_A,failed,2025-04-22T03:20:30.480544,False response format, no <evaluation>
+108615_B,failed,2025-04-22T03:20:31.815010,False response format, no <evaluation>
+58429_B,failed,2025-04-22T03:20:32.461618,False response format, no <evaluation>
+104085_D,failed,2025-04-22T03:20:35.291617,False response format, no <evaluation>
+13557_D,failed,2025-04-22T03:20:37.819380,False response format, no <evaluation>
+115120_B,failed,2025-04-22T03:20:38.132266,False response format, no <evaluation>
+35656_E,failed,2025-04-22T03:20:39.039478,False response format, no <evaluation>
+49966_A,failed,2025-04-22T03:20:40.170661,False response format, no <evaluation>
+83075_C,failed,2025-04-22T03:20:43.492224,False response format, no <evaluation>
+19268_A,failed,2025-04-22T03:21:00.464854,False response format, no <evaluation>
+16922_D,failed,2025-04-22T03:21:12.303874,Output data may contain inappropriate content.
+75177_D,failed,2025-04-22T03:21:19.759723,False response format, no <evaluation>
+70862_C,failed,2025-04-22T03:21:23.056788,False response format, no <evaluation>
+80933_B,success,2025-04-22T03:21:30.882340
+65734_E,failed,2025-04-22T03:21:36.967900,False response format, no <evaluation>
+117899_C,failed,2025-04-22T03:21:37.526311,False response format, no <evaluation>
+4642_E,failed,2025-04-22T03:21:55.957321,False response format, no <evaluation>
+75836_A,failed,2025-04-22T03:21:59.594464,False response format, no <evaluation>
+16692_E,success,2025-04-22T03:21:59.874959
+77822_C,failed,2025-04-22T03:22:01.057870,Output data may contain inappropriate content.
+4632_B,failed,2025-04-22T03:22:28.462391,False response format, no <evaluation>
+82790_C,failed,2025-04-22T03:22:45.660436,False response format, no <evaluation>
+46896_A,failed,2025-04-22T03:22:48.432430,False response format, no <evaluation>
+15806_B,failed,2025-04-22T03:23:29.388520,False response format, no <evaluation>
+50433_B,failed,2025-04-22T03:23:39.123465,False response format, no <evaluation>
+50453_C,failed,2025-04-22T03:23:45.943328,False response format, no <evaluation>
+21963_B,success,2025-04-22T03:23:47.303994
+18365_C,failed,2025-04-22T03:23:48.000109,False response format, no <evaluation>
+111667_C,failed,2025-04-22T03:23:50.997194,False response format, no <evaluation>
+59940_B,success,2025-04-22T03:23:58.778585
+77725_E,failed,2025-04-22T03:23:58.876476,False response format, no <evaluation>
+14378_A,failed,2025-04-22T03:24:21.767463,False response format, no <evaluation>
+23972_A,failed,2025-04-22T03:24:33.083531,False response format, no <evaluation>
+2896_B,failed,2025-04-22T03:24:50.630883,False response format, no <evaluation>
+5800_B,success,2025-04-22T03:25:15.144888
+10627_C,success,2025-04-22T03:25:26.826499
+54887_B,success,2025-04-22T03:25:27.526445
+109063_A,failed,2025-04-22T03:25:50.367300,False response format, no <evaluation>
+64007_C,failed,2025-04-22T03:26:43.363895,False response format, no <evaluation>
+20010_B,failed,2025-04-22T03:26:57.301009,False response format, no <evaluation>
+92743_D,success,2025-04-22T03:26:57.319492
+74824_D,success,2025-04-22T03:27:41.289948
+9229_B,failed,2025-04-22T03:27:49.005521,False response format, no <evaluation>
+93836_D,failed,2025-04-22T03:27:59.272876,False response format, no <evaluation>
+104085_D,failed,2025-04-22T03:28:26.291896,False response format, no <evaluation>
+28836_C,failed,2025-04-22T03:28:34.615667,False response format, no <evaluation>
+21610_E,failed,2025-04-22T03:29:05.098831,False response format, no <evaluation>
+83075_C,failed,2025-04-22T03:29:33.084044,False response format, no <evaluation>
+18749_A,failed,2025-04-22T03:30:31.344307,False response format, no <evaluation>
+108615_B,failed,2025-04-22T03:30:31.371283,False response format, no <evaluation>
+35656_E,failed,2025-04-22T03:31:04.351225,False response format, no <evaluation>
+115120_B,failed,2025-04-22T03:33:12.360602,False response format, no <evaluation>
+112146_C,success,2025-04-22T03:33:25.128006
+32369_B,success,2025-04-22T03:33:25.132506
+9351_B,failed,2025-04-22T03:33:25.600063,False response format, no <evaluation>
+39468_D,success,2025-04-22T03:33:26.351282
+110283_A,failed,2025-04-22T03:33:26.655405,False response format, no <evaluation>
+114804_A,success,2025-04-22T03:33:26.848723
+88255_D,success,2025-04-22T03:33:27.952549
+108241_E,failed,2025-04-22T03:33:28.021098,False response format, no <evaluation>
+100426_A,failed,2025-04-22T03:33:39.079946,False response format, no <evaluation>
+65734_E,success,2025-04-22T03:34:47.769927
+41104_A,success,2025-04-22T03:36:12.202855
+110283_A,success,2025-04-22T03:37:15.938983
+41007_B,failed,2025-04-22T03:38:18.549878,False response format, no <evaluation>
+48714_B,failed,2025-04-22T03:39:10.293383,False response format, no <evaluation>
+24443_C,success,2025-04-22T03:39:21.404689
+109547_D,failed,2025-04-22T03:39:24.898585,Output data may contain inappropriate content.
+107192_A,failed,2025-04-22T03:39:43.092192,False response format, no <evaluation>
+99466_E,failed,2025-04-22T03:39:45.207846,False response format, no <evaluation>
+61811_A,success,2025-04-22T03:39:51.897231
+109063_A,failed,2025-04-22T03:40:14.099648,False response format, no <evaluation>
+50433_B,failed,2025-04-22T03:40:15.062827,False response format, no <evaluation>
+21610_E,failed,2025-04-22T03:40:44.387385,False response format, no <evaluation>
+11133_D,failed,2025-04-22T03:40:45.972034,Output data may contain inappropriate content.
+14378_A,failed,2025-04-22T03:40:48.875206,False response format, no <evaluation>
+46896_A,failed,2025-04-22T03:41:12.259338,False response format, no <evaluation>
+118542_E,failed,2025-04-22T03:41:16.364204,False response format, no <evaluation>
+89445_C,failed,2025-04-22T03:41:42.706970,False response format, no <evaluation>
+14632_E,success,2025-04-22T03:41:49.176734
+82790_C,failed,2025-04-22T03:42:04.701447,False response format, no <evaluation>
+64007_C,failed,2025-04-22T03:42:07.859980,False response format, no <evaluation>
+9835_E,failed,2025-04-22T03:42:46.502663,False response format, no <evaluation>
+9351_B,success,2025-04-22T03:42:49.866851
+77822_C,failed,2025-04-22T03:42:54.173301,Output data may contain inappropriate content.
+108241_E,failed,2025-04-22T03:43:05.747724,False response format, no <evaluation>
+19268_A,failed,2025-04-22T03:43:06.065276,False response format, no <evaluation>
+56398_B,failed,2025-04-22T03:43:29.208187,False response format, no <evaluation>
+87630_C,success,2025-04-22T03:43:36.574692
+74480_A,success,2025-04-22T03:43:37.381383
+75836_A,failed,2025-04-22T03:43:50.085166,False response format, no <evaluation>
+90270_B,failed,2025-04-22T03:43:50.359655,False response format, no <evaluation>
+109547_D,failed,2025-04-22T03:43:51.394927,Output data may contain inappropriate content.
+117899_C,success,2025-04-22T03:43:53.797395
+2896_B,failed,2025-04-22T03:44:22.349703,False response format, no <evaluation>
+37414_A,failed,2025-04-22T03:44:26.754238,False response format, no <evaluation>
+23972_A,success,2025-04-22T03:44:36.382198
+108615_B,failed,2025-04-22T03:44:52.192955,False response format, no <evaluation>
+33501_C,failed,2025-04-22T03:44:59.648858,False response format, no <evaluation>
+46869_D,failed,2025-04-22T03:45:12.512304,False response format, no <evaluation>
+66028_A,failed,2025-04-22T03:45:15.385730,False response format, no <evaluation>
+11133_D,failed,2025-04-22T03:45:15.663645,Output data may contain inappropriate content.
+49703_E,success,2025-04-22T03:45:22.896658
+14378_A,failed,2025-04-22T03:45:31.744586,False response format, no <evaluation>
+19268_A,failed,2025-04-22T03:45:54.042373,False response format, no <evaluation>
+21610_E,failed,2025-04-22T03:46:03.018693,False response format, no <evaluation>
+49703_E,success,2025-04-22T03:46:07.079122
+68979_C,failed,2025-04-22T03:46:19.828931,False response format, no <evaluation>
+55325_A,failed,2025-04-22T03:46:23.920857,False response format, no <evaluation>
+37414_A,success,2025-04-22T03:46:32.914976
+15806_B,failed,2025-04-22T03:46:56.920891,False response format, no <evaluation>
+89445_C,failed,2025-04-22T03:47:00.421791,False response format, no <evaluation>
+108241_E,success,2025-04-22T03:47:01.270396
+77822_C,failed,2025-04-22T03:47:03.326022,Output data may contain inappropriate content.
+111667_C,success,2025-04-22T03:47:08.255223
+18365_C,success,2025-04-22T03:47:17.539636
+13557_D,success,2025-04-22T03:47:36.445628
+23537_C,failed,2025-04-22T03:47:40.033950,Output data may contain inappropriate content.
+4632_B,success,2025-04-22T03:47:48.043426
+56398_B,failed,2025-04-22T03:47:57.431545,False response format, no <evaluation>
+65947_B,failed,2025-04-22T03:48:06.644669,False response format, no <evaluation>
+9835_E,failed,2025-04-22T03:48:22.041326,False response format, no <evaluation>
+64007_C,success,2025-04-22T03:48:23.205956
+4642_E,failed,2025-04-22T03:48:34.981845,False response format, no <evaluation>
+49197_C,success,2025-04-22T03:48:39.432617
+52913_A,failed,2025-04-22T03:48:42.566485,False response format, no <evaluation>
+23972_A,success,2025-04-22T03:48:58.454010
+99466_E,success,2025-04-22T03:49:06.815154
+100426_A,success,2025-04-22T03:49:07.657218
+75758_D,failed,2025-04-22T03:49:08.655435,Output data may contain inappropriate content.
+90270_B,failed,2025-04-22T03:49:09.599060,False response format, no <evaluation>
+33501_C,failed,2025-04-22T03:49:19.529167,False response format, no <evaluation>
+117899_C,failed,2025-04-22T03:49:25.148738,False response format, no <evaluation>
+54544_C,success,2025-04-22T03:49:36.637894
+20010_B,failed,2025-04-22T03:49:47.208649,False response format, no <evaluation>
+104085_D,success,2025-04-22T03:50:28.856566
+41990_E,success,2025-04-22T03:50:47.430353
+82790_C,failed,2025-04-22T03:50:53.917212,False response format, no <evaluation>
+23537_C,failed,2025-04-22T03:50:54.109023,Error code: 400 - {'error': {'code': 'data_inspection_failed', 'param': None, 'message': 'Input data may contain inappropriate content.', 'type': 'data_inspection_failed'}, 'id': 'chatcmpl-566d5455-9947-967d-9645-e81fa9bad939', 'request_id': '566d5455-9947-967d-9645-e81fa9bad939'}
+68979_C,success,2025-04-22T03:50:55.966609
+75836_A,failed,2025-04-22T03:50:57.718452,False response format, no <evaluation>
+49197_C,success,2025-04-22T03:51:04.962433
+9229_B,success,2025-04-22T03:51:05.963150
+28836_C,failed,2025-04-22T03:51:15.903869,False response format, no <evaluation>
+32315_D,success,2025-04-22T03:51:38.555559
+58429_B,failed,2025-04-22T03:51:50.611474,False response format, no <evaluation>
+18365_C,failed,2025-04-22T03:51:53.262782,False response format, no <evaluation>
+18749_A,failed,2025-04-22T03:51:55.087429,False response format, no <evaluation>
+93836_D,failed,2025-04-22T03:52:02.336989,False response format, no <evaluation>
+108615_B,failed,2025-04-22T03:52:14.561235,False response format, no <evaluation>
+109063_A,success,2025-04-22T03:52:21.269883
+75758_D,failed,2025-04-22T03:52:56.871064,Output data may contain inappropriate content.
+12727_B,failed,2025-04-22T03:52:57.119131,False response format, no <evaluation>
+15806_B,success,2025-04-22T03:53:00.268894
+115120_B,failed,2025-04-22T03:53:07.914444,False response format, no <evaluation>
+65947_B,failed,2025-04-22T03:53:13.731075,False response format, no <evaluation>
+41990_E,failed,2025-04-22T03:53:29.301054,False response format, no <evaluation>
+4632_B,failed,2025-04-22T03:53:50.169937,False response format, no <evaluation>
+89473_C,success,2025-04-22T03:53:56.013702
+13557_D,success,2025-04-22T03:54:00.205368
+32315_D,failed,2025-04-22T03:54:00.518886,False response format, no <evaluation>
+4642_E,failed,2025-04-22T03:54:05.386704,False response format, no <evaluation>
+83075_C,success,2025-04-22T03:54:07.822487
+75177_D,failed,2025-04-22T03:54:11.548245,False response format, no <evaluation>
+93836_D,success,2025-04-22T03:54:17.207690
+49966_A,failed,2025-04-22T03:54:41.193118,False response format, no <evaluation>
+63171_D,failed,2025-04-22T03:54:41.756645,False response format, no <evaluation>
+40232_A,failed,2025-04-22T03:54:57.632909,False response format, no <evaluation>
+50453_C,failed,2025-04-22T03:55:19.905021,False response format, no <evaluation>
+100426_A,failed,2025-04-22T03:55:21.054885,False response format, no <evaluation>
+20010_B,failed,2025-04-22T03:55:25.447319,False response format, no <evaluation>
+46869_D,failed,2025-04-22T03:55:26.816202,False response format, no <evaluation>
+99466_E,success,2025-04-22T03:55:34.727549
+89473_C,failed,2025-04-22T03:55:52.435991,False response format, no <evaluation>
+35408_E,failed,2025-04-22T03:55:57.305412,False response format, no <evaluation>
+9229_B,success,2025-04-22T03:56:03.961910
+2896_B,failed,2025-04-22T03:56:14.379428,False response format, no <evaluation>
+80641_E,failed,2025-04-22T03:56:16.128349,False response format, no <evaluation>
+115120_B,success,2025-04-22T03:56:18.982079
+70862_C,failed,2025-04-22T03:56:22.895751,False response format, no <evaluation>
+35656_E,failed,2025-04-22T03:56:26.526088,False response format, no <evaluation>
+21449_D,failed,2025-04-22T03:56:35.232426,False response format, no <evaluation>
+87333_E,failed,2025-04-22T03:56:39.686720,False response format, no <evaluation>
+20668_E,success,2025-04-22T03:57:04.420974
+104773_E,failed,2025-04-22T03:57:13.869773,False response format, no <evaluation>
+104085_D,success,2025-04-22T03:57:24.815935
+111667_C,success,2025-04-22T03:57:36.021260
+16922_D,failed,2025-04-22T03:57:49.172993,Output data may contain inappropriate content.
+40232_A,failed,2025-04-22T03:57:51.973409,False response format, no <evaluation>
+87333_E,failed,2025-04-22T03:57:59.601257,False response format, no <evaluation>
+57760_D,failed,2025-04-22T03:58:18.143791,False response format, no <evaluation>
+18749_A,failed,2025-04-22T03:58:25.296232,False response format, no <evaluation>
+35656_E,success,2025-04-22T03:58:53.721832
+75177_D,failed,2025-04-22T03:58:56.885668,False response format, no <evaluation>
+92848_E,failed,2025-04-22T03:59:05.801079,False response format, no <evaluation>
+92848_E,success,2025-04-22T03:59:56.564343
+104773_E,failed,2025-04-22T04:00:08.344165,False response format, no <evaluation>
+49966_A,failed,2025-04-22T04:00:26.491093,False response format, no <evaluation>
+116379_B,success,2025-04-22T04:00:28.134065
+77725_E,success,2025-04-22T04:00:28.462189
+12727_B,failed,2025-04-22T04:00:36.567411,False response format, no <evaluation>
+54544_C,failed,2025-04-22T04:00:40.206522,False response format, no <evaluation>
+16922_D,failed,2025-04-22T04:00:41.663332,Output data may contain inappropriate content.
+116379_B,success,2025-04-22T04:00:54.190018
+70862_C,failed,2025-04-22T04:01:18.339715,False response format, no <evaluation>
+20668_E,failed,2025-04-22T04:01:20.738469,False response format, no <evaluation>
+28836_C,failed,2025-04-22T04:01:41.275574,False response format, no <evaluation>
+58429_B,success,2025-04-22T04:02:03.826335
+18400_A,failed,2025-04-22T04:02:07.237256,False response format, no <evaluation>
+35408_E,failed,2025-04-22T04:02:16.818034,False response format, no <evaluation>
+21449_D,failed,2025-04-22T04:02:19.640233,False response format, no <evaluation>
+78745_E,failed,2025-04-22T04:02:20.089233,Output data may contain inappropriate content.
+50453_C,failed,2025-04-22T04:02:30.466371,False response format, no <evaluation>
+118542_E,failed,2025-04-22T04:02:30.539353,False response format, no <evaluation>
+41007_B,failed,2025-04-22T04:02:31.125402,False response format, no <evaluation>
+48714_B,success,2025-04-22T04:02:32.463651
+80641_E,success,2025-04-22T04:02:35.284095
+107192_A,failed,2025-04-22T04:02:35.364948,False response format, no <evaluation>
+83075_C,success,2025-04-22T04:02:39.225491
+77725_E,success,2025-04-22T04:03:14.610743
+50433_B,failed,2025-04-22T04:03:21.781725,False response format, no <evaluation>
+63171_D,failed,2025-04-22T04:03:52.569696,False response format, no <evaluation>
+46896_A,failed,2025-04-22T04:03:57.080222,False response format, no <evaluation>
+57760_D,failed,2025-04-22T04:04:00.095674,False response format, no <evaluation>
+4944_E,failed,2025-04-22T04:06:39.849592,False response format, no <evaluation>
+109547_D,failed,2025-04-22T13:06:51.261306,Output data may contain inappropriate content.
+57961_A,failed,2025-04-22T13:07:21.704450,False response format, no <evaluation>
+32868_B,failed,2025-04-22T13:07:44.540703,False response format, no <evaluation>
+46869_D,success,2025-04-22T13:07:47.448319
+112785_B,failed,2025-04-22T13:07:47.454230,False response format, no <evaluation>
+32868_B,success,2025-04-22T13:07:47.454734
+35408_E,failed,2025-04-22T13:07:57.246964,False response format, no <evaluation>
+109547_D,failed,2025-04-22T13:08:01.677513,Output data may contain inappropriate content.
+4224_B,failed,2025-04-22T13:08:04.189925,False response format, no <evaluation>
+57961_A,failed,2025-04-22T13:08:12.962215,False response format, no <evaluation>
+117595_B,success,2025-04-22T13:08:25.569862
+106590_B,failed,2025-04-22T13:08:26.666398,False response format, no <evaluation>
+107192_A,failed,2025-04-22T13:08:32.465545,False response format, no <evaluation>
+66586_D,failed,2025-04-22T13:08:36.100384,False response format, no <evaluation>
+9835_E,success,2025-04-22T13:08:46.898352
+106590_B,failed,2025-04-22T13:08:48.364774,False response format, no <evaluation>
+11133_D,failed,2025-04-22T13:08:49.933882,Output data may contain inappropriate content.
+56398_B,failed,2025-04-22T13:08:53.885787,False response format, no <evaluation>
+35408_E,failed,2025-04-22T13:08:54.577436,False response format, no <evaluation>
+89445_C,failed,2025-04-22T13:08:58.004276,False response format, no <evaluation>
+107192_A,success,2025-04-22T13:08:59.311501
+117595_B,success,2025-04-22T13:09:04.540967
+46869_D,failed,2025-04-22T13:09:11.354595,False response format, no <evaluation>
+66586_D,failed,2025-04-22T13:09:11.975401,False response format, no <evaluation>
+99372_E,failed,2025-04-22T13:09:42.786018,False response format, no <evaluation>
+23537_C,failed,2025-04-22T13:09:46.731554,Output data may contain inappropriate content.
+4224_B,success,2025-04-22T13:10:02.615062
+89445_C,failed,2025-04-22T13:10:10.802000,False response format, no <evaluation>
+19268_A,success,2025-04-22T13:10:10.869363
+33501_C,failed,2025-04-22T13:10:29.397062,False response format, no <evaluation>
+11133_D,failed,2025-04-22T13:10:31.933102,False response format, no <evaluation>
+101485_E,failed,2025-04-22T13:10:35.966571,False response format, no <evaluation>
+28420_E,failed,2025-04-22T13:10:41.296823,False response format, no <evaluation>
+75758_D,failed,2025-04-22T13:10:47.133785,Output data may contain inappropriate content.
+50088_A,failed,2025-04-22T13:10:51.243678,False response format, no <evaluation>
+21449_D,success,2025-04-22T13:11:04.814463
+75836_A,failed,2025-04-22T13:11:05.415230,False response format, no <evaluation>
+75836_A,failed,2025-04-22T13:11:08.793603,False response format, no <evaluation>
+50088_A,failed,2025-04-22T13:11:19.980904,False response format, no <evaluation>
+49966_A,failed,2025-04-22T13:11:40.959951,False response format, no <evaluation>
+118380_E,failed,2025-04-22T13:11:48.680290,False response format, no <evaluation>
+33501_C,success,2025-04-22T13:11:50.894449
+28420_E,failed,2025-04-22T13:12:10.968721,False response format, no <evaluation>
+23537_C,failed,2025-04-22T13:12:16.030333,Output data may contain inappropriate content.
+65947_B,failed,2025-04-22T13:12:16.615059,False response format, no <evaluation>
+19268_A,failed,2025-04-22T13:12:20.718874,False response format, no <evaluation>
+75758_D,failed,2025-04-22T13:12:22.683976,Output data may contain inappropriate content.
+75177_D,success,2025-04-22T13:12:23.311630
+32064_B,failed,2025-04-22T13:12:27.643850,False response format, no <evaluation>
+2896_B,failed,2025-04-22T13:12:42.369623,False response format, no <evaluation>
+12727_B,failed,2025-04-22T13:12:47.338437,False response format, no <evaluation>
+16922_D,failed,2025-04-22T13:12:49.885920,Output data may contain inappropriate content.
+9835_E,success,2025-04-22T13:13:14.311333
+101485_E,success,2025-04-22T13:13:16.650359
+2896_B,failed,2025-04-22T13:13:17.680399,False response format, no <evaluation>
+32064_B,failed,2025-04-22T13:13:18.432426,False response format, no <evaluation>
+99372_E,failed,2025-04-22T13:13:23.162290,False response format, no <evaluation>
+70862_C,failed,2025-04-22T13:13:26.964917,False response format, no <evaluation>
+112785_B,failed,2025-04-22T13:13:38.212495,False response format, no <evaluation>
+56398_B,failed,2025-04-22T13:13:45.086484,False response format, no <evaluation>
+40777_D,success,2025-04-22T13:13:48.214145
+49966_A,failed,2025-04-22T13:13:49.199578,False response format, no <evaluation>
+40589_A,failed,2025-04-22T13:13:56.629582,False response format, no <evaluation>
+21449_D,failed,2025-04-22T13:14:03.595644,False response format, no <evaluation>
+65947_B,failed,2025-04-22T13:14:05.777858,False response format, no <evaluation>
+87670_C,failed,2025-04-22T13:14:12.266440,False response format, no <evaluation>
+12727_B,failed,2025-04-22T13:14:20.784949,False response format, no <evaluation>
+87333_E,failed,2025-04-22T13:14:29.712168,False response format, no <evaluation>
+104773_E,failed,2025-04-22T13:14:35.993992,False response format, no <evaluation>
+8215_A,success,2025-04-22T13:14:36.135405
+47645_D,failed,2025-04-22T13:14:55.365130,False response format, no <evaluation>
+40777_D,success,2025-04-22T13:15:01.780134
+47645_D,success,2025-04-22T13:15:10.823709
+50433_B,failed,2025-04-22T13:15:13.104203,False response format, no <evaluation>
+45260_A,success,2025-04-22T13:15:29.385888
+46896_A,failed,2025-04-22T13:15:32.197107,False response format, no <evaluation>
+41007_B,failed,2025-04-22T13:15:43.260417,False response format, no <evaluation>
+40232_A,success,2025-04-22T13:15:47.427773
+87670_C,failed,2025-04-22T13:15:51.221267,False response format, no <evaluation>
+46896_A,failed,2025-04-22T13:15:51.680050,False response format, no <evaluation>
+16922_D,failed,2025-04-22T13:16:01.223375,Output data may contain inappropriate content.
+8215_A,failed,2025-04-22T13:16:15.006177,False response format, no <evaluation>
+75177_D,failed,2025-04-22T13:16:15.125069,False response format, no <evaluation>
+14378_A,failed,2025-04-22T13:16:45.839731,False response format, no <evaluation>
+40232_A,success,2025-04-22T13:16:55.526526
+50433_B,failed,2025-04-22T13:17:00.125641,False response format, no <evaluation>
+40589_A,failed,2025-04-22T13:17:04.139507,False response format, no <evaluation>
+14378_A,failed,2025-04-22T13:17:11.415423,False response format, no <evaluation>
+57760_D,failed,2025-04-22T13:17:42.159911,False response format, no <evaluation>
+78745_E,failed,2025-04-22T13:17:51.279959,Output data may contain inappropriate content.
+118380_E,failed,2025-04-22T13:17:53.458588,False response format, no <evaluation>
+21610_E,failed,2025-04-22T13:17:55.248071,False response format, no <evaluation>
+104773_E,success,2025-04-22T13:18:00.923209
+15663_A,failed,2025-04-22T13:18:08.936185,False response format, no <evaluation>
+18400_A,failed,2025-04-22T13:18:11.103985,False response format, no <evaluation>
+45260_A,failed,2025-04-22T13:18:36.917263,False response format, no <evaluation>
+41007_B,failed,2025-04-22T13:18:46.409848,False response format, no <evaluation>
+118542_E,failed,2025-04-22T13:18:54.228237,False response format, no <evaluation>
+78745_E,failed,2025-04-22T13:18:57.333402,Output data may contain inappropriate content.
+87333_E,success,2025-04-22T13:19:00.206405
+77822_C,failed,2025-04-22T13:19:08.958057,Output data may contain inappropriate content.
+18400_A,failed,2025-04-22T13:19:29.226689,False response format, no <evaluation>
+63171_D,failed,2025-04-22T13:19:33.567907,False response format, no <evaluation>
+118542_E,failed,2025-04-22T13:19:34.977896,False response format, no <evaluation>
+66028_A,failed,2025-04-22T13:19:48.661082,False response format, no <evaluation>
+18235_C,failed,2025-04-22T13:19:57.459566,False response format, no <evaluation>
+21610_E,failed,2025-04-22T13:20:05.838338,False response format, no <evaluation>
+90270_B,failed,2025-04-22T13:20:08.110742,False response format, no <evaluation>
+77822_C,failed,2025-04-22T13:20:08.591919,Output data may contain inappropriate content.
+63171_D,success,2025-04-22T13:20:26.452419
+50050_C,failed,2025-04-22T13:20:50.007306,False response format, no <evaluation>
+57760_D,failed,2025-04-22T13:21:43.136387,False response format, no <evaluation>
+4642_E,failed,2025-04-22T13:21:46.398561,False response format, no <evaluation>
+4944_E,failed,2025-04-22T13:21:48.410214,False response format, no <evaluation>
+15663_A,failed,2025-04-22T13:22:00.838441,False response format, no <evaluation>
+70862_C,failed,2025-04-22T13:22:07.703449,False response format, no <evaluation>
+42482_D,failed,2025-04-22T13:22:08.677897,Output data may contain inappropriate content.
+18235_C,failed,2025-04-22T13:22:09.712199,False response format, no <evaluation>
+88033_E,failed,2025-04-22T13:22:16.282330,False response format, no <evaluation>
+50050_C,success,2025-04-22T13:22:21.302997
+90270_B,failed,2025-04-22T13:22:27.121176,False response format, no <evaluation>
+42482_D,failed,2025-04-22T13:22:27.292991,Error code: 400 - {'error': {'code': 'data_inspection_failed', 'param': None, 'message': 'Input data may contain inappropriate content.', 'type': 'data_inspection_failed'}, 'id': 'chatcmpl-946b5fa6-5986-9410-869b-94cd5ddd4a2c', 'request_id': '946b5fa6-5986-9410-869b-94cd5ddd4a2c'}
+66028_A,failed,2025-04-22T13:22:31.407323,False response format, no <evaluation>
+82790_C,failed,2025-04-22T13:22:55.248645,False response format, no <evaluation>
+118284_E,failed,2025-04-22T13:23:29.700423,False response format, no <evaluation>
+28836_C,success,2025-04-22T13:23:34.308961
+82790_C,failed,2025-04-22T13:23:37.922014,False response format, no <evaluation>
+55325_A,failed,2025-04-22T13:23:43.163504,False response format, no <evaluation>
+70742_A,failed,2025-04-22T13:23:50.495896,False response format, no <evaluation>
+66490_E,failed,2025-04-22T13:24:01.249204,False response format, no <evaluation>
+88033_E,success,2025-04-22T13:24:03.150800
+46624_E,failed,2025-04-22T13:24:07.226469,False response format, no <evaluation>
+15871_B,success,2025-04-22T13:24:11.664130
+28836_C,failed,2025-04-22T13:24:17.893097,False response format, no <evaluation>
+70742_A,success,2025-04-22T13:24:21.099826
+118284_E,failed,2025-04-22T13:24:56.823830,False response format, no <evaluation>
+53338_E,failed,2025-04-22T13:24:58.789788,False response format, no <evaluation>
+20010_B,failed,2025-04-22T13:25:02.257371,False response format, no <evaluation>
+84907_D,success,2025-04-22T13:25:05.094355
+18749_A,success,2025-04-22T13:25:07.313303
+53338_E,failed,2025-04-22T13:25:21.768876,False response format, no <evaluation>
+46624_E,success,2025-04-22T13:25:34.345174
+84907_D,failed,2025-04-22T13:25:41.700311,False response format, no <evaluation>
+18749_A,failed,2025-04-22T13:25:41.888067,False response format, no <evaluation>
+20010_B,success,2025-04-22T13:25:53.024564
+108615_B,failed,2025-04-22T13:26:17.777257,False response format, no <evaluation>
+50453_C,failed,2025-04-22T13:26:21.836031,False response format, no <evaluation>
+90620_A,failed,2025-04-22T13:26:22.093594,False response format, no <evaluation>
+52913_A,failed,2025-04-22T13:26:33.156841,False response format, no <evaluation>
+55325_A,failed,2025-04-22T13:26:37.550333,False response format, no <evaluation>
+52913_A,failed,2025-04-22T13:26:54.330431,False response format, no <evaluation>
+66490_E,success,2025-04-22T13:26:59.976630
+15871_B,success,2025-04-22T13:27:16.369125
+50453_C,failed,2025-04-22T13:27:47.597623,False response format, no <evaluation>
+90620_A,failed,2025-04-22T13:28:58.497145,False response format, no <evaluation>
+4944_E,success,2025-04-22T13:29:01.239127
+51530_A,success,2025-04-22T13:29:35.253055
+51530_A,success,2025-04-22T13:31:04.822643
+108615_B,success,2025-04-22T13:31:37.758391
+4642_E,failed,2025-04-22T13:32:13.957448,False response format, no <evaluation>
+109547_D,failed,2025-04-22T13:49:10.969664,Output data may contain inappropriate content.
+109547_D,failed,2025-04-22T13:49:16.824817,Output data may contain inappropriate content.
+42793_E,failed,2025-04-22T13:50:09.324485,False response format, no <evaluation>
+41007_B,failed,2025-04-22T13:50:15.340932,False response format, no <evaluation>
+44680_D,failed,2025-04-22T13:50:18.350700,False response format, no <evaluation>
+78745_E,failed,2025-04-22T13:50:21.387268,Output data may contain inappropriate content.
+11133_D,failed,2025-04-22T13:50:21.410398,Output data may contain inappropriate content.
+78745_E,failed,2025-04-22T13:50:24.577374,Output data may contain inappropriate content.
+11133_D,failed,2025-04-22T13:50:29.512970,Output data may contain inappropriate content.
+47436_D,success,2025-04-22T13:50:44.360829
+44680_D,failed,2025-04-22T13:50:48.427093,False response format, no <evaluation>
+49097_E,success,2025-04-22T13:50:58.786970
+93709_C,failed,2025-04-22T13:51:12.172843,False response format, no <evaluation>
+49097_E,success,2025-04-22T13:51:15.489460
+42793_E,failed,2025-04-22T13:51:26.141671,False response format, no <evaluation>
+81360_E,success,2025-04-22T13:51:40.153123
+41007_B,failed,2025-04-22T13:51:53.540652,False response format, no <evaluation>
+75836_A,success,2025-04-22T13:52:01.462588
+18400_A,failed,2025-04-22T13:52:08.216405,False response format, no <evaluation>
+47436_D,failed,2025-04-22T13:52:12.965995,False response format, no <evaluation>
+66028_A,failed,2025-04-22T13:52:13.787363,False response format, no <evaluation>
+112760_A,failed,2025-04-22T13:52:14.318352,False response format, no <evaluation>
+87514_B,failed,2025-04-22T13:52:15.458694,False response format, no <evaluation>
+112760_A,failed,2025-04-22T13:52:33.003995,False response format, no <evaluation>
+55325_A,failed,2025-04-22T13:52:46.701829,False response format, no <evaluation>
+105570_C,failed,2025-04-22T13:52:53.812098,False response format, no <evaluation>
+118542_E,failed,2025-04-22T13:52:56.113722,False response format, no <evaluation>
+93709_C,failed,2025-04-22T13:52:59.503377,False response format, no <evaluation>
+66028_A,failed,2025-04-22T13:53:12.292332,False response format, no <evaluation>
+49966_A,failed,2025-04-22T13:53:24.129530,False response format, no <evaluation>
+81360_E,success,2025-04-22T13:53:45.202259
+105570_C,failed,2025-04-22T13:53:53.936534,False response format, no <evaluation>
+87514_B,success,2025-04-22T13:53:59.875042
+118542_E,success,2025-04-22T13:54:14.562135
+53338_E,success,2025-04-22T13:54:29.909587
+49966_A,failed,2025-04-22T13:54:38.105751,False response format, no <evaluation>
+57961_A,failed,2025-04-22T13:54:49.511325,False response format, no <evaluation>
+57961_A,failed,2025-04-22T13:54:57.987515,False response format, no <evaluation>
+57760_D,failed,2025-04-22T13:55:00.123623,False response format, no <evaluation>
+52913_A,success,2025-04-22T13:55:01.498271
+70862_C,success,2025-04-22T13:55:19.334815
+112785_B,success,2025-04-22T13:55:42.788486
+75836_A,failed,2025-04-22T13:55:46.919826,False response format, no <evaluation>
+16922_D,failed,2025-04-22T13:55:47.117346,Error code: 400 - {'error': {'code': 'data_inspection_failed', 'param': None, 'message': 'Input data may contain inappropriate content.', 'type': 'data_inspection_failed'}, 'id': 'chatcmpl-86945854-ead5-9319-84b9-3af41991a055', 'request_id': '86945854-ead5-9319-84b9-3af41991a055'}
+52913_A,failed,2025-04-22T13:56:01.431314,False response format, no <evaluation>
+74976_D,failed,2025-04-22T13:56:01.575009,False response format, no <evaluation>
+106590_B,failed,2025-04-22T13:56:14.449585,False response format, no <evaluation>
+53338_E,failed,2025-04-22T13:56:19.361988,False response format, no <evaluation>
+49497_C,success,2025-04-22T13:56:26.714901
+18400_A,success,2025-04-22T13:56:31.161607
+46896_A,failed,2025-04-22T13:56:46.091456,False response format, no <evaluation>
+70541_B,failed,2025-04-22T13:56:55.038874,False response format, no <evaluation>
+27327_B,failed,2025-04-22T13:56:56.863622,False response format, no <evaluation>
+70541_B,success,2025-04-22T13:57:05.639168
+67449_E,failed,2025-04-22T13:57:56.900078,False response format, no <evaluation>
+74976_D,failed,2025-04-22T13:57:58.298864,False response format, no <evaluation>
+50433_B,failed,2025-04-22T13:58:05.698143,False response format, no <evaluation>
+5189_C,success,2025-04-22T13:58:12.796770
+50433_B,failed,2025-04-22T13:58:15.589617,False response format, no <evaluation>
+70862_C,success,2025-04-22T13:58:32.596906
+46896_A,failed,2025-04-22T13:58:35.642481,False response format, no <evaluation>
+16922_D,failed,2025-04-22T13:58:46.242944,Output data may contain inappropriate content.
+106590_B,success,2025-04-22T13:59:04.942201
+96551_D,failed,2025-04-22T13:59:06.552715,False response format, no <evaluation>
+55325_A,failed,2025-04-22T13:59:09.565961,False response format, no <evaluation>
+96551_D,failed,2025-04-22T13:59:33.146595,False response format, no <evaluation>
+14378_A,failed,2025-04-22T13:59:38.028604,False response format, no <evaluation>
+67449_E,failed,2025-04-22T13:59:53.490443,False response format, no <evaluation>
+90200_D,failed,2025-04-22T13:59:55.026479,False response format, no <evaluation>
+28420_E,failed,2025-04-22T14:00:03.142289,False response format, no <evaluation>
+90200_D,success,2025-04-22T14:00:14.340868
+99372_E,success,2025-04-22T14:00:25.993154
+2896_B,failed,2025-04-22T14:00:32.860796,False response format, no <evaluation>
+50088_A,failed,2025-04-22T14:00:35.711252,False response format, no <evaluation>
+14378_A,failed,2025-04-22T14:00:39.990101,False response format, no <evaluation>
+77822_C,failed,2025-04-22T14:00:46.151903,Output data may contain inappropriate content.
+49497_C,failed,2025-04-22T14:01:24.585218,False response format, no <evaluation>
+32064_B,failed,2025-04-22T14:01:25.101084,False response format, no <evaluation>
+50088_A,failed,2025-04-22T14:01:33.910651,False response format, no <evaluation>
+27327_B,success,2025-04-22T14:02:00.637484
+32064_B,failed,2025-04-22T14:02:00.868042,False response format, no <evaluation>
+82790_C,failed,2025-04-22T14:02:00.918392,False response format, no <evaluation>
+21610_E,failed,2025-04-22T14:02:00.990797,False response format, no <evaluation>
+22325_B,failed,2025-04-22T14:02:05.553860,False response format, no <evaluation>
+5189_C,success,2025-04-22T14:02:09.756305
+28420_E,failed,2025-04-22T14:03:01.680367,False response format, no <evaluation>
+21610_E,failed,2025-04-22T14:03:02.862953,False response format, no <evaluation>
+2896_B,failed,2025-04-22T14:03:09.754546,False response format, no <evaluation>
+22325_B,failed,2025-04-22T14:03:16.371069,False response format, no <evaluation>
+90270_B,failed,2025-04-22T14:03:26.021492,False response format, no <evaluation>
+99372_E,success,2025-04-22T14:03:26.662758
+82790_C,success,2025-04-22T14:03:29.595044
+49614_A,failed,2025-04-22T14:03:38.125652,False response format, no <evaluation>
+77822_C,failed,2025-04-22T14:03:51.576436,False response format, no <evaluation>
+49614_A,failed,2025-04-22T14:04:00.298871,False response format, no <evaluation>
+4642_E,success,2025-04-22T14:04:09.989784
+118380_E,success,2025-04-22T14:04:14.955590
+90270_B,failed,2025-04-22T14:04:21.253010,False response format, no <evaluation>
+112785_B,success,2025-04-22T14:04:53.721710
+50453_C,success,2025-04-22T14:05:08.283054
+50453_C,success,2025-04-22T14:05:11.355172
+51661_E,success,2025-04-22T14:05:15.608906
+15663_A,failed,2025-04-22T14:05:15.801832,False response format, no <evaluation>
+15663_A,failed,2025-04-22T14:05:24.461097,False response format, no <evaluation>
+26736_B,failed,2025-04-22T14:05:28.607335,False response format, no <evaluation>
+35090_B,failed,2025-04-22T14:05:51.897440,False response format, no <evaluation>
+118284_E,success,2025-04-22T14:06:22.493273
+4642_E,failed,2025-04-22T14:06:23.134914,False response format, no <evaluation>
+40589_A,success,2025-04-22T14:06:25.912338
+35408_E,failed,2025-04-22T14:06:31.734139,False response format, no <evaluation>
+35408_E,success,2025-04-22T14:06:34.679133
+42482_D,failed,2025-04-22T14:06:35.117270,Output data may contain inappropriate content.
+57760_D,failed,2025-04-22T14:06:35.614820,False response format, no <evaluation>
+24895_C,failed,2025-04-22T14:06:38.122001,False response format, no <evaluation>
+42482_D,failed,2025-04-22T14:06:43.679550,Output data may contain inappropriate content.
+89445_C,success,2025-04-22T14:06:56.322558
+52247_D,failed,2025-04-22T14:07:01.780826,False response format, no <evaluation>
+89445_C,failed,2025-04-22T14:07:12.267222,False response format, no <evaluation>
+118380_E,failed,2025-04-22T14:07:12.779458,False response format, no <evaluation>
+18235_C,success,2025-04-22T14:07:33.072321
+90620_A,failed,2025-04-22T14:07:47.527431,False response format, no <evaluation>
+26736_B,success,2025-04-22T14:07:48.211428
+57998_C,success,2025-04-22T14:08:02.064349
+57998_C,failed,2025-04-22T14:08:09.306916,False response format, no <evaluation>
+66586_D,failed,2025-04-22T14:08:12.701029,False response format, no <evaluation>
+118284_E,failed,2025-04-22T14:08:13.003098,False response format, no <evaluation>
+23537_C,failed,2025-04-22T14:08:18.361747,Output data may contain inappropriate content.
+52247_D,failed,2025-04-22T14:08:53.236591,False response format, no <evaluation>
+35090_B,failed,2025-04-22T14:09:16.034998,False response format, no <evaluation>
+23537_C,failed,2025-04-22T14:09:19.301979,Output data may contain inappropriate content.
+90620_A,failed,2025-04-22T14:09:20.763964,False response format, no <evaluation>
+40589_A,success,2025-04-22T14:09:37.047068
+65947_B,failed,2025-04-22T14:09:56.036716,False response format, no <evaluation>
+75758_D,failed,2025-04-22T14:09:56.218932,Error code: 400 - {'error': {'code': 'data_inspection_failed', 'param': None, 'message': 'Input data may contain inappropriate content.', 'type': 'data_inspection_failed'}, 'id': 'chatcmpl-f302e93f-795d-9a4f-9c8a-6e7346c04dce', 'request_id': 'f302e93f-795d-9a4f-9c8a-6e7346c04dce'}
+32818_B,failed,2025-04-22T14:09:56.743625,False response format, no <evaluation>
+77408_C,success,2025-04-22T14:10:10.683749
+20077_B,failed,2025-04-22T14:10:14.308545,False response format, no <evaluation>
+32818_B,success,2025-04-22T14:10:33.758307
+66586_D,failed,2025-04-22T14:10:37.043825,False response format, no <evaluation>
+56398_B,success,2025-04-22T14:10:42.042620
+51661_E,failed,2025-04-22T14:11:00.176245,False response format, no <evaluation>
+22745_B,success,2025-04-22T14:11:00.384499
+18235_C,success,2025-04-22T14:11:04.175817
+48622_A,failed,2025-04-22T14:11:09.756009,False response format, no <evaluation>
+65947_B,success,2025-04-22T14:11:12.128791
+22745_B,failed,2025-04-22T14:11:14.914830,False response format, no <evaluation>
+12727_B,failed,2025-04-22T14:11:21.736950,False response format, no <evaluation>
+19871_A,failed,2025-04-22T14:11:41.140597,False response format, no <evaluation>
+12727_B,failed,2025-04-22T14:11:52.565018,False response format, no <evaluation>
+87670_C,success,2025-04-22T14:12:26.813118
+105820_D,failed,2025-04-22T14:12:27.587522,False response format, no <evaluation>
+48622_A,failed,2025-04-22T14:13:05.431177,False response format, no <evaluation>
+19871_A,failed,2025-04-22T14:13:41.905001,False response format, no <evaluation>
+75758_D,failed,2025-04-22T14:14:05.239742,Output data may contain inappropriate content.
+77408_C,success,2025-04-22T14:15:00.582727
+20077_B,failed,2025-04-22T14:15:18.171981,False response format, no <evaluation>
+87670_C,success,2025-04-22T14:15:24.182587
+24895_C,success,2025-04-22T14:16:21.735134
+105820_D,success,2025-04-22T14:16:36.711788
+56398_B,failed,2025-04-22T14:26:32.797782,False response format, no <evaluation>
+109547_D,failed,2025-04-22T18:13:06.794564,Output data may contain inappropriate content.
+42482_D,failed,2025-04-22T18:13:45.187671,Output data may contain inappropriate content.
+42482_D,failed,2025-04-22T18:14:04.419353,Output data may contain inappropriate content.
+37013_B,success,2025-04-22T18:14:04.595666
+90620_A,failed,2025-04-22T18:14:04.760841,False response format, no <evaluation>
+87965_D,failed,2025-04-22T18:14:04.771515,False response format, no <evaluation>
+66586_D,failed,2025-04-22T18:14:08.049476,False response format, no <evaluation>
+11133_D,failed,2025-04-22T18:14:11.454340,Output data may contain inappropriate content.
+8235_B,success,2025-04-22T18:14:32.302553
+109547_D,failed,2025-04-22T18:14:37.308019,Output data may contain inappropriate content.
+99023_D,failed,2025-04-22T18:14:41.793303,False response format, no <evaluation>
+11133_D,failed,2025-04-22T18:14:43.670199,Output data may contain inappropriate content.
+109947_C,success,2025-04-22T18:14:49.757657
+8235_B,failed,2025-04-22T18:15:09.525528,False response format, no <evaluation>
+42793_E,failed,2025-04-22T18:15:14.886394,False response format, no <evaluation>
+44576_B,failed,2025-04-22T18:15:30.036041,False response format, no <evaluation>
+44576_B,failed,2025-04-22T18:15:34.331725,False response format, no <evaluation>
+87998_A,failed,2025-04-22T18:15:37.773276,False response format, no <evaluation>
+20154_D,failed,2025-04-22T18:16:03.515577,False response format, no <evaluation>
+44680_D,failed,2025-04-22T18:16:08.709828,False response format, no <evaluation>
+5931_C,failed,2025-04-22T18:16:13.302186,False response format, no <evaluation>
+90620_A,failed,2025-04-22T18:16:16.719592,False response format, no <evaluation>
+99023_D,failed,2025-04-22T18:16:32.783111,False response format, no <evaluation>
+16922_D,failed,2025-04-22T18:16:32.959710,Error code: 400 - {'error': {'code': 'data_inspection_failed', 'param': None, 'message': 'Input data may contain inappropriate content.', 'type': 'data_inspection_failed'}, 'id': 'chatcmpl-d600b743-e049-9304-8ffc-705418f148ec', 'request_id': 'd600b743-e049-9304-8ffc-705418f148ec'}
+49966_A,failed,2025-04-22T18:16:49.504037,False response format, no <evaluation>
+5931_C,failed,2025-04-22T18:17:08.757886,False response format, no <evaluation>
+19871_A,failed,2025-04-22T18:17:24.970527,False response format, no <evaluation>
+109947_C,failed,2025-04-22T18:17:26.668121,False response format, no <evaluation>
+42793_E,failed,2025-04-22T18:17:32.892915,False response format, no <evaluation>
+2896_B,success,2025-04-22T18:17:32.894432
+57760_D,failed,2025-04-22T18:17:44.615640,False response format, no <evaluation>
+112760_A,failed,2025-04-22T18:17:47.817268,False response format, no <evaluation>
+93709_C,failed,2025-04-22T18:17:49.761967,False response format, no <evaluation>
+48622_A,failed,2025-04-22T18:17:52.152242,False response format, no <evaluation>
+2896_B,failed,2025-04-22T18:17:57.486726,False response format, no <evaluation>
+37013_B,success,2025-04-22T18:18:01.614817
+50433_B,success,2025-04-22T18:18:07.334982
+46896_A,failed,2025-04-22T18:19:01.571721,False response format, no <evaluation>
+50493_C,success,2025-04-22T18:19:04.814344
+48622_A,failed,2025-04-22T18:19:05.825703,False response format, no <evaluation>
+20154_D,failed,2025-04-22T18:19:08.995474,False response format, no <evaluation>
+16922_D,failed,2025-04-22T18:19:09.227643,Output data may contain inappropriate content.
+87998_A,failed,2025-04-22T18:19:15.129772,False response format, no <evaluation>
+49966_A,failed,2025-04-22T18:19:17.869246,False response format, no <evaluation>
+24470_D,success,2025-04-22T18:19:33.386657
+44680_D,success,2025-04-22T18:19:41.542344
+57760_D,failed,2025-04-22T18:20:01.670252,False response format, no <evaluation>
+96299_D,failed,2025-04-22T18:20:04.242751,False response format, no <evaluation>
+66586_D,failed,2025-04-22T18:20:24.596697,False response format, no <evaluation>
+50433_B,failed,2025-04-22T18:20:33.598961,<5000201> InternalError.Algo.ModelServingError.ModelServingWithDetailError: An error occurred in model serving with code: 500, and the error message is InternalError: Receive batching backend response failed!
+46896_A,failed,2025-04-22T18:20:39.229778,False response format, no <evaluation>
+74976_D,failed,2025-04-22T18:20:39.810590,False response format, no <evaluation>
+14522_B,failed,2025-04-22T18:20:49.384742,False response format, no <evaluation>
+19871_A,failed,2025-04-22T18:20:49.496862,False response format, no <evaluation>
+112760_A,failed,2025-04-22T18:20:50.803523,False response format, no <evaluation>
+9418_A,failed,2025-04-22T18:20:54.506742,False response format, no <evaluation>
+104842_E,success,2025-04-22T18:20:57.153474
+21610_E,success,2025-04-22T18:21:01.468737
+96551_D,failed,2025-04-22T18:21:19.045153,False response format, no <evaluation>
+93709_C,success,2025-04-22T18:21:19.051227
+24470_D,failed,2025-04-22T18:21:30.615931,False response format, no <evaluation>
+50493_C,failed,2025-04-22T18:21:40.018520,<5000201> InternalError.Algo.ModelServingError.ModelServingWithDetailError: An error occurred in model serving with code: 500, and the error message is InternalError: Receive batching backend response failed!
+9418_A,failed,2025-04-22T18:21:40.098505,False response format, no <evaluation>
+67449_E,failed,2025-04-22T18:21:49.001677,False response format, no <evaluation>
+14378_A,failed,2025-04-22T18:21:55.290969,False response format, no <evaluation>
+104842_E,failed,2025-04-22T18:22:01.343004,False response format, no <evaluation>
+105570_C,failed,2025-04-22T18:22:03.161450,False response format, no <evaluation>
+77822_C,failed,2025-04-22T18:22:03.685947,Output data may contain inappropriate content.
+49614_A,failed,2025-04-22T18:22:03.721952,False response format, no <evaluation>
+23537_C,failed,2025-04-22T18:22:06.316356,Output data may contain inappropriate content.
+77822_C,failed,2025-04-22T18:22:15.647847,Output data may contain inappropriate content.
+78245_D,failed,2025-04-22T18:22:18.967561,False response format, no <evaluation>
+75758_D,failed,2025-04-22T18:22:29.834321,Output data may contain inappropriate content.
+27015_D,failed,2025-04-22T18:22:30.161956,False response format, no <evaluation>
+21610_E,failed,2025-04-22T18:22:31.838110,False response format, no <evaluation>
+22325_B,failed,2025-04-22T18:22:39.537125,False response format, no <evaluation>
+12748_C,failed,2025-04-22T18:22:42.533447,False response format, no <evaluation>
+90270_B,failed,2025-04-22T18:22:49.823731,False response format, no <evaluation>
+23537_C,failed,2025-04-22T18:22:52.109234,Output data may contain inappropriate content.
+105570_C,success,2025-04-22T18:22:54.229863
+90270_B,success,2025-04-22T18:22:55.281229
+49614_A,failed,2025-04-22T18:23:03.549652,False response format, no <evaluation>
+75758_D,failed,2025-04-22T18:23:10.957713,Output data may contain inappropriate content.
+12727_B,success,2025-04-22T18:23:11.117066
+96299_D,success,2025-04-22T18:23:13.132760
+78245_D,failed,2025-04-22T18:23:15.135174,False response format, no <evaluation>
+35090_B,failed,2025-04-22T18:23:20.576174,False response format, no <evaluation>
+90604_A,failed,2025-04-22T18:23:27.327413,False response format, no <evaluation>
+87965_D,failed,2025-04-22T18:23:38.758943,<5000201> InternalError.Algo.ModelServingError.ModelServingWithDetailError: An error occurred in model serving with code: 500, and the error message is InternalError: Receive batching backend response failed!
+80367_A,success,2025-04-22T18:23:56.717626
+35090_B,failed,2025-04-22T18:24:03.455535,False response format, no <evaluation>
+74976_D,success,2025-04-22T18:24:04.423676
+12727_B,failed,2025-04-22T18:24:21.098940,False response format, no <evaluation>
+90604_A,success,2025-04-22T18:24:44.923042
+52247_D,failed,2025-04-22T18:24:47.165962,False response format, no <evaluation>
+96551_D,success,2025-04-22T18:24:54.892110
+14378_A,success,2025-04-22T18:25:02.120247
+78745_E,failed,2025-04-22T18:25:06.455882,Output data may contain inappropriate content.
+112152_E,failed,2025-04-22T18:25:06.899510,False response format, no <evaluation>
+12748_C,failed,2025-04-22T18:25:20.110419,False response format, no <evaluation>
+20077_B,failed,2025-04-22T18:25:31.626953,False response format, no <evaluation>
+22325_B,failed,2025-04-22T18:25:32.512137,False response format, no <evaluation>
+78745_E,failed,2025-04-22T18:25:34.777529,Output data may contain inappropriate content.
+66028_A,success,2025-04-22T18:25:45.473090
+41007_B,failed,2025-04-22T18:25:49.333421,False response format, no <evaluation>
+80367_A,failed,2025-04-22T18:25:50.100432,False response format, no <evaluation>
+20077_B,failed,2025-04-22T18:25:54.385733,False response format, no <evaluation>
+89803_B,success,2025-04-22T18:26:07.122840
+42047_A,failed,2025-04-22T18:26:07.624480,False response format, no <evaluation>
+66028_A,success,2025-04-22T18:26:26.435481
+8708_E,success,2025-04-22T18:26:44.303904
+44676_C,failed,2025-04-22T18:26:45.278468,False response format, no <evaluation>
+27015_D,success,2025-04-22T18:27:12.055359
+71455_D,failed,2025-04-22T18:27:14.702295,False response format, no <evaluation>
+89803_B,failed,2025-04-22T18:27:21.434964,False response format, no <evaluation>
+118548_D,failed,2025-04-22T18:27:38.991279,False response format, no <evaluation>
+71455_D,failed,2025-04-22T18:28:02.705362,False response format, no <evaluation>
+57961_A,success,2025-04-22T18:28:14.688821
+44676_C,failed,2025-04-22T18:28:19.562495,False response format, no <evaluation>
+23978_C,success,2025-04-22T18:28:38.956234
+42047_A,failed,2025-04-22T18:28:41.458356,False response format, no <evaluation>
+50088_A,failed,2025-04-22T18:28:44.052792,False response format, no <evaluation>
+48680_E,failed,2025-04-22T18:29:33.513705,False response format, no <evaluation>
+39382_A,failed,2025-04-22T18:29:38.261110,False response format, no <evaluation>
+57961_A,failed,2025-04-22T18:29:41.617927,False response format, no <evaluation>
+23899_B,success,2025-04-22T18:29:48.206523
+51065_D,success,2025-04-22T18:29:50.759973
+93409_E,failed,2025-04-22T18:30:15.937938,False response format, no <evaluation>
+63098_A,failed,2025-04-22T18:30:17.006800,False response format, no <evaluation>
+23899_B,failed,2025-04-22T18:30:19.975015,False response format, no <evaluation>
+28420_E,failed,2025-04-22T18:30:23.095214,False response format, no <evaluation>
+100228_C,success,2025-04-22T18:30:34.002210
+14522_B,failed,2025-04-22T18:30:35.329650,False response format, no <evaluation>
+112152_E,success,2025-04-22T18:30:47.261749
+87007_A,failed,2025-04-22T18:30:50.756492,False response format, no <evaluation>
+32064_B,failed,2025-04-22T18:30:51.242540,False response format, no <evaluation>
+41007_B,failed,2025-04-22T18:30:53.462242,False response format, no <evaluation>
+15663_A,failed,2025-04-22T18:31:17.217793,False response format, no <evaluation>
+19515_E,failed,2025-04-22T18:31:19.598074,False response format, no <evaluation>
+100228_C,failed,2025-04-22T18:31:28.210215,False response format, no <evaluation>
+52247_D,failed,2025-04-22T18:31:39.182444,False response format, no <evaluation>
+55325_A,failed,2025-04-22T18:32:13.248933,False response format, no <evaluation>
+39382_A,success,2025-04-22T18:32:18.668019
+89766_D,failed,2025-04-22T18:32:25.503719,False response format, no <evaluation>
+8708_E,failed,2025-04-22T18:32:45.819878,False response format, no <evaluation>
+93409_E,failed,2025-04-22T18:32:58.906581,False response format, no <evaluation>
+23978_C,failed,2025-04-22T18:33:04.715302,False response format, no <evaluation>
+48680_E,failed,2025-04-22T18:33:21.979404,False response format, no <evaluation>
+118548_D,success,2025-04-22T18:33:26.347384
+89766_D,failed,2025-04-22T18:33:33.239807,False response format, no <evaluation>
+28420_E,failed,2025-04-22T18:33:53.081277,False response format, no <evaluation>
+32064_B,failed,2025-04-22T18:33:58.275008,False response format, no <evaluation>
+15663_A,failed,2025-04-22T18:33:59.141535,False response format, no <evaluation>
+63098_A,failed,2025-04-22T18:34:07.786947,False response format, no <evaluation>
+51065_D,failed,2025-04-22T18:34:10.044852,False response format, no <evaluation>
+87007_A,success,2025-04-22T18:34:15.962619
+67449_E,success,2025-04-22T18:34:20.614531
+55325_A,success,2025-04-22T18:34:26.951947

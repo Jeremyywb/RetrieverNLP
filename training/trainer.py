@@ -999,3 +999,223 @@ class Trainer:
         # 动态实例化该调度器的配置类
         return config_class.from_dict(scheduler_params)
 
+
+
+你是一个出色的算法工程师。给你数据描述，以及任务指导，同时还有一份实践代码。完成一份更加高效的代码
+
+以下是相关的数据描述：
+数据1 dataframe（多选题数据，原多选题拆解而来，拆解逻辑为多选题题目id+错误选项的名称A也即,B,C,D）：
+查询数据｛
+query_id:查询id，唯一值，其构成为 original_query_id （是字符串，多选题的题目的id）+ "下划线" + 答案选项（A,B,C,D中的一个）,
+content_id: 正样本id， 
+MisconceptionName:正样本文本,
+QuestionText: 查询文本,
+CorrectAnswerText: 正确答案文本,
+InCorrectAnswerText：错误答案文本,
+Explanation: cot数据
+｝
+数据2 dataframe：
+样本池{
+    content_id:唯一值 其他所有content id都可以在这个字段找到，
+    MisconceptionName:正样本标签文本,
+}
+数据3 json：#数据来源 查询数据dataframe1的每个query_id对应内容构造prompt通过API获得COT
+    额外cot数据{
+        "query_id":查询id,
+        "content_id":样本id,
+        "Explanation":其他API获取的额外cot数据
+    }
+数据4 json:
+    semi 中等难度负样本}{
+        "query_id":查询 id，
+        "content_ids":10个中等难度样本的content_id 逗号分隔的拼接文本 如 22,33,22,33...   
+    }
+数据5 json:
+    hard 困难难度负样本}{
+        "query_id":查询 id，
+        "content_ids":10个困难难度样本的content_id 逗号分隔的拼接文本 如 22,33,22,33...   
+    }
+
+
+
+设计dataset，以简单为主。
+1. 一个统一可用的dataset，旨在可以对于查询文本、样本标签 MisconceptionName 文本 也即content的tokenized，以及cot文本进行tokenized，但是需要注意保留 query_id与每个dataset的item对应关系
+2. 减少计算量，所有样本content_id的tokenize通过样本池的tokenize关联获取
+3. 用于train的dataset，以query_id作为主键（但是注意他是文本，可能不能直接用到dataloader），收集其对应的 
+- 当前query_id下，QuestionText 的  tokenized
+- 当前query_id下，positive 正样本对应 的 MisconceptionName 标签 的tokenized
+- 当前query_id下，两个 cot （ 查询数据本身带有的cot以及额外的cot） 对应的 tokenized
+- 当模式为 easy 时，要求到此为止
+- 当模式为 semi 时，要求添加 当前 query_id 对应的 中等难度负样本，其tokenized
+- 当模式为 hard 时，要求添加 当前 query_id 对应的 中等难度负样本，其tokenized
+
+
+以下是相关的任务指导：
+## 四个基础dataset实例
+- query_dataset： query_id为属性，因为输入是 dataframe(query_id, QuestionText),每个item（QuestionText的tokenized ）的id索引和query_id索引一致。 建议：额外生成一个属性字典，映射 query_id到 content_id 的对应关系
+- content_dataset: content_id(从0升序的自然数) 作为属性，因为输入是 dataframe(content_id, MisconceptionName),每个item（QMisconceptionName的tokenized )的id索引和content_id一致
+- cot_dataset: query_id 作为属性，因为输入是 dataframe(query_id, Explanation),每个item（ Explanation 的tokenized )的id索引和 query_id 一致。 建议：额外生成一个属性字典，映射 query_id到dataset索引的对应关系
+- exteral_cot_dataset 额外的cot: query_id 作为属性，因为输入是 dataframe(query_id, Explanation),每个item（ Explanation 的tokenized )的id索引和 query_id 一致。 建议：额外生成一个属性字典，映射 query_id到dataset索引的对应关系
+这四个dataset可以使用同一个 dataset类实例化
+## 用于train的dataset
+### 当前模式为 easy 情况下
+输入为4个dataset，以 query_dataset为主，其query_id作为查询其他数据的键，
+对于 **getitem**函数，
+- 1. query_id = self.query_id[idx]
+- 2. 以 query_id 为查询键， 获取 query_dataset中 content_id，然后其 tokenized 从 content_dataset获取
+- 3. 以 query_id 为查询键，查询 cot_dataset 中， 对应query_id的 item_id， 获取cot 的 tokenized
+- 4. 以 query_id 为查询键，查询 exteral_cot_dataset 中， 对应query_id的 item_id， 获取额外 cot 的 tokenized
+### 当前模式为 semi 情况下
+- 注意生成 query_id_to_semi_content_id 映射关系
+对于 **getitem**函数，
+- 前4个步骤与 easy 模式相同
+- 5. 以 query_id 为查询键，从 query_id_to_semi_content_id 获取当前所有 content_id ，通过文本分割生成 content_id 列表
+- 6. 基于 content_id 获取 列表中所有 content_id 在 content_dataset 中的 tokenized
+### 当前模式为 hard 情况下
+与 semi 模式相同，但是用的是hard数据
+
+
+
+
+你是一个优秀的模型微调工程师。现在，以下内容与之前的数据一致，需要完成以下的内容要求
+## hard 样本生成
+生成 hard 样本 需要生成10个，生成步骤为 ：
+- 最难负样本： 同一道多选题 其他选项的（不含正确选项，数据中也没有） content_id，也即相同 oringal_query_id的不同 content_id
+- 基于content相似： 与当前样本 content 相似度高于阈值的 content 选择不超过 3个
+- 基于query相似: 与当前样本 query文本（不同题目） 相似度高于阈值的 content 选择不超过 2个
+- 当前query去content池检索， 筛选剔除掉之前已经得到的content_id以及与当前content_id一样的，基于总目标10个，当前需要获取的个数从 topk中获取
+
+### 最难负样本
+- 使用【数据1 dataframe】也即query数据，使用字段 query_id 和 content_id
+- 获取 原始 oringal_query_id： 现有 query_id实际为结构为 【oringal_query_id +"下划线"+ 选项也即A,D,C,D】，分解得到 oringal_query_id
+- 当前样本 相同的 oringal_query_id，其他的content_id作为最难负样本，需要去重且剔除与本 id相同的
+
+
+### 基于content相似
+- 使用【数据1 dataframe】也即query数据 和【数据2 dataframe】也即样本池
+- 使用当前样本的， content作为query，去content池 检索样本
+- 样本中排除当前content以及最难负样本，选择 top3 的样本
+
+### 基于query相似
+
+使用当前题目作为query也即 QuestionText ，检索其他题目的 QuestionText,获取top 相似的 QuestionText ，并从所在题目中随机选择2个content id，注意需要剔除已经有的id或者与当前 样本的content_id一样的id，下面是推荐步骤：
+- 使用【数据1 dataframe】也即query数据，记录当前样本的一些内容，也即 original_query_id,query_id,content_id,QuestionText
+- 生成以 original_query_id 为键的字典记为 oriqid_based_content_dict ，其内容为｛ original_query_id:{ QuestionText:XXXXX,content_ids:[content_id1,content_id2,...]  } }
+- 以 query_id 为基础，循环所有样本，检索 其 QuestionText ，对其他QuestionText的相似度进行排名 以 original_query_id 排序为主
+- 循环获得 original_query_id ，检查其 oriqid_based_content_dict 中 content_id是否符合要求（content_id不是前面步骤获取的，且不与当前content_id一样），直到获取2个content 
+
+
+### 基于query检索相似
+
+这是最原始的方法，基于query去检索content池 的内容，获取top content
+- 使用【数据1 dataframe】也即query数据 和【数据2 dataframe】也即样本池
+- query查询字段参考后面代码生成 alltext字段
+- 使用alltext字段取检索content池，获得排序，依次分析其content对应的id，是否之前符合条件（content_id不是前面步骤获取的，且不与当前content_id一样），直到获取足够conten_id(总计10个，扣除前面获取的content_id
+
+
+```python
+def _formatting_func(query):
+    task_description = """Retrieve the key misconception behind the wrong answer when given a math problem and its incorrect and correct solutions."""
+
+    return f"Instruct: {task_description}\nQuery: {query}"
+
+def _get_query( row):
+    query = ""
+    query = f"{row['SubjectName']} - {row['ConstructName']}\n"
+    query += f"# Question: {row['QuestionText']}\n"
+    query += f"# Correct Answer: {row['CorrectAnswerText']}\n"
+    query += f"# Wrong Answer: {row['InCorrectAnswerText']}"
+    query = _formatting_func(query)
+    return query
+
+dataframe['alltext'] = dataframe.apply(_get_query, axis=0)
+
+
+由于Q到R（查询到答案），存在推理的间隔鸿沟，本项目方案实现通过课程学习来实现，也即先学习简单后学习难的目标。
+
+课程学习是通过三个损失函数的按权重相加实现。因Q到COT以及COT到R相对容易，故模型先学，然后慢慢增加三元组损失的比重
+
+另外，因为负样本的难度我考虑也通过课程学习逐步提升模型能力，负样本难度慢慢增加，模型先学简单负样本后学习复杂困难负样本。
+
+这就增加整体方案的实现，因为两个都要实现课程学习，请帮我构思一条合理的学习思路，来实现方案目标
+
+
+cross_scale_loss如何理解，另外，我已经打算分开 easy，semi，hard样本的训练，你这个做法？
+
+
+对于RetrieverDataset我期望你做以下改造
+- 只考虑 semi 和 hard 模式，因为 easy模型实践复杂度，所以我剔除了
+- result内容只存放item，例如 pos_item ，存放为 "content":pos
+- pos_item 和 neg_item 合并，统一存放到 content中，pos_item放第一个，合并方式是内部的 tensor合并，例如 input_id和attention_mask
+- 对于 cot 统一合并为一个，合并方式同上一条的方案
+
+对于loss部分，期望做一些调整
+- 因为增加了 ext_cot_item相关的数据，我期望计算loss的时候考虑进去
+
+其中loss部分现在的实践方法如下所示:
+```
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+
+class MultiNegTripletLoss(nn.Module):
+    """
+    Triplet loss for one positive and multiple negatives per anchor.
+    Positive is contents[:,0,:], negatives are contents[:,1:,:].
+    L = mean(max(d(a,p) - d(a,n_i) + margin, 0)) averaged over all negatives and batch.
+    """
+    def __init__(self, margin: float = 1.0, p: int = 2):
+        super().__init__()
+        self.margin = margin
+        self.p = p
+
+    def forward(self, anchor: torch.Tensor, contents: torch.Tensor) -> torch.Tensor:
+        # anchor: [batch_size, hidden_size]
+        # contents: [batch_size, num_contents, hidden_size]
+        pos = contents[:, 0, :]              # [batch_size, hidden_size]
+        negs = contents[:, 1:, :]            # [batch_size, num_negatives, hidden_size]
+
+        # compute distances
+        d_pos = torch.norm(anchor - pos, p=self.p, dim=1)                   # [batch_size]
+        # expand anchor for negs
+        a_exp = anchor.unsqueeze(1).expand_as(negs)                         # [batch_size, num_neg, hidden]
+        d_negs = torch.norm(a_exp - negs, p=self.p, dim=2)                  # [batch_size, num_neg]
+
+        # triplet losses per negative
+        losses = F.relu(d_pos.unsqueeze(1) - d_negs + self.margin)          # [batch_size, num_neg]
+        return losses.mean()   
+    
+
+
+
+class UnifiedCoTLoss(nn.Module):
+    """
+    Unified CoT Alignment & Triplet Loss supporting both multi-negative and in-batch negatives.
+    Usage:
+      - Multi-negative scenario: call forward(anchor, contents=..., cot=...)
+      - In-batch scenario: call forward(anchor, positive=..., cot=...)
+    CoT loss: alpha*triplet + beta*||anchor-cot||^2 + gamma*||cot-positive||^2
+    """
+    def __init__(self, alpha=1.0, beta=1.0, gamma=1.0, margin=1.0, p=2):
+        super().__init__()
+        self.alpha = alpha
+        self.beta = beta
+        self.gamma = gamma
+        self.margin = margin
+        assert self.alpha+self.beta+self.gamma == 1.0, "alpha + beta + gamma must equal 1.0"
+        self.p = p
+        self.multi_neg = MultiNegTripletLoss(margin, p)
+
+
+    def forward(self, anchor: torch.Tensor, cot: torch.Tensor, contents: torch.Tensor=None, positive: torch.Tensor=None) -> torch.Tensor:
+        # Compute triplet loss
+        l_triplet = self.multi_neg(anchor, contents) if self.alpha > 0 else 0
+        # CoT alignment and consistency
+        l_align = torch.norm(anchor - cot, p=self.p, dim=1).pow(2).mean()
+        l_consis = torch.norm(cot - contents[:, 0, :], p=self.p, dim=1).pow(2).mean()
+        return self.alpha * l_triplet + self.beta * l_align + self.gamma * l_consis
+
+```
+
+
