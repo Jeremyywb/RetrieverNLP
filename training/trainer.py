@@ -1219,3 +1219,118 @@ class UnifiedCoTLoss(nn.Module):
 ```
 
 
+帮我分析一下，原始模型 BAAI/bge-large-en-v1.5  对query和contents池直接embedding，然后计算topk(50)相似，计算recall时为 62%，为什么我的方案却只有1%左右？
+是否和训练方式有关，或者和 添加了单独的head有关
+ 
+对于上面这个模型我使用训练方案是
+
+分阶段调整以下损失函数参数的方式不断的进阶模型的能力
+其中 
+- alpha 是triplet(query,正样本content，负样本content)损失的权重
+- beta 是 distance(query,cot) query 到 cot的距离 损失的权重 
+- gamma 是 distance(cot,content) 正样本content 到 cot的距离 损失的权重 
+
+在qcot阶段也即 query到cot对齐的阶段，设置 beta 为1，其他都是零，｛alpha: 0.0  # 关闭TripletLoss
+    beta: 1.0    # 强化Q-CoT对齐
+    gamma: 0.0｝也即期望query尽量对齐cot的embedding（当然我们有单独设置了head来解耦embedding）
+在semi阶段 也即 引入中等难度负样本阶段，设置｛ alpha: 0.3
+    beta: 0.3
+    gamma: 0.4｝，此时降低 beta，减少q到cot的对齐，增加gamma（多于 alpha的0.3）来重点学习 cot到正样本content的聚类，同时一定程度学习 query到正样本于负样本的差异
+最后hard阶段 也即 引入高难度负样本阶段，设置｛ alpha: 0.7
+    beta: 0.1
+    gamma: 0.2｝此时重点学习 三元组损失，认为 query到目的地content的距离得到了一定的强化，能够直接学习三元组损失
+
+其中学习率设置 lr_head: 3e-4 ，lr:  1e-5
+现在我使用 BAAI/bge-large-en-v1.5 进行上面的方案进行训练，当前在qcot阶段，recall相关的结果如下所示：
+---epoch 0
+>>> Current Recall@1 = 0.0
+>>> Current Recall@2 = 0.0
+>>> Current Recall@4 = 0.0
+>>> Current Recall@8 = 0.0
+>>> Current Recall@16 = 0.0017
+>>> Current Recall@25 = 0.0017
+>>> Current Recall@32 = 0.0017
+>>> Current Recall@64 = 0.0117
+
+---epoch 1
+>>> Current Recall@1 = 0.0
+>>> Current Recall@2 = 0.0
+>>> Current Recall@4 = 0.0017
+>>> Current Recall@8 = 0.0034
+>>> Current Recall@16 = 0.0101
+>>> Current Recall@25 = 0.0134
+>>> Current Recall@32 = 0.0151
+>>> Current Recall@64 = 0.0385
+
+
+
+
+损失函数UnifiedCoTLoss，如下所示：
+```
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+
+class MultiNegTripletLoss(nn.Module):
+    """
+    Triplet loss for one positive and multiple negatives per anchor.
+    Positive is contents[:,0,:], negatives are contents[:,1:,:].
+    L = mean(max(d(a,p) - d(a,n_i) + margin, 0)) averaged over all negatives and batch.
+    """
+    def __init__(self, margin: float = 1.0, p: int = 2):
+        super().__init__()
+        self.margin = margin
+        self.p = p
+
+    def forward(self, anchor: torch.Tensor, contents: torch.Tensor) -> torch.Tensor:
+        # anchor: [batch_size, hidden_size]
+        # contents: [batch_size, num_contents, hidden_size]
+        pos = contents[:, 0, :]              # [batch_size, hidden_size]
+        negs = contents[:, 1:, :]            # [batch_size, num_negatives, hidden_size]
+
+        # compute distances
+        d_pos = torch.norm(anchor - pos, p=self.p, dim=1)                   # [batch_size]
+        # expand anchor for negs
+        a_exp = anchor.unsqueeze(1).expand_as(negs)                         # [batch_size, num_neg, hidden]
+        d_negs = torch.norm(a_exp - negs, p=self.p, dim=2)                  # [batch_size, num_neg]
+
+        # triplet losses per negative
+        losses = F.relu(d_pos.unsqueeze(1) - d_negs + self.margin)          # [batch_size, num_neg]
+        return losses.mean()   
+    
+
+
+
+class UnifiedCoTLoss(nn.Module):
+    """
+    Unified CoT Alignment & Triplet Loss supporting both multi-negative (and in-batch negatives,not support now).
+    Usage:
+      - Multi-negative scenario: call forward(anchor, contents=..., cot=...)
+      - In-batch scenario: call forward(anchor, positive=..., cot=...)
+    CoT loss: alpha*triplet + beta*||anchor-cot||^2 + gamma*||cot-positive||^2
+    """
+    def __init__(self, alpha=1.0, beta=1.0, gamma=1.0, margin=1.0, p=2):
+        super().__init__()
+        self.alpha = alpha
+        self.beta = beta
+        self.gamma = gamma
+        self.margin = margin
+        assert self.alpha+self.beta+self.gamma == 1.0, "alpha + beta + gamma must equal 1.0"
+        self.p = p
+        self.multi_neg = MultiNegTripletLoss(margin, p)
+
+
+    def forward(self, anchor: torch.Tensor, cot: torch.Tensor, contents: torch.Tensor=None) -> torch.Tensor:
+        # Compute triplet loss
+        B, D = anchor.size(0), anchor.size(1)
+        l_triplet = self.multi_neg(anchor, contents) if self.alpha > 0 else 0
+        # CoT alignment and consistency
+        l_align = torch.norm(anchor.unsqueeze(1) - cot.view(B, 2, D), p=self.p, dim=1).pow(2).mean()
+        
+        if self.gamma==0.0:
+            l_consis = 0
+        else:
+            l_consis = torch.norm(cot.view(-1, 2, cot.size(1))  - contents[:, 0, :], p=self.p, dim=1).pow(2).mean()
+        return self.alpha * l_triplet + self.beta * l_align + self.gamma * l_consis
+```

@@ -10,12 +10,14 @@ import hydra
 import os
 import pandas as pd
 import torch
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # local import 
 from bge_embedding.ptm_model import get_base_model,BgeBiEncoderModel
 from bge_embedding.ptm_optimizer import get_optimizer
 from bge_embedding.ptm_dataset import get_tokenizer,QueryDataset,ContentDataset,CotDataset,RetrieverDataset
-from bge_embedding.ptm_dataloader import TripletCollator,show_batch,show_batch_fs
+from bge_embedding.ptm_dataloader import TripletCollator,show_batch,show_batch_fs,TextCollator
 
 from utils.train_utils import (as_minutes, 
      load_ext_cot, 
@@ -25,7 +27,7 @@ from utils.train_utils import (as_minutes,
      train_valid_split
      )
 
-from utils.retriever_utils import semantic_search, compute_retrieval_metrics, mapk
+from utils.retriever_utils import semantic_search
 from utils.metric_utils import compute_retrieval_metrics, mapk
 
 
@@ -52,7 +54,7 @@ def run_evaluation(cfg, accelerator, model, query_dl, content_dl, label_df, id_t
     progress_bar = tqdm(range(len(query_dl)))
     for batch in query_dl:
         with torch.no_grad():
-            batch_query_embeddings = accelerator.unwrap_model(model).encode(batch)
+            batch_query_embeddings = accelerator.unwrap_model(model).encode(batch,mode='q')
 
         batch_query_embeddings = accelerator.gather_for_metrics(batch_query_embeddings)
         query_embeddings.append(batch_query_embeddings)
@@ -70,7 +72,7 @@ def run_evaluation(cfg, accelerator, model, query_dl, content_dl, label_df, id_t
 
     for batch in content_dl:
         with torch.no_grad():
-            batch_content_embeddings = accelerator.unwrap_model(model).encode(batch)
+            batch_content_embeddings = accelerator.unwrap_model(model).encode(batch,mode='r')
         batch_content_embeddings = accelerator.gather_for_metrics(batch_content_embeddings)
         content_embeddings.append(batch_content_embeddings)
         progress_bar.update(1)
@@ -153,7 +155,7 @@ def run_evaluation(cfg, accelerator, model, query_dl, content_dl, label_df, id_t
 
 
 # -------- Main Function --------------------------------------------------------------------------#
-@hydra.main(version_base=None, config_path="../conf/bge_embedding", config_name="conf_easy")
+@hydra.main(version_base=None, config_path="../conf/bge_embedding", config_name="conf_qcot")
 def run_training(cfg):
     accelerator = setup_training_run(cfg)
 
@@ -169,6 +171,7 @@ def run_training(cfg):
     with accelerator.main_process_first():
         df = pd.read_csv(cfg.dataset.query_dataset)
         content_df = pd.read_csv(cfg.dataset.content_dataset)
+        content_df = content_df.rename(columns = {'MisconceptionId':'content_id'})
         cot_ext_df = load_ext_cot(cfg.dataset.ext_cot_datasdet)
         # content_df_comp = pd.read_csv(os.path.join(data_dir_comp, "misconception_mapping.csv")).rename(columns={"MisconceptionId": "content_id"})
         train_df, valid_df = train_valid_split(cfg, df)
@@ -181,7 +184,7 @@ def run_training(cfg):
     # process data --------------------------------------------------------------------------------#
     if negative_df is not None:
         query_to_content_ids =  negative_df.groupby(
-            "query_id")["hard_negatives"].apply(
+            "query_id")[f"{cfg.task}_negatives"].apply(
                 lambda x: x.str.split(',').explode().tolist()
             ).to_dict()
     else:
@@ -199,7 +202,7 @@ def run_training(cfg):
     train_query_dataset = QueryDataset(
       train_df, 
       tokenizer=tokenizer, 
-      max_length=128
+      max_length=cfg.model.max_length
     )
 
     valid_query_dataset = QueryDataset(
@@ -238,11 +241,12 @@ def run_training(cfg):
         query_train_ids=train_df["query_id"],
         query_valid_ids=valid_df["query_id"],
         content_train_ids=train_df["content_id"],
-        content_comp_ids=valid_df["content_id"],
+        content_comp_ids=content_df["content_id"],
     )
 
     # ------- data collators ----------------------------------------------------------------------#
-    text_collator = TripletCollator()
+    tri_collator = TripletCollator()
+    text_collator = TextCollator()
     
 
     # ------- data loaders ------------------------------------------------------------------------#
@@ -265,7 +269,7 @@ def run_training(cfg):
         retriever_dataset,
         batch_size=cfg.train_params.retriever_bs,
         shuffle=True,
-        collate_fn=text_collator,
+        collate_fn=tri_collator,
         num_workers=1,
         drop_last=True,
     )
@@ -316,7 +320,7 @@ def run_training(cfg):
     print_line()
 
     num_epochs = cfg.train_params.num_epochs
-    grad_accumulation_steps = cfg.train_params.gradient_accumulation_steps
+    grad_accumulation_steps = cfg.train_params.grad_accumulation_steps
     warmup_pct = cfg.train_params.warmup_pct
 
     num_update_steps_per_epoch = len(retrieval_dl) // grad_accumulation_steps
@@ -385,7 +389,7 @@ def run_training(cfg):
         accelerator.print(f">>> Epoch {epoch+1} | Step {step} | Total Step {current_iteration} | Time: {et}")
 
         model.eval()
-        eval_response = run_evaluation(cfg, accelerator, model, query_valid_dl, content_comp_dl, corr_df_valid, id_tracker)
+        eval_response = run_evaluation(cfg, accelerator, model, query_valid_dl, content_comp_dl, valid_df, id_tracker)
 
         lb, scores_dict, result_df, oof_df = eval_response["lb"], eval_response["scores"], eval_response["result_df"], eval_response["oof_df"]
         print_line()

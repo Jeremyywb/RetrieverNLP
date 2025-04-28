@@ -1,7 +1,12 @@
+# 为提升效率进行优化，尤其针对tokenizer共享、样本复用与数据结构设计
+
+import torch
 from torch.utils.data import Dataset
-from transformers import AutoTokenizer
 import pandas as pd
-from abc import ABC, abstractmethod
+import json
+from transformers import AutoTokenizer
+from typing import Dict, List
+
 
 def get_tokenizer(cfg):
     tokenizer = AutoTokenizer.from_pretrained(cfg.model.backbone_path, add_eos_token=cfg.model.add_eos_token)
@@ -22,133 +27,136 @@ def _formatting_func(query):
     return f"Instruct: {task_description}\nQuery: {query}"
 
 
-class MathDataset(ABC):
-    """
-    Dataset class for processing EEDI math MCQs into query/content inputs for retrieval
-    # input
-    - cfg: for init input,configuration of dataset
-    - df : for preprocess,query dataset with content ids
-    """
+class BaseDataset(Dataset):
+    def __init__(self, dataframe, id_column, text_column, tokenizer, max_length=128):
+        self.df = dataframe
+        self.id_column = id_column
+        self.text_column = text_column
+        self.tokenizer = tokenizer
+        self.max_length = max_length
 
-    def __init__(self, cfg, query_formatting_func=None):
-        self.cfg = cfg
-        self.tokenizer = get_tokenizer(cfg)
-        self.query_formatting_func = query_formatting_func if query_formatting_func is not None else _formatting_func
+        self.ids = self.df[id_column].astype(str).tolist()
+        self.id_to_idx = {id_val: idx for idx, id_val in enumerate(self.ids)}
+        if text_column == 'QuestionText':
+            self.df['QuestionText'] = self.df.apply(self._get_query, axis=1)
+        # 提前批量tokenize全部文本以加速
+        self.encoded_texts = self.tokenizer(
+            self.df[text_column].astype(str).tolist(),
+            max_length=max_length,
+            padding='max_length',
+            truncation=True,
+            return_tensors='pt'
+        )
 
-    def pre_process(self, df, is_query, is_train=False):
-        def _get_query(row):
-            query = ""
-            query = f"{row['SubjectName']} - {row['ConstructName']}\n"
-            query += f"# Question: {row['QuestionText']}\n"
-            query += f"# Correct Answer: {row['CorrectAnswerText']}\n"
-            query += f"# Wrong Answer: {row['InCorrectAnswerText']}"
-            query = self.query_formatting_func(query)
-            return query
-
-        def _get_content(row):
-            return row["MisconceptionName"]
-        if is_query:
-            df["text"] = df.apply(lambda x: _get_query(x), axis=1)
-            df = df[["query_id", "text"]]
-            self.query_id = df['query_id'].values.tolist()
-        else:
-            df["text"] = df.apply(lambda x: _get_content(x), axis=1)
-            df = df.rename(columns={"MisconceptionId": "content_id"})
-            df = df[["content_id", "text"]]
-            self.content_id = df['content_id'].values.tolist()
-
-        return df
-
-
-    def tokenize(self, examples, max_len):
-        tokenized = self.tokenizer.encode_plus(
-                    examples["text"],  # 直接传递文本字符串，而不是放在列表中
-                    padding        = 'max_length',
-                    return_tensors = 'pt',
-                    max_length     = max_len,
-                    truncation     = True
-                )
-        return {"input_ids": tokenized["input_ids"], "attention_mask": tokenized["attention_mask"]}
+    def _get_query(self, row):
+        query = ""
+        query = f"{row['SubjectName']} - {row['ConstructName']}\n"
+        query += f"# Question: {row['QuestionText']}\n"
+        query += f"# Correct Answer: {row['CorrectAnswerText']}\n"
+        query += f"# Wrong Answer: {row['InCorrectAnswerText']}"
+        query = _formatting_func(query)
+        return query
     
-class MathHardDataset(MathDataset,Dataset):
-    """
-    Dataset class for processing EEDI math MCQs with pre-selected negative samples
-    Uses semi_content_ids and hard_content_ids to get negative samples
-    """
-    
-    def __init__(self, cfg, df, query_formatting_func=None, is_query=True, is_train=False):
-        super().__init__(cfg, query_formatting_func)
-        # Store query_id to negative ids mapping
-        self.is_query = is_query
-        self.is_train = is_train
-        self.cfg = cfg
-        self.df = self.pre_process(df, is_query, is_train)
-        self.df = self.df.to_dict(orient='records')
-        # is_query: query_id
-        # is_train: query_id_to_neg_ids
-        # else: content_id 
-        
-    def pre_process(self, df, is_query, is_train):
-        if is_query and is_train:
-            self.query_id_to_neg_ids = {} 
-            # Store negative ids mapping for queries
-            for _, row in df.iterrows():
-                query_id = row['query_id']
-                pos_content_id = row['content_id']
-                self.query_id_to_neg_ids[query_id] = {
-                    'semi': [int(pos_content_id)]+[int(id) for id in row['semi_content_ids'].split(',')] if pd.notna(row['semi_content_ids']) else [],
-                    'hard': [int(pos_content_id)]+[int(id) for id in row['hard_content_ids'].split(',')] if pd.notna(row['hard_content_ids']) else []
-                }
-        
-        # Call parent's pre_process
-        return super().pre_process(df, is_query, is_train)
-        
-    def __getitem__(self, idx):
-        # Get query data
-        return self.tokenize(self.df[idx], self.cfg.model.max_length)#(1, max_length)
-            
     def __len__(self):
         return len(self.df)
 
+    def __getitem__(self, idx):
+        return {
+            # 'id': self.ids[idx],
+            'input_ids': self.encoded_texts['input_ids'][idx],
+            'attention_mask': self.encoded_texts['attention_mask'][idx]
+        }
 
-class TripletDataset(Dataset):
-    """
-    Dataset for triplet training with semi-hard or hard negative samples
-    Combines query dataset and content dataset to form triplets
-    """
-    
-    def __init__(self, query_dataset, content_dataset, neg_strategy='semi-hard'):
+    def get_by_id(self, id_val):
+        idx = self.id_to_idx.get(str(id_val), None)
+        return self[idx] if idx is not None else None
+
+
+class QueryDataset(BaseDataset):
+    def __init__(self, df, tokenizer, max_length=128):
+        super().__init__(df, 'query_id', 'QuestionText', tokenizer, max_length)
+        self.query_to_content = dict(zip(df['query_id'].astype(str), df['content_id'].astype(str)))
+
+    def get_content_id(self, query_id):
+        return self.query_to_content.get(str(query_id))
+
+
+class ContentDataset(BaseDataset):
+    def __init__(self, df, tokenizer, max_length=128):
+        super().__init__(df, 'content_id', 'MisconceptionName', tokenizer, max_length)
+
+
+class CotDataset(BaseDataset):
+    def __init__(self, df, tokenizer, max_length=128):
+        super().__init__(df, 'query_id', 'Explanation', tokenizer, max_length)
+
+class RetrieverDataset(Dataset):
+    def __init__(
+        self,
+        cfg,
+        query_dataset: QueryDataset,
+        content_dataset: ContentDataset,
+        cot_dataset: CotDataset,
+        external_cot_dataset: CotDataset,
+        negatives: Dict[str, List[str]] = None
+    ):
         self.query_dataset = query_dataset
         self.content_dataset = content_dataset
-        self.neg_strategy = neg_strategy
-        self.query_id_to_neg_ids = query_dataset.query_id_to_neg_ids
-        self.query_id = query_dataset.query_id
-        
+        self.cot_dataset = cot_dataset
+        self.external_cot_dataset = external_cot_dataset
+        self.mode = cfg.task
+
+        self.query_ids = self.query_dataset.ids
+        self.query_to_semi_content_ids = negatives if self.mode == 'semi' else {}
+        self.query_to_hard_content_ids = negatives if self.mode == 'hard' else {}
+
     def __len__(self):
-        return len(self.query_dataset)
-        
+        return len(self.query_ids)
+
     def __getitem__(self, idx):
-        # Get query data
-        query_item = self.query_dataset[idx]
-        query_id = self.query_id[idx]
-        
-        # Get negative content ids
-        neg_ids = self.query_id_to_neg_ids[query_id][self.neg_strategy]
-        # 百分百确定大于2
+        query_id = self.query_ids[idx]
 
-        # Get content data
-        # First item is positive content
+        query_item = self.query_dataset.get_by_id(query_id)
+        pos_content_id = self.query_dataset.get_content_id(query_id)
+        pos_item = self.content_dataset.get_by_id(pos_content_id)
 
+        # 获取负样本
+        if self.mode == 'semi':
+            neg_ids = self.query_to_semi_content_ids.get(query_id, [])
+        elif self.mode == 'hard':
+            neg_ids = self.query_to_hard_content_ids.get(query_id, [])
+        else:
+            neg_ids = []
 
-        # Get negative contents
-        all_contents = [self.content_dataset[_id] for _id in neg_ids]#num contemt,1,max_length
-        
-        # Create pos_mask (1 for positive, 0 for negatives)
-        pos_mask = [1] + [0] * (len(all_contents)-1)
-        
+        neg_items = [
+            self.content_dataset.get_by_id(cid)
+            for cid in neg_ids
+            if self.content_dataset.get_by_id(cid) is not None
+        ]
+
+        all_content_input_ids = [pos_item['input_ids']] + [n['input_ids'] for n in neg_items]
+        all_content_attention = [pos_item['attention_mask']] + [n['attention_mask'] for n in neg_items]
+
+        # 获取 COT + External COT
+        cot_item = self.cot_dataset.get_by_id(query_id)
+        ext_cot_item = self.external_cot_dataset.get_by_id(query_id)
+
+        cot_input_ids = torch.stack([cot_item['input_ids'], ext_cot_item['input_ids']], dim=0)
+        cot_attention_mask = torch.stack([cot_item['attention_mask'], ext_cot_item['attention_mask']], dim=0)
+
         return {
-            'query': query_item,
-            'contents': all_contents,
-            'pos_mask': pos_mask,
-            'query_id': query_id
+            # 'query_id': query_id,
+            'query': {
+                'input_ids': query_item['input_ids'],
+                'attention_mask': query_item['attention_mask']
+            },
+            'contents': {
+                'input_ids': torch.stack(all_content_input_ids, dim=0),
+                'attention_mask': torch.stack(all_content_attention, dim=0)
+            },
+            'cot': {
+                'input_ids': cot_input_ids,
+                'attention_mask': cot_attention_mask
+            }
         }
+

@@ -104,7 +104,7 @@ class RetrieverDataset(Dataset):
         self.content_dataset = content_dataset
         self.cot_dataset = cot_dataset
         self.external_cot_dataset = external_cot_dataset
-        self.mode = cfg.mode
+        self.mode = cfg.task
 
         self.query_ids = self.query_dataset.ids
         self.query_to_semi_content_ids = negatives if cfg.mode == 'semi' else {}

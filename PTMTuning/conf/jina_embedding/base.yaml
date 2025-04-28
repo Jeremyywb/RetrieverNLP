@@ -2,6 +2,8 @@ debug: false
 enable_cuda_optimizations: true
 use_wandb: false
 fold: 0
+seed: 1989
+local_rank: #运行自动生成
 task: base
 
 dataset:
@@ -24,6 +26,7 @@ model:
   negatives_cross_device: false
   padding_side: right
   add_eos_token: false
+  n_neighbour: 256
 
   use_bnb: false
   use_lora: false

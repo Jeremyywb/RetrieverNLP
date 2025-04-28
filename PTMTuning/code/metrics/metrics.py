@@ -54,8 +54,13 @@ class UnifiedCoTLoss(nn.Module):
 
     def forward(self, anchor: torch.Tensor, cot: torch.Tensor, contents: torch.Tensor=None) -> torch.Tensor:
         # Compute triplet loss
+        B, D = anchor.size(0), anchor.size(1)
         l_triplet = self.multi_neg(anchor, contents) if self.alpha > 0 else 0
         # CoT alignment and consistency
-        l_align = torch.norm(anchor - cot.view(-1, 2, cot.size(1)), p=self.p, dim=1).pow(2).mean()
-        l_consis = torch.norm(cot.view(-1, 2, cot.size(1))  - contents[:, 0, :], p=self.p, dim=1).pow(2).mean()
+        l_align = torch.norm(anchor.unsqueeze(1) - cot.view(B, 2, D), p=self.p, dim=1).pow(2).mean()
+        
+        if self.gamma==0.0:
+            l_consis = 0
+        else:
+            l_consis = torch.norm(cot.view(-1, 2, cot.size(1))  - contents[:, 0, :], p=self.p, dim=1).pow(2).mean()
         return self.alpha * l_triplet + self.beta * l_align + self.gamma * l_consis

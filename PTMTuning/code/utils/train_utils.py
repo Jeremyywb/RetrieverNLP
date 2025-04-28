@@ -158,7 +158,7 @@ def setup_training_run(cfg):
 
     if cfg.use_wandb:
         accelerator = Accelerator(
-            gradient_accumulation_steps=cfg.train_params.gradient_accumulation_steps,
+            gradient_accumulation_steps=cfg.train_params.grad_accumulation_steps,
             log_with="wandb",
         )
 
@@ -170,7 +170,8 @@ def setup_training_run(cfg):
 
     else:
         accelerator = Accelerator(
-            gradient_accumulation_steps=cfg.train_params.gradient_accumulation_steps,
+            gradient_accumulation_steps=cfg.train_params.grad_accumulation_steps,
+            #  mixed_precision="bf16"
         )
     accelerator.print(f"using wandb: {cfg.use_wandb}")
     # Make one log on every process with the configuration for debugging.
@@ -307,5 +308,6 @@ def load_ext_cot(file_path: str) -> pd.DataFrame:
                     data.append(obj)
                 except json.JSONDecodeError:
                     continue  # 跳过格式错误的行
-
-    return pd.DataFrame(data)
+    df = pd.DataFrame(data)
+    df = df.rename(columns = {'explanation':'Explanation'})
+    return df

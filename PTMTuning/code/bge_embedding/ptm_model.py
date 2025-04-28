@@ -9,6 +9,8 @@ import torch
 from pathlib import Path
 from  typing import Dict
 from ..metrics import UnifiedCoTLoss
+import torch.nn.functional as F
+
 
 @dataclass
 class EmbedderOutput(ModelOutput):
@@ -23,16 +25,16 @@ class EmbedderOutput(ModelOutput):
 def get_base_model(cfg):
     backbone_path = cfg.model.backbone_path
     is_local_checkpoint = Path(backbone_path).exists() and (Path(backbone_path) / "pytorch_model.bin").exists()
-
+    from modelscope.models import Model
     config = AutoConfig.from_pretrained(backbone_path, trust_remote_code=cfg.model.trust_remote_code)
     config.use_cache = False
-
+    torch_dtype = torch.bfloat16
     if cfg.model.use_bnb:
         bnb_config = BitsAndBytesConfig(
             load_in_4bit=True,
             bnb_4bit_quant_type="nf4",
             bnb_4bit_use_double_quant=True,
-            bnb_4bit_compute_dtype=torch.bfloat16,
+            bnb_4bit_compute_dtype=torch_dtype,
         )
         base_model = AutoModel.from_pretrained(
             backbone_path,
@@ -46,7 +48,7 @@ def get_base_model(cfg):
             backbone_path,
             config=config,
             trust_remote_code=cfg.model.trust_remote_code,
-            torch_dtype=torch.bfloat16,
+            torch_dtype=torch_dtype,
             attn_implementation=cfg.model.attn_implementation
         )
 
@@ -65,7 +67,7 @@ def get_base_model(cfg):
         base_model = get_peft_model(base_model, peft_config)
 
     # 加入 head 网络
-    head_model = SharedAlignment(hidden_size=config.hidden_size)
+    head_model = SharedAlignment(hidden_size=config.hidden_size,torch_dtype=torch_dtype)
 
     # ⚠️ 如果是读取前一阶段的 checkpoint，并且包含了 head，就要加载 state_dict
     if is_local_checkpoint:
@@ -78,8 +80,32 @@ def get_base_model(cfg):
     return base_model, head_model
 
 
+# class SharedAlignment(nn.Module):
+#     def __init__(self, hidden_size: int=768, torch_dtype: Optional[torch.dtype] = None):
+#         super().__init__()
+#         # 共享底层变换
+#         self.base_proj = nn.Linear(hidden_size, hidden_size*2)
+#         self.act = nn.GELU()
+        
+#         # 任务特定变换
+#         self.q_final = nn.Linear(hidden_size*2, hidden_size)
+#         self.cot_final = nn.Linear(hidden_size*2, hidden_size)
+#         self.r_final = nn.Linear(hidden_size*2, hidden_size)
+#         if torch_dtype is not None:
+#             # 这一步会把所有权重和 buffer 一次性转成你要的 dtype
+#             self.to(torch_dtype)
+
+#     def forward(self, x, mode):
+#         shared = self.act(self.base_proj(x))
+#         if mode == 'q':
+#             return self.q_final(shared)
+#         elif mode == 'cot':
+#             return self.cot_final(shared)
+#         else:
+#             return self.r_final(shared)
+        
 class SharedAlignment(nn.Module):
-    def __init__(self, hidden_size=768):
+    def __init__(self, hidden_size: int=768, torch_dtype: Optional[torch.dtype] = None):
         super().__init__()
         # 共享底层变换
         self.base_proj = nn.Linear(hidden_size, hidden_size*2)
@@ -89,17 +115,27 @@ class SharedAlignment(nn.Module):
         self.q_final = nn.Linear(hidden_size*2, hidden_size)
         self.cot_final = nn.Linear(hidden_size*2, hidden_size)
         self.r_final = nn.Linear(hidden_size*2, hidden_size)
+        if torch_dtype is not None:
+            # 这一步会把所有权重和 buffer 一次性转成你要的 dtype
+            self.to(torch_dtype)
+
+        # —— 关键：零初始化，让这条支路初始输出恒等于 0 ——，避免初始权重偏差过大
+        for layer in (self.base_proj, self.q_final, self.cot_final, self.r_final):
+            nn.init.zeros_(layer.weight)
+            nn.init.zeros_(layer.bias)
 
     def forward(self, x, mode):
-        shared = self.act(self.base_proj(x))
+        # 先算出“delta”，然后 + x——这样初始时 delta≡0，输出 x
+        delta = self.act(self.base_proj(x))
         if mode == 'q':
-            return self.q_final(shared)
+            delta = self.q_final(delta)
         elif mode == 'cot':
-            return self.cot_final(shared)
+            delta = self.cot_final(delta)
         else:
-            return self.r_final(shared)
-        
-
+            delta = self.r_final(delta)
+        out = x + delta
+        # return F.normalize(out, p=2, dim=-1)
+        return F.normalize(out, p=2, dim=-1)
 
 
 class BgeBiEncoderModel(nn.Module):
@@ -111,7 +147,7 @@ class BgeBiEncoderModel(nn.Module):
         self.config = self.backbone.config
         self.sub_batch_size  = cfg.train_params.sub_batch_size
         self.loss_fun = UnifiedCoTLoss(
-            alpha=cfg.train_params.alpha, beta=cfg.train_params.beta, gamma=cfg.train_params.gamma,)
+            alpha=cfg.train_params.loss.alpha, beta=cfg.train_params.loss.beta, gamma=cfg.train_params.loss.gamma)
         self.sentence_pooling_method = cfg.model.sentence_pooling_method
         
         # -----------------------accelerator distributed training-----------------------
@@ -156,13 +192,13 @@ class BgeBiEncoderModel(nn.Module):
                 #memory usage care
                 end_inx = min(i + self.sub_batch_size, len(features["attention_mask"]))
                 sub_features = {k: v[i:end_inx] for k, v in features.items()}
-                last_hidden_state = self.model(**sub_features, return_dict=True).last_hidden_state
+                last_hidden_state = self.backbone(**sub_features, return_dict=True).last_hidden_state
                 p_reps = self.sentence_embedding(last_hidden_state, sub_features["attention_mask"])
                 all_p_reps.append(p_reps)
                 del p_reps, last_hidden_state, sub_features
             all_p_reps = torch.cat(all_p_reps, 0).contiguous()
         else:
-            last_hidden_state = self.model(**features, return_dict=True).last_hidden_state
+            last_hidden_state = self.backbone(**features, return_dict=True).last_hidden_state
             all_p_reps = self.sentence_embedding(last_hidden_state, features["attention_mask"])
 
         return self.headmodel(all_p_reps, mode)

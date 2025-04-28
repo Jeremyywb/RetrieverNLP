@@ -17,7 +17,7 @@ model:
   
 
 train_params:
-  retriever_bs: 128 #memory ~ bs * num_negative or bs(if negative_dataset ==0)
+  retriever_bs: 32 #memory ~ bs * num_negative or bs(if negative_dataset ==0)
   sub_batch_size: 4 # emebding memory
   query_bs: 128 # evaluate
   content_bs: 128 # evaluate 128/8=16
@@ -25,14 +25,14 @@ train_params:
   num_negative: 0
   warmup_pct: 0.1
   num_epochs: 10
-  grad_accumulation_steps: 1 # if want 128, 128/retriever_bs
+  grad_accumulation_steps: 4 # if want 128, 128/retriever_bs
   patience: 20
   eval_at_start: false
 
   loss:
-    alpha: 0.0  # 关闭TripletLoss
-    beta: 1.0    # 强化Q-CoT对齐
-    gamma: 0.0
+    alpha: 0.05  # 关闭TripletLoss
+    beta:  0.95  # 强化Q-CoT对齐
+    gamma:  0.0
 
 optimizer:
   name: AdamW

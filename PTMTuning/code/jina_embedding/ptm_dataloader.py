@@ -35,3 +35,33 @@ class TripletCollator:
             'contents': content_tokens,
             'pos_mask': torch.tensor(pos_masks, dtype=torch.bool)
         }
+
+class TextCollator:
+    """
+    Collator for triplet data with semi-hard and hard negative samples
+    """
+
+    def __call__(self, batch):
+        result = {
+            'input_ids': [],
+            'attention_mask': []
+        }
+        
+        # 如果有ID字段则收集
+        if 'id' in batch[0]:
+            result['id'] = []
+        
+        # 收集每个样本的字段
+        for sample in batch:
+            for key in result:
+                if key in sample:
+                    result[key].append(sample[key])
+        
+        # 将列表转换为张量，仅对张量类型的字段
+        for key in result:
+            if key != 'id' and result[key]:
+                if isinstance(result[key][0], torch.Tensor):
+                    result[key] = torch.stack(result[key], dim=0)
+        
+        return result
+
