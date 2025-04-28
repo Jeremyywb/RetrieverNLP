@@ -8,6 +8,7 @@ from transformers import AutoTokenizer
 from typing import Dict, List
 
 
+
 def get_tokenizer(cfg):
     tokenizer = AutoTokenizer.from_pretrained(cfg.model.backbone_path, add_eos_token=cfg.model.add_eos_token)
     if tokenizer.pad_token is None:
@@ -30,6 +31,7 @@ def _formatting_func(query):
 class BaseDataset(Dataset):
     def __init__(self, dataframe, id_column, text_column, tokenizer, max_length=128):
         self.df = dataframe
+        print(self.df.columns)
         self.id_column = id_column
         self.text_column = text_column
         self.tokenizer = tokenizer
@@ -98,6 +100,7 @@ class RetrieverDataset(Dataset):
         content_dataset: ContentDataset,
         cot_dataset: CotDataset,
         external_cot_dataset: CotDataset,
+        cot_negatives:Dict[str, List[str]] = None,
         negatives: Dict[str, List[str]] = None
     ):
         self.query_dataset = query_dataset
@@ -105,10 +108,13 @@ class RetrieverDataset(Dataset):
         self.cot_dataset = cot_dataset
         self.external_cot_dataset = external_cot_dataset
         self.mode = cfg.task
+        self.num_negative = cfg.train_params.num_negative
+        self.num_cot_hard = cfg.train_params.num_cot_negative
 
         self.query_ids = self.query_dataset.ids
-        self.query_to_semi_content_ids = negatives if cfg.mode == 'semi' else {}
-        self.query_to_hard_content_ids = negatives if cfg.mode == 'hard' else {}
+        self.query_to_semi_content_ids = negatives if self.mode == 'semi' else {}
+        self.query_to_hard_content_ids = negatives if self.mode == 'hard' else {}
+        self.query_to_hard_cot_query_ids = cot_negatives
 
     def __len__(self):
         return len(self.query_ids)
@@ -122,9 +128,9 @@ class RetrieverDataset(Dataset):
 
         # 获取负样本
         if self.mode == 'semi':
-            neg_ids = self.query_to_semi_content_ids.get(query_id, [])
+            neg_ids = self.query_to_semi_content_ids.get(query_id, [])[:self.num_negative]
         elif self.mode == 'hard':
-            neg_ids = self.query_to_hard_content_ids.get(query_id, [])
+            neg_ids = self.query_to_hard_content_ids.get(query_id, [])[:self.num_negative]
         else:
             neg_ids = []
 
@@ -132,6 +138,13 @@ class RetrieverDataset(Dataset):
             self.content_dataset.get_by_id(cid)
             for cid in neg_ids
             if self.content_dataset.get_by_id(cid) is not None
+        ]
+        # 获取cot负样本
+        neg_cot_qids = self.query_to_hard_cot_query_ids.get(query_id, [])[:self.num_cot_hard]
+        neg_cot_items = [
+            self.cot_dataset.get_by_id(cid)
+            for cid in neg_cot_qids
+            if self.cot_dataset.get_by_id(cid) is not None
         ]
 
         all_content_input_ids = [pos_item['input_ids']] + [n['input_ids'] for n in neg_items]
@@ -141,8 +154,10 @@ class RetrieverDataset(Dataset):
         cot_item = self.cot_dataset.get_by_id(query_id)
         ext_cot_item = self.external_cot_dataset.get_by_id(query_id)
 
-        cot_input_ids = torch.stack([cot_item['input_ids'], ext_cot_item['input_ids']], dim=0)
-        cot_attention_mask = torch.stack([cot_item['attention_mask'], ext_cot_item['attention_mask']], dim=0)
+        all_cot_input_ids = [cot_item['input_ids'],ext_cot_item['input_ids']]
+        all_cot_input_ids += [n['input_ids'] for n in neg_cot_items]
+        all_cot_attention = [cot_item['attention_mask'],ext_cot_item['attention_mask']]
+        all_cot_attention += [n['attention_mask'] for n in neg_cot_items]
 
         return {
             # 'query_id': query_id,
@@ -155,8 +170,8 @@ class RetrieverDataset(Dataset):
                 'attention_mask': torch.stack(all_content_attention, dim=0)
             },
             'cot': {
-                'input_ids': cot_input_ids,
-                'attention_mask': cot_attention_mask
+                'input_ids':  torch.stack(all_cot_input_ids, dim=0),
+                'attention_mask': torch.stack(all_cot_attention, dim=0)
             }
         }
 

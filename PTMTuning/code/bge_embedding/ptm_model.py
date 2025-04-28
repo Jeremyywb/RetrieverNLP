@@ -8,7 +8,7 @@ from peft import LoraConfig, TaskType, get_peft_model
 import torch
 from pathlib import Path
 from  typing import Dict
-from ..metrics import UnifiedCoTLoss
+from metrics.metrics import UnifiedCoTLoss
 import torch.nn.functional as F
 
 
@@ -25,7 +25,7 @@ class EmbedderOutput(ModelOutput):
 def get_base_model(cfg):
     backbone_path = cfg.model.backbone_path
     is_local_checkpoint = Path(backbone_path).exists() and (Path(backbone_path) / "pytorch_model.bin").exists()
-    from modelscope.models import Model
+
     config = AutoConfig.from_pretrained(backbone_path, trust_remote_code=cfg.model.trust_remote_code)
     config.use_cache = False
     torch_dtype = torch.bfloat16

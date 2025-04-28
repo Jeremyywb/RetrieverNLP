@@ -10,6 +10,7 @@ task: hard
 
 dataset:
   negative_dataset: ../input/negatives_hard.csv
+  negative_cot_dataset: ../input/negatives_cot.csv
 
 model:
   backbone_path: ../models/eedi_embed_bge_semi
@@ -22,6 +23,7 @@ train_params:
   content_bs: 128 # evaluate 128/8=16
 
   num_negative: 8
+  num_cot_negative: 8
   warmup_pct: 0.1
   num_epochs: 10
   grad_accumulation_steps: 8 # if want 128, 128/retriever_bs
@@ -29,9 +31,10 @@ train_params:
   eval_at_start: false
 
   loss:
-    alpha: 0.7
-    beta: 0.1
-    gamma: 0.2
+    alpha: 0.7  
+    beta:  0.15  # 强化Q-CoT对齐  
+    gamma:  0.15 # 强化R-CoT对齐
+
 
 optimizer:
   name: AdamW

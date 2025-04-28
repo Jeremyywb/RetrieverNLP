@@ -47,6 +47,7 @@ def run_evaluation(cfg, accelerator, model, query_dl, content_dl, label_df, id_t
     cutoffs = [1, 2, 4, 8, 16, 25, 32, 64]
     label_df = deepcopy(label_df)
     query2content = label_df.groupby("query_id")["content_id"].apply(list).to_dict()
+    # query_id:str-->[content_id]:int
 
     model.eval()
 
@@ -79,7 +80,7 @@ def run_evaluation(cfg, accelerator, model, query_dl, content_dl, label_df, id_t
     progress_bar.close()
 
     content_embeddings = torch.cat(content_embeddings, dim=0)
-    content_ids = id_tracker.content_comp_ids
+    content_ids = id_tracker.content_comp_ids # int
     accelerator.print(f"shape of content embeddings: {content_embeddings.shape}")
     assert content_embeddings.shape[0] == len(content_ids)
 
@@ -173,6 +174,7 @@ def run_training(cfg):
         content_df = pd.read_csv(cfg.dataset.content_dataset)
         content_df = content_df.rename(columns = {'MisconceptionId':'content_id'})
         cot_ext_df = load_ext_cot(cfg.dataset.ext_cot_datasdet)
+        cot_neg_df = pd.read_csv(cfg.dataset.negative_cot_dataset)
         # content_df_comp = pd.read_csv(os.path.join(data_dir_comp, "misconception_mapping.csv")).rename(columns={"MisconceptionId": "content_id"})
         train_df, valid_df = train_valid_split(cfg, df)
         negative_df = None
@@ -189,12 +191,15 @@ def run_training(cfg):
             ).to_dict()
     else:
         query_to_content_ids = None
-    
+    query_to_cot_query_ids =  cot_neg_df.groupby(
+            "query_id")["hard_cots_qid"].apply(
+                lambda x: x.str.split(',').explode().tolist()
+            ).to_dict()
     print_line()
     accelerator.print(f"# of queries (train): {train_df.shape[0]}")
     accelerator.print(f"# of queries (valid): {valid_df.shape[0]}")
     accelerator.print(f"# shape of content data: {content_df.shape}")
-    accelerator.print(f"# shape of cot data(ext cot): {content_df.shape}")
+    accelerator.print(f"# shape of cot data(ext cot): {cot_ext_df.shape}")
     print_line()
 
     # ------- Datasets ----------------------------------------------------------------------------#
@@ -212,7 +217,7 @@ def run_training(cfg):
     )
 
     cot_dataset = CotDataset(
-        train_df, 
+        df, 
         tokenizer=tokenizer, 
         max_length=cfg.model.max_length
     )
@@ -233,8 +238,10 @@ def run_training(cfg):
             content_dataset=content_dataset,
             cot_dataset=cot_dataset,
             external_cot_dataset=cot_ext_dataset,
+            cot_negatives = query_to_cot_query_ids,
             negatives=query_to_content_ids
             )
+    
     
     # manage ids ---
     id_tracker = IDTracker(
@@ -244,6 +251,10 @@ def run_training(cfg):
         content_comp_ids=content_df["content_id"],
     )
 
+
+
+
+    
     # ------- data collators ----------------------------------------------------------------------#
     tri_collator = TripletCollator()
     text_collator = TextCollator()
@@ -356,7 +367,25 @@ def run_training(cfg):
         print_line()
         accelerator.print(f"Current epoch: {epoch+1}/{num_epochs}")
         print_line()
-
+        # 在训练循环开始时添加
+        if epoch == 0:
+            # 使用较大的学习率，先适应数据分布
+            for param_group in optimizer.param_groups:
+                if 'lr_head' in param_group['name']:
+                    param_group['lr'] = 8e-4  # 提高头部网络学习率
+            
+            # 只训练head部分，冻结backbone
+            for param in model.backbone.parameters():
+                param.requires_grad = False
+        else:
+             for param_group in optimizer.param_groups:
+                if 'lr_head' in param_group['name']:
+                    param_group['lr'] = cfg.optimizer.lr_head   # 提高头部网络学习率
+                # 只训练head部分，解冻backbone
+                for param in model.backbone.parameters():
+                    param.requires_grad = True
+                    
+                            
         # Training ------
         model.train()
         for step, batch in enumerate(retrieval_dl):
