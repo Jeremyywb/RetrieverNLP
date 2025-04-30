@@ -6,14 +6,16 @@ debug: false
 enable_cuda_optimizations: true
 use_wandb: false
 fold: 0
-task: hard
+task:
+  name: hard                     # 当前运行的任务名称: qcot, semi, hard 之一
+
 
 dataset:
   negative_dataset: ../input/negatives_hard.csv
   negative_cot_dataset: ../input/negatives_cot.csv
 
 model:
-  backbone_path: ../models/eedi_embed_bge_semi
+  use_lora: true
   
 
 train_params:
@@ -38,7 +40,7 @@ train_params:
 
 optimizer:
   name: AdamW
-  head_keywords: head
+  head_keywords: headmodel
   
   lr:  1e-5
   lr_lora_a:  1e-5
@@ -56,5 +58,3 @@ optimizer:
 # 中间50%训练步：max_grad_norm=1.0（平衡）
 
 # 后40%训练步：max_grad_norm=2.0（加速收敛）
-outputs:
-  model_dir: ../models/eedi_embed_bge_hard

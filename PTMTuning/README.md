@@ -414,3 +414,181 @@ Phase 3：效果确认（1周）
 ---
 
 
+----
+### 训练日志
+
+  warmup_pct: 0.1
+  lr:  1e-5
+  lr_lora_a:  1e-5
+  lr_lora_b: 5e-5
+  lr_embed_tokens: 8e-5--未生效
+  lr_head: 3e-4 
+
+best： epcoh 1
+--------------------------------
+>>> Current Recall@1 = 0.0988
+>>> Current Recall@2 = 0.1675
+>>> Current Recall@4 = 0.2613
+>>> Current Recall@8 = 0.407
+>>> Current Recall@16 = 0.5126
+>>> Current Recall@25 = 0.5745
+>>> Current Recall@32 = 0.6114
+>>> Current Recall@64 = 0.7353
+
+更新
+- 使用get_cosine_schedule_with_warmup_and_minlr，添加min_lr
+- lr_head 设置  4e-5
+- 通过更新optimizer使得lr_embed_tokens生效
+- warmup 设置由0.1更新到0.15
+- patience 由20降低到2
+- 后续待更新--由于小模型可能更适合lora的方法
+
+
+--------------------------------
+>>> Current Recall@1 = 0.0955
+>>> Current Recall@2 = 0.1792
+>>> Current Recall@4 = 0.2714
+>>> Current Recall@8 = 0.4271
+>>> Current Recall@16 = 0.526
+>>> Current Recall@25 = 0.5913
+>>> Current Recall@32 = 0.6265
+>>> Current Recall@64 = 0.7454
+
+**loss 比重**
+- beta 0.7
+- gamma 0.3
+
+>>> LB: 0.2066
+>>> Seen LB: 0.2091
+>>> Unseen LB: 0.1749
+--------------------------------
+>>> Current Recall@1 = 0.1039
+>>> Current Recall@2 = 0.1809
+>>> Current Recall@4 = 0.2848
+>>> Current Recall@8 = 0.4171
+>>> Current Recall@16 = 0.5176
+>>> Current Recall@25 = 0.593
+>>> Current Recall@32 = 0.6181
+>>> Current Recall@64 = 0.7303
+
+**loss 中添加 cot和content 三元组特殊损失后**可能后面semi会有提升？未知
+>>> LB: 0.2084
+>>> Seen LB: 0.2137
+>>> Unseen LB: 0.1414
+--------------------------------
+>>> Current Recall@1 = 0.1055
+>>> Current Recall@2 = 0.1876
+>>> Current Recall@4 = 0.2814
+>>> Current Recall@8 = 0.4037
+>>> Current Recall@16 = 0.541
+>>> Current Recall@25 = 0.6047
+>>> Current Recall@32 = 0.6248
+>>> Current Recall@64 = 0.7052
+>>> 
+>>根据yaml配置、模型设置的部分代码和具体模型使用代码，分析下报错内容，并解决问题
+>>
+>>yaml配置
+>>```yaml
+>>model:
+>>  use_lora: true
+     lora:
+       r: 4  # 低秩近似的秩
+       lora_alpha: 16  # LoRA适配器的缩放因子
+       lora_dropout: 0.1  # Dropout率
+       target_modules:
+         - "encoder.layer.*.attention.self.query"      # 匹配所有包含 "self.query" 的路径
+         - "encoder.layer.*.attention.self.key"
+         - "encoder.layer.*.attention.output.dense"
+         - "encoder.layer.*.attention.self.value"
+         - "encoder.layer.*.intermediate.dense"
+         - "encoder.layer.*.output.dense"
+       modules_to_save: []  # 确保不保留任何原始模块
+
+>```
+>
+>
+>模型设置的部分代码
+>```python
+>def get_base_model(cfg):
+>   ...
+   >base_model = AutoModel.from_pretrained(
+               backbone_path,
+               config=config,
+               trust_remote_code=cfg.model.trust_remote_code,
+               torch_dtype=torch_dtype,
+               attn_implementation=cfg.model.attn_implementation
+           )
+   target_modules = list(cfg.model.lora.target_modules) if hasattr(cfg.model.lora, 'target_modules') else []
+   peft_config = LoraConfig(
+            # r=cfg.model.lora.r,
+            # lora_alpha=cfg.model.lora.lora_alpha,
+            # lora_dropout=cfg.model.lora.lora_dropout,
+            # bias="none",
+            # task_type=TaskType.FEATURE_EXTRACTION,
+            # inference_mode=False,
+            # target_modules=list(cfg.model.lora.target_modules),
+            # modules_to_save=list(cfg.model.lora.modules_to_save),
+
+            r=cfg.model.lora.r,
+            lora_alpha=cfg.model.lora.lora_alpha,
+            lora_dropout=cfg.model.lora.lora_dropout,
+            bias="none",
+            task_type=TaskType.FEATURE_EXTRACTION,
+            inference_mode=False,
+            target_modules=cfg.model.lora.target_modules,  # 直接使用列表，无需转换
+            modules_to_save=target_modules
+            
+        )
+   base_model = get_peft_model(base_model, peft_config)
+   head_model = SharedAlignment(hidden_size=config.hidden_size,torch_dtype=torch_dtype)
+   return  base_model, head_model
+
+class BgeBiEncoderModel(nn.Module):
+    def __init__(self, cfg, model, headmodel, accelerator=None):
+        super().__init__()
+
+        self.backbone = model
+        self.headmodel = headmodel
+        ...
+
+   ...
+
+>```
+>
+具体模型使用代码：
+```python
+base_model, head_model = get_base_model(cfg)
+model = BgeBiEncoderModel(cfg, base_model, head_model, accelerator)
+```
+
+报错内容：
+```text
+loading weights file model.safetensors from cache at /root/.cache/huggingface/hub/models--BAAI--bge-large-en-v1.5/snapshots/d4aa6901d3a41ba39fb536a557fa166f842b0e09/model.safetensors
+Instantiating BertModel model under default dtype torch.bfloat16.
+All model checkpoint weights were used when initializing BertModel.
+
+All the weights of BertModel were initialized from the model checkpoint at BAAI/bge-large-en-v1.5.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use BertModel for predictions without further training.
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/root/cloud/RetrieverNLP/PTMTuning/code/train_bge_embedding.py", line 314, in run_training
+    base_model, head_model = get_base_model(cfg)
+  File "/root/cloud/RetrieverNLP/PTMTuning/code/bge_embedding/ptm_model.py", line 85, in get_base_model
+    base_model = get_peft_model(base_model, peft_config)
+  File "/home/myproject_env/lib/python3.10/site-packages/peft/mapping_func.py", line 123, in get_peft_model
+    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](
+  File "/home/myproject_env/lib/python3.10/site-packages/peft/peft_model.py", line 2739, in __init__
+    super().__init__(model, peft_config, adapter_name, **kwargs)
+  File "/home/myproject_env/lib/python3.10/site-packages/peft/peft_model.py", line 132, in __init__
+    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
+  File "/home/myproject_env/lib/python3.10/site-packages/peft/tuners/lora/model.py", line 142, in __init__
+    super().__init__(model, config, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage)
+  File "/home/myproject_env/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 180, in __init__
+    self.inject_adapter(self.model, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage)
+  File "/home/myproject_env/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 527, in inject_adapter
+    raise ValueError(error_msg)
+ValueError: Target modules ['encoder.layer.*.attention.self.query', 'encoder.layer.*.attention.self.key', 'encoder.layer.*.attention.output.dense', 'encoder.layer.*.attention.self.value', 'encoder.layer.*.intermediate.dense', 'encoder.layer.*.output.dense'] not found in the base model. Please check the target modules and try again.
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+
+```

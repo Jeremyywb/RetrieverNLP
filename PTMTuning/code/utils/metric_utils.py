@@ -1,5 +1,3 @@
-# reference: https://www.kaggle.com/code/abdullahmeda/eedi-map-k-metric
-
 import numpy as np
 
 

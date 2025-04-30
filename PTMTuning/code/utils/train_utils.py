@@ -13,6 +13,11 @@ from accelerate import Accelerator
 from accelerate.logging import get_logger
 from accelerate.utils import set_seed
 from omegaconf import OmegaConf
+from accelerate import Accelerator
+from accelerate.utils import DeepSpeedPlugin
+
+
+
 
 logger = get_logger(__name__)
 
@@ -167,7 +172,52 @@ def setup_training_run(cfg):
             config=OmegaConf.to_container(cfg, resolve=True),
             init_kwargs={"wandb": {"name": cfg.wandb.run_name}},
         )
-
+    elif cfg.use_deepspeed_plugin:
+        ds_config = {
+        "fp16": {
+            "enabled": True,
+            "loss_scale": 0,
+            "initial_scale_power": 16,
+            "min_loss_scale": 1,
+            "hysteresis": 2
+        },
+        "zero_optimization": {
+            "stage": 2,  # 升级至 Stage 2
+            "allgather_partitions": True,
+            "reduce_scatter": True,
+            "overlap_comm": True,
+            "contiguous_gradients": True
+            },
+            "gradient_accumulation_steps": cfg.train_params.grad_accumulation_steps,
+            "train_micro_batch_size_per_gpu": cfg.train_params.retriever_bs,
+            "steps_per_print": 50
+        }
+        # ds_plugin = DeepSpeedPlugin(
+        #     zero_stage=2,
+        #     gradient_accumulation_steps=cfg.train_params.grad_accumulation_steps,
+        #     offload_optimizer_device="none",
+        #     offload_param_device="none",
+        #     fp16=True,  # 显式启用 FP16
+        #     fp16_opt_level="O2",  # 优化级别
+        #     gradient_clipping=0.5,  # 梯度裁剪阈值
+        # )
+        ds_plugin = DeepSpeedPlugin(hf_ds_config=ds_config)
+        
+        accelerator = Accelerator(
+            deepspeed_plugin=ds_plugin,
+            mixed_precision="fp16",  # 显式启用混合精度
+            gradient_accumulation_steps=cfg.train_params.grad_accumulation_steps
+        )
+        # 创建 DeepSpeed 插件
+        # ds_plugin = DeepSpeedPlugin(
+        #     zero_stage=1,
+        #     gradient_accumulation_steps = cfg.train_params.grad_accumulation_steps,
+        #     offload_optimizer_device="none",  # 可选，如果想使用 CPU 卸载
+        #     offload_param_device="none"
+        # )
+        
+        # # 使用插件初始化 Accelerator
+        # accelerator = Accelerator(gradient_accumulation_steps=None, deepspeed_plugin=ds_plugin)
     else:
         accelerator = Accelerator(
             gradient_accumulation_steps=cfg.train_params.grad_accumulation_steps,
@@ -193,8 +243,8 @@ def setup_training_run(cfg):
     accelerator.print(f"setting seed: {cfg.seed}")
     set_seed(cfg.seed)
 
-    if accelerator.is_main_process:
-        os.makedirs(cfg.outputs.model_dir, exist_ok=True)
+    # if accelerator.is_main_process:
+    #     os.makedirs(cfg.outputs.model_dir, exist_ok=True)
 
     if cfg.enable_cuda_optimizations:
         enable_cuda_optimizations()
@@ -235,6 +285,54 @@ def get_custom_cosine_schedule_with_warmup(optimizer, num_warmup_steps, num_trai
 
     return torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda, last_epoch)
 
+
+
+def get_cosine_schedule_with_warmup_and_minlr(
+    optimizer,
+    num_warmup_steps,
+    num_training_steps,
+    min_lr=1e-7,
+    num_cycles=0.5,
+    last_epoch=-1
+):
+    """
+    Create a schedule with a learning rate that:
+    1. Increases linearly during warmup from 0 to the initial lr set in optimizer
+    2. Follows a cosine curve with the specified number of cycles
+    3. Never falls below the specified min_lr
+    
+    Args:
+        optimizer: The optimizer for which to schedule the learning rate
+        num_warmup_steps: The number of steps for the warmup phase
+        num_training_steps: The total number of training steps
+        min_lr: Minimum learning rate to use (absolute value, not a ratio)
+        num_cycles: Number of cosine cycles to complete (default: 0.5)
+        last_epoch: The index of the last epoch when resuming training
+        
+    Returns:
+        A PyTorch learning rate scheduler
+    """
+    # 获取初始学习率
+    base_lrs = [group['lr'] for group in optimizer.param_groups]
+    
+    def lr_lambda(current_step, base_lr):
+        # Warmup phase
+        if current_step < num_warmup_steps:
+            return float(current_step) / float(max(1, num_warmup_steps))
+        
+        # Progress after warmup
+        progress = float(current_step - num_warmup_steps) / float(max(1, num_training_steps - num_warmup_steps))
+        
+        # Cosine decay with specified number of cycles
+        cosine_decay = 0.5 * (1.0 + math.cos(math.pi * num_cycles * 2.0 * progress))
+        
+        # Ensure learning rate doesn't fall below min_lr
+        return max(cosine_decay, min_lr / base_lr)
+    
+    # 为每个参数组创建一个lambda函数
+    lr_lambdas = [lambda step, base_lr=base_lr: lr_lambda(step, base_lr) for base_lr in base_lrs]
+    
+    return torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambdas, last_epoch)
 
 
 def log_gradient_norms(accelerator, model, step):

@@ -3,6 +3,17 @@ from torch import optim
 
 
 def get_optimizer_grouped_parameters(cfg, model, print_fn=print):
+
+    print('#---IN optimizer MODEL-----------------------------------------------')
+    for name, param in model.named_parameters():
+        if "lora" in name.lower():
+            if param.requires_grad:
+                print("✅ Found LoRA param:", name)
+                print(name, "requires_grad:", param.requires_grad)
+                break
+    print('#---IN optimizer MODEL-----------------------------------------------')
+
+        
     param_dict = {name: param for name, param in model.named_parameters()}
     param_dict = {name: param for name, param in param_dict.items() if param.requires_grad}
 
@@ -15,17 +26,17 @@ def get_optimizer_grouped_parameters(cfg, model, print_fn=print):
     # 1. LoRA 参数（可选）
     params_dict_lora_a = {name: param for name, param in params_dict_decay.items() if "lora_A" in name}
     params_dict_lora_b = {name: param for name, param in params_dict_decay.items() if "lora_B" in name}
-    params_dict_embed_tokens = {name: param for name, param in params_dict_decay.items() if "embed_tokens" in name}
+    params_dict_embed_tokens = {name: param for name, param in params_dict_decay.items() if "embedding" in name}
 
     # 2. 额外 Head 层参数（比如你的自定义头部）
-    head_keywords = cfg.optimizer.head_keywords if hasattr(cfg.optimizer, "head_keywords") else ["head", "classifier", "mlp", "output"]
+    head_keywords = [cfg.optimizer.head_keywords] if hasattr(cfg.optimizer, "head_keywords") else ["head", "classifier", "mlp", "output"]
     params_dict_head = {
         name: param for name, param in params_dict_decay.items()
         if any(keyword in name for keyword in head_keywords)
     }
 
     # 3. 其余参数（减去上面的所有）
-    used_keys = set(params_dict_no_decay) | set(params_dict_lora_a) | set(params_dict_lora_b) | set(params_dict_head)
+    used_keys = set(params_dict_no_decay) | set(params_dict_lora_a) | set(params_dict_lora_b) | set(params_dict_head)| set(params_dict_embed_tokens)
     params_dict_remaining = {
         name: param for name, param in params_dict_decay.items()
         if name not in used_keys
@@ -48,7 +59,7 @@ def get_optimizer_grouped_parameters(cfg, model, print_fn=print):
     lr = cfg.optimizer.lr
 
     optim_groups = [
-        {"params": list(params_dict_no_decay.values()), "lr": lr, "weight_decay": 0.0},
+        {"params": list(params_dict_no_decay.values()), "lr": lr, "weight_decay": 0.0,'name':'params_dict_no_decay'},
     ]
 
     if len(params_dict_lora_a) > 0:
@@ -56,6 +67,7 @@ def get_optimizer_grouped_parameters(cfg, model, print_fn=print):
             "params": list(params_dict_lora_a.values()),
             "lr": getattr(cfg.optimizer, "lr_lora_a", lr),
             "weight_decay": wd,
+            'name':'params_dict_lora_a'
         })
 
     if len(params_dict_lora_b) > 0:
@@ -63,12 +75,14 @@ def get_optimizer_grouped_parameters(cfg, model, print_fn=print):
             "params": list(params_dict_lora_b.values()),
             "lr": getattr(cfg.optimizer, "lr_lora_b", lr),
             "weight_decay": wd,
+             'name':'params_dict_lora_b'
         })
     if len(params_dict_embed_tokens) > 0:
         optim_groups.append({
             "params": list(params_dict_embed_tokens.values()),
             "lr": getattr(cfg.optimizer, "lr_embed_tokens", lr),
             "weight_decay": wd,
+            'name':'params_dict_embed_tokens'
         })
 
     if len(params_dict_head) > 0:
@@ -76,6 +90,7 @@ def get_optimizer_grouped_parameters(cfg, model, print_fn=print):
             "params": list(params_dict_head.values()),
             "lr": getattr(cfg.optimizer, "lr_head", lr),
             "weight_decay": wd,
+            'name':'params_dict_lr_head'
         })
 
     if len(params_dict_remaining) > 0:
@@ -83,6 +98,7 @@ def get_optimizer_grouped_parameters(cfg, model, print_fn=print):
             "params": list(params_dict_remaining.values()),
             "lr": lr,
             "weight_decay": wd,
+            'name':'params_dict_remaining'
         })
 
     return optim_groups

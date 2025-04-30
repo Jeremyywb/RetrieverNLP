@@ -1,0 +1,29 @@
+# compute_environment: LOCAL_MACHINE
+# deepspeed_config:
+#   gradient_accumulation_steps: 4  # 使用代码中的设置
+#   offload_optimizer_device: none
+#   offload_param_device: none
+#   zero_stage: 2
+#   fp16:
+#     enabled: true
+# distributed_type: DEEPSPEED
+# downcast_bf16: 'no'
+# machine_rank: 0
+# main_training_function: main
+# mixed_precision: fp16
+# num_machines: 1        # 表示单节点
+# num_processes: 2       # 应该设置为你的实际 GPU 数量（这里是2）
+# use_cpu: false
+
+
+compute_environment: LOCAL_MACHINE
+deepspeed_config:
+  fp16:
+    enabled: true
+distributed_type: DEEPSPEED
+downcast_bf16: 'no'
+machine_rank: 0
+main_training_function: main
+num_machines: 1        # 表示单节点
+num_processes: 2       # 应该设置为你的实际 GPU 数量（这里是2）
+use_cpu: false

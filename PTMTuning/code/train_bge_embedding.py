@@ -13,8 +13,11 @@ import torch
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+os.environ["TOKENIZERS_PARALLELISM"] = "false"  # 必须放在所有其他导入
+
+
 # local import 
-from bge_embedding.ptm_model import get_base_model,BgeBiEncoderModel
+from bge_embedding.ptm_model import get_base_model,BgeBiEncoderModel,add_paths_to_config
 from bge_embedding.ptm_optimizer import get_optimizer
 from bge_embedding.ptm_dataset import get_tokenizer,QueryDataset,ContentDataset,CotDataset,RetrieverDataset
 from bge_embedding.ptm_dataloader import TripletCollator,show_batch,show_batch_fs,TextCollator
@@ -22,6 +25,7 @@ from bge_embedding.ptm_dataloader import TripletCollator,show_batch,show_batch_f
 from utils.train_utils import (as_minutes, 
      load_ext_cot, 
      get_custom_cosine_schedule_with_warmup, 
+     get_cosine_schedule_with_warmup_and_minlr,
      get_lr, 
      setup_training_run, 
      train_valid_split
@@ -159,7 +163,7 @@ def run_evaluation(cfg, accelerator, model, query_dl, content_dl, label_df, id_t
 @hydra.main(version_base=None, config_path="../conf/bge_embedding", config_name="conf_qcot")
 def run_training(cfg):
     accelerator = setup_training_run(cfg)
-
+    cfg = add_paths_to_config(cfg)
 
     def print_line(print_fn=accelerator.print):
         prefix, unit, suffix = "#", "~~", "#"
@@ -186,7 +190,7 @@ def run_training(cfg):
     # process data --------------------------------------------------------------------------------#
     if negative_df is not None:
         query_to_content_ids =  negative_df.groupby(
-            "query_id")[f"{cfg.task}_negatives"].apply(
+            "query_id")[f"{cfg.task.name}_negatives"].apply(
                 lambda x: x.str.split(',').explode().tolist()
             ).to_dict()
     else:
@@ -310,7 +314,7 @@ def run_training(cfg):
     # ------- Model -------------------------------------------------------------------------------#
     print_line()
     accelerator.print("Loading model....")
-    base_model, head_model = get_base_model(cfg)
+    base_model, head_model  = get_base_model(cfg)
     model = BgeBiEncoderModel(cfg, base_model, head_model, accelerator)
     if cfg.model.gradient_checkpointing:
         accelerator.print("enabling gradient checkpointing")
@@ -341,9 +345,15 @@ def run_training(cfg):
     accelerator.print(f"# training updates per epoch: {num_update_steps_per_epoch}")
     accelerator.print(f"# training steps: {num_training_steps}")
     accelerator.print(f"# warmup steps: {num_warmup_steps}")
-
-    scheduler = get_custom_cosine_schedule_with_warmup(optimizer=optimizer, num_warmup_steps=num_warmup_steps, num_training_steps=num_training_steps)
-
+    
+    # scheduler = get_custom_cosine_schedule_with_warmup(optimizer=optimizer, num_warmup_steps=num_warmup_steps, num_training_steps=num_training_steps)
+    scheduler = get_cosine_schedule_with_warmup_and_minlr(
+        optimizer=optimizer, 
+        num_warmup_steps=num_warmup_steps, 
+        num_training_steps=num_training_steps,
+        min_lr = cfg.optimizer.lr*0.01
+    )
+    
     
     # ------- training setup ----------------------------------------------------------------------#
     best_lb = -1.0
@@ -363,32 +373,23 @@ def run_training(cfg):
         if progress_bar:
             progress_bar.close()
 
-        progress_bar = tqdm(range(num_update_steps_per_epoch))
+        progress_bar = tqdm(
+                total=num_update_steps_per_epoch,
+                desc="Training",
+                leave=True,
+                disable=not accelerator.is_local_main_process,
+            )
+
         print_line()
         accelerator.print(f"Current epoch: {epoch+1}/{num_epochs}")
         print_line()
-        # 在训练循环开始时添加
-        if epoch == 0:
-            # 使用较大的学习率，先适应数据分布
-            for param_group in optimizer.param_groups:
-                if 'lr_head' in param_group['name']:
-                    param_group['lr'] = 8e-4  # 提高头部网络学习率
-            
-            # 只训练head部分，冻结backbone
-            for param in model.backbone.parameters():
-                param.requires_grad = False
-        else:
-             for param_group in optimizer.param_groups:
-                if 'lr_head' in param_group['name']:
-                    param_group['lr'] = cfg.optimizer.lr_head   # 提高头部网络学习率
-                # 只训练head部分，解冻backbone
-                for param in model.backbone.parameters():
-                    param.requires_grad = True
-                    
-                            
+
         # Training ------
         model.train()
         for step, batch in enumerate(retrieval_dl):
+            if cfg.use_deepspeed_plugin:
+                raise ValueError("这个脚本只跑非deepspeed")
+
             with accelerator.accumulate(model):
                 # gives sync vs no sync context manager
                 outputs = model(**batch)
@@ -401,7 +402,7 @@ def run_training(cfg):
                 optimizer.step()
                 scheduler.step()
                 optimizer.zero_grad()
-            if accelerator.sync_gradients:
+            # if accelerator.sync_gradients:
                 progress_bar.set_description(
                     f"STEP: {step+1:5}/{num_update_steps_per_epoch:5}. "
                     f"T-STEP: {current_iteration+1:5}/{num_training_steps:5}. "
@@ -414,6 +415,7 @@ def run_training(cfg):
                 progress = current_iteration / num_training_steps
         # Evaluation -----
         print_line()
+        accelerator.wait_for_everyone()
         et = as_minutes(time.time() - start_time)
         accelerator.print(f">>> Epoch {epoch+1} | Step {step} | Total Step {current_iteration} | Time: {et}")
 
@@ -438,23 +440,24 @@ def run_training(cfg):
             patience_tracker += 1
 
         if is_best:
-            oof_df.to_csv(os.path.join(cfg.outputs.model_dir, "oof_df_best.csv"), index=False)
-            result_df.to_csv(os.path.join(cfg.outputs.model_dir, "result_df_best.csv"), index=False)
+            oof_df.to_csv(os.path.join(cfg.paths.save_task_specific_path, "oof_df_best.csv"), index=False)
+            result_df.to_csv(os.path.join(cfg.paths.save_task_specific_path, "result_df_best.csv"), index=False)
         else:
             accelerator.print(f">>> patience reached {patience_tracker}/{cfg.train_params.patience}")
             accelerator.print(f">>> current best score: {round(best_lb, 4)}")
 
-        oof_df.to_csv(os.path.join(cfg.outputs.model_dir, "oof_df_last.csv"), index=False)
-        result_df.to_csv(os.path.join(cfg.outputs.model_dir, "result_df_last.csv"), index=False)
+        oof_df.to_csv(os.path.join(cfg.paths.save_task_specific_path, "oof_df_last.csv"), index=False)
+        result_df.to_csv(os.path.join(cfg.paths.save_task_specific_path, "result_df_last.csv"), index=False)
 
         # saving -----
         accelerator.wait_for_everyone()
 
         # save checkpoint ---
         if accelerator.is_main_process:
-            unwrapped_model = accelerator.unwrap_model(model)
-            unwrapped_model.save(cfg.outputs.model_dir)
-            tokenizer.save_pretrained(cfg.outputs.model_dir)
+            if is_best:
+                unwrapped_model = accelerator.unwrap_model(model)
+                unwrapped_model.save(cfg)
+                tokenizer.save_pretrained(cfg.paths.tokenizer_save_path)
 
         # -- post eval
         model.train()

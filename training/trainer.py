@@ -1334,3 +1334,232 @@ class UnifiedCoTLoss(nn.Module):
             l_consis = torch.norm(cot.view(-1, 2, cot.size(1))  - contents[:, 0, :], p=self.p, dim=1).pow(2).mean()
         return self.alpha * l_triplet + self.beta * l_align + self.gamma * l_consis
 ```
+
+
+参考peft模型正确加载与保存的方法，完成一个模型加载与保存的设计
+
+需要完成 get_base_model 和save的设计：
+- get_base_model
+    - 可能是加载lora或者非lora模型，可以通过cfg.model.use_lora进行判断
+    - 提供 backbone_path , 它可能是本地路径又或者是模型名称例如（BAAI/bge-large-en-v1.5）
+    - lora的adapter路径逻辑是 f"{backbone_path}_lora_model",路径如果是非法的，说明是没有相关模型，通过get_peft_model获取，否则按照lora加载的方法获取参数
+    - 
+# #下面是lora模型的加载与保存的方式
+```python
+from peft import get_peft_model, LoraConfig, TaskType
+
+# 配置 LoRA
+lora_config = LoraConfig(
+    task_type=TaskType.CAUSAL_LM,  # 任务类型：因果语言模型
+    inference_mode=False,          # 推理模式关闭，以进行训练
+    r=8,                           # 低秩值 r
+    lora_alpha=32,                 # LoRA 的缩放因子
+    lora_dropout=0.1,              # Dropout 概率
+)
+
+# 将 LoRA 应用到模型中
+model = get_peft_model(model, lora_config)
+
+# 保存 LoRA 参数
+model.save_pretrained('./lora_model')
+
+# 加载原始模型
+base_model = AutoModelForCausalLM.from_pretrained("gpt2")
+
+# 加载 LoRA 参数
+from peft import PeftModel
+
+model = PeftModel.from_pretrained(base_model, './lora_model')
+```
+
+分析下面get_base_model以及模型中save的方法时候合适，是否可以适用于是否使用lora的情况
+
+get_base_model 方法
+
+```python
+
+from peft import PeftModel
+
+
+
+def get_base_model(cfg):
+    backbone_path = cfg.model.backbone_path
+    lora_ada_path = f"{backbone_path}_lora_model"
+    is_local_checkpoint = (
+    Path(backbone_path).exists() 
+    and (Path(backbone_path) / "model.safetensors").exists()
+    )
+    is_lora_checkpoint = Path(lora_ada_path).exists()
+
+    config = AutoConfig.from_pretrained(backbone_path, trust_remote_code=cfg.model.trust_remote_code)
+    config.use_cache = False
+    torch_dtype = torch.bfloat16
+    if cfg.model.use_bnb:
+        bnb_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_quant_type="nf4",
+            bnb_4bit_use_double_quant=True,
+            bnb_4bit_compute_dtype=torch_dtype,
+        )
+        base_model = AutoModel.from_pretrained(
+            backbone_path,
+            config=config,
+            trust_remote_code=cfg.model.trust_remote_code,
+            quantization_config=bnb_config,
+            attn_implementation=cfg.model.attn_implementation
+        )
+    else:
+        base_model = AutoModel.from_pretrained(
+            backbone_path,
+            config=config,
+            trust_remote_code=cfg.model.trust_remote_code,
+            torch_dtype=torch_dtype,
+            attn_implementation=cfg.model.attn_implementation
+        )
+
+    # 如果有 LoRA 配置，加载 LoRA
+  
+    if cfg.model.use_lora:
+        if is_lora_checkpoint:
+            base_model = PeftModel.from_pretrained(base_model, lora_ada_path)
+        else:    
+            target_modules = list(cfg.model.lora.target_modules) if hasattr(cfg.model.lora, 'target_modules') else []
+            print(target_modules)
+            peft_config = LoraConfig(
+                r=cfg.model.lora.r,
+                lora_alpha=cfg.model.lora.lora_alpha,
+                lora_dropout=cfg.model.lora.lora_dropout,
+                bias="none",
+                task_type=TaskType.CAUSAL_LM,
+                inference_mode=False,
+                target_modules=cfg.model.lora.target_modules,  # 直接使用列表，无需转换
+                modules_to_save=target_modules
+                
+            )
+            base_model = get_peft_model(base_model, peft_config)
+
+    # 加入 head 网络
+    head_model = SharedAlignment(hidden_size=config.hidden_size,torch_dtype=torch_dtype)
+
+    # ⚠️ 如果是读取前一阶段的 checkpoint，并且包含了 head，就要加载 state_dict
+    if is_local_checkpoint:
+        print(f"✅ 加载前一阶段head模型参数：{backbone_path}")
+        state_dict = torch.load(Path(backbone_path) / "head.bin", map_location="cpu")
+        head_model.load_state_dict(state_dict)
+    return base_model, head_model
+
+```
+
+
+# 模型设计
+```python
+class BgeBiEncoderModel(nn.Module):
+    def __init__(self, cfg, model, headmodel, accelerator=None):
+        super().__init__()
+
+        self.backbone = model
+        self.headmodel = headmodel
+
+    ...省略部分内容
+
+    def save(self, output_dir: str):
+        if isinstance(self.backbone,PeftModel):
+            self.backbone.save_pretrained(f'{output_dir}_lora_model')
+        elif (Path(output_dir) / "model.safetensors").exists():
+            pass
+        else:
+            self.backbone.save_pretrained(output_dir, safe_serialization=True)
+        output_path = Path(output_dir) / "head.bin"
+        torch.save(self.headmodel.state_dict(), output_path)
+```
+
+
+以下是你要求检查的相关部分我自己看是没有问题的，问题是否有perfmodel有关 
+这是与encode有关的内容
+```
+    def last_token_pool(self, last_hidden_states: Tensor, attention_mask: Tensor) -> Tensor:
+        left_padding = attention_mask[:, -1].sum() == attention_mask.shape[0]
+        if left_padding:
+            return last_hidden_states[:, -1]
+        else:
+            sequence_lengths = attention_mask.sum(dim=1) - 1
+            batch_size = last_hidden_states.shape[0]
+            return last_hidden_states[torch.arange(batch_size, device=last_hidden_states.device), sequence_lengths]
+
+    def sentence_embedding(self, hidden_state, mask):
+        if self.sentence_pooling_method == "mean":
+            s = torch.sum(hidden_state * mask.unsqueeze(-1).float(), dim=1)
+            d = mask.sum(axis=1, keepdim=True).float()
+            return s / d
+        elif self.sentence_pooling_method == "cls":
+            return hidden_state[:, 0]
+        elif self.sentence_pooling_method == "last":
+            return self.last_token_pool(hidden_state, mask)
+
+
+    def encode(self, features, mode):
+        if self.sub_batch_size is not None and self.sub_batch_size > 0:
+            all_p_reps = []
+            for i in range(0, len(features["attention_mask"]), self.sub_batch_size):
+                #memory usage care
+                end_inx = min(i + self.sub_batch_size, len(features["attention_mask"]))
+                sub_features = {k: v[i:end_inx] for k, v in features.items()}
+                last_hidden_state = self.backbone(**sub_features, return_dict=True).last_hidden_state
+                p_reps = self.sentence_embedding(last_hidden_state, sub_features["attention_mask"])
+                all_p_reps.append(p_reps)
+                del p_reps, last_hidden_state, sub_features
+            all_p_reps = torch.cat(all_p_reps, 0).contiguous()
+        else:
+            last_hidden_state = self.backbone(**features, return_dict=True).last_hidden_state
+            all_p_reps = self.sentence_embedding(last_hidden_state, features["attention_mask"])
+```
+
+这是collator的设计
+```
+class TripletCollator:
+    """
+    Collator for triplet data with semi-hard and hard negative samples
+    """
+    def __call__(self, batch):
+        batch_out = {}
+        for sample in batch:
+            for key, value in sample.items():
+                if key == 'query_id':
+                    batch_out.setdefault(key, []).append(value)
+                else:
+                    for sub_key, sub_value in value.items():
+                        batch_out.setdefault(key, {}).setdefault(sub_key, []).append(sub_value)
+
+        for key, value in batch_out.items():
+            if key == 'query_id':
+                batch_out[key] = value  # 保持字符串
+            else:
+                for sub_key, sub_value in value.items():
+                    batch_out[key][sub_key] = torch.cat(sub_value, dim=0) if sub_value[0].dim() > 1 else torch.stack(sub_value, dim=0)
+        
+        return batch_out
+    
+        
+```
+
+同时我在训练代码中打印了batch的情况
+
+```
+            if 'labels' in batch:
+                print(batch.keys())
+                raise ValueError('........................')
+```
+
+
+对于is_backbone_exists 
+非lora，各个任务的模型是读取上一个任务的输出，任务路径是 qcot--> semi-->hard
+例如 semi读取 qcot的模型输出路径，hard读取 semi的输出路径，而qcot则加载原始模型的modelname
+
+因此这个代码直接运行的话，如果 前一个阶段未安全输出，那么回去读取初始模型，那会是错误的，应该raise一个错误
+
+model_config_path = backbone_path if is_backbone_exists else base_backbone_name
+config = AutoConfig.from_pretrained(
+    model_config_path,
+    trust_remote_code=cfg.model.trust_remote_code
+)
+config.use_cache = False

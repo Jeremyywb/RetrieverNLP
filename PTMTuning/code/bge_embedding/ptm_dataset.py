@@ -7,10 +7,17 @@ import json
 from transformers import AutoTokenizer
 from typing import Dict, List
 
+from pathlib import Path 
 
 
 def get_tokenizer(cfg):
-    tokenizer = AutoTokenizer.from_pretrained(cfg.model.backbone_path, add_eos_token=cfg.model.add_eos_token)
+    
+    tokenizer_path = cfg.paths.tokenizer_path
+    
+    name_or_path = tokenizer_path if (Path(tokenizer_path) / "tokenizer_config.json").exists() else cfg.model.base_backbone_name
+    print(f"Loading tokenizer from: {name_or_path}")
+
+    tokenizer = AutoTokenizer.from_pretrained(name_or_path, add_eos_token=cfg.model.add_eos_token)
     if tokenizer.pad_token is None:
         if tokenizer.unk_token is not None:
             tokenizer.pad_token = tokenizer.unk_token
@@ -107,7 +114,7 @@ class RetrieverDataset(Dataset):
         self.content_dataset = content_dataset
         self.cot_dataset = cot_dataset
         self.external_cot_dataset = external_cot_dataset
-        self.mode = cfg.task
+        self.mode = cfg.task.name
         self.num_negative = cfg.train_params.num_negative
         self.num_cot_hard = cfg.train_params.num_cot_negative
 

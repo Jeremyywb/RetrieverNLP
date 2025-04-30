@@ -5,7 +5,15 @@ use_wandb: false
 seed: 1989
 local_rank: #运行自动生成
 fold: 0
-task: base
+use_deepspeed_plugin: true
+
+task:
+  name: base                     # 当前运行的任务名称: qcot, semi, hard 之一
+  chain:                         # 定义任务执行顺序，便于确定前一个任务
+    - qcot
+    - semi
+    - hard
+  first_task_name: qcot          # 第一个任务名称
 
 dataset:
   query_dataset: ../input/synthetic.csv
@@ -18,7 +26,10 @@ dataset:
 model:
   name: bge_embedding
   model_name: BGE-large-en
-  backbone_path: BAAI/bge-large-en-v1.5
+
+  base_backbone_path: ../models/bge/base_model  # LoRA模式下的公共基础模型路径
+  base_backbone_name: BAAI/bge-large-en-v1.5  # HuggingFace模型名，用于初始化
+  
   model_type: bge_embedding
   trust_remote_code: false
   max_length: 512
@@ -26,24 +37,23 @@ model:
   gradient_checkpointing: true
   compile: false
   attn_implementation: sdpa
-  negatives_cross_device: false
+  negatives_cross_device: true
   padding_side: right
   add_eos_token: false
   n_neighbour: 256
 
   use_bnb: false
-  use_lora: false
+  use_lora: true
   lora:
-    r: 4
-    lora_alpha: 16
-    lora_dropout: 0.1
+    r: 4  # 低秩近似的秩
+    lora_alpha: 16  # LoRA适配器的缩放因子
+    lora_dropout: 0.1  # Dropout率
     target_modules:
-      - q_proj
-      - k_proj
-      - v_proj
-      - o_proj
-    modules_to_save: []
-  
+      - query      # 匹配所有包含 "self.query" 的路径
+      - key
+      - value
+      - dense
+    modules_to_save: []  # 确保不保留任何原始模块
 
 train_params:
   retriever_bs: 128 #memory ~ bs * num_negative or bs(if negative_dataset ==0)
@@ -65,7 +75,7 @@ train_params:
     gamma: 0.2
 optimizer:
   name: AdamW
-  head_keywords: head
+  head_keywords: headmodel
   
   lr:  1e-5
   lr_lora_a:  1e-5
@@ -84,4 +94,4 @@ optimizer:
 
 # 后40%训练步：max_grad_norm=2.0（加速收敛）
 outputs:
-  model_dir: ../models/eedi_embed_bge
+  model_dir: ../models/bge/output

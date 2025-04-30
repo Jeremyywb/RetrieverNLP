@@ -91,18 +91,23 @@ class UnifiedCoTLoss(nn.Module):
             pos_cot = cot_all[:, :Pcot, :].mean(dim=1)  # [B, D]
             l_qcot  = torch.norm(anchor - pos_cot, p=self.p, dim=1).pow(2).mean()
 
-        # —— CoT→Content 一致性 —— 
-        if contents is not None and self.gamma > 0:
-            cont_all = contents.view(B, -1, D)      # [B, Pcont+Ncont, D]
-            pos_cont = cont_all[:, :1, :].mean(dim=1, keepdim=True)  # [B,1,D]
-            cot_pos  = cot_all[:, :Pcot, :].mean(dim=1, keepdim=True)    # [B,1,D]
-            l_cotc   = torch.norm(cot_pos - pos_cont, p=self.p, dim=2).pow(2).mean()
+        
+        contents = contents.view(B, -1, D)
+        Pcont = min(1,contents.size(1))
+        if  self.gamma > 0:
+            # —— Content:1→CoT:n 一致性 ——
+            l_cotc = self.triplet(contents[:,0,:], cot_all, n_pos=Pcot)
+            # —— 1→CoT→Content:n 一致性 ——
+            if contents.size(1)>Pcont:
+                l_cotc += self.triplet(cot_all[:,0,:], contents, n_pos=Pcont)
+                l_cotc += self.triplet(cot_all[:,1,:], contents, n_pos=Pcont)
+                l_cotc = l_cotc/3
         else:
             l_cotc = 0.0
 
         # —— Q→Content 三元组 —— 
-        if contents is not None and self.alpha > 0:
-            l_qc = self.triplet(anchor, cont_all, n_pos=1)
+        if contents.size(1)>Pcont and self.alpha > 0:
+            l_qc = self.triplet(anchor, contents, n_pos=1)
         else:
             l_qc = 0.0
 
