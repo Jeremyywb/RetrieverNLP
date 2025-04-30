@@ -186,6 +186,9 @@ def setup_training_run(cfg):
             "allgather_partitions": True,
             "reduce_scatter": True,
             "overlap_comm": True,
+            "contiguous_gradients": True,
+            "allgather_bucket_size": 5e7,
+            "reduce_bucket_size": 5e7,
             "contiguous_gradients": True
             },
             "gradient_accumulation_steps": cfg.train_params.grad_accumulation_steps,
@@ -221,7 +224,7 @@ def setup_training_run(cfg):
     else:
         accelerator = Accelerator(
             gradient_accumulation_steps=cfg.train_params.grad_accumulation_steps,
-            #  mixed_precision="bf16"
+             mixed_precision="fp16"
         )
     accelerator.print(f"using wandb: {cfg.use_wandb}")
     # Make one log on every process with the configuration for debugging.

@@ -2,8 +2,12 @@ from dataclasses import dataclass
 from typing import Optional
 from torch import Tensor,nn
 from transformers.modeling_outputs import ModelOutput
-from transformers import BitsAndBytesConfig, AutoModel
-from transformers import AutoConfig
+# from transformers import BitsAndBytesConfig, AutoModel
+# from transformers import AutoConfig
+
+from modelscope import BitsAndBytesConfig, AutoModel
+from modelscope import AutoConfig
+
 from peft import LoraConfig, TaskType, get_peft_model
 import torch
 from pathlib import Path

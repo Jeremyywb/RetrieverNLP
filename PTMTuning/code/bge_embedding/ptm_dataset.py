@@ -4,7 +4,9 @@ import torch
 from torch.utils.data import Dataset
 import pandas as pd
 import json
-from transformers import AutoTokenizer
+# from transformers import AutoTokenizer
+# 无法使用hugging face时
+from modelscope import  AutoTokenizer
 from typing import Dict, List
 
 from pathlib import Path 
