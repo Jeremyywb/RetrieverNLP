@@ -5,6 +5,7 @@ defaults:
 debug: false
 enable_cuda_optimizations: true
 use_wandb: false
+use_deepspeed_plugin: false
 fold: 0
 task:
   name: qcot                     # 当前运行的任务名称: qcot, semi, hard 之一
@@ -17,18 +18,19 @@ dataset:
 
 model:
   use_lora: true
+  init_type: fp32
 
 train_params:
-  retriever_bs: 64 #memory ~ bs * num_negative or bs(if negative_dataset ==0)
-  sub_batch_size: 4 # emebding memory
+  retriever_bs: 128 #memory ~ bs * num_negative or bs(if negative_dataset ==0)
+  sub_batch_size: 8 # emebding memory
   query_bs: 128 # evaluate
   content_bs: 128 # evaluate 128/8=16
 
   num_negative: 0
   num_cot_negative: 8
-  warmup_pct: 0.15
-  num_epochs: 10
-  grad_accumulation_steps: 2 # if want 128, 128/retriever_bs
+  warmup_pct: 0.08 # 0.15-->0.05或0.08  
+  num_epochs: 30 # 10-->30  
+  grad_accumulation_steps: 1 # if want 128, 128/retriever_bs
   patience: 3
   eval_at_start: false
 
@@ -44,7 +46,7 @@ optimizer:
   lr:  1e-5
   lr_lora_a:  1e-5
   lr_lora_b: 5e-5
-  lr_embed_tokens: 8e-5
+  lr_embed_tokens: 6e-5
   lr_head: 4e-5 
 
   max_grad_norm: 1

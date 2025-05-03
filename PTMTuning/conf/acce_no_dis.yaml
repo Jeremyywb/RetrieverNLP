@@ -22,5 +22,5 @@ downcast_bf16: 'no'
 machine_rank: 0
 main_training_function: main
 num_machines: 1        # 表示单节点
-num_processes: 2       # 应该设置为你的实际 GPU 数量（这里是2）
+num_processes: 1       # 应该设置为你的实际 GPU 数量（这里是2）
 use_cpu: false

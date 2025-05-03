@@ -193,6 +193,7 @@ def setup_training_run(cfg):
             },
             "gradient_accumulation_steps": cfg.train_params.grad_accumulation_steps,
             "train_micro_batch_size_per_gpu": cfg.train_params.retriever_bs,
+            "gradient_clipping": cfg.optimizer.max_grad_norm,
             "steps_per_print": 50
         }
         # ds_plugin = DeepSpeedPlugin(
@@ -288,6 +289,39 @@ def get_custom_cosine_schedule_with_warmup(optimizer, num_warmup_steps, num_trai
 
     return torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda, last_epoch)
 
+
+# def get_cosine_schedule_with_warmup_and_minlr(
+#     optimizer,
+#     num_warmup_steps,
+#     num_training_steps,
+#     min_lr=1e-7,
+#     num_cycles=0.5,
+#     last_epoch=-1
+#     ):
+#     # 获取初始学习率
+#     base_lrs = [group['lr'] for group in optimizer.param_groups]
+    
+#     def lr_lambda(current_step, base_lr):
+#         # Warmup phase
+#         if current_step < num_warmup_steps:
+#             return float(current_step) / float(max(1, num_warmup_steps))
+        
+#         # Progress after warmup
+#         progress = float(current_step - num_warmup_steps) / float(max(1, num_training_steps - num_warmup_steps))
+        
+#         # Cosine decay with specified number of cycles
+#         cosine_decay = 0.5 * (1.0 + math.cos(math.pi * num_cycles * 2.0 * progress))
+        
+#         # 计算当前学习率
+#         lr = cosine_decay * base_lr
+        
+#         # 确保不低于最小学习率
+#         return max(min_lr, lr) / base_lr  # 返回相对于 base_lr 的乘数
+    
+#     # 为每个参数组创建一个lambda函数
+#     lr_lambdas = [lambda step, base_lr=base_lr: lr_lambda(step, base_lr) for base_lr in base_lrs]
+    
+#     return torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambdas, last_epoch)
 
 
 def get_cosine_schedule_with_warmup_and_minlr(

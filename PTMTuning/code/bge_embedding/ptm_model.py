@@ -2,11 +2,11 @@ from dataclasses import dataclass
 from typing import Optional
 from torch import Tensor,nn
 from transformers.modeling_outputs import ModelOutput
-# from transformers import BitsAndBytesConfig, AutoModel
-# from transformers import AutoConfig
+from transformers import BitsAndBytesConfig, AutoModel
+from transformers import AutoConfig
 
-from modelscope import BitsAndBytesConfig, AutoModel
-from modelscope import AutoConfig
+# from modelscope import BitsAndBytesConfig, AutoModel
+# from modelscope import AutoConfig
 
 from peft import LoraConfig, TaskType, get_peft_model
 import torch
@@ -17,7 +17,7 @@ import torch.nn.functional as F
 
 from peft import PeftModel
 
-from pathlib import Path
+
 import os
 from omegaconf import OmegaConf, DictConfig
 
@@ -90,7 +90,7 @@ def initialize_model_paths(cfg):
     else:
         is_task_checkpoint_exists = Path(task_specific_path).exists() and (Path(task_specific_path) / f"{head_bin_name}.bin").exists()
     
-    
+
     # Create tokenizer path - typically same as backbone model path
     tokenizer_path = backbone_path if is_backbone_exists else base_backbone_name
 
@@ -208,7 +208,13 @@ def get_base_model(cfg):
     config.use_cache = False
     
     # Set up model parameters
-    torch_dtype = torch.bfloat16
+    typeMAP = {
+        "fp32":torch.float32,
+        "fp16":torch.float16,
+        "bf16":torch.bfloat16
+    }
+    torch_dtype =typeMAP.get(cfg.model.init_type , None) 
+
     model_kwargs = {
         "config": config,
         "trust_remote_code": cfg.model.trust_remote_code,
@@ -237,8 +243,10 @@ def get_base_model(cfg):
         except Exception as e:
             # If loading fails, initialize from HF and save base model
             print(f"⚠️ Failed to load model from {backbone_path}: {e}")
-            print(f"Initializing model from {base_backbone_name}...")
-            base_model = AutoModel.from_pretrained(base_backbone_name, **model_kwargs)
+            print(f"Initializing model from {base_backbone_name}... use modelscope")
+            from modelscope import AutoModel as scopeAutoModel
+            
+            base_model = scopeAutoModel.from_pretrained(base_backbone_name, **model_kwargs)
             
             # Save base model to common path
             print(f"Saving base model to {backbone_path}")

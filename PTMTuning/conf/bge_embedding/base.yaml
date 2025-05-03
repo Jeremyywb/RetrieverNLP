@@ -37,7 +37,7 @@ model:
   gradient_checkpointing: true
   compile: false
   attn_implementation: sdpa
-  negatives_cross_device: false
+  negatives_cross_device: true
   padding_side: right
   add_eos_token: false
   n_neighbour: 256
@@ -65,7 +65,7 @@ train_params:
   warmup_pct: 0.1
   num_epochs: 10
   grad_accumulation_steps: 1
-  patience: 20
+  patience: 3
   eval_at_start: false
 
   

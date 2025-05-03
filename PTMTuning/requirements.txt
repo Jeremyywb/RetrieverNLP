@@ -18,7 +18,7 @@ pandas>=1.5.3
 torch>=2.2.0
 torchvision>=0.17.0
 torchaudio>=2.2.0
-
+deepspeed
 # Hugging Face 生态
 transformers>=4.30.0
 tokenizers>=0.13.0

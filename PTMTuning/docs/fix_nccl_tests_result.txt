@@ -1,0 +1,119 @@
+(myproject_env) (base) root@0fed198eb8ba:/home# ./fix_nccl_tests.sh
+运行修复的NCCL测试...
+检测到 2 个GPU
+=================== 系统信息 ===================
+Fri May  2 20:28:26 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.107.02             Driver Version: 550.107.02     CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4090        On  |   00000000:01:00.0 Off |                  Off |
+| 30%   42C    P2            149W /  450W |   20594MiB /  24564MiB |     40%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 4090        On  |   00000000:81:00.0 Off |                  Off |
+| 38%   49C    P2            161W /  450W |   20594MiB /  24564MiB |     40%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
++-----------------------------------------------------------------------------------------+
+===============================================
+使用CUDA_VISIBLE_DEVICES=0,1
+尝试单进程模式运行all_reduce测试...
+# nThread 1 nGpus 2 minBytes 8 maxBytes 8388608 step: 2(factor) warmup iters: 5 iters: 20 agg iters: 1 validation: 1 graph: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid 514359 on 0fed198eb8ba device  0 [0000:01:00] NVIDIA GeForce RTX 4090
+#  Rank  1 Group  0 Pid 514359 on 0fed198eb8ba device  1 [0000:81:00] NVIDIA GeForce RTX 4090
+0fed198eb8ba:514359:514359 [0] NCCL INFO Bootstrap : Using eth0:10.60.10.2<0>
+0fed198eb8ba:514359:514359 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+0fed198eb8ba:514359:514359 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+0fed198eb8ba:514359:514359 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+0fed198eb8ba:514359:514359 [0] NCCL INFO cudaDriverVersion 12040
+NCCL version 2.21.5+cuda12.4
+0fed198eb8ba:514359:514510 [1] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+0fed198eb8ba:514359:514510 [1] NCCL INFO NET/Socket : Using [0]eth0:10.60.10.2<0>
+0fed198eb8ba:514359:514510 [1] NCCL INFO Using non-device net plugin version 0
+0fed198eb8ba:514359:514510 [1] NCCL INFO Using network Socket
+0fed198eb8ba:514359:514509 [0] NCCL INFO Using non-device net plugin version 0
+0fed198eb8ba:514359:514509 [0] NCCL INFO Using network Socket
+0fed198eb8ba:514359:514509 [0] NCCL INFO ncclCommInitRank comm 0x55a3c78e7b40 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 1000 commId 0x70e62c6a65a57f96 - Init START
+0fed198eb8ba:514359:514510 [1] NCCL INFO ncclCommInitRank comm 0x55a3c78ed800 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 81000 commId 0x70e62c6a65a57f96 - Init START
+0fed198eb8ba:514359:514509 [0] NCCL INFO NCCL_SHM_DISABLE set by environment to 0.
+0fed198eb8ba:514359:514509 [0] NCCL INFO Setting affinity for GPU 0 to f000007f,00000000,f000007f
+0fed198eb8ba:514359:514510 [1] NCCL INFO Setting affinity for GPU 1 to 07,00000000,00000007,00000000
+0fed198eb8ba:514359:514509 [0] NCCL INFO comm 0x55a3c78e7b40 rank 0 nRanks 2 nNodes 1 localRanks 2 localRank 0 MNNVL 0
+0fed198eb8ba:514359:514510 [1] NCCL INFO comm 0x55a3c78ed800 rank 1 nRanks 2 nNodes 1 localRanks 2 localRank 1 MNNVL 0
+0fed198eb8ba:514359:514509 [0] NCCL INFO Channel 00/02 :    0   1
+0fed198eb8ba:514359:514509 [0] NCCL INFO Channel 01/02 :    0   1
+0fed198eb8ba:514359:514509 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1
+0fed198eb8ba:514359:514509 [0] NCCL INFO P2P Chunksize set to 131072
+0fed198eb8ba:514359:514510 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0
+0fed198eb8ba:514359:514510 [1] NCCL INFO P2P Chunksize set to 131072
+0fed198eb8ba:514359:514509 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct
+0fed198eb8ba:514359:514509 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct
+0fed198eb8ba:514359:514510 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+0fed198eb8ba:514359:514510 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+0fed198eb8ba:514359:514510 [1] NCCL INFO Connected all rings
+0fed198eb8ba:514359:514510 [1] NCCL INFO Connected all trees
+0fed198eb8ba:514359:514509 [0] NCCL INFO Connected all rings
+0fed198eb8ba:514359:514509 [0] NCCL INFO Connected all trees
+0fed198eb8ba:514359:514510 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+0fed198eb8ba:514359:514510 [1] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+0fed198eb8ba:514359:514509 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+0fed198eb8ba:514359:514509 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+0fed198eb8ba:514359:514509 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+0fed198eb8ba:514359:514509 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+0fed198eb8ba:514359:514509 [0] NCCL INFO ncclCommInitRank comm 0x55a3c78e7b40 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 1000 commId 0x70e62c6a65a57f96 - Init COMPLETE
+0fed198eb8ba:514359:514510 [1] NCCL INFO ncclCommInitRank comm 0x55a3c78ed800 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 81000 commId 0x70e62c6a65a57f96 - Init COMPLETE
+#
+#                                                              out-of-place                       in-place          
+#       size         count      type   redop    root     time   algbw   busbw #wrong     time   algbw   busbw #wrong
+#        (B)    (elements)                               (us)  (GB/s)  (GB/s)            (us)  (GB/s)  (GB/s)       
+           8             2     float     sum      -1    15.70    0.00    0.00      0    30.75    0.00    0.00      0
+          16             4     float     sum      -1    27.55    0.00    0.00      0    25.81    0.00    0.00      0
+          32             8     float     sum      -1    18.19    0.00    0.00      0    16.22    0.00    0.00      0
+          64            16     float     sum      -1    22.00    0.00    0.00      0    23.35    0.00    0.00      0
+         128            32     float     sum      -1    16.07    0.01    0.01      0    32.38    0.00    0.00      0
+         256            64     float     sum      -1    21.63    0.01    0.01      0    24.48    0.01    0.01      0
+         512           128     float     sum      -1    22.64    0.02    0.02      0    16.06    0.03    0.03      0
+        1024           256     float     sum      -1    16.97    0.06    0.06      0    16.40    0.06    0.06      0
+        2048           512     float     sum      -1    16.04    0.13    0.13      0    24.52    0.08    0.08      0
+        4096          1024     float     sum      -1    19.23    0.21    0.21      0    17.15    0.24    0.24      0
+        8192          2048     float     sum      -1    19.10    0.43    0.43      0    20.47    0.40    0.40      0
+       16384          4096     float     sum      -1    38.25    0.43    0.43      0    31.72    0.52    0.52      0
+       32768          8192     float     sum      -1    70.29    0.47    0.47      0    60.98    0.54    0.54      0
+       65536         16384     float     sum      -1    90.11    0.73    0.73      0    93.79    0.70    0.70      0
+      131072         32768     float     sum      -1    242.0    0.54    0.54      0    272.4    0.48    0.48      0
+      262144         65536     float     sum      -1    306.9    0.85    0.85      0    395.3    0.66    0.66      0
+      524288        131072     float     sum      -1    831.9    0.63    0.63      0    987.3    0.53    0.53      0
+     1048576        262144     float     sum      -1   1926.4    0.54    0.54      0   1722.6    0.61    0.61      0
+     2097152        524288     float     sum      -1   3447.7    0.61    0.61      0   1538.6    1.36    1.36      0
+     4194304       1048576     float     sum      -1   3527.8    1.19    1.19      0   4361.7    0.96    0.96      0
+     8388608       2097152     float     sum      -1   8434.8    0.99    0.99      0   8468.2    0.99    0.99      0
+0fed198eb8ba:514359:514359 [1] NCCL INFO comm 0x55a3c78e7b40 rank 0 nranks 2 cudaDev 0 busId 1000 - Destroy COMPLETE
+0fed198eb8ba:514359:514359 [1] NCCL INFO comm 0x55a3c78ed800 rank 1 nranks 2 cudaDev 1 busId 81000 - Destroy COMPLETE
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 0.382162 
+#
+
+单进程模式成功！
+测试完成。如果遇到问题，您可能需要检查NCCL配置或GPU可见性设置。
+
+
+表明NCCL配置现在可以正常工作了。从输出中可以看到：
+
+两个GPU (RTX 4090) 都被正确识别和使用
+NCCL通过本地SHM (共享内存) 在两个GPU之间建立了连接
+已成功运行all_reduce测试，并获得了性能数据
+
+现在让我们创建一个更全面的测试脚本，包括更多的NCCL操作和更详细的配置选项：
+

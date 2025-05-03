@@ -4,7 +4,6 @@ defaults:
 
 debug: false
 enable_cuda_optimizations: true
-use_deepspeed_plugin: false
 use_wandb: false
 fold: 0
 task:
@@ -17,19 +16,19 @@ dataset:
 
 model:
   use_lora: true
-  init_type: fp32  # bf16,fp16
+  init_type: fp32
 
 train_params:
-  retriever_bs: 128 #memory ~ bs * num_negative or bs(if negative_dataset ==0)
-  sub_batch_size: 8 # emebding memory
+  retriever_bs: 32 #memory ~ bs * num_negative or bs(if negative_dataset ==0)
+  sub_batch_size: 4 # emebding memory
   query_bs: 128 # evaluate
   content_bs: 128 # evaluate 128/8=16
 
   num_negative: 8
   num_cot_negative: 8
-  warmup_pct: 0.16 # 0.15-->0.05或0.08  
-  num_epochs: 15 # 10-->30  
-  grad_accumulation_steps: 1 # if want 128, 128/retriever_bs
+  warmup_pct: 0.15
+  num_epochs: 10
+  grad_accumulation_steps: 4 # if want 128, 128/retriever_bs
   patience: 3
   eval_at_start: false
 
@@ -45,7 +44,7 @@ optimizer:
   lr:  1e-5
   lr_lora_a:  1e-5
   lr_lora_b: 5e-5
-  lr_embed_tokens: 6e-5
+  lr_embed_tokens: 3e-5
   lr_head: 4e-5 
 
   max_grad_norm: 1

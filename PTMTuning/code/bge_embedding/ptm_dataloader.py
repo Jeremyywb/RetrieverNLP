@@ -21,6 +21,8 @@ class TripletCollator:
             else:
                 for sub_key, sub_value in value.items():
                     batch_out[key][sub_key] = torch.cat(sub_value, dim=0) if sub_value[0].dim() > 1 else torch.stack(sub_value, dim=0)
+                batch_out[key] = truncate_to_max_length(batch_out[key])##长度截断
+                    
         
         return batch_out
     
@@ -51,8 +53,21 @@ class TextCollator:
                 if isinstance(result[key][0], torch.Tensor):
                     result[key] = torch.stack(result[key], dim=0)
         
-        return result
+        return truncate_to_max_length(result)
 
+
+def truncate_to_max_length(input_dict):
+    """截断所有字段到attention_mask的最大有效长度"""
+    if 'attention_mask' not in input_dict:
+        return input_dict
+    
+    # 计算最大有效长度
+    mask = input_dict['attention_mask']
+    max_length = mask.sum(dim=-1).max().item()
+    
+    # 截断所有字段的最后一维
+    truncated = {k: v[..., :max_length] for k, v in input_dict.items()}
+    return truncated
 
 
 

@@ -367,10 +367,7 @@ def run_training(cfg):
 
 
     
-    # ------- Accelerator -------------------------------------------------------------------------#
-    model, optimizer, query_valid_dl, retrieval_dl, content_comp_dl = accelerator.prepare(
-        model, optimizer, query_valid_dl, retrieval_dl, content_comp_dl
-    )
+    
     # ------- Scheduler ---------------------------------------------------------------------------#
     print_line()
 
@@ -385,7 +382,6 @@ def run_training(cfg):
     accelerator.print(f"# training updates per epoch: {num_update_steps_per_epoch}")
     accelerator.print(f"# training steps: {num_training_steps}")
     accelerator.print(f"# warmup steps: {num_warmup_steps}")
-    
     # scheduler = get_custom_cosine_schedule_with_warmup(optimizer=optimizer, num_warmup_steps=num_warmup_steps, num_training_steps=num_training_steps)
     scheduler = get_cosine_schedule_with_warmup_and_minlr(
         optimizer=optimizer, 
@@ -394,12 +390,15 @@ def run_training(cfg):
         min_lr = cfg.optimizer.lr*0.01
     )
     
+    # ------- Accelerator -------------------------------------------------------------------------#
+    model, optimizer, query_valid_dl, retrieval_dl, content_comp_dl,scheduler = accelerator.prepare(
+        model, optimizer, query_valid_dl, retrieval_dl, content_comp_dl,scheduler
+    )
     
     # ------- training setup ----------------------------------------------------------------------#
     best_lb = -1.0
     patience_tracker = 0
     current_iteration = 0
-    progress = 0.0
 
     start_time = time.time()
     progress_bar = None
@@ -427,7 +426,7 @@ def run_training(cfg):
             loss = outputs.loss
             accelerator.backward(loss)
 
-            grad_norm = accelerator.clip_grad_norm_(model.parameters(), cfg.optimizer.max_grad_norm)
+            # grad_norm = accelerator.clip_grad_norm_(model.parameters(), cfg.optimizer.max_grad_norm)#通过deepspeed设置
 
             optimizer.step()
             scheduler.step()
@@ -442,7 +441,6 @@ def run_training(cfg):
 
             progress_bar.update(1)
             current_iteration += 1
-            progress = current_iteration / num_training_steps
 
         # Evaluation -----
         print_line()

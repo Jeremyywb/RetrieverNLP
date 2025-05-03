@@ -15,6 +15,13 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"  # 必须放在所有其他导入
 
+# 在脚本开始处
+
+
+    
+
+
+
 
 # local import 
 from bge_embedding.ptm_model import get_base_model,BgeBiEncoderModel,add_paths_to_config
@@ -359,7 +366,6 @@ def run_training(cfg):
     best_lb = -1.0
     patience_tracker = 0
     current_iteration = 0
-    progress = 0.0
 
     start_time = time.time()
     progress_bar = None
@@ -402,7 +408,7 @@ def run_training(cfg):
                 optimizer.step()
                 scheduler.step()
                 optimizer.zero_grad()
-            # if accelerator.sync_gradients:
+            if accelerator.sync_gradients:
                 progress_bar.set_description(
                     f"STEP: {step+1:5}/{num_update_steps_per_epoch:5}. "
                     f"T-STEP: {current_iteration+1:5}/{num_training_steps:5}. "
@@ -412,7 +418,7 @@ def run_training(cfg):
 
                 progress_bar.update(1)
                 current_iteration += 1
-                progress = current_iteration / num_training_steps
+
         # Evaluation -----
         print_line()
         accelerator.wait_for_everyone()
