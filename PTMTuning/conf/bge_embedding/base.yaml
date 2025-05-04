@@ -36,8 +36,8 @@ model:
   sentence_pooling_method: cls
   gradient_checkpointing: true
   compile: false
-  attn_implementation: sdpa
-  negatives_cross_device: true
+  attn_implementation: sdpa # bert 不支持 flash_attention_2
+  negatives_cross_device: false
   padding_side: right
   add_eos_token: false
   n_neighbour: 256
@@ -52,9 +52,16 @@ model:
       - query      # 匹配所有包含 "self.query" 的路径
       - key
       - value
-      - dense
+      - encoder.layer.20.output.dense
+      - encoder.layer.21.output.dense
+      - encoder.layer.22.output.dense
+      - encoder.layer.23.output.dense
+      # - dense
     modules_to_save: []  # 确保不保留任何原始模块
-
+        # "encoder.layer.20.output.dense",
+        # "encoder.layer.21.output.dense",
+        # "encoder.layer.22.output.dense",
+        # "encoder.layer.23.output.dense",
 train_params:
   retriever_bs: 128 #memory ~ bs * num_negative or bs(if negative_dataset ==0)
   sub_batch_size: 4 # emebding memory

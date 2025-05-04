@@ -388,59 +388,80 @@ optimizer
 
 
 #### epoch 0
->>> LB: 0.1671
+>>> LB: 0.1645                                                                                               
 --------------------------------
->>> LB: 0.1671
->>> Seen LB: 0.1689
->>> Unseen LB: 0.1442
+>>> LB: 0.1645
+>>> Seen LB: 0.1662
+>>> Unseen LB: 0.1441
 --------------------------------
->>> Current Recall@1 = 0.0754
+>>> Current Recall@1 = 0.0737
 >>> Current Recall@2 = 0.129
->>> Current Recall@4 = 0.2345
->>> Current Recall@8 = 0.3652
->>> Current Recall@16 = 0.469
->>> Current Recall@25 = 0.5477
->>> Current Recall@32 = 0.5846
->>> Current Recall@64 = 0.6667
-
+>>> Current Recall@4 = 0.2295
+>>> Current Recall@8 = 0.3585
+>>> Current Recall@16 = 0.4673
+>>> Current Recall@25 = 0.531
+>>> Current Recall@32 = 0.5796
+>>> Current Recall@64 = 0.6616
 #### epoch 1
->>> LB: 0.1913
---------------------------------
->>> LB: 0.1913
->>> Seen LB: 0.1952
->>> Unseen LB: 0.1432
---------------------------------
->>> Current Recall@1 = 0.0938
->>> Current Recall@2 = 0.1491
->>> Current Recall@4 = 0.2596
->>> Current Recall@8 = 0.3903
->>> Current Recall@16 = 0.5193
->>> Current Recall@25 = 0.5829
->>> Current Recall@32 = 0.6181
->>> Current Recall@64 = 0.7002
-
-
->>> LB: 0.193
---------------------------------
->>> LB: 0.193
->>> Seen LB: 0.1958
->>> Unseen LB: 0.1571
+>>> LB: 0.1934
+>>> Seen LB: 0.1964
+>>> Unseen LB: 0.1565
 --------------------------------
 >>> Current Recall@1 = 0.0955
->>> Current Recall@2 = 0.1524
->>> Current Recall@4 = 0.258
->>> Current Recall@8 = 0.392
->>> Current Recall@16 = 0.5193
+>>> Current Recall@2 = 0.1575
+>>> Current Recall@4 = 0.2596
+>>> Current Recall@8 = 0.397
+>>> Current Recall@16 = 0.5209
 >>> Current Recall@25 = 0.5829
 >>> Current Recall@32 = 0.6198
 >>> Current Recall@64 = 0.7052
 
 #### epoch 2
 
+>>> LB: 0.2096                                                                                                            
+--------------------------------
+>>> LB: 0.2096
+>>> Seen LB: 0.214
+>>> Unseen LB: 0.154
+--------------------------------
+>>> Current Recall@1 = 0.1005
+>>> Current Recall@2 = 0.1977
+>>> Current Recall@4 = 0.2898
+>>> Current Recall@8 = 0.4221
+>>> Current Recall@16 = 0.541
+>>> Current Recall@25 = 0.5963
+>>> Current Recall@32 = 0.6348
+>>> Current Recall@64 = 0.7136
+
+
 #### epoch 3
-
+>>> LB: 0.1933
+>>> Seen LB: 0.1972
+>>> Unseen LB: 0.144
+--------------------------------
+>>> Current Recall@1 = 0.0988
+>>> Current Recall@2 = 0.1776
+>>> Current Recall@4 = 0.2529
+>>> Current Recall@8 = 0.3652
+>>> Current Recall@16 = 0.5025
+>>> Current Recall@25 = 0.5578
+>>> Current Recall@32 = 0.603
+>>> Current Recall@64 = 0.6851
 #### epoch 4
-
+>>> LB: 0.1392                                                                                                                
+--------------------------------
+>>> LB: 0.1392
+>>> Seen LB: 0.1416
+>>> Unseen LB: 0.1087
+--------------------------------
+>>> Current Recall@1 = 0.0704
+>>> Current Recall@2 = 0.1122
+>>> Current Recall@4 = 0.1792
+>>> Current Recall@8 = 0.2747
+>>> Current Recall@16 = 0.3869
+>>> Current Recall@25 = 0.4472
+>>> Current Recall@32 = 0.4908
+>>> Current Recall@64 = 0.598
 #### epoch 5
 
 
@@ -452,3 +473,156 @@ optimizer
 #### epoch 8
 
 #### epoch 9
+
+
+#### epoch 0
+>>> LB: 0.17                                                                                                                                                                 | 0/6 [00:00<?, ?it/s]
+--------------------------------
+>>> LB: 0.17
+>>> Seen LB: 0.1726
+>>> Unseen LB: 0.1376
+--------------------------------
+>>> Current Recall@1 = 0.0737
+>>> Current Recall@2 = 0.1357
+>>> Current Recall@4 = 0.2395
+>>> Current Recall@8 = 0.3585
+>>> Current Recall@16 = 0.5008
+>>> Current Recall@25 = 0.5745
+>>> Current Recall@32 = 0.5946
+>>> Current Recall@64 = 0.7069
+
+#### epoch 1
+>>> LB: 0.2137                                                                                                                                                               | 0/6 [00:00<?, ?it/s]
+--------------------------------
+>>> LB: 0.2137
+>>> Seen LB: 0.2175
+>>> Unseen LB: 0.1668
+--------------------------------
+>>> Current Recall@1 = 0.1106
+>>> Current Recall@2 = 0.1826
+>>> Current Recall@4 = 0.2781
+>>> Current Recall@8 = 0.4255
+>>> Current Recall@16 = 0.5477
+>>> Current Recall@25 = 0.6214
+>>> Current Recall@32 = 0.6533
+>>> Current Recall@64 = 0.7538
+#### epoch 2
+>>> LB: 0.0662
+>>> Seen LB: 0.0679
+>>> Unseen LB: 0.0449
+--------------------------------
+>>> Current Recall@1 = 0.0318
+>>> Current Recall@2 = 0.0586
+>>> Current Recall@4 = 0.0804
+>>> Current Recall@8 = 0.1256
+>>> Current Recall@16 = 0.1826
+>>> Current Recall@25 = 0.2312
+>>> Current Recall@32 = 0.268
+>>> Current Recall@64 = 0.3836
+#### epoch 3
+>>> LB: 0.0311                                                                                                                                                               | 0/6 [00:00<?, ?it/s]
+--------------------------------
+>>> LB: 0.0311
+>>> Seen LB: 0.0329
+>>> Unseen LB: 0.0089
+--------------------------------
+>>> Current Recall@1 = 0.0218
+>>> Current Recall@2 = 0.0285
+>>> Current Recall@4 = 0.0352
+>>> Current Recall@8 = 0.0486
+>>> Current Recall@16 = 0.0553
+>>> Current Recall@25 = 0.0754
+>>> Current Recall@32 = 0.0871
+>>> Current Recall@64 = 0.1055
+#### epoch 4
+
+
+
+
+
+
+
+
+
+
+#### epoch 0
+>>> LB: 0.1623                                                                                                                
+--------------------------------
+>>> LB: 0.1623
+>>> Seen LB: 0.1642
+>>> Unseen LB: 0.1379
+--------------------------------
+>>> Current Recall@1 = 0.0704
+>>> Current Recall@2 = 0.129
+>>> Current Recall@4 = 0.2245
+>>> Current Recall@8 = 0.3534
+>>> Current Recall@16 = 0.4824
+>>> Current Recall@25 = 0.5528
+>>> Current Recall@32 = 0.5846
+>>> Current Recall@64 = 0.6935
+
+#### epoch 1
+>>> LB: 0.1822                                                                                                                                                               | 0/6 [00:00<?, ?it/s]
+--------------------------------
+>>> LB: 0.1822
+>>> Seen LB: 0.1843
+>>> Unseen LB: 0.1554
+--------------------------------
+>>> Current Recall@1 = 0.0838
+>>> Current Recall@2 = 0.1441
+>>> Current Recall@4 = 0.2529
+>>> Current Recall@8 = 0.3786
+>>> Current Recall@16 = 0.5243
+>>> Current Recall@25 = 0.5946
+>>> Current Recall@32 = 0.6131
+>>> Current Recall@64 = 0.727
+#### epoch 2
+>>> LB: 0.
+2132   
+
+--------------------------------
+>>> LB: 0.2132
+>>> Seen LB: 0.2171
+>>> Unseen LB: 0.1641
+--------------------------------
+>>> Current Recall@1 = 0.1156
+>>> Current Recall@2 = 0.1792
+>>> Current Recall@4 = 0.2747
+>>> Current Recall@8 = 0.402
+>>> Current Recall@16 = 0.5544
+>>> Current Recall@25 = 0.6214
+>>> Current Recall@32 = 0.6499
+>>> Current Recall@64 = 0.7521
+#### epoch 3
+>>> LB: 0.2138                                                                                                                                      
+
+--------------------------------
+>>> LB: 0.2138
+>>> Seen LB: 0.2173
+>>> Unseen LB: 0.169
+--------------------------------
+>>> Current Recall@1 = 0.1156
+>>> Current Recall@2 = 0.1876
+>>> Current Recall@4 = 0.2747
+>>> Current Recall@8 = 0.407
+>>> Current Recall@16 = 0.5461
+>>> Current Recall@25 = 0.6013
+>>> Current Recall@32 = 0.6382
+>>> Current Recall@64 = 0.732
+#### epoch 4
+
+>>> LB: 0.1855                                                                                                                                      
+
+--------------------------------
+>>> LB: 0.1855
+>>> Seen LB: 0.1874
+>>> Unseen LB: 0.161
+--------------------------------
+>>> Current Recall@1 = 0.0938
+>>> Current Recall@2 = 0.1709
+>>> Current Recall@4 = 0.2496
+>>> Current Recall@8 = 0.3551
+>>> Current Recall@16 = 0.469
+>>> Current Recall@25 = 0.5343
+>>> Current Recall@32 = 0.5796
+>>> Current Recall@64 = 0.6616

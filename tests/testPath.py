@@ -17,7 +17,7 @@ if __name__ == '__main__':
     print(1233444)
     testRetrieverModelConfig()
 
-根据后面提供的一些信息，编写代码得到"期望打印的内容"，其中召回使用faiss
+根据后面提供的一些信息，编写代码得到"期望打印的内容"，其中召回使用faiss。（注意：可以先召回较多的内容，然后根据需要topk计算相关内容）
 
 
 期望打印内容伪代码：
@@ -259,3 +259,101 @@ def compute_retrieval_metrics(true_ids, pred_ids):
     return to_return
 
 ```
+
+
+
+
+下面是我之前设置的学习率情况，以及运行的效果，根据这个效果，你分析下，你刚刚给出的学习率是否需要调整：
+
+---------------以下是运行效果------------------
+
+
+### qcot train 30 epoch low lr
+train_params:
+  warmup_pct: 0.08 # 0.15-->0.05或0.08  
+  num_epochs: 30 # 10-->30  
+
+optimizer
+  lr:  1e-5
+  lr_lora_a:  1e-5
+  lr_lora_b: 5e-5
+  lr_embed_tokens: 6e-5
+  lr_head: 4e-5 
+
+
+#### epoch 0
+>>> LB: 0.1645                                                                                               
+--------------------------------
+>>> LB: 0.1645
+>>> Seen LB: 0.1662
+>>> Unseen LB: 0.1441
+--------------------------------
+>>> Current Recall@1 = 0.0737
+>>> Current Recall@2 = 0.129
+>>> Current Recall@4 = 0.2295
+>>> Current Recall@8 = 0.3585
+>>> Current Recall@16 = 0.4673
+>>> Current Recall@25 = 0.531
+>>> Current Recall@32 = 0.5796
+>>> Current Recall@64 = 0.6616
+#### epoch 1
+>>> LB: 0.1934
+>>> Seen LB: 0.1964
+>>> Unseen LB: 0.1565
+--------------------------------
+>>> Current Recall@1 = 0.0955
+>>> Current Recall@2 = 0.1575
+>>> Current Recall@4 = 0.2596
+>>> Current Recall@8 = 0.397
+>>> Current Recall@16 = 0.5209
+>>> Current Recall@25 = 0.5829
+>>> Current Recall@32 = 0.6198
+>>> Current Recall@64 = 0.7052
+
+#### epoch 2
+
+>>> LB: 0.2096                                                                                                            
+--------------------------------
+>>> LB: 0.2096
+>>> Seen LB: 0.214
+>>> Unseen LB: 0.154
+--------------------------------
+>>> Current Recall@1 = 0.1005
+>>> Current Recall@2 = 0.1977
+>>> Current Recall@4 = 0.2898
+>>> Current Recall@8 = 0.4221
+>>> Current Recall@16 = 0.541
+>>> Current Recall@25 = 0.5963
+>>> Current Recall@32 = 0.6348
+>>> Current Recall@64 = 0.7136
+
+
+#### epoch 3
+>>> LB: 0.1933
+>>> Seen LB: 0.1972
+>>> Unseen LB: 0.144
+--------------------------------
+>>> Current Recall@1 = 0.0988
+>>> Current Recall@2 = 0.1776
+>>> Current Recall@4 = 0.2529
+>>> Current Recall@8 = 0.3652
+>>> Current Recall@16 = 0.5025
+>>> Current Recall@25 = 0.5578
+>>> Current Recall@32 = 0.603
+>>> Current Recall@64 = 0.6851
+#### epoch 4
+>>> LB: 0.1392                                                                                                                
+--------------------------------
+>>> LB: 0.1392
+>>> Seen LB: 0.1416
+>>> Unseen LB: 0.1087
+--------------------------------
+>>> Current Recall@1 = 0.0704
+>>> Current Recall@2 = 0.1122
+>>> Current Recall@4 = 0.1792
+>>> Current Recall@8 = 0.2747
+>>> Current Recall@16 = 0.3869
+>>> Current Recall@25 = 0.4472
+>>> Current Recall@32 = 0.4908
+>>> Current Recall@64 = 0.598
+#### epoch 5

@@ -6,7 +6,7 @@
 
 # python -m venv myproject_env
 # source myproject_env/bin/activate  # Linux/Mac
-
+# pip install flash-attn --no-build-isolation
 # pip install -r requirements.txt
 # code 目录: 
 # qcot: python train_bge_embedding.py

@@ -5,7 +5,7 @@ defaults:
 debug: false
 enable_cuda_optimizations: true
 use_wandb: false
-use_deepspeed_plugin: false
+use_deepspeed_plugin: true
 fold: 0
 task:
   name: qcot                     # 当前运行的任务名称: qcot, semi, hard 之一
@@ -19,6 +19,7 @@ dataset:
 model:
   use_lora: true
   init_type: fp32
+  sentence_pooling_method: mean
 
 train_params:
   retriever_bs: 128 #memory ~ bs * num_negative or bs(if negative_dataset ==0)
@@ -43,13 +44,30 @@ optimizer:
   name: AdamW
   head_keywords: headmodel
   
-  lr:  1e-5
-  lr_lora_a:  1e-5
-  lr_lora_b: 5e-5
-  lr_embed_tokens: 6e-5
-  lr_head: 4e-5 
+  # lr:  1e-5
+  # lr_lora_a:  1e-5
+  # lr_lora_b: 5e-5
+  # lr_embed_tokens: 6e-5
+  # lr_head: 4e-5
+  
+  # lr:  8e-5
+  # lr_lora_a:  1.5e-4
+  # lr_lora_b: 6e-5
+  # lr_embed_tokens: 5e-5
+  # lr_head: 4e-4
+  #效果很差
+  
+  lr:  1.5e-5
+  lr_lora_a:  2e-5
+  lr_lora_b: 3e-5  
+  lr_embed_tokens: 4e-5
+  lr_head: 5e-5
 
-  max_grad_norm: 1
+  use_layer_lr_decay: true
+  layer_lr_decay_factor: 0.92
+
+
+  max_grad_norm: 0.5
   adam_beta_1: 0.9
   adam_beta_2: 0.95
   adam_epsilon: 1e-8

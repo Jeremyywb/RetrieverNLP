@@ -5,31 +5,36 @@ defaults:
 debug: false
 enable_cuda_optimizations: true
 use_wandb: false
+use_deepspeed_plugin: true
 fold: 0
-task:
-  name: hard                     # 当前运行的任务名称: qcot, semi, hard 之一
 
+task:
+  name: abl_hard                   # 当前运行的任务名称: qcot, semi, hard 之一
+  chain:                         # 定义任务执行顺序，便于确定前一个任务
+    - abl_semi
+    - abl_hard
+  first_task_name: abl_semi          # 第一个任务名称
 
 dataset:
   negative_dataset: ../input/negatives_hard.csv
   negative_cot_dataset: ../input/negatives_cot.csv
 
 model:
-  buse_lora: true
-  
+  use_lora: true
+  init_type: fp32
 
 train_params:
-  retriever_bs: 16 #memory ~ bs * num_negative or bs(if negative_dataset ==0)
-  sub_batch_size: 4 # emebding memory
+  retriever_bs: 64 #memory ~ bs * num_negative or bs(if negative_dataset ==0)
+  sub_batch_size: 8 # emebding memory
   query_bs: 128 # evaluate
   content_bs: 128 # evaluate 128/8=16
 
   num_negative: 8
-  num_cot_negative: 8
-  warmup_pct: 0.1
-  num_epochs: 10
-  grad_accumulation_steps: 8 # if want 128, 128/retriever_bs
-  patience: 20
+  num_cot_negative: 2
+  warmup_pct: 0.15 # 0.15-->0.05或0.08  
+  num_epochs: 10 # 10-->30  
+  grad_accumulation_steps: 1 # if want 128, 128/retriever_bs
+  patience: 3
   eval_at_start: false
 
   loss:
@@ -44,9 +49,10 @@ optimizer:
   
   lr:  1e-5
   lr_lora_a:  1e-5
-  lr_lora_b: 5e-5
-  lr_embed_tokens: 8e-5
-  lr_head: 3e-4 
+  lr_lora_b: 1.2e-5
+  lr_embed_tokens: 1e-5
+  lr_head: 1e-5 
+
 
   max_grad_norm: 1
   adam_beta_1: 0.9

@@ -173,38 +173,48 @@ def setup_training_run(cfg):
             init_kwargs={"wandb": {"name": cfg.wandb.run_name}},
         )
     elif cfg.use_deepspeed_plugin:
+        # multi gpu config
+        # ds_config = {
+        # "fp16": {
+        #     "enabled": True,
+        #     "loss_scale": 0,
+        #     "initial_scale_power": 16,
+        #     "min_loss_scale": 1,
+        #     "hysteresis": 2
+        # },
+        # "zero_optimization": {
+        #     "stage": 2,  # 升级至 Stage 2
+        #     "allgather_partitions": True,
+        #     "reduce_scatter": True,
+        #     "overlap_comm": True,
+        #     "contiguous_gradients": True,
+        #     "allgather_bucket_size": 5e7,
+        #     "reduce_bucket_size": 5e7,
+        #     "contiguous_gradients": True
+        #     },
+        #     "gradient_accumulation_steps": cfg.train_params.grad_accumulation_steps,
+        #     "train_micro_batch_size_per_gpu": cfg.train_params.retriever_bs,
+        #     "gradient_clipping": cfg.optimizer.max_grad_norm,
+        #     "steps_per_print": 50
+        # }
+        
         ds_config = {
-        "fp16": {
-            "enabled": True,
-            "loss_scale": 0,
-            "initial_scale_power": 16,
-            "min_loss_scale": 1,
-            "hysteresis": 2
-        },
-        "zero_optimization": {
-            "stage": 2,  # 升级至 Stage 2
-            "allgather_partitions": True,
-            "reduce_scatter": True,
-            "overlap_comm": True,
-            "contiguous_gradients": True,
-            "allgather_bucket_size": 5e7,
-            "reduce_bucket_size": 5e7,
-            "contiguous_gradients": True
+            "fp16": {
+                "enabled": True,
+                "loss_scale": 0,
+                "initial_scale_power": 16,
+                "min_loss_scale": 1,
+                "hysteresis": 2
             },
-            "gradient_accumulation_steps": cfg.train_params.grad_accumulation_steps,
+            "zero_optimization": {
+                "stage": 0  # 关闭 ZeRO 优化，保留原生 optimizer 行为
+            },
             "train_micro_batch_size_per_gpu": cfg.train_params.retriever_bs,
+            "gradient_accumulation_steps": cfg.train_params.grad_accumulation_steps,
             "gradient_clipping": cfg.optimizer.max_grad_norm,
             "steps_per_print": 50
         }
-        # ds_plugin = DeepSpeedPlugin(
-        #     zero_stage=2,
-        #     gradient_accumulation_steps=cfg.train_params.grad_accumulation_steps,
-        #     offload_optimizer_device="none",
-        #     offload_param_device="none",
-        #     fp16=True,  # 显式启用 FP16
-        #     fp16_opt_level="O2",  # 优化级别
-        #     gradient_clipping=0.5,  # 梯度裁剪阈值
-        # )
+
         ds_plugin = DeepSpeedPlugin(hf_ds_config=ds_config)
         
         accelerator = Accelerator(

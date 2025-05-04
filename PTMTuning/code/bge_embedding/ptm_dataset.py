@@ -121,8 +121,8 @@ class RetrieverDataset(Dataset):
         self.num_cot_hard = cfg.train_params.num_cot_negative
 
         self.query_ids = self.query_dataset.ids
-        self.query_to_semi_content_ids = negatives if self.mode == 'semi' else {}
-        self.query_to_hard_content_ids = negatives if self.mode == 'hard' else {}
+        self.query_to_semi_content_ids = negatives if 'semi' in self.mode ==  else {}
+        self.query_to_hard_content_ids = negatives if 'hard' self.mode else {}
         self.query_to_hard_cot_query_ids = cot_negatives
 
     def __len__(self):
@@ -136,9 +136,9 @@ class RetrieverDataset(Dataset):
         pos_item = self.content_dataset.get_by_id(pos_content_id)
 
         # 获取负样本
-        if self.mode == 'semi':
+        if 'semi' in self.mode:
             neg_ids = self.query_to_semi_content_ids.get(query_id, [])[:self.num_negative]
-        elif self.mode == 'hard':
+        elif 'hard' in self.mode:
             neg_ids = self.query_to_hard_content_ids.get(query_id, [])[:self.num_negative]
         else:
             neg_ids = []
