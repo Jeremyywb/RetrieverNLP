@@ -1,3 +1,10 @@
+hydra:
+  run:
+    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S}
+  job:
+    name: train_semi
+  output_subdir: null
+
 debug: false
 enable_cuda_optimizations: true
 full_fit: false

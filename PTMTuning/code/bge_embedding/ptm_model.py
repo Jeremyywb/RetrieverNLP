@@ -31,7 +31,7 @@ class EmbedderOutput(ModelOutput):
 
 
 
-
+os.environ['MODELSCOPE_CACHE'] = '/home/modelscope/cache'  # 修正路径拼写
 
 def initialize_model_paths(cfg):
     """
@@ -81,7 +81,13 @@ def initialize_model_paths(cfg):
     lora_adapter_path =  f"{task_specific_path}_lora_model" if (cfg.model.use_lora and task_specific_path is not None) else None
     save_task_specific_path = f"{cfg.outputs.model_dir}_{task_name}"
     save_lora_adapter_path = f"{save_task_specific_path}_lora_model"
-
+    if Path(save_task_specific_path).parent.exists():
+        P_lora_adapter_path = Path(save_task_specific_path) 
+        P_lora_adapter_path.mkdir(parents=True, exist_ok=True)
+    if Path(save_lora_adapter_path).parent.exists():
+        P_lora_adapter_path = Path(save_lora_adapter_path) 
+        P_lora_adapter_path.mkdir(parents=True, exist_ok=True)
+        
     # Check for existing checkpoints
     is_backbone_exists = Path(backbone_path).exists() and (Path(backbone_path) / "model.safetensors").exists()
     is_lora_adapter_exists = lora_adapter_path and Path(lora_adapter_path).exists()
@@ -96,6 +102,19 @@ def initialize_model_paths(cfg):
 
     tokenizer_save_path = base_backbone_path if cfg.model.use_lora else save_task_specific_path
 
+    
+    if isinstance(base_backbone_path, str):
+        if Path(base_backbone_path).parent.exists():
+            P_lora_adapter_path = Path(base_backbone_path) 
+            P_lora_adapter_path.mkdir(parents=True, exist_ok=True)
+    if isinstance(lora_adapter_path, str):
+        if Path(lora_adapter_path).parent.exists():
+            P_lora_adapter_path = Path(lora_adapter_path) 
+            P_lora_adapter_path.mkdir(parents=True, exist_ok=True)
+    if isinstance(task_specific_path, str):
+        if Path(task_specific_path).parent.exists():
+            P_lora_adapter_path = Path(task_specific_path) 
+            P_lora_adapter_path.mkdir(parents=True, exist_ok=True)
     # Construct dictionary of all paths and related information
     paths_info = {
         # Core paths
@@ -193,6 +212,8 @@ def get_base_model(cfg):
     is_task_checkpoint_exists = cfg.paths.is_task_checkpoint_exists
 
 
+            
+
     # Load configuration from appropriate source
     if is_backbone_exists:
         config = AutoConfig.from_pretrained(
@@ -243,10 +264,11 @@ def get_base_model(cfg):
         except Exception as e:
             # If loading fails, initialize from HF and save base model
             print(f"⚠️ Failed to load model from {backbone_path}: {e}")
-            print(f"Initializing model from {base_backbone_name}... use modelscope")
-            from modelscope import AutoModel as scopeAutoModel
+            # print(f"Initializing model from {base_backbone_name}... use modelscope")
+            # from modelscope import AutoModel as scopeAutoModel
             
-            base_model = scopeAutoModel.from_pretrained(base_backbone_name, **model_kwargs)
+            # base_model = scopeAutoModel.from_pretrained(base_backbone_name, **model_kwargs)
+            base_model = AutoModel.from_pretrained(base_backbone_name, **model_kwargs)
             
             # Save base model to common path
             print(f"Saving base model to {backbone_path}")
@@ -273,6 +295,8 @@ def get_base_model(cfg):
         if is_lora_adapter_exists:
             # Load existing LoRA adapter
             print(f"✅ Loading LoRA adapter from: {lora_adapter_path}")
+            P_lora_adapter_path = Path(lora_adapter_path) 
+            P_lora_adapter_path.mkdir(parents=True, exist_ok=True)
             base_model = PeftModel.from_pretrained(
                 base_model, 
                 lora_adapter_path,
@@ -314,7 +338,8 @@ def get_base_model(cfg):
     
     # Initialize or load head model
     head_model = SharedAlignment(hidden_size=config.hidden_size, torch_dtype=torch_dtype)
-    to_load = Path(task_specific_path) / f"{head_bin_name}.bin" if cfg.task.name != 'qcot' else 'NO NEED FOR qcot stage' 
+    NO_NEED_STAGE_NAME = 'abl_semi' if 'abl' in cfg.task.name else 'qcot'
+    to_load = Path(task_specific_path) / f"{head_bin_name}.bin" if cfg.task.name != NO_NEED_STAGE_NAME else 'NO NEED FOR qcot stage' 
     # Load head model if task checkpoint exists
     if is_task_checkpoint_exists:
         print(f"✅ Loading head model from: {task_specific_path}")
@@ -397,8 +422,8 @@ class BgeBiEncoderModel(nn.Module):
 
     def sentence_embedding(self, hidden_state, mask):
         if self.sentence_pooling_method == "mean":
-            s = torch.sum(hidden_state * mask.unsqueeze(-1).float(), dim=1)
-            d = mask.sum(axis=1, keepdim=True).float()
+            s = torch.sum(hidden_state * mask.unsqueeze(-1), dim=1)
+            d = mask.sum(axis=1, keepdim=True)
             return s / d
         elif self.sentence_pooling_method == "cls":
             return hidden_state[:, 0]

@@ -1,0 +1,86 @@
+hydra:
+  run:
+    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S}
+  job:
+    name: train_sft
+  output_subdir: null
+
+
+seed: 499
+debug: false
+save_model: true
+use_wandb: false
+enable_cuda_optimizations: true
+local_rank: 0
+
+train_folds: [1, 2, 3, 4, 99]
+full_fit: true
+
+dataset:
+  query_dataset: ../input/synthetic.csv
+  folder_dataset: ../input/fold_df.csv
+
+model:
+  backbone_path: Qwen/Qwen2.5-Math-7B # -Instruct
+  max_length: 1024
+  num_proc: 8
+  use_gradient_checkpointing: true
+  compile_model: false
+
+  tokenizer:
+    padding_side: left
+    truncation_side: left
+    use_fast: true
+
+  use_bnb: false
+  use_lora: true # false # true
+  lora:
+    target_modules:
+      - q_proj
+      - k_proj
+      - v_proj
+      - o_proj
+      - up_proj
+      - down_proj
+      - gate_proj
+    r: 64 # 64
+    lora_alpha: 128 # 128
+    lora_dropout: 0.01
+    use_dora: false
+    
+    modules_to_save:
+      - lm_head
+
+train_params:
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 4
+  num_train_epochs: 2 # 2
+  gradient_accumulation_steps: 2
+
+  warmup_pct: 0.02
+  eval_frequency: 80
+train:
+  deepspeed: ../conf/qwen_reasoner/conf_reasoner_deepspeed.json
+optimizer:
+  name: AdamW8bit
+
+  lr: 1e-6
+  lr_lora_a: 1e-5
+  lr_lora_b: 5e-5
+  lr_embed_tokens: 1e-6
+
+  weight_decay: 1e-2
+  max_grad_norm: 16.0
+
+  adam_beta_1: 0.9
+  adam_beta_2: 0.95
+  adam_epsilon: 1e-8 
+
+outputs:
+  model_dir: ../models/qwen-reasoner-7b
+
+wandb:
+  project: eedi-dev
+  run_name: qwen-reasoner-7b
+  tags:
+    - qwen

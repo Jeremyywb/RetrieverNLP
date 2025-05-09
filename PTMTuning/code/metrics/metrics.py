@@ -88,20 +88,24 @@ class UnifiedCoTLoss(nn.Module):
             l_qcot = self.triplet(anchor, cot_all, n_pos=Pcot)
         else:
             # 只有正例时，L2 回归：用所有正例平均向量
-            pos_cot = cot_all[:, :Pcot, :].mean(dim=1)  # [B, D]
-            l_qcot  = torch.norm(anchor - pos_cot, p=self.p, dim=1).pow(2).mean()
+            # pos_cot = cot_all[:, :Pcot, :].mean(dim=1)  # [B, D]
+            # l_qcot  = torch.norm(anchor - pos_cot, p=self.p, dim=1).pow(2).mean()
+            l_qcot  = 0
 
         
         contents = contents.view(B, -1, D)
         Pcont = min(1,contents.size(1))
         if  self.gamma > 0:
             # —— Content:1→CoT:n 一致性 ——
-            l_cotc = self.triplet(contents[:,0,:], cot_all, n_pos=Pcot)
+            # 只考虑正向，不考虑逆向
+            # l_cotc = self.triplet(contents[:,0,:], cot_all, n_pos=Pcot)
             # —— 1→CoT→Content:n 一致性 ——
             if contents.size(1)>Pcont:
-                l_cotc += self.triplet(cot_all[:,0,:], contents, n_pos=Pcont)
+                l_cotc = self.triplet(cot_all[:,0,:], contents, n_pos=Pcont)
                 l_cotc += self.triplet(cot_all[:,1,:], contents, n_pos=Pcont)
-                l_cotc = l_cotc/3
+                l_cotc = l_cotc/2
+            else:
+                l_cotc = 0.0
         else:
             l_cotc = 0.0
 
