@@ -17,8 +17,21 @@ FileNotFoundError: [Errno 2] No such file or directory: '/root/cloud/RetrieverNL
 chmod -R 755 /root/cloud/RetrieverNLP/PTMTuning/code/outputs/
 并且在训练的配置文件添加：
 hydra:
+  # 关键点: 使用原始工作目录
   run:
-    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S}
+    dir: ${oc.env:HOME}/cloud/RetrieverNLP/PTMTuning/code/outputs/${now:%Y-%m-%d_%H-%M-%S}
   job:
-    name: train_semi
+    name: train_sft
+    chdir: false  # 不改变工作目录，这是关键配置
   output_subdir: null
+  # 日志配置
+  job_logging:
+    version: 1
+    formatters:
+      simple:
+        format: "[%(asctime)s][%(name)s][%(levelname)s] - %(message)s"
+    handlers:
+      file_handler:
+        class: logging.FileHandler
+        formatter: simple
+        filename: ${hydra:run.dir}/train_sft.log

@@ -96,7 +96,7 @@ def main(cfg: DictConfig):
             model.print_trainable_parameters()
         
         return model
-
+    model = create_custom_model(cfg)
     # 3. SFTConfig 参数配置
     training_args = SFTConfig(
         output_dir=cfg.outputs.model_dir,
@@ -121,7 +121,7 @@ def main(cfg: DictConfig):
     # 4. 初始化 CustomSFTTrainer
     trainer = CustomSFTTrainer(
         cfg=cfg,
-        model_init=partial(create_custom_model, cfg=cfg), 
+        model=model, 
         args=training_args,
         train_dataset=tokenized_train_ds,
         eval_dataset=tokenized_valid_ds,

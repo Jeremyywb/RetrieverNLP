@@ -8,3 +8,5 @@ accelerate launch --config_file=../conf/acce_deepspeed.yaml train_bge_emb_deepsp
 
 
 accelerate launch --config_file=../conf/acce_deepspeed.yaml train_bge_emb_deepspd.py --config-name conf_semi
+
+accelerate launch --config_file=../conf/acce_deepspeed.yaml train_eedi_sft.py
